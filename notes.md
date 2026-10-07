@@ -42,7 +42,7 @@ $$
 
 **定义 2.1.2** (道路的重参数化)
 
-称道路 $\gamma_{1}:[a_{1},b_{1}]\to\mathbb{C}$ 是道路 $\gamma_{2}:[a_{2},b_{2}]\to\mathbb{C}$ 的重参数化, 如果存在单调递增函数 $\tau:[a_{1},b_{1}]\to[a_{2},b_{2}]$ 满足 $\tau(a_{1})=a_{2}$, $\tau(b_{1})=b_{2}$, 使得对任意 $t\in[a_{1},b_{1}]$ 有 $\gamma_{1}(t)=\gamma_{2}(\tau(t))$; 若 $\tau$ 在某点 $\bar{t}$ 处不连续, 即 $\tau(\bar{t}-0)<\tau(\bar{t}+0)$, 还要求 $\gamma_{2}$ 在区间 $[\tau(\bar{t}-0),\tau(\bar{t}+0)]$ 上为常值.
+称道路 $\gamma_{1}:[a_{1},b_{1}]\to\mathbb{C}$ 是道路 $\gamma_{2}:[a_{2},b_{2}]\to\mathbb{C}$ 的重参数化, 如果存在单调递增函数 $\tau:[a_{1},b_{1}]\to[a_{2},b_{2}]$ 满足 $\tau(a_{1})=a_{2}$, $\tau(b_{1})=b_{2}$, 使得对任意 $t\in[a_{1},b_{1}]$ 有 $\gamma_{1}(t)=\gamma_{2}(\tau(t))$; 若 $\tau$ 在某点 $\bar{t}$ 处不连续, 即 $\tau(\bar{t}-0)< \tau(\bar{t}+0)$, 还要求 $\gamma_{2}$ 在区间 $[\tau(\bar{t}-0),\tau(\bar{t}+0)]$ 上为常值.
 
 **定义 2.1.4** (路径)
 
@@ -62,11 +62,11 @@ $$
 
 **定义 2.4.1** (函数沿某集合的极限)
 
-设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to a,\ z\in M}f(z)=A$, 如果对任意 $\epsilon>0$ 存在 $\delta>0$ 使对任意 $z\in M$, 若 $0<\rho(z,a)<\delta$ 则 $\rho(f(z),A)<\epsilon$.
+设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to a,\ z\in M}f(z)=A$, 如果对任意 $\epsilon> 0$ 存在 $\delta> 0$ 使对任意 $z\in M$, 若 $0< \rho(z,a)< \delta$ 则 $\rho(f(z),A)< \epsilon$.
 
 **定义 2.4.2** (函数的有界性和连续性)
 
-若存在 $C>0$ 使 $\forall z\in M$ 有 $|f(z)|\le C$, 则称 $f$ 在 $M$ 上有界; 若 $\lim_{z\to a,\ z\in M}f(z)=f(a)$, 则称 $f$ 在点 $a$ 处 (沿 $M$) 连续; 若对 $\forall a\in M$ 均连续, 则称 $f$ 在 $M$ 上连续.
+若存在 $C> 0$ 使 $\forall z\in M$ 有 $|f(z)|\le C$, 则称 $f$ 在 $M$ 上有界; 若 $\lim_{z\to a,\ z\in M}f(z)=f(a)$, 则称 $f$ 在点 $a$ 处 (沿 $M$) 连续; 若对 $\forall a\in M$ 均连续, 则称 $f$ 在 $M$ 上连续.
 
 ## 全纯性与可微性
 
@@ -328,13 +328,13 @@ $$
 
 **定义 11.2.6** (映射半径)
 
-对单连通区域 $D$ 且 $\mathbb{C}\setminus D\ne\varnothing$ 及 $a\in D$, 称使存在唯一共形等价 $f:D\to\mathbb{D}_{\rho}:=\{|z|<\rho\}$, $f(a)=0$, $f'(a)=1$ 的正数 $\rho$ 为 $D$ 相对 $a$ 的映射半径 $\rho(D,a)$.
+对单连通区域 $D$ 且 $\mathbb{C}\setminus D\ne\varnothing$ 及 $a\in D$, 称使存在唯一共形等价 $f:D\to\mathbb{D}_{\rho}:=\{|z|< \rho\}$, $f(a)=0$, $f'(a)=1$ 的正数 $\rho$ 为 $D$ 相对 $a$ 的映射半径 $\rho(D,a)$.
 
 ## 共形映射到标准区域
 
 **命题 5.2.2** (指数映射带区域)
 
-$z\mapsto e^{z}$ 把水平带 $\{0<\operatorname{Im}z<2\pi\}$ 共形地映成 $\mathbb{C}\setminus[0,+\infty)$.
+$z\mapsto e^{z}$ 把水平带 $\{0< \operatorname{Im}z< 2\pi\}$ 共形地映成 $\mathbb{C}\setminus[0,+\infty)$.
 
 **命题 5.2.3**
 
@@ -346,7 +346,7 @@ $z\mapsto e^{z}$ 把水平带 $\{0<\operatorname{Im}z<2\pi\}$ 共形地映成 $\
 
 **定义 6.2.4** (幂函数)
 
-$z^{\alpha}=e^{\alpha\log z}$ 把角域 $\{0<\arg z<\beta\}$ 共形地映成角域 $\{0<\arg w<\alpha\beta\}$ (取合适的全纯分支).
+$z^{\alpha}=e^{\alpha\log z}$ 把角域 $\{0< \arg z< \beta\}$ 共形地映成角域 $\{0< \arg w< \alpha\beta\}$ (取合适的全纯分支).
 
 ## 洛朗级数与孤立奇点
 
@@ -358,11 +358,11 @@ $$
 \sum_{n=-\infty}^{+\infty}c_{n}(z-a)^{n},
 $$
 
-其中正则部 $\sum_{n\ge0}c_{n}(z-a)^{n}$, 主部 $\sum_{n<0}c_{n}(z-a)^{n}$.
+其中正则部 $\sum_{n\ge0}c_{n}(z-a)^{n}$, 主部 $\sum_{n< 0}c_{n}(z-a)^{n}$.
 
 **定义 13.2.2** (孤立奇点分类)
 
-$a$ 是 $f$ 的可去奇点若主部系数全为 $0$; 是 $m$-阶极点若 $c_{-m}\ne0$ 且 $n<-m$ 时 $c_{n}=0$; 是本性奇点若主部有无穷多项.
+$a$ 是 $f$ 的可去奇点若主部系数全为 $0$; 是 $m$-阶极点若 $c_{-m}\ne0$ 且 $n< -m$ 时 $c_{n}=0$; 是本性奇点若主部有无穷多项.
 
 **定理 13.2.4** (黎曼)
 
@@ -460,7 +460,7 @@ $(f_{0},U_{0})$ 沿道路 $\gamma$ 全纯延拓到 $(f_{1},U_{1})$, 若存在一
 
 **定理 18.1.2** (施瓦茨对称原理 I)
 
-$D$ 关于实轴对称, $f$ 在 $D^{+}:=D\cap\{\operatorname{Im}z>0\}$ 全纯, 连续到 $D^{+}\cap\mathbb{R}$ 且在其上取实值, 则 $f$ 延拓为 $D$ 上全纯函数.
+$D$ 关于实轴对称, $f$ 在 $D^{+}:=D\cap\{\operatorname{Im}z> 0\}$ 全纯, 连续到 $D^{+}\cap\mathbb{R}$ 且在其上取实值, 则 $f$ 延拓为 $D$ 上全纯函数.
 
 **定理 18.1.3** (施瓦茨对称原理 II)
 
@@ -471,12 +471,12 @@ $f$ 在 $D^{+}$ 全纯, 连续到边界线段 $I\subset\mathbb{R}$ 且在其上�
 **定义 19.1.1** (伽玛函数)
 
 $$
-\Gamma(s)=\int_{0}^{+\infty}e^{-t}t^{s-1}dt,\quad s>0.
+\Gamma(s)=\int_{0}^{+\infty}e^{-t}t^{s-1}dt,\quad s> 0.
 $$
 
 **命题 19.1.3**
 
-若 $\operatorname{Re}z>0$, 则 $\Gamma(z+1)=z\Gamma(z)$; 它可延拓为 $\mathbb{C}$ 上的亚纯函数, 只在 $0,-1,-2,\ldots$ 有简单极点.
+若 $\operatorname{Re}z> 0$, 则 $\Gamma(z+1)=z\Gamma(z)$; 它可延拓为 $\mathbb{C}$ 上的亚纯函数, 只在 $0,-1,-2,\ldots$ 有简单极点.
 
 **定理 19.2.1** (反射公式)
 
@@ -501,7 +501,7 @@ $$
 **定义 20.1.1** (黎曼 $\zeta$-函数)
 
 $$
-\zeta(z)=\sum_{n=1}^{+\infty}\frac1{n^{z}},\quad\operatorname{Re}z>1;
+\zeta(z)=\sum_{n=1}^{+\infty}\frac1{n^{z}},\quad\operatorname{Re}z> 1;
 $$
 
 由欧拉乘积
@@ -530,13 +530,13 @@ $$
 
 **推论 20.2.3**
 
-$\zeta$ 的平凡零点恰为 $-2,-4,-6,\ldots$; 非平凡零点全落在临界带 $0<\operatorname{Re}z<1$ 内.
+$\zeta$ 的平凡零点恰为 $-2,-4,-6,\ldots$; 非平凡零点全落在临界带 $0< \operatorname{Re}z< 1$ 内.
 
 ## 毕卡定理
 
 **定理 21.1.3** (布洛克)
 
-存在常数 $B>0$: 若 $f$ 在单位圆盘上全纯且 $f'(0)=1$, 则 $f(\mathbb{D})$ 含一个半径至少 $B$ 的圆盘.
+存在常数 $B> 0$: 若 $f$ 在单位圆盘上全纯且 $f'(0)=1$, 则 $f(\mathbb{D})$ 含一个半径至少 $B$ 的圆盘.
 
 **定理 21.2.3** (毕卡小定理)
 
