@@ -39,8 +39,7 @@ $$
 其中 $\ell$ 是 $\mathbb{R}$-线性函数. 由**定理 3.1.2 (线性函数的形式)**, $\ell\left(\Delta z\right)=a\Delta z+b\Delta\bar{z}$, 结合**定义 3.2.2 (形式导数)**, $a=\frac{\partial f}{\partial z}\left(z_{0}\right)$, $b=\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)$. 于是
 
 $$
-\begin{aligned}
-&\quad\;\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}\\
+\begin{aligned}&\quad\;\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}\\
 &=\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\frac{\Delta\bar{z}}{\Delta z}+\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}.
 \end{aligned}
 $$
@@ -92,8 +91,7 @@ $$
 $v$ 同理. 由柯西-黎曼方程 (**定理 3.2.4**) $\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}$, $\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}$, 得
 
 $$
-\begin{aligned}
-&\quad\;\frac{\partial u}{\partial r}\\
+\begin{aligned}&\quad\;\frac{\partial u}{\partial r}\\
 &=\frac{\partial v}{\partial y}\cos\phi-\frac{\partial v}{\partial x}\sin\phi\\
 &=\frac{1}{r}\left(-\frac{\partial v}{\partial x}r\sin\phi+\frac{\partial v}{\partial y}r\cos\phi\right)\\
 &=\frac{1}{r}\frac{\partial v}{\partial\phi}.
@@ -103,8 +101,7 @@ $$
 同理,
 
 $$
-\begin{aligned}
-&\quad\;\frac{\partial v}{\partial r}\\
+\begin{aligned}&\quad\;\frac{\partial v}{\partial r}\\
 &=\frac{\partial v}{\partial x}\cos\phi+\frac{\partial v}{\partial y}\sin\phi\\
 &=-\frac{\partial u}{\partial y}\cos\phi+\frac{\partial u}{\partial x}\sin\phi\\
 &=-\frac{1}{r}\left(-\frac{\partial u}{\partial x}r\sin\phi+\frac{\partial u}{\partial y}r\cos\phi\right)\\
@@ -145,8 +142,7 @@ $$
 设 $f=u+iv$, $u\left(x,y\right)=e^{x}\left(x\cos y-y\sin y\right)$. 由 $f$ 全纯, $u,v$ 满足柯西-黎曼方程 (**定理 3.2.4**): $v_{y}=u_{x}$, $v_{x}=-u_{y}$. 计算
 
 $$
-\begin{aligned}
-u_{x}&=e^{x}\left(x\cos y-y\sin y\right)+e^{x}\cos y=e^{x}\left(\cos y+x\cos y-y\sin y\right),\\
+\begin{aligned}u_{x}&=e^{x}\left(x\cos y-y\sin y\right)+e^{x}\cos y=e^{x}\left(\cos y+x\cos y-y\sin y\right),\\
 u_{y}&=e^{x}\left(-x\sin y-\sin y-y\cos y\right)=-e^{x}\left(\sin y+x\sin y+y\cos y\right).
 \end{aligned}
 $$

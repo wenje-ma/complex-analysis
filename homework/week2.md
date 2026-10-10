@@ -57,8 +57,7 @@
 (1) 长方形表示: 设 $z=x+iy$, 由**定义 1.2.2 (复数的极坐标形式)** 与二项展开,
 
 $$
-\begin{aligned}
-&\quad\;f\left(z\right)\\
+\begin{aligned}&\quad\;f\left(z\right)\\
 &=\left(x+iy\right)^{3}\\
 &=x^{3}+3x^{2}\left(iy\right)+3x\left(iy\right)^{2}+\left(iy\right)^{3}\\
 &=x^{3}-3xy^{2}+i\left(3x^{2}y-y^{3}\right).
@@ -74,8 +73,7 @@ $$
 椭圆 $\frac{x^{2}}{2}+y^{2}=1$ 可参数化为 $x=\sqrt{2}\cos\theta$, $y=\sin\theta$, $\theta\in\left[0,2\pi\right]$, 即 $z\left(\theta\right)=\sqrt{2}\cos\theta+i\sin\theta$. 其像为 $f\left(z\left(\theta\right)\right)=\left(\sqrt{2}\cos\theta+i\sin\theta\right)^{3}$. 记 $c=\cos\theta$, $s=\sin\theta$, 展开得
 
 $$
-\begin{aligned}
-&\quad\;f\left(z\left(\theta\right)\right)\\
+\begin{aligned}&\quad\;f\left(z\left(\theta\right)\right)\\
 &=\left(2\sqrt{2}c^{3}-3\sqrt{2}cs^{2}\right)+i\left(6c^{2}s-s^{3}\right)\\
 &=\left(2\sqrt{2}\cos^{3}\theta-3\sqrt{2}\cos\theta\sin^{2}\theta\right)+i\left(6\cos^{2}\theta\sin\theta-\sin^{3}\theta\right).
 \end{aligned}

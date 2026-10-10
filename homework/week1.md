@@ -21,8 +21,7 @@ $$
 设 $z=e^{i\theta}$, 则 $z\ne\pm1$ 等价于 $\theta\ne0,\pi\ \left(\bmod 2\pi\right)$. 由**定义 1.2.2 (复数的极坐标形式)**, 得
 
 $$
-\begin{aligned}
-&\quad\;\frac{z-1}{z+1}\\
+\begin{aligned}&\quad\;\frac{z-1}{z+1}\\
 &=\frac{e^{i\theta}-1}{e^{i\theta}+1}\\
 &=\frac{e^{i\theta/2}\left(e^{i\theta/2}-e^{-i\theta/2}\right)}{e^{i\theta/2}\left(e^{i\theta/2}+e^{-i\theta/2}\right)}\\
 &=\frac{2i\sin\frac{\theta}{2}}{2\cos\frac{\theta}{2}}\\
@@ -91,8 +90,7 @@ $$
 两式相减得
 
 $$
-\begin{aligned}
-&\quad\;\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{j=1}^{n}\left|w_{j}\right|^{2}\right)-\sum_{1\le j<k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}\\
+\begin{aligned}&\quad\;\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{j=1}^{n}\left|w_{j}\right|^{2}\right)-\sum_{1\le j<k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}\\
 &=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j<k}\left(z_{j}\bar{w}_{k}\bar{z}_{k}w_{j}+\bar{z}_{j}w_{k}z_{k}\bar{w}_{j}\right)\\
 &=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j<k}\left(z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}+\bar{z}_{j}z_{k}w_{k}\bar{w}_{j}\right).
 \end{aligned}
@@ -125,8 +123,7 @@ $$
 又因 $\overline{\left(z,w\right)}=\overline{z\bar{w}}=\bar{z}w=\left(w,z\right)$, 得
 
 $$
-\begin{aligned}
-&\quad\;\frac{1}{2}\left(\left(z,w\right)+\left(w,z\right)\right)\\
+\begin{aligned}&\quad\;\frac{1}{2}\left(\left(z,w\right)+\left(w,z\right)\right)\\
 &=\frac{1}{2}\left(\left(z,w\right)+\overline{\left(z,w\right)}\right)\\
 &=\operatorname{Re}\left(z,w\right).
 \end{aligned}
@@ -149,8 +146,7 @@ $$
 设 $d=\operatorname{dist}_{\sigma}\left(a,b\right)$. 单位球面半径为 $1$, 故 $d$ 等于球心角 $\angle AOB$ ($O$ 为球心), 从而弦长 $\left|AB\right|=2\sin\frac{d}{2}$. 由球极投影与球弦度量的关系 (**定义 1.4.2**), $\left|AB\right|=\rho\left(a,b\right)$, 故
 
 $$
-\begin{aligned}
-&\quad\;\rho\left(a,b\right)\\
+\begin{aligned}&\quad\;\rho\left(a,b\right)\\
 &=\frac{2\left|a-b\right|}{\sqrt{1+\left|a\right|^{2}}\sqrt{1+\left|b\right|^{2}}}\\
 &=2\sin\frac{d}{2}.
 \end{aligned}
@@ -173,8 +169,7 @@ $$
 于是
 
 $$
-\begin{aligned}
-&\quad\;\sin\frac{d}{2}\\
+\begin{aligned}&\quad\;\sin\frac{d}{2}\\
 &=\frac{\left|a-b\right|}{\sqrt{\left|1+\bar{a}b\right|^{2}+\left|a-b\right|^{2}}}\\
 &=\frac{\left|\frac{a-b}{1+\bar{a}b}\right|}{\sqrt{1+\left|\frac{a-b}{1+\bar{a}b}\right|^{2}}}.
 \end{aligned}
