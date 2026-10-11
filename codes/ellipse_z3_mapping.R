@@ -12,8 +12,14 @@ if(!file.exists("data/ellipse_z3_mapping.RData")){
   save(theta,x,y,z,w,u,v,file="data/ellipse_z3_mapping.RData")
 }
 load("data/ellipse_z3_mapping.RData")
+draw=function(){
+  par(mfrow=c(1,2),mar=c(4,4,3,1))
+  plot(x,y,type="l",main="Original Ellipse x^2/2+y^2=1",xlab="x",ylab="y",asp=1)
+  plot(u,v,type="l",main="Image Curve After Mapping w=z^3",xlab="u",ylab="v",asp=1)
+}
 pdf("../figures/ellipse_z3_mapping.pdf",width=8,height=4)
-par(mfrow=c(1,2),mar=c(4,4,3,1))
-plot(x,y,type="l",main="Original Ellipse x^2/2+y^2=1",xlab="x",ylab="y",asp=1)
-plot(u,v,type="l",main="Image Curve After Mapping w=z^3",xlab="u",ylab="v",asp=1)
+draw()
+dev.off()
+svglite::svglite("../figures/ellipse_z3_mapping.svg",width=8,height=4)
+draw()
 dev.off()
