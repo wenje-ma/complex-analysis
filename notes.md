@@ -30,6 +30,8 @@ $$
 
 建立 $\mathbb{C}$ 与 $S\setminus\left\{N\right\}$ (去掉北极点) 的一一对应.
 
+![stereographic_projection.svg](figures/stereographic_projection.svg){width=100%}
+
 **定义 1.4.2** (球弦度量)
 
 对 $z,w\in\mathbb{C}$, 球弦距离
@@ -52,13 +54,19 @@ $$
 
 称具有以下两条性质的点集 $D\subset\mathbb{C}$ (或 $\overline{\mathbb{C}}$) 为区域: (i-1) $D$ 是开集; (i-2) 道路连通性, 即任意 $a,b\in D$ 都存在位于 $D$ 中的道路以 $a,b$ 为端点.
 
+![region_definition.svg](figures/region_definition.svg){width=100%}
+
 **定理 2.2.6** (若当曲线定理)
 
 复平面上的任一条若当闭曲线把整个平面分成两个没有公共点的区域: 一个有界的称为它的内区域, 一个无界的称为它的外区域.
 
+![jordan_curve_theorem.svg](figures/jordan_curve_theorem.svg){width=50%}
+
 **定义 2.2.7** (单, 多连通性)
 
 设 $D$ 是复平面 $\mathbb{C}$ 上的区域, 称 $D$ 为单连通的, 如果 $D$ 内任意若当闭曲线的内区域都包含在 $D$ 内; 否则称它是多连通的.
+
+![simply_vs_multiply_connected.svg](figures/simply_vs_multiply_connected.svg){width=100%}
 
 **定义 2.4.1** (函数沿某集合的极限)
 
@@ -150,6 +158,8 @@ $$
 
 莫比乌斯变换把扩充复平面上的圆 (广义圆, 即圆或直线) 映成扩充复平面上的圆, 并保持切角.
 
+![mobius_transformation.svg](figures/mobius_transformation.svg){width=100%}
+
 **定义 4.4.1** (单叶)
 
 称 $f$ 在区域 $D$ 上单叶, 若 $f$ 在 $D$ 上是单射.
@@ -173,6 +183,8 @@ $$
 **命题 5.4.2**
 
 $\sin z,\cos z$ 在 $\mathbb{C}$ 上全纯, $\left(\sin z\right)'=\cos z$, $\left(\cos z\right)'=-\sin z$.
+
+![exponential_mapping.svg](figures/exponential_mapping.svg){width=100%}
 
 ## 多值函数
 
@@ -325,6 +337,8 @@ $$
 **定理 11.2.2** (黎曼映射定理)
 
 任意不为全平面的单连通区域都与开单位圆盘共形等价.
+
+![riemann_mapping_theorem.svg](figures/riemann_mapping_theorem.svg){width=100%}
 
 **定义 11.2.6** (映射半径)
 

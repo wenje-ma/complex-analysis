@@ -81,6 +81,8 @@ $$
 
 由极坐标表示, $z^{3}$ 的辐角是 $z$ 辐角的 $3$ 倍; 当 $\theta$ 扫过 $\left[0,2\pi\right]$ 时, 像点辐角扫过 $\left[0,6\pi\right]$, 故像是一条绕原点转三圈、关于原点对称的闭曲线. $\blacksquare$
 
+![ellipse_z3_mapping.svg](../figures/ellipse_z3_mapping.svg){width=100%}
+
 ### 习题四
 
 (习题 2.5-8) 令 $K\subset\mathbb{C}$ 是有界连通闭集. 证明: 对于任意 $\epsilon>0$, 都存在若当闭曲线 $\gamma$ 使得 $K$ 包含在 $\gamma$ 的内部区域而且 $\operatorname{dist}\left(K,\gamma\right)<\epsilon$.
