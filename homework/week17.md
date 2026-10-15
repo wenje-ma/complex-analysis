@@ -82,7 +82,7 @@ $$
 
 ### 解答 习题五
 
-(i) $f$ 的奇点是分母零点 $1+e^{-2\beta z}=0$, 即 $e^{-2\beta z}=-1$, 亦即 $-2\beta z=i\pi\left(1+2k\right)$, $z=-\frac{i\pi\left(1+2k\right)}{2\beta}$. 由 $\beta^{2}=i\pi$, 计算得 $z=\frac{\left(2k+1\right)\beta}{2}=\left(k+\tfrac12\right)\beta=z_{k}$, $k\in\mathbb{Z}$. 故奇点恰为 $\mathcal{Z}$. 在 $z_{n}$ 处 $\frac{d}{dz}\left(1+e^{-2\beta z}\right)=-2\beta e^{-2\beta z_{n}}=-2\beta\left(-1\right)=2\beta\ne0$, 故都是简单极点.
+(i) $f$ 的奇点是分母零点 $1+e^{-2\beta z}=0$, 即 $e^{-2\beta z}=-1$, 亦即 $-2\beta z=i\pi\left(1+2k\right)$, $z=-\frac{i\pi\left(1+2k\right)}{2\beta}$. 由 $\beta^{2}=i\pi$, 计算得 $z=\frac{\left(2k+1\right)\beta}{2}=\left(k+\frac12\right)\beta=z_{k}$, $k\in\mathbb{Z}$. 故奇点恰为 $\mathcal{Z}$. 在 $z_{n}$ 处 $\frac{d}{dz}\left(1+e^{-2\beta z}\right)=-2\beta e^{-2\beta z_{n}}=-2\beta\left(-1\right)=2\beta\ne0$, 故都是简单极点.
 
 (ii) 记 $u=e^{-2\beta z}$. 由 $\beta^{2}=i\pi$, $e^{-\beta^{2}}=e^{-i\pi}=-1$, $e^{-2\beta^{2}}=1$. 于是
 
