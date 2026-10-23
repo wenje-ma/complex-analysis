@@ -66,21 +66,21 @@ $G$ 有界单连通且非 $\mathbb{C}$, 由黎曼映射定理 $G\cong\mathbb{D}$
 
 ### 习题六
 
-(习题 13.4-12) 令 $a\in\mathbb{C}$ 是函数 $f$ 的本性奇点. 证明: $\lim_{\epsilon\to0}\epsilon^{n}\max\left\{\left|f\left(z\right)\right|:\ \left|z-a\right|=\epsilon\right\}=+\infty$, $\forall n\in\mathbb{N}$.
+(习题 13.4-12) 令 $a\in\mathbb{C}$ 是函数 $f$ 的本性奇点. 证明: $\lim_{\varepsilon\to0}\varepsilon^{n}\max\left\{\left|f\left(z\right)\right|:\ \left|z-a\right|=\varepsilon\right\}=+\infty$, $\forall n\in\mathbb{N}$.
 
 ### 解答 习题六
 
-记 $M\left(\epsilon\right):=\max_{\left|z-a\right|=\epsilon}\left|f\left(z\right)\right|$. 反设存在 $n\in\mathbb{N}$ 使得 $\epsilon^{n}M\left(\epsilon\right)$ 有上界, 即存在 $C>0$ 使 $\epsilon^{n}M\left(\epsilon\right)\le C$, 则
+记 $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. 反设存在 $n\in\mathbb{N}$ 使得 $\varepsilon^{n}M\left(\varepsilon\right)$ 有上界, 即存在 $C>0$ 使 $\varepsilon^{n}M\left(\varepsilon\right)\le C$, 则
 
 $$
 \left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad 0<\left|z-a\right|\ \text{充分小}.
 $$
 
-于是 $\left(z-a\right)^{n}f\left(z\right)$ 在 $a$ 的去心邻域有界, 由**定理 13.2.4 (黎曼)**, $0$ 是 $\left(z-a\right)^{n}f$ 的可去奇点, 故 $f$ 在 $a$ 处至多是 $n$-阶极点. 但 $a$ 是 $f$ 的本性奇点, 矛盾. 故对每个 $n\in\mathbb{N}$, $\epsilon^{n}M\left(\epsilon\right)$ 无上界, 结合 $\epsilon^{n}M\left(\epsilon\right)$ 随 $\epsilon$ 的单调行为, $\lim_{\epsilon\to0}\epsilon^{n}M\left(\epsilon\right)=+\infty$. $\blacksquare$
+于是 $\left(z-a\right)^{n}f\left(z\right)$ 在 $a$ 的去心邻域有界, 由**定理 13.2.4 (黎曼)**, $0$ 是 $\left(z-a\right)^{n}f$ 的可去奇点, 故 $f$ 在 $a$ 处至多是 $n$-阶极点. 但 $a$ 是 $f$ 的本性奇点, 矛盾. 故对每个 $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ 无上界, 结合 $\varepsilon^{n}M\left(\varepsilon\right)$ 随 $\varepsilon$ 的单调行为, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$
 
 ### 习题七
 
-(习题 13.4-17, 佩莱) 称集合 $\mathcal{E}\subset\mathbb{C}$ 是豪斯多夫长度零的, 如果对任意 $\epsilon>0$ 都存在它的由可数多个开圆盘组成的开覆盖, 且这些圆盘半径之和不超过 $\epsilon$. 令 $G\subset\mathbb{C}$ 是区域, $\mathcal{E}\subset G$ 是豪斯多夫长度零的紧子集, $f$ 是开集 $G\setminus\mathcal{E}$ 上的全纯函数. 假设存在 $M>0$ 使得 $\left|f\left(z\right)\right|\le M$, $\forall z\in G\setminus\mathcal{E}$. 证明: 存在 $G$ 上的全纯函数 $g$ 使得 $g\left(z\right)=f\left(z\right)$, $\forall z\in G\setminus\mathcal{E}$.
+(习题 13.4-17, 佩莱) 称集合 $\mathcal{E}\subset\mathbb{C}$ 是豪斯多夫长度零的, 如果对任意 $\varepsilon>0$ 都存在它的由可数多个开圆盘组成的开覆盖, 且这些圆盘半径之和不超过 $\varepsilon$. 令 $G\subset\mathbb{C}$ 是区域, $\mathcal{E}\subset G$ 是豪斯多夫长度零的紧子集, $f$ 是开集 $G\setminus\mathcal{E}$ 上的全纯函数. 假设存在 $M>0$ 使得 $\left|f\left(z\right)\right|\le M$, $\forall z\in G\setminus\mathcal{E}$. 证明: 存在 $G$ 上的全纯函数 $g$ 使得 $g\left(z\right)=f\left(z\right)$, $\forall z\in G\setminus\mathcal{E}$.
 
 ### 解答 习题七
 

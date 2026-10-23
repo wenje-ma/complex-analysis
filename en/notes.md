@@ -62,7 +62,7 @@ Let $D$ be a domain in the complex plane $\mathbb{C}$. $D$ is called simply conn
 
 **Definition 2.4.1** (Limit of a Function along a Set)
 
-Let the function $f$ be defined on a set $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. $A\in\mathbb{C}$ is called the limit of $f$ as $z$ tends to $a$ along $M$, denoted $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, if for any $\epsilon> 0$ there exists $\delta> 0$ such that for any $z\in M$, whenever $0< \rho\left(z,a\right)< \delta$ one has $\rho\left(f\left(z\right),A\right)< \epsilon$.
+Let the function $f$ be defined on a set $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. $A\in\mathbb{C}$ is called the limit of $f$ as $z$ tends to $a$ along $M$, denoted $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, if for any $\varepsilon> 0$ there exists $\delta> 0$ such that for any $z\in M$, whenever $0< \rho\left(z,a\right)< \delta$ one has $\rho\left(f\left(z\right),A\right)< \varepsilon$.
 
 **Definition 2.4.2** (Boundedness and Continuity of a Function)
 

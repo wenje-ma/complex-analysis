@@ -50,19 +50,19 @@ The proposition is proved. $\blacksquare$
 
 ### Solution to Problem 2
 
-Take any $a\in\mathbb{C}$ and the circle $\gamma_{\epsilon}\left(t\right)=a+\epsilon e^{it}$ of radius $\epsilon>0$. Since $f$ is $\mathbb{R}$-differentiable at $a$, expand
+Take any $a\in\mathbb{C}$ and the circle $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$ of radius $\varepsilon>0$. Since $f$ is $\mathbb{R}$-differentiable at $a$, expand
 
 $$
-f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\bar{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\epsilon\right),
+f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\bar{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
 $$
 
-substitute into $\int_{\gamma_{\epsilon}}f\,dz$ and follow the calculation in (Problem 7.4-2), giving
+substitute into $\int_{\gamma_{\varepsilon}}f\,dz$ and follow the calculation in (Problem 7.4-2), giving
 
 $$
-\int_{\left|z-a\right|=\epsilon}f\left(z\right)\,dz=2\pi i\epsilon^{2}\frac{\partial f}{\partial\bar{z}}\left(a\right)+o\left(\epsilon^{2}\right).
+\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\bar{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
 $$
 
-By assumption the left-hand side is zero for every $\epsilon>0$; dividing both sides by $\epsilon^{2}$ and letting $\epsilon\to0$ gives $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ was arbitrary, $\frac{\partial f}{\partial\bar{z}}\equiv0$ on $\mathbb{C}$; by **Theorem 3.2.4**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
+By assumption the left-hand side is zero for every $\varepsilon>0$; dividing both sides by $\varepsilon^{2}$ and letting $\varepsilon\to0$ gives $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ was arbitrary, $\frac{\partial f}{\partial\bar{z}}\equiv0$ on $\mathbb{C}$; by **Theorem 3.2.4**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
 
 ### Problem 3
 

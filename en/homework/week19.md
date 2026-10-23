@@ -51,19 +51,19 @@ so $u$ is harmonic on $A\left(0;0;1\right)$.
 
 (ii) Suppose, for contradiction, that there exists holomorphic $f=f_{1}+if_{2}$ with $f_{1}=u$. By the Cauchy-Riemann equations (in polar coordinates), the conjugate harmonic function $f_{2}$ satisfies $r\frac{\partial f_{2}}{\partial r}=\frac{\partial u}{\partial\theta}=0$, $\frac{\partial f_{2}}{\partial\theta}=r\frac{\partial u}{\partial r}=\frac{1}{2\pi}$. Hence $f_{2}$ is independent of $r$ and $\frac{\partial f_{2}}{\partial\theta}=\frac{1}{2\pi}$, i.e. $f_{2}=\frac{\theta}{2\pi}+c$. Along a closed curve in $A$ winding once around the origin $0$, $\theta$ increases by $2\pi$, so $f_{2}$ increases by $1$ and cannot return to its original value, contradicting that $f_{2}$ is single-valued. Hence no such holomorphic $f$ exists.
 
-(iii) $f$ has compact support in $\mathbb{D}$, so on the boundary $f=\frac{\partial f}{\partial n}=0$. Excise the origin by a small disk $B\left(0,\epsilon\right)$; on $\mathbb{D}\setminus B\left(0,\epsilon\right)$, $u$ is harmonic, and Green's second identity gives:
+(iii) $f$ has compact support in $\mathbb{D}$, so on the boundary $f=\frac{\partial f}{\partial n}=0$. Excise the origin by a small disk $B\left(0,\varepsilon\right)$; on $\mathbb{D}\setminus B\left(0,\varepsilon\right)$, $u$ is harmonic, and Green's second identity gives:
 
 $$
-\int_{\mathbb{D}\setminus B\left(0,\epsilon\right)}u\Delta f\,dx\,dy=\int_{\partial B\left(0,\epsilon\right)}\left(u\frac{\partial f}{\partial n}-f\frac{\partial u}{\partial n}\right)ds,
+\int_{\mathbb{D}\setminus B\left(0,\varepsilon\right)}u\Delta f\,dx\,dy=\int_{\partial B\left(0,\varepsilon\right)}\left(u\frac{\partial f}{\partial n}-f\frac{\partial u}{\partial n}\right)ds,
 $$
 
-(the integral over $\partial\mathbb{D}$ is $0$). On the small circle, $u=\frac{1}{2\pi}\ln\epsilon$, $\frac{\partial u}{\partial n}=\frac{1}{2\pi\epsilon}$, so
+(the integral over $\partial\mathbb{D}$ is $0$). On the small circle, $u=\frac{1}{2\pi}\ln\varepsilon$, $\frac{\partial u}{\partial n}=\frac{1}{2\pi\varepsilon}$, so
 
 $$
-\int_{\partial B\left(0,\epsilon\right)}u\frac{\partial f}{\partial n}ds=\frac{1}{2\pi}\ln\epsilon\int_{\partial B\left(0,\epsilon\right)}\frac{\partial f}{\partial n}ds\to0,
+\int_{\partial B\left(0,\varepsilon\right)}u\frac{\partial f}{\partial n}ds=\frac{1}{2\pi}\ln\varepsilon\int_{\partial B\left(0,\varepsilon\right)}\frac{\partial f}{\partial n}ds\to0,
 $$
 
-and $-\int_{\partial B\left(0,\epsilon\right)}f\frac{\partial u}{\partial n}ds=-\frac{1}{2\pi\epsilon}\int_{\partial B\left(0,\epsilon\right)}f\,ds\to-f\left(0\right)$. Letting $\epsilon\to0$, we get $\int_{\mathbb{D}}u\Delta f\,dx\,dy=f\left(0\right)$. $\blacksquare$
+and $-\int_{\partial B\left(0,\varepsilon\right)}f\frac{\partial u}{\partial n}ds=-\frac{1}{2\pi\varepsilon}\int_{\partial B\left(0,\varepsilon\right)}f\,ds\to-f\left(0\right)$. Letting $\varepsilon\to0$, we get $\int_{\mathbb{D}}u\Delta f\,dx\,dy=f\left(0\right)$. $\blacksquare$
 
 ### Problem 3
 

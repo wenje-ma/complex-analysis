@@ -50,19 +50,19 @@ $$
 
 ### 解答 习题二
 
-取任意 $a\in\mathbb{C}$ 及半径 $\epsilon>0$ 的圆周 $\gamma_{\epsilon}\left(t\right)=a+\epsilon e^{it}$. 由 $f$ 在 $a$ 处 $\mathbb{R}$-可微, 展开
+取任意 $a\in\mathbb{C}$ 及半径 $\varepsilon>0$ 的圆周 $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$. 由 $f$ 在 $a$ 处 $\mathbb{R}$-可微, 展开
 
 $$
-f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\bar{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\epsilon\right),
+f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\bar{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
 $$
 
-代入 $\int_{\gamma_{\epsilon}}f\,dz$ 并仿照 (习题 7.4-2) 的演算, 得
+代入 $\int_{\gamma_{\varepsilon}}f\,dz$ 并仿照 (习题 7.4-2) 的演算, 得
 
 $$
-\int_{\left|z-a\right|=\epsilon}f\left(z\right)\,dz=2\pi i\epsilon^{2}\frac{\partial f}{\partial\bar{z}}\left(a\right)+o\left(\epsilon^{2}\right).
+\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\bar{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
 $$
 
-由题设左边对任意 $\epsilon>0$ 为零, 两边除以 $\epsilon^{2}$ 令 $\epsilon\to0$, 得 $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial f}{\partial\bar{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4**, $f$ 在 $\mathbb{C}$ 上全纯. $\blacksquare$
+由题设左边对任意 $\varepsilon>0$ 为零, 两边除以 $\varepsilon^{2}$ 令 $\varepsilon\to0$, 得 $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial f}{\partial\bar{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4**, $f$ 在 $\mathbb{C}$ 上全纯. $\blacksquare$
 
 ### 习题三
 

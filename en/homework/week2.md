@@ -10,7 +10,7 @@
 
 > **Definition 2.2.7** (Simply and Multiply Connectedness)<br>Let $D$ be a domain in the complex plane $\mathbb{C}$. $D$ is called simply connected if the interior of every Jordan closed curve lying in $D$ is contained in $D$; otherwise it is called multiply connected.
 
-> **Definition 2.4.1** (Limit of a Function along a Set)<br>Let the function $f$ be defined on a set $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. $A\in\mathbb{C}$ is called the limit of $f$ as $z$ tends to $a$ along $M$, denoted $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, if for any $\epsilon>0$ there exists $\delta>0$ such that for any $z\in M$, whenever $0<\rho\left(z,a\right)<\delta$ one has $\rho\left(f\left(z\right),A\right)<\epsilon$.
+> **Definition 2.4.1** (Limit of a Function along a Set)<br>Let the function $f$ be defined on a set $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. $A\in\mathbb{C}$ is called the limit of $f$ as $z$ tends to $a$ along $M$, denoted $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, if for any $\varepsilon>0$ there exists $\delta>0$ such that for any $z\in M$, whenever $0<\rho\left(z,a\right)<\delta$ one has $\rho\left(f\left(z\right),A\right)<\varepsilon$.
 
 > **Definition 2.4.2** (Boundedness and Continuity of a Function)<br>If there exists $C>0$ such that $\forall z\in M$ one has $\left|f\left(z\right)\right|\le C$, then $f$ is said to be bounded on $M$; if $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, then $f$ is said to be continuous at the point $a$ (along $M$); if it is continuous for $\forall a\in M$, then $f$ is said to be continuous on $M$.
 
@@ -20,7 +20,7 @@
 
 ### Solution to Problem 1
 
-First we show that the images of any sequence in $D$ converging to $z_{0}$ converge. Take any sequence $\left\{z_{n}\right\}$ in $D$ with $z_{n}\to z_{0}$. Since $f$ is uniformly continuous on $D$, for any $\epsilon>0$ there exists $\delta>0$ such that whenever $z,w\in D$ and $\left|z-w\right|<\delta$, one has $\left|f\left(z\right)-f\left(w\right)\right|<\epsilon$. Also $\left\{z_{n}\right\}$ is a Cauchy sequence, so there exists $N$ such that whenever $m,n\ge N$, $\left|z_{m}-z_{n}\right|<\delta$, and hence $\left|f\left(z_{m}\right)-f\left(z_{n}\right)\right|<\epsilon$. Therefore $\left\{f\left(z_{n}\right)\right\}$ is a Cauchy sequence and converges in $\mathbb{C}$.
+First we show that the images of any sequence in $D$ converging to $z_{0}$ converge. Take any sequence $\left\{z_{n}\right\}$ in $D$ with $z_{n}\to z_{0}$. Since $f$ is uniformly continuous on $D$, for any $\varepsilon>0$ there exists $\delta>0$ such that whenever $z,w\in D$ and $\left|z-w\right|<\delta$, one has $\left|f\left(z\right)-f\left(w\right)\right|<\varepsilon$. Also $\left\{z_{n}\right\}$ is a Cauchy sequence, so there exists $N$ such that whenever $m,n\ge N$, $\left|z_{m}-z_{n}\right|<\delta$, and hence $\left|f\left(z_{m}\right)-f\left(z_{n}\right)\right|<\varepsilon$. Therefore $\left\{f\left(z_{n}\right)\right\}$ is a Cauchy sequence and converges in $\mathbb{C}$.
 
 Next we show that the limit does not depend on the choice of sequence. Let $z_{n},z_{n}'\in D$, $z_{n}\to z_{0}$, $z_{n}'\to z_{0}$, and $f\left(z_{n}\right)\to L$, $f\left(z_{n}'\right)\to L'$. Construct the interleaved sequence $z_{1},z_{1}',z_{2},z_{2}',\cdots$, which still converges to $z_{0}$, so its image converges; but it has two subsequences converging to $L$ and $L'$ respectively, hence $L=L'$.
 
@@ -83,7 +83,7 @@ From the polar representation, the argument of $z^{3}$ is $3$ times the argument
 
 ### Problem 4
 
-(Problem 2.5-8) Let $K\subset\mathbb{C}$ be a bounded connected closed set. Prove: for any $\epsilon>0$, there exists a Jordan closed curve $\gamma$ such that $K$ is contained in the interior of $\gamma$ and $\operatorname{dist}\left(K,\gamma\right)<\epsilon$.
+(Problem 2.5-8) Let $K\subset\mathbb{C}$ be a bounded connected closed set. Prove: for any $\varepsilon>0$, there exists a Jordan closed curve $\gamma$ such that $K$ is contained in the interior of $\gamma$ and $\operatorname{dist}\left(K,\gamma\right)<\varepsilon$.
 
 ### Solution to Problem 4
 
@@ -97,7 +97,7 @@ $$
 \operatorname{dist}\left(z,K\right)\le\sqrt{2}\,\delta+\eta,
 $$
 
-so $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. Taking $\delta<\frac{\epsilon}{2\sqrt{2}}$, $\eta<\frac{\epsilon}{2}$, we get $\operatorname{dist}\left(K,\gamma\right)<\epsilon$. $\blacksquare$
+so $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. Taking $\delta<\frac{\varepsilon}{2\sqrt{2}}$, $\eta<\frac{\varepsilon}{2}$, we get $\operatorname{dist}\left(K,\gamma\right)<\varepsilon$. $\blacksquare$
 
 ### Problem 5
 

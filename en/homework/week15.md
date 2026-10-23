@@ -66,21 +66,21 @@ $G$ is bounded, simply connected, and not $\mathbb{C}$; by the Riemann mapping t
 
 ### Problem 6
 
-(Problem 13.4-12) Let $a\in\mathbb{C}$ be an essential singularity of $f$. Prove: $\lim_{\epsilon\to0}\epsilon^{n}\max\left\{\left|f\left(z\right)\right|:\ \left|z-a\right|=\epsilon\right\}=+\infty$, $\forall n\in\mathbb{N}$.
+(Problem 13.4-12) Let $a\in\mathbb{C}$ be an essential singularity of $f$. Prove: $\lim_{\varepsilon\to0}\varepsilon^{n}\max\left\{\left|f\left(z\right)\right|:\ \left|z-a\right|=\varepsilon\right\}=+\infty$, $\forall n\in\mathbb{N}$.
 
 ### Solution to Problem 6
 
-Write $M\left(\epsilon\right):=\max_{\left|z-a\right|=\epsilon}\left|f\left(z\right)\right|$. Suppose for contradiction that there exists $n\in\mathbb{N}$ such that $\epsilon^{n}M\left(\epsilon\right)$ is bounded above, i.e. there exists $C>0$ such that $\epsilon^{n}M\left(\epsilon\right)\le C$; then
+Write $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. Suppose for contradiction that there exists $n\in\mathbb{N}$ such that $\varepsilon^{n}M\left(\varepsilon\right)$ is bounded above, i.e. there exists $C>0$ such that $\varepsilon^{n}M\left(\varepsilon\right)\le C$; then
 
 $$
 \left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad 0<\left|z-a\right|\ \text{充分小}.
 $$
 
-Hence $\left(z-a\right)^{n}f\left(z\right)$ is bounded on a punctured neighborhood of $a$; by **Theorem 13.2.4 (Riemann)**, $0$ is a removable singularity of $\left(z-a\right)^{n}f$, so $f$ has at most a pole of order $n$ at $a$. But $a$ is an essential singularity of $f$, a contradiction. Hence for every $n\in\mathbb{N}$, $\epsilon^{n}M\left(\epsilon\right)$ is unbounded above; together with the monotone behavior of $\epsilon^{n}M\left(\epsilon\right)$ as $\epsilon$ varies, $\lim_{\epsilon\to0}\epsilon^{n}M\left(\epsilon\right)=+\infty$. $\blacksquare$
+Hence $\left(z-a\right)^{n}f\left(z\right)$ is bounded on a punctured neighborhood of $a$; by **Theorem 13.2.4 (Riemann)**, $0$ is a removable singularity of $\left(z-a\right)^{n}f$, so $f$ has at most a pole of order $n$ at $a$. But $a$ is an essential singularity of $f$, a contradiction. Hence for every $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ is unbounded above; together with the monotone behavior of $\varepsilon^{n}M\left(\varepsilon\right)$ as $\varepsilon$ varies, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$
 
 ### Problem 7
 
-(Problem 13.4-17, Pólya) A set $\mathcal{E}\subset\mathbb{C}$ is said to have Hausdorff length zero if for every $\epsilon>0$ there exists an open cover of it by countably many open disks whose radii sum to at most $\epsilon$. Let $G\subset\mathbb{C}$ be a domain, $\mathcal{E}\subset G$ a compact subset of Hausdorff length zero, and $f$ holomorphic on the open set $G\setminus\mathcal{E}$. Suppose there exists $M>0$ such that $\left|f\left(z\right)\right|\le M$, $\forall z\in G\setminus\mathcal{E}$. Prove: there exists a holomorphic function $g$ on $G$ such that $g\left(z\right)=f\left(z\right)$, $\forall z\in G\setminus\mathcal{E}$.
+(Problem 13.4-17, Pólya) A set $\mathcal{E}\subset\mathbb{C}$ is said to have Hausdorff length zero if for every $\varepsilon>0$ there exists an open cover of it by countably many open disks whose radii sum to at most $\varepsilon$. Let $G\subset\mathbb{C}$ be a domain, $\mathcal{E}\subset G$ a compact subset of Hausdorff length zero, and $f$ holomorphic on the open set $G\setminus\mathcal{E}$. Suppose there exists $M>0$ such that $\left|f\left(z\right)\right|\le M$, $\forall z\in G\setminus\mathcal{E}$. Prove: there exists a holomorphic function $g$ on $G$ such that $g\left(z\right)=f\left(z\right)$, $\forall z\in G\setminus\mathcal{E}$.
 
 ### Solution to Problem 7
 

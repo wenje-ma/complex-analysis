@@ -51,19 +51,19 @@ $$
 
 (ii) 反设存在全纯 $f=f_{1}+if_{2}$ 使 $f_{1}=u$. 则由柯西-黎曼方程 (极坐标), 共轭调和函数 $f_{2}$ 满足 $r\frac{\partial f_{2}}{\partial r}=\frac{\partial u}{\partial\theta}=0$, $\frac{\partial f_{2}}{\partial\theta}=r\frac{\partial u}{\partial r}=\frac{1}{2\pi}$. 故 $f_{2}$ 与 $r$ 无关且 $\frac{\partial f_{2}}{\partial\theta}=\frac{1}{2\pi}$, 即 $f_{2}=\frac{\theta}{2\pi}+c$. 沿 $A$ 内绕原点 $0$ 一圈的闭曲线, $\theta$ 增加 $2\pi$, $f_{2}$ 增加 $1$, 不能回到原值, 与 $f_{2}$ 是单值函数矛盾. 故不存在这样的全纯 $f$.
 
-(iii) $f$ 具紧支撑于 $\mathbb{D}$, 边界上 $f=\frac{\partial f}{\partial n}=0$. 取小圆 $B\left(0,\epsilon\right)$ 挖掉原点, 在 $\mathbb{D}\setminus B\left(0,\epsilon\right)$ 上 $u$ 调和, 由格林第二恒等式:
+(iii) $f$ 具紧支撑于 $\mathbb{D}$, 边界上 $f=\frac{\partial f}{\partial n}=0$. 取小圆 $B\left(0,\varepsilon\right)$ 挖掉原点, 在 $\mathbb{D}\setminus B\left(0,\varepsilon\right)$ 上 $u$ 调和, 由格林第二恒等式:
 
 $$
-\int_{\mathbb{D}\setminus B\left(0,\epsilon\right)}u\Delta f\,dx\,dy=\int_{\partial B\left(0,\epsilon\right)}\left(u\frac{\partial f}{\partial n}-f\frac{\partial u}{\partial n}\right)ds,
+\int_{\mathbb{D}\setminus B\left(0,\varepsilon\right)}u\Delta f\,dx\,dy=\int_{\partial B\left(0,\varepsilon\right)}\left(u\frac{\partial f}{\partial n}-f\frac{\partial u}{\partial n}\right)ds,
 $$
 
-(边界 $\partial\mathbb{D}$ 上积分为 $0$). 在小圆上 $u=\frac{1}{2\pi}\ln\epsilon$, $\frac{\partial u}{\partial n}=\frac{1}{2\pi\epsilon}$, 故
+(边界 $\partial\mathbb{D}$ 上积分为 $0$). 在小圆上 $u=\frac{1}{2\pi}\ln\varepsilon$, $\frac{\partial u}{\partial n}=\frac{1}{2\pi\varepsilon}$, 故
 
 $$
-\int_{\partial B\left(0,\epsilon\right)}u\frac{\partial f}{\partial n}ds=\frac{1}{2\pi}\ln\epsilon\int_{\partial B\left(0,\epsilon\right)}\frac{\partial f}{\partial n}ds\to0,
+\int_{\partial B\left(0,\varepsilon\right)}u\frac{\partial f}{\partial n}ds=\frac{1}{2\pi}\ln\varepsilon\int_{\partial B\left(0,\varepsilon\right)}\frac{\partial f}{\partial n}ds\to0,
 $$
 
-且 $-\int_{\partial B\left(0,\epsilon\right)}f\frac{\partial u}{\partial n}ds=-\frac{1}{2\pi\epsilon}\int_{\partial B\left(0,\epsilon\right)}f\,ds\to-f\left(0\right)$. 取 $\epsilon\to0$ 得 $\int_{\mathbb{D}}u\Delta f\,dx\,dy=f\left(0\right)$. $\blacksquare$
+且 $-\int_{\partial B\left(0,\varepsilon\right)}f\frac{\partial u}{\partial n}ds=-\frac{1}{2\pi\varepsilon}\int_{\partial B\left(0,\varepsilon\right)}f\,ds\to-f\left(0\right)$. 取 $\varepsilon\to0$ 得 $\int_{\mathbb{D}}u\Delta f\,dx\,dy=f\left(0\right)$. $\blacksquare$
 
 ### 习题三
 

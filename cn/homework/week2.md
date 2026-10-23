@@ -10,7 +10,7 @@
 
 > **定义 2.2.7** (单、多连通性)<br>设 $D$ 是复平面 $\mathbb{C}$ 上的区域, 称 $D$ 为单连通的, 如果 $D$ 内任意若当闭曲线的内区域都包含在 $D$ 内; 否则称它是多连通的.
 
-> **定义 2.4.1** (函数沿某集合的极限)<br>设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, 如果对任意 $\epsilon>0$ 存在 $\delta>0$ 使对任意 $z\in M$, 若 $0<\rho\left(z,a\right)<\delta$ 则 $\rho\left(f\left(z\right),A\right)<\epsilon$.
+> **定义 2.4.1** (函数沿某集合的极限)<br>设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, 如果对任意 $\varepsilon>0$ 存在 $\delta>0$ 使对任意 $z\in M$, 若 $0<\rho\left(z,a\right)<\delta$ 则 $\rho\left(f\left(z\right),A\right)<\varepsilon$.
 
 > **定义 2.4.2** (函数的有界性和连续性)<br>若存在 $C>0$ 使 $\forall z\in M$ 有 $\left|f\left(z\right)\right|\le C$, 则称 $f$ 在 $M$ 上有界; 若 $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, 则称 $f$ 在点 $a$ 处 (沿 $M$) 连续; 若对 $\forall a\in M$ 均连续, 则称 $f$ 在 $M$ 上连续.
 
@@ -20,7 +20,7 @@
 
 ### 解答 习题一
 
-先证 $D$ 中收敛于 $z_{0}$ 的任意序列的像收敛. 任取 $D$ 中序列 $\left\{z_{n}\right\}$ 使 $z_{n}\to z_{0}$. 因 $f$ 在 $D$ 上一致连续, 对任意 $\epsilon>0$ 存在 $\delta>0$, 使当 $z,w\in D$ 且 $\left|z-w\right|<\delta$ 时有 $\left|f\left(z\right)-f\left(w\right)\right|<\epsilon$. 又 $\left\{z_{n}\right\}$ 是柯西列, 故存在 $N$ 使当 $m,n\ge N$ 时 $\left|z_{m}-z_{n}\right|<\delta$, 从而 $\left|f\left(z_{m}\right)-f\left(z_{n}\right)\right|<\epsilon$. 因此 $\left\{f\left(z_{n}\right)\right\}$ 是柯西列, 在 $\mathbb{C}$ 中收敛.
+先证 $D$ 中收敛于 $z_{0}$ 的任意序列的像收敛. 任取 $D$ 中序列 $\left\{z_{n}\right\}$ 使 $z_{n}\to z_{0}$. 因 $f$ 在 $D$ 上一致连续, 对任意 $\varepsilon>0$ 存在 $\delta>0$, 使当 $z,w\in D$ 且 $\left|z-w\right|<\delta$ 时有 $\left|f\left(z\right)-f\left(w\right)\right|<\varepsilon$. 又 $\left\{z_{n}\right\}$ 是柯西列, 故存在 $N$ 使当 $m,n\ge N$ 时 $\left|z_{m}-z_{n}\right|<\delta$, 从而 $\left|f\left(z_{m}\right)-f\left(z_{n}\right)\right|<\varepsilon$. 因此 $\left\{f\left(z_{n}\right)\right\}$ 是柯西列, 在 $\mathbb{C}$ 中收敛.
 
 再证极限不依赖序列的选取. 设 $z_{n},z_{n}'\in D$, $z_{n}\to z_{0}$, $z_{n}'\to z_{0}$, 且 $f\left(z_{n}\right)\to L$, $f\left(z_{n}'\right)\to L'$. 构造交错序列 $z_{1},z_{1}',z_{2},z_{2}',\cdots$, 它仍收敛于 $z_{0}$, 故其像收敛, 但它的两个子列分别收敛于 $L$ 与 $L'$, 从而 $L=L'$.
 
@@ -83,7 +83,7 @@ $$
 
 ### 习题四
 
-(习题 2.5-8) 令 $K\subset\mathbb{C}$ 是有界连通闭集. 证明: 对于任意 $\epsilon>0$, 都存在若当闭曲线 $\gamma$ 使得 $K$ 包含在 $\gamma$ 的内部区域而且 $\operatorname{dist}\left(K,\gamma\right)<\epsilon$.
+(习题 2.5-8) 令 $K\subset\mathbb{C}$ 是有界连通闭集. 证明: 对于任意 $\varepsilon>0$, 都存在若当闭曲线 $\gamma$ 使得 $K$ 包含在 $\gamma$ 的内部区域而且 $\operatorname{dist}\left(K,\gamma\right)<\varepsilon$.
 
 ### 解答 习题四
 
@@ -97,7 +97,7 @@ $$
 \operatorname{dist}\left(z,K\right)\le\sqrt{2}\,\delta+\eta,
 $$
 
-故 $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. 取 $\delta<\frac{\epsilon}{2\sqrt{2}}$, $\eta<\frac{\epsilon}{2}$, 得 $\operatorname{dist}\left(K,\gamma\right)<\epsilon$. $\blacksquare$
+故 $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. 取 $\delta<\frac{\varepsilon}{2\sqrt{2}}$, $\eta<\frac{\varepsilon}{2}$, 得 $\operatorname{dist}\left(K,\gamma\right)<\varepsilon$. $\blacksquare$
 
 ### 习题五
 

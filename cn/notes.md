@@ -62,7 +62,7 @@ $$
 
 **定义 2.4.1** (函数沿某集合的极限)
 
-设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, 如果对任意 $\epsilon> 0$ 存在 $\delta> 0$ 使对任意 $z\in M$, 若 $0< \rho\left(z,a\right)< \delta$ 则 $\rho\left(f\left(z\right),A\right)< \epsilon$.
+设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, 如果对任意 $\varepsilon> 0$ 存在 $\delta> 0$ 使对任意 $z\in M$, 若 $0< \rho\left(z,a\right)< \delta$ 则 $\rho\left(f\left(z\right),A\right)< \varepsilon$.
 
 **定义 2.4.2** (函数的有界性和连续性)
 
