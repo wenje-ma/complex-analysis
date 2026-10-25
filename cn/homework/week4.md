@@ -36,7 +36,7 @@ $$
 
 ### 习题二
 
-(习题 4.5-3) 描述半平面 $\left\{z\in\mathbb{C}:\operatorname{Re}z<1\right\}$ 在下述莫比乌斯变换下的像:
+(习题 4.5-3) 描述半平面 $\left\{z\in\mathbb{C}:\operatorname{Re}z< 1\right\}$ 在下述莫比乌斯变换下的像:
 
 (i) $z\mapsto\left(1+i\right)z+1$; (ii) $z\mapsto\frac{z}{z-2}$; (iii) $z\mapsto\frac{4z}{z+1}$.
 
@@ -44,22 +44,22 @@ $$
 
 边界 $\operatorname{Re}z=1$ (直线 $x=1$) 由**定理 4.3.4 (保圆性)** 被莫比乌斯变换映成广义圆, 半平面映成的区域以该广义圆为边界; 用一点确定所在侧.
 
-(i) 对 $\lambda\left(z\right)=\left(1+i\right)z+1$, 取边界点 $z=1+iy$: $\lambda\left(1+iy\right)=\left(1+i\right)\left(1+iy\right)+1=\left(2-y\right)+i\left(1+y\right)$. 令 $u=2-y$, $v=1+y$, 消去 $y$ 得 $u+v=3$, 故边界映成直线 $u+v=3$. 取内点 $z=0\in\left\{\operatorname{Re}z<1\right\}$, $\lambda\left(0\right)=1$, $1+0=1<3$. 故像集为
+(i) 对 $\lambda\left(z\right)=\left(1+i\right)z+1$, 取边界点 $z=1+iy$: $\lambda\left(1+iy\right)=\left(1+i\right)\left(1+iy\right)+1=\left(2-y\right)+i\left(1+y\right)$. 令 $u=2-y$, $v=1+y$, 消去 $y$ 得 $u+v=3$, 故边界映成直线 $u+v=3$. 取内点 $z=0\in\left\{\operatorname{Re}z< 1\right\}$, $\lambda\left(0\right)=1$, $1+0=1< 3$. 故像集为
 
 $$
-\left\{w:\operatorname{Re}w+\operatorname{Im}w<3\right\}.
+\left\{w:\operatorname{Re}w+\operatorname{Im}w< 3\right\}.
 $$
 
-(ii) 对 $\lambda\left(z\right)=\frac{z}{z-2}$, 极点 $z=2$ 不在边界 $x=1$ 上, 故边界映成圆. $\lambda\left(\infty\right)=1$, $\lambda\left(1\right)=-1$, $\lambda\left(1+i\right)=\frac{1+i}{-1+i}=-i$, 故边界映成过 $1,-1,-i$ 的圆, 即单位圆 $\left|w\right|=1$. 取 $z=0$: $\lambda\left(0\right)=0$, $\left|0\right|=0<1$. 故像集为开单位圆盘
+(ii) 对 $\lambda\left(z\right)=\frac{z}{z-2}$, 极点 $z=2$ 不在边界 $x=1$ 上, 故边界映成圆. $\lambda\left(\infty\right)=1$, $\lambda\left(1\right)=-1$, $\lambda\left(1+i\right)=\frac{1+i}{-1+i}=-i$, 故边界映成过 $1,-1,-i$ 的圆, 即单位圆 $\left|w\right|=1$. 取 $z=0$: $\lambda\left(0\right)=0$, $\left|0\right|=0< 1$. 故像集为开单位圆盘
 
 $$
-\left\{w:\left|w\right|<1\right\}.
+\left\{w:\left|w\right|< 1\right\}.
 $$
 
-(iii) 对 $\lambda\left(z\right)=\frac{4z}{z+1}$, 极点 $z=-1$ 不在边界 $x=1$ 上, 故边界映成圆. $\lambda\left(\infty\right)=4$, $\lambda\left(1\right)=2$, $\lambda\left(1+i\right)=\frac{4\left(1+i\right)}{2+i}=\frac{12+4i}{5}$, 故边界映成过 $4,2,\frac{12+4i}{5}$ 的圆. 设圆为 $x^{2}+y^{2}+ax+by+c=0$, 代入 $\left(4,0\right),\left(2,0\right),\left(2.4,0.8\right)$ 得 $a=-6$, $b=0$, $c=8$, 即 $\left(x-3\right)^{2}+y^{2}=1$, 圆心 $3$ 半径 $1$. 取 $z=0$: $\lambda\left(0\right)=0$, $\left|0-3\right|=3>1$, 在圆外; 又 $-1\in\left\{\operatorname{Re}z<1\right\}$ 且 $\lambda\left(-1\right)=\infty$. 故像集为圆外区域
+(iii) 对 $\lambda\left(z\right)=\frac{4z}{z+1}$, 极点 $z=-1$ 不在边界 $x=1$ 上, 故边界映成圆. $\lambda\left(\infty\right)=4$, $\lambda\left(1\right)=2$, $\lambda\left(1+i\right)=\frac{4\left(1+i\right)}{2+i}=\frac{12+4i}{5}$, 故边界映成过 $4,2,\frac{12+4i}{5}$ 的圆. 设圆为 $x^{2}+y^{2}+ax+by+c=0$, 代入 $\left(4,0\right),\left(2,0\right),\left(2.4,0.8\right)$ 得 $a=-6$, $b=0$, $c=8$, 即 $\left(x-3\right)^{2}+y^{2}=1$, 圆心 $3$ 半径 $1$. 取 $z=0$: $\lambda\left(0\right)=0$, $\left|0-3\right|=3> 1$, 在圆外; 又 $-1\in\left\{\operatorname{Re}z< 1\right\}$ 且 $\lambda\left(-1\right)=\infty$. 故像集为圆外区域
 
 $$
-\left\{w:\left|w-3\right|>1\right\}\cup\left\{\infty\right\}.
+\left\{w:\left|w-3\right|> 1\right\}\cup\left\{\infty\right\}.
 $$
 
 $\blacksquare$

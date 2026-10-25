@@ -12,7 +12,7 @@
 
 ### Solution to Problem 1
 
-(i) $z^{3}+2z^{2}-3z=z\left(z+3\right)\left(z-1\right)$; the singularities $0,1,-3$ all lie inside $\left|z\right|<4$, and are all simple poles. The residues are:
+(i) $z^{3}+2z^{2}-3z=z\left(z+3\right)\left(z-1\right)$; the singularities $0,1,-3$ all lie inside $\left|z\right|< 4$, and are all simple poles. The residues are:
 
 $$
 \operatorname{Res}_{0}=\frac{1}{3\cdot\left(-1\right)}=-\frac13,\quad
@@ -30,7 +30,7 @@ $$
 \int_{0}^{2\pi}\frac{dx}{4\sin^{2}x+1}=\oint_{\left|z\right|=1}\frac{1}{3-z^{2}-z^{-2}}\frac{dz}{iz}=\oint_{\left|z\right|=1}\frac{z}{i\left(3z^{2}-z^{4}-1\right)}\,dz.
 $$
 
-$3z^{2}-z^{4}-1=-\left(z^{4}-3z^{2}+1\right)$, and $z^{4}-3z^{2}+1=0$ gives $z^{2}=\frac{3\pm\sqrt5}{2}$. Inside the circle $\left|z\right|=1$, only the two roots $\pm\sqrt{\frac{3-\sqrt5}{2}}$ from $z^{2}=\frac{3-\sqrt5}{2}$ lie inside (the other pair has $\left|z\right|>1$). Write $a^{2}=u:=\frac{3-\sqrt5}{2}$; at $z=a$,
+$3z^{2}-z^{4}-1=-\left(z^{4}-3z^{2}+1\right)$, and $z^{4}-3z^{2}+1=0$ gives $z^{2}=\frac{3\pm\sqrt5}{2}$. Inside the circle $\left|z\right|=1$, only the two roots $\pm\sqrt{\frac{3-\sqrt5}{2}}$ from $z^{2}=\frac{3-\sqrt5}{2}$ lie inside (the other pair has $\left|z\right|> 1$). Write $a^{2}=u:=\frac{3-\sqrt5}{2}$; at $z=a$,
 
 $$
 \operatorname{Res}_{a}\frac{z}{i\left(3z^{2}-z^{4}-1\right)}=\frac{a}{i\left(-\left(4a^{3}-6a\right)\right)}=\frac{1}{i\left(-\left(4u-6\right)\right)}=\frac{1}{i\left(-\left(-2\sqrt5\right)\right)}=\frac{1}{2\sqrt5\,i},
@@ -56,7 +56,7 @@ $$
 \frac{1}{2\pi i}\int_{\gamma}f\left(z\right)\,dz=\sum_{j=1}^{n}\operatorname{Res}_{a_{j}}f.
 $$
 
-For the meromorphic function $f$ on the whole complex plane, take $R$ large enough so that $\gamma$ and all $a_{j}$ lie inside $\left\{\left|z\right|<R\right\}$. Applying the residue theorem on $\left\{\left|z\right|\le R\right\}$ and treating $\infty$ as a singularity, we get $\sum_{j}\operatorname{Res}_{a_{j}}f+\operatorname{Res}_{\infty}f=0$. Also,
+For the meromorphic function $f$ on the whole complex plane, take $R$ large enough so that $\gamma$ and all $a_{j}$ lie inside $\left\{\left|z\right|< R\right\}$. Applying the residue theorem on $\left\{\left|z\right|\le R\right\}$ and treating $\infty$ as a singularity, we get $\sum_{j}\operatorname{Res}_{a_{j}}f+\operatorname{Res}_{\infty}f=0$. Also,
 
 $$
 \operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right),

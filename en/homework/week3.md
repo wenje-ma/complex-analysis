@@ -44,7 +44,7 @@ $$
 \end{aligned}
 $$
 
-As $z\to z_{0}$ (i.e. $\Delta z\to0$), the last term $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. Let $\Delta z=re^{i\theta}$ ($r>0$); then $\frac{\Delta\bar{z}}{\Delta z}=e^{-2i\theta}$, which takes all values on the unit circle. Hence the set of limit points of the difference quotient is exactly
+As $z\to z_{0}$ (i.e. $\Delta z\to0$), the last term $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. Let $\Delta z=re^{i\theta}$ ($r> 0$); then $\frac{\Delta\bar{z}}{\Delta z}=e^{-2i\theta}$, which takes all values on the unit circle. Hence the set of limit points of the difference quotient is exactly
 
 $$
 \left\{\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)e^{-2i\theta}:\theta\in\left[0,2\pi\right)\right\},
@@ -54,13 +54,13 @@ i.e. the circle centered at $\frac{\partial f}{\partial z}\left(z_{0}\right)$ wi
 
 ### Problem 2
 
-(Problem 3.4-3) The function $f$ is $\mathbb{C}$-differentiable at $z_{0}\in\mathbb{C}$ and $f'\left(z_{0}\right)\ne0$. Suppose $f$ is defined on the disk $B\left(z_{0},r\right)$ centered at $z_{0}$ with radius $r>0$, and let $l$ be any straight line passing through $f\left(z_{0}\right)$. Prove: the image $f\left(B\left(z_{0},r\right)\right)$ of $B\left(z_{0},r\right)$ cannot all lie on one side of $l$.
+(Problem 3.4-3) The function $f$ is $\mathbb{C}$-differentiable at $z_{0}\in\mathbb{C}$ and $f'\left(z_{0}\right)\ne0$. Suppose $f$ is defined on the disk $B\left(z_{0},r\right)$ centered at $z_{0}$ with radius $r> 0$, and let $l$ be any straight line passing through $f\left(z_{0}\right)$. Prove: the image $f\left(B\left(z_{0},r\right)\right)$ of $B\left(z_{0},r\right)$ cannot all lie on one side of $l$.
 
 ### Solution to Problem 2
 
 We argue by contradiction. Suppose $f\left(B\left(z_{0},r\right)\right)$ all lies on one side of some line $l$ through $f\left(z_{0}\right)$. After a translation and rotation, we may assume $f\left(z_{0}\right)=0$ and $l$ is the real axis; then $\operatorname{Im}f\left(z\right)\ge0$ (or $\le0$) for all $z\in B\left(z_{0},r\right)$, i.e. $f\left(z_{0}\right)=0$ is a boundary point of $f\left(B\left(z_{0},r\right)\right)$.
 
-Since $f$ is $\mathbb{C}$-differentiable at $z_{0}$ and $f'\left(z_{0}\right)\ne0$, by **Theorem 4.1.5**, $f$ is conformal at $z_{0}$. Because $f'\left(z_{0}\right)\ne0$, $f$ is locally univalent on some open neighborhood $U\subset B\left(z_{0},r\right)$ of $z_{0}$ (and hence locally univalent and holomorphic); by **Theorem 10.2.4**, $f\left(U\right)$ is open and has $f\left(z_{0}\right)=0$ as an interior point. Hence there exists $\delta>0$ such that $f\left(U\right)$ contains the open disk $\left\{w:\left|w\right|<\delta\right\}$ centered at $0$, which contains points both above and below the real axis, contradicting the claim that "$f\left(B\left(z_{0},r\right)\right)$ all lies on one side of the real axis."
+Since $f$ is $\mathbb{C}$-differentiable at $z_{0}$ and $f'\left(z_{0}\right)\ne0$, by **Theorem 4.1.5**, $f$ is conformal at $z_{0}$. Because $f'\left(z_{0}\right)\ne0$, $f$ is locally univalent on some open neighborhood $U\subset B\left(z_{0},r\right)$ of $z_{0}$ (and hence locally univalent and holomorphic); by **Theorem 10.2.4**, $f\left(U\right)$ is open and has $f\left(z_{0}\right)=0$ as an interior point. Hence there exists $\delta> 0$ such that $f\left(U\right)$ contains the open disk $\left\{w:\left|w\right|< \delta\right\}$ centered at $0$, which contains points both above and below the real axis, contradicting the claim that "$f\left(B\left(z_{0},r\right)\right)$ all lies on one side of the real axis."
 
 Therefore $f\left(B\left(z_{0},r\right)\right)$ cannot all lie on one side of the line $l$. $\blacksquare$
 

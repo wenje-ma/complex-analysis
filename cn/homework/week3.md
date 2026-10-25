@@ -44,7 +44,7 @@ $$
 \end{aligned}
 $$
 
-当 $z\to z_{0}$ (即 $\Delta z\to0$) 时, 末项 $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. 令 $\Delta z=re^{i\theta}$ ($r>0$), 则 $\frac{\Delta\bar{z}}{\Delta z}=e^{-2i\theta}$, 其取值遍及整个单位圆周. 故差商的极限点集合恰为
+当 $z\to z_{0}$ (即 $\Delta z\to0$) 时, 末项 $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. 令 $\Delta z=re^{i\theta}$ ($r> 0$), 则 $\frac{\Delta\bar{z}}{\Delta z}=e^{-2i\theta}$, 其取值遍及整个单位圆周. 故差商的极限点集合恰为
 
 $$
 \left\{\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)e^{-2i\theta}:\theta\in\left[0,2\pi\right)\right\},
@@ -54,13 +54,13 @@ $$
 
 ### 习题二
 
-(习题 3.4-3) 函数 $f$ 在 $z_{0}\in\mathbb{C}$ 处是 $\mathbb{C}$-可微的且 $f'\left(z_{0}\right)\ne0$. 假设 $f$ 在以 $z_{0}$ 为圆心、$r>0$ 为半径的圆盘 $B\left(z_{0},r\right)$ 上有定义, $l$ 为通过 $f\left(z_{0}\right)$ 点的任意一条直线. 证明: $B\left(z_{0},r\right)$ 的像 $f\left(B\left(z_{0},r\right)\right)$ 不可能全部落在 $l$ 的某一侧上.
+(习题 3.4-3) 函数 $f$ 在 $z_{0}\in\mathbb{C}$ 处是 $\mathbb{C}$-可微的且 $f'\left(z_{0}\right)\ne0$. 假设 $f$ 在以 $z_{0}$ 为圆心、$r> 0$ 为半径的圆盘 $B\left(z_{0},r\right)$ 上有定义, $l$ 为通过 $f\left(z_{0}\right)$ 点的任意一条直线. 证明: $B\left(z_{0},r\right)$ 的像 $f\left(B\left(z_{0},r\right)\right)$ 不可能全部落在 $l$ 的某一侧上.
 
 ### 解答 习题二
 
 反证. 假设 $f\left(B\left(z_{0},r\right)\right)$ 全部落在过 $f\left(z_{0}\right)$ 的某条直线 $l$ 的某一侧. 经平移与旋转, 可设 $f\left(z_{0}\right)=0$ 且 $l$ 为实轴, 于是 $\operatorname{Im}f\left(z\right)\ge0$ (或 $\le0$) 对一切 $z\in B\left(z_{0},r\right)$ 成立, 即 $f\left(z_{0}\right)=0$ 是 $f\left(B\left(z_{0},r\right)\right)$ 的边界点.
 
-由 $f$ 在 $z_{0}$ 处 $\mathbb{C}$-可微且 $f'\left(z_{0}\right)\ne0$, 结合**定理 4.1.5**, $f$ 在 $z_{0}$ 处共形. 因 $f'\left(z_{0}\right)\ne0$, $f$ 在 $z_{0}$ 的某个开邻域 $U\subset B\left(z_{0},r\right)$ 上局部单叶 (故局部单叶全纯), 由**定理 10.2.4**, $f\left(U\right)$ 是开集且以 $f\left(z_{0}\right)=0$ 为内点. 于是存在 $\delta>0$ 使 $f\left(U\right)$ 含以 $0$ 为圆心的开圆盘 $\left\{w:\left|w\right|<\delta\right\}$, 而该圆盘包含实轴上、下两侧的点, 与"$f\left(B\left(z_{0},r\right)\right)$ 全部落在实轴某一侧"矛盾.
+由 $f$ 在 $z_{0}$ 处 $\mathbb{C}$-可微且 $f'\left(z_{0}\right)\ne0$, 结合**定理 4.1.5**, $f$ 在 $z_{0}$ 处共形. 因 $f'\left(z_{0}\right)\ne0$, $f$ 在 $z_{0}$ 的某个开邻域 $U\subset B\left(z_{0},r\right)$ 上局部单叶 (故局部单叶全纯), 由**定理 10.2.4**, $f\left(U\right)$ 是开集且以 $f\left(z_{0}\right)=0$ 为内点. 于是存在 $\delta> 0$ 使 $f\left(U\right)$ 含以 $0$ 为圆心的开圆盘 $\left\{w:\left|w\right|< \delta\right\}$, 而该圆盘包含实轴上、下两侧的点, 与"$f\left(B\left(z_{0},r\right)\right)$ 全部落在实轴某一侧"矛盾.
 
 故 $f\left(B\left(z_{0},r\right)\right)$ 不可能全部落在直线 $l$ 的某一侧. $\blacksquare$
 

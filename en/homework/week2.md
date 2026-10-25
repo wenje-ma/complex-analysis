@@ -1,6 +1,6 @@
 # Assignment 2
 
-> **Definition 2.1.2** (Reparametrization of a Path)<br>A path $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ is called a reparametrization of a path $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ if there exists a monotonically increasing function $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ satisfying $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, such that for any $t\in\left[a_{1},b_{1}\right]$ one has $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; if $\tau$ is discontinuous at some point $\bar{t}$, i.e. $\tau\left(\bar{t}-0\right)<\tau\left(\bar{t}+0\right)$, it is further required that $\gamma_{2}$ be constant on the interval $\left[\tau\left(\bar{t}-0\right),\tau\left(\bar{t}+0\right)\right]$.
+> **Definition 2.1.2** (Reparametrization of a Path)<br>A path $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ is called a reparametrization of a path $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ if there exists a monotonically increasing function $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ satisfying $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, such that for any $t\in\left[a_{1},b_{1}\right]$ one has $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; if $\tau$ is discontinuous at some point $\bar{t}$, i.e. $\tau\left(\bar{t}-0\right)< \tau\left(\bar{t}+0\right)$, it is further required that $\gamma_{2}$ be constant on the interval $\left[\tau\left(\bar{t}-0\right),\tau\left(\bar{t}+0\right)\right]$.
 
 > **Definition 2.1.4** (Curve)<br>An equivalence class of paths under reparametrization is called a curve.
 
@@ -10,9 +10,9 @@
 
 > **Definition 2.2.7** (Simply and Multiply Connectedness)<br>Let $D$ be a domain in the complex plane $\mathbb{C}$. $D$ is called simply connected if the interior of every Jordan closed curve lying in $D$ is contained in $D$; otherwise it is called multiply connected.
 
-> **Definition 2.4.1** (Limit of a Function along a Set)<br>Let the function $f$ be defined on a set $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. $A\in\mathbb{C}$ is called the limit of $f$ as $z$ tends to $a$ along $M$, denoted $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, if for any $\varepsilon>0$ there exists $\delta>0$ such that for any $z\in M$, whenever $0<\rho\left(z,a\right)<\delta$ one has $\rho\left(f\left(z\right),A\right)<\varepsilon$.
+> **Definition 2.4.1** (Limit of a Function along a Set)<br>Let the function $f$ be defined on a set $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. $A\in\mathbb{C}$ is called the limit of $f$ as $z$ tends to $a$ along $M$, denoted $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, if for any $\varepsilon> 0$ there exists $\delta> 0$ such that for any $z\in M$, whenever $0< \rho\left(z,a\right)< \delta$ one has $\rho\left(f\left(z\right),A\right)< \varepsilon$.
 
-> **Definition 2.4.2** (Boundedness and Continuity of a Function)<br>If there exists $C>0$ such that $\forall z\in M$ one has $\left|f\left(z\right)\right|\le C$, then $f$ is said to be bounded on $M$; if $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, then $f$ is said to be continuous at the point $a$ (along $M$); if it is continuous for $\forall a\in M$, then $f$ is said to be continuous on $M$.
+> **Definition 2.4.2** (Boundedness and Continuity of a Function)<br>If there exists $C> 0$ such that $\forall z\in M$ one has $\left|f\left(z\right)\right|\le C$, then $f$ is said to be bounded on $M$; if $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, then $f$ is said to be continuous at the point $a$ (along $M$); if it is continuous for $\forall a\in M$, then $f$ is said to be continuous on $M$.
 
 ### Problem 1
 
@@ -20,7 +20,7 @@
 
 ### Solution to Problem 1
 
-First we show that the images of any sequence in $D$ converging to $z_{0}$ converge. Take any sequence $\left\{z_{n}\right\}$ in $D$ with $z_{n}\to z_{0}$. Since $f$ is uniformly continuous on $D$, for any $\varepsilon>0$ there exists $\delta>0$ such that whenever $z,w\in D$ and $\left|z-w\right|<\delta$, one has $\left|f\left(z\right)-f\left(w\right)\right|<\varepsilon$. Also $\left\{z_{n}\right\}$ is a Cauchy sequence, so there exists $N$ such that whenever $m,n\ge N$, $\left|z_{m}-z_{n}\right|<\delta$, and hence $\left|f\left(z_{m}\right)-f\left(z_{n}\right)\right|<\varepsilon$. Therefore $\left\{f\left(z_{n}\right)\right\}$ is a Cauchy sequence and converges in $\mathbb{C}$.
+First we show that the images of any sequence in $D$ converging to $z_{0}$ converge. Take any sequence $\left\{z_{n}\right\}$ in $D$ with $z_{n}\to z_{0}$. Since $f$ is uniformly continuous on $D$, for any $\varepsilon> 0$ there exists $\delta> 0$ such that whenever $z,w\in D$ and $\left|z-w\right|< \delta$, one has $\left|f\left(z\right)-f\left(w\right)\right|< \varepsilon$. Also $\left\{z_{n}\right\}$ is a Cauchy sequence, so there exists $N$ such that whenever $m,n\ge N$, $\left|z_{m}-z_{n}\right|< \delta$, and hence $\left|f\left(z_{m}\right)-f\left(z_{n}\right)\right|< \varepsilon$. Therefore $\left\{f\left(z_{n}\right)\right\}$ is a Cauchy sequence and converges in $\mathbb{C}$.
 
 Next we show that the limit does not depend on the choice of sequence. Let $z_{n},z_{n}'\in D$, $z_{n}\to z_{0}$, $z_{n}'\to z_{0}$, and $f\left(z_{n}\right)\to L$, $f\left(z_{n}'\right)\to L'$. Construct the interleaved sequence $z_{1},z_{1}',z_{2},z_{2}',\cdots$, which still converges to $z_{0}$, so its image converges; but it has two subsequences converging to $L$ and $L'$ respectively, hence $L=L'$.
 
@@ -83,11 +83,11 @@ From the polar representation, the argument of $z^{3}$ is $3$ times the argument
 
 ### Problem 4
 
-(Problem 2.5-8) Let $K\subset\mathbb{C}$ be a bounded connected closed set. Prove: for any $\varepsilon>0$, there exists a Jordan closed curve $\gamma$ such that $K$ is contained in the interior of $\gamma$ and $\operatorname{dist}\left(K,\gamma\right)<\varepsilon$.
+(Problem 2.5-8) Let $K\subset\mathbb{C}$ be a bounded connected closed set. Prove: for any $\varepsilon> 0$, there exists a Jordan closed curve $\gamma$ such that $K$ is contained in the interior of $\gamma$ and $\operatorname{dist}\left(K,\gamma\right)< \varepsilon$.
 
 ### Solution to Problem 4
 
-$K$ is bounded and closed, hence compact. Choose $\eta>0$ to be determined, and let $K_{\eta}=\left\{z\in\mathbb{C}:\operatorname{dist}\left(z,K\right)\le\eta\right\}$ be the closed $\eta$-neighborhood of $K$. $K_{\eta}$ is still compact, and $K\subset K_{\eta}^{\circ}$ (i.e. $K$ lies in the interior of $K_{\eta}$), because for each $k\in K$ there is an open disk centered at $k$ contained in $K_{\eta}$.
+$K$ is bounded and closed, hence compact. Choose $\eta> 0$ to be determined, and let $K_{\eta}=\left\{z\in\mathbb{C}:\operatorname{dist}\left(z,K\right)\le\eta\right\}$ be the closed $\eta$-neighborhood of $K$. $K_{\eta}$ is still compact, and $K\subset K_{\eta}^{\circ}$ (i.e. $K$ lies in the interior of $K_{\eta}$), because for each $k\in K$ there is an open disk centered at $k$ contained in $K_{\eta}$.
 
 Cover the complex plane with a square grid of side length $\delta$, and take the union of all closed squares intersecting $K_{\eta}$ to form a set $P$. Since $K_{\eta}$ is compact, only finitely many squares intersect it, so $P$ is a union of finitely many closed squares. Also $K_{\eta}$ is connected (since $K$ is connected, its $\eta$-tube neighborhood is connected); when $\delta$ is sufficiently small, these squares are connected in sequence along $K_{\eta}$, so $P$ is connected. Take the outer boundary of $P$, $\gamma=\partial_{\text{外}}P$ (the simple closed polygonal line formed by the outermost square edges); then $\gamma$ is a Jordan closed curve (**Theorem 2.2.6 (Jordan Curve Theorem)**).
 
@@ -97,7 +97,7 @@ $$
 \operatorname{dist}\left(z,K\right)\le\sqrt{2}\,\delta+\eta,
 $$
 
-so $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. Taking $\delta<\frac{\varepsilon}{2\sqrt{2}}$, $\eta<\frac{\varepsilon}{2}$, we get $\operatorname{dist}\left(K,\gamma\right)<\varepsilon$. $\blacksquare$
+so $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. Taking $\delta< \frac{\varepsilon}{2\sqrt{2}}$, $\eta< \frac{\varepsilon}{2}$, we get $\operatorname{dist}\left(K,\gamma\right)< \varepsilon$. $\blacksquare$
 
 ### Problem 5
 
@@ -108,13 +108,13 @@ so $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. Taking $\
 Take the exterior of the closed unit disk
 
 $$
-D=\left\{z\in\mathbb{C}:\left|z\right|>1\right\}.
+D=\left\{z\in\mathbb{C}:\left|z\right|> 1\right\}.
 $$
 
-First verify that $D$ is a domain (**Definition 2.2.4 (Domain)**): $D$ is open (the open set $\left\{\left|z\right|>1\right\}$); and for any $a,b\in D$, there exists $R>\max\left\{\left|a\right|,\left|b\right|\right\}$; take an arc $\gamma_{1}$ connecting $a$ to a point of modulus $R$, an arc $\gamma_{2}$ along the circle $\left|z\right|=R$, and an arc $\gamma_{3}$ connecting back to $b$; all three segments lie in $D$, so $D$ is path-connected. Hence $D$ is a domain.
+First verify that $D$ is a domain (**Definition 2.2.4 (Domain)**): $D$ is open (the open set $\left\{\left|z\right|> 1\right\}$); and for any $a,b\in D$, there exists $R> \max\left\{\left|a\right|,\left|b\right|\right\}$; take an arc $\gamma_{1}$ connecting $a$ to a point of modulus $R$, an arc $\gamma_{2}$ along the circle $\left|z\right|=R$, and an arc $\gamma_{3}$ connecting back to $b$; all three segments lie in $D$, so $D$ is path-connected. Hence $D$ is a domain.
 
 Next, $\mathbb{C}\setminus D=\left\{z\in\mathbb{C}:\left|z\right|\le1\right\}$ is the closed unit disk, which is clearly connected.
 
-Finally, $D$ is not simply connected: the circle $\gamma\left(t\right)=2e^{it}$, $t\in\left[0,2\pi\right]$, lies in $D$ and is a Jordan closed curve; its interior $\left\{\left|z\right|<2\right\}$ contains the closed unit disk $\left\{\left|z\right|\le1\right\}\subset\mathbb{C}\setminus D$, so $\left\{\left|z\right|<2\right\}\not\subset D$. By **Definition 2.2.7 (Simply and Multiply Connectedness)**, $D$ is not simply connected.
+Finally, $D$ is not simply connected: the circle $\gamma\left(t\right)=2e^{it}$, $t\in\left[0,2\pi\right]$, lies in $D$ and is a Jordan closed curve; its interior $\left\{\left|z\right|< 2\right\}$ contains the closed unit disk $\left\{\left|z\right|\le1\right\}\subset\mathbb{C}\setminus D$, so $\left\{\left|z\right|< 2\right\}\not\subset D$. By **Definition 2.2.7 (Simply and Multiply Connectedness)**, $D$ is not simply connected.
 
-In summary, $D=\left\{z:\left|z\right|>1\right\}$ satisfies the requirement. $\blacksquare$
+In summary, $D=\left\{z:\left|z\right|> 1\right\}$ satisfies the requirement. $\blacksquare$

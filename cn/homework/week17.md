@@ -4,11 +4,11 @@
 
 > **柯西积分公式**<br>$f$ 在 $\overline{B\left(a,r\right)}$ 全纯, 则 $$f\left(a\right)=\frac{1}{2\pi i}\oint_{\left|z-a\right|=r}\frac{f\left(z\right)}{z-a}\,dz.$$
 
-> **标准积分**<br>对 $0<\alpha<2$, $a>0$, $$\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.$$
+> **标准积分**<br>对 $0< \alpha< 2$, $a> 0$, $$\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.$$
 
 ### 习题一
 
-(习题 14.3-6) 计算积分 $\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx$, 其中 $2\le n\in\mathbb{N}$, $a>0$.
+(习题 14.3-6) 计算积分 $\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx$, 其中 $2\le n\in\mathbb{N}$, $a> 0$.
 
 ### 解答 习题一
 
@@ -28,7 +28,7 @@ $$
 
 ### 解答 习题二
 
-令 $x=t^{2}$, $t>0$, 则 $\sqrt{x}=t$, $dx=2t\,dt$:
+令 $x=t^{2}$, $t> 0$, 则 $\sqrt{x}=t$, $dx=2t\,dt$:
 
 $$
 \int_{0}^{+\infty}\frac{dx}{\sqrt{x}\left(1+x\right)}=\int_{0}^{+\infty}\frac{2t\,dt}{t\left(1+t^{2}\right)}=2\int_{0}^{+\infty}\frac{dt}{1+t^{2}}=2\cdot\frac{\pi}{2}=\pi.
@@ -58,7 +58,7 @@ $$
 
 ### 习题四
 
-(习题 14.3-11) 令 $f$ 是 $\mathbb{C}$ 上的全纯函数, $R>0$, $a,b\in\mathbb{C}$ 且 $\left|a\right|,\left|b\right|<R$. (i) 计算积分 $\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz$, 其中 $\gamma\left(t\right)=Re^{it}$, $t\in\left[0,2\pi\right]$; (ii) 利用 (i) 中的积分证明刘维尔定理: $\mathbb{C}$ 上的有界全纯函数都是常值的.
+(习题 14.3-11) 令 $f$ 是 $\mathbb{C}$ 上的全纯函数, $R> 0$, $a,b\in\mathbb{C}$ 且 $\left|a\right|,\left|b\right|< R$. (i) 计算积分 $\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz$, 其中 $\gamma\left(t\right)=Re^{it}$, $t\in\left[0,2\pi\right]$; (ii) 利用 (i) 中的积分证明刘维尔定理: $\mathbb{C}$ 上的有界全纯函数都是常值的.
 
 ### 解答 习题四
 
@@ -78,7 +78,7 @@ $$
 
 ### 习题五
 
-(习题 14.3-16, 高斯积分) 令 $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (即 $\beta^{2}=i\pi$), 考虑函数 $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta z}}$. (i) 验证 $f$ 只在点集 $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,\ n\in\mathbb{Z}\right\}$ 处有奇点, 且都为简单极点; (ii) 验证 $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$, $\forall z\in\mathbb{C}\setminus\mathcal{Z}$; (iii) 对于 $R>0$ 充分大, 考虑以 $-R,R,R+\beta,-R+\beta$ 为顶点的平行四边形 $\Omega$, 验证 $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi i\operatorname{Res}_{z_{0}}f$, 其中 $z_{0}$ 如 (i); (iv) 利用上述结论, 验证 $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
+(习题 14.3-16, 高斯积分) 令 $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (即 $\beta^{2}=i\pi$), 考虑函数 $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta z}}$. (i) 验证 $f$ 只在点集 $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,\ n\in\mathbb{Z}\right\}$ 处有奇点, 且都为简单极点; (ii) 验证 $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$, $\forall z\in\mathbb{C}\setminus\mathcal{Z}$; (iii) 对于 $R> 0$ 充分大, 考虑以 $-R,R,R+\beta,-R+\beta$ 为顶点的平行四边形 $\Omega$, 验证 $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi i\operatorname{Res}_{z_{0}}f$, 其中 $z_{0}$ 如 (i); (iv) 利用上述结论, 验证 $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
 
 ### 解答 习题五
 

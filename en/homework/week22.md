@@ -1,8 +1,8 @@
 # Assignment 22
 
-> **Definition 19.1.1** (Gamma Function)<br>$$\Gamma\left(s\right)=\int_{0}^{+\infty}e^{-t}t^{s-1}dt,\quad s>0.$$
+> **Definition 19.1.1** (Gamma Function)<br>$$\Gamma\left(s\right)=\int_{0}^{+\infty}e^{-t}t^{s-1}dt,\quad s> 0.$$
 
-> **Proposition 19.1.3**<br>If $\operatorname{Re}z>0$, then $\Gamma\left(z+1\right)=z\Gamma\left(z\right)$; it extends to a meromorphic function on $\mathbb{C}$, with simple poles only at $0,-1,-2,\ldots$.
+> **Proposition 19.1.3**<br>If $\operatorname{Re}z> 0$, then $\Gamma\left(z+1\right)=z\Gamma\left(z\right)$; it extends to a meromorphic function on $\mathbb{C}$, with simple poles only at $0,-1,-2,\ldots$.
 
 > **Theorem 19.2.1** (Reflection Formula)<br>$$\Gamma\left(z\right)\Gamma\left(1-z\right)=\frac{\pi}{\sin\pi z},\quad z\in\mathbb{C}\setminus\mathbb{Z}.$$
 
@@ -12,13 +12,13 @@
 
 ### Problem 1
 
-(Problem 19.3-1) Let $\mathcal{E}_{0}\left(z\right)=1-z$, $\mathcal{E}_{k}\left(z\right)=\left(1-z\right)e^{z+\frac{z^{2}}{2}+\cdots+\frac{z^{k}}{k}}$, $k\ge1$. Prove: there exist constants $c,c',c''>0$ such that (i) if $\left|z\right|\le\frac12$, then $\left|1-\mathcal{E}_{k}\left(z\right)\right|\le c\left|z\right|^{k+1}$, $k\ge0$; (ii) if $\left|z\right|\le\frac12$, then $\left|\mathcal{E}_{k}\right|\ge e^{-c'\left|z\right|^{k+1}}$, $k\ge0$; (iii) if $\left|z\right|\ge\frac12$, then $\left|\mathcal{E}_{k}\right|\ge\left|1-z\right|e^{-c'\left|z\right|^{k}}$, $k\ge0$.
+(Problem 19.3-1) Let $\mathcal{E}_{0}\left(z\right)=1-z$, $\mathcal{E}_{k}\left(z\right)=\left(1-z\right)e^{z+\frac{z^{2}}{2}+\cdots+\frac{z^{k}}{k}}$, $k\ge1$. Prove: there exist constants $c,c',c''> 0$ such that (i) if $\left|z\right|\le\frac12$, then $\left|1-\mathcal{E}_{k}\left(z\right)\right|\le c\left|z\right|^{k+1}$, $k\ge0$; (ii) if $\left|z\right|\le\frac12$, then $\left|\mathcal{E}_{k}\right|\ge e^{-c'\left|z\right|^{k+1}}$, $k\ge0$; (iii) if $\left|z\right|\ge\frac12$, then $\left|\mathcal{E}_{k}\right|\ge\left|1-z\right|e^{-c'\left|z\right|^{k}}$, $k\ge0$.
 
 ### Solution to Problem 1
 
 Write $S_{k}\left(z\right):=\sum_{j=1}^{k}\frac{z^{j}}{j}$; then $\mathcal{E}_{k}\left(z\right)=\left(1-z\right)e^{S_{k}\left(z\right)}$.
 
-(i) Since $-\log\left(1-z\right)=\sum_{j=1}^{+\infty}\frac{z^{j}}{j}$ (on $\left|z\right|<1$), $\log\frac{1}{1-z}-S_{k}\left(z\right)=\sum_{j=k+1}^{+\infty}\frac{z^{j}}{j}$. Hence
+(i) Since $-\log\left(1-z\right)=\sum_{j=1}^{+\infty}\frac{z^{j}}{j}$ (on $\left|z\right|< 1$), $\log\frac{1}{1-z}-S_{k}\left(z\right)=\sum_{j=k+1}^{+\infty}\frac{z^{j}}{j}$. Hence
 
 $$
 1-\mathcal{E}_{k}\left(z\right)=1-\left(1-z\right)e^{S_{k}}=\left(1-z\right)\left(e^{-\log\left(1-z\right)}-e^{S_{k}}\right)=\left(1-z\right)e^{S_{k}}\left(e^{\sum_{j\ge k+1}\frac{z^{j}}{j}}-1\right).
@@ -36,7 +36,7 @@ For $\left|z\right|\le\frac12$, $\left|e^{S_{k}}\right|\le e^{\sum\left|z\right|
 
 ### Solution to Problem 2
 
-For any $R>0$, since $a_{n}\to\infty$, there exists $N$ such that for $n>N$, $\left|a_{n}\right|>2R$, so $\left|z/a_{n}\right|\le\frac12$ ($\left|z\right|\le R$). By **Problem 1 (i)**, $\left|1-\mathcal{E}_{n}\left(z/a_{n}\right)\right|\le c\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}$, and $\sum_{n}\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}\le\sum_{n>N}\left(\frac12\right)^{n+1}<+\infty$. Hence the product converges uniformly on $\left\{\left|z\right|\le R\right\}$, and $f$ is entire.
+For any $R> 0$, since $a_{n}\to\infty$, there exists $N$ such that for $n> N$, $\left|a_{n}\right|> 2R$, so $\left|z/a_{n}\right|\le\frac12$ ($\left|z\right|\le R$). By **Problem 1 (i)**, $\left|1-\mathcal{E}_{n}\left(z/a_{n}\right)\right|\le c\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}$, and $\sum_{n}\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}\le\sum_{n> N}\left(\frac12\right)^{n+1}< +\infty$. Hence the product converges uniformly on $\left\{\left|z\right|\le R\right\}$, and $f$ is entire.
 
 Each factor $\mathcal{E}_{n}\left(z/a_{n}\right)$ has a zero only at $z=a_{n}$ (since $\mathcal{E}_{n}\left(0\right)=1$, and the only zero of $\mathcal{E}_{n}$ is at $z=a_{n}$), and it is a simple zero. The product vanishes at $a_{n}$, while the other factors are nonzero (each $a_{n}$ is distinct, counted with multiplicity), so the zeros of $f$ are exactly the $a_{n}$, and the order at $a_{n}$ equals the number of times $a_{n}$ appears in the sequence. $\blacksquare$
 

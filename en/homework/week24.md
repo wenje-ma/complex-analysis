@@ -1,6 +1,6 @@
 # Assignment 24
 
-> **Theorem 21.1.3** (Bloch)<br>There exists a constant $B>0$: if $f$ is holomorphic on the unit disk and $f'\left(0\right)=1$, then $f\left(\mathbb{D}\right)$ contains a disk of radius at least $B$.
+> **Theorem 21.1.3** (Bloch)<br>There exists a constant $B> 0$: if $f$ is holomorphic on the unit disk and $f'\left(0\right)=1$, then $f\left(\mathbb{D}\right)$ contains a disk of radius at least $B$.
 
 > **Theorem 21.2.3** (Little Picard Theorem)<br>A nonconstant entire function takes every value in $\mathbb{C}$, or all but one value.
 
@@ -16,7 +16,7 @@
 
 Little Picard Theorem: a nonconstant entire function cannot omit two distinct values.
 
-By **Problem 21.5-3 (Landau)**, there exists a positive function $R\left(a\right)>0$ ($a\in\mathbb{C}\setminus\left\{0,1\right\}$) such that: for any $a$, there is no holomorphic function $f$ on the closed disk $\left\{\left|z\right|\le R\left(a\right)\right\}$ satisfying $f\left(0\right)=a$, $f'\left(0\right)=1$, and $f$ omits the values $0$ and $1$.
+By **Problem 21.5-3 (Landau)**, there exists a positive function $R\left(a\right)> 0$ ($a\in\mathbb{C}\setminus\left\{0,1\right\}$) such that: for any $a$, there is no holomorphic function $f$ on the closed disk $\left\{\left|z\right|\le R\left(a\right)\right\}$ satisfying $f\left(0\right)=a$, $f'\left(0\right)=1$, and $f$ omits the values $0$ and $1$.
 
 Suppose $F$ is entire and omits the values $0,1$. If $F$ is nonconstant, choose $z_{0}$ such that $F'\left(z_{0}\right)\ne0$; let $a:=F\left(z_{0}\right)\in\mathbb{C}\setminus\left\{0,1\right\}$. Define $g\left(w\right):=F\left(z_{0}+\frac{w}{F'\left(z_{0}\right)}\right)$; then $g$ is holomorphic on $\mathbb{C}$ (hence on the closed disk $\left\{\left|w\right|\le R\left(a\right)\right\}$), $g\left(0\right)=F\left(z_{0}\right)=a$, $g'\left(0\right)=1$, and $g$ omits the values $0,1$, contradicting Landau's result. Hence $F$ must be constant, proving the Little Picard Theorem. $\blacksquare$
 

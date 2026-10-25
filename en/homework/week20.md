@@ -14,7 +14,7 @@
 
 ### Solution to Problem 1
 
-Series $1$ is a geometric series; it converges when $\left|iz\right|<1$, i.e. $\left|z\right|<1$, and its sum is
+Series $1$ is a geometric series; it converges when $\left|iz\right|< 1$, i.e. $\left|z\right|< 1$, and its sum is
 
 $$
 1+\sum_{n=1}^{+\infty}\left(iz\right)^{n}=1+\frac{iz}{1-iz}=\frac{1}{1-iz}.
@@ -26,13 +26,13 @@ $$
 \frac{1}{1-z}\left[1+\sum_{n=1}^{+\infty}\left(\frac{\left(1-i\right)\left(-z\right)}{1-z}\right)^{n}\right],
 $$
 
-which converges when $\left|\frac{\left(1-i\right)\left(-z\right)}{1-z}\right|<1$, i.e. $\sqrt2\left|z\right|<\left|1-z\right|$ (which also implies $\left|z\right|<1$), and its sum is
+which converges when $\left|\frac{\left(1-i\right)\left(-z\right)}{1-z}\right|< 1$, i.e. $\sqrt2\left|z\right|< \left|1-z\right|$ (which also implies $\left|z\right|< 1$), and its sum is
 
 $$
 \frac{1}{1-z}\cdot\frac{1}{1-\frac{\left(1-i\right)\left(-z\right)}{1-z}}=\frac{1}{1-z-\left(1-i\right)z}=\frac{1}{1-iz}.
 $$
 
-The two regions $\left\{\left|z\right|<1\right\}$ and $\left\{\sqrt2\left|z\right|<\left|1-z\right|\right\}$ have nonempty overlap, and on this overlap the two series represent the same function $\frac{1}{1-iz}$. By **Definition 17.2.2 (Direct Holomorphic Continuation)**, the two are direct holomorphic continuations of each other. $\blacksquare$
+The two regions $\left\{\left|z\right|< 1\right\}$ and $\left\{\sqrt2\left|z\right|< \left|1-z\right|\right\}$ have nonempty overlap, and on this overlap the two series represent the same function $\frac{1}{1-iz}$. By **Definition 17.2.2 (Direct Holomorphic Continuation)**, the two are direct holomorphic continuations of each other. $\blacksquare$
 
 ### Problem 2
 
@@ -52,7 +52,7 @@ Since $f_{0}=g$ on $U_{0}\cap\Omega$ and $\gamma\subset\Omega$, $g$ is holomorph
 
 ### Problem 4
 
-(Problem 17.4-5) Let $U_{0}=B\left(1,1\right):=\left\{\left|z-1\right|<1\right\}$, and let $f_{0}$ be a holomorphic branch of the logarithm $\operatorname{Log}z$ on $U_{0}$. For any $n\in\mathbb{Z}\setminus\left\{0\right\}$, let $\gamma_{n}\left(t\right)=e^{2\pi int}$, $t\in\left[0,1\right]$. Give the continuation family $\left(f_{t},U_{t}\right)$ of the element $\left(f_{0},U_{0}\right)$ along the path $\gamma_{n}$, and show that $f_{1}=f_{0}+2n\pi i$.
+(Problem 17.4-5) Let $U_{0}=B\left(1,1\right):=\left\{\left|z-1\right|< 1\right\}$, and let $f_{0}$ be a holomorphic branch of the logarithm $\operatorname{Log}z$ on $U_{0}$. For any $n\in\mathbb{Z}\setminus\left\{0\right\}$, let $\gamma_{n}\left(t\right)=e^{2\pi int}$, $t\in\left[0,1\right]$. Give the continuation family $\left(f_{t},U_{t}\right)$ of the element $\left(f_{0},U_{0}\right)$ along the path $\gamma_{n}$, and show that $f_{1}=f_{0}+2n\pi i$.
 
 ### Solution to Problem 4
 
@@ -70,13 +70,13 @@ where $f_{0}$ is regarded as the branch of $\operatorname{Log}z$ near $1$, with 
 
 ### Solution to Problem 5
 
-(i) Differentiate term by term (a power series can be differentiated term by term inside $\left|z\right|<1$):
+(i) Differentiate term by term (a power series can be differentiated term by term inside $\left|z\right|< 1$):
 
 $$
 \frac{f^{\left(k\right)}\left(z\right)}{k!}=\sum_{n=k}^{+\infty}c_{n}\binom{n}{k}z^{n-k}.
 $$
 
-Take $z=\frac12$ (a positive real, $0<\frac12<1$):
+Take $z=\frac12$ (a positive real, $0< \frac12< 1$):
 
 $$
 \alpha_{k}=\sum_{n=k}^{+\infty}c_{n}\binom{n}{k}\left(\frac12\right)^{n-k}\ge0,
@@ -84,11 +84,11 @@ $$
 
 since $c_{n}\ge0$.
 
-(ii) Take $z=\frac{e^{i\theta}}{2}$; then $\left|z\right|=\frac12<1$,
+(ii) Take $z=\frac{e^{i\theta}}{2}$; then $\left|z\right|=\frac12< 1$,
 
 $$
 \beta_{k}=\sum_{n=k}^{+\infty}c_{n}\binom{n}{k}\left(\frac{e^{i\theta}}{2}\right)^{n-k},\quad
 \left|\beta_{k}\right|\le\sum_{n=k}^{+\infty}c_{n}\binom{n}{k}\left(\frac{\left|e^{i\theta}\right|}{2}\right)^{n-k}=\alpha_{k}.
 $$
 
-(iii) Suppose, for contradiction, that $1$ is a regular point of $f$. Then $f$ is holomorphic in some neighborhood of $z=1$, and by the theory of power series its radius of convergence must be greater than $1$ (convergence in a neighborhood of $1$ implies radius of convergence $>1$). But this contradicts the fact that the radius of convergence is exactly $R=1$. Hence $z=1$ is a singularity of $f$. $\blacksquare$
+(iii) Suppose, for contradiction, that $1$ is a regular point of $f$. Then $f$ is holomorphic in some neighborhood of $z=1$, and by the theory of power series its radius of convergence must be greater than $1$ (convergence in a neighborhood of $1$ implies radius of convergence $> 1$). But this contradicts the fact that the radius of convergence is exactly $R=1$. Hence $z=1$ is a singularity of $f$. $\blacksquare$

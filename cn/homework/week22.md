@@ -1,8 +1,8 @@
 # 作业 22
 
-> **定义 19.1.1** (伽玛函数)<br>$$\Gamma\left(s\right)=\int_{0}^{+\infty}e^{-t}t^{s-1}dt,\quad s>0.$$
+> **定义 19.1.1** (伽玛函数)<br>$$\Gamma\left(s\right)=\int_{0}^{+\infty}e^{-t}t^{s-1}dt,\quad s> 0.$$
 
-> **命题 19.1.3**<br>若 $\operatorname{Re}z>0$, 则 $\Gamma\left(z+1\right)=z\Gamma\left(z\right)$; 它可延拓为 $\mathbb{C}$ 上的亚纯函数, 只在 $0,-1,-2,\ldots$ 有简单极点.
+> **命题 19.1.3**<br>若 $\operatorname{Re}z> 0$, 则 $\Gamma\left(z+1\right)=z\Gamma\left(z\right)$; 它可延拓为 $\mathbb{C}$ 上的亚纯函数, 只在 $0,-1,-2,\ldots$ 有简单极点.
 
 > **定理 19.2.1** (反射公式)<br>$$\Gamma\left(z\right)\Gamma\left(1-z\right)=\frac{\pi}{\sin\pi z},\quad z\in\mathbb{C}\setminus\mathbb{Z}.$$
 
@@ -12,13 +12,13 @@
 
 ### 习题一
 
-(习题 19.3-1) 令 $\mathcal{E}_{0}\left(z\right)=1-z$, $\mathcal{E}_{k}\left(z\right)=\left(1-z\right)e^{z+\frac{z^{2}}{2}+\cdots+\frac{z^{k}}{k}}$, $k\ge1$. 证明: 存在常数 $c,c',c''>0$ 使得 (i) 若 $\left|z\right|\le\frac12$, 则 $\left|1-\mathcal{E}_{k}\left(z\right)\right|\le c\left|z\right|^{k+1}$, $k\ge0$; (ii) 若 $\left|z\right|\le\frac12$, 则 $\left|\mathcal{E}_{k}\right|\ge e^{-c'\left|z\right|^{k+1}}$, $k\ge0$; (iii) 若 $\left|z\right|\ge\frac12$, 则 $\left|\mathcal{E}_{k}\right|\ge\left|1-z\right|e^{-c'\left|z\right|^{k}}$, $k\ge0$.
+(习题 19.3-1) 令 $\mathcal{E}_{0}\left(z\right)=1-z$, $\mathcal{E}_{k}\left(z\right)=\left(1-z\right)e^{z+\frac{z^{2}}{2}+\cdots+\frac{z^{k}}{k}}$, $k\ge1$. 证明: 存在常数 $c,c',c''> 0$ 使得 (i) 若 $\left|z\right|\le\frac12$, 则 $\left|1-\mathcal{E}_{k}\left(z\right)\right|\le c\left|z\right|^{k+1}$, $k\ge0$; (ii) 若 $\left|z\right|\le\frac12$, 则 $\left|\mathcal{E}_{k}\right|\ge e^{-c'\left|z\right|^{k+1}}$, $k\ge0$; (iii) 若 $\left|z\right|\ge\frac12$, 则 $\left|\mathcal{E}_{k}\right|\ge\left|1-z\right|e^{-c'\left|z\right|^{k}}$, $k\ge0$.
 
 ### 解答 习题一
 
 记 $S_{k}\left(z\right):=\sum_{j=1}^{k}\frac{z^{j}}{j}$, 则 $\mathcal{E}_{k}\left(z\right)=\left(1-z\right)e^{S_{k}\left(z\right)}$.
 
-(i) 因 $-\log\left(1-z\right)=\sum_{j=1}^{+\infty}\frac{z^{j}}{j}$ (于 $\left|z\right|<1$), $\log\frac{1}{1-z}-S_{k}\left(z\right)=\sum_{j=k+1}^{+\infty}\frac{z^{j}}{j}$. 故
+(i) 因 $-\log\left(1-z\right)=\sum_{j=1}^{+\infty}\frac{z^{j}}{j}$ (于 $\left|z\right|< 1$), $\log\frac{1}{1-z}-S_{k}\left(z\right)=\sum_{j=k+1}^{+\infty}\frac{z^{j}}{j}$. 故
 
 $$
 1-\mathcal{E}_{k}\left(z\right)=1-\left(1-z\right)e^{S_{k}}=\left(1-z\right)\left(e^{-\log\left(1-z\right)}-e^{S_{k}}\right)=\left(1-z\right)e^{S_{k}}\left(e^{\sum_{j\ge k+1}\frac{z^{j}}{j}}-1\right).
@@ -36,7 +36,7 @@ $$
 
 ### 解答 习题二
 
-对任意 $R>0$, 因 $a_{n}\to\infty$, 存在 $N$ 使 $n>N$ 时 $\left|a_{n}\right|>2R$, 从而 $\left|z/a_{n}\right|\le\frac12$ ($\left|z\right|\le R$). 由**习题一 (i)**, $\left|1-\mathcal{E}_{n}\left(z/a_{n}\right)\right|\le c\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}$, 而 $\sum_{n}\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}\le\sum_{n>N}\left(\frac12\right)^{n+1}<+\infty$. 故乘积在 $\left\{\left|z\right|\le R\right\}$ 上一致收敛, $f$ 是整函数.
+对任意 $R> 0$, 因 $a_{n}\to\infty$, 存在 $N$ 使 $n> N$ 时 $\left|a_{n}\right|> 2R$, 从而 $\left|z/a_{n}\right|\le\frac12$ ($\left|z\right|\le R$). 由**习题一 (i)**, $\left|1-\mathcal{E}_{n}\left(z/a_{n}\right)\right|\le c\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}$, 而 $\sum_{n}\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}\le\sum_{n> N}\left(\frac12\right)^{n+1}< +\infty$. 故乘积在 $\left\{\left|z\right|\le R\right\}$ 上一致收敛, $f$ 是整函数.
 
 每个 $\mathcal{E}_{n}\left(z/a_{n}\right)$ 只在 $z=a_{n}$ 处有零点 (因 $\mathcal{E}_{n}\left(0\right)=1$, 且 $\mathcal{E}_{n}$ 的唯一零点是 $z=a_{n}$), 且为简单零点. 乘积在 $a_{n}$ 处因子为零, 其余因子非零 (各 $a_{n}$ 不同或计重数时按次数), 故 $f$ 的零点恰为诸 $a_{n}$, 在 $a_{n}$ 处的阶等于 $a_{n}$ 在序列中出现的次数. $\blacksquare$
 

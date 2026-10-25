@@ -12,11 +12,11 @@
 
 ### Problem 1
 
-(Problem 9.4-2) Let $f$ be holomorphic on the unit disk $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|<1\right\}$ with $\left|f'\left(z\right)\right|\le\frac{1}{1-\left|z\right|}$, $\forall z\in\mathbb{D}$. Prove: every coefficient $c_{n}$ of the Taylor series of $f$ at $z=0$ satisfies $\left|c_{n}\right|<e$, $\forall n\in\mathbb{N}\setminus\left\{0\right\}$.
+(Problem 9.4-2) Let $f$ be holomorphic on the unit disk $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$ with $\left|f'\left(z\right)\right|\le\frac{1}{1-\left|z\right|}$, $\forall z\in\mathbb{D}$. Prove: every coefficient $c_{n}$ of the Taylor series of $f$ at $z=0$ satisfies $\left|c_{n}\right|< e$, $\forall n\in\mathbb{N}\setminus\left\{0\right\}$.
 
 ### Solution to Problem 1
 
-The Taylor coefficients of $f$ at $0$ are $c_{n}=\frac{f^{\left(n\right)}\left(0\right)}{n!}$. Applying **Theorem 8.3.2 (Higher-Order Derivative Formula)** to $f'$ for the $n-1$-th derivative, and taking $0<r<1$:
+The Taylor coefficients of $f$ at $0$ are $c_{n}=\frac{f^{\left(n\right)}\left(0\right)}{n!}$. Applying **Theorem 8.3.2 (Higher-Order Derivative Formula)** to $f'$ for the $n-1$-th derivative, and taking $0< r< 1$:
 
 $$
 f^{\left(n\right)}\left(0\right)=\frac{\left(n-1\right)!}{2\pi i}\int_{\left|z\right|=r}\frac{f'\left(z\right)}{z^{n}}\,dz.
@@ -34,7 +34,7 @@ $$
 h\left(\frac{n-1}{n}\right)=\frac{\left(\frac{n-1}{n}\right)^{1-n}}{1-\frac{n-1}{n}}=n\left(1+\frac{1}{n-1}\right)^{n-1}.
 $$
 
-Hence $\left|c_{n}\right|\le\left(1+\frac{1}{n-1}\right)^{n-1}<e$ (since $\left(1+\frac{1}{m}\right)^{m}<e$). The proposition is proved. $\blacksquare$
+Hence $\left|c_{n}\right|\le\left(1+\frac{1}{n-1}\right)^{n-1}< e$ (since $\left(1+\frac{1}{m}\right)^{m}< e$). The proposition is proved. $\blacksquare$
 
 ### Problem 2
 
@@ -46,7 +46,7 @@ No. Suppose there exists a holomorphic function $F$ on $D$ such that $F\left(x\r
 
 ### Problem 3
 
-(Problem 9.4-6) Let $f,g$ be holomorphic and nonvanishing on $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|<1\right\}$. Prove: if $\frac{f'\left(x_{n}\right)}{f\left(x_{n}\right)}=\frac{g'\left(x_{n}\right)}{g\left(x_{n}\right)}$, where $x_{n}=\frac{1}{n}$, $n=2,3,\cdots$, then $f=cg$ for some $c\in\mathbb{C}$.
+(Problem 9.4-6) Let $f,g$ be holomorphic and nonvanishing on $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$. Prove: if $\frac{f'\left(x_{n}\right)}{f\left(x_{n}\right)}=\frac{g'\left(x_{n}\right)}{g\left(x_{n}\right)}$, where $x_{n}=\frac{1}{n}$, $n=2,3,\cdots$, then $f=cg$ for some $c\in\mathbb{C}$.
 
 ### Solution to Problem 3
 
@@ -106,7 +106,7 @@ $$
 \lim_{z\to a}\frac{f^{\left(m\right)}\left(z\right)}{g^{\left(m\right)}\left(z\right)}=\frac{m!f_{1}\left(a\right)}{m!g_{1}\left(a\right)}=\frac{f_{1}\left(a\right)}{g_{1}\left(a\right)}=\lim_{z\to a}\frac{f\left(z\right)}{g\left(z\right)}.
 $$
 
-(ii) Let the order of the zero of $f$ at $a$ be $p$, and that of $g$ be $q$. If $p>q$, then $f\left(z\right)=\left(z-a\right)^{p}f_{1}$, $g\left(z\right)=\left(z-a\right)^{q}g_{1}$, $f_{1}\left(a\right)g_{1}\left(a\right)\ne0$, so $\frac{f}{g}=\left(z-a\right)^{p-q}\frac{f_{1}}{g_{1}}\to0$; meanwhile $f'$ has a zero of order $p-1$ and $g'$ of order $q-1$, and $\frac{f'}{g'}\to0$, so the two are equal. If $p<q$, similarly $\frac{f}{g}\to\infty$ and $\frac{f'}{g'}\to\infty$, so they are equal. If $p=q=m$, applying (i) to $f',g'$ (both zeros of order $m-1$) gives $\lim\frac{f'}{g'}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, and applying (i) again gives $\lim\frac{f}{g}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, so the two are equal. $\blacksquare$
+(ii) Let the order of the zero of $f$ at $a$ be $p$, and that of $g$ be $q$. If $p> q$, then $f\left(z\right)=\left(z-a\right)^{p}f_{1}$, $g\left(z\right)=\left(z-a\right)^{q}g_{1}$, $f_{1}\left(a\right)g_{1}\left(a\right)\ne0$, so $\frac{f}{g}=\left(z-a\right)^{p-q}\frac{f_{1}}{g_{1}}\to0$; meanwhile $f'$ has a zero of order $p-1$ and $g'$ of order $q-1$, and $\frac{f'}{g'}\to0$, so the two are equal. If $p< q$, similarly $\frac{f}{g}\to\infty$ and $\frac{f'}{g'}\to\infty$, so they are equal. If $p=q=m$, applying (i) to $f',g'$ (both zeros of order $m-1$) gives $\lim\frac{f'}{g'}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, and applying (i) again gives $\lim\frac{f}{g}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, so the two are equal. $\blacksquare$
 
 ### Problem 6
 
@@ -114,7 +114,7 @@ $$
 
 ### Solution to Problem 6
 
-Without loss of generality, assume $m>n$ (otherwise swap); then $\left(f\left(z\right)\right)^{m}=\left(f\left(z\right)\right)^{n}$ becomes
+Without loss of generality, assume $m> n$ (otherwise swap); then $\left(f\left(z\right)\right)^{m}=\left(f\left(z\right)\right)^{n}$ becomes
 
 $$
 \left(f\left(z\right)\right)^{n}\left(\left(f\left(z\right)\right)^{m-n}-1\right)=0,
@@ -130,25 +130,25 @@ The set $\left\{0\right\}\cup\left\{\left|w\right|=1\right\}$ has no interior po
 
 ### Problem 7
 
-(Problem 9.4-15) Does there exist a holomorphic function $f\left(z\right)$ on $\mathbb{C}$ satisfying $\left|f\left(z\right)\right|>\left|z\right|$, $\forall z\in\mathbb{C}$?
+(Problem 9.4-15) Does there exist a holomorphic function $f\left(z\right)$ on $\mathbb{C}$ satisfying $\left|f\left(z\right)\right|> \left|z\right|$, $\forall z\in\mathbb{C}$?
 
 ### Solution to Problem 7
 
-No. Suppose such a function exists. Taking $z=0$ gives $\left|f\left(0\right)\right|>0$, so $f\left(0\right)\ne0$; for $z\ne0$, $\left|f\left(z\right)\right|>\left|z\right|>0$, so $f$ is nowhere zero on $\mathbb{C}$. Define the entire function
+No. Suppose such a function exists. Taking $z=0$ gives $\left|f\left(0\right)\right|> 0$, so $f\left(0\right)\ne0$; for $z\ne0$, $\left|f\left(z\right)\right|> \left|z\right|> 0$, so $f$ is nowhere zero on $\mathbb{C}$. Define the entire function
 
 $$
 g\left(z\right)=\frac{z}{f\left(z\right)},
 $$
 
-then $g\left(0\right)=0$, and for $z\ne0$, $\left|g\left(z\right)\right|=\frac{\left|z\right|}{\left|f\left(z\right)\right|}<1$. Hence $\left|g\left(z\right)\right|<1$ on $\mathbb{C}$, so $g$ is a bounded entire function. By **Theorem 9.1.3 (Liouville)**, $g$ is constant; since $g\left(0\right)=0$, $g\equiv0$, which contradicts $g\left(z\right)=\frac{z}{f\left(z\right)}\ne0$ ($z\ne0$). Hence no such function exists. $\blacksquare$
+then $g\left(0\right)=0$, and for $z\ne0$, $\left|g\left(z\right)\right|=\frac{\left|z\right|}{\left|f\left(z\right)\right|}< 1$. Hence $\left|g\left(z\right)\right|< 1$ on $\mathbb{C}$, so $g$ is a bounded entire function. By **Theorem 9.1.3 (Liouville)**, $g$ is constant; since $g\left(0\right)=0$, $g\equiv0$, which contradicts $g\left(z\right)=\frac{z}{f\left(z\right)}\ne0$ ($z\ne0$). Hence no such function exists. $\blacksquare$
 
 ### Problem 8
 
-(Problem 9.4-17) Let $f:\mathbb{C}\to\mathbb{D}=\left\{\left|z\right|<1\right\}$ be holomorphic on $\mathbb{C}$ and satisfy $f\left(2\right)=\frac{2+i}{8}$. Find the value of $f\left(10\right)$.
+(Problem 9.4-17) Let $f:\mathbb{C}\to\mathbb{D}=\left\{\left|z\right|< 1\right\}$ be holomorphic on $\mathbb{C}$ and satisfy $f\left(2\right)=\frac{2+i}{8}$. Find the value of $f\left(10\right)$.
 
 ### Solution to Problem 8
 
-$f:\mathbb{C}\to\mathbb{D}$ takes values in the open unit disk, so $\left|f\left(z\right)\right|<1$ on $\mathbb{C}$; $f$ is a bounded entire function. By **Theorem 9.1.3 (Liouville)**, $f$ is constant on $\mathbb{C}$. Hence
+$f:\mathbb{C}\to\mathbb{D}$ takes values in the open unit disk, so $\left|f\left(z\right)\right|< 1$ on $\mathbb{C}$; $f$ is a bounded entire function. By **Theorem 9.1.3 (Liouville)**, $f$ is constant on $\mathbb{C}$. Hence
 
 $$
 f\left(10\right)=f\left(2\right)=\frac{2+i}{8}.

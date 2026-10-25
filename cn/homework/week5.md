@@ -34,7 +34,7 @@ z_{0}=\sum_{j=1}^{n}\lambda_{j}a_{j},\quad
 \lambda_{j}:=\frac{\frac{1}{\left|z_{0}-a_{j}\right|^{2}}}{\sum_{k=1}^{n}\frac{1}{\left|z_{0}-a_{k}\right|^{2}}}.
 $$
 
-$\lambda_{j}>0$ 且 $\sum_{j}\lambda_{j}=1$, 故 $z_{0}$ 是 $a_{1},\ldots,a_{n}$ 的凸组合, 落在它们的凸包内. 得证. $\blacksquare$
+$\lambda_{j}> 0$ 且 $\sum_{j}\lambda_{j}=1$, 故 $z_{0}$ 是 $a_{1},\ldots,a_{n}$ 的凸组合, 落在它们的凸包内. 得证. $\blacksquare$
 
 ### 习题二
 

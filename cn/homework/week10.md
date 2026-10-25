@@ -10,7 +10,7 @@
 
 ### 习题一
 
-(习题 10.4-2) 令 $f$ 和 $g$ 都是区域 $D\subset\mathbb{C}$ 上的全纯函数. 假设存在一点 $z_{0}\in D$ 和它的 $r$-邻域 $B\left(z_{0},r\right)\subset D$, $r>0$, 使得 $\left|f\left(z_{0}\right)\right|+\left|g\left(z_{0}\right)\right|\ge\left|f\left(z\right)\right|+\left|g\left(z\right)\right|$, $\forall z\in B\left(z_{0},r\right)$. 证明: $f$ 和 $g$ 均在 $D$ 上为常值.
+(习题 10.4-2) 令 $f$ 和 $g$ 都是区域 $D\subset\mathbb{C}$ 上的全纯函数. 假设存在一点 $z_{0}\in D$ 和它的 $r$-邻域 $B\left(z_{0},r\right)\subset D$, $r> 0$, 使得 $\left|f\left(z_{0}\right)\right|+\left|g\left(z_{0}\right)\right|\ge\left|f\left(z\right)\right|+\left|g\left(z\right)\right|$, $\forall z\in B\left(z_{0},r\right)$. 证明: $f$ 和 $g$ 均在 $D$ 上为常值.
 
 ### 解答 习题一
 
@@ -30,17 +30,17 @@ $$
 
 ### 解答 习题二
 
-反设 $f$ 在 $D$ 内无零点. 若 $\alpha=0$, 则 $\left|f\right|=0$ 在 $\partial D$, 由最大模原理 $f\equiv0$ 于 $D$, 常值, 得证. 下设 $\alpha>0$. 由 $\left|f\right|$ 在 $\bar{D}$ 上连续, 最大模原理 (在 $\bar{D}$ 上 $\left|f\right|$ 的最大值在边界取到) 给出 $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
+反设 $f$ 在 $D$ 内无零点. 若 $\alpha=0$, 则 $\left|f\right|=0$ 在 $\partial D$, 由最大模原理 $f\equiv0$ 于 $D$, 常值, 得证. 下设 $\alpha> 0$. 由 $\left|f\right|$ 在 $\bar{D}$ 上连续, 最大模原理 (在 $\bar{D}$ 上 $\left|f\right|$ 的最大值在边界取到) 给出 $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
 
 又 $\frac{1}{f}$ 在 $D$ 上全纯 (因 $f$ 无零点) 且在 $\bar{D}$ 上连续, 边界上 $\left|\frac{1}{f}\right|=\frac{1}{\alpha}$. 同理 $\left|\frac{1}{f\left(z\right)}\right|\le\frac{1}{\alpha}$, 即 $\left|f\left(z\right)\right|\ge\alpha$, $\forall z\in D$. 故 $\left|f\left(z\right)\right|\equiv\alpha$ 于 $D$, $\left|f\right|$ 为常数; 由**定理 10.1.4 (开映射定理)**, $f$ 为常值. 因此 $f$ 要么常值, 要么在 $D$ 内有零点. $\blacksquare$
 
 ### 习题三
 
-(习题 10.4-6) (阿达马的三圆定理) 令 $0<r<R$, $f$ 是在闭圆环 $\left\{z\in\mathbb{C}:r\le\left|z\right|\le R\right\}$ 上的全纯函数. 令 $M\left(\rho\right)=\sup_{\theta\in\left[0,2\pi\right]}\left|f\left(\rho e^{i\theta}\right)\right|$, $\forall\rho\in\left[r,R\right]$. 证明: 对于任意 $s\in\left[0,1\right]$, 都有 $M\left(r^{s}R^{1-s}\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$.
+(习题 10.4-6) (阿达马的三圆定理) 令 $0< r< R$, $f$ 是在闭圆环 $\left\{z\in\mathbb{C}:r\le\left|z\right|\le R\right\}$ 上的全纯函数. 令 $M\left(\rho\right)=\sup_{\theta\in\left[0,2\pi\right]}\left|f\left(\rho e^{i\theta}\right)\right|$, $\forall\rho\in\left[r,R\right]$. 证明: 对于任意 $s\in\left[0,1\right]$, 都有 $M\left(r^{s}R^{1-s}\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$.
 
 ### 解答 习题三
 
-记 $\rho=r^{s}R^{1-s}$. 若 $M\left(r\right)=0$ 或 $M\left(R\right)=0$, 由最大模原理 $f\equiv0$, 不等式显然. 下设 $M\left(r\right),M\left(R\right)>0$. 取实数
+记 $\rho=r^{s}R^{1-s}$. 若 $M\left(r\right)=0$ 或 $M\left(R\right)=0$, 由最大模原理 $f\equiv0$, 不等式显然. 下设 $M\left(r\right),M\left(R\right)> 0$. 取实数
 
 $$
 \lambda=\frac{\log M\left(r\right)-\log M\left(R\right)}{\log R-\log r},
@@ -68,11 +68,11 @@ $$
 
 ### 习题四
 
-(习题 10.4-8) 令 $f$ 是 $\mathbb{D}=\left\{\left|z\right|<1\right\}$ 上的全纯函数, $z_{1},\cdots,z_{k}\in\mathbb{D}$ 是 $f$ 在 $\mathbb{D}$ 内的所有零点 (计算重数). 证明: $\left|f\left(0\right)\right|\le\sup_{\left|z\right|<1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$.
+(习题 10.4-8) 令 $f$ 是 $\mathbb{D}=\left\{\left|z\right|< 1\right\}$ 上的全纯函数, $z_{1},\cdots,z_{k}\in\mathbb{D}$ 是 $f$ 在 $\mathbb{D}$ 内的所有零点 (计算重数). 证明: $\left|f\left(0\right)\right|\le\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$.
 
 ### 解答 习题四
 
-若 $f\equiv0$, 不等式显然. 设 $f$ 非常值, 记 $M=\sup_{\left|z\right|<1}\left|f\left(z\right)\right|$. 由 Blaschke 因子 (**定义 10.3.2**), 构造
+若 $f\equiv0$, 不等式显然. 设 $f$ 非常值, 记 $M=\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|$. 由 Blaschke 因子 (**定义 10.3.2**), 构造
 
 $$
 B\left(z\right)=\prod_{j=1}^{k}\frac{z-z_{j}}{1-\bar{z}_{j}z},
@@ -80,20 +80,20 @@ $$
 
 它在 $\mathbb{D}$ 上全纯 (分母 $1-\bar{z}_{j}z\ne0$), 其零点恰为 $z_{1},\cdots,z_{k}$ (计重数), 且在单位圆周上 $\left|B\left(e^{i\theta}\right)\right|=1$. 因 $f$ 的零点都被 $B$ 消去, $g\left(z\right)=\frac{f\left(z\right)}{B\left(z\right)}$ 在 $\mathbb{D}$ 上全纯且不取零值.
 
-对 $0<r<1$, 在圆 $\left|z\right|=r$ 上由最大模原理 $\left|g\left(z\right)\right|\le\max_{\left|w\right|=r}\left|g\left(w\right)\right|=\frac{\max_{\left|w\right|=r}\left|f\left(w\right)\right|}{\min_{\left|w\right|=r}\left|B\left(w\right)\right|}$. 令 $r\to1^{-}$, 有 $\max_{\left|w\right|=r}\left|f\left(w\right)\right|\to M$ 且 $\min_{\left|w\right|=r}\left|B\left(w\right)\right|\to1$, 故 $\left|g\left(z\right)\right|\le M$, $\forall z\in\mathbb{D}$. 特别地
+对 $0< r< 1$, 在圆 $\left|z\right|=r$ 上由最大模原理 $\left|g\left(z\right)\right|\le\max_{\left|w\right|=r}\left|g\left(w\right)\right|=\frac{\max_{\left|w\right|=r}\left|f\left(w\right)\right|}{\min_{\left|w\right|=r}\left|B\left(w\right)\right|}$. 令 $r\to1^{-}$, 有 $\max_{\left|w\right|=r}\left|f\left(w\right)\right|\to M$ 且 $\min_{\left|w\right|=r}\left|B\left(w\right)\right|\to1$, 故 $\left|g\left(z\right)\right|\le M$, $\forall z\in\mathbb{D}$. 特别地
 
 $$
 \left|g\left(0\right)\right|=\frac{\left|f\left(0\right)\right|}{\left|B\left(0\right)\right|}\le M,
 $$
 
-而 $\left|B\left(0\right)\right|=\prod_{j=1}^{k}\left|z_{j}\right|$, 故 $\left|f\left(0\right)\right|\le M\prod_{j=1}^{k}\left|z_{j}\right|=\sup_{\left|z\right|<1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$. $\blacksquare$
+而 $\left|B\left(0\right)\right|=\prod_{j=1}^{k}\left|z_{j}\right|$, 故 $\left|f\left(0\right)\right|\le M\prod_{j=1}^{k}\left|z_{j}\right|=\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$. $\blacksquare$
 
 ### 习题五
 
-(习题 10.4-10) 令 $\mathbb{D}=\left\{\left|z\right|<1\right\}$, $f:\mathbb{D}\to\mathbb{D}$ 是不为常值的全纯函数. 证明:
+(习题 10.4-10) 令 $\mathbb{D}=\left\{\left|z\right|< 1\right\}$, $f:\mathbb{D}\to\mathbb{D}$ 是不为常值的全纯函数. 证明:
 
 $$
-\frac{\left|f\left(0\right)\right|-\left|z\right|}{1+\left|f\left(0\right)\right|\left|z\right|}\le\left|f\left(z\right)\right|\le\frac{\left|f\left(0\right)\right|+\left|z\right|}{1-\left|f\left(0\right)\right|\left|z\right|},\quad\forall\left|z\right|<1.
+\frac{\left|f\left(0\right)\right|-\left|z\right|}{1+\left|f\left(0\right)\right|\left|z\right|}\le\left|f\left(z\right)\right|\le\frac{\left|f\left(0\right)\right|+\left|z\right|}{1-\left|f\left(0\right)\right|\left|z\right|},\quad\forall\left|z\right|< 1.
 $$
 
 ### 解答 习题五
@@ -104,7 +104,7 @@ $$
 \left|\frac{f\left(z\right)-a}{1-\bar{a}f\left(z\right)}\right|\le\left|z\right|.
 $$
 
-令 $u=f\left(z\right)$, 则 $\left|u\right|<1$. 由 $\left|u-a\right|\le\left|z\right|\left|1-\bar{a}u\right|\le\left|z\right|\left(1+t\left|u\right|\right)$ 与 $\left|u-a\right|\ge\left|\right|u\left|-t\right|$, 得
+令 $u=f\left(z\right)$, 则 $\left|u\right|< 1$. 由 $\left|u-a\right|\le\left|z\right|\left|1-\bar{a}u\right|\le\left|z\right|\left(1+t\left|u\right|\right)$ 与 $\left|u-a\right|\ge\left|\right|u\left|-t\right|$, 得
 
 $$
 \left|\right|u\left|-t\right|\le\left|z\right|\left(1+t\left|u\right|\right).

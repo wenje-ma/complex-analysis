@@ -12,11 +12,11 @@
 
 ### 习题一
 
-(习题 9.4-2) 令 $f$ 是单位圆盘 $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|<1\right\}$ 上的全纯函数而且 $\left|f'\left(z\right)\right|\le\frac{1}{1-\left|z\right|}$, $\forall z\in\mathbb{D}$. 证明: 函数 $f$ 在 $z=0$ 处的泰勒级数的系数 $c_{n}$ 都满足 $\left|c_{n}\right|<e$, $\forall n\in\mathbb{N}\setminus\left\{0\right\}$.
+(习题 9.4-2) 令 $f$ 是单位圆盘 $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$ 上的全纯函数而且 $\left|f'\left(z\right)\right|\le\frac{1}{1-\left|z\right|}$, $\forall z\in\mathbb{D}$. 证明: 函数 $f$ 在 $z=0$ 处的泰勒级数的系数 $c_{n}$ 都满足 $\left|c_{n}\right|< e$, $\forall n\in\mathbb{N}\setminus\left\{0\right\}$.
 
 ### 解答 习题一
 
-$f$ 在 $0$ 处的泰勒系数 $c_{n}=\frac{f^{\left(n\right)}\left(0\right)}{n!}$. 由**定理 8.3.2 (高阶导数公式)** 对 $f'$ 应用 $n-1$ 阶导数, 取 $0<r<1$:
+$f$ 在 $0$ 处的泰勒系数 $c_{n}=\frac{f^{\left(n\right)}\left(0\right)}{n!}$. 由**定理 8.3.2 (高阶导数公式)** 对 $f'$ 应用 $n-1$ 阶导数, 取 $0< r< 1$:
 
 $$
 f^{\left(n\right)}\left(0\right)=\frac{\left(n-1\right)!}{2\pi i}\int_{\left|z\right|=r}\frac{f'\left(z\right)}{z^{n}}\,dz.
@@ -34,7 +34,7 @@ $$
 h\left(\frac{n-1}{n}\right)=\frac{\left(\frac{n-1}{n}\right)^{1-n}}{1-\frac{n-1}{n}}=n\left(1+\frac{1}{n-1}\right)^{n-1}.
 $$
 
-故 $\left|c_{n}\right|\le\left(1+\frac{1}{n-1}\right)^{n-1}<e$ (因 $\left(1+\frac{1}{m}\right)^{m}<e$). 命题得证. $\blacksquare$
+故 $\left|c_{n}\right|\le\left(1+\frac{1}{n-1}\right)^{n-1}< e$ (因 $\left(1+\frac{1}{m}\right)^{m}< e$). 命题得证. $\blacksquare$
 
 ### 习题二
 
@@ -46,7 +46,7 @@ $$
 
 ### 习题三
 
-(习题 9.4-6) 令 $f,g$ 是 $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|<1\right\}$ 上的全纯函数且不取零值. 证明: 若 $\frac{f'\left(x_{n}\right)}{f\left(x_{n}\right)}=\frac{g'\left(x_{n}\right)}{g\left(x_{n}\right)}$, 其中 $x_{n}=\frac{1}{n}$, $n=2,3,\cdots$, 则 $f=cg$, $c\in\mathbb{C}$.
+(习题 9.4-6) 令 $f,g$ 是 $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$ 上的全纯函数且不取零值. 证明: 若 $\frac{f'\left(x_{n}\right)}{f\left(x_{n}\right)}=\frac{g'\left(x_{n}\right)}{g\left(x_{n}\right)}$, 其中 $x_{n}=\frac{1}{n}$, $n=2,3,\cdots$, 则 $f=cg$, $c\in\mathbb{C}$.
 
 ### 解答 习题三
 
@@ -106,7 +106,7 @@ $$
 \lim_{z\to a}\frac{f^{\left(m\right)}\left(z\right)}{g^{\left(m\right)}\left(z\right)}=\frac{m!f_{1}\left(a\right)}{m!g_{1}\left(a\right)}=\frac{f_{1}\left(a\right)}{g_{1}\left(a\right)}=\lim_{z\to a}\frac{f\left(z\right)}{g\left(z\right)}.
 $$
 
-(ii) 设 $f$ 在 $a$ 处零点阶数为 $p$, $g$ 的零点阶数为 $q$. 若 $p>q$, 则 $f\left(z\right)=\left(z-a\right)^{p}f_{1}$, $g\left(z\right)=\left(z-a\right)^{q}g_{1}$, $f_{1}\left(a\right)g_{1}\left(a\right)\ne0$, 故 $\frac{f}{g}=\left(z-a\right)^{p-q}\frac{f_{1}}{g_{1}}\to0$; 而 $f'$ 零点阶 $p-1$, $g'$ 零点阶 $q-1$, $\frac{f'}{g'}\to0$, 二者相等. 若 $p<q$, 同理 $\frac{f}{g}\to\infty$, $\frac{f'}{g'}\to\infty$, 相等. 若 $p=q=m$, 由 (i) 应用于 $f',g'$ (均为 $m-1$ 阶零点) 得 $\lim\frac{f'}{g'}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, 再由 (i) 得 $\lim\frac{f}{g}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, 故二者相等. $\blacksquare$
+(ii) 设 $f$ 在 $a$ 处零点阶数为 $p$, $g$ 的零点阶数为 $q$. 若 $p> q$, 则 $f\left(z\right)=\left(z-a\right)^{p}f_{1}$, $g\left(z\right)=\left(z-a\right)^{q}g_{1}$, $f_{1}\left(a\right)g_{1}\left(a\right)\ne0$, 故 $\frac{f}{g}=\left(z-a\right)^{p-q}\frac{f_{1}}{g_{1}}\to0$; 而 $f'$ 零点阶 $p-1$, $g'$ 零点阶 $q-1$, $\frac{f'}{g'}\to0$, 二者相等. 若 $p< q$, 同理 $\frac{f}{g}\to\infty$, $\frac{f'}{g'}\to\infty$, 相等. 若 $p=q=m$, 由 (i) 应用于 $f',g'$ (均为 $m-1$ 阶零点) 得 $\lim\frac{f'}{g'}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, 再由 (i) 得 $\lim\frac{f}{g}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, 故二者相等. $\blacksquare$
 
 ### 习题六
 
@@ -114,7 +114,7 @@ $$
 
 ### 解答 习题六
 
-不妨设 $m>n$ (否则互换), 则 $\left(f\left(z\right)\right)^{m}=\left(f\left(z\right)\right)^{n}$ 即
+不妨设 $m> n$ (否则互换), 则 $\left(f\left(z\right)\right)^{m}=\left(f\left(z\right)\right)^{n}$ 即
 
 $$
 \left(f\left(z\right)\right)^{n}\left(\left(f\left(z\right)\right)^{m-n}-1\right)=0,
@@ -130,25 +130,25 @@ $$
 
 ### 习题七
 
-(习题 9.4-15) 是否存在 $\mathbb{C}$ 上的全纯函数 $f\left(z\right)$ 满足 $\left|f\left(z\right)\right|>\left|z\right|$, $\forall z\in\mathbb{C}$?
+(习题 9.4-15) 是否存在 $\mathbb{C}$ 上的全纯函数 $f\left(z\right)$ 满足 $\left|f\left(z\right)\right|> \left|z\right|$, $\forall z\in\mathbb{C}$?
 
 ### 解答 习题七
 
-不存在. 反设存在. 取 $z=0$ 得 $\left|f\left(0\right)\right|>0$, 故 $f\left(0\right)\ne0$; 对 $z\ne0$, $\left|f\left(z\right)\right|>\left|z\right|>0$, 故 $f$ 在 $\mathbb{C}$ 上处处不取零值. 定义整函数
+不存在. 反设存在. 取 $z=0$ 得 $\left|f\left(0\right)\right|> 0$, 故 $f\left(0\right)\ne0$; 对 $z\ne0$, $\left|f\left(z\right)\right|> \left|z\right|> 0$, 故 $f$ 在 $\mathbb{C}$ 上处处不取零值. 定义整函数
 
 $$
 g\left(z\right)=\frac{z}{f\left(z\right)},
 $$
 
-则 $g\left(0\right)=0$, 且对 $z\ne0$, $\left|g\left(z\right)\right|=\frac{\left|z\right|}{\left|f\left(z\right)\right|}<1$. 故 $\left|g\left(z\right)\right|<1$ 在 $\mathbb{C}$ 上成立, $g$ 是有界整函数. 由**定理 9.1.3 (刘威尔)**, $g$ 为常值; 又 $g\left(0\right)=0$, 故 $g\equiv0$, 这与 $g\left(z\right)=\frac{z}{f\left(z\right)}\ne0$ ($z\ne0$) 矛盾. 故不存在. $\blacksquare$
+则 $g\left(0\right)=0$, 且对 $z\ne0$, $\left|g\left(z\right)\right|=\frac{\left|z\right|}{\left|f\left(z\right)\right|}< 1$. 故 $\left|g\left(z\right)\right|< 1$ 在 $\mathbb{C}$ 上成立, $g$ 是有界整函数. 由**定理 9.1.3 (刘威尔)**, $g$ 为常值; 又 $g\left(0\right)=0$, 故 $g\equiv0$, 这与 $g\left(z\right)=\frac{z}{f\left(z\right)}\ne0$ ($z\ne0$) 矛盾. 故不存在. $\blacksquare$
 
 ### 习题八
 
-(习题 9.4-17) 令 $f:\mathbb{C}\to\mathbb{D}=\left\{\left|z\right|<1\right\}$ 是 $\mathbb{C}$ 上的全纯函数且 $f\left(2\right)=\frac{2+i}{8}$, 求 $f\left(10\right)$ 的值.
+(习题 9.4-17) 令 $f:\mathbb{C}\to\mathbb{D}=\left\{\left|z\right|< 1\right\}$ 是 $\mathbb{C}$ 上的全纯函数且 $f\left(2\right)=\frac{2+i}{8}$, 求 $f\left(10\right)$ 的值.
 
 ### 解答 习题八
 
-$f:\mathbb{C}\to\mathbb{D}$ 取值于开单位圆盘, 故 $\left|f\left(z\right)\right|<1$ 在 $\mathbb{C}$ 上成立, $f$ 是有界整函数. 由**定理 9.1.3 (刘威尔)**, $f$ 在 $\mathbb{C}$ 上为常值. 故
+$f:\mathbb{C}\to\mathbb{D}$ 取值于开单位圆盘, 故 $\left|f\left(z\right)\right|< 1$ 在 $\mathbb{C}$ 上成立, $f$ 是有界整函数. 由**定理 9.1.3 (刘威尔)**, $f$ 在 $\mathbb{C}$ 上为常值. 故
 
 $$
 f\left(10\right)=f\left(2\right)=\frac{2+i}{8}.

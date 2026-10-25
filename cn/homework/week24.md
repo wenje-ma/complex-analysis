@@ -1,6 +1,6 @@
 # 作业 24
 
-> **定理 21.1.3** (布洛克)<br>存在常数 $B>0$: 若 $f$ 在单位圆盘上全纯且 $f'\left(0\right)=1$, 则 $f\left(\mathbb{D}\right)$ 含一个半径至少 $B$ 的圆盘.
+> **定理 21.1.3** (布洛克)<br>存在常数 $B> 0$: 若 $f$ 在单位圆盘上全纯且 $f'\left(0\right)=1$, 则 $f\left(\mathbb{D}\right)$ 含一个半径至少 $B$ 的圆盘.
 
 > **定理 21.2.3** (毕卡小定理)<br>非常值整函数取 $\mathbb{C}$ 中每个值或除一个值外的所有值.
 
@@ -16,7 +16,7 @@
 
 毕卡小定理: 非常值整函数不能漏掉两个不同的值.
 
-由**习题 21.5-3 (朗道)**, 存在正实函数 $R\left(a\right)>0$ ($a\in\mathbb{C}\setminus\left\{0,1\right\}$) 使得: 对任意 $a$, 在闭圆盘 $\left\{\left|z\right|\le R\left(a\right)\right\}$ 上不存在全纯函数 $f$ 满足 $f\left(0\right)=a$, $f'\left(0\right)=1$ 且 $f$ 不取值 $0$ 和 $1$.
+由**习题 21.5-3 (朗道)**, 存在正实函数 $R\left(a\right)> 0$ ($a\in\mathbb{C}\setminus\left\{0,1\right\}$) 使得: 对任意 $a$, 在闭圆盘 $\left\{\left|z\right|\le R\left(a\right)\right\}$ 上不存在全纯函数 $f$ 满足 $f\left(0\right)=a$, $f'\left(0\right)=1$ 且 $f$ 不取值 $0$ 和 $1$.
 
 设 $F$ 是整函数且不取值 $0,1$. 若 $F$ 非常值, 取 $z_{0}$ 使 $F'\left(z_{0}\right)\ne0$; 令 $a:=F\left(z_{0}\right)\in\mathbb{C}\setminus\left\{0,1\right\}$. 定义 $g\left(w\right):=F\left(z_{0}+\frac{w}{F'\left(z_{0}\right)}\right)$, 则 $g$ 在 $\mathbb{C}$ (因而在闭圆盘 $\left\{\left|w\right|\le R\left(a\right)\right\}$) 上全纯, $g\left(0\right)=F\left(z_{0}\right)=a$, $g'\left(0\right)=1$, 且 $g$ 不取值 $0,1$, 与朗道结论矛盾. 故 $F$ 必为常值, 毕卡小定理得证. $\blacksquare$
 

@@ -42,7 +42,7 @@ $f$ is a holomorphic branch of the logarithm on $\mathbb{C}\setminus\left[0,+\in
 
 ### Problem 3
 
-(Problem 6.5-6) Consider the function $w\left(z\right)=\left(\frac{\left(z+1\right)\left(z-1\right)\left(z-2\right)}{z}\right)^{1/3}$. Find a holomorphic branch of it such that $w\left(3\right)>0$.
+(Problem 6.5-6) Consider the function $w\left(z\right)=\left(\frac{\left(z+1\right)\left(z-1\right)\left(z-2\right)}{z}\right)^{1/3}$. Find a holomorphic branch of it such that $w\left(3\right)> 0$.
 
 ### Solution to Problem 3
 
@@ -55,21 +55,21 @@ $$
 which is holomorphic on $D$ and satisfies $w\left(z\right)^{3}=\frac{\left(z+1\right)\left(z-1\right)\left(z-2\right)}{z}$, i.e. it is a holomorphic branch of this function on $D$. At $z=3$, $z+1=4$, $z-1=2$, $z-2=1$, $z=3$ are all positive real numbers, and the principal logarithm takes the real value $\ln$, so
 
 $$
-w\left(3\right)=\exp\left(\frac13\left(\ln4+\ln2+\ln1-\ln3\right)\right)=\exp\left(\frac13\ln\frac83\right)=\left(\frac83\right)^{1/3}>0.
+w\left(3\right)=\exp\left(\frac13\left(\ln4+\ln2+\ln1-\ln3\right)\right)=\exp\left(\frac13\ln\frac83\right)=\left(\frac83\right)^{1/3}> 0.
 $$
 
-Hence this branch satisfies $w\left(3\right)>0$. $\blacksquare$
+Hence this branch satisfies $w\left(3\right)> 0$. $\blacksquare$
 
 ### Problem 4
 
-(Problem 6.5-8) Let $\alpha\in\mathbb{R}$, and let $\log z$ be the holomorphic branch of the logarithm $\operatorname{Log}z$ satisfying $\alpha<\arg z<\alpha+2\pi$; let $z^{1/2}$ be the holomorphic branch of the square root corresponding to this logarithmic branch. (i) Give the range of the function $\log z^{1/2}$; (ii) give the domain of the function $f\left(z\right)=\tan\left(\frac{1}{2i}\log\left(\frac{1+iz}{1-iz}\right)\right)$ and verify that $f\left(z\right)=z$ on its domain.
+(Problem 6.5-8) Let $\alpha\in\mathbb{R}$, and let $\log z$ be the holomorphic branch of the logarithm $\operatorname{Log}z$ satisfying $\alpha< \arg z< \alpha+2\pi$; let $z^{1/2}$ be the holomorphic branch of the square root corresponding to this logarithmic branch. (i) Give the range of the function $\log z^{1/2}$; (ii) give the domain of the function $f\left(z\right)=\tan\left(\frac{1}{2i}\log\left(\frac{1+iz}{1-iz}\right)\right)$ and verify that $f\left(z\right)=z$ on its domain.
 
 ### Solution to Problem 4
 
 (i) $\log z^{1/2}=\frac12\log z$. The imaginary part of $\log z$ is the argument, taken in $\left(\alpha,\alpha+2\pi\right)$, so the imaginary part of $\log z^{1/2}$ is taken in $\left(\frac\alpha2,\frac\alpha2+\pi\right)$; the real part $\frac12\ln\left|z\right|$ ranges over all of $\mathbb{R}$. Hence the range of $\log z^{1/2}$ is the horizontal strip
 
 $$
-\left\{\zeta\in\mathbb{C}:\ \frac{\alpha}{2}<\operatorname{Im}\zeta<\frac{\alpha}{2}+\pi\right\}.
+\left\{\zeta\in\mathbb{C}:\ \frac{\alpha}{2}< \operatorname{Im}\zeta< \frac{\alpha}{2}+\pi\right\}.
 $$
 
 (ii) Write $w\left(z\right)=\frac{1+iz}{1-iz}$ (a Möbius transformation); the domain requires $w$ to lie in the domain of the $\log$ branch and $z\ne\pm i$. The $\log$ branch is holomorphic on $\mathbb{C}$ minus the ray $R_{\alpha}:=\left\{re^{i\alpha}:r\ge0\right\}$ of argument $\alpha$, so the domain of $f$ is

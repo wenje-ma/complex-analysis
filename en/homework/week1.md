@@ -29,7 +29,7 @@ $$
 \end{aligned}
 $$
 
-Since $z\ne\pm1$, one has $\sin\frac{\theta}{2}\ne0$ and $\cos\frac{\theta}{2}\ne0$, hence $\tan\frac{\theta}{2}\ne0$, and therefore $\frac{z-1}{z+1}=i\tan\frac{\theta}{2}$ is a nonzero pure imaginary number. Its argument is $\frac{\pi}{2}$ when $\tan\frac{\theta}{2}>0$ and $\frac{3\pi}{2}$ when $\tan\frac{\theta}{2}<0$ (both modulo $2\pi$). The proposition is proved. $\blacksquare$
+Since $z\ne\pm1$, one has $\sin\frac{\theta}{2}\ne0$ and $\cos\frac{\theta}{2}\ne0$, hence $\tan\frac{\theta}{2}\ne0$, and therefore $\frac{z-1}{z+1}=i\tan\frac{\theta}{2}$ is a nonzero pure imaginary number. Its argument is $\frac{\pi}{2}$ when $\tan\frac{\theta}{2}> 0$ and $\frac{3\pi}{2}$ when $\tan\frac{\theta}{2}< 0$ (both modulo $2\pi$). The proposition is proved. $\blacksquare$
 
 ### Problem 2
 
@@ -37,18 +37,18 @@ Since $z\ne\pm1$, one has $\sin\frac{\theta}{2}\ne0$ and $\cos\frac{\theta}{2}\n
 
 ### Solution to Problem 2
 
-We argue by contradiction. Suppose there exists a line $L$ through the origin such that all $z_{1},\cdots,z_{n}$ lie strictly on one side of $L$ (i.e. in one open half-plane bounded by $L$). After a rotation of coordinates, we may assume $L$ is the real axis and all $z_{k}$ lie in the upper half-plane: $\operatorname{Im}z_{k}>0$, $k=1,\cdots,n$.
+We argue by contradiction. Suppose there exists a line $L$ through the origin such that all $z_{1},\cdots,z_{n}$ lie strictly on one side of $L$ (i.e. in one open half-plane bounded by $L$). After a rotation of coordinates, we may assume $L$ is the real axis and all $z_{k}$ lie in the upper half-plane: $\operatorname{Im}z_{k}> 0$, $k=1,\cdots,n$.
 
-From $z_{k}=x_{k}+iy_{k}\ne0$ and $y_{k}=\operatorname{Im}z_{k}>0$, together with $\frac{1}{z_{k}}=\frac{\bar{z}_{k}}{\left|z_{k}\right|^{2}}$ from **Definition 1.1.5 (Real Part, Imaginary Part, Conjugate, Modulus)**, we get
+From $z_{k}=x_{k}+iy_{k}\ne0$ and $y_{k}=\operatorname{Im}z_{k}> 0$, together with $\frac{1}{z_{k}}=\frac{\bar{z}_{k}}{\left|z_{k}\right|^{2}}$ from **Definition 1.1.5 (Real Part, Imaginary Part, Conjugate, Modulus)**, we get
 
 $$
-\operatorname{Im}\frac{1}{z_{k}}=\operatorname{Im}\frac{x_{k}-iy_{k}}{x_{k}^{2}+y_{k}^{2}}=-\frac{y_{k}}{x_{k}^{2}+y_{k}^{2}}<0.
+\operatorname{Im}\frac{1}{z_{k}}=\operatorname{Im}\frac{x_{k}-iy_{k}}{x_{k}^{2}+y_{k}^{2}}=-\frac{y_{k}}{x_{k}^{2}+y_{k}^{2}}< 0.
 $$
 
 Hence
 
 $$
-\operatorname{Im}\sum_{k=1}^{n}\frac{1}{z_{k}}=\sum_{k=1}^{n}\operatorname{Im}\frac{1}{z_{k}}<0,
+\operatorname{Im}\sum_{k=1}^{n}\frac{1}{z_{k}}=\sum_{k=1}^{n}\operatorname{Im}\frac{1}{z_{k}}< 0,
 $$
 
 which contradicts $\sum_{k=1}^{n}\frac{1}{z_{k}}=0$ (whose imaginary part is $0$). Therefore these points cannot all lie on the same side of a line through the origin. $\blacksquare$
@@ -58,7 +58,7 @@ which contradicts $\sum_{k=1}^{n}\frac{1}{z_{k}}=0$ (whose imaginary part is $0$
 (Problem 1.5-5) Let $z_{1},\cdots,z_{n},w_{1},\cdots,w_{n}$ be complex numbers. Prove the following (Lagrange) identity:
 
 $$
-\left|\sum_{j=1}^{n}z_{j}\bar{w}_{j}\right|^{2}=\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{j=1}^{n}\left|w_{j}\right|^{2}\right)-\sum_{1\le j<k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}.
+\left|\sum_{j=1}^{n}z_{j}\bar{w}_{j}\right|^{2}=\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{j=1}^{n}\left|w_{j}\right|^{2}\right)-\sum_{1\le j< k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}.
 $$
 
 ### Solution to Problem 3
@@ -78,25 +78,25 @@ $$
 On the other hand,
 
 $$
-\sum_{1\le j<k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}=\sum_{j<k}\left(\left|z_{j}\right|^{2}\left|w_{k}\right|^{2}+\left|z_{k}\right|^{2}\left|w_{j}\right|^{2}-z_{j}\bar{w}_{k}\bar{z}_{k}w_{j}-\bar{z}_{j}w_{k}z_{k}\bar{w}_{j}\right),
+\sum_{1\le j< k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}=\sum_{j< k}\left(\left|z_{j}\right|^{2}\left|w_{k}\right|^{2}+\left|z_{k}\right|^{2}\left|w_{j}\right|^{2}-z_{j}\bar{w}_{k}\bar{z}_{k}w_{j}-\bar{z}_{j}w_{k}z_{k}\bar{w}_{j}\right),
 $$
 
 and
 
 $$
-\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{k=1}^{n}\left|w_{k}\right|^{2}\right)=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j<k}\left(\left|z_{j}\right|^{2}\left|w_{k}\right|^{2}+\left|z_{k}\right|^{2}\left|w_{j}\right|^{2}\right).
+\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{k=1}^{n}\left|w_{k}\right|^{2}\right)=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j< k}\left(\left|z_{j}\right|^{2}\left|w_{k}\right|^{2}+\left|z_{k}\right|^{2}\left|w_{j}\right|^{2}\right).
 $$
 
 Subtracting the two identities gives
 
 $$
-\begin{aligned}&\quad\;\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{j=1}^{n}\left|w_{j}\right|^{2}\right)-\sum_{1\le j<k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}\\
-&=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j<k}\left(z_{j}\bar{w}_{k}\bar{z}_{k}w_{j}+\bar{z}_{j}w_{k}z_{k}\bar{w}_{j}\right)\\
-&=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j<k}\left(z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}+\bar{z}_{j}z_{k}w_{k}\bar{w}_{j}\right).
+\begin{aligned}&\quad\;\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{j=1}^{n}\left|w_{j}\right|^{2}\right)-\sum_{1\le j< k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}\\
+&=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j< k}\left(z_{j}\bar{w}_{k}\bar{z}_{k}w_{j}+\bar{z}_{j}w_{k}z_{k}\bar{w}_{j}\right)\\
+&=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j< k}\left(z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}+\bar{z}_{j}z_{k}w_{k}\bar{w}_{j}\right).
 \end{aligned}
 $$
 
-In the last expression, $\sum_{j<k}\left(z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}+\bar{z}_{j}z_{k}w_{k}\bar{w}_{j}\right)=\sum_{j\ne k}z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}$ (the terms with $j<k$ and $k<j$ come in pairs), so the right-hand side equals $\left|A\right|^{2}$. The Lagrange identity holds. $\blacksquare$
+In the last expression, $\sum_{j< k}\left(z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}+\bar{z}_{j}z_{k}w_{k}\bar{w}_{j}\right)=\sum_{j\ne k}z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}$ (the terms with $j< k$ and $k< j$ come in pairs), so the right-hand side equals $\left|A\right|^{2}$. The Lagrange identity holds. $\blacksquare$
 
 ### Problem 4
 
@@ -183,7 +183,7 @@ $$
 
 Hence $\sin\frac{d}{2}=\sin\phi$, where $\frac{d}{2},\phi\in\left[0,\frac{\pi}{2}\right]$, and since sine is strictly increasing on this interval, $\frac{d}{2}=\phi$, i.e. $d=2\arctan\left|\frac{a-b}{1+\bar{a}b}\right|$. This proves (i).
 
-Finally, prove (iii). Let $t=\frac{d}{2}\in\left[0,\frac{\pi}{2}\right]$; then $\rho\left(a,b\right)=2\sin t$. The right inequality: since $\sin t\le t$, $\rho\left(a,b\right)=2\sin t\le2t=d=\operatorname{dist}_{\sigma}\left(a,b\right)$. The left inequality: the function $\frac{\sin t}{t}$ is decreasing on $\left(0,\frac{\pi}{2}\right]$ (its derivative $\frac{t\cos t-\sin t}{t^{2}}<0$), so for $t\in\left(0,\frac{\pi}{2}\right]$,
+Finally, prove (iii). Let $t=\frac{d}{2}\in\left[0,\frac{\pi}{2}\right]$; then $\rho\left(a,b\right)=2\sin t$. The right inequality: since $\sin t\le t$, $\rho\left(a,b\right)=2\sin t\le2t=d=\operatorname{dist}_{\sigma}\left(a,b\right)$. The left inequality: the function $\frac{\sin t}{t}$ is decreasing on $\left(0,\frac{\pi}{2}\right]$ (its derivative $\frac{t\cos t-\sin t}{t^{2}}< 0$), so for $t\in\left(0,\frac{\pi}{2}\right]$,
 
 $$
 \frac{\sin t}{t}\ge\frac{\sin\frac{\pi}{2}}{\frac{\pi}{2}}=\frac{2}{\pi},

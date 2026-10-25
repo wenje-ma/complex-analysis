@@ -37,7 +37,7 @@ so $rM'\left(r\right)$ is constant. As $r\to0$, $M'\left(r\right)\to u_r\left(a\
 
 ### Problem 2
 
-(Problem 16.3-2) Let $u=\frac{1}{2\pi}\log\left|z\right|$, $z\in A\left(0;0;1\right):=\left\{0<\left|z\right|<1\right\}$. Prove: (i) $u$ is harmonic on the annulus $A\left(0;0;1\right)$; (ii) there is no holomorphic function $f$ on $A\left(0;0;1\right)$ such that $\operatorname{Re}f=u$; (iii) if $f$ is a smooth (real-valued) function with compact support on the open disk $\mathbb{D}$, then $\int_{\mathbb{D}}u\left(z\right)\Delta f\left(z\right)\,dx\,dy=f\left(0\right)$.
+(Problem 16.3-2) Let $u=\frac{1}{2\pi}\log\left|z\right|$, $z\in A\left(0;0;1\right):=\left\{0< \left|z\right|< 1\right\}$. Prove: (i) $u$ is harmonic on the annulus $A\left(0;0;1\right)$; (ii) there is no holomorphic function $f$ on $A\left(0;0;1\right)$ such that $\operatorname{Re}f=u$; (iii) if $f$ is a smooth (real-valued) function with compact support on the open disk $\mathbb{D}$, then $\int_{\mathbb{D}}u\left(z\right)\Delta f\left(z\right)\,dx\,dy=f\left(0\right)$.
 
 ### Solution to Problem 2
 
@@ -67,14 +67,14 @@ and $-\int_{\partial B\left(0,\varepsilon\right)}f\frac{\partial u}{\partial n}d
 
 ### Problem 3
 
-(Problem 16.3-7) Let $\mathbb{H}:=\left\{\operatorname{Im}z>0\right\}$, and let $f$ be a continuous function on $\partial\mathbb{H}$ such that $\lim_{z\to\infty,\,z\in\partial\mathbb{H}}f\left(z\right)$ exists and is finite. Find the solution $u$ to the Dirichlet problem on $\mathbb{H}$ with $u|_{\partial\mathbb{H}}=f$.
+(Problem 16.3-7) Let $\mathbb{H}:=\left\{\operatorname{Im}z> 0\right\}$, and let $f$ be a continuous function on $\partial\mathbb{H}$ such that $\lim_{z\to\infty,\,z\in\partial\mathbb{H}}f\left(z\right)$ exists and is finite. Find the solution $u$ to the Dirichlet problem on $\mathbb{H}$ with $u|_{\partial\mathbb{H}}=f$.
 
 ### Solution to Problem 3
 
 The solution is given by the Poisson integral on the upper half-plane:
 
 $$
-u\left(x+iy\right)=\frac{y}{\pi}\int_{-\infty}^{+\infty}\frac{f\left(t\right)}{\left(t-x\right)^{2}+y^{2}}\,dt,\quad y>0.
+u\left(x+iy\right)=\frac{y}{\pi}\int_{-\infty}^{+\infty}\frac{f\left(t\right)}{\left(t-x\right)^{2}+y^{2}}\,dt,\quad y> 0.
 $$
 
 Verification: the Poisson kernel $P_{y}\left(t-x\right):=\frac{y}{\pi\left(\left(t-x\right)^{2}+y^{2}\right)}$ is harmonic in $\left(x,y\right)$ (it is $\frac1\pi\operatorname{Im}\frac{1}{t-z}$), so $u$ is harmonic on $\mathbb{H}$. Also, $\int_{-\infty}^{+\infty}P_{y}\left(t-x\right)dt=1$, and for $x$ in a neighborhood of $x_{0}$, uniformly $P_{y}\left(t-x\right)\to0$ when $t$ is away from $x_{0}$, so
@@ -101,11 +101,11 @@ is a power series in $\left(x-x_{0}\right),\left(y-y_{0}\right)$, absolutely and
 
 ### Problem 5
 
-(Problem 16.3-10) (i) Verify that $u\left(x+iy\right)=\frac{1}{\pi}\arctan\frac{y}{x}$ is harmonic on the upper half-plane $\mathbb{H}:=\left\{\left(x,y\right):y>0\right\}$ and extends continuously to the real axis away from the origin, equal to $0$ on the positive real axis and equal to $1$ on the negative real axis (Note: the OCR of the original problem swapped the values on the positive and negative real axes; it is interpreted as $u=\frac1\pi\arg z$ on the upper half-plane, taking values in $\left(0,\pi\right)$); (ii) consider the Möbius transformation $\phi\left(z\right):\mathbb{H}\to\mathbb{D}$, $z\mapsto\frac{i-z}{i+z}$, and verify that $\widetilde u:=u\circ\phi^{-1}$ is harmonic on $\mathbb{D}$ and extends continuously to the boundary $\partial\mathbb{D}$ away from $\pm1$, equal to $0$ on the semicircle $\left\{e^{i\theta}:0<\theta<\pi\right\}$ and equal to $1$ on the semicircle $\left\{e^{i\theta}:-\pi<\theta<0\right\}$; (iii) verify that $\widetilde u$ is the Poisson integral of its own boundary values; (iv) verify that for any $a\in\left(0,1\right)$, there exists a sequence $z_{n}\in\mathbb{D}$ with $z_{n}\to1$ (or $-1$) such that $\widetilde u\left(z_{n}\right)\to a$.
+(Problem 16.3-10) (i) Verify that $u\left(x+iy\right)=\frac{1}{\pi}\arctan\frac{y}{x}$ is harmonic on the upper half-plane $\mathbb{H}:=\left\{\left(x,y\right):y> 0\right\}$ and extends continuously to the real axis away from the origin, equal to $0$ on the positive real axis and equal to $1$ on the negative real axis (Note: the OCR of the original problem swapped the values on the positive and negative real axes; it is interpreted as $u=\frac1\pi\arg z$ on the upper half-plane, taking values in $\left(0,\pi\right)$); (ii) consider the Möbius transformation $\phi\left(z\right):\mathbb{H}\to\mathbb{D}$, $z\mapsto\frac{i-z}{i+z}$, and verify that $\widetilde u:=u\circ\phi^{-1}$ is harmonic on $\mathbb{D}$ and extends continuously to the boundary $\partial\mathbb{D}$ away from $\pm1$, equal to $0$ on the semicircle $\left\{e^{i\theta}:0< \theta< \pi\right\}$ and equal to $1$ on the semicircle $\left\{e^{i\theta}:-\pi< \theta< 0\right\}$; (iii) verify that $\widetilde u$ is the Poisson integral of its own boundary values; (iv) verify that for any $a\in\left(0,1\right)$, there exists a sequence $z_{n}\in\mathbb{D}$ with $z_{n}\to1$ (or $-1$) such that $\widetilde u\left(z_{n}\right)\to a$.
 
 ### Solution to Problem 5
 
-(i) On $\mathbb{H}$, $\frac1\pi\arctan\frac yx=\frac1\pi\arg\left(x+iy\right)$, and $\arg\left(x+iy\right)=\operatorname{Im}\operatorname{Log}z$ is harmonic, so $u$ is harmonic on $\mathbb{H}$. As $y\to0^{+}$: if $x>0$, $\arg\left(x+iy\right)\to0$, $u\to0$; if $x<0$, $\arg\left(x+iy\right)\to\pi$, $u\to1$. Hence $u$ extends continuously to the real axis away from the origin, taking value $0$ on the positive real axis and $1$ on the negative real axis.
+(i) On $\mathbb{H}$, $\frac1\pi\arctan\frac yx=\frac1\pi\arg\left(x+iy\right)$, and $\arg\left(x+iy\right)=\operatorname{Im}\operatorname{Log}z$ is harmonic, so $u$ is harmonic on $\mathbb{H}$. As $y\to0^{+}$: if $x> 0$, $\arg\left(x+iy\right)\to0$, $u\to0$; if $x< 0$, $\arg\left(x+iy\right)\to\pi$, $u\to1$. Hence $u$ extends continuously to the real axis away from the origin, taking value $0$ on the positive real axis and $1$ on the negative real axis.
 
 (ii) $\phi^{-1}\left(w\right)=i\frac{1-w}{1+w}$. For $w=e^{i\theta}\in\partial\mathbb{D}$ ($w\ne\pm1$),
 
@@ -113,7 +113,7 @@ $$
 \phi^{-1}\left(e^{i\theta}\right)=i\frac{1-e^{i\theta}}{1+e^{i\theta}}=i\cdot\left(-i\right)\tan\frac{\theta}{2}=\tan\frac{\theta}{2}\in\mathbb{R}.
 $$
 
-$\tan\frac{\theta}{2}>0$ when $0<\theta<\pi$ (positive real axis, $u=0$), and $\tan\frac{\theta}{2}<0$ when $-\pi<\theta<0$ (negative real axis, $u=1$). Since $\phi$ is a conformal equivalence, $\widetilde u=u\circ\phi^{-1}$ is harmonic on $\mathbb{D}$ and extends continuously to $\partial\mathbb{D}\setminus\left\{\pm1\right\}$, taking value $0$ on the upper semicircle and $1$ on the lower semicircle.
+$\tan\frac{\theta}{2}> 0$ when $0< \theta< \pi$ (positive real axis, $u=0$), and $\tan\frac{\theta}{2}< 0$ when $-\pi< \theta< 0$ (negative real axis, $u=1$). Since $\phi$ is a conformal equivalence, $\widetilde u=u\circ\phi^{-1}$ is harmonic on $\mathbb{D}$ and extends continuously to $\partial\mathbb{D}\setminus\left\{\pm1\right\}$, taking value $0$ on the upper semicircle and $1$ on the lower semicircle.
 
 (iii) The boundary function $g\left(e^{i\theta}\right)$ of $\widetilde u$ on $\partial\mathbb{D}$ is: $0$ on the upper semicircle, $1$ on the lower semicircle (away from $\pm1$). By **Theorem 16.2.9 (Poisson Integral)**, the harmonic function on the disk $\mathbb{D}$ with boundary values $g$ is unique, and $\widetilde u$ is precisely this solution, so $\widetilde u$ equals the Poisson integral of $g$.
 

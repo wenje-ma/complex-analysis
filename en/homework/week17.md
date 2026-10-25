@@ -4,11 +4,11 @@
 
 > **Cauchy Integral Formula**<br>If $f$ is holomorphic on $\overline{B\left(a,r\right)}$, then $$f\left(a\right)=\frac{1}{2\pi i}\oint_{\left|z-a\right|=r}\frac{f\left(z\right)}{z-a}\,dz.$$
 
-> **Standard Integral**<br>For $0<\alpha<2$, $a>0$, $$\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.$$
+> **Standard Integral**<br>For $0< \alpha< 2$, $a> 0$, $$\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.$$
 
 ### Problem 1
 
-(Problem 14.3-6) Compute the integral $\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx$, where $2\le n\in\mathbb{N}$, $a>0$.
+(Problem 14.3-6) Compute the integral $\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx$, where $2\le n\in\mathbb{N}$, $a> 0$.
 
 ### Solution to Problem 1
 
@@ -28,7 +28,7 @@ $$
 
 ### Solution to Problem 2
 
-Let $x=t^{2}$, $t>0$; then $\sqrt{x}=t$, $dx=2t\,dt$:
+Let $x=t^{2}$, $t> 0$; then $\sqrt{x}=t$, $dx=2t\,dt$:
 
 $$
 \int_{0}^{+\infty}\frac{dx}{\sqrt{x}\left(1+x\right)}=\int_{0}^{+\infty}\frac{2t\,dt}{t\left(1+t^{2}\right)}=2\int_{0}^{+\infty}\frac{dt}{1+t^{2}}=2\cdot\frac{\pi}{2}=\pi.
@@ -58,7 +58,7 @@ where the last equality uses the Cauchy integral formula (the value of $z$ at $z
 
 ### Problem 4
 
-(Problem 14.3-11) Let $f$ be holomorphic on $\mathbb{C}$, $R>0$, $a,b\in\mathbb{C}$ with $\left|a\right|,\left|b\right|<R$. (i) Compute the integral $\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz$, where $\gamma\left(t\right)=Re^{it}$, $t\in\left[0,2\pi\right]$; (ii) using the integral in (i), prove Liouville's theorem: every bounded holomorphic function on $\mathbb{C}$ is constant.
+(Problem 14.3-11) Let $f$ be holomorphic on $\mathbb{C}$, $R> 0$, $a,b\in\mathbb{C}$ with $\left|a\right|,\left|b\right|< R$. (i) Compute the integral $\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz$, where $\gamma\left(t\right)=Re^{it}$, $t\in\left[0,2\pi\right]$; (ii) using the integral in (i), prove Liouville's theorem: every bounded holomorphic function on $\mathbb{C}$ is constant.
 
 ### Solution to Problem 4
 
@@ -78,7 +78,7 @@ By (i), $\frac{2\pi i}{a-b}\left(f\left(a\right)-f\left(b\right)\right)\to0$, so
 
 ### Problem 5
 
-(Problem 14.3-16, Gaussian integral) Let $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (i.e. $\beta^{2}=i\pi$), and consider the function $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta z}}$. (i) Verify that $f$ has singularities only at the set $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,\ n\in\mathbb{Z}\right\}$, all simple poles; (ii) verify that $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$ for all $\forall z\in\mathbb{C}\setminus\mathcal{Z}$; (iii) for sufficiently large $R>0$, consider the parallelogram $\Omega$ with vertices $-R,R,R+\beta,-R+\beta$, and verify that $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi i\operatorname{Res}_{z_{0}}f$, where $z_{0}$ is as in (i); (iv) using the above, verify that $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
+(Problem 14.3-16, Gaussian integral) Let $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (i.e. $\beta^{2}=i\pi$), and consider the function $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta z}}$. (i) Verify that $f$ has singularities only at the set $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,\ n\in\mathbb{Z}\right\}$, all simple poles; (ii) verify that $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$ for all $\forall z\in\mathbb{C}\setminus\mathcal{Z}$; (iii) for sufficiently large $R> 0$, consider the parallelogram $\Omega$ with vertices $-R,R,R+\beta,-R+\beta$, and verify that $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi i\operatorname{Res}_{z_{0}}f$, where $z_{0}$ is as in (i); (iv) using the above, verify that $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
 
 ### Solution to Problem 5
 

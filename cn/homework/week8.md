@@ -50,7 +50,7 @@ $$
 
 ### 解答 习题二
 
-取任意 $a\in\mathbb{C}$ 及半径 $\varepsilon>0$ 的圆周 $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$. 由 $f$ 在 $a$ 处 $\mathbb{R}$-可微, 展开
+取任意 $a\in\mathbb{C}$ 及半径 $\varepsilon> 0$ 的圆周 $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$. 由 $f$ 在 $a$ 处 $\mathbb{R}$-可微, 展开
 
 $$
 f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\bar{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
@@ -62,17 +62,17 @@ $$
 \int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\bar{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
 $$
 
-由题设左边对任意 $\varepsilon>0$ 为零, 两边除以 $\varepsilon^{2}$ 令 $\varepsilon\to0$, 得 $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial f}{\partial\bar{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4**, $f$ 在 $\mathbb{C}$ 上全纯. $\blacksquare$
+由题设左边对任意 $\varepsilon> 0$ 为零, 两边除以 $\varepsilon^{2}$ 令 $\varepsilon\to0$, 得 $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial f}{\partial\bar{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4**, $f$ 在 $\mathbb{C}$ 上全纯. $\blacksquare$
 
 ### 习题三
 
 (习题 8.4-6) 已知 $\int_{0}^{\infty}e^{-x^{2}}\,dx=\frac{\sqrt{\pi}}{2}$. 计算 (菲涅尔积分)
 
-(i) $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx$; (ii) $\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx$; (iii) $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx$, $b>0$.
+(i) $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx$; (ii) $\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx$; (iii) $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx$, $b> 0$.
 
 ### 解答 习题三
 
-(i) 与 (ii) 合并. 考虑围道: 从 $0$ 沿实轴到 $R$, 再沿圆弧 $Re^{i\theta}$, $\theta\in\left[0,\frac{\pi}{4}\right]$, 最后沿线段 $z=te^{i\pi/4}$, $t:R\to0$ 回到 $0$. 因 $e^{iz^{2}}$ 整函数, 围道积分为零. 大圆弧上 $\left|e^{iz^{2}}\right|=e^{-\operatorname{Re}\left(iz^{2}\right)}=e^{-R^{2}\sin2\theta}\le e^{-R^{2}\sin2\theta}$, 当 $\theta\in\left[0,\frac{\pi}{4}\right]$ 有 $\sin2\theta\ge\frac{2\theta}{\pi}\cdot...$ 且 $e^{-R^{2}\sin2\theta}\to0$ 一致 ($\theta>0$), 故圆弧积分趋于 $0$. 于是令 $R\to\infty$:
+(i) 与 (ii) 合并. 考虑围道: 从 $0$ 沿实轴到 $R$, 再沿圆弧 $Re^{i\theta}$, $\theta\in\left[0,\frac{\pi}{4}\right]$, 最后沿线段 $z=te^{i\pi/4}$, $t:R\to0$ 回到 $0$. 因 $e^{iz^{2}}$ 整函数, 围道积分为零. 大圆弧上 $\left|e^{iz^{2}}\right|=e^{-\operatorname{Re}\left(iz^{2}\right)}=e^{-R^{2}\sin2\theta}\le e^{-R^{2}\sin2\theta}$, 当 $\theta\in\left[0,\frac{\pi}{4}\right]$ 有 $\sin2\theta\ge\frac{2\theta}{\pi}\cdot...$ 且 $e^{-R^{2}\sin2\theta}\to0$ 一致 ($\theta> 0$), 故圆弧积分趋于 $0$. 于是令 $R\to\infty$:
 
 $$
 \int_{0}^{\infty}e^{ix^{2}}\,dx=\int_{0}^{\infty}e^{-t^{2}}e^{i\pi/4}\,dt=e^{i\pi/4}\frac{\sqrt{\pi}}{2}.
@@ -102,7 +102,7 @@ $$
 
 ### 解答 习题四
 
-固定 $z\in D$. 取 $R$ 充分大使 $z$ 与 $\partial D$ 都落在 $\left\{\left|w\right|<R\right\}$ 内. 记 $\Gamma_{R}$ 为逆时针圆周 $\left|\zeta\right|=R$, 则 $f$ 在 $\Gamma_{R}$ 与 $\partial D$ 围成的环形区域 (含边界) 上全纯. 由**定理 8.3.1 (柯西积分公式)** 对环形区域 (或分别在内外边界上应用),
+固定 $z\in D$. 取 $R$ 充分大使 $z$ 与 $\partial D$ 都落在 $\left\{\left|w\right|< R\right\}$ 内. 记 $\Gamma_{R}$ 为逆时针圆周 $\left|\zeta\right|=R$, 则 $f$ 在 $\Gamma_{R}$ 与 $\partial D$ 围成的环形区域 (含边界) 上全纯. 由**定理 8.3.1 (柯西积分公式)** 对环形区域 (或分别在内外边界上应用),
 
 $$
 f\left(z\right)=\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.

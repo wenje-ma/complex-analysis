@@ -37,7 +37,7 @@ $$
 
 ### 习题二
 
-(习题 16.3-2) 令 $u=\frac{1}{2\pi}\log\left|z\right|$, $z\in A\left(0;0;1\right):=\left\{0<\left|z\right|<1\right\}$. 证明: (i) $u$ 是圆环 $A\left(0;0;1\right)$ 上的调和函数; (ii) 不存在 $A\left(0;0;1\right)$ 上的全纯函数 $f$ 使得 $\operatorname{Re}f=u$; (iii) 令 $f$ 是开圆盘 $\mathbb{D}$ 上具有紧支撑的光滑 (实) 函数, 则 $\int_{\mathbb{D}}u\left(z\right)\Delta f\left(z\right)\,dx\,dy=f\left(0\right)$.
+(习题 16.3-2) 令 $u=\frac{1}{2\pi}\log\left|z\right|$, $z\in A\left(0;0;1\right):=\left\{0< \left|z\right|< 1\right\}$. 证明: (i) $u$ 是圆环 $A\left(0;0;1\right)$ 上的调和函数; (ii) 不存在 $A\left(0;0;1\right)$ 上的全纯函数 $f$ 使得 $\operatorname{Re}f=u$; (iii) 令 $f$ 是开圆盘 $\mathbb{D}$ 上具有紧支撑的光滑 (实) 函数, 则 $\int_{\mathbb{D}}u\left(z\right)\Delta f\left(z\right)\,dx\,dy=f\left(0\right)$.
 
 ### 解答 习题二
 
@@ -67,14 +67,14 @@ $$
 
 ### 习题三
 
-(习题 16.3-7) 令 $\mathbb{H}:=\left\{\operatorname{Im}z>0\right\}$, 在 $\partial\mathbb{H}$ 上给定一个连续函数 $f$ 且 $\lim_{z\to\infty,\,z\in\partial\mathbb{H}}f\left(z\right)$ 存在且有限. 试求 $\mathbb{H}$ 上的狄利克雷问题的解 $u$ 使得 $u|_{\partial\mathbb{H}}=f$.
+(习题 16.3-7) 令 $\mathbb{H}:=\left\{\operatorname{Im}z> 0\right\}$, 在 $\partial\mathbb{H}$ 上给定一个连续函数 $f$ 且 $\lim_{z\to\infty,\,z\in\partial\mathbb{H}}f\left(z\right)$ 存在且有限. 试求 $\mathbb{H}$ 上的狄利克雷问题的解 $u$ 使得 $u|_{\partial\mathbb{H}}=f$.
 
 ### 解答 习题三
 
 解由上半平面的泊松积分给出:
 
 $$
-u\left(x+iy\right)=\frac{y}{\pi}\int_{-\infty}^{+\infty}\frac{f\left(t\right)}{\left(t-x\right)^{2}+y^{2}}\,dt,\quad y>0.
+u\left(x+iy\right)=\frac{y}{\pi}\int_{-\infty}^{+\infty}\frac{f\left(t\right)}{\left(t-x\right)^{2}+y^{2}}\,dt,\quad y> 0.
 $$
 
 验证: 泊松核 $P_{y}\left(t-x\right):=\frac{y}{\pi\left(\left(t-x\right)^{2}+y^{2}\right)}$ 关于 $\left(x,y\right)$ 是调和的 (它是 $\frac1\pi\operatorname{Im}\frac{1}{t-z}$), 故 $u$ 调和于 $\mathbb{H}$. 又 $\int_{-\infty}^{+\infty}P_{y}\left(t-x\right)dt=1$, 且对 $x_{0}$ 的邻域内 $x$ 一致地有 $P_{y}\left(t-x\right)\to0$ ($t$ 远离 $x_{0}$), 故
@@ -101,11 +101,11 @@ $$
 
 ### 习题五
 
-(习题 16.3-10) (i) 验证 $u\left(x+iy\right)=\frac{1}{\pi}\arctan\frac{y}{x}$ 是上半平面 $\mathbb{H}:=\left\{\left(x,y\right):y>0\right\}$ 上的调和函数且可以连续延拓到除原点外的实轴上, 在正实轴上恒等于 $0$, 在负实轴上恒等于 $1$ (注: 原题 OCR 此处正负实轴上的取值互换了, 按 $u=\frac1\pi\arg z$ 于上半平面取值在 $\left(0,\pi\right)$ 理解); (ii) 考虑莫比乌斯变换 $\phi\left(z\right):\mathbb{H}\to\mathbb{D}$, $z\mapsto\frac{i-z}{i+z}$, 验证 $\widetilde u:=u\circ\phi^{-1}$ 是 $\mathbb{D}$ 上的调和函数而且可连续延拓到除 $\pm1$ 外的边界 $\partial\mathbb{D}$ 上, 在半圆弧 $\left\{e^{i\theta}:0<\theta<\pi\right\}$ 上等于 $0$, 在半圆弧 $\left\{e^{i\theta}:-\pi<\theta<0\right\}$ 上等于 $1$; (iii) 验证 $\widetilde u$ 是它的限定在边界上的函数的泊松积分; (iv) 验证对于任意 $a\in\left(0,1\right)$, 都存在序列 $z_{n}\in\mathbb{D}$, $z_{n}\to1$ (或 $-1$) 使得 $\widetilde u\left(z_{n}\right)\to a$.
+(习题 16.3-10) (i) 验证 $u\left(x+iy\right)=\frac{1}{\pi}\arctan\frac{y}{x}$ 是上半平面 $\mathbb{H}:=\left\{\left(x,y\right):y> 0\right\}$ 上的调和函数且可以连续延拓到除原点外的实轴上, 在正实轴上恒等于 $0$, 在负实轴上恒等于 $1$ (注: 原题 OCR 此处正负实轴上的取值互换了, 按 $u=\frac1\pi\arg z$ 于上半平面取值在 $\left(0,\pi\right)$ 理解); (ii) 考虑莫比乌斯变换 $\phi\left(z\right):\mathbb{H}\to\mathbb{D}$, $z\mapsto\frac{i-z}{i+z}$, 验证 $\widetilde u:=u\circ\phi^{-1}$ 是 $\mathbb{D}$ 上的调和函数而且可连续延拓到除 $\pm1$ 外的边界 $\partial\mathbb{D}$ 上, 在半圆弧 $\left\{e^{i\theta}:0< \theta< \pi\right\}$ 上等于 $0$, 在半圆弧 $\left\{e^{i\theta}:-\pi< \theta< 0\right\}$ 上等于 $1$; (iii) 验证 $\widetilde u$ 是它的限定在边界上的函数的泊松积分; (iv) 验证对于任意 $a\in\left(0,1\right)$, 都存在序列 $z_{n}\in\mathbb{D}$, $z_{n}\to1$ (或 $-1$) 使得 $\widetilde u\left(z_{n}\right)\to a$.
 
 ### 解答 习题五
 
-(i) 于 $\mathbb{H}$, $\frac1\pi\arctan\frac yx=\frac1\pi\arg\left(x+iy\right)$, 而 $\arg\left(x+iy\right)=\operatorname{Im}\operatorname{Log}z$ 是调和的, 故 $u$ 调和于 $\mathbb{H}$. 当 $y\to0^{+}$: 若 $x>0$, $\arg\left(x+iy\right)\to0$, $u\to0$; 若 $x<0$, $\arg\left(x+iy\right)\to\pi$, $u\to1$. 故 $u$ 连续延拓到除原点外的实轴, 正实轴取 $0$, 负实轴取 $1$.
+(i) 于 $\mathbb{H}$, $\frac1\pi\arctan\frac yx=\frac1\pi\arg\left(x+iy\right)$, 而 $\arg\left(x+iy\right)=\operatorname{Im}\operatorname{Log}z$ 是调和的, 故 $u$ 调和于 $\mathbb{H}$. 当 $y\to0^{+}$: 若 $x> 0$, $\arg\left(x+iy\right)\to0$, $u\to0$; 若 $x< 0$, $\arg\left(x+iy\right)\to\pi$, $u\to1$. 故 $u$ 连续延拓到除原点外的实轴, 正实轴取 $0$, 负实轴取 $1$.
 
 (ii) $\phi^{-1}\left(w\right)=i\frac{1-w}{1+w}$. 对 $w=e^{i\theta}\in\partial\mathbb{D}$ ($w\ne\pm1$),
 
@@ -113,7 +113,7 @@ $$
 \phi^{-1}\left(e^{i\theta}\right)=i\frac{1-e^{i\theta}}{1+e^{i\theta}}=i\cdot\left(-i\right)\tan\frac{\theta}{2}=\tan\frac{\theta}{2}\in\mathbb{R}.
 $$
 
-$\tan\frac{\theta}{2}>0$ 当 $0<\theta<\pi$ (正实轴, $u=0$), $\tan\frac{\theta}{2}<0$ 当 $-\pi<\theta<0$ (负实轴, $u=1$). 因 $\phi$ 是共形等价, $\widetilde u=u\circ\phi^{-1}$ 调和于 $\mathbb{D}$ 并连续延拓到 $\partial\mathbb{D}\setminus\left\{\pm1\right\}$, 上半圆弧取 $0$, 下半圆弧取 $1$.
+$\tan\frac{\theta}{2}> 0$ 当 $0< \theta< \pi$ (正实轴, $u=0$), $\tan\frac{\theta}{2}< 0$ 当 $-\pi< \theta< 0$ (负实轴, $u=1$). 因 $\phi$ 是共形等价, $\widetilde u=u\circ\phi^{-1}$ 调和于 $\mathbb{D}$ 并连续延拓到 $\partial\mathbb{D}\setminus\left\{\pm1\right\}$, 上半圆弧取 $0$, 下半圆弧取 $1$.
 
 (iii) $\widetilde u$ 在 $\partial\mathbb{D}$ 上的边界函数 $g\left(e^{i\theta}\right)$ 为: $0$ 于上半圆弧, $1$ 于下半圆弧 (除 $\pm1$). 由**定理 16.2.9 (泊松积分)**, 圆盘 $\mathbb{D}$ 上以 $g$ 为边界值的调和函数唯一, 而 $\widetilde u$ 正是这个解, 故 $\widetilde u$ 等于 $g$ 的泊松积分.
 

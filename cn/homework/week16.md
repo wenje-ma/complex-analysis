@@ -12,7 +12,7 @@
 
 ### 解答 习题一
 
-(i) $z^{3}+2z^{2}-3z=z\left(z+3\right)\left(z-1\right)$, 奇点 $0,1,-3$ 均在 $\left|z\right|<4$ 内, 都是一阶极点. 各留数:
+(i) $z^{3}+2z^{2}-3z=z\left(z+3\right)\left(z-1\right)$, 奇点 $0,1,-3$ 均在 $\left|z\right|< 4$ 内, 都是一阶极点. 各留数:
 
 $$
 \operatorname{Res}_{0}=\frac{1}{3\cdot\left(-1\right)}=-\frac13,\quad
@@ -30,7 +30,7 @@ $$
 \int_{0}^{2\pi}\frac{dx}{4\sin^{2}x+1}=\oint_{\left|z\right|=1}\frac{1}{3-z^{2}-z^{-2}}\frac{dz}{iz}=\oint_{\left|z\right|=1}\frac{z}{i\left(3z^{2}-z^{4}-1\right)}\,dz.
 $$
 
-$3z^{2}-z^{4}-1=-\left(z^{4}-3z^{2}+1\right)$, 而 $z^{4}-3z^{2}+1=0$ 给出 $z^{2}=\frac{3\pm\sqrt5}{2}$. 圆 $\left|z\right|=1$ 内只有 $z^{2}=\frac{3-\sqrt5}{2}$ 的两个根 $\pm\sqrt{\frac{3-\sqrt5}{2}}$ (另一对 $\left|z\right|>1$). 记 $a^{2}=u:=\frac{3-\sqrt5}{2}$, 在 $z=a$ 处
+$3z^{2}-z^{4}-1=-\left(z^{4}-3z^{2}+1\right)$, 而 $z^{4}-3z^{2}+1=0$ 给出 $z^{2}=\frac{3\pm\sqrt5}{2}$. 圆 $\left|z\right|=1$ 内只有 $z^{2}=\frac{3-\sqrt5}{2}$ 的两个根 $\pm\sqrt{\frac{3-\sqrt5}{2}}$ (另一对 $\left|z\right|> 1$). 记 $a^{2}=u:=\frac{3-\sqrt5}{2}$, 在 $z=a$ 处
 
 $$
 \operatorname{Res}_{a}\frac{z}{i\left(3z^{2}-z^{4}-1\right)}=\frac{a}{i\left(-\left(4a^{3}-6a\right)\right)}=\frac{1}{i\left(-\left(4u-6\right)\right)}=\frac{1}{i\left(-\left(-2\sqrt5\right)\right)}=\frac{1}{2\sqrt5\,i},
@@ -56,7 +56,7 @@ $$
 \frac{1}{2\pi i}\int_{\gamma}f\left(z\right)\,dz=\sum_{j=1}^{n}\operatorname{Res}_{a_{j}}f.
 $$
 
-对全复平面上的亚纯函数 $f$ 取充分大的 $R$ 使 $\gamma$ 与全部 $a_{j}$ 都在 $\left\{\left|z\right|<R\right\}$ 内. 在 $\left\{\left|z\right|\le R\right\}$ 上用留数定理, 并把 $\infty$ 视为奇点, 得 $\sum_{j}\operatorname{Res}_{a_{j}}f+\operatorname{Res}_{\infty}f=0$. 又
+对全复平面上的亚纯函数 $f$ 取充分大的 $R$ 使 $\gamma$ 与全部 $a_{j}$ 都在 $\left\{\left|z\right|< R\right\}$ 内. 在 $\left\{\left|z\right|\le R\right\}$ 上用留数定理, 并把 $\infty$ 视为奇点, 得 $\sum_{j}\operatorname{Res}_{a_{j}}f+\operatorname{Res}_{\infty}f=0$. 又
 
 $$
 \operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right),

@@ -2,7 +2,7 @@
 
 > **引理 18.1.1** (拼接引理)<br>区域 $D_{1},D_{2}$ 不相交且有公共边界线段 $\gamma$, $f_{1},f_{2}$ 分别在其上全纯并连续到 $\gamma$, 若 $f_{1}=f_{2}$ 于 $\gamma$, 则拼接的函数在 $D_{1}\cup\gamma\cup D_{2}$ 上全纯.
 
-> **定理 18.1.2** (施瓦茨对称原理 I)<br>$D$ 关于实轴对称, $f$ 在 $D^{+}:=D\cap\left\{\operatorname{Im}z>0\right\}$ 全纯, 连续到 $D^{+}\cap\mathbb{R}$ 且在其上取实值, 则 $f$ 延拓为 $D$ 上全纯函数.
+> **定理 18.1.2** (施瓦茨对称原理 I)<br>$D$ 关于实轴对称, $f$ 在 $D^{+}:=D\cap\left\{\operatorname{Im}z> 0\right\}$ 全纯, 连续到 $D^{+}\cap\mathbb{R}$ 且在其上取实值, 则 $f$ 延拓为 $D$ 上全纯函数.
 
 > **定理 18.1.3** (施瓦茨对称原理 II)<br>$f$ 在 $D^{+}$ 全纯, 连续到边界线段 $I\subset\mathbb{R}$ 且在其上取实值, 则 $f$ 延拓到 $D^{+}\cup I\cup D^{-}$ 上, 其中 $D^{-}$ 是 $D^{+}$ 关于实轴的对称, 延拓满足 $f\left(z\right)=\overline{f\left(\bar z\right)}$.
 
@@ -20,17 +20,17 @@
 
 ### 习题二
 
-(习题 18.4-3) 令 $f$ 为圆环 $A\left(0;0;1\right):=\left\{0<\left|z\right|<1\right\}$ 上的全纯函数, 且 $f$ 可以连续延拓到单位圆周 $\left\{\left|z\right|=1\right\}$ 且在其上只取实数值. 证明: $f$ 可以延拓成 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数且满足 $f\left(z\right)=\overline{f\left(\frac{1}{\bar z}\right)}$, $\forall z\ne0$. (注: 原题 OCR 中右端 $\frac{1}{\bar z}$ 的共轭记号缺失, 按施瓦茨对称原理的标准形式补全.)
+(习题 18.4-3) 令 $f$ 为圆环 $A\left(0;0;1\right):=\left\{0< \left|z\right|< 1\right\}$ 上的全纯函数, 且 $f$ 可以连续延拓到单位圆周 $\left\{\left|z\right|=1\right\}$ 且在其上只取实数值. 证明: $f$ 可以延拓成 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数且满足 $f\left(z\right)=\overline{f\left(\frac{1}{\bar z}\right)}$, $\forall z\ne0$. (注: 原题 OCR 中右端 $\frac{1}{\bar z}$ 的共轭记号缺失, 按施瓦茨对称原理的标准形式补全.)
 
 ### 解答 习题二
 
-$f$ 在单位圆盘 $A\left(0;0;1\right)=\left\{\left|z\right|<1\right\}\setminus\left\{0\right\}$ 上全纯, 在 $\left|z\right|=1$ 上连续取实值. 圆 $\left\{\left|z\right|=1\right\}$ 是一段解析曲线, $f$ 在它上面取实值. 由施瓦茨对称原理 (圆的情形, 即**定理 18.1.3** 经莫比乌斯变换把圆映为实轴), $f$ 可越过 $\left|z\right|=1$ 反射延拓: 对 $\left|z\right|>1$ 定义
+$f$ 在单位圆盘 $A\left(0;0;1\right)=\left\{\left|z\right|< 1\right\}\setminus\left\{0\right\}$ 上全纯, 在 $\left|z\right|=1$ 上连续取实值. 圆 $\left\{\left|z\right|=1\right\}$ 是一段解析曲线, $f$ 在它上面取实值. 由施瓦茨对称原理 (圆的情形, 即**定理 18.1.3** 经莫比乌斯变换把圆映为实轴), $f$ 可越过 $\left|z\right|=1$ 反射延拓: 对 $\left|z\right|> 1$ 定义
 
 $$
-f\left(z\right):=\overline{f\left(\frac{1}{\bar z}\right)},\quad \left|z\right|>1.
+f\left(z\right):=\overline{f\left(\frac{1}{\bar z}\right)},\quad \left|z\right|> 1.
 $$
 
-右端在 $\left|z\right|>1$ 处全纯 (因 $\frac{1}{\bar z}$ 落在 $\left|z\right|<1$ 内), 且在 $\left|z\right|=1$ 上 $z=\frac{1}{\bar z}$, 由 $f$ 实值得 $f\left(z\right)=\overline{f\left(z\right)}$, 与原来的 $f$ 吻合. 故 $f$ 延拓成 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数, 且由定义恒有 $f\left(z\right)=\overline{f\left(\frac{1}{\bar z}\right)}$, $\forall z\ne0$. $\blacksquare$
+右端在 $\left|z\right|> 1$ 处全纯 (因 $\frac{1}{\bar z}$ 落在 $\left|z\right|< 1$ 内), 且在 $\left|z\right|=1$ 上 $z=\frac{1}{\bar z}$, 由 $f$ 实值得 $f\left(z\right)=\overline{f\left(z\right)}$, 与原来的 $f$ 吻合. 故 $f$ 延拓成 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数, 且由定义恒有 $f\left(z\right)=\overline{f\left(\frac{1}{\bar z}\right)}$, $\forall z\ne0$. $\blacksquare$
 
 ### 习题三
 
@@ -40,13 +40,13 @@ $$
 
 由 $f\left(\mathbb{R}\right)\subset\mathbb{R}$, 应用**定理 18.1.3 (施瓦茨对称原理 II)** 得 $f\left(\bar z\right)=\overline{f\left(z\right)}$, $\forall z\in\mathbb{C}$.
 
-记 $f_{e}\left(z\right):=\frac{f\left(z\right)+f\left(-z\right)}{2}$ (偶部), 它是整函数. 由 $f\left(\mathbb{R}\right)\subset\mathbb{R}$, 对 $z=x\in\mathbb{R}$ 有 $f_{e}\left(x\right)\in\mathbb{R}$; 由 $f\left(i\mathbb{R}\right)\subset i\mathbb{R}$, 对 $z=iy$ 有 $f_{e}\left(iy\right)\in i\mathbb{R}$. 因 $f_{e}$ 是偶整函数, 存在整函数 $F$ 使 $f_{e}\left(z\right)=F\left(z^{2}\right)$. 于是 $F$ 满足: $x>0$ 时 $F\left(x\right)=f_{e}\left(\sqrt x\right)\in\mathbb{R}$; $x<0$ 时 $F\left(x\right)=f_{e}\left(i\sqrt{\left|x\right|}\right)\in i\mathbb{R}$.
+记 $f_{e}\left(z\right):=\frac{f\left(z\right)+f\left(-z\right)}{2}$ (偶部), 它是整函数. 由 $f\left(\mathbb{R}\right)\subset\mathbb{R}$, 对 $z=x\in\mathbb{R}$ 有 $f_{e}\left(x\right)\in\mathbb{R}$; 由 $f\left(i\mathbb{R}\right)\subset i\mathbb{R}$, 对 $z=iy$ 有 $f_{e}\left(iy\right)\in i\mathbb{R}$. 因 $f_{e}$ 是偶整函数, 存在整函数 $F$ 使 $f_{e}\left(z\right)=F\left(z^{2}\right)$. 于是 $F$ 满足: $x> 0$ 时 $F\left(x\right)=f_{e}\left(\sqrt x\right)\in\mathbb{R}$; $x< 0$ 时 $F\left(x\right)=f_{e}\left(i\sqrt{\left|x\right|}\right)\in i\mathbb{R}$.
 
-由 $F\left(x\right)\in\mathbb{R}$ 于 $x>0$ 及对称原理, $F\left(\bar w\right)=\overline{F\left(w\right)}$, 特别对 $x<0$: $F\left(x\right)=\overline{F\left(x\right)}$, 故 $F\left(x\right)\in\mathbb{R}$. 结合 $F\left(x\right)\in i\mathbb{R}$ 于 $x<0$, 得 $F\left(x\right)=0$ 于负实轴 $x<0$. 负实轴有聚点, $F$ 整函数在其上为零, 故 $F\equiv0$, 从而 $f_{e}\equiv0$, 即 $f\left(-z\right)=-f\left(z\right)$, $\forall z\in\mathbb{C}$. $\blacksquare$
+由 $F\left(x\right)\in\mathbb{R}$ 于 $x> 0$ 及对称原理, $F\left(\bar w\right)=\overline{F\left(w\right)}$, 特别对 $x< 0$: $F\left(x\right)=\overline{F\left(x\right)}$, 故 $F\left(x\right)\in\mathbb{R}$. 结合 $F\left(x\right)\in i\mathbb{R}$ 于 $x< 0$, 得 $F\left(x\right)=0$ 于负实轴 $x< 0$. 负实轴有聚点, $F$ 整函数在其上为零, 故 $F\equiv0$, 从而 $f_{e}\equiv0$, 即 $f\left(-z\right)=-f\left(z\right)$, $\forall z\in\mathbb{C}$. $\blacksquare$
 
 ### 习题四
 
-(习题 18.4-7) 令 $f\left(z\right)$ 为圆环 $A\left(0;1;2\right):=\left\{1<\left|z\right|<2\right\}$ 上的全纯函数, $\gamma$ 是圆周 $\left|z\right|=2$ 上的一段圆弧, $f\left(z\right)$ 在 $A\left(0;1;2\right)\cup\gamma$ 上连续, 且 $f$ 在 $\gamma$ 上恒取零值. 证明: $f\left(z\right)\equiv0$.
+(习题 18.4-7) 令 $f\left(z\right)$ 为圆环 $A\left(0;1;2\right):=\left\{1< \left|z\right|< 2\right\}$ 上的全纯函数, $\gamma$ 是圆周 $\left|z\right|=2$ 上的一段圆弧, $f\left(z\right)$ 在 $A\left(0;1;2\right)\cup\gamma$ 上连续, 且 $f$ 在 $\gamma$ 上恒取零值. 证明: $f\left(z\right)\equiv0$.
 
 ### 解答 习题四
 

@@ -42,7 +42,7 @@ $f$ 是 $\mathbb{C}\setminus\left[0,+\infty\right)$ 上对数函数的全纯分�
 
 ### 习题三
 
-(习题 6.5-6) 考虑函数 $w\left(z\right)=\left(\frac{\left(z+1\right)\left(z-1\right)\left(z-2\right)}{z}\right)^{1/3}$. 寻找它的一个使得 $w\left(3\right)>0$ 的全纯分支.
+(习题 6.5-6) 考虑函数 $w\left(z\right)=\left(\frac{\left(z+1\right)\left(z-1\right)\left(z-2\right)}{z}\right)^{1/3}$. 寻找它的一个使得 $w\left(3\right)> 0$ 的全纯分支.
 
 ### 解答 习题三
 
@@ -55,21 +55,21 @@ $$
 它是 $D$ 上的全纯函数, 且满足 $w\left(z\right)^{3}=\frac{\left(z+1\right)\left(z-1\right)\left(z-2\right)}{z}$, 即为该函数在 $D$ 上的一个全纯分支. 在 $z=3$ 处, $z+1=4$, $z-1=2$, $z-2=1$, $z=3$ 均为正实数, 主对数取实值 $\ln$, 故
 
 $$
-w\left(3\right)=\exp\left(\frac13\left(\ln4+\ln2+\ln1-\ln3\right)\right)=\exp\left(\frac13\ln\frac83\right)=\left(\frac83\right)^{1/3}>0.
+w\left(3\right)=\exp\left(\frac13\left(\ln4+\ln2+\ln1-\ln3\right)\right)=\exp\left(\frac13\ln\frac83\right)=\left(\frac83\right)^{1/3}> 0.
 $$
 
-故该分支满足 $w\left(3\right)>0$. $\blacksquare$
+故该分支满足 $w\left(3\right)> 0$. $\blacksquare$
 
 ### 习题四
 
-(习题 6.5-8) 令 $\alpha\in\mathbb{R}$, $\log z$ 是对数函数 $\operatorname{Log}z$ 满足 $\alpha<\arg z<\alpha+2\pi$ 的全纯分支, $z^{1/2}$ 为该全纯分支对应的平方根的全纯分支. (i) 给出函数 $\log z^{1/2}$ 的取值范围; (ii) 给出函数 $f\left(z\right)=\tan\left(\frac{1}{2i}\log\left(\frac{1+iz}{1-iz}\right)\right)$ 的定义域并验证在它的定义域内 $f\left(z\right)=z$.
+(习题 6.5-8) 令 $\alpha\in\mathbb{R}$, $\log z$ 是对数函数 $\operatorname{Log}z$ 满足 $\alpha< \arg z< \alpha+2\pi$ 的全纯分支, $z^{1/2}$ 为该全纯分支对应的平方根的全纯分支. (i) 给出函数 $\log z^{1/2}$ 的取值范围; (ii) 给出函数 $f\left(z\right)=\tan\left(\frac{1}{2i}\log\left(\frac{1+iz}{1-iz}\right)\right)$ 的定义域并验证在它的定义域内 $f\left(z\right)=z$.
 
 ### 解答 习题四
 
 (i) $\log z^{1/2}=\frac12\log z$. $\log z$ 的虚部是幅角, 取在 $\left(\alpha,\alpha+2\pi\right)$, 故 $\log z^{1/2}$ 的虚部取在 $\left(\frac\alpha2,\frac\alpha2+\pi\right)$; 实部 $\frac12\ln\left|z\right|$ 取遍 $\mathbb{R}$. 故 $\log z^{1/2}$ 的取值范围为水平带
 
 $$
-\left\{\zeta\in\mathbb{C}:\ \frac{\alpha}{2}<\operatorname{Im}\zeta<\frac{\alpha}{2}+\pi\right\}.
+\left\{\zeta\in\mathbb{C}:\ \frac{\alpha}{2}< \operatorname{Im}\zeta< \frac{\alpha}{2}+\pi\right\}.
 $$
 
 (ii) 记 $w\left(z\right)=\frac{1+iz}{1-iz}$ (莫比乌斯变换), 定义域要求 $w$ 落在 $\log$ 分支的定义域内且 $z\ne\pm i$. $\log$ 分支在 $\mathbb{C}$ 去掉幅角为 $\alpha$ 的射线 $R_{\alpha}:=\left\{re^{i\alpha}:r\ge0\right\}$ 上全纯, 故 $f$ 的定义域为

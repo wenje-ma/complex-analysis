@@ -8,7 +8,7 @@
 
 ### 习题一
 
-(习题 7.4-1) (i) 令 $P\left(z\right)=z^{n}+a_{n-1}z^{n-1}+\cdots+a_{0}$ 是首 $1$ 的多项式. 证明: $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$. (ii) 是否存在多项式 $P\left(z\right)=\sum_{j=1}^{n}a_{j}z^{j}$ 使得 $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|<1$?
+(习题 7.4-1) (i) 令 $P\left(z\right)=z^{n}+a_{n-1}z^{n-1}+\cdots+a_{0}$ 是首 $1$ 的多项式. 证明: $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$. (ii) 是否存在多项式 $P\left(z\right)=\sum_{j=1}^{n}a_{j}z^{j}$ 使得 $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|< 1$?
 
 ### 解答 习题一
 
@@ -18,7 +18,7 @@ $$
 \frac{1}{2\pi}\int_{0}^{2\pi}\left|P\left(e^{i\theta}\right)\right|^{2}\,d\theta=\sum_{j=0}^{n}\left|a_{j}\right|^{2}\ge\left|a_{n}\right|^{2}=1.
 $$
 
-若 $\left|P\left(e^{i\theta}\right)\right|<1$ 于一切 $\theta$, 则左边 $<1$, 矛盾. 故存在 $\theta$ 使 $\left|P\left(e^{i\theta}\right)\right|\ge1$, 即 $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$.
+若 $\left|P\left(e^{i\theta}\right)\right|< 1$ 于一切 $\theta$, 则左边 $< 1$, 矛盾. 故存在 $\theta$ 使 $\left|P\left(e^{i\theta}\right)\right|\ge1$, 即 $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$.
 
 (ii) 不存在. 在 $\left|z\right|=1$ 上, $P\left(z\right)-\frac{1}{z^{2}}=\sum_{j=1}^{n}a_{j}z^{j}-z^{-2}$, 其 $z^{-2}$ 项系数为 $-1$. 由帕塞瓦尔等式,
 
@@ -26,11 +26,11 @@ $$
 \frac{1}{2\pi}\int_{0}^{2\pi}\left|P\left(e^{i\theta}\right)-e^{-2i\theta}\right|^{2}d\theta=\sum_{j=1}^{n}\left|a_{j}\right|^{2}+1\ge1.
 $$
 
-故存在 $\theta$ 使 $\left|P\left(e^{i\theta}\right)-e^{-2i\theta}\right|\ge1$, 即 $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|\ge1$. 因此不能有 $\max<1$. $\blacksquare$
+故存在 $\theta$ 使 $\left|P\left(e^{i\theta}\right)-e^{-2i\theta}\right|\ge1$, 即 $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|\ge1$. 因此不能有 $\max< 1$. $\blacksquare$
 
 ### 习题二
 
-(习题 7.4-3) 计算积分: (i) $\int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz$ ($n\in\mathbb{N}$); (ii) $\int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz$, $\left|a\right|<r<\left|b\right|$.
+(习题 7.4-3) 计算积分: (i) $\int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz$ ($n\in\mathbb{N}$); (ii) $\int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz$, $\left|a\right|< r< \left|b\right|$.
 
 ### 解答 习题二
 
@@ -40,7 +40,7 @@ $$
 \int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz=2\pi i\binom{2n}{n}.
 $$
 
-(ii) 在 $\left\{\left|z\right|=r\right\}$ 内 ($\left|a\right|<r<\left|b\right|$) 只有简单极点 $z=a$, 其留数为 $\frac{1}{a-b}$. 由留数/柯西积分,
+(ii) 在 $\left\{\left|z\right|=r\right\}$ 内 ($\left|a\right|< r< \left|b\right|$) 只有简单极点 $z=a$, 其留数为 $\frac{1}{a-b}$. 由留数/柯西积分,
 
 $$
 \int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz=2\pi i\cdot\frac{1}{a-b}.

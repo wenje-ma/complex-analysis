@@ -22,11 +22,11 @@ $$
 
 ### 习题二
 
-(习题 15.4-8) 令 $P$ 和 $Q$ 为多项式且 $\deg Q\ge\deg P+2$, $g=\frac{P}{Q}$ 和 $f\left(z\right)=g\left(z\right)\cot\pi z$. 令 $Z\left(Q\right)$ 为 $Q$ 的零点所组成的集合. (i) 证明: 存在 $M>0$ 和 $R>0$ 使得 $\left|g\left(z\right)\right|\le\frac{M}{\left|z\right|^{2}}$, $\forall z\notin\left\{\left|z\right|\le R\right\}$; (ii) 令 $N\in\mathbb{N}$ 且 $N>R$, 取四条边分别落在直线 $\operatorname{Re}z=\pm\left(N+\frac12\right)$ 和 $\operatorname{Im}z=\pm N$ 上的长方形 $C_{N}$, 证明: $\lim_{N\to\infty}\int_{C_{N}}f\left(z\right)\,dz=0$; (iii) 证明: 任意 $n\in\mathbb{Z}\setminus Z\left(Q\right)$, $\operatorname{Res}_{z=n}f=\frac{g\left(n\right)}{\pi}$; (iv) 证明: $\sum_{n=-\infty}^{+\infty}\operatorname{Res}_{z=n}f=-\sum_{a\in Z\left(Q\right)\setminus\mathbb{Z}}\operatorname{Res}_{z=a}f$; (v) 取 $g\left(z\right)=\frac{1}{z^{2}+c^{2}}$, $c>0$, 计算 $\sum_{n=1}^{+\infty}\frac{1}{n^{2}+c^{2}}$.
+(习题 15.4-8) 令 $P$ 和 $Q$ 为多项式且 $\deg Q\ge\deg P+2$, $g=\frac{P}{Q}$ 和 $f\left(z\right)=g\left(z\right)\cot\pi z$. 令 $Z\left(Q\right)$ 为 $Q$ 的零点所组成的集合. (i) 证明: 存在 $M> 0$ 和 $R> 0$ 使得 $\left|g\left(z\right)\right|\le\frac{M}{\left|z\right|^{2}}$, $\forall z\notin\left\{\left|z\right|\le R\right\}$; (ii) 令 $N\in\mathbb{N}$ 且 $N> R$, 取四条边分别落在直线 $\operatorname{Re}z=\pm\left(N+\frac12\right)$ 和 $\operatorname{Im}z=\pm N$ 上的长方形 $C_{N}$, 证明: $\lim_{N\to\infty}\int_{C_{N}}f\left(z\right)\,dz=0$; (iii) 证明: 任意 $n\in\mathbb{Z}\setminus Z\left(Q\right)$, $\operatorname{Res}_{z=n}f=\frac{g\left(n\right)}{\pi}$; (iv) 证明: $\sum_{n=-\infty}^{+\infty}\operatorname{Res}_{z=n}f=-\sum_{a\in Z\left(Q\right)\setminus\mathbb{Z}}\operatorname{Res}_{z=a}f$; (v) 取 $g\left(z\right)=\frac{1}{z^{2}+c^{2}}$, $c> 0$, 计算 $\sum_{n=1}^{+\infty}\frac{1}{n^{2}+c^{2}}$.
 
 ### 解答 习题二
 
-(i) $\deg Q\ge\deg P+2$, 故 $g\left(z\right)=\frac{P\left(z\right)}{Q\left(z\right)}$ 在 $\left|z\right|\to+\infty$ 时满足 $\left|g\left(z\right)\right|\le\frac{C}{\left|z\right|^{2}}$, 即存在 $M,R>0$ 使 $\left|g\left(z\right)\right|\le\frac{M}{\left|z\right|^{2}}$, $\forall \left|z\right|>R$.
+(i) $\deg Q\ge\deg P+2$, 故 $g\left(z\right)=\frac{P\left(z\right)}{Q\left(z\right)}$ 在 $\left|z\right|\to+\infty$ 时满足 $\left|g\left(z\right)\right|\le\frac{C}{\left|z\right|^{2}}$, 即存在 $M,R> 0$ 使 $\left|g\left(z\right)\right|\le\frac{M}{\left|z\right|^{2}}$, $\forall \left|z\right|> R$.
 
 (ii) 在 $C_{N}$ 上 $\left|z\right|\ge N$, 故 $\left|g\left(z\right)\right|\le\frac{M}{N^{2}}$. 在 $\operatorname{Im}z=\pm N$ 和 $\operatorname{Re}z=\pm\left(N+\frac12\right)$ 上, 极点 $z=n$ (整数) 被避开, 且 $\cot\pi z$ 在这些边上一致有界 (当 $\left|\operatorname{Im}z\right|\ge N$, 或 $\operatorname{Re}z$ 为半整数时 $\cot\pi z$ 有界), 记 $\left|\cot\pi z\right|\le K$. 于是 $\left|f\right|\le\frac{MK}{N^{2}}$, 而 $C_{N}$ 的周长 $\le C'N$, 故
 

@@ -34,7 +34,7 @@ z_{0}=\sum_{j=1}^{n}\lambda_{j}a_{j},\quad
 \lambda_{j}:=\frac{\frac{1}{\left|z_{0}-a_{j}\right|^{2}}}{\sum_{k=1}^{n}\frac{1}{\left|z_{0}-a_{k}\right|^{2}}}.
 $$
 
-$\lambda_{j}>0$ and $\sum_{j}\lambda_{j}=1$, so $z_{0}$ is a convex combination of $a_{1},\ldots,a_{n}$ and lies in their convex hull. This completes the proof. $\blacksquare$
+$\lambda_{j}> 0$ and $\sum_{j}\lambda_{j}=1$, so $z_{0}$ is a convex combination of $a_{1},\ldots,a_{n}$ and lies in their convex hull. This completes the proof. $\blacksquare$
 
 ### Problem 2
 

@@ -14,11 +14,11 @@
 
 ### Problem 1
 
-(Problem 11.3-3) Let $f$ be a conformal equivalence from a simply connected domain $D\subset\mathbb{C}$ to the open unit disk $\mathbb{D}:=\left\{\left|z\right|<1\right\}$. Prove: if $D\ni z_{n}\to z\in\partial D$, then $\left|f\left(z_{n}\right)\right|\to1$.
+(Problem 11.3-3) Let $f$ be a conformal equivalence from a simply connected domain $D\subset\mathbb{C}$ to the open unit disk $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$. Prove: if $D\ni z_{n}\to z\in\partial D$, then $\left|f\left(z_{n}\right)\right|\to1$.
 
 ### Solution to Problem 1
 
-Suppose for contradiction that $\left|f\left(z_{n}\right)\right|\not\to1$. Since $\left|f\right|<1$, there exists a subsequence (still denoted $z_{n}$) and $\rho<1$ such that $\left|f\left(z_{n}\right)\right|\le\rho<1$. Then $\left\{f\left(z_{n}\right)\right\}$ is contained in the compact subset $\left\{\left|w\right|\le\rho\right\}$ of $\mathbb{D}$, so there exists a convergent subsequence $f\left(z_{n_{k}}\right)\to w_{0}\in\left\{\left|w\right|\le\rho\right\}\subset\mathbb{D}$.
+Suppose for contradiction that $\left|f\left(z_{n}\right)\right|\not\to1$. Since $\left|f\right|< 1$, there exists a subsequence (still denoted $z_{n}$) and $\rho< 1$ such that $\left|f\left(z_{n}\right)\right|\le\rho< 1$. Then $\left\{f\left(z_{n}\right)\right\}$ is contained in the compact subset $\left\{\left|w\right|\le\rho\right\}$ of $\mathbb{D}$, so there exists a convergent subsequence $f\left(z_{n_{k}}\right)\to w_{0}\in\left\{\left|w\right|\le\rho\right\}\subset\mathbb{D}$.
 
 $f$ is a conformal equivalence from $D$ to $\mathbb{D}$, so $f^{-1}:\mathbb{D}\to D$ is holomorphic and continuous. From $f\left(z_{n_{k}}\right)\to w_{0}\in\mathbb{D}$, we get
 
@@ -48,7 +48,7 @@ If $g$ is constant, say $g\equiv z_{0}$, then $z_{0}\in\bar D$. If $z_{0}\in D$,
 
 By **Theorem 11.1.3 (Montel)**, $\left\{f_{n}\right\}$ is normal on $D$: every subsequence has a further subsequence converging normally on $D$. Suppose $f_{n_{k}}\to f$ normally; by **Theorem 11.1.2**, $f$ is holomorphic on $D$. For each $m$, from $f_{n_{k}}\to f$ uniformly near $\left\{z_{m}\right\}$ and the condition $\lim_{n}f_{n}\left(z_{m}\right)=w_{m}$, we get $f\left(z_{m}\right)=w_{m}$.
 
-Now we show that the whole sequence converges to $f$. If not, there exist a compact set $K\subset D$, $\varepsilon>0$, and a subsequence $f_{n'_{j}}$ such that $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$. By Montel, $f_{n'_{j}}$ has a subsequence converging normally to some holomorphic $\widetilde f$. Then $\widetilde f\left(z_{m}\right)=w_{m}=f\left(z_{m}\right)$ for all $m$; since $z_{m}\to z_{\infty}\in D$ has an accumulation point, by **Theorem 9.3.2 (Identity Theorem)** $\widetilde f=f$. This contradicts $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$ while $f_{n'_{j}}\to f$ on $K$. Hence $f_{n}\to f$ normally on $D$. $\blacksquare$
+Now we show that the whole sequence converges to $f$. If not, there exist a compact set $K\subset D$, $\varepsilon> 0$, and a subsequence $f_{n'_{j}}$ such that $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$. By Montel, $f_{n'_{j}}$ has a subsequence converging normally to some holomorphic $\widetilde f$. Then $\widetilde f\left(z_{m}\right)=w_{m}=f\left(z_{m}\right)$ for all $m$; since $z_{m}\to z_{\infty}\in D$ has an accumulation point, by **Theorem 9.3.2 (Identity Theorem)** $\widetilde f=f$. This contradicts $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$ while $f_{n'_{j}}\to f$ on $K$. Hence $f_{n}\to f$ normally on $D$. $\blacksquare$
 
 ### Problem 4
 
@@ -72,7 +72,7 @@ Hence $\operatorname{Area}\left(f\left(D\right)\right)=\iint_{D}\left|f'\left(z\
 
 ### Problem 5
 
-(Problem 11.3-15) Let $\left\{f_{n}\right\}$ be a sequence of holomorphic functions on an open set $\Omega\subset\mathbb{C}$. Suppose there exists a sequence of positive real numbers $c_{n}>0$ such that $\sum_{n=1}^{+\infty}c_{n}<+\infty$ and $\left|f_{n}\left(z\right)-1\right|\le c_{n}$ for all $\forall z\in\Omega$. Prove:
+(Problem 11.3-15) Let $\left\{f_{n}\right\}$ be a sequence of holomorphic functions on an open set $\Omega\subset\mathbb{C}$. Suppose there exists a sequence of positive real numbers $c_{n}> 0$ such that $\sum_{n=1}^{+\infty}c_{n}< +\infty$ and $\left|f_{n}\left(z\right)-1\right|\le c_{n}$ for all $\forall z\in\Omega$. Prove:
 
 (i) the infinite product $\prod_{n=1}^{+\infty}f_{n}\left(z\right)$ converges uniformly on $\Omega$ to a holomorphic function $f$ on $\Omega$;
 
@@ -86,7 +86,7 @@ $$
 \left|P_{n}\left(z\right)\right|\le\prod_{k=1}^{n}\left(1+c_{k}\right)\le\exp\left(\sum_{k=1}^{n}c_{k}\right)\le e^{C},
 $$
 
-where $C=\sum_{k=1}^{+\infty}c_{k}<+\infty$. Then
+where $C=\sum_{k=1}^{+\infty}c_{k}< +\infty$. Then
 
 $$
 \left|P_{n}\left(z\right)-P_{n-1}\left(z\right)\right|=\left|P_{n-1}\left(z\right)\right|\left|f_{n}\left(z\right)-1\right|\le e^{C}c_{n}.
@@ -94,7 +94,7 @@ $$
 
 Since $\sum c_{n}$ converges, $\sum\left|P_{n}-P_{n-1}\right|$ converges uniformly on $\Omega$, so $P_{n}\to f$ uniformly on $\Omega$. By **Theorem 11.1.2**, $f$ is holomorphic on $\Omega$.
 
-(ii) Choose $N_{0}$ large enough so that $\sum_{n>N_{0}}c_{n}<\frac{1}{2}$. For $n>N_{0}$, $\left|f_{n}\left(z\right)-1\right|\le c_{n}$; taking $c_{n}$ small enough (by convergence) ensures $f_{n}\left(z\right)\ne0$; and $\left|P_{n}\left(z\right)\right|\ge\prod_{k=1}^{n}\left(1-c_{k}\right)>0$ locally, so $f$ is nonvanishing on $\Omega$. Since $P_{n}\to f$ normally and locally $P_{n}\ne0$, the logarithmic derivatives satisfy $\frac{P_{n}'}{P_{n}}\to\frac{f'}{f}$ normally. For a finite product,
+(ii) Choose $N_{0}$ large enough so that $\sum_{n> N_{0}}c_{n}< \frac{1}{2}$. For $n> N_{0}$, $\left|f_{n}\left(z\right)-1\right|\le c_{n}$; taking $c_{n}$ small enough (by convergence) ensures $f_{n}\left(z\right)\ne0$; and $\left|P_{n}\left(z\right)\right|\ge\prod_{k=1}^{n}\left(1-c_{k}\right)> 0$ locally, so $f$ is nonvanishing on $\Omega$. Since $P_{n}\to f$ normally and locally $P_{n}\ne0$, the logarithmic derivatives satisfy $\frac{P_{n}'}{P_{n}}\to\frac{f'}{f}$ normally. For a finite product,
 
 $$
 \frac{P_{n}'\left(z\right)}{P_{n}\left(z\right)}=\sum_{k=1}^{n}\frac{f_{k}'\left(z\right)}{f_{k}\left(z\right)},

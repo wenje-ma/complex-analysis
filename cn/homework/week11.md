@@ -14,11 +14,11 @@
 
 ### 习题一
 
-(习题 11.3-3) 令 $f$ 是单连通区域 $D\subset\mathbb{C}$ 到开单位圆盘 $\mathbb{D}:=\left\{\left|z\right|<1\right\}$ 的共形等价映射. 证明: 若 $D\ni z_{n}\to z\in\partial D$, 则 $\left|f\left(z_{n}\right)\right|\to1$.
+(习题 11.3-3) 令 $f$ 是单连通区域 $D\subset\mathbb{C}$ 到开单位圆盘 $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$ 的共形等价映射. 证明: 若 $D\ni z_{n}\to z\in\partial D$, 则 $\left|f\left(z_{n}\right)\right|\to1$.
 
 ### 解答 习题一
 
-反设 $\left|f\left(z_{n}\right)\right|\not\to1$. 因 $\left|f\right|<1$, 存在子列 (仍记 $z_{n}$) 及 $\rho<1$ 使得 $\left|f\left(z_{n}\right)\right|\le\rho<1$. 于是 $\left\{f\left(z_{n}\right)\right\}$ 含于 $\mathbb{D}$ 的紧子集 $\left\{\left|w\right|\le\rho\right\}$, 存在收敛子列 $f\left(z_{n_{k}}\right)\to w_{0}\in\left\{\left|w\right|\le\rho\right\}\subset\mathbb{D}$.
+反设 $\left|f\left(z_{n}\right)\right|\not\to1$. 因 $\left|f\right|< 1$, 存在子列 (仍记 $z_{n}$) 及 $\rho< 1$ 使得 $\left|f\left(z_{n}\right)\right|\le\rho< 1$. 于是 $\left\{f\left(z_{n}\right)\right\}$ 含于 $\mathbb{D}$ 的紧子集 $\left\{\left|w\right|\le\rho\right\}$, 存在收敛子列 $f\left(z_{n_{k}}\right)\to w_{0}\in\left\{\left|w\right|\le\rho\right\}\subset\mathbb{D}$.
 
 $f$ 是 $D$ 到 $\mathbb{D}$ 的共形等价映射, 故 $f^{-1}:\mathbb{D}\to D$ 全纯连续. 由 $f\left(z_{n_{k}}\right)\to w_{0}\in\mathbb{D}$, 得
 
@@ -48,7 +48,7 @@ $$
 
 由**定理 11.1.3 (蒙泰尔)**, $\left\{f_{n}\right\}$ 在 $D$ 上正规: 任意子列含有在 $D$ 上内紧一致收敛的子列. 设 $f_{n_{k}}\to f$ 内紧一致, 由**定理 11.1.2** $f$ 在 $D$ 上全纯. 对每个 $m$, 由 $f_{n_{k}}\to f$ 一致于 $\left\{z_{m}\right\}$ 附近及条件 $\lim_{n}f_{n}\left(z_{m}\right)=w_{m}$, 得 $f\left(z_{m}\right)=w_{m}$.
 
-现在证明整个序列收敛到 $f$. 若不然, 存在紧集 $K\subset D$, $\varepsilon>0$ 及子列 $f_{n'_{j}}$ 使得 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$. 由蒙泰尔, $f_{n'_{j}}$ 有子列内紧收敛到某全纯 $\widetilde f$. 则 $\widetilde f\left(z_{m}\right)=w_{m}=f\left(z_{m}\right)$ 对一切 $m$ 成立; 因 $z_{m}\to z_{\infty}\in D$ 有聚点, 由**定理 9.3.2 (恒等定理)** $\widetilde f=f$. 这与 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$ 且 $f_{n'_{j}}\to f$ 于 $K$ 矛盾. 故 $f_{n}\to f$ 在 $D$ 上内紧一致收敛. $\blacksquare$
+现在证明整个序列收敛到 $f$. 若不然, 存在紧集 $K\subset D$, $\varepsilon> 0$ 及子列 $f_{n'_{j}}$ 使得 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$. 由蒙泰尔, $f_{n'_{j}}$ 有子列内紧收敛到某全纯 $\widetilde f$. 则 $\widetilde f\left(z_{m}\right)=w_{m}=f\left(z_{m}\right)$ 对一切 $m$ 成立; 因 $z_{m}\to z_{\infty}\in D$ 有聚点, 由**定理 9.3.2 (恒等定理)** $\widetilde f=f$. 这与 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$ 且 $f_{n'_{j}}\to f$ 于 $K$ 矛盾. 故 $f_{n}\to f$ 在 $D$ 上内紧一致收敛. $\blacksquare$
 
 ### 习题四
 
@@ -72,7 +72,7 @@ $$
 
 ### 习题五
 
-(习题 11.3-15) 令 $\left\{f_{n}\right\}$ 是开集 $\Omega\subset\mathbb{C}$ 上的一列全纯函数. 假设存在正实数序列 $c_{n}>0$ 使得 $\sum_{n=1}^{+\infty}c_{n}<+\infty$ 而且 $\left|f_{n}\left(z\right)-1\right|\le c_{n}$, $\forall z\in\Omega$. 证明:
+(习题 11.3-15) 令 $\left\{f_{n}\right\}$ 是开集 $\Omega\subset\mathbb{C}$ 上的一列全纯函数. 假设存在正实数序列 $c_{n}> 0$ 使得 $\sum_{n=1}^{+\infty}c_{n}< +\infty$ 而且 $\left|f_{n}\left(z\right)-1\right|\le c_{n}$, $\forall z\in\Omega$. 证明:
 
 (i) 无穷乘积 $\prod_{n=1}^{+\infty}f_{n}\left(z\right)$ 在 $\Omega$ 上一致收敛到一个 $\Omega$ 上的全纯函数 $f$;
 
@@ -86,7 +86,7 @@ $$
 \left|P_{n}\left(z\right)\right|\le\prod_{k=1}^{n}\left(1+c_{k}\right)\le\exp\left(\sum_{k=1}^{n}c_{k}\right)\le e^{C},
 $$
 
-其中 $C=\sum_{k=1}^{+\infty}c_{k}<+\infty$. 于是
+其中 $C=\sum_{k=1}^{+\infty}c_{k}< +\infty$. 于是
 
 $$
 \left|P_{n}\left(z\right)-P_{n-1}\left(z\right)\right|=\left|P_{n-1}\left(z\right)\right|\left|f_{n}\left(z\right)-1\right|\le e^{C}c_{n}.
@@ -94,7 +94,7 @@ $$
 
 因 $\sum c_{n}$ 收敛, $\sum\left|P_{n}-P_{n-1}\right|$ 在 $\Omega$ 上一致收敛, 故 $P_{n}\to f$ 在 $\Omega$ 上一致. 由**定理 11.1.2**, $f$ 在 $\Omega$ 上全纯.
 
-(ii) 取 $N_{0}$ 充分大使 $\sum_{n>N_{0}}c_{n}<\frac{1}{2}$. 对 $n>N_{0}$, $\left|f_{n}\left(z\right)-1\right|\le c_{n}$, 取 $c_{n}$ 充分小 (由收敛性) 使 $f_{n}\left(z\right)\ne0$; 且 $\left|P_{n}\left(z\right)\right|\ge\prod_{k=1}^{n}\left(1-c_{k}\right)>0$ 局部, 故 $f$ 在 $\Omega$ 上不取零值. 因 $P_{n}\to f$ 内紧一致且局部 $P_{n}\ne0$, 对数导数 $\frac{P_{n}'}{P_{n}}\to\frac{f'}{f}$ 内紧一致. 而对有限乘积,
+(ii) 取 $N_{0}$ 充分大使 $\sum_{n> N_{0}}c_{n}< \frac{1}{2}$. 对 $n> N_{0}$, $\left|f_{n}\left(z\right)-1\right|\le c_{n}$, 取 $c_{n}$ 充分小 (由收敛性) 使 $f_{n}\left(z\right)\ne0$; 且 $\left|P_{n}\left(z\right)\right|\ge\prod_{k=1}^{n}\left(1-c_{k}\right)> 0$ 局部, 故 $f$ 在 $\Omega$ 上不取零值. 因 $P_{n}\to f$ 内紧一致且局部 $P_{n}\ne0$, 对数导数 $\frac{P_{n}'}{P_{n}}\to\frac{f'}{f}$ 内紧一致. 而对有限乘积,
 
 $$
 \frac{P_{n}'\left(z\right)}{P_{n}\left(z\right)}=\sum_{k=1}^{n}\frac{f_{k}'\left(z\right)}{f_{k}\left(z\right)},

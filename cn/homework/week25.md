@@ -34,16 +34,16 @@
 
 ### 习题三
 
-(习题 22.4-4) 令 $\mathcal{F}$ 是区域 $D\subset\mathbb{C}$ 上的一个亚纯函数族. 证明: $\mathcal{F}$ 是 $D$ 上的一个正规族当且仅当对于任意 $z\in D$, 都存在它的一个邻域 $U\left(z\right)\subset D$ 使得 $\left|f\left(\zeta\right)\right|<2$ 或者 $\frac1{\left|f\left(\zeta\right)\right|}<2$, $\forall\zeta\in U\left(z\right)$, $\forall f\in\mathcal{F}$ (对全族取同一种情形).
+(习题 22.4-4) 令 $\mathcal{F}$ 是区域 $D\subset\mathbb{C}$ 上的一个亚纯函数族. 证明: $\mathcal{F}$ 是 $D$ 上的一个正规族当且仅当对于任意 $z\in D$, 都存在它的一个邻域 $U\left(z\right)\subset D$ 使得 $\left|f\left(\zeta\right)\right|< 2$ 或者 $\frac1{\left|f\left(\zeta\right)\right|}< 2$, $\forall\zeta\in U\left(z\right)$, $\forall f\in\mathcal{F}$ (对全族取同一种情形).
 
 ### 解答 习题三
 
-充分性. 假设对每点 $z_{0}\in D$ 存在邻域 $U=U\left(z_{0}\right)$ 使对所有 $f\in\mathcal{F}$ 于 $\zeta\in U$ 成立 $\left|f\left(\zeta\right)\right|<2$ 或 $\left|f\left(\zeta\right)\right|>\frac12$.
+充分性. 假设对每点 $z_{0}\in D$ 存在邻域 $U=U\left(z_{0}\right)$ 使对所有 $f\in\mathcal{F}$ 于 $\zeta\in U$ 成立 $\left|f\left(\zeta\right)\right|< 2$ 或 $\left|f\left(\zeta\right)\right|> \frac12$.
 
-情形一: $\left|f\left(\zeta\right)\right|<2$ 于 $U$ (一致有界). 取紧子邻域 $K\ni z_{0}$, 由柯西估计 $f'$ 在 $K$ 上一致有界, 故球面导数 $f^{\#}=\frac{2\left|f'\right|}{1+\left|f\right|^{2}}\le2\left|f'\right|$ 一致有界.
+情形一: $\left|f\left(\zeta\right)\right|< 2$ 于 $U$ (一致有界). 取紧子邻域 $K\ni z_{0}$, 由柯西估计 $f'$ 在 $K$ 上一致有界, 故球面导数 $f^{\#}=\frac{2\left|f'\right|}{1+\left|f\right|^{2}}\le2\left|f'\right|$ 一致有界.
 
-情形二: $\left|f\left(\zeta\right)\right|>\frac12$ 于 $U$, 即 $\left|f\right|$ 有正下界, $g:=\frac1f$ 一致有界, 由柯西估计 $g'$ 一致有界, 于是 $f'=\frac{g'}{g^{2}}$ 一致有界 ($\left|g^{2}\right|>\frac14$), $f^{\#}\le2\left|f'\right|$ 一致有界.
+情形二: $\left|f\left(\zeta\right)\right|> \frac12$ 于 $U$, 即 $\left|f\right|$ 有正下界, $g:=\frac1f$ 一致有界, 由柯西估计 $g'$ 一致有界, 于是 $f'=\frac{g'}{g^{2}}$ 一致有界 ($\left|g^{2}\right|> \frac14$), $f^{\#}\le2\left|f'\right|$ 一致有界.
 
 故每点邻域内球面导数一致有界; 由紧性, 对每个紧子集 $K\subset D$ 球面导数一致有界. 由**定理 22.1.7 (马蒂)**, $\mathcal{F}$ 在 $D$ 上正规.
 
-必要性. 假设 $\mathcal{F}$ 在 $D$ 上正规. 由马蒂定理, 对每点 $z_{0}\in D$ 存在紧邻域 $K$ 及 $M$ 使 $f^{\#}\left(\zeta\right)\le M$, $\forall f\in\mathcal{F}$, $\forall\zeta\in K$. 反设对任意小邻域 $U\ni z_{0}$ 都存在 $f\in\mathcal{F}$ 和 $\zeta\in U$ 使 $\left|f\left(\zeta\right)\right|\ge2$ 且 $\frac1{\left|f\left(\zeta\right)\right|}\ge2$ (即 $\left|f\left(\zeta\right)\right|\le\frac12$). 这在单个点不可能同时成立, 故每点 $z_{0}$ 存在邻域 $U$ 使 $\forall f\in\mathcal{F},\forall\zeta\in U$ 满足 $\left|f\left(\zeta\right)\right|<2$ 或 $\frac1{\left|f\left(\zeta\right)\right|}<2$ (取更小邻域即可, 因球面导数有界保证 $\left|f\right|$ 不穿过 $2$ 与 $\frac12$ 之间的值). $\blacksquare$
+必要性. 假设 $\mathcal{F}$ 在 $D$ 上正规. 由马蒂定理, 对每点 $z_{0}\in D$ 存在紧邻域 $K$ 及 $M$ 使 $f^{\#}\left(\zeta\right)\le M$, $\forall f\in\mathcal{F}$, $\forall\zeta\in K$. 反设对任意小邻域 $U\ni z_{0}$ 都存在 $f\in\mathcal{F}$ 和 $\zeta\in U$ 使 $\left|f\left(\zeta\right)\right|\ge2$ 且 $\frac1{\left|f\left(\zeta\right)\right|}\ge2$ (即 $\left|f\left(\zeta\right)\right|\le\frac12$). 这在单个点不可能同时成立, 故每点 $z_{0}$ 存在邻域 $U$ 使 $\forall f\in\mathcal{F},\forall\zeta\in U$ 满足 $\left|f\left(\zeta\right)\right|< 2$ 或 $\frac1{\left|f\left(\zeta\right)\right|}< 2$ (取更小邻域即可, 因球面导数有界保证 $\left|f\right|$ 不穿过 $2$ 与 $\frac12$ 之间的值). $\blacksquare$

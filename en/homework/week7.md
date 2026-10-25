@@ -8,7 +8,7 @@
 
 ### Problem 1
 
-(Problem 7.4-1) (i) Let $P\left(z\right)=z^{n}+a_{n-1}z^{n-1}+\cdots+a_{0}$ be a polynomial with leading coefficient $1$. Prove: $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$. (ii) Does there exist a polynomial $P\left(z\right)=\sum_{j=1}^{n}a_{j}z^{j}$ such that $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|<1$?
+(Problem 7.4-1) (i) Let $P\left(z\right)=z^{n}+a_{n-1}z^{n-1}+\cdots+a_{0}$ be a polynomial with leading coefficient $1$. Prove: $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$. (ii) Does there exist a polynomial $P\left(z\right)=\sum_{j=1}^{n}a_{j}z^{j}$ such that $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|< 1$?
 
 ### Solution to Problem 1
 
@@ -18,7 +18,7 @@ $$
 \frac{1}{2\pi}\int_{0}^{2\pi}\left|P\left(e^{i\theta}\right)\right|^{2}\,d\theta=\sum_{j=0}^{n}\left|a_{j}\right|^{2}\ge\left|a_{n}\right|^{2}=1.
 $$
 
-If $\left|P\left(e^{i\theta}\right)\right|<1$ for all $\theta$, then the left-hand side would be $<1$, a contradiction. Hence there exists $\theta$ such that $\left|P\left(e^{i\theta}\right)\right|\ge1$, i.e. $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$.
+If $\left|P\left(e^{i\theta}\right)\right|< 1$ for all $\theta$, then the left-hand side would be $< 1$, a contradiction. Hence there exists $\theta$ such that $\left|P\left(e^{i\theta}\right)\right|\ge1$, i.e. $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$.
 
 (ii) No. On $\left|z\right|=1$, $P\left(z\right)-\frac{1}{z^{2}}=\sum_{j=1}^{n}a_{j}z^{j}-z^{-2}$, whose $z^{-2}$ coefficient is $-1$. By Parseval's identity,
 
@@ -26,11 +26,11 @@ $$
 \frac{1}{2\pi}\int_{0}^{2\pi}\left|P\left(e^{i\theta}\right)-e^{-2i\theta}\right|^{2}d\theta=\sum_{j=1}^{n}\left|a_{j}\right|^{2}+1\ge1.
 $$
 
-Hence there exists $\theta$ such that $\left|P\left(e^{i\theta}\right)-e^{-2i\theta}\right|\ge1$, i.e. $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|\ge1$. Therefore $\max<1$ is impossible. $\blacksquare$
+Hence there exists $\theta$ such that $\left|P\left(e^{i\theta}\right)-e^{-2i\theta}\right|\ge1$, i.e. $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|\ge1$. Therefore $\max< 1$ is impossible. $\blacksquare$
 
 ### Problem 2
 
-(Problem 7.4-3) Compute the integrals: (i) $\int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz$ ($n\in\mathbb{N}$); (ii) $\int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz$, $\left|a\right|<r<\left|b\right|$.
+(Problem 7.4-3) Compute the integrals: (i) $\int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz$ ($n\in\mathbb{N}$); (ii) $\int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz$, $\left|a\right|< r< \left|b\right|$.
 
 ### Solution to Problem 2
 
@@ -40,7 +40,7 @@ $$
 \int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz=2\pi i\binom{2n}{n}.
 $$
 
-(ii) Inside $\left\{\left|z\right|=r\right\}$ ($\left|a\right|<r<\left|b\right|$) there is only the simple pole $z=a$, with residue $\frac{1}{a-b}$. By the residue/Cauchy integral theorem,
+(ii) Inside $\left\{\left|z\right|=r\right\}$ ($\left|a\right|< r< \left|b\right|$) there is only the simple pole $z=a$, with residue $\frac{1}{a-b}$. By the residue/Cauchy integral theorem,
 
 $$
 \int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz=2\pi i\cdot\frac{1}{a-b}.

@@ -1,8 +1,8 @@
 # 作业 15
 
-> **定义 13.1.3** (洛朗级数)<br>$f$ 在圆环 $A\left(a;r;R\right)$ 上的洛朗级数为 $$\sum_{n=-\infty}^{+\infty}c_{n}\left(z-a\right)^{n},$$ 其中正则部 $\sum_{n\ge0}c_{n}\left(z-a\right)^{n}$, 主部 $\sum_{n<0}c_{n}\left(z-a\right)^{n}$.
+> **定义 13.1.3** (洛朗级数)<br>$f$ 在圆环 $A\left(a;r;R\right)$ 上的洛朗级数为 $$\sum_{n=-\infty}^{+\infty}c_{n}\left(z-a\right)^{n},$$ 其中正则部 $\sum_{n\ge0}c_{n}\left(z-a\right)^{n}$, 主部 $\sum_{n< 0}c_{n}\left(z-a\right)^{n}$.
 
-> **定义 13.2.2** (孤立奇点分类)<br>$a$ 是 $f$ 的可去奇点若主部系数全为 $0$; 是 $m$-阶极点若 $c_{-m}\ne0$ 且 $n<-m$ 时 $c_{n}=0$; 是本性奇点若主部有无穷多项.
+> **定义 13.2.2** (孤立奇点分类)<br>$a$ 是 $f$ 的可去奇点若主部系数全为 $0$; 是 $m$-阶极点若 $c_{-m}\ne0$ 且 $n< -m$ 时 $c_{n}=0$; 是本性奇点若主部有无穷多项.
 
 > **定理 13.2.4** (黎曼)<br>$a$ 是 $f$ 的可去奇点当且仅当 $f$ 在 $a$ 的去心邻域上有界.
 
@@ -34,11 +34,11 @@
 
 ### 习题三
 
-(习题 13.4-3) 令 $f$ 是 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数, 请问下述不等式是否可能成立: $\left|f\left(z\right)\right|>e^{\frac{1}{\left|z\right|}}$, $\forall z\in\mathbb{C}\setminus\left\{0\right\}$? 请说明你的理由.
+(习题 13.4-3) 令 $f$ 是 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数, 请问下述不等式是否可能成立: $\left|f\left(z\right)\right|> e^{\frac{1}{\left|z\right|}}$, $\forall z\in\mathbb{C}\setminus\left\{0\right\}$? 请说明你的理由.
 
 ### 解答 习题三
 
-不可能. 若 $\left|f\left(z\right)\right|>e^{1/\left|z\right|}$ 于一切 $z\ne0$, 则 $z\to0$ 时 $\left|f\left(z\right)\right|\to+\infty$, 故 $0$ 是 $f$ 的极点, 设其为 $m$-阶极点. 由**定义 13.2.2**, 在 $0$ 附近 $\left|f\left(z\right)\right|\sim\frac{C}{\left|z\right|^{m}}$. 但 $e^{1/\left|z\right|}$ 的增长速度快于任何幂 $\frac{1}{\left|z\right|^{m}}$ (因 $\frac{e^{1/\left|z\right|}}{1/\left|z\right|^{m}}\to+\infty$), 故对充分小的 $\left|z\right|$ 有 $\left|f\left(z\right)\right|\le\frac{2C}{\left|z\right|^{m}}<e^{1/\left|z\right|}$, 矛盾于 $\left|f\left(z\right)\right|>e^{1/\left|z\right|}$. 故不等式不可能成立. $\blacksquare$
+不可能. 若 $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$ 于一切 $z\ne0$, 则 $z\to0$ 时 $\left|f\left(z\right)\right|\to+\infty$, 故 $0$ 是 $f$ 的极点, 设其为 $m$-阶极点. 由**定义 13.2.2**, 在 $0$ 附近 $\left|f\left(z\right)\right|\sim\frac{C}{\left|z\right|^{m}}$. 但 $e^{1/\left|z\right|}$ 的增长速度快于任何幂 $\frac{1}{\left|z\right|^{m}}$ (因 $\frac{e^{1/\left|z\right|}}{1/\left|z\right|^{m}}\to+\infty$), 故对充分小的 $\left|z\right|$ 有 $\left|f\left(z\right)\right|\le\frac{2C}{\left|z\right|^{m}}< e^{1/\left|z\right|}$, 矛盾于 $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$. 故不等式不可能成立. $\blacksquare$
 
 ### 习题四
 
@@ -70,21 +70,21 @@ $G$ 有界单连通且非 $\mathbb{C}$, 由黎曼映射定理 $G\cong\mathbb{D}$
 
 ### 解答 习题六
 
-记 $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. 反设存在 $n\in\mathbb{N}$ 使得 $\varepsilon^{n}M\left(\varepsilon\right)$ 有上界, 即存在 $C>0$ 使 $\varepsilon^{n}M\left(\varepsilon\right)\le C$, 则
+记 $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. 反设存在 $n\in\mathbb{N}$ 使得 $\varepsilon^{n}M\left(\varepsilon\right)$ 有上界, 即存在 $C> 0$ 使 $\varepsilon^{n}M\left(\varepsilon\right)\le C$, 则
 
 $$
-\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad 0<\left|z-a\right|\ \text{充分小}.
+\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad 0< \left|z-a\right|\ \text{充分小}.
 $$
 
 于是 $\left(z-a\right)^{n}f\left(z\right)$ 在 $a$ 的去心邻域有界, 由**定理 13.2.4 (黎曼)**, $0$ 是 $\left(z-a\right)^{n}f$ 的可去奇点, 故 $f$ 在 $a$ 处至多是 $n$-阶极点. 但 $a$ 是 $f$ 的本性奇点, 矛盾. 故对每个 $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ 无上界, 结合 $\varepsilon^{n}M\left(\varepsilon\right)$ 随 $\varepsilon$ 的单调行为, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$
 
 ### 习题七
 
-(习题 13.4-17, 佩莱) 称集合 $\mathcal{E}\subset\mathbb{C}$ 是豪斯多夫长度零的, 如果对任意 $\varepsilon>0$ 都存在它的由可数多个开圆盘组成的开覆盖, 且这些圆盘半径之和不超过 $\varepsilon$. 令 $G\subset\mathbb{C}$ 是区域, $\mathcal{E}\subset G$ 是豪斯多夫长度零的紧子集, $f$ 是开集 $G\setminus\mathcal{E}$ 上的全纯函数. 假设存在 $M>0$ 使得 $\left|f\left(z\right)\right|\le M$, $\forall z\in G\setminus\mathcal{E}$. 证明: 存在 $G$ 上的全纯函数 $g$ 使得 $g\left(z\right)=f\left(z\right)$, $\forall z\in G\setminus\mathcal{E}$.
+(习题 13.4-17, 佩莱) 称集合 $\mathcal{E}\subset\mathbb{C}$ 是豪斯多夫长度零的, 如果对任意 $\varepsilon> 0$ 都存在它的由可数多个开圆盘组成的开覆盖, 且这些圆盘半径之和不超过 $\varepsilon$. 令 $G\subset\mathbb{C}$ 是区域, $\mathcal{E}\subset G$ 是豪斯多夫长度零的紧子集, $f$ 是开集 $G\setminus\mathcal{E}$ 上的全纯函数. 假设存在 $M> 0$ 使得 $\left|f\left(z\right)\right|\le M$, $\forall z\in G\setminus\mathcal{E}$. 证明: 存在 $G$ 上的全纯函数 $g$ 使得 $g\left(z\right)=f\left(z\right)$, $\forall z\in G\setminus\mathcal{E}$.
 
 ### 解答 习题七
 
-豪斯多夫长度零的紧集 $\mathcal{E}$ 有二维勒贝格测度为零. 任取 $z_{0}\in\mathcal{E}$, 取 $r>0$ 使 $\overline{B\left(z_{0},r\right)}\subset G$. 因 $\mathcal{E}$ 面积为零, 可取圆周 $\left|w-z_{0}\right|=r$ 与 $\mathcal{E}$ 不相交 (否则用半径总长可任意小的开圆盘覆盖 $\mathcal{E}$, 面积亦任意小). 对 $z\in B\left(z_{0},r\right)\setminus\mathcal{E}$, 由柯西积分公式
+豪斯多夫长度零的紧集 $\mathcal{E}$ 有二维勒贝格测度为零. 任取 $z_{0}\in\mathcal{E}$, 取 $r> 0$ 使 $\overline{B\left(z_{0},r\right)}\subset G$. 因 $\mathcal{E}$ 面积为零, 可取圆周 $\left|w-z_{0}\right|=r$ 与 $\mathcal{E}$ 不相交 (否则用半径总长可任意小的开圆盘覆盖 $\mathcal{E}$, 面积亦任意小). 对 $z\in B\left(z_{0},r\right)\setminus\mathcal{E}$, 由柯西积分公式
 
 $$
 f\left(z\right)=\frac{1}{2\pi i}\oint_{\left|w-z_{0}\right|=r}\frac{f\left(w\right)}{w-z}\,dw.

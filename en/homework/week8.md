@@ -50,7 +50,7 @@ The proposition is proved. $\blacksquare$
 
 ### Solution to Problem 2
 
-Take any $a\in\mathbb{C}$ and the circle $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$ of radius $\varepsilon>0$. Since $f$ is $\mathbb{R}$-differentiable at $a$, expand
+Take any $a\in\mathbb{C}$ and the circle $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$ of radius $\varepsilon> 0$. Since $f$ is $\mathbb{R}$-differentiable at $a$, expand
 
 $$
 f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\bar{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
@@ -62,17 +62,17 @@ $$
 \int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\bar{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
 $$
 
-By assumption the left-hand side is zero for every $\varepsilon>0$; dividing both sides by $\varepsilon^{2}$ and letting $\varepsilon\to0$ gives $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ was arbitrary, $\frac{\partial f}{\partial\bar{z}}\equiv0$ on $\mathbb{C}$; by **Theorem 3.2.4**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
+By assumption the left-hand side is zero for every $\varepsilon> 0$; dividing both sides by $\varepsilon^{2}$ and letting $\varepsilon\to0$ gives $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ was arbitrary, $\frac{\partial f}{\partial\bar{z}}\equiv0$ on $\mathbb{C}$; by **Theorem 3.2.4**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
 
 ### Problem 3
 
 (Problem 8.4-6) It is known that $\int_{0}^{\infty}e^{-x^{2}}\,dx=\frac{\sqrt{\pi}}{2}$. Compute (Fresnel integrals)
 
-(i) $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx$; (ii) $\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx$; (iii) $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx$, $b>0$.
+(i) $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx$; (ii) $\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx$; (iii) $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx$, $b> 0$.
 
 ### Solution to Problem 3
 
-We combine (i) and (ii). Consider the contour: from $0$ along the real axis to $R$, then along the circular arc $Re^{i\theta}$, $\theta\in\left[0,\frac{\pi}{4}\right]$, and finally along the line segment $z=te^{i\pi/4}$, $t:R\to0$, back to $0$. Since $e^{iz^{2}}$ is entire, the contour integral is zero. On the large arc, $\left|e^{iz^{2}}\right|=e^{-\operatorname{Re}\left(iz^{2}\right)}=e^{-R^{2}\sin2\theta}\le e^{-R^{2}\sin2\theta}$; for $\theta\in\left[0,\frac{\pi}{4}\right]$ one has $\sin2\theta\ge\frac{2\theta}{\pi}\cdot...$ and $e^{-R^{2}\sin2\theta}\to0$ uniformly ($\theta>0$), so the arc integral tends to $0$. Letting $R\to\infty$:
+We combine (i) and (ii). Consider the contour: from $0$ along the real axis to $R$, then along the circular arc $Re^{i\theta}$, $\theta\in\left[0,\frac{\pi}{4}\right]$, and finally along the line segment $z=te^{i\pi/4}$, $t:R\to0$, back to $0$. Since $e^{iz^{2}}$ is entire, the contour integral is zero. On the large arc, $\left|e^{iz^{2}}\right|=e^{-\operatorname{Re}\left(iz^{2}\right)}=e^{-R^{2}\sin2\theta}\le e^{-R^{2}\sin2\theta}$; for $\theta\in\left[0,\frac{\pi}{4}\right]$ one has $\sin2\theta\ge\frac{2\theta}{\pi}\cdot...$ and $e^{-R^{2}\sin2\theta}\to0$ uniformly ($\theta> 0$), so the arc integral tends to $0$. Letting $R\to\infty$:
 
 $$
 \int_{0}^{\infty}e^{ix^{2}}\,dx=\int_{0}^{\infty}e^{-t^{2}}e^{i\pi/4}\,dt=e^{i\pi/4}\frac{\sqrt{\pi}}{2}.
@@ -102,7 +102,7 @@ In summary, $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx=\int_{0}^{+\infty}\sin
 
 ### Solution to Problem 4
 
-Fix $z\in D$. Take $R$ large enough so that both $z$ and $\partial D$ lie inside $\left\{\left|w\right|<R\right\}$. Let $\Gamma_{R}$ be the counterclockwise circle $\left|\zeta\right|=R$; then $f$ is holomorphic on the annulus bounded by $\Gamma_{R}$ and $\partial D$ (including the boundary). By **Theorem 8.3.1 (Cauchy Integral Formula)** for the annulus (or applied separately on the inner and outer boundaries),
+Fix $z\in D$. Take $R$ large enough so that both $z$ and $\partial D$ lie inside $\left\{\left|w\right|< R\right\}$. Let $\Gamma_{R}$ be the counterclockwise circle $\left|\zeta\right|=R$; then $f$ is holomorphic on the annulus bounded by $\Gamma_{R}$ and $\partial D$ (including the boundary). By **Theorem 8.3.1 (Cauchy Integral Formula)** for the annulus (or applied separately on the inner and outer boundaries),
 
 $$
 f\left(z\right)=\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.

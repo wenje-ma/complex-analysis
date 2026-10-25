@@ -1,8 +1,8 @@
 # Assignment 15
 
-> **Definition 13.1.3** (Laurent Series)<br>The Laurent series of $f$ on the annulus $A\left(a;r;R\right)$ is $$\sum_{n=-\infty}^{+\infty}c_{n}\left(z-a\right)^{n},$$ where the regular part is $\sum_{n\ge0}c_{n}\left(z-a\right)^{n}$ and the principal part is $\sum_{n<0}c_{n}\left(z-a\right)^{n}$.
+> **Definition 13.1.3** (Laurent Series)<br>The Laurent series of $f$ on the annulus $A\left(a;r;R\right)$ is $$\sum_{n=-\infty}^{+\infty}c_{n}\left(z-a\right)^{n},$$ where the regular part is $\sum_{n\ge0}c_{n}\left(z-a\right)^{n}$ and the principal part is $\sum_{n< 0}c_{n}\left(z-a\right)^{n}$.
 
-> **Definition 13.2.2** (Classification of Isolated Singularities)<br>$a$ is a removable singularity of $f$ if all coefficients of the principal part are $0$; it is a pole of order $m$ if $c_{-m}\ne0$ and $c_{n}=0$ for $n<-m$; it is an essential singularity if the principal part has infinitely many terms.
+> **Definition 13.2.2** (Classification of Isolated Singularities)<br>$a$ is a removable singularity of $f$ if all coefficients of the principal part are $0$; it is a pole of order $m$ if $c_{-m}\ne0$ and $c_{n}=0$ for $n< -m$; it is an essential singularity if the principal part has infinitely many terms.
 
 > **Theorem 13.2.4** (Riemann)<br>$a$ is a removable singularity of $f$ if and only if $f$ is bounded on a punctured neighborhood of $a$.
 
@@ -34,11 +34,11 @@ Thus $f$ is entire and $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|
 
 ### Problem 3
 
-(Problem 13.4-3) Let $f$ be holomorphic on $\mathbb{C}\setminus\left\{0\right\}$. Is it possible that the inequality $\left|f\left(z\right)\right|>e^{\frac{1}{\left|z\right|}}$ holds, $\forall z\in\mathbb{C}\setminus\left\{0\right\}$? Explain your reasoning.
+(Problem 13.4-3) Let $f$ be holomorphic on $\mathbb{C}\setminus\left\{0\right\}$. Is it possible that the inequality $\left|f\left(z\right)\right|> e^{\frac{1}{\left|z\right|}}$ holds, $\forall z\in\mathbb{C}\setminus\left\{0\right\}$? Explain your reasoning.
 
 ### Solution to Problem 3
 
-No. If $\left|f\left(z\right)\right|>e^{1/\left|z\right|}$ for all $z\ne0$, then as $z\to0$, $\left|f\left(z\right)\right|\to+\infty$, so $0$ is a pole of $f$, say of order $m$. By **Definition 13.2.2**, near $0$, $\left|f\left(z\right)\right|\sim\frac{C}{\left|z\right|^{m}}$. But $e^{1/\left|z\right|}$ grows faster than any power $\frac{1}{\left|z\right|^{m}}$ (since $\frac{e^{1/\left|z\right|}}{1/\left|z\right|^{m}}\to+\infty$), so for sufficiently small $\left|z\right|$, $\left|f\left(z\right)\right|\le\frac{2C}{\left|z\right|^{m}}<e^{1/\left|z\right|}$, contradicting $\left|f\left(z\right)\right|>e^{1/\left|z\right|}$. Hence the inequality is impossible. $\blacksquare$
+No. If $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$ for all $z\ne0$, then as $z\to0$, $\left|f\left(z\right)\right|\to+\infty$, so $0$ is a pole of $f$, say of order $m$. By **Definition 13.2.2**, near $0$, $\left|f\left(z\right)\right|\sim\frac{C}{\left|z\right|^{m}}$. But $e^{1/\left|z\right|}$ grows faster than any power $\frac{1}{\left|z\right|^{m}}$ (since $\frac{e^{1/\left|z\right|}}{1/\left|z\right|^{m}}\to+\infty$), so for sufficiently small $\left|z\right|$, $\left|f\left(z\right)\right|\le\frac{2C}{\left|z\right|^{m}}< e^{1/\left|z\right|}$, contradicting $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$. Hence the inequality is impossible. $\blacksquare$
 
 ### Problem 4
 
@@ -70,21 +70,21 @@ $G$ is bounded, simply connected, and not $\mathbb{C}$; by the Riemann mapping t
 
 ### Solution to Problem 6
 
-Write $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. Suppose for contradiction that there exists $n\in\mathbb{N}$ such that $\varepsilon^{n}M\left(\varepsilon\right)$ is bounded above, i.e. there exists $C>0$ such that $\varepsilon^{n}M\left(\varepsilon\right)\le C$; then
+Write $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. Suppose for contradiction that there exists $n\in\mathbb{N}$ such that $\varepsilon^{n}M\left(\varepsilon\right)$ is bounded above, i.e. there exists $C> 0$ such that $\varepsilon^{n}M\left(\varepsilon\right)\le C$; then
 
 $$
-\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad 0<\left|z-a\right|\ \text{充分小}.
+\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad 0< \left|z-a\right|\ \text{充分小}.
 $$
 
 Hence $\left(z-a\right)^{n}f\left(z\right)$ is bounded on a punctured neighborhood of $a$; by **Theorem 13.2.4 (Riemann)**, $0$ is a removable singularity of $\left(z-a\right)^{n}f$, so $f$ has at most a pole of order $n$ at $a$. But $a$ is an essential singularity of $f$, a contradiction. Hence for every $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ is unbounded above; together with the monotone behavior of $\varepsilon^{n}M\left(\varepsilon\right)$ as $\varepsilon$ varies, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$
 
 ### Problem 7
 
-(Problem 13.4-17, Pólya) A set $\mathcal{E}\subset\mathbb{C}$ is said to have Hausdorff length zero if for every $\varepsilon>0$ there exists an open cover of it by countably many open disks whose radii sum to at most $\varepsilon$. Let $G\subset\mathbb{C}$ be a domain, $\mathcal{E}\subset G$ a compact subset of Hausdorff length zero, and $f$ holomorphic on the open set $G\setminus\mathcal{E}$. Suppose there exists $M>0$ such that $\left|f\left(z\right)\right|\le M$, $\forall z\in G\setminus\mathcal{E}$. Prove: there exists a holomorphic function $g$ on $G$ such that $g\left(z\right)=f\left(z\right)$, $\forall z\in G\setminus\mathcal{E}$.
+(Problem 13.4-17, Pólya) A set $\mathcal{E}\subset\mathbb{C}$ is said to have Hausdorff length zero if for every $\varepsilon> 0$ there exists an open cover of it by countably many open disks whose radii sum to at most $\varepsilon$. Let $G\subset\mathbb{C}$ be a domain, $\mathcal{E}\subset G$ a compact subset of Hausdorff length zero, and $f$ holomorphic on the open set $G\setminus\mathcal{E}$. Suppose there exists $M> 0$ such that $\left|f\left(z\right)\right|\le M$, $\forall z\in G\setminus\mathcal{E}$. Prove: there exists a holomorphic function $g$ on $G$ such that $g\left(z\right)=f\left(z\right)$, $\forall z\in G\setminus\mathcal{E}$.
 
 ### Solution to Problem 7
 
-A compact set $\mathcal{E}$ of Hausdorff length zero has two-dimensional Lebesgue measure zero. Take any $z_{0}\in\mathcal{E}$, and choose $r>0$ such that $\overline{B\left(z_{0},r\right)}\subset G$. Since $\mathcal{E}$ has area zero, we can choose a circle $\left|w-z_{0}\right|=r$ disjoint from $\mathcal{E}$ (otherwise one could cover $\mathcal{E}$ by open disks whose total radius is arbitrarily small, and whose area is also arbitrarily small). For $z\in B\left(z_{0},r\right)\setminus\mathcal{E}$, by Cauchy's integral formula,
+A compact set $\mathcal{E}$ of Hausdorff length zero has two-dimensional Lebesgue measure zero. Take any $z_{0}\in\mathcal{E}$, and choose $r> 0$ such that $\overline{B\left(z_{0},r\right)}\subset G$. Since $\mathcal{E}$ has area zero, we can choose a circle $\left|w-z_{0}\right|=r$ disjoint from $\mathcal{E}$ (otherwise one could cover $\mathcal{E}$ by open disks whose total radius is arbitrarily small, and whose area is also arbitrarily small). For $z\in B\left(z_{0},r\right)\setminus\mathcal{E}$, by Cauchy's integral formula,
 
 $$
 f\left(z\right)=\frac{1}{2\pi i}\oint_{\left|w-z_{0}\right|=r}\frac{f\left(w\right)}{w-z}\,dw.

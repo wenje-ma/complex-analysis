@@ -10,7 +10,7 @@
 
 ### Problem 1
 
-(Problem 10.4-2) Let $f$ and $g$ both be holomorphic functions on a domain $D\subset\mathbb{C}$. Suppose there exists a point $z_{0}\in D$ and its $r$-neighborhood $B\left(z_{0},r\right)\subset D$, $r>0$, such that $\left|f\left(z_{0}\right)\right|+\left|g\left(z_{0}\right)\right|\ge\left|f\left(z\right)\right|+\left|g\left(z\right)\right|$, $\forall z\in B\left(z_{0},r\right)$. Prove: both $f$ and $g$ are constant on $D$.
+(Problem 10.4-2) Let $f$ and $g$ both be holomorphic functions on a domain $D\subset\mathbb{C}$. Suppose there exists a point $z_{0}\in D$ and its $r$-neighborhood $B\left(z_{0},r\right)\subset D$, $r> 0$, such that $\left|f\left(z_{0}\right)\right|+\left|g\left(z_{0}\right)\right|\ge\left|f\left(z\right)\right|+\left|g\left(z\right)\right|$, $\forall z\in B\left(z_{0},r\right)$. Prove: both $f$ and $g$ are constant on $D$.
 
 ### Solution to Problem 1
 
@@ -30,17 +30,17 @@ Thus $M=\left|h\left(z\right)\right|\le\left|f\left(z\right)\right|+\left|g\left
 
 ### Solution to Problem 2
 
-Suppose for contradiction that $f$ has no zeros in $D$. If $\alpha=0$, then $\left|f\right|=0$ on $\partial D$; by the maximum modulus principle $f\equiv0$ on $D$, which is constant, and the claim holds. Now assume $\alpha>0$. Since $\left|f\right|$ is continuous on $\bar{D}$, the maximum modulus principle (the maximum of $\left|f\right|$ on $\bar{D}$ is attained on the boundary) gives $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
+Suppose for contradiction that $f$ has no zeros in $D$. If $\alpha=0$, then $\left|f\right|=0$ on $\partial D$; by the maximum modulus principle $f\equiv0$ on $D$, which is constant, and the claim holds. Now assume $\alpha> 0$. Since $\left|f\right|$ is continuous on $\bar{D}$, the maximum modulus principle (the maximum of $\left|f\right|$ on $\bar{D}$ is attained on the boundary) gives $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
 
 Also, $\frac{1}{f}$ is holomorphic on $D$ (since $f$ has no zeros) and continuous on $\bar{D}$, with $\left|\frac{1}{f}\right|=\frac{1}{\alpha}$ on the boundary. By the same argument, $\left|\frac{1}{f\left(z\right)}\right|\le\frac{1}{\alpha}$, i.e. $\left|f\left(z\right)\right|\ge\alpha$, $\forall z\in D$. Hence $\left|f\left(z\right)\right|\equiv\alpha$ on $D$, and $\left|f\right|$ is constant; by **Theorem 10.1.4 (Open Mapping Theorem)**, $f$ is constant. Therefore $f$ is either constant or has a zero in $D$. $\blacksquare$
 
 ### Problem 3
 
-(Problem 10.4-6) (Hadamard's three-circles theorem) Let $0<r<R$, and let $f$ be holomorphic on the closed annulus $\left\{z\in\mathbb{C}:r\le\left|z\right|\le R\right\}$. Let $M\left(\rho\right)=\sup_{\theta\in\left[0,2\pi\right]}\left|f\left(\rho e^{i\theta}\right)\right|$, $\forall\rho\in\left[r,R\right]$. Prove: for any $s\in\left[0,1\right]$, $M\left(r^{s}R^{1-s}\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$.
+(Problem 10.4-6) (Hadamard's three-circles theorem) Let $0< r< R$, and let $f$ be holomorphic on the closed annulus $\left\{z\in\mathbb{C}:r\le\left|z\right|\le R\right\}$. Let $M\left(\rho\right)=\sup_{\theta\in\left[0,2\pi\right]}\left|f\left(\rho e^{i\theta}\right)\right|$, $\forall\rho\in\left[r,R\right]$. Prove: for any $s\in\left[0,1\right]$, $M\left(r^{s}R^{1-s}\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$.
 
 ### Solution to Problem 3
 
-Write $\rho=r^{s}R^{1-s}$. If $M\left(r\right)=0$ or $M\left(R\right)=0$, then by the maximum modulus principle $f\equiv0$, and the inequality is obvious. Now assume $M\left(r\right),M\left(R\right)>0$. Choose the real number
+Write $\rho=r^{s}R^{1-s}$. If $M\left(r\right)=0$ or $M\left(R\right)=0$, then by the maximum modulus principle $f\equiv0$, and the inequality is obvious. Now assume $M\left(r\right),M\left(R\right)> 0$. Choose the real number
 
 $$
 \lambda=\frac{\log M\left(r\right)-\log M\left(R\right)}{\log R-\log r},
@@ -68,11 +68,11 @@ i.e. $M\left(\rho\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$, which is 
 
 ### Problem 4
 
-(Problem 10.4-8) Let $f$ be holomorphic on $\mathbb{D}=\left\{\left|z\right|<1\right\}$, and let $z_{1},\cdots,z_{k}\in\mathbb{D}$ be all the zeros of $f$ in $\mathbb{D}$ (counting multiplicities). Prove: $\left|f\left(0\right)\right|\le\sup_{\left|z\right|<1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$.
+(Problem 10.4-8) Let $f$ be holomorphic on $\mathbb{D}=\left\{\left|z\right|< 1\right\}$, and let $z_{1},\cdots,z_{k}\in\mathbb{D}$ be all the zeros of $f$ in $\mathbb{D}$ (counting multiplicities). Prove: $\left|f\left(0\right)\right|\le\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$.
 
 ### Solution to Problem 4
 
-If $f\equiv0$, the inequality is obvious. Assume $f$ is nonconstant, and write $M=\sup_{\left|z\right|<1}\left|f\left(z\right)\right|$. Using Blaschke factors (**Definition 10.3.2**), construct
+If $f\equiv0$, the inequality is obvious. Assume $f$ is nonconstant, and write $M=\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|$. Using Blaschke factors (**Definition 10.3.2**), construct
 
 $$
 B\left(z\right)=\prod_{j=1}^{k}\frac{z-z_{j}}{1-\bar{z}_{j}z},
@@ -80,20 +80,20 @@ $$
 
 which is holomorphic on $\mathbb{D}$ (the denominators $1-\bar{z}_{j}z\ne0$), has zeros exactly at $z_{1},\cdots,z_{k}$ (counting multiplicities), and satisfies $\left|B\left(e^{i\theta}\right)\right|=1$ on the unit circle. Since all zeros of $f$ are canceled by $B$, $g\left(z\right)=\frac{f\left(z\right)}{B\left(z\right)}$ is holomorphic and nonvanishing on $\mathbb{D}$.
 
-For $0<r<1$, on the circle $\left|z\right|=r$, by the maximum modulus principle, $\left|g\left(z\right)\right|\le\max_{\left|w\right|=r}\left|g\left(w\right)\right|=\frac{\max_{\left|w\right|=r}\left|f\left(w\right)\right|}{\min_{\left|w\right|=r}\left|B\left(w\right)\right|}$. Letting $r\to1^{-}$, we have $\max_{\left|w\right|=r}\left|f\left(w\right)\right|\to M$ and $\min_{\left|w\right|=r}\left|B\left(w\right)\right|\to1$, so $\left|g\left(z\right)\right|\le M$, $\forall z\in\mathbb{D}$. In particular,
+For $0< r< 1$, on the circle $\left|z\right|=r$, by the maximum modulus principle, $\left|g\left(z\right)\right|\le\max_{\left|w\right|=r}\left|g\left(w\right)\right|=\frac{\max_{\left|w\right|=r}\left|f\left(w\right)\right|}{\min_{\left|w\right|=r}\left|B\left(w\right)\right|}$. Letting $r\to1^{-}$, we have $\max_{\left|w\right|=r}\left|f\left(w\right)\right|\to M$ and $\min_{\left|w\right|=r}\left|B\left(w\right)\right|\to1$, so $\left|g\left(z\right)\right|\le M$, $\forall z\in\mathbb{D}$. In particular,
 
 $$
 \left|g\left(0\right)\right|=\frac{\left|f\left(0\right)\right|}{\left|B\left(0\right)\right|}\le M,
 $$
 
-and $\left|B\left(0\right)\right|=\prod_{j=1}^{k}\left|z_{j}\right|$, hence $\left|f\left(0\right)\right|\le M\prod_{j=1}^{k}\left|z_{j}\right|=\sup_{\left|z\right|<1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$. $\blacksquare$
+and $\left|B\left(0\right)\right|=\prod_{j=1}^{k}\left|z_{j}\right|$, hence $\left|f\left(0\right)\right|\le M\prod_{j=1}^{k}\left|z_{j}\right|=\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$. $\blacksquare$
 
 ### Problem 5
 
-(Problem 10.4-10) Let $\mathbb{D}=\left\{\left|z\right|<1\right\}$, and let $f:\mathbb{D}\to\mathbb{D}$ be a nonconstant holomorphic function. Prove:
+(Problem 10.4-10) Let $\mathbb{D}=\left\{\left|z\right|< 1\right\}$, and let $f:\mathbb{D}\to\mathbb{D}$ be a nonconstant holomorphic function. Prove:
 
 $$
-\frac{\left|f\left(0\right)\right|-\left|z\right|}{1+\left|f\left(0\right)\right|\left|z\right|}\le\left|f\left(z\right)\right|\le\frac{\left|f\left(0\right)\right|+\left|z\right|}{1-\left|f\left(0\right)\right|\left|z\right|},\quad\forall\left|z\right|<1.
+\frac{\left|f\left(0\right)\right|-\left|z\right|}{1+\left|f\left(0\right)\right|\left|z\right|}\le\left|f\left(z\right)\right|\le\frac{\left|f\left(0\right)\right|+\left|z\right|}{1-\left|f\left(0\right)\right|\left|z\right|},\quad\forall\left|z\right|< 1.
 $$
 
 ### Solution to Problem 5
@@ -104,7 +104,7 @@ $$
 \left|\frac{f\left(z\right)-a}{1-\bar{a}f\left(z\right)}\right|\le\left|z\right|.
 $$
 
-Let $u=f\left(z\right)$; then $\left|u\right|<1$. From $\left|u-a\right|\le\left|z\right|\left|1-\bar{a}u\right|\le\left|z\right|\left(1+t\left|u\right|\right)$ and $\left|u-a\right|\ge\left|\right|u\left|-t\right|$, we get
+Let $u=f\left(z\right)$; then $\left|u\right|< 1$. From $\left|u-a\right|\le\left|z\right|\left|1-\bar{a}u\right|\le\left|z\right|\left(1+t\left|u\right|\right)$ and $\left|u-a\right|\ge\left|\right|u\left|-t\right|$, we get
 
 $$
 \left|\right|u\left|-t\right|\le\left|z\right|\left(1+t\left|u\right|\right).

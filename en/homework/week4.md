@@ -36,7 +36,7 @@ If $\lambda$ has three fixed points: if $c\ne0$, there are at most two finite fi
 
 ### Problem 2
 
-(Problem 4.5-3) Describe the image of the half-plane $\left\{z\in\mathbb{C}:\operatorname{Re}z<1\right\}$ under each of the following Möbius transformations:
+(Problem 4.5-3) Describe the image of the half-plane $\left\{z\in\mathbb{C}:\operatorname{Re}z< 1\right\}$ under each of the following Möbius transformations:
 
 (i) $z\mapsto\left(1+i\right)z+1$; (ii) $z\mapsto\frac{z}{z-2}$; (iii) $z\mapsto\frac{4z}{z+1}$.
 
@@ -44,22 +44,22 @@ If $\lambda$ has three fixed points: if $c\ne0$, there are at most two finite fi
 
 The boundary $\operatorname{Re}z=1$ (the line $x=1$) is mapped by the Möbius transformation to a generalized circle (**Theorem 4.3.4 (Circle-Preserving Property)**), and the half-plane is mapped to a region bounded by that generalized circle; we use one point to determine which side.
 
-(i) For $\lambda\left(z\right)=\left(1+i\right)z+1$, take the boundary point $z=1+iy$: $\lambda\left(1+iy\right)=\left(1+i\right)\left(1+iy\right)+1=\left(2-y\right)+i\left(1+y\right)$. Letting $u=2-y$, $v=1+y$ and eliminating $y$ gives $u+v=3$, so the boundary maps to the line $u+v=3$. Take the interior point $z=0\in\left\{\operatorname{Re}z<1\right\}$; $\lambda\left(0\right)=1$, and $1+0=1<3$. Hence the image is
+(i) For $\lambda\left(z\right)=\left(1+i\right)z+1$, take the boundary point $z=1+iy$: $\lambda\left(1+iy\right)=\left(1+i\right)\left(1+iy\right)+1=\left(2-y\right)+i\left(1+y\right)$. Letting $u=2-y$, $v=1+y$ and eliminating $y$ gives $u+v=3$, so the boundary maps to the line $u+v=3$. Take the interior point $z=0\in\left\{\operatorname{Re}z< 1\right\}$; $\lambda\left(0\right)=1$, and $1+0=1< 3$. Hence the image is
 
 $$
-\left\{w:\operatorname{Re}w+\operatorname{Im}w<3\right\}.
+\left\{w:\operatorname{Re}w+\operatorname{Im}w< 3\right\}.
 $$
 
-(ii) For $\lambda\left(z\right)=\frac{z}{z-2}$, the pole $z=2$ does not lie on the boundary $x=1$, so the boundary maps to a circle. $\lambda\left(\infty\right)=1$, $\lambda\left(1\right)=-1$, $\lambda\left(1+i\right)=\frac{1+i}{-1+i}=-i$, so the boundary maps to the circle through $1,-1,-i$, i.e. the unit circle $\left|w\right|=1$. Take $z=0$: $\lambda\left(0\right)=0$, $\left|0\right|=0<1$. Hence the image is the open unit disk
+(ii) For $\lambda\left(z\right)=\frac{z}{z-2}$, the pole $z=2$ does not lie on the boundary $x=1$, so the boundary maps to a circle. $\lambda\left(\infty\right)=1$, $\lambda\left(1\right)=-1$, $\lambda\left(1+i\right)=\frac{1+i}{-1+i}=-i$, so the boundary maps to the circle through $1,-1,-i$, i.e. the unit circle $\left|w\right|=1$. Take $z=0$: $\lambda\left(0\right)=0$, $\left|0\right|=0< 1$. Hence the image is the open unit disk
 
 $$
-\left\{w:\left|w\right|<1\right\}.
+\left\{w:\left|w\right|< 1\right\}.
 $$
 
-(iii) For $\lambda\left(z\right)=\frac{4z}{z+1}$, the pole $z=-1$ does not lie on the boundary $x=1$, so the boundary maps to a circle. $\lambda\left(\infty\right)=4$, $\lambda\left(1\right)=2$, $\lambda\left(1+i\right)=\frac{4\left(1+i\right)}{2+i}=\frac{12+4i}{5}$, so the boundary maps to the circle through $4,2,\frac{12+4i}{5}$. Let the circle be $x^{2}+y^{2}+ax+by+c=0$; substituting $\left(4,0\right),\left(2,0\right),\left(2.4,0.8\right)$ gives $a=-6$, $b=0$, $c=8$, i.e. $\left(x-3\right)^{2}+y^{2}=1$, center $3$, radius $1$. Take $z=0$: $\lambda\left(0\right)=0$, $\left|0-3\right|=3>1$, outside the circle; also $-1\in\left\{\operatorname{Re}z<1\right\}$ and $\lambda\left(-1\right)=\infty$. Hence the image is the exterior of the circle
+(iii) For $\lambda\left(z\right)=\frac{4z}{z+1}$, the pole $z=-1$ does not lie on the boundary $x=1$, so the boundary maps to a circle. $\lambda\left(\infty\right)=4$, $\lambda\left(1\right)=2$, $\lambda\left(1+i\right)=\frac{4\left(1+i\right)}{2+i}=\frac{12+4i}{5}$, so the boundary maps to the circle through $4,2,\frac{12+4i}{5}$. Let the circle be $x^{2}+y^{2}+ax+by+c=0$; substituting $\left(4,0\right),\left(2,0\right),\left(2.4,0.8\right)$ gives $a=-6$, $b=0$, $c=8$, i.e. $\left(x-3\right)^{2}+y^{2}=1$, center $3$, radius $1$. Take $z=0$: $\lambda\left(0\right)=0$, $\left|0-3\right|=3> 1$, outside the circle; also $-1\in\left\{\operatorname{Re}z< 1\right\}$ and $\lambda\left(-1\right)=\infty$. Hence the image is the exterior of the circle
 
 $$
-\left\{w:\left|w-3\right|>1\right\}\cup\left\{\infty\right\}.
+\left\{w:\left|w-3\right|> 1\right\}\cup\left\{\infty\right\}.
 $$
 
 $\blacksquare$

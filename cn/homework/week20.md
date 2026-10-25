@@ -14,7 +14,7 @@
 
 ### 解答 习题一
 
-级数 $1$ 是几何级数, 当 $\left|iz\right|<1$ 即 $\left|z\right|<1$ 时收敛, 其和为
+级数 $1$ 是几何级数, 当 $\left|iz\right|< 1$ 即 $\left|z\right|< 1$ 时收敛, 其和为
 
 $$
 1+\sum_{n=1}^{+\infty}\left(iz\right)^{n}=1+\frac{iz}{1-iz}=\frac{1}{1-iz}.
@@ -26,13 +26,13 @@ $$
 \frac{1}{1-z}\left[1+\sum_{n=1}^{+\infty}\left(\frac{\left(1-i\right)\left(-z\right)}{1-z}\right)^{n}\right],
 $$
 
-当 $\left|\frac{\left(1-i\right)\left(-z\right)}{1-z}\right|<1$, 即 $\sqrt2\left|z\right|<\left|1-z\right|$ 时收敛 (此时 $\left|z\right|<1$ 亦满足), 其和为
+当 $\left|\frac{\left(1-i\right)\left(-z\right)}{1-z}\right|< 1$, 即 $\sqrt2\left|z\right|< \left|1-z\right|$ 时收敛 (此时 $\left|z\right|< 1$ 亦满足), 其和为
 
 $$
 \frac{1}{1-z}\cdot\frac{1}{1-\frac{\left(1-i\right)\left(-z\right)}{1-z}}=\frac{1}{1-z-\left(1-i\right)z}=\frac{1}{1-iz}.
 $$
 
-两区域 $\left\{\left|z\right|<1\right\}$ 与 $\left\{\sqrt2\left|z\right|<\left|1-z\right|\right\}$ 的交叠非空, 且两级数在此交叠上表示同一个函数 $\frac{1}{1-iz}$. 由**定义 17.2.2 (直接全纯延拓)**, 二者互为直接全纯延拓. $\blacksquare$
+两区域 $\left\{\left|z\right|< 1\right\}$ 与 $\left\{\sqrt2\left|z\right|< \left|1-z\right|\right\}$ 的交叠非空, 且两级数在此交叠上表示同一个函数 $\frac{1}{1-iz}$. 由**定义 17.2.2 (直接全纯延拓)**, 二者互为直接全纯延拓. $\blacksquare$
 
 ### 习题二
 
@@ -52,7 +52,7 @@ $$
 
 ### 习题四
 
-(习题 17.4-5) 令 $U_{0}=B\left(1,1\right):=\left\{\left|z-1\right|<1\right\}$, $f_{0}$ 为对数函数 $\operatorname{Log}z$ 在 $U_{0}$ 上的一个全纯分支. 对任意 $n\in\mathbb{Z}\setminus\left\{0\right\}$, 令 $\gamma_{n}\left(t\right)=e^{2\pi int}$, $t\in\left[0,1\right]$. 给出元 $\left(f_{0},U_{0}\right)$ 沿道路 $\gamma_{n}$ 的延拓族 $\left(f_{t},U_{t}\right)$, 并说明 $f_{1}=f_{0}+2n\pi i$.
+(习题 17.4-5) 令 $U_{0}=B\left(1,1\right):=\left\{\left|z-1\right|< 1\right\}$, $f_{0}$ 为对数函数 $\operatorname{Log}z$ 在 $U_{0}$ 上的一个全纯分支. 对任意 $n\in\mathbb{Z}\setminus\left\{0\right\}$, 令 $\gamma_{n}\left(t\right)=e^{2\pi int}$, $t\in\left[0,1\right]$. 给出元 $\left(f_{0},U_{0}\right)$ 沿道路 $\gamma_{n}$ 的延拓族 $\left(f_{t},U_{t}\right)$, 并说明 $f_{1}=f_{0}+2n\pi i$.
 
 ### 解答 习题四
 
@@ -70,13 +70,13 @@ $$
 
 ### 解答 习题五
 
-(i) 逐项求导 (幂级数在 $\left|z\right|<1$ 内可逐项求导):
+(i) 逐项求导 (幂级数在 $\left|z\right|< 1$ 内可逐项求导):
 
 $$
 \frac{f^{\left(k\right)}\left(z\right)}{k!}=\sum_{n=k}^{+\infty}c_{n}\binom{n}{k}z^{n-k}.
 $$
 
-取 $z=\frac12$ (正实数, $0<\frac12<1$):
+取 $z=\frac12$ (正实数, $0< \frac12< 1$):
 
 $$
 \alpha_{k}=\sum_{n=k}^{+\infty}c_{n}\binom{n}{k}\left(\frac12\right)^{n-k}\ge0,
@@ -84,11 +84,11 @@ $$
 
 因 $c_{n}\ge0$.
 
-(ii) 取 $z=\frac{e^{i\theta}}{2}$, 则 $\left|z\right|=\frac12<1$,
+(ii) 取 $z=\frac{e^{i\theta}}{2}$, 则 $\left|z\right|=\frac12< 1$,
 
 $$
 \beta_{k}=\sum_{n=k}^{+\infty}c_{n}\binom{n}{k}\left(\frac{e^{i\theta}}{2}\right)^{n-k},\quad
 \left|\beta_{k}\right|\le\sum_{n=k}^{+\infty}c_{n}\binom{n}{k}\left(\frac{\left|e^{i\theta}\right|}{2}\right)^{n-k}=\alpha_{k}.
 $$
 
-(iii) 反设 $1$ 是 $f$ 的正则点, 则 $f$ 在 $z=1$ 的某邻域全纯, 由幂级数理论其收敛半径必大于 $1$ (在 $1$ 邻域收敛 ⟹ 收敛半径 $>1$). 但这与收敛半径恰为 $R=1$ 矛盾. 故 $z=1$ 是 $f$ 的奇点. $\blacksquare$
+(iii) 反设 $1$ 是 $f$ 的正则点, 则 $f$ 在 $z=1$ 的某邻域全纯, 由幂级数理论其收敛半径必大于 $1$ (在 $1$ 邻域收敛 ⟹ 收敛半径 $> 1$). 但这与收敛半径恰为 $R=1$ 矛盾. 故 $z=1$ 是 $f$ 的奇点. $\blacksquare$
