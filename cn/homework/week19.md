@@ -101,7 +101,7 @@ $$
 
 ### 习题五
 
-(习题 16.3-10) (i) 验证 $u\left(x+iy\right)=\frac{1}{\pi}\arctan\frac{y}{x}$ 是上半平面 $\mathbb{H}:=\left\{\left(x,y\right):y>0\right\}$ 上的调和函数且可以连续延拓到除原点外的实轴上, 在正实轴上恒等于 $0$, 在负实轴上恒等于 $1$ (注: 原题 OCR 此处正负实轴上的取值互换了, 按 $u=\frac1\pi\arg z$ 于上半平面取值在 $\left(0,\pi\right)$ 理解); (ii) 考虑莫比乌斯变换 $\phi\left(z\right):\mathbb{H}\to\mathbb{D}$, $z\mapsto\frac{i-z}{i+z}$, 验证 $\tilde u:=u\circ\phi^{-1}$ 是 $\mathbb{D}$ 上的调和函数而且可连续延拓到除 $\pm1$ 外的边界 $\partial\mathbb{D}$ 上, 在半圆弧 $\left\{e^{i\theta}:0<\theta<\pi\right\}$ 上等于 $0$, 在半圆弧 $\left\{e^{i\theta}:-\pi<\theta<0\right\}$ 上等于 $1$; (iii) 验证 $\tilde u$ 是它的限定在边界上的函数的泊松积分; (iv) 验证对于任意 $a\in\left(0,1\right)$, 都存在序列 $z_{n}\in\mathbb{D}$, $z_{n}\to1$ (或 $-1$) 使得 $\tilde u\left(z_{n}\right)\to a$.
+(习题 16.3-10) (i) 验证 $u\left(x+iy\right)=\frac{1}{\pi}\arctan\frac{y}{x}$ 是上半平面 $\mathbb{H}:=\left\{\left(x,y\right):y>0\right\}$ 上的调和函数且可以连续延拓到除原点外的实轴上, 在正实轴上恒等于 $0$, 在负实轴上恒等于 $1$ (注: 原题 OCR 此处正负实轴上的取值互换了, 按 $u=\frac1\pi\arg z$ 于上半平面取值在 $\left(0,\pi\right)$ 理解); (ii) 考虑莫比乌斯变换 $\phi\left(z\right):\mathbb{H}\to\mathbb{D}$, $z\mapsto\frac{i-z}{i+z}$, 验证 $\widetilde u:=u\circ\phi^{-1}$ 是 $\mathbb{D}$ 上的调和函数而且可连续延拓到除 $\pm1$ 外的边界 $\partial\mathbb{D}$ 上, 在半圆弧 $\left\{e^{i\theta}:0<\theta<\pi\right\}$ 上等于 $0$, 在半圆弧 $\left\{e^{i\theta}:-\pi<\theta<0\right\}$ 上等于 $1$; (iii) 验证 $\widetilde u$ 是它的限定在边界上的函数的泊松积分; (iv) 验证对于任意 $a\in\left(0,1\right)$, 都存在序列 $z_{n}\in\mathbb{D}$, $z_{n}\to1$ (或 $-1$) 使得 $\widetilde u\left(z_{n}\right)\to a$.
 
 ### 解答 习题五
 
@@ -113,8 +113,8 @@ $$
 \phi^{-1}\left(e^{i\theta}\right)=i\frac{1-e^{i\theta}}{1+e^{i\theta}}=i\cdot\left(-i\right)\tan\frac{\theta}{2}=\tan\frac{\theta}{2}\in\mathbb{R}.
 $$
 
-$\tan\frac{\theta}{2}>0$ 当 $0<\theta<\pi$ (正实轴, $u=0$), $\tan\frac{\theta}{2}<0$ 当 $-\pi<\theta<0$ (负实轴, $u=1$). 因 $\phi$ 是共形等价, $\tilde u=u\circ\phi^{-1}$ 调和于 $\mathbb{D}$ 并连续延拓到 $\partial\mathbb{D}\setminus\left\{\pm1\right\}$, 上半圆弧取 $0$, 下半圆弧取 $1$.
+$\tan\frac{\theta}{2}>0$ 当 $0<\theta<\pi$ (正实轴, $u=0$), $\tan\frac{\theta}{2}<0$ 当 $-\pi<\theta<0$ (负实轴, $u=1$). 因 $\phi$ 是共形等价, $\widetilde u=u\circ\phi^{-1}$ 调和于 $\mathbb{D}$ 并连续延拓到 $\partial\mathbb{D}\setminus\left\{\pm1\right\}$, 上半圆弧取 $0$, 下半圆弧取 $1$.
 
-(iii) $\tilde u$ 在 $\partial\mathbb{D}$ 上的边界函数 $g\left(e^{i\theta}\right)$ 为: $0$ 于上半圆弧, $1$ 于下半圆弧 (除 $\pm1$). 由**定理 16.2.9 (泊松积分)**, 圆盘 $\mathbb{D}$ 上以 $g$ 为边界值的调和函数唯一, 而 $\tilde u$ 正是这个解, 故 $\tilde u$ 等于 $g$ 的泊松积分.
+(iii) $\widetilde u$ 在 $\partial\mathbb{D}$ 上的边界函数 $g\left(e^{i\theta}\right)$ 为: $0$ 于上半圆弧, $1$ 于下半圆弧 (除 $\pm1$). 由**定理 16.2.9 (泊松积分)**, 圆盘 $\mathbb{D}$ 上以 $g$ 为边界值的调和函数唯一, 而 $\widetilde u$ 正是这个解, 故 $\widetilde u$ 等于 $g$ 的泊松积分.
 
-(iv) $\tilde u$ 在 $\mathbb{D}$ 上调和且不恒等, 在 $\partial\mathbb{D}$ 上 (除 $\pm1$) 取值于 $\left\{0,1\right\}$. 沿从 $\phi\left(0\right)$ 附近到边界点 $1$ (或 $-1$) 的路径, 边界极限在 $1$ 处介于上半圆弧 ($0$) 与下半圆弧 ($1$) 之间. 由连续性, 对任意 $a\in\left(0,1\right)$ 存在该路径上一点, 故可取序列 $z_{n}\to1$ (或 $-1$) 使 $\tilde u\left(z_{n}\right)\to a$. $\blacksquare$
+(iv) $\widetilde u$ 在 $\mathbb{D}$ 上调和且不恒等, 在 $\partial\mathbb{D}$ 上 (除 $\pm1$) 取值于 $\left\{0,1\right\}$. 沿从 $\phi\left(0\right)$ 附近到边界点 $1$ (或 $-1$) 的路径, 边界极限在 $1$ 处介于上半圆弧 ($0$) 与下半圆弧 ($1$) 之间. 由连续性, 对任意 $a\in\left(0,1\right)$ 存在该路径上一点, 故可取序列 $z_{n}\to1$ (或 $-1$) 使 $\widetilde u\left(z_{n}\right)\to a$. $\blacksquare$

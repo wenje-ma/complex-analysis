@@ -48,7 +48,7 @@ $$
 
 由**定理 11.1.3 (蒙泰尔)**, $\left\{f_{n}\right\}$ 在 $D$ 上正规: 任意子列含有在 $D$ 上内紧一致收敛的子列. 设 $f_{n_{k}}\to f$ 内紧一致, 由**定理 11.1.2** $f$ 在 $D$ 上全纯. 对每个 $m$, 由 $f_{n_{k}}\to f$ 一致于 $\left\{z_{m}\right\}$ 附近及条件 $\lim_{n}f_{n}\left(z_{m}\right)=w_{m}$, 得 $f\left(z_{m}\right)=w_{m}$.
 
-现在证明整个序列收敛到 $f$. 若不然, 存在紧集 $K\subset D$, $\varepsilon>0$ 及子列 $f_{n'_{j}}$ 使得 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$. 由蒙泰尔, $f_{n'_{j}}$ 有子列内紧收敛到某全纯 $\tilde f$. 则 $\tilde f\left(z_{m}\right)=w_{m}=f\left(z_{m}\right)$ 对一切 $m$ 成立; 因 $z_{m}\to z_{\infty}\in D$ 有聚点, 由**定理 9.3.2 (恒等定理)** $\tilde f=f$. 这与 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$ 且 $f_{n'_{j}}\to f$ 于 $K$ 矛盾. 故 $f_{n}\to f$ 在 $D$ 上内紧一致收敛. $\blacksquare$
+现在证明整个序列收敛到 $f$. 若不然, 存在紧集 $K\subset D$, $\varepsilon>0$ 及子列 $f_{n'_{j}}$ 使得 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$. 由蒙泰尔, $f_{n'_{j}}$ 有子列内紧收敛到某全纯 $\widetilde f$. 则 $\widetilde f\left(z_{m}\right)=w_{m}=f\left(z_{m}\right)$ 对一切 $m$ 成立; 因 $z_{m}\to z_{\infty}\in D$ 有聚点, 由**定理 9.3.2 (恒等定理)** $\widetilde f=f$. 这与 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$ 且 $f_{n'_{j}}\to f$ 于 $K$ 矛盾. 故 $f_{n}\to f$ 在 $D$ 上内紧一致收敛. $\blacksquare$
 
 ### 习题四
 
