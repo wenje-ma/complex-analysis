@@ -62,7 +62,7 @@ $$
 \operatorname{Area}\left(f\left(D\right)\right)=\iint_{D}\left|\det J_{f}\left(x,y\right)\right|\,dx\,dy,
 $$
 
-其中 $J_{f}=\begin{pmatrix}u_{x}&u_{y}\\v_{x}&v_{y}\end{pmatrix}$ 为雅可比矩阵. 由柯西-黎曼方程 $u_{x}=v_{y}$, $u_{y}=-v_{x}$,
+其中 $J_{f}=\begin{bmatrix}u_{x}&u_{y}\\v_{x}&v_{y}\end{bmatrix}$ 为雅可比矩阵. 由柯西-黎曼方程 $u_{x}=v_{y}$, $u_{y}=-v_{x}$,
 
 $$
 \det J_{f}=u_{x}v_{y}-u_{y}v_{x}=u_{x}^{2}+u_{y}^{2}=\left|f'\left(z\right)\right|^{2}.

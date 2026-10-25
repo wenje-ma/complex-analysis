@@ -84,14 +84,14 @@ $\blacksquare$
 
 ### 习题四
 
-(习题 4.5-14) 考虑莫比乌斯变换 $w\left(z\right)=\frac{az+b}{cz+d}$ 和矩阵 $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. 证明: 向量 $\binom{z_{1}}{z_{2}}\in\mathbb{C}^{2}$ 是 $M$ 的特征向量当且仅当 $\zeta=\frac{z_{1}}{z_{2}}$ 是 $w$ 的不动点, 其中若 $z_{2}=0$, 则 $\zeta=\infty$.
+(习题 4.5-14) 考虑莫比乌斯变换 $w\left(z\right)=\frac{az+b}{cz+d}$ 和矩阵 $M=\begin{bmatrix}a&b\\c&d\end{bmatrix}$. 证明: 向量 $\binom{z_{1}}{z_{2}}\in\mathbb{C}^{2}$ 是 $M$ 的特征向量当且仅当 $\zeta=\frac{z_{1}}{z_{2}}$ 是 $w$ 的不动点, 其中若 $z_{2}=0$, 则 $\zeta=\infty$.
 
 ### 解答 习题四
 
 设 $\binom{z_{1}}{z_{2}}$ 非零. 若 $z_{2}\ne0$, 记 $\zeta=\frac{z_{1}}{z_{2}}$. $\binom{z_{1}}{z_{2}}$ 是 $M$ 的特征向量当且仅当存在 $\lambda$ 使得
 
 $$
-\begin{pmatrix}a&b\\c&d\end{pmatrix}\binom{z_{1}}{z_{2}}=\lambda\binom{z_{1}}{z_{2}},
+\begin{bmatrix}a&b\\c&d\end{bmatrix}\binom{z_{1}}{z_{2}}=\lambda\binom{z_{1}}{z_{2}},
 $$
 
 即 $az_{1}+bz_{2}=\lambda z_{1}$ 且 $cz_{1}+dz_{2}=\lambda z_{2}$. 两式分别除以 $z_{2}$: $a\zeta+b=\lambda\zeta$, $c\zeta+d=\lambda$. 消去 $\lambda$:

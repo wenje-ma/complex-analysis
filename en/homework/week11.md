@@ -62,7 +62,7 @@ $$
 \operatorname{Area}\left(f\left(D\right)\right)=\iint_{D}\left|\det J_{f}\left(x,y\right)\right|\,dx\,dy,
 $$
 
-where $J_{f}=\begin{pmatrix}u_{x}&u_{y}\\v_{x}&v_{y}\end{pmatrix}$ is the Jacobian matrix. By the Cauchy–Riemann equations $u_{x}=v_{y}$, $u_{y}=-v_{x}$,
+where $J_{f}=\begin{bmatrix}u_{x}&u_{y}\\v_{x}&v_{y}\end{bmatrix}$ is the Jacobian matrix. By the Cauchy–Riemann equations $u_{x}=v_{y}$, $u_{y}=-v_{x}$,
 
 $$
 \det J_{f}=u_{x}v_{y}-u_{y}v_{x}=u_{x}^{2}+u_{y}^{2}=\left|f'\left(z\right)\right|^{2}.

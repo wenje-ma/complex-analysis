@@ -84,14 +84,14 @@ $\blacksquare$
 
 ### Problem 4
 
-(Problem 4.5-14) Consider the Möbius transformation $w\left(z\right)=\frac{az+b}{cz+d}$ and the matrix $M=\begin{pmatrix}a&b\\c&d\end{pmatrix}$. Prove: a vector $\binom{z_{1}}{z_{2}}\in\mathbb{C}^{2}$ is an eigenvector of $M$ if and only if $\zeta=\frac{z_{1}}{z_{2}}$ is a fixed point of $w$, where if $z_{2}=0$ then $\zeta=\infty$.
+(Problem 4.5-14) Consider the Möbius transformation $w\left(z\right)=\frac{az+b}{cz+d}$ and the matrix $M=\begin{bmatrix}a&b\\c&d\end{bmatrix}$. Prove: a vector $\binom{z_{1}}{z_{2}}\in\mathbb{C}^{2}$ is an eigenvector of $M$ if and only if $\zeta=\frac{z_{1}}{z_{2}}$ is a fixed point of $w$, where if $z_{2}=0$ then $\zeta=\infty$.
 
 ### Solution to Problem 4
 
 Let $\binom{z_{1}}{z_{2}}$ be nonzero. If $z_{2}\ne0$, write $\zeta=\frac{z_{1}}{z_{2}}$. $\binom{z_{1}}{z_{2}}$ is an eigenvector of $M$ if and only if there exists $\lambda$ such that
 
 $$
-\begin{pmatrix}a&b\\c&d\end{pmatrix}\binom{z_{1}}{z_{2}}=\lambda\binom{z_{1}}{z_{2}},
+\begin{bmatrix}a&b\\c&d\end{bmatrix}\binom{z_{1}}{z_{2}}=\lambda\binom{z_{1}}{z_{2}},
 $$
 
 i.e. $az_{1}+bz_{2}=\lambda z_{1}$ and $cz_{1}+dz_{2}=\lambda z_{2}$. Dividing both equations by $z_{2}$: $a\zeta+b=\lambda\zeta$, $c\zeta+d=\lambda$. Eliminating $\lambda$:
