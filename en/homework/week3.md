@@ -39,9 +39,7 @@ $$
 where $\ell$ is an $\mathbb{R}$-linear function. By **Theorem 3.1.2 (Form of Linear Functions)**, $\ell\left(\Delta z\right)=a\Delta z+b\Delta\bar{z}$; combined with **Definition 3.2.2 (Formal Derivatives)**, $a=\frac{\partial f}{\partial z}\left(z_{0}\right)$, $b=\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)$. Hence
 
 $$
-\begin{aligned}&\quad\;\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}\\
-&=\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\frac{\Delta\bar{z}}{\Delta z}+\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}.
-\end{aligned}
+\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}=\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\frac{\Delta\bar{z}}{\Delta z}+\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}.
 $$
 
 As $z\to z_{0}$ (i.e. $\Delta z\to0$), the last term $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. Let $\Delta z=re^{i\theta}$ ($r> 0$); then $\frac{\Delta\bar{z}}{\Delta z}=e^{-2i\theta}$, which takes all values on the unit circle. Hence the set of limit points of the difference quotient is exactly
@@ -91,22 +89,13 @@ $$
 and similarly for $v$. From the Cauchy–Riemann equations (**Theorem 3.2.4**) $\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y}$, $\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}$, we get
 
 $$
-\begin{aligned}&\quad\;\frac{\partial u}{\partial r}\\
-&=\frac{\partial v}{\partial y}\cos\phi-\frac{\partial v}{\partial x}\sin\phi\\
-&=\frac{1}{r}\left(-\frac{\partial v}{\partial x}r\sin\phi+\frac{\partial v}{\partial y}r\cos\phi\right)\\
-&=\frac{1}{r}\frac{\partial v}{\partial\phi}.
-\end{aligned}
+\frac{\partial u}{\partial r}=\frac{\partial v}{\partial y}\cos\phi-\frac{\partial v}{\partial x}\sin\phi=\frac{1}{r}\left(-\frac{\partial v}{\partial x}r\sin\phi+\frac{\partial v}{\partial y}r\cos\phi\right)=\frac{1}{r}\frac{\partial v}{\partial\phi}.
 $$
 
 Similarly,
 
 $$
-\begin{aligned}&\quad\;\frac{\partial v}{\partial r}\\
-&=\frac{\partial v}{\partial x}\cos\phi+\frac{\partial v}{\partial y}\sin\phi\\
-&=-\frac{\partial u}{\partial y}\cos\phi+\frac{\partial u}{\partial x}\sin\phi\\
-&=-\frac{1}{r}\left(-\frac{\partial u}{\partial x}r\sin\phi+\frac{\partial u}{\partial y}r\cos\phi\right)\\
-&=-\frac{1}{r}\frac{\partial u}{\partial\phi}.
-\end{aligned}
+\frac{\partial v}{\partial r}=\frac{\partial v}{\partial x}\cos\phi+\frac{\partial v}{\partial y}\sin\phi=-\frac{\partial u}{\partial y}\cos\phi+\frac{\partial u}{\partial x}\sin\phi=-\frac{1}{r}\left(-\frac{\partial u}{\partial x}r\sin\phi+\frac{\partial u}{\partial y}r\cos\phi\right)=-\frac{1}{r}\frac{\partial u}{\partial\phi}.
 $$
 
 This proves the Cauchy–Riemann equations in polar coordinates.
@@ -142,9 +131,7 @@ By **Theorem 3.2.4**, $f$ is $\mathbb{C}$-differentiable at $z$ if and only if $
 Let $f=u+iv$, $u\left(x,y\right)=e^{x}\left(x\cos y-y\sin y\right)$. Since $f$ is holomorphic, $u,v$ satisfy the Cauchy–Riemann equations (**Theorem 3.2.4**): $v_{y}=u_{x}$, $v_{x}=-u_{y}$. Compute
 
 $$
-\begin{aligned}u_{x}&=e^{x}\left(x\cos y-y\sin y\right)+e^{x}\cos y=e^{x}\left(\cos y+x\cos y-y\sin y\right),\\
-u_{y}&=e^{x}\left(-x\sin y-\sin y-y\cos y\right)=-e^{x}\left(\sin y+x\sin y+y\cos y\right).
-\end{aligned}
+u_{x}=e^{x}\left(x\cos y-y\sin y\right)+e^{x}\cos y=e^{x}\left(\cos y+x\cos y-y\sin y\right),;u_{y}=e^{x}\left(-x\sin y-\sin y-y\cos y\right)=-e^{x}\left(\sin y+x\sin y+y\cos y\right).
 $$
 
 From $v_{y}=u_{x}$, integrate with respect to $y$:

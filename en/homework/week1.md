@@ -21,12 +21,7 @@ $$
 Let $z=e^{i\theta}$; then $z\ne\pm1$ is equivalent to $\theta\ne0,\pi\ \left(\bmod 2\pi\right)$. By **Definition 1.2.2 (Polar Form of a Complex Number)**,
 
 $$
-\begin{aligned}&\quad\;\frac{z-1}{z+1}\\
-&=\frac{e^{i\theta}-1}{e^{i\theta}+1}\\
-&=\frac{e^{i\theta/2}\left(e^{i\theta/2}-e^{-i\theta/2}\right)}{e^{i\theta/2}\left(e^{i\theta/2}+e^{-i\theta/2}\right)}\\
-&=\frac{2i\sin\frac{\theta}{2}}{2\cos\frac{\theta}{2}}\\
-&=i\tan\frac{\theta}{2}.
-\end{aligned}
+\frac{z-1}{z+1}=\frac{e^{i\theta}-1}{e^{i\theta}+1}=\frac{e^{i\theta/2}\left(e^{i\theta/2}-e^{-i\theta/2}\right)}{e^{i\theta/2}\left(e^{i\theta/2}+e^{-i\theta/2}\right)}=\frac{2i\sin\frac{\theta}{2}}{2\cos\frac{\theta}{2}}=i\tan\frac{\theta}{2}.
 $$
 
 Since $z\ne\pm1$, one has $\sin\frac{\theta}{2}\ne0$ and $\cos\frac{\theta}{2}\ne0$, hence $\tan\frac{\theta}{2}\ne0$, and therefore $\frac{z-1}{z+1}=i\tan\frac{\theta}{2}$ is a nonzero pure imaginary number. Its argument is $\frac{\pi}{2}$ when $\tan\frac{\theta}{2}> 0$ and $\frac{3\pi}{2}$ when $\tan\frac{\theta}{2}< 0$ (both modulo $2\pi$). The proposition is proved. $\blacksquare$
@@ -90,10 +85,7 @@ $$
 Subtracting the two identities gives
 
 $$
-\begin{aligned}&\quad\;\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{j=1}^{n}\left|w_{j}\right|^{2}\right)-\sum_{1\le j< k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}\\
-&=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j< k}\left(z_{j}\bar{w}_{k}\bar{z}_{k}w_{j}+\bar{z}_{j}w_{k}z_{k}\bar{w}_{j}\right)\\
-&=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j< k}\left(z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}+\bar{z}_{j}z_{k}w_{k}\bar{w}_{j}\right).
-\end{aligned}
+\left(\sum_{j=1}^{n}\left|z_{j}\right|^{2}\right)\left(\sum_{j=1}^{n}\left|w_{j}\right|^{2}\right)-\sum_{1\le j< k\le n}\left|z_{j}\bar{w}_{k}-z_{k}\bar{w}_{j}\right|^{2}=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j< k}\left(z_{j}\bar{w}_{k}\bar{z}_{k}w_{j}+\bar{z}_{j}w_{k}z_{k}\bar{w}_{j}\right)=\sum_{j=1}^{n}\left|z_{j}\right|^{2}\left|w_{j}\right|^{2}+\sum_{j< k}\left(z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}+\bar{z}_{j}z_{k}w_{k}\bar{w}_{j}\right).
 $$
 
 In the last expression, $\sum_{j< k}\left(z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}+\bar{z}_{j}z_{k}w_{k}\bar{w}_{j}\right)=\sum_{j\ne k}z_{j}\bar{z}_{k}\bar{w}_{j}w_{k}$ (the terms with $j< k$ and $k< j$ come in pairs), so the right-hand side equals $\left|A\right|^{2}$. The Lagrange identity holds. $\blacksquare$
@@ -123,10 +115,7 @@ $$
 Also, since $\overline{\left(z,w\right)}=\overline{z\bar{w}}=\bar{z}w=\left(w,z\right)$, we get
 
 $$
-\begin{aligned}&\quad\;\frac{1}{2}\left(\left(z,w\right)+\left(w,z\right)\right)\\
-&=\frac{1}{2}\left(\left(z,w\right)+\overline{\left(z,w\right)}\right)\\
-&=\operatorname{Re}\left(z,w\right).
-\end{aligned}
+\frac{1}{2}\left(\left(z,w\right)+\left(w,z\right)\right)=\frac{1}{2}\left(\left(z,w\right)+\overline{\left(z,w\right)}\right)=\operatorname{Re}\left(z,w\right).
 $$
 
 Thus $\left\langle z,w\right\rangle=\frac{1}{2}\left(\left(z,w\right)+\left(w,z\right)\right)=\operatorname{Re}\left(z,w\right)$. $\blacksquare$
@@ -146,10 +135,7 @@ Prove: (i) $\operatorname{dist}_{\sigma}\left(a,b\right)=2\arctan\left|\frac{a-b
 Let $d=\operatorname{dist}_{\sigma}\left(a,b\right)$. The unit sphere has radius $1$, so $d$ equals the central angle $\angle AOB$ ($O$ being the center), and hence the chord length is $\left|AB\right|=2\sin\frac{d}{2}$. By the relation between stereographic projection and the chordal metric (**Definition 1.4.2**), $\left|AB\right|=\rho\left(a,b\right)$, so
 
 $$
-\begin{aligned}&\quad\;\rho\left(a,b\right)\\
-&=\frac{2\left|a-b\right|}{\sqrt{1+\left|a\right|^{2}}\sqrt{1+\left|b\right|^{2}}}\\
-&=2\sin\frac{d}{2}.
-\end{aligned}
+\rho\left(a,b\right)=\frac{2\left|a-b\right|}{\sqrt{1+\left|a\right|^{2}}\sqrt{1+\left|b\right|^{2}}}=2\sin\frac{d}{2}.
 $$
 
 This proves (ii).
@@ -169,10 +155,7 @@ $$
 so
 
 $$
-\begin{aligned}&\quad\;\sin\frac{d}{2}\\
-&=\frac{\left|a-b\right|}{\sqrt{\left|1+\bar{a}b\right|^{2}+\left|a-b\right|^{2}}}\\
-&=\frac{\left|\frac{a-b}{1+\bar{a}b}\right|}{\sqrt{1+\left|\frac{a-b}{1+\bar{a}b}\right|^{2}}}.
-\end{aligned}
+\sin\frac{d}{2}=\frac{\left|a-b\right|}{\sqrt{\left|1+\bar{a}b\right|^{2}+\left|a-b\right|^{2}}}=\frac{\left|\frac{a-b}{1+\bar{a}b}\right|}{\sqrt{1+\left|\frac{a-b}{1+\bar{a}b}\right|^{2}}}.
 $$
 
 Let $\phi=\arctan\left|\frac{a-b}{1+\bar{a}b}\right|\in\left[0,\frac{\pi}{2}\right)$; then

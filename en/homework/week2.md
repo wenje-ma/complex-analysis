@@ -57,11 +57,7 @@ Comparing equivalences: (i) and (iii) have opposite orientations and are not equ
 (1) Cartesian representation: let $z=x+iy$; by **Definition 1.2.2 (Polar Form of a Complex Number)** and the binomial expansion,
 
 $$
-\begin{aligned}&\quad\;f\left(z\right)\\
-&=\left(x+iy\right)^{3}\\
-&=x^{3}+3x^{2}\left(iy\right)+3x\left(iy\right)^{2}+\left(iy\right)^{3}\\
-&=x^{3}-3xy^{2}+i\left(3x^{2}y-y^{3}\right).
-\end{aligned}
+f\left(z\right)=\left(x+iy\right)^{3}=x^{3}+3x^{2}\left(iy\right)+3x\left(iy\right)^{2}+\left(iy\right)^{3}=x^{3}-3xy^{2}+i\left(3x^{2}y-y^{3}\right).
 $$
 
 (2) Polar representation: let $z=re^{i\theta}$; then
@@ -73,10 +69,7 @@ $$
 The ellipse $\frac{x^{2}}{2}+y^{2}=1$ can be parametrized as $x=\sqrt{2}\cos\theta$, $y=\sin\theta$, $\theta\in\left[0,2\pi\right]$, i.e. $z\left(\theta\right)=\sqrt{2}\cos\theta+i\sin\theta$. Its image is $f\left(z\left(\theta\right)\right)=\left(\sqrt{2}\cos\theta+i\sin\theta\right)^{3}$. Writing $c=\cos\theta$, $s=\sin\theta$ and expanding,
 
 $$
-\begin{aligned}&\quad\;f\left(z\left(\theta\right)\right)\\
-&=\left(2\sqrt{2}c^{3}-3\sqrt{2}cs^{2}\right)+i\left(6c^{2}s-s^{3}\right)\\
-&=\left(2\sqrt{2}\cos^{3}\theta-3\sqrt{2}\cos\theta\sin^{2}\theta\right)+i\left(6\cos^{2}\theta\sin\theta-\sin^{3}\theta\right).
-\end{aligned}
+f\left(z\left(\theta\right)\right)=\left(2\sqrt{2}c^{3}-3\sqrt{2}cs^{2}\right)+i\left(6c^{2}s-s^{3}\right)=\left(2\sqrt{2}\cos^{3}\theta-3\sqrt{2}\cos\theta\sin^{2}\theta\right)+i\left(6\cos^{2}\theta\sin\theta-\sin^{3}\theta\right).
 $$
 
 From the polar representation, the argument of $z^{3}$ is $3$ times the argument of $z$; as $\theta$ sweeps through $\left[0,2\pi\right]$, the argument of the image point sweeps through $\left[0,6\pi\right]$, so the image is a closed curve winding three times around the origin and symmetric about the origin. $\blacksquare$
