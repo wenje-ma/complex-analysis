@@ -59,8 +59,8 @@ $$
 取 $z=it$, $t\in\mathbb{R}$. 由**定义 5.4.1**,
 
 $$
-\cos\left(it\right)=\frac{e^{-t}+e^{t}}{2}=\cosh t,\quad
-\sin\left(it\right)=\frac{e^{-t}-e^{t}}{2i}=i\sinh t.
+\cos\left(it\right)=\frac{e^{-t}+e^{\top}}{2}=\cosh t,\quad
+\sin\left(it\right)=\frac{e^{-t}-e^{\top}}{2i}=i\sinh t.
 $$
 
 当 $t\to+\infty$ 时 $\cosh t\to+\infty$, $\left|\sinh t\right|\to+\infty$. 故 $\cos z$ 沿虚轴无界, $\sin z$ 沿虚轴也无界 ($\left|\sin\left(it\right)\right|=\sinh t\to+\infty$). 因此 $\cos z$ 与 $\sin z$ 在 $\mathbb{C}$ 上都是无界函数. $\blacksquare$

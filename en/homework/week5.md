@@ -59,8 +59,8 @@ This power series converges on $\mathbb{C}$, so it is holomorphic on all of $\ma
 Take $z=it$, $t\in\mathbb{R}$. By **Definition 5.4.1**,
 
 $$
-\cos\left(it\right)=\frac{e^{-t}+e^{t}}{2}=\cosh t,\quad
-\sin\left(it\right)=\frac{e^{-t}-e^{t}}{2i}=i\sinh t.
+\cos\left(it\right)=\frac{e^{-t}+e^{\top}}{2}=\cosh t,\quad
+\sin\left(it\right)=\frac{e^{-t}-e^{\top}}{2i}=i\sinh t.
 $$
 
 As $t\to+\infty$, $\cosh t\to+\infty$ and $\left|\sinh t\right|\to+\infty$. Hence $\cos z$ is unbounded along the imaginary axis, and $\sin z$ is also unbounded along the imaginary axis ($\left|\sin\left(it\right)\right|=\sinh t\to+\infty$). Therefore both $\cos z$ and $\sin z$ are unbounded on $\mathbb{C}$. $\blacksquare$
