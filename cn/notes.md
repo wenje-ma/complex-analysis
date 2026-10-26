@@ -4,7 +4,7 @@
 
 **定义 1.1.5** (实部, 虚部, 共轭, 模)
 
-对 $z=x+iy$, 称 $x$ 为实部, $y$ 为虚部, 记 $x=\operatorname{Re}z$, $y=\operatorname{Im}z$; $z$ 的共轭为 $\bar{z}=x-iy$; $z$ 的模为
+对 $z=x+iy$, 称 $x$ 为实部, $y$ 为虚部, 记 $x=\operatorname{Re}z$, $y=\operatorname{Im}z$; $z$ 的共轭为 $\overline{z}=x-iy$; $z$ 的模为
 
 $$
 \left|z\right|=\sqrt{x^{2}+y^{2}}.
@@ -42,7 +42,7 @@ $$
 
 **定义 2.1.2** (道路的重参数化)
 
-称道路 $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ 是道路 $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ 的重参数化, 如果存在单调递增函数 $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ 满足 $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, 使得对任意 $t\in\left[a_{1},b_{1}\right]$ 有 $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; 若 $\tau$ 在某点 $\bar{t}$ 处不连续, 即 $\tau\left(\bar{t}-0\right)< \tau\left(\bar{t}+0\right)$, 还要求 $\gamma_{2}$ 在区间 $\left[\tau\left(\bar{t}-0\right),\tau\left(\bar{t}+0\right)\right]$ 上为常值.
+称道路 $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ 是道路 $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ 的重参数化, 如果存在单调递增函数 $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ 满足 $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, 使得对任意 $t\in\left[a_{1},b_{1}\right]$ 有 $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; 若 $\tau$ 在某点 $\overline{t}$ 处不连续, 即 $\tau\left(\overline{t}-0\right)< \tau\left(\overline{t}+0\right)$, 还要求 $\gamma_{2}$ 在区间 $\left[\tau\left(\overline{t}-0\right),\tau\left(\overline{t}+0\right)\right]$ 上为常值.
 
 **定义 2.1.4** (路径)
 
@@ -76,7 +76,7 @@ $$
 
 **定理 3.1.2** (线性函数的形式)
 
-任意 $\mathbb{R}$-线性函数具有形式 $\ell\left(z\right)=az+b\bar{z}$, 其中
+任意 $\mathbb{R}$-线性函数具有形式 $\ell\left(z\right)=az+b\overline{z}$, 其中
 
 $$
 a=\frac{\ell\left(1\right)-i\ell\left(i\right)}{2},\quad b=\frac{\ell\left(1\right)+i\ell\left(i\right)}{2};
@@ -99,14 +99,14 @@ $$
 形式导数算符 (Wirtinger 导数) 为
 
 $$
-\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\bar{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),
+\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),
 $$
 
-且有 $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\bar{z}}\,d\bar{z}$.
+且有 $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\overline{z}}\,d\overline{z}$.
 
 **定理 3.2.4**
 
-$f=u\left(x,y\right)+iv\left(x,y\right)$ 在 $z=x+iy$ 处 $\mathbb{C}$-可微, 当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\bar{z}}=0$, 这也等价于 $u,v$ 可微且满足柯西-黎曼方程
+$f=u\left(x,y\right)+iv\left(x,y\right)$ 在 $z=x+iy$ 处 $\mathbb{C}$-可微, 当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\overline{z}}=0$, 这也等价于 $u,v$ 可微且满足柯西-黎曼方程
 
 $$
 \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.
@@ -287,7 +287,7 @@ $$
 对 $a\in\mathbb{D}$, 称
 
 $$
-\phi_{a}\left(z\right)=\frac{z-a}{1-\bar{a}z}
+\phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}
 $$
 
 为布拉施克因子; 它是 $\mathbb{D}$ 的自同构, 满足 $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$ 且 $\phi_{a}\left(a\right)=0$.
@@ -297,7 +297,7 @@ $$
 对 $\mathbb{D}\to\mathbb{D}$ 的全纯 $f$,
 
 $$
-\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\bar{w}z}\right|;
+\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\overline{w}z}\right|;
 $$
 
 微分形式为
@@ -464,7 +464,7 @@ $D$ 关于实轴对称, $f$ 在 $D^{+}:=D\cap\left\{\operatorname{Im}z> 0\right\
 
 **定理 18.1.3** (施瓦茨对称原理 II)
 
-$f$ 在 $D^{+}$ 全纯, 连续到边界线段 $I\subset\mathbb{R}$ 且在其上取实值, 则 $f$ 延拓到 $D^{+}\cup I\cup D^{-}$ 上, 其中 $D^{-}$ 是 $D^{+}$ 关于实轴的对称, 延拓满足 $f\left(z\right)=\overline{f\left(\bar z\right)}$.
+$f$ 在 $D^{+}$ 全纯, 连续到边界线段 $I\subset\mathbb{R}$ 且在其上取实值, 则 $f$ 延拓到 $D^{+}\cup I\cup D^{-}$ 上, 其中 $D^{-}$ 是 $D^{+}$ 关于实轴的对称, 延拓满足 $f\left(z\right)=\overline{f\left(\overline z\right)}$.
 
 ## 伽玛函数
 
@@ -554,7 +554,7 @@ $\zeta$ 的平凡零点恰为 $-2,-4,-6,\ldots$; 非平凡零点全落在临界�
 
 **定义 22.1.5** (正规族)
 
-称区域 $D$ 上的亚纯函数族 $\mathcal{F}$ 在 $D$ 上是正规的, 若 $\mathcal{F}$ 的每个序列在 $\mathfrak{C}\left(D,\hat{\mathbb{C}}\right)$ 上有收敛子列 (在 $D$ 的紧子集上按球弦度量一致收敛到亚纯函数或 $\infty$).
+称区域 $D$ 上的亚纯函数族 $\mathcal{F}$ 在 $D$ 上是正规的, 若 $\mathcal{F}$ 的每个序列在 $\mathfrak{C}\left(D,\widehat{\mathbb{C}}\right)$ 上有收敛子列 (在 $D$ 的紧子集上按球弦度量一致收敛到亚纯函数或 $\infty$).
 
 **定理 22.1.7** (马蒂)
 

@@ -8,7 +8,7 @@
 
 ### Problem 1
 
-(Problem 13.4-8) Let $D\subset\mathbb{C}$ be the region bounded by Jordan closed curves $\gamma_{1}$ and $\gamma_{2}$, where $\gamma_{1}$ is contained in the interior of $\gamma_{2}$, and let $f$ be holomorphic on the closed domain $\bar{D}$. Prove:
+(Problem 13.4-8) Let $D\subset\mathbb{C}$ be the region bounded by Jordan closed curves $\gamma_{1}$ and $\gamma_{2}$, where $\gamma_{1}$ is contained in the interior of $\gamma_{2}$, and let $f$ be holomorphic on the closed domain $\overline{D}$. Prove:
 
 $$
 f\left(z\right)=f_{1}\left(z\right)+f_{2}\left(z\right),\quad\forall z\in D,
@@ -49,9 +49,9 @@ $$
 g\left(w\right)=\frac{f\left(w\right)-f\left(z\right)}{w-z},\quad w\in G\setminus\left\{z\right\}.
 $$
 
-Since $f$ is holomorphic on $G$, $z$ is a removable singularity of $g$, with $g\left(z\right)=f'\left(z\right)$; hence $g$ is holomorphic on $\bar{G}$ (extended continuously to $\partial G=\gamma$).
+Since $f$ is holomorphic on $G$, $z$ is a removable singularity of $g$, with $g\left(z\right)=f'\left(z\right)$; hence $g$ is holomorphic on $\overline{G}$ (extended continuously to $\partial G=\gamma$).
 
-By **Theorem 10.1.1 (Maximum Modulus Principle)**, the maximum of $\left|g\right|$ on the compact closed domain $\bar{G}$ is attained on the boundary $\gamma$; in particular,
+By **Theorem 10.1.1 (Maximum Modulus Principle)**, the maximum of $\left|g\right|$ on the compact closed domain $\overline{G}$ is attained on the boundary $\gamma$; in particular,
 
 $$
 \left|g\left(z\right)\right|=\left|f'\left(z\right)\right|\le\max_{w\in\gamma}\left|g\left(w\right)\right|=\max_{w\in\gamma}\left|\frac{f\left(w\right)-f\left(z\right)}{w-z}\right|.

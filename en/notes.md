@@ -4,7 +4,7 @@
 
 **Definition 1.1.5** (Real Part, Imaginary Part, Conjugate, Modulus)
 
-For $z=x+iy$, $x$ is called the real part, $y$ the imaginary part, denoted $x=\operatorname{Re}z$, $y=\operatorname{Im}z$; the conjugate of $z$ is $\bar{z}=x-iy$; the modulus of $z$ is
+For $z=x+iy$, $x$ is called the real part, $y$ the imaginary part, denoted $x=\operatorname{Re}z$, $y=\operatorname{Im}z$; the conjugate of $z$ is $\overline{z}=x-iy$; the modulus of $z$ is
 
 $$
 \left|z\right|=\sqrt{x^{2}+y^{2}}.
@@ -42,7 +42,7 @@ $$
 
 **Definition 2.1.2** (Reparametrization of a Path)
 
-A path $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ is called a reparametrization of a path $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ if there exists a monotonically increasing function $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ satisfying $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, such that for any $t\in\left[a_{1},b_{1}\right]$ one has $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; if $\tau$ is discontinuous at some point $\bar{t}$, i.e. $\tau\left(\bar{t}-0\right)< \tau\left(\bar{t}+0\right)$, it is further required that $\gamma_{2}$ be constant on the interval $\left[\tau\left(\bar{t}-0\right),\tau\left(\bar{t}+0\right)\right]$.
+A path $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ is called a reparametrization of a path $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ if there exists a monotonically increasing function $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ satisfying $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, such that for any $t\in\left[a_{1},b_{1}\right]$ one has $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; if $\tau$ is discontinuous at some point $\overline{t}$, i.e. $\tau\left(\overline{t}-0\right)< \tau\left(\overline{t}+0\right)$, it is further required that $\gamma_{2}$ be constant on the interval $\left[\tau\left(\overline{t}-0\right),\tau\left(\overline{t}+0\right)\right]$.
 
 **Definition 2.1.4** (Curve)
 
@@ -76,7 +76,7 @@ A map $\ell:\mathbb{C}\to\mathbb{C}$ is called $\mathbb{R}$-linear (or $\mathbb{
 
 **Theorem 3.1.2** (Form of Linear Functions)
 
-Any $\mathbb{R}$-linear function has the form $\ell\left(z\right)=az+b\bar{z}$, where
+Any $\mathbb{R}$-linear function has the form $\ell\left(z\right)=az+b\overline{z}$, where
 
 $$
 a=\frac{\ell\left(1\right)-i\ell\left(i\right)}{2},\quad b=\frac{\ell\left(1\right)+i\ell\left(i\right)}{2};
@@ -99,14 +99,14 @@ where $\ell$ is an $\mathbb{R}$-linear (or $\mathbb{C}$-linear) function; $\ell\
 The formal derivative operators (Wirtinger derivatives) are
 
 $$
-\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\bar{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),
+\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),
 $$
 
-and one has $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\bar{z}}\,d\bar{z}$.
+and one has $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\overline{z}}\,d\overline{z}$.
 
 **Theorem 3.2.4**
 
-$f=u\left(x,y\right)+iv\left(x,y\right)$ is $\mathbb{C}$-differentiable at $z=x+iy$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\bar{z}}=0$, which is also equivalent to $u,v$ being differentiable and satisfying the Cauchy–Riemann equations
+$f=u\left(x,y\right)+iv\left(x,y\right)$ is $\mathbb{C}$-differentiable at $z=x+iy$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$, which is also equivalent to $u,v$ being differentiable and satisfying the Cauchy–Riemann equations
 
 $$
 \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.
@@ -287,7 +287,7 @@ $$
 For $a\in\mathbb{D}$, the function
 
 $$
-\phi_{a}\left(z\right)=\frac{z-a}{1-\bar{a}z}
+\phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}
 $$
 
 is called a Blaschke factor; it is an automorphism of $\mathbb{D}$ satisfying $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$ and $\phi_{a}\left(a\right)=0$.
@@ -297,7 +297,7 @@ is called a Blaschke factor; it is an automorphism of $\mathbb{D}$ satisfying $\
 For a holomorphic $f$ on $\mathbb{D}\to\mathbb{D}$,
 
 $$
-\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\bar{w}z}\right|;
+\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\overline{w}z}\right|;
 $$
 
 the differential form is
@@ -464,7 +464,7 @@ If $D$ is symmetric about the real axis, $f$ is holomorphic on $D^{+}:=D\cap\lef
 
 **Theorem 18.1.3** (Schwarz Symmetry Principle II)
 
-If $f$ is holomorphic on $D^{+}$, continuous up to the boundary segment $I\subset\mathbb{R}$ and real-valued there, then $f$ extends to $D^{+}\cup I\cup D^{-}$, where $D^{-}$ is the reflection of $D^{+}$ about the real axis, and the extension satisfies $f\left(z\right)=\overline{f\left(\bar z\right)}$.
+If $f$ is holomorphic on $D^{+}$, continuous up to the boundary segment $I\subset\mathbb{R}$ and real-valued there, then $f$ extends to $D^{+}\cup I\cup D^{-}$, where $D^{-}$ is the reflection of $D^{+}$ about the real axis, and the extension satisfies $f\left(z\right)=\overline{f\left(\overline z\right)}$.
 
 ## The Gamma Function
 
@@ -554,7 +554,7 @@ A holomorphic function takes every value infinitely often in any punctured neigh
 
 **Definition 22.1.5** (Normal Family)
 
-A family $\mathcal{F}$ of meromorphic functions on a domain $D$ is called normal on $D$ if every sequence in $\mathcal{F}$ has a convergent subsequence in $\mathfrak{C}\left(D,\hat{\mathbb{C}}\right)$ (converging uniformly on compact subsets of $D$ with respect to the chordal metric to a meromorphic function or to $\infty$).
+A family $\mathcal{F}$ of meromorphic functions on a domain $D$ is called normal on $D$ if every sequence in $\mathcal{F}$ has a convergent subsequence in $\mathfrak{C}\left(D,\widehat{\mathbb{C}}\right)$ (converging uniformly on compact subsets of $D$ with respect to the chordal metric to a meromorphic function or to $\infty$).
 
 **Theorem 22.1.7** (Marty)
 

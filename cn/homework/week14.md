@@ -8,7 +8,7 @@
 
 ### 习题一
 
-(习题 13.4-8) 令 $D\subset\mathbb{C}$ 是由若当闭曲线 $\gamma_{1}$ 和 $\gamma_{2}$ 围成的区域, 其中 $\gamma_{1}$ 包含于 $\gamma_{2}$ 的内区域, $f$ 是闭区域 $\bar{D}$ 上的全纯函数. 证明:
+(习题 13.4-8) 令 $D\subset\mathbb{C}$ 是由若当闭曲线 $\gamma_{1}$ 和 $\gamma_{2}$ 围成的区域, 其中 $\gamma_{1}$ 包含于 $\gamma_{2}$ 的内区域, $f$ 是闭区域 $\overline{D}$ 上的全纯函数. 证明:
 
 $$
 f\left(z\right)=f_{1}\left(z\right)+f_{2}\left(z\right),\quad\forall z\in D,
@@ -49,9 +49,9 @@ $$
 g\left(w\right)=\frac{f\left(w\right)-f\left(z\right)}{w-z},\quad w\in G\setminus\left\{z\right\}.
 $$
 
-因 $f$ 在 $G$ 上全纯, $z$ 是 $g$ 的可去奇点, 且 $g\left(z\right)=f'\left(z\right)$; 故 $g$ 在 $\bar{G}$ 上全纯 (连续延拓到 $\partial G=\gamma$).
+因 $f$ 在 $G$ 上全纯, $z$ 是 $g$ 的可去奇点, 且 $g\left(z\right)=f'\left(z\right)$; 故 $g$ 在 $\overline{G}$ 上全纯 (连续延拓到 $\partial G=\gamma$).
 
-由**定理 10.1.1 (最大模原理)**, $\left|g\right|$ 在紧闭区域 $\bar{G}$ 上的最大值在边界 $\gamma$ 上取到, 特别地
+由**定理 10.1.1 (最大模原理)**, $\left|g\right|$ 在紧闭区域 $\overline{G}$ 上的最大值在边界 $\gamma$ 上取到, 特别地
 
 $$
 \left|g\left(z\right)\right|=\left|f'\left(z\right)\right|\le\max_{w\in\gamma}\left|g\left(w\right)\right|=\max_{w\in\gamma}\left|\frac{f\left(w\right)-f\left(z\right)}{w-z}\right|.

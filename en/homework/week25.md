@@ -1,6 +1,6 @@
 # Assignment 25
 
-> **Definition 22.1.5** (Normal Family)<br>A family $\mathcal{F}$ of meromorphic functions on a domain $D$ is called normal on $D$ if every sequence in $\mathcal{F}$ has a convergent subsequence in $\mathfrak{C}\left(D,\hat{\mathbb{C}}\right)$ (converging uniformly on compact subsets of $D$, in the spherical metric, to a meromorphic function or to $\infty$).
+> **Definition 22.1.5** (Normal Family)<br>A family $\mathcal{F}$ of meromorphic functions on a domain $D$ is called normal on $D$ if every sequence in $\mathcal{F}$ has a convergent subsequence in $\mathfrak{C}\left(D,\widehat{\mathbb{C}}\right)$ (converging uniformly on compact subsets of $D$, in the spherical metric, to a meromorphic function or to $\infty$).
 
 > **Theorem 22.1.7** (Marty)<br>$\mathcal{F}$ is normal on $D$ if and only if for every compact subset $K$ of $D$, the spherical derivative $$f^{\#}\left(z\right)=\frac{2\left|f'\left(z\right)\right|}{1+\left|f\left(z\right)\right|^{2}}$$ is uniformly bounded on $K$ (over $f\in\mathcal{F}$).
 

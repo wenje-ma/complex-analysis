@@ -2,9 +2,9 @@
 
 > **定义 3.2.1** (可微性)<br>称 $f$ 在 $z$ 处 $\mathbb{R}$-可微 (或 $\mathbb{C}$-可微), 若 $\Delta f=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, 其中 $\ell$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性) 函数.
 
-> **定义 3.2.2** (形式导数)<br>$$\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\bar{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right).$$
+> **定义 3.2.2** (形式导数)<br>$$\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right).$$
 
-> **定理 3.2.4**<br>$f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\bar{z}}=0$; 这也等价于 $u,v$ 满足柯西-黎曼方程.
+> **定理 3.2.4**<br>$f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\overline{z}}=0$; 这也等价于 $u,v$ 满足柯西-黎曼方程.
 
 > **定理 8.1.4** (柯西定理)<br>若 $f$ 在区域 $D$ 上全纯且 $\gamma_{0},\gamma_{1}$ 是 $D$ 内具有相同端点的同伦道路 (或同伦闭道路), 则 $$\int_{\gamma_{0}}f\,dz=\int_{\gamma_{1}}f\,dz;$$ 特别地 $f$ 沿 $D$ 内闭道路积分为零.
 
@@ -53,16 +53,16 @@ $$
 取任意 $a\in\mathbb{C}$ 及半径 $\varepsilon> 0$ 的圆周 $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$. 由 $f$ 在 $a$ 处 $\mathbb{R}$-可微, 展开
 
 $$
-f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\bar{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
+f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\overline{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
 $$
 
 代入 $\int_{\gamma_{\varepsilon}}f\,dz$ 并仿照 (习题 7.4-2) 的演算, 得
 
 $$
-\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\bar{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
+\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\overline{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
 $$
 
-由题设左边对任意 $\varepsilon> 0$ 为零, 两边除以 $\varepsilon^{2}$ 令 $\varepsilon\to0$, 得 $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial f}{\partial\bar{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4**, $f$ 在 $\mathbb{C}$ 上全纯. $\blacksquare$
+由题设左边对任意 $\varepsilon> 0$ 为零, 两边除以 $\varepsilon^{2}$ 令 $\varepsilon\to0$, 得 $\frac{\partial f}{\partial\overline{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial f}{\partial\overline{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4**, $f$ 在 $\mathbb{C}$ 上全纯. $\blacksquare$
 
 ### 习题三
 

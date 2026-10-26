@@ -2,13 +2,13 @@
 
 > **定义 3.1.1** ($\mathbb{R}$-线性与 $\mathbb{C}$-线性)<br>称 $\ell:\mathbb{C}\to\mathbb{C}$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性), 若 $\ell\left(a+b\right)=\ell\left(a\right)+\ell\left(b\right)$, 且对 $\lambda\in\mathbb{R}$ (或 $\mathbb{C}$) 有 $\ell\left(\lambda z\right)=\lambda\ell\left(z\right)$; $\mathbb{C}$-线性函数必然是 $\mathbb{R}$-线性的.
 
-> **定理 3.1.2** (线性函数的形式)<br>任意 $\mathbb{R}$-线性函数具有形式 $\ell\left(z\right)=az+b\bar{z}$, 其中 $$a=\frac{\ell\left(1\right)-i\ell\left(i\right)}{2},\quad b=\frac{\ell\left(1\right)+i\ell\left(i\right)}{2};$$ 任意 $\mathbb{C}$-线性函数具有形式 $\ell\left(z\right)=az$; $\mathbb{R}$-线性 $\ell$ 是 $\mathbb{C}$-线性的当且仅当 $\ell\left(iz\right)=i\ell\left(z\right)$.
+> **定理 3.1.2** (线性函数的形式)<br>任意 $\mathbb{R}$-线性函数具有形式 $\ell\left(z\right)=az+b\overline{z}$, 其中 $$a=\frac{\ell\left(1\right)-i\ell\left(i\right)}{2},\quad b=\frac{\ell\left(1\right)+i\ell\left(i\right)}{2};$$ 任意 $\mathbb{C}$-线性函数具有形式 $\ell\left(z\right)=az$; $\mathbb{R}$-线性 $\ell$ 是 $\mathbb{C}$-线性的当且仅当 $\ell\left(iz\right)=i\ell\left(z\right)$.
 
 > **定义 3.2.1** (可微性)<br>称 $f:U\to\mathbb{C}$ 在 $z$ 处 $\mathbb{R}$-可微 (或 $\mathbb{C}$-可微), 若 $\Delta f=f\left(z+\Delta z\right)-f\left(z\right)=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, 其中 $\ell$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性) 函数; 称 $\ell\left(\Delta z\right)$ 为实 (复) 微分 $df\left(z\right)$.
 
-> **定义 3.2.2** (形式导数)<br>形式导数算符 (Wirtinger 导数) 为 $$\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\bar{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),$$ 且有 $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\bar{z}}\,d\bar{z}$.
+> **定义 3.2.2** (形式导数)<br>形式导数算符 (Wirtinger 导数) 为 $$\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),$$ 且有 $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\overline{z}}\,d\overline{z}$.
 
-> **定理 3.2.4**<br>$f=u\left(x,y\right)+iv\left(x,y\right)$ 在 $z=x+iy$ 处 $\mathbb{C}$-可微, 当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\bar{z}}=0$, 这也等价于 $u,v$ 可微且满足柯西-黎曼方程 $$\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.$$
+> **定理 3.2.4**<br>$f=u\left(x,y\right)+iv\left(x,y\right)$ 在 $z=x+iy$ 处 $\mathbb{C}$-可微, 当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\overline{z}}=0$, 这也等价于 $u,v$ 可微且满足柯西-黎曼方程 $$\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.$$
 
 > **定义 3.3.1** (可导性)<br>称 $f$ 在 $a$ 处可导, 若 $$\lim_{z\to a}\frac{f\left(z\right)-f\left(a\right)}{z-a}=A$$ 存在, 记 $A=f'\left(a\right)$.
 
@@ -26,7 +26,7 @@ $$
 \left\{\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}\right\}
 $$
 
-的极限点的集合组成了以 $\frac{\partial f}{\partial z}\left(z_{0}\right)$ 为圆心, 半径为 $\left|\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\right|$ 的圆.
+的极限点的集合组成了以 $\frac{\partial f}{\partial z}\left(z_{0}\right)$ 为圆心, 半径为 $\left|\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)\right|$ 的圆.
 
 ### 解答 习题一
 
@@ -36,19 +36,19 @@ $$
 \Delta f=f\left(z\right)-f\left(z_{0}\right)=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right),
 $$
 
-其中 $\ell$ 是 $\mathbb{R}$-线性函数. 由**定理 3.1.2 (线性函数的形式)**, $\ell\left(\Delta z\right)=a\Delta z+b\Delta\bar{z}$, 结合**定义 3.2.2 (形式导数)**, $a=\frac{\partial f}{\partial z}\left(z_{0}\right)$, $b=\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)$. 于是
+其中 $\ell$ 是 $\mathbb{R}$-线性函数. 由**定理 3.1.2 (线性函数的形式)**, $\ell\left(\Delta z\right)=a\Delta z+b\Delta\overline{z}$, 结合**定义 3.2.2 (形式导数)**, $a=\frac{\partial f}{\partial z}\left(z_{0}\right)$, $b=\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)$. 于是
 
 $$
-\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}=\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\frac{\Delta\bar{z}}{\Delta z}+\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}.
+\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}=\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)\frac{\Delta\overline{z}}{\Delta z}+\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}.
 $$
 
-当 $z\to z_{0}$ (即 $\Delta z\to0$) 时, 末项 $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. 令 $\Delta z=re^{i\theta}$ ($r> 0$), 则 $\frac{\Delta\bar{z}}{\Delta z}=e^{-2i\theta}$, 其取值遍及整个单位圆周. 故差商的极限点集合恰为
+当 $z\to z_{0}$ (即 $\Delta z\to0$) 时, 末项 $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. 令 $\Delta z=re^{i\theta}$ ($r> 0$), 则 $\frac{\Delta\overline{z}}{\Delta z}=e^{-2i\theta}$, 其取值遍及整个单位圆周. 故差商的极限点集合恰为
 
 $$
-\left\{\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)e^{-2i\theta}:\theta\in\left[0,2\pi\right)\right\},
+\left\{\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)e^{-2i\theta}:\theta\in\left[0,2\pi\right)\right\},
 $$
 
-即以 $\frac{\partial f}{\partial z}\left(z_{0}\right)$ 为圆心、半径为 $\left|\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\right|$ 的圆周. $\blacksquare$
+即以 $\frac{\partial f}{\partial z}\left(z_{0}\right)$ 为圆心、半径为 $\left|\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)\right|$ 的圆周. $\blacksquare$
 
 ### 习题二
 
@@ -100,7 +100,7 @@ $$
 
 极坐标下的柯西-黎曼方程得证.
 
-第二问: 由**定理 3.3.3**, $f'\left(z_{0}\right)=\frac{\partial f}{\partial z}\left(z_{0}\right)$. 在全纯点处 $\frac{\partial f}{\partial\bar{z}}=0$, 故由 $\frac{\partial z}{\partial r}=e^{i\phi}$ 及链式法则, $\frac{\partial f}{\partial r}\left(z_{0}\right)=\frac{\partial f}{\partial z}\left(z_{0}\right)e^{i\phi_{0}}$, 即
+第二问: 由**定理 3.3.3**, $f'\left(z_{0}\right)=\frac{\partial f}{\partial z}\left(z_{0}\right)$. 在全纯点处 $\frac{\partial f}{\partial\overline{z}}=0$, 故由 $\frac{\partial z}{\partial r}=e^{i\phi}$ 及链式法则, $\frac{\partial f}{\partial r}\left(z_{0}\right)=\frac{\partial f}{\partial z}\left(z_{0}\right)e^{i\phi_{0}}$, 即
 
 $$
 f'\left(z_{0}\right)=e^{-i\phi_{0}}\frac{\partial f}{\partial r}\left(z_{0}\right)=e^{-i\phi_{0}}\left(\frac{\partial u}{\partial r}\left(r_{0},\phi_{0}\right)+i\frac{\partial v}{\partial r}\left(r_{0},\phi_{0}\right)\right).
@@ -110,17 +110,17 @@ $$
 
 ### 习题四
 
-(习题 3.4-7) 令 $a,b,c\in\mathbb{C}$ 和函数 $f:\mathbb{C}\to\mathbb{C}$ 为 $f\left(z\right)=az^{2}+b\left|z\right|^{2}+c\bar{z}^{2}$. 证明: $f$ 在 $z\in\mathbb{C}$ 处可导当且仅当 $bz+2c\bar{z}=0$.
+(习题 3.4-7) 令 $a,b,c\in\mathbb{C}$ 和函数 $f:\mathbb{C}\to\mathbb{C}$ 为 $f\left(z\right)=az^{2}+b\left|z\right|^{2}+c\overline{z}^{2}$. 证明: $f$ 在 $z\in\mathbb{C}$ 处可导当且仅当 $bz+2c\overline{z}=0$.
 
 ### 解答 习题四
 
-由 $\left|z\right|^{2}=z\bar{z}$, 得 $f\left(z\right)=az^{2}+bz\bar{z}+c\bar{z}^{2}$. 计算形式导数 (**定义 3.2.2 (形式导数)**): 因 $az^{2}$ 关于 $\bar{z}$ 的偏导为 $0$, $\frac{\partial\left(z\bar{z}\right)}{\partial\bar{z}}=z$, $\frac{\partial\left(\bar{z}^{2}\right)}{\partial\bar{z}}=2\bar{z}$, 故
+由 $\left|z\right|^{2}=z\overline{z}$, 得 $f\left(z\right)=az^{2}+bz\overline{z}+c\overline{z}^{2}$. 计算形式导数 (**定义 3.2.2 (形式导数)**): 因 $az^{2}$ 关于 $\overline{z}$ 的偏导为 $0$, $\frac{\partial\left(z\overline{z}\right)}{\partial\overline{z}}=z$, $\frac{\partial\left(\overline{z}^{2}\right)}{\partial\overline{z}}=2\overline{z}$, 故
 
 $$
-\frac{\partial f}{\partial\bar{z}}\left(z\right)=bz+2c\bar{z}.
+\frac{\partial f}{\partial\overline{z}}\left(z\right)=bz+2c\overline{z}.
 $$
 
-由**定理 3.2.4**, $f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $\frac{\partial f}{\partial\bar{z}}\left(z\right)=0$, 即 $bz+2c\bar{z}=0$; 再由**定理 3.3.3**, $\mathbb{C}$-可微与可导等价. 故 $f$ 在 $z$ 处可导当且仅当 $bz+2c\bar{z}=0$. $\blacksquare$
+由**定理 3.2.4**, $f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $\frac{\partial f}{\partial\overline{z}}\left(z\right)=0$, 即 $bz+2c\overline{z}=0$; 再由**定理 3.3.3**, $\mathbb{C}$-可微与可导等价. 故 $f$ 在 $z$ 处可导当且仅当 $bz+2c\overline{z}=0$. $\blacksquare$
 
 ### 习题五
 

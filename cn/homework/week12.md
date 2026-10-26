@@ -1,10 +1,10 @@
 # 作业 12
 
-> **定义 10.3.2** (Blaschke 因子)<br>$$\phi_{a}\left(z\right)=\frac{z-a}{1-\bar{a}z}$$ ($a\in\mathbb{D}$) 是 $\mathbb{D}$ 的自同构, $\phi_{a}\left(a\right)=0$, $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$.
+> **定义 10.3.2** (Blaschke 因子)<br>$$\phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}$$ ($a\in\mathbb{D}$) 是 $\mathbb{D}$ 的自同构, $\phi_{a}\left(a\right)=0$, $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$.
 
 > **定理 10.3.1** (施瓦茨引理)<br>若 $f:\mathbb{D}\to\mathbb{D}$ 全纯且 $f\left(0\right)=0$, 则 $\left|f\left(z\right)\right|\le\left|z\right|$ 且 $\left|f'\left(0\right)\right|\le1$; 等号当且仅当 $f\left(z\right)=e^{i\theta}z$.
 
-> **定理 10.3.4** (施瓦茨-皮克)<br>对 $\mathbb{D}\to\mathbb{D}$ 的全纯 $f$, $$\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\bar{w}z}\right|;$$ 微分形式为 $$\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}},$$ 等号当且仅当 $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
+> **定理 10.3.4** (施瓦茨-皮克)<br>对 $\mathbb{D}\to\mathbb{D}$ 的全纯 $f$, $$\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\overline{w}z}\right|;$$ 微分形式为 $$\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}},$$ 等号当且仅当 $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
 
 > **定理 11.2.2** (黎曼映射定理)<br>任意不为全平面的单连通区域都与开单位圆盘共形等价.
 
@@ -32,7 +32,7 @@ $$
 
 ### 解答 习题二
 
-反设 $G$ 不是单连通的, 则 $\hat{\mathbb{C}}\setminus G$ 有一个有界连通分支 $K$. 取 $a\in K$. 因 $G\subset\mathbb{C}\setminus\left\{0\right\}$ 且 $a\notin G$, $f\left(z\right)=z-a$ 在 $G$ 上全纯且无零点. 由假设, 存在 $G$ 上全纯的 $g$ 使 $e^{g\left(z\right)}=z-a$, 故 $g'\left(z\right)=\frac{1}{z-a}$ 在 $G$ 上有原函数 $g$.
+反设 $G$ 不是单连通的, 则 $\widehat{\mathbb{C}}\setminus G$ 有一个有界连通分支 $K$. 取 $a\in K$. 因 $G\subset\mathbb{C}\setminus\left\{0\right\}$ 且 $a\notin G$, $f\left(z\right)=z-a$ 在 $G$ 上全纯且无零点. 由假设, 存在 $G$ 上全纯的 $g$ 使 $e^{g\left(z\right)}=z-a$, 故 $g'\left(z\right)=\frac{1}{z-a}$ 在 $G$ 上有原函数 $g$.
 
 但 $K$ 是 $G$ 的一个洞, 存在闭曲线 $\gamma\subset G$ 绕过 $a$ 一次, 由例 7.1.2, $\int_{\gamma}\frac{dz}{z-a}=2\pi i\ne0$; 而 $g'$ 有原函数 $g$, 则 $\int_{\gamma}g'\left(z\right)\,dz=0$, 矛盾. 故 $G$ 单连通. $\blacksquare$
 
@@ -52,7 +52,7 @@ $$
 
 ### 解答 习题三
 
-(i) $g_{f}=\phi_{f\left(z_{0}\right)}\circ f$, 其中 $\phi_{a}\left(w\right)=\frac{w-a}{1-\bar{a}w}$. 由 $\phi_{a}'\left(w\right)=\frac{1-\left|a\right|^{2}}{\left(1-\bar{a}w\right)^{2}}$, 链式法则得
+(i) $g_{f}=\phi_{f\left(z_{0}\right)}\circ f$, 其中 $\phi_{a}\left(w\right)=\frac{w-a}{1-\overline{a}w}$. 由 $\phi_{a}'\left(w\right)=\frac{1-\left|a\right|^{2}}{\left(1-\overline{a}w\right)^{2}}$, 链式法则得
 
 $$
 g_{f}'\left(z_{0}\right)=\phi_{f\left(z_{0}\right)}'\left(f\left(z_{0}\right)\right)f'\left(z_{0}\right)=\frac{1-\left|f\left(z_{0}\right)\right|^{2}}{\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{2}}f'\left(z_{0}\right)=\frac{f'\left(z_{0}\right)}{1-\left|f\left(z_{0}\right)\right|^{2}}.

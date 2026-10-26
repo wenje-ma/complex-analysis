@@ -4,7 +4,7 @@
 
 > **Theorem 18.1.2** (Schwarz Reflection Principle I)<br>If $D$ is symmetric about the real axis, $f$ is holomorphic on $D^{+}:=D\cap\left\{\operatorname{Im}z> 0\right\}$, continuous up to $D^{+}\cap\mathbb{R}$ and real-valued there, then $f$ extends to a holomorphic function on $D$.
 
-> **Theorem 18.1.3** (Schwarz Reflection Principle II)<br>If $f$ is holomorphic on $D^{+}$, continuous up to a boundary segment $I\subset\mathbb{R}$ and real-valued there, then $f$ extends to $D^{+}\cup I\cup D^{-}$, where $D^{-}$ is the reflection of $D^{+}$ across the real axis, and the extension satisfies $f\left(z\right)=\overline{f\left(\bar z\right)}$.
+> **Theorem 18.1.3** (Schwarz Reflection Principle II)<br>If $f$ is holomorphic on $D^{+}$, continuous up to a boundary segment $I\subset\mathbb{R}$ and real-valued there, then $f$ extends to $D^{+}\cup I\cup D^{-}$, where $D^{-}$ is the reflection of $D^{+}$ across the real axis, and the extension satisfies $f\left(z\right)=\overline{f\left(\overline z\right)}$.
 
 ### Problem 1
 
@@ -20,17 +20,17 @@ Differentiating $f'$ gives $f'\left(z+L_{1}\right)=f'\left(z\right)$, $f'\left(z
 
 ### Problem 2
 
-(Problem 18.4-3) Let $f$ be holomorphic on the annulus $A\left(0;0;1\right):=\left\{0< \left|z\right|< 1\right\}$, and suppose $f$ extends continuously to the unit circle $\left\{\left|z\right|=1\right\}$ and takes only real values there. Prove: $f$ extends to a holomorphic function on $\mathbb{C}\setminus\left\{0\right\}$ satisfying $f\left(z\right)=\overline{f\left(\frac{1}{\bar z}\right)}$ for all $\forall z\ne0$. (Note: the OCR of the original problem omitted the conjugation on $\frac{1}{\bar z}$; it is restored according to the standard form of the Schwarz reflection principle.)
+(Problem 18.4-3) Let $f$ be holomorphic on the annulus $A\left(0;0;1\right):=\left\{0< \left|z\right|< 1\right\}$, and suppose $f$ extends continuously to the unit circle $\left\{\left|z\right|=1\right\}$ and takes only real values there. Prove: $f$ extends to a holomorphic function on $\mathbb{C}\setminus\left\{0\right\}$ satisfying $f\left(z\right)=\overline{f\left(\frac{1}{\overline z}\right)}$ for all $\forall z\ne0$. (Note: the OCR of the original problem omitted the conjugation on $\frac{1}{\overline z}$; it is restored according to the standard form of the Schwarz reflection principle.)
 
 ### Solution to Problem 2
 
 $f$ is holomorphic on the punctured unit disk $A\left(0;0;1\right)=\left\{\left|z\right|< 1\right\}\setminus\left\{0\right\}$, and is continuous and real-valued on $\left|z\right|=1$. The circle $\left\{\left|z\right|=1\right\}$ is an analytic curve, and $f$ is real-valued on it. By the Schwarz reflection principle (for the circle, i.e. **Theorem 18.1.3** after a Möbius transformation maps the circle to the real axis), $f$ can be reflected across $\left|z\right|=1$: for $\left|z\right|> 1$ define
 
 $$
-f\left(z\right):=\overline{f\left(\frac{1}{\bar z}\right)},\quad \left|z\right|> 1.
+f\left(z\right):=\overline{f\left(\frac{1}{\overline z}\right)},\quad \left|z\right|> 1.
 $$
 
-The right-hand side is holomorphic for $\left|z\right|> 1$ (since $\frac{1}{\bar z}$ lies inside $\left|z\right|< 1$), and on $\left|z\right|=1$, $z=\frac{1}{\bar z}$; since $f$ is real-valued, $f\left(z\right)=\overline{f\left(z\right)}$, which matches the original $f$. Hence $f$ extends to a holomorphic function on $\mathbb{C}\setminus\left\{0\right\}$, and by definition $f\left(z\right)=\overline{f\left(\frac{1}{\bar z}\right)}$ for all $\forall z\ne0$. $\blacksquare$
+The right-hand side is holomorphic for $\left|z\right|> 1$ (since $\frac{1}{\overline z}$ lies inside $\left|z\right|< 1$), and on $\left|z\right|=1$, $z=\frac{1}{\overline z}$; since $f$ is real-valued, $f\left(z\right)=\overline{f\left(z\right)}$, which matches the original $f$. Hence $f$ extends to a holomorphic function on $\mathbb{C}\setminus\left\{0\right\}$, and by definition $f\left(z\right)=\overline{f\left(\frac{1}{\overline z}\right)}$ for all $\forall z\ne0$. $\blacksquare$
 
 ### Problem 3
 
@@ -38,11 +38,11 @@ The right-hand side is holomorphic for $\left|z\right|> 1$ (since $\frac{1}{\bar
 
 ### Solution to Problem 3
 
-From $f\left(\mathbb{R}\right)\subset\mathbb{R}$, applying **Theorem 18.1.3 (Schwarz Reflection Principle II)** gives $f\left(\bar z\right)=\overline{f\left(z\right)}$ for all $\forall z\in\mathbb{C}$.
+From $f\left(\mathbb{R}\right)\subset\mathbb{R}$, applying **Theorem 18.1.3 (Schwarz Reflection Principle II)** gives $f\left(\overline z\right)=\overline{f\left(z\right)}$ for all $\forall z\in\mathbb{C}$.
 
 Write $f_{e}\left(z\right):=\frac{f\left(z\right)+f\left(-z\right)}{2}$ (the even part); it is entire. From $f\left(\mathbb{R}\right)\subset\mathbb{R}$, for $z=x\in\mathbb{R}$ we have $f_{e}\left(x\right)\in\mathbb{R}$; from $f\left(i\mathbb{R}\right)\subset i\mathbb{R}$, for $z=iy$ we have $f_{e}\left(iy\right)\in i\mathbb{R}$. Since $f_{e}$ is an even entire function, there exists an entire function $F$ such that $f_{e}\left(z\right)=F\left(z^{2}\right)$. Then $F$ satisfies: for $x> 0$, $F\left(x\right)=f_{e}\left(\sqrt x\right)\in\mathbb{R}$; for $x< 0$, $F\left(x\right)=f_{e}\left(i\sqrt{\left|x\right|}\right)\in i\mathbb{R}$.
 
-Since $F\left(x\right)\in\mathbb{R}$ for $x> 0$, by the reflection principle $F\left(\bar w\right)=\overline{F\left(w\right)}$; in particular, for $x< 0$, $F\left(x\right)=\overline{F\left(x\right)}$, so $F\left(x\right)\in\mathbb{R}$. Together with $F\left(x\right)\in i\mathbb{R}$ for $x< 0$, we get $F\left(x\right)=0$ on the negative real axis $x< 0$. The negative real axis has accumulation points, and the entire function $F$ is zero on it, so $F\equiv0$, hence $f_{e}\equiv0$, i.e. $f\left(-z\right)=-f\left(z\right)$ for all $\forall z\in\mathbb{C}$. $\blacksquare$
+Since $F\left(x\right)\in\mathbb{R}$ for $x> 0$, by the reflection principle $F\left(\overline w\right)=\overline{F\left(w\right)}$; in particular, for $x< 0$, $F\left(x\right)=\overline{F\left(x\right)}$, so $F\left(x\right)\in\mathbb{R}$. Together with $F\left(x\right)\in i\mathbb{R}$ for $x< 0$, we get $F\left(x\right)=0$ on the negative real axis $x< 0$. The negative real axis has accumulation points, and the entire function $F$ is zero on it, so $F\equiv0$, hence $f_{e}\equiv0$, i.e. $f\left(-z\right)=-f\left(z\right)$ for all $\forall z\in\mathbb{C}$. $\blacksquare$
 
 ### Problem 4
 

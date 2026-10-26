@@ -91,7 +91,7 @@ $\blacksquare$
 
 ### 习题五
 
-(习题 5.5-9) 证明等式 $\overline{e^{iz}}=e^{-i\bar z}$ 成立. (注: 原题两处共轭记号在 OCR 中缺失, 按指数函数的共轭恒等式补全.)
+(习题 5.5-9) 证明等式 $\overline{e^{iz}}=e^{-i\overline z}$ 成立. (注: 原题两处共轭记号在 OCR 中缺失, 按指数函数的共轭恒等式补全.)
 
 ### 解答 习题五
 
@@ -104,7 +104,7 @@ $$
 取共轭得 $\overline{e^{iz}}=e^{-y}\left(\cos x-i\sin x\right)=e^{-y}e^{-ix}=e^{-\left(ix+y\right)}$. 而
 
 $$
-e^{-i\bar z}=e^{-i\left(x-iy\right)}=e^{-ix-y}=e^{-y}e^{-ix}=e^{-\left(ix+y\right)}.
+e^{-i\overline z}=e^{-i\left(x-iy\right)}=e^{-ix-y}=e^{-y}e^{-ix}=e^{-\left(ix+y\right)}.
 $$
 
-两者相等, 故 $\overline{e^{iz}}=e^{-i\bar z}$. $\blacksquare$
+两者相等, 故 $\overline{e^{iz}}=e^{-i\overline z}$. $\blacksquare$

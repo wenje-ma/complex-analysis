@@ -1,10 +1,10 @@
 # Assignment 12
 
-> **Definition 10.3.2** (Blaschke Factor)<br>$$\phi_{a}\left(z\right)=\frac{z-a}{1-\bar{a}z}$$ ($a\in\mathbb{D}$) is an automorphism of $\mathbb{D}$, $\phi_{a}\left(a\right)=0$, $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$.
+> **Definition 10.3.2** (Blaschke Factor)<br>$$\phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}$$ ($a\in\mathbb{D}$) is an automorphism of $\mathbb{D}$, $\phi_{a}\left(a\right)=0$, $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$.
 
 > **Theorem 10.3.1** (Schwarz's Lemma)<br>If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic and $f\left(0\right)=0$, then $\left|f\left(z\right)\right|\le\left|z\right|$ and $\left|f'\left(0\right)\right|\le1$; equality holds if and only if $f\left(z\right)=e^{i\theta}z$.
 
-> **Theorem 10.3.4** (Schwarz–Pick)<br>For a holomorphic $f$ on $\mathbb{D}\to\mathbb{D}$, $$\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\bar{w}z}\right|;$$ the differential form is $$\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}},$$ with equality if and only if $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
+> **Theorem 10.3.4** (Schwarz–Pick)<br>For a holomorphic $f$ on $\mathbb{D}\to\mathbb{D}$, $$\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\overline{w}z}\right|;$$ the differential form is $$\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}},$$ with equality if and only if $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
 
 > **Theorem 11.2.2** (Riemann Mapping Theorem)<br>Any simply connected domain that is not the whole plane is conformally equivalent to the open unit disk.
 
@@ -32,7 +32,7 @@ By the differential form of **Theorem 10.3.4 (Schwarz–Pick)**, $\frac{\left|f'
 
 ### Solution to Problem 2
 
-Suppose for contradiction that $G$ is not simply connected; then $\hat{\mathbb{C}}\setminus G$ has a bounded connected component $K$. Take $a\in K$. Since $G\subset\mathbb{C}\setminus\left\{0\right\}$ and $a\notin G$, $f\left(z\right)=z-a$ is holomorphic and nonvanishing on $G$. By assumption, there exists a holomorphic $g$ on $G$ such that $e^{g\left(z\right)}=z-a$, so $g'\left(z\right)=\frac{1}{z-a}$ has a primitive $g$ on $G$.
+Suppose for contradiction that $G$ is not simply connected; then $\widehat{\mathbb{C}}\setminus G$ has a bounded connected component $K$. Take $a\in K$. Since $G\subset\mathbb{C}\setminus\left\{0\right\}$ and $a\notin G$, $f\left(z\right)=z-a$ is holomorphic and nonvanishing on $G$. By assumption, there exists a holomorphic $g$ on $G$ such that $e^{g\left(z\right)}=z-a$, so $g'\left(z\right)=\frac{1}{z-a}$ has a primitive $g$ on $G$.
 
 But $K$ is a hole in $G$; there exists a closed curve $\gamma\subset G$ winding once around $a$. By Example 7.1.2, $\int_{\gamma}\frac{dz}{z-a}=2\pi i\ne0$; yet since $g'$ has primitive $g$, $\int_{\gamma}g'\left(z\right)\,dz=0$, a contradiction. Hence $G$ is simply connected. $\blacksquare$
 
@@ -52,7 +52,7 @@ But $K$ is a hole in $G$; there exists a closed curve $\gamma\subset G$ winding 
 
 ### Solution to Problem 3
 
-(i) $g_{f}=\phi_{f\left(z_{0}\right)}\circ f$, where $\phi_{a}\left(w\right)=\frac{w-a}{1-\bar{a}w}$. Since $\phi_{a}'\left(w\right)=\frac{1-\left|a\right|^{2}}{\left(1-\bar{a}w\right)^{2}}$, the chain rule gives
+(i) $g_{f}=\phi_{f\left(z_{0}\right)}\circ f$, where $\phi_{a}\left(w\right)=\frac{w-a}{1-\overline{a}w}$. Since $\phi_{a}'\left(w\right)=\frac{1-\left|a\right|^{2}}{\left(1-\overline{a}w\right)^{2}}$, the chain rule gives
 
 $$
 g_{f}'\left(z_{0}\right)=\phi_{f\left(z_{0}\right)}'\left(f\left(z_{0}\right)\right)f'\left(z_{0}\right)=\frac{1-\left|f\left(z_{0}\right)\right|^{2}}{\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{2}}f'\left(z_{0}\right)=\frac{f'\left(z_{0}\right)}{1-\left|f\left(z_{0}\right)\right|^{2}}.

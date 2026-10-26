@@ -2,9 +2,9 @@
 
 > **Definition 3.2.1** (Differentiability)<br>$f$ is called $\mathbb{R}$-differentiable (or $\mathbb{C}$-differentiable) at $z$ if $\Delta f=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, where $\ell$ is an $\mathbb{R}$-linear (or $\mathbb{C}$-linear) function.
 
-> **Definition 3.2.2** (Formal Derivatives)<br>$$\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\bar{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right).$$
+> **Definition 3.2.2** (Formal Derivatives)<br>$$\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right).$$
 
-> **Theorem 3.2.4**<br>$f$ is $\mathbb{C}$-differentiable at $z$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\bar{z}}=0$; this is also equivalent to $u,v$ satisfying the Cauchy–Riemann equations.
+> **Theorem 3.2.4**<br>$f$ is $\mathbb{C}$-differentiable at $z$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$; this is also equivalent to $u,v$ satisfying the Cauchy–Riemann equations.
 
 > **Theorem 8.1.4** (Cauchy's Theorem)<br>If $f$ is holomorphic on a domain $D$ and $\gamma_{0},\gamma_{1}$ are homotopic paths in $D$ with the same endpoints (or homotopic closed paths), then $$\int_{\gamma_{0}}f\,dz=\int_{\gamma_{1}}f\,dz;$$ in particular, the integral of $f$ along any closed path in $D$ is zero.
 
@@ -53,16 +53,16 @@ The proposition is proved. $\blacksquare$
 Take any $a\in\mathbb{C}$ and the circle $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$ of radius $\varepsilon> 0$. Since $f$ is $\mathbb{R}$-differentiable at $a$, expand
 
 $$
-f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\bar{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
+f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\overline{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
 $$
 
 substitute into $\int_{\gamma_{\varepsilon}}f\,dz$ and follow the calculation in (Problem 7.4-2), giving
 
 $$
-\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\bar{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
+\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\overline{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
 $$
 
-By assumption the left-hand side is zero for every $\varepsilon> 0$; dividing both sides by $\varepsilon^{2}$ and letting $\varepsilon\to0$ gives $\frac{\partial f}{\partial\bar{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ was arbitrary, $\frac{\partial f}{\partial\bar{z}}\equiv0$ on $\mathbb{C}$; by **Theorem 3.2.4**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
+By assumption the left-hand side is zero for every $\varepsilon> 0$; dividing both sides by $\varepsilon^{2}$ and letting $\varepsilon\to0$ gives $\frac{\partial f}{\partial\overline{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ was arbitrary, $\frac{\partial f}{\partial\overline{z}}\equiv0$ on $\mathbb{C}$; by **Theorem 3.2.4**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
 
 ### Problem 3
 

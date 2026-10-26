@@ -6,7 +6,7 @@
 
 > **Theorem 10.3.1** (Schwarz's Lemma)<br>If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic and $f\left(0\right)=0$, then $\left|f\left(z\right)\right|\le\left|z\right|$ and $\left|f'\left(0\right)\right|\le1$; equality holds at some point (or $\left|f'\left(0\right)\right|=1$) if and only if $f\left(z\right)=e^{i\theta}z$.
 
-> **Definition 10.3.2** (Blaschke Factor)<br>For $a\in\mathbb{D}$, the function $$\phi_{a}\left(z\right)=\frac{z-a}{1-\bar{a}z}$$ is called a Blaschke factor; it is an automorphism of $\mathbb{D}$ satisfying $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$ and $\phi_{a}\left(a\right)=0$.
+> **Definition 10.3.2** (Blaschke Factor)<br>For $a\in\mathbb{D}$, the function $$\phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}$$ is called a Blaschke factor; it is an automorphism of $\mathbb{D}$ satisfying $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$ and $\phi_{a}\left(a\right)=0$.
 
 ### Problem 1
 
@@ -26,13 +26,13 @@ Thus $M=\left|h\left(z\right)\right|\le\left|f\left(z\right)\right|+\left|g\left
 
 ### Problem 2
 
-(Problem 10.4-4) Let $f$ be holomorphic on a bounded domain $D\subset\mathbb{C}$ and $f$ be continuous on the closed domain $\bar{D}$. If $\left|f\left(z\right)\right|=\alpha$, $\forall z\in\partial D$, prove: either $f$ is constant or it has a zero in $D$.
+(Problem 10.4-4) Let $f$ be holomorphic on a bounded domain $D\subset\mathbb{C}$ and $f$ be continuous on the closed domain $\overline{D}$. If $\left|f\left(z\right)\right|=\alpha$, $\forall z\in\partial D$, prove: either $f$ is constant or it has a zero in $D$.
 
 ### Solution to Problem 2
 
-Suppose for contradiction that $f$ has no zeros in $D$. If $\alpha=0$, then $\left|f\right|=0$ on $\partial D$; by the maximum modulus principle $f\equiv0$ on $D$, which is constant, and the claim holds. Now assume $\alpha> 0$. Since $\left|f\right|$ is continuous on $\bar{D}$, the maximum modulus principle (the maximum of $\left|f\right|$ on $\bar{D}$ is attained on the boundary) gives $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
+Suppose for contradiction that $f$ has no zeros in $D$. If $\alpha=0$, then $\left|f\right|=0$ on $\partial D$; by the maximum modulus principle $f\equiv0$ on $D$, which is constant, and the claim holds. Now assume $\alpha> 0$. Since $\left|f\right|$ is continuous on $\overline{D}$, the maximum modulus principle (the maximum of $\left|f\right|$ on $\overline{D}$ is attained on the boundary) gives $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
 
-Also, $\frac{1}{f}$ is holomorphic on $D$ (since $f$ has no zeros) and continuous on $\bar{D}$, with $\left|\frac{1}{f}\right|=\frac{1}{\alpha}$ on the boundary. By the same argument, $\left|\frac{1}{f\left(z\right)}\right|\le\frac{1}{\alpha}$, i.e. $\left|f\left(z\right)\right|\ge\alpha$, $\forall z\in D$. Hence $\left|f\left(z\right)\right|\equiv\alpha$ on $D$, and $\left|f\right|$ is constant; by **Theorem 10.1.4 (Open Mapping Theorem)**, $f$ is constant. Therefore $f$ is either constant or has a zero in $D$. $\blacksquare$
+Also, $\frac{1}{f}$ is holomorphic on $D$ (since $f$ has no zeros) and continuous on $\overline{D}$, with $\left|\frac{1}{f}\right|=\frac{1}{\alpha}$ on the boundary. By the same argument, $\left|\frac{1}{f\left(z\right)}\right|\le\frac{1}{\alpha}$, i.e. $\left|f\left(z\right)\right|\ge\alpha$, $\forall z\in D$. Hence $\left|f\left(z\right)\right|\equiv\alpha$ on $D$, and $\left|f\right|$ is constant; by **Theorem 10.1.4 (Open Mapping Theorem)**, $f$ is constant. Therefore $f$ is either constant or has a zero in $D$. $\blacksquare$
 
 ### Problem 3
 
@@ -75,10 +75,10 @@ i.e. $M\left(\rho\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$, which is 
 If $f\equiv0$, the inequality is obvious. Assume $f$ is nonconstant, and write $M=\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|$. Using Blaschke factors (**Definition 10.3.2**), construct
 
 $$
-B\left(z\right)=\prod_{j=1}^{k}\frac{z-z_{j}}{1-\bar{z}_{j}z},
+B\left(z\right)=\prod_{j=1}^{k}\frac{z-z_{j}}{1-\overline{z}_{j}z},
 $$
 
-which is holomorphic on $\mathbb{D}$ (the denominators $1-\bar{z}_{j}z\ne0$), has zeros exactly at $z_{1},\cdots,z_{k}$ (counting multiplicities), and satisfies $\left|B\left(e^{i\theta}\right)\right|=1$ on the unit circle. Since all zeros of $f$ are canceled by $B$, $g\left(z\right)=\frac{f\left(z\right)}{B\left(z\right)}$ is holomorphic and nonvanishing on $\mathbb{D}$.
+which is holomorphic on $\mathbb{D}$ (the denominators $1-\overline{z}_{j}z\ne0$), has zeros exactly at $z_{1},\cdots,z_{k}$ (counting multiplicities), and satisfies $\left|B\left(e^{i\theta}\right)\right|=1$ on the unit circle. Since all zeros of $f$ are canceled by $B$, $g\left(z\right)=\frac{f\left(z\right)}{B\left(z\right)}$ is holomorphic and nonvanishing on $\mathbb{D}$.
 
 For $0< r< 1$, on the circle $\left|z\right|=r$, by the maximum modulus principle, $\left|g\left(z\right)\right|\le\max_{\left|w\right|=r}\left|g\left(w\right)\right|=\frac{\max_{\left|w\right|=r}\left|f\left(w\right)\right|}{\min_{\left|w\right|=r}\left|B\left(w\right)\right|}$. Letting $r\to1^{-}$, we have $\max_{\left|w\right|=r}\left|f\left(w\right)\right|\to M$ and $\min_{\left|w\right|=r}\left|B\left(w\right)\right|\to1$, so $\left|g\left(z\right)\right|\le M$, $\forall z\in\mathbb{D}$. In particular,
 
@@ -98,13 +98,13 @@ $$
 
 ### Solution to Problem 5
 
-Write $a=f\left(0\right)$, $t=\left|a\right|$. By **Definition 10.3.2 (Blaschke Factor)**, $\phi_{a}\left(w\right)=\frac{w-a}{1-\bar{a}w}$ is an automorphism of $\mathbb{D}$ with $\phi_{a}\left(a\right)=0$. Hence $\phi_{a}\circ f:\mathbb{D}\to\mathbb{D}$ is holomorphic and $\left(\phi_{a}\circ f\right)\left(0\right)=0$. By **Theorem 10.3.1 (Schwarz's Lemma)**:
+Write $a=f\left(0\right)$, $t=\left|a\right|$. By **Definition 10.3.2 (Blaschke Factor)**, $\phi_{a}\left(w\right)=\frac{w-a}{1-\overline{a}w}$ is an automorphism of $\mathbb{D}$ with $\phi_{a}\left(a\right)=0$. Hence $\phi_{a}\circ f:\mathbb{D}\to\mathbb{D}$ is holomorphic and $\left(\phi_{a}\circ f\right)\left(0\right)=0$. By **Theorem 10.3.1 (Schwarz's Lemma)**:
 
 $$
-\left|\frac{f\left(z\right)-a}{1-\bar{a}f\left(z\right)}\right|\le\left|z\right|.
+\left|\frac{f\left(z\right)-a}{1-\overline{a}f\left(z\right)}\right|\le\left|z\right|.
 $$
 
-Let $u=f\left(z\right)$; then $\left|u\right|< 1$. From $\left|u-a\right|\le\left|z\right|\left|1-\bar{a}u\right|\le\left|z\right|\left(1+t\left|u\right|\right)$ and $\left|u-a\right|\ge\left|\right|u\left|-t\right|$, we get
+Let $u=f\left(z\right)$; then $\left|u\right|< 1$. From $\left|u-a\right|\le\left|z\right|\left|1-\overline{a}u\right|\le\left|z\right|\left(1+t\left|u\right|\right)$ and $\left|u-a\right|\ge\left|\right|u\left|-t\right|$, we get
 
 $$
 \left|\right|u\left|-t\right|\le\left|z\right|\left(1+t\left|u\right|\right).

@@ -6,7 +6,7 @@
 
 > **定理 10.3.1** (施瓦茨引理)<br>若 $f:\mathbb{D}\to\mathbb{D}$ 全纯且 $f\left(0\right)=0$, 则 $\left|f\left(z\right)\right|\le\left|z\right|$ 且 $\left|f'\left(0\right)\right|\le1$; 等号在某点成立 (或 $\left|f'\left(0\right)\right|=1$) 当且仅当 $f\left(z\right)=e^{i\theta}z$.
 
-> **定义 10.3.2** (Blaschke 因子)<br>对 $a\in\mathbb{D}$, 称 $$\phi_{a}\left(z\right)=\frac{z-a}{1-\bar{a}z}$$ 为 Blaschke 因子; 它是 $\mathbb{D}$ 的自同构, 满足 $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$ 且 $\phi_{a}\left(a\right)=0$.
+> **定义 10.3.2** (Blaschke 因子)<br>对 $a\in\mathbb{D}$, 称 $$\phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}$$ 为 Blaschke 因子; 它是 $\mathbb{D}$ 的自同构, 满足 $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$ 且 $\phi_{a}\left(a\right)=0$.
 
 ### 习题一
 
@@ -26,13 +26,13 @@ $$
 
 ### 习题二
 
-(习题 10.4-4) 令 $f$ 为有界区域 $D\subset\mathbb{C}$ 上的全纯函数且 $f$ 在闭区域 $\bar{D}$ 上是连续的. 若 $\left|f\left(z\right)\right|=\alpha$, $\forall z\in\partial D$. 证明: 要么 $f$ 为常值的要么它在 $D$ 内有零点.
+(习题 10.4-4) 令 $f$ 为有界区域 $D\subset\mathbb{C}$ 上的全纯函数且 $f$ 在闭区域 $\overline{D}$ 上是连续的. 若 $\left|f\left(z\right)\right|=\alpha$, $\forall z\in\partial D$. 证明: 要么 $f$ 为常值的要么它在 $D$ 内有零点.
 
 ### 解答 习题二
 
-反设 $f$ 在 $D$ 内无零点. 若 $\alpha=0$, 则 $\left|f\right|=0$ 在 $\partial D$, 由最大模原理 $f\equiv0$ 于 $D$, 常值, 得证. 下设 $\alpha> 0$. 由 $\left|f\right|$ 在 $\bar{D}$ 上连续, 最大模原理 (在 $\bar{D}$ 上 $\left|f\right|$ 的最大值在边界取到) 给出 $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
+反设 $f$ 在 $D$ 内无零点. 若 $\alpha=0$, 则 $\left|f\right|=0$ 在 $\partial D$, 由最大模原理 $f\equiv0$ 于 $D$, 常值, 得证. 下设 $\alpha> 0$. 由 $\left|f\right|$ 在 $\overline{D}$ 上连续, 最大模原理 (在 $\overline{D}$ 上 $\left|f\right|$ 的最大值在边界取到) 给出 $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
 
-又 $\frac{1}{f}$ 在 $D$ 上全纯 (因 $f$ 无零点) 且在 $\bar{D}$ 上连续, 边界上 $\left|\frac{1}{f}\right|=\frac{1}{\alpha}$. 同理 $\left|\frac{1}{f\left(z\right)}\right|\le\frac{1}{\alpha}$, 即 $\left|f\left(z\right)\right|\ge\alpha$, $\forall z\in D$. 故 $\left|f\left(z\right)\right|\equiv\alpha$ 于 $D$, $\left|f\right|$ 为常数; 由**定理 10.1.4 (开映射定理)**, $f$ 为常值. 因此 $f$ 要么常值, 要么在 $D$ 内有零点. $\blacksquare$
+又 $\frac{1}{f}$ 在 $D$ 上全纯 (因 $f$ 无零点) 且在 $\overline{D}$ 上连续, 边界上 $\left|\frac{1}{f}\right|=\frac{1}{\alpha}$. 同理 $\left|\frac{1}{f\left(z\right)}\right|\le\frac{1}{\alpha}$, 即 $\left|f\left(z\right)\right|\ge\alpha$, $\forall z\in D$. 故 $\left|f\left(z\right)\right|\equiv\alpha$ 于 $D$, $\left|f\right|$ 为常数; 由**定理 10.1.4 (开映射定理)**, $f$ 为常值. 因此 $f$ 要么常值, 要么在 $D$ 内有零点. $\blacksquare$
 
 ### 习题三
 
@@ -75,10 +75,10 @@ $$
 若 $f\equiv0$, 不等式显然. 设 $f$ 非常值, 记 $M=\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|$. 由 Blaschke 因子 (**定义 10.3.2**), 构造
 
 $$
-B\left(z\right)=\prod_{j=1}^{k}\frac{z-z_{j}}{1-\bar{z}_{j}z},
+B\left(z\right)=\prod_{j=1}^{k}\frac{z-z_{j}}{1-\overline{z}_{j}z},
 $$
 
-它在 $\mathbb{D}$ 上全纯 (分母 $1-\bar{z}_{j}z\ne0$), 其零点恰为 $z_{1},\cdots,z_{k}$ (计重数), 且在单位圆周上 $\left|B\left(e^{i\theta}\right)\right|=1$. 因 $f$ 的零点都被 $B$ 消去, $g\left(z\right)=\frac{f\left(z\right)}{B\left(z\right)}$ 在 $\mathbb{D}$ 上全纯且不取零值.
+它在 $\mathbb{D}$ 上全纯 (分母 $1-\overline{z}_{j}z\ne0$), 其零点恰为 $z_{1},\cdots,z_{k}$ (计重数), 且在单位圆周上 $\left|B\left(e^{i\theta}\right)\right|=1$. 因 $f$ 的零点都被 $B$ 消去, $g\left(z\right)=\frac{f\left(z\right)}{B\left(z\right)}$ 在 $\mathbb{D}$ 上全纯且不取零值.
 
 对 $0< r< 1$, 在圆 $\left|z\right|=r$ 上由最大模原理 $\left|g\left(z\right)\right|\le\max_{\left|w\right|=r}\left|g\left(w\right)\right|=\frac{\max_{\left|w\right|=r}\left|f\left(w\right)\right|}{\min_{\left|w\right|=r}\left|B\left(w\right)\right|}$. 令 $r\to1^{-}$, 有 $\max_{\left|w\right|=r}\left|f\left(w\right)\right|\to M$ 且 $\min_{\left|w\right|=r}\left|B\left(w\right)\right|\to1$, 故 $\left|g\left(z\right)\right|\le M$, $\forall z\in\mathbb{D}$. 特别地
 
@@ -98,13 +98,13 @@ $$
 
 ### 解答 习题五
 
-记 $a=f\left(0\right)$, $t=\left|a\right|$. 由**定义 10.3.2 (Blaschke 因子)**, $\phi_{a}\left(w\right)=\frac{w-a}{1-\bar{a}w}$ 是 $\mathbb{D}$ 的自同构且 $\phi_{a}\left(a\right)=0$. 于是 $\phi_{a}\circ f:\mathbb{D}\to\mathbb{D}$ 全纯, 且 $\left(\phi_{a}\circ f\right)\left(0\right)=0$. 由**定理 10.3.1 (施瓦茨引理)**:
+记 $a=f\left(0\right)$, $t=\left|a\right|$. 由**定义 10.3.2 (Blaschke 因子)**, $\phi_{a}\left(w\right)=\frac{w-a}{1-\overline{a}w}$ 是 $\mathbb{D}$ 的自同构且 $\phi_{a}\left(a\right)=0$. 于是 $\phi_{a}\circ f:\mathbb{D}\to\mathbb{D}$ 全纯, 且 $\left(\phi_{a}\circ f\right)\left(0\right)=0$. 由**定理 10.3.1 (施瓦茨引理)**:
 
 $$
-\left|\frac{f\left(z\right)-a}{1-\bar{a}f\left(z\right)}\right|\le\left|z\right|.
+\left|\frac{f\left(z\right)-a}{1-\overline{a}f\left(z\right)}\right|\le\left|z\right|.
 $$
 
-令 $u=f\left(z\right)$, 则 $\left|u\right|< 1$. 由 $\left|u-a\right|\le\left|z\right|\left|1-\bar{a}u\right|\le\left|z\right|\left(1+t\left|u\right|\right)$ 与 $\left|u-a\right|\ge\left|\right|u\left|-t\right|$, 得
+令 $u=f\left(z\right)$, 则 $\left|u\right|< 1$. 由 $\left|u-a\right|\le\left|z\right|\left|1-\overline{a}u\right|\le\left|z\right|\left(1+t\left|u\right|\right)$ 与 $\left|u-a\right|\ge\left|\right|u\left|-t\right|$, 得
 
 $$
 \left|\right|u\left|-t\right|\le\left|z\right|\left(1+t\left|u\right|\right).

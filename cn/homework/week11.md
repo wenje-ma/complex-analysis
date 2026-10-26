@@ -34,11 +34,11 @@ $$
 
 ### 解答 习题二
 
-由**定理 11.1.2**, $g$ 在 $D$ 上全纯. 因 $g_{n}\left(D\right)\subset D$ 且 $g_{n}\to g$, 对每个 $z\in D$, $g\left(z\right)\in\bar{D}$ (闭包). 故 $g\left(D\right)\subset\bar{D}$.
+由**定理 11.1.2**, $g$ 在 $D$ 上全纯. 因 $g_{n}\left(D\right)\subset D$ 且 $g_{n}\to g$, 对每个 $z\in D$, $g\left(z\right)\in\overline{D}$ (闭包). 故 $g\left(D\right)\subset\overline{D}$.
 
-若 $g$ 不是常值, 由**定理 10.1.4 (开映射定理)**, $g\left(D\right)$ 是开集. 又 $g\left(D\right)\subset\bar{D}$ 且 $g\left(D\right)$ 非空开, 若 $g\left(D\right)$ 含有 $\partial D$ 的点, 则 $g\left(D\right)$ 不可能是开集 (因 $g\left(D\right)$ 中的点应被 $g\left(D\right)$ 内的小邻域包含, 但 $\partial D$ 附近的小邻域不全含于 $\bar D$). 故 $g\left(D\right)\subset D$.
+若 $g$ 不是常值, 由**定理 10.1.4 (开映射定理)**, $g\left(D\right)$ 是开集. 又 $g\left(D\right)\subset\overline{D}$ 且 $g\left(D\right)$ 非空开, 若 $g\left(D\right)$ 含有 $\partial D$ 的点, 则 $g\left(D\right)$ 不可能是开集 (因 $g\left(D\right)$ 中的点应被 $g\left(D\right)$ 内的小邻域包含, 但 $\partial D$ 附近的小邻域不全含于 $\overline D$). 故 $g\left(D\right)\subset D$.
 
-若 $g$ 为常值 $g\equiv z_{0}$, 则 $z_{0}\in\bar D$. 若 $z_{0}\in D$, 则 $g\left(D\right)=\left\{z_{0}\right\}\subset D$, 属第一种情形; 若 $z_{0}\in\partial D$, 则 $g\equiv z_{0}\in\partial D$, 属第二种情形. 命题得证. $\blacksquare$
+若 $g$ 为常值 $g\equiv z_{0}$, 则 $z_{0}\in\overline D$. 若 $z_{0}\in D$, 则 $g\left(D\right)=\left\{z_{0}\right\}\subset D$, 属第一种情形; 若 $z_{0}\in\partial D$, 则 $g\equiv z_{0}\in\partial D$, 属第二种情形. 命题得证. $\blacksquare$
 
 ### 习题三
 

@@ -34,11 +34,11 @@ contradicting $z_{n_{k}}\to z\in\partial D\notin D$. Hence $\left|f\left(z_{n}\r
 
 ### Solution to Problem 2
 
-By **Theorem 11.1.2**, $g$ is holomorphic on $D$. Since $g_{n}\left(D\right)\subset D$ and $g_{n}\to g$, for each $z\in D$, $g\left(z\right)\in\bar{D}$ (the closure). Hence $g\left(D\right)\subset\bar{D}$.
+By **Theorem 11.1.2**, $g$ is holomorphic on $D$. Since $g_{n}\left(D\right)\subset D$ and $g_{n}\to g$, for each $z\in D$, $g\left(z\right)\in\overline{D}$ (the closure). Hence $g\left(D\right)\subset\overline{D}$.
 
-If $g$ is not constant, by **Theorem 10.1.4 (Open Mapping Theorem)**, $g\left(D\right)$ is open. Since $g\left(D\right)\subset\bar{D}$ and $g\left(D\right)$ is nonempty and open, if $g\left(D\right)$ contained a point of $\partial D$, then $g\left(D\right)$ could not be open (because points in $g\left(D\right)$ should be contained in small neighborhoods within $g\left(D\right)$, but small neighborhoods near $\partial D$ are not entirely contained in $\bar D$). Hence $g\left(D\right)\subset D$.
+If $g$ is not constant, by **Theorem 10.1.4 (Open Mapping Theorem)**, $g\left(D\right)$ is open. Since $g\left(D\right)\subset\overline{D}$ and $g\left(D\right)$ is nonempty and open, if $g\left(D\right)$ contained a point of $\partial D$, then $g\left(D\right)$ could not be open (because points in $g\left(D\right)$ should be contained in small neighborhoods within $g\left(D\right)$, but small neighborhoods near $\partial D$ are not entirely contained in $\overline D$). Hence $g\left(D\right)\subset D$.
 
-If $g$ is constant, say $g\equiv z_{0}$, then $z_{0}\in\bar D$. If $z_{0}\in D$, then $g\left(D\right)=\left\{z_{0}\right\}\subset D$, which is the first case; if $z_{0}\in\partial D$, then $g\equiv z_{0}\in\partial D$, which is the second case. The proposition is proved. $\blacksquare$
+If $g$ is constant, say $g\equiv z_{0}$, then $z_{0}\in\overline D$. If $z_{0}\in D$, then $g\left(D\right)=\left\{z_{0}\right\}\subset D$, which is the first case; if $z_{0}\in\partial D$, then $g\equiv z_{0}\in\partial D$, which is the second case. The proposition is proved. $\blacksquare$
 
 ### Problem 3
 

@@ -1,6 +1,6 @@
 # 作业 2
 
-> **定义 2.1.2** (道路的重参数化)<br>称道路 $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ 是道路 $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ 的重参数化, 如果存在单调递增函数 $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ 满足 $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, 使得对任意 $t\in\left[a_{1},b_{1}\right]$ 有 $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; 若 $\tau$ 在某点 $\bar{t}$ 处不连续, 即 $\tau\left(\bar{t}-0\right)< \tau\left(\bar{t}+0\right)$, 还要求 $\gamma_{2}$ 在区间 $\left[\tau\left(\bar{t}-0\right),\tau\left(\bar{t}+0\right)\right]$ 上为常值.
+> **定义 2.1.2** (道路的重参数化)<br>称道路 $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ 是道路 $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ 的重参数化, 如果存在单调递增函数 $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ 满足 $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, 使得对任意 $t\in\left[a_{1},b_{1}\right]$ 有 $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; 若 $\tau$ 在某点 $\overline{t}$ 处不连续, 即 $\tau\left(\overline{t}-0\right)< \tau\left(\overline{t}+0\right)$, 还要求 $\gamma_{2}$ 在区间 $\left[\tau\left(\overline{t}-0\right),\tau\left(\overline{t}+0\right)\right]$ 上为常值.
 
 > **定义 2.1.4** (路径)<br>在道路重参数化意义下的一个道路等价类称为路径.
 

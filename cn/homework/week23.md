@@ -18,13 +18,13 @@
 
 ### 习题二
 
-(习题 20.3-3) 证明: (i) $\zeta\left(\bar z\right)=\overline{\zeta\left(z\right)}$, $\forall z\in\mathbb{C}\setminus\left\{1\right\}$; (ii) 若 $z\in\mathbb{C}\setminus\mathbb{R}$ 是 $\zeta$-函数的零点, 则 $\bar z$, $1-z$, $1-\bar z$ 都是它的零点.
+(习题 20.3-3) 证明: (i) $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$, $\forall z\in\mathbb{C}\setminus\left\{1\right\}$; (ii) 若 $z\in\mathbb{C}\setminus\mathbb{R}$ 是 $\zeta$-函数的零点, 则 $\overline z$, $1-z$, $1-\overline z$ 都是它的零点.
 
 ### 解答 习题二
 
-(i) 在 $\operatorname{Re}z> 1$ 上, $n$ 为实数, $\overline{n^{-z}}=\overline{e^{-z\log n}}=e^{-\bar z\log n}=n^{-\bar z}$, 逐项取共轭得 $\overline{\zeta\left(z\right)}=\sum_{n}n^{-\bar z}=\zeta\left(\bar z\right)$. 由解析延拓 (恒等定理) 对 $\operatorname{Re}z> 1$ 成立之等式延拓到 $\mathbb{C}\setminus\left\{1\right\}$, 故 $\zeta\left(\bar z\right)=\overline{\zeta\left(z\right)}$, $\forall z\in\mathbb{C}\setminus\left\{1\right\}$.
+(i) 在 $\operatorname{Re}z> 1$ 上, $n$ 为实数, $\overline{n^{-z}}=\overline{e^{-z\log n}}=e^{-\overline z\log n}=n^{-\overline z}$, 逐项取共轭得 $\overline{\zeta\left(z\right)}=\sum_{n}n^{-\overline z}=\zeta\left(\overline z\right)$. 由解析延拓 (恒等定理) 对 $\operatorname{Re}z> 1$ 成立之等式延拓到 $\mathbb{C}\setminus\left\{1\right\}$, 故 $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$, $\forall z\in\mathbb{C}\setminus\left\{1\right\}$.
 
-(ii) 设 $z$ 是非实零点, $\zeta\left(z\right)=0$. 由 (i), $\zeta\left(\bar z\right)=\overline{\zeta\left(z\right)}=0$, 故 $\bar z$ 是零点. 由**定理 20.2.2 (函数方程)** $\zeta\left(z\right)=2^{z}\pi^{z-1}\sin\frac{\pi z}{2}\Gamma\left(1-z\right)\zeta\left(1-z\right)$. 因 $z$ 非实, $\sin\frac{\pi z}{2}\ne0$, $\Gamma\left(1-z\right)\ne0$, 因子 $2^{z}\pi^{z-1}\ne0$, 故 $\zeta\left(1-z\right)=0$. 再由 (i), $\zeta\left(1-\bar z\right)=\overline{\zeta\left(1-z\right)}=0$. 故 $\bar z$, $1-z$, $1-\bar z$ 都是零点. $\blacksquare$
+(ii) 设 $z$ 是非实零点, $\zeta\left(z\right)=0$. 由 (i), $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}=0$, 故 $\overline z$ 是零点. 由**定理 20.2.2 (函数方程)** $\zeta\left(z\right)=2^{z}\pi^{z-1}\sin\frac{\pi z}{2}\Gamma\left(1-z\right)\zeta\left(1-z\right)$. 因 $z$ 非实, $\sin\frac{\pi z}{2}\ne0$, $\Gamma\left(1-z\right)\ne0$, 因子 $2^{z}\pi^{z-1}\ne0$, 故 $\zeta\left(1-z\right)=0$. 再由 (i), $\zeta\left(1-\overline z\right)=\overline{\zeta\left(1-z\right)}=0$. 故 $\overline z$, $1-z$, $1-\overline z$ 都是零点. $\blacksquare$
 
 ### 习题三
 
@@ -48,7 +48,7 @@ $$
 \xi\left(z\right)=\frac12 z\left(z-1\right)\pi^{\frac{z-1}{2}}\Gamma\left(\frac{1-z}{2}\right)\zeta\left(1-z\right)=\xi\left(1-z\right).
 $$
 
-(iv) $\xi$ 的系数均为实系数 (由 $\pi,\Gamma,\zeta$ 在实轴取实值), 故 $\xi\left(\bar z\right)=\overline{\xi\left(z\right)}$. 对 $z=\frac12+it$, $\bar z=1-z$, 由 (iii) $\xi\left(z\right)=\xi\left(1-z\right)=\xi\left(\bar z\right)=\overline{\xi\left(z\right)}$, 故 $\xi\left(z\right)\in\mathbb{R}$ 于 $\operatorname{Re}z=\frac12$. $\blacksquare$
+(iv) $\xi$ 的系数均为实系数 (由 $\pi,\Gamma,\zeta$ 在实轴取实值), 故 $\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$. 对 $z=\frac12+it$, $\overline z=1-z$, 由 (iii) $\xi\left(z\right)=\xi\left(1-z\right)=\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$, 故 $\xi\left(z\right)\in\mathbb{R}$ 于 $\operatorname{Re}z=\frac12$. $\blacksquare$
 
 ### 习题四
 

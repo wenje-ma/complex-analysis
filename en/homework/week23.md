@@ -18,13 +18,13 @@ For $z$ with $\operatorname{Re}z> k+1$: $\left|a_{n}n^{-z}\right|=\left|a_{n}\ri
 
 ### Problem 2
 
-(Problem 20.3-3) Prove: (i) $\zeta\left(\bar z\right)=\overline{\zeta\left(z\right)}$ for all $\forall z\in\mathbb{C}\setminus\left\{1\right\}$; (ii) if $z\in\mathbb{C}\setminus\mathbb{R}$ is a zero of the $\zeta$-function, then $\bar z$, $1-z$, $1-\bar z$ are all zeros.
+(Problem 20.3-3) Prove: (i) $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$ for all $\forall z\in\mathbb{C}\setminus\left\{1\right\}$; (ii) if $z\in\mathbb{C}\setminus\mathbb{R}$ is a zero of the $\zeta$-function, then $\overline z$, $1-z$, $1-\overline z$ are all zeros.
 
 ### Solution to Problem 2
 
-(i) On $\operatorname{Re}z> 1$, $n$ is real, $\overline{n^{-z}}=\overline{e^{-z\log n}}=e^{-\bar z\log n}=n^{-\bar z}$; taking conjugates term by term gives $\overline{\zeta\left(z\right)}=\sum_{n}n^{-\bar z}=\zeta\left(\bar z\right)$. By analytic continuation (identity theorem), the identity holding on $\operatorname{Re}z> 1$ extends to $\mathbb{C}\setminus\left\{1\right\}$, so $\zeta\left(\bar z\right)=\overline{\zeta\left(z\right)}$ for all $\forall z\in\mathbb{C}\setminus\left\{1\right\}$.
+(i) On $\operatorname{Re}z> 1$, $n$ is real, $\overline{n^{-z}}=\overline{e^{-z\log n}}=e^{-\overline z\log n}=n^{-\overline z}$; taking conjugates term by term gives $\overline{\zeta\left(z\right)}=\sum_{n}n^{-\overline z}=\zeta\left(\overline z\right)$. By analytic continuation (identity theorem), the identity holding on $\operatorname{Re}z> 1$ extends to $\mathbb{C}\setminus\left\{1\right\}$, so $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$ for all $\forall z\in\mathbb{C}\setminus\left\{1\right\}$.
 
-(ii) Let $z$ be a non-real zero, $\zeta\left(z\right)=0$. By (i), $\zeta\left(\bar z\right)=\overline{\zeta\left(z\right)}=0$, so $\bar z$ is a zero. By **Theorem 20.2.2 (Functional Equation)**, $\zeta\left(z\right)=2^{z}\pi^{z-1}\sin\frac{\pi z}{2}\Gamma\left(1-z\right)\zeta\left(1-z\right)$. Since $z$ is non-real, $\sin\frac{\pi z}{2}\ne0$, $\Gamma\left(1-z\right)\ne0$, and the factors $2^{z}\pi^{z-1}\ne0$, so $\zeta\left(1-z\right)=0$. Again by (i), $\zeta\left(1-\bar z\right)=\overline{\zeta\left(1-z\right)}=0$. Hence $\bar z$, $1-z$, $1-\bar z$ are all zeros. $\blacksquare$
+(ii) Let $z$ be a non-real zero, $\zeta\left(z\right)=0$. By (i), $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}=0$, so $\overline z$ is a zero. By **Theorem 20.2.2 (Functional Equation)**, $\zeta\left(z\right)=2^{z}\pi^{z-1}\sin\frac{\pi z}{2}\Gamma\left(1-z\right)\zeta\left(1-z\right)$. Since $z$ is non-real, $\sin\frac{\pi z}{2}\ne0$, $\Gamma\left(1-z\right)\ne0$, and the factors $2^{z}\pi^{z-1}\ne0$, so $\zeta\left(1-z\right)=0$. Again by (i), $\zeta\left(1-\overline z\right)=\overline{\zeta\left(1-z\right)}=0$. Hence $\overline z$, $1-z$, $1-\overline z$ are all zeros. $\blacksquare$
 
 ### Problem 3
 
@@ -48,7 +48,7 @@ $$
 \xi\left(z\right)=\frac12 z\left(z-1\right)\pi^{\frac{z-1}{2}}\Gamma\left(\frac{1-z}{2}\right)\zeta\left(1-z\right)=\xi\left(1-z\right).
 $$
 
-(iv) The coefficients of $\xi$ are all real (since $\pi,\Gamma,\zeta$ take real values on the real axis), so $\xi\left(\bar z\right)=\overline{\xi\left(z\right)}$. For $z=\frac12+it$, $\bar z=1-z$, and by (iii), $\xi\left(z\right)=\xi\left(1-z\right)=\xi\left(\bar z\right)=\overline{\xi\left(z\right)}$, so $\xi\left(z\right)\in\mathbb{R}$ on $\operatorname{Re}z=\frac12$. $\blacksquare$
+(iv) The coefficients of $\xi$ are all real (since $\pi,\Gamma,\zeta$ take real values on the real axis), so $\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$. For $z=\frac12+it$, $\overline z=1-z$, and by (iii), $\xi\left(z\right)=\xi\left(1-z\right)=\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$, so $\xi\left(z\right)\in\mathbb{R}$ on $\operatorname{Re}z=\frac12$. $\blacksquare$
 
 ### Problem 4
 

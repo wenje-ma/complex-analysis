@@ -2,13 +2,13 @@
 
 > **Definition 3.1.1** ($\mathbb{R}$-Linear and $\mathbb{C}$-Linear)<br>A map $\ell:\mathbb{C}\to\mathbb{C}$ is called $\mathbb{R}$-linear (or $\mathbb{C}$-linear) if $\ell\left(a+b\right)=\ell\left(a\right)+\ell\left(b\right)$ and, for $\lambda\in\mathbb{R}$ (or $\mathbb{C}$), $\ell\left(\lambda z\right)=\lambda\ell\left(z\right)$; a $\mathbb{C}$-linear function is necessarily $\mathbb{R}$-linear.
 
-> **Theorem 3.1.2** (Form of Linear Functions)<br>Any $\mathbb{R}$-linear function has the form $\ell\left(z\right)=az+b\bar{z}$, where $$a=\frac{\ell\left(1\right)-i\ell\left(i\right)}{2},\quad b=\frac{\ell\left(1\right)+i\ell\left(i\right)}{2};$$ any $\mathbb{C}$-linear function has the form $\ell\left(z\right)=az$; an $\mathbb{R}$-linear $\ell$ is $\mathbb{C}$-linear if and only if $\ell\left(iz\right)=i\ell\left(z\right)$.
+> **Theorem 3.1.2** (Form of Linear Functions)<br>Any $\mathbb{R}$-linear function has the form $\ell\left(z\right)=az+b\overline{z}$, where $$a=\frac{\ell\left(1\right)-i\ell\left(i\right)}{2},\quad b=\frac{\ell\left(1\right)+i\ell\left(i\right)}{2};$$ any $\mathbb{C}$-linear function has the form $\ell\left(z\right)=az$; an $\mathbb{R}$-linear $\ell$ is $\mathbb{C}$-linear if and only if $\ell\left(iz\right)=i\ell\left(z\right)$.
 
 > **Definition 3.2.1** (Differentiability)<br>A map $f:U\to\mathbb{C}$ is called $\mathbb{R}$-differentiable (or $\mathbb{C}$-differentiable) at $z$ if $\Delta f=f\left(z+\Delta z\right)-f\left(z\right)=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, where $\ell$ is an $\mathbb{R}$-linear (or $\mathbb{C}$-linear) function; $\ell\left(\Delta z\right)$ is called the real (complex) differential $df\left(z\right)$.
 
-> **Definition 3.2.2** (Formal Derivatives)<br>The formal derivative operators (Wirtinger derivatives) are $$\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\bar{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),$$ and one has $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\bar{z}}\,d\bar{z}$.
+> **Definition 3.2.2** (Formal Derivatives)<br>The formal derivative operators (Wirtinger derivatives) are $$\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),$$ and one has $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\overline{z}}\,d\overline{z}$.
 
-> **Theorem 3.2.4**<br>$f=u\left(x,y\right)+iv\left(x,y\right)$ is $\mathbb{C}$-differentiable at $z=x+iy$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\bar{z}}=0$, which is also equivalent to $u,v$ being differentiable and satisfying the Cauchy–Riemann equations $$\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.$$
+> **Theorem 3.2.4**<br>$f=u\left(x,y\right)+iv\left(x,y\right)$ is $\mathbb{C}$-differentiable at $z=x+iy$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$, which is also equivalent to $u,v$ being differentiable and satisfying the Cauchy–Riemann equations $$\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.$$
 
 > **Definition 3.3.1** (Derivability)<br>$f$ is said to be derivable at $a$ if $$\lim_{z\to a}\frac{f\left(z\right)-f\left(a\right)}{z-a}=A$$ exists, and one writes $A=f'\left(a\right)$.
 
@@ -26,7 +26,7 @@ $$
 \left\{\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}\right\}
 $$
 
-is a circle centered at $\frac{\partial f}{\partial z}\left(z_{0}\right)$ with radius $\left|\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\right|$.
+is a circle centered at $\frac{\partial f}{\partial z}\left(z_{0}\right)$ with radius $\left|\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)\right|$.
 
 ### Solution to Problem 1
 
@@ -36,19 +36,19 @@ $$
 \Delta f=f\left(z\right)-f\left(z_{0}\right)=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right),
 $$
 
-where $\ell$ is an $\mathbb{R}$-linear function. By **Theorem 3.1.2 (Form of Linear Functions)**, $\ell\left(\Delta z\right)=a\Delta z+b\Delta\bar{z}$; combined with **Definition 3.2.2 (Formal Derivatives)**, $a=\frac{\partial f}{\partial z}\left(z_{0}\right)$, $b=\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)$. Hence
+where $\ell$ is an $\mathbb{R}$-linear function. By **Theorem 3.1.2 (Form of Linear Functions)**, $\ell\left(\Delta z\right)=a\Delta z+b\Delta\overline{z}$; combined with **Definition 3.2.2 (Formal Derivatives)**, $a=\frac{\partial f}{\partial z}\left(z_{0}\right)$, $b=\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)$. Hence
 
 $$
-\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}=\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\frac{\Delta\bar{z}}{\Delta z}+\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}.
+\frac{f\left(z\right)-f\left(z_{0}\right)}{z-z_{0}}=\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)\frac{\Delta\overline{z}}{\Delta z}+\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}.
 $$
 
-As $z\to z_{0}$ (i.e. $\Delta z\to0$), the last term $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. Let $\Delta z=re^{i\theta}$ ($r> 0$); then $\frac{\Delta\bar{z}}{\Delta z}=e^{-2i\theta}$, which takes all values on the unit circle. Hence the set of limit points of the difference quotient is exactly
+As $z\to z_{0}$ (i.e. $\Delta z\to0$), the last term $\frac{o\left(\left|\Delta z\right|\right)}{\Delta z}\to0$. Let $\Delta z=re^{i\theta}$ ($r> 0$); then $\frac{\Delta\overline{z}}{\Delta z}=e^{-2i\theta}$, which takes all values on the unit circle. Hence the set of limit points of the difference quotient is exactly
 
 $$
-\left\{\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)e^{-2i\theta}:\theta\in\left[0,2\pi\right)\right\},
+\left\{\frac{\partial f}{\partial z}\left(z_{0}\right)+\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)e^{-2i\theta}:\theta\in\left[0,2\pi\right)\right\},
 $$
 
-i.e. the circle centered at $\frac{\partial f}{\partial z}\left(z_{0}\right)$ with radius $\left|\frac{\partial f}{\partial\bar{z}}\left(z_{0}\right)\right|$. $\blacksquare$
+i.e. the circle centered at $\frac{\partial f}{\partial z}\left(z_{0}\right)$ with radius $\left|\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)\right|$. $\blacksquare$
 
 ### Problem 2
 
@@ -100,7 +100,7 @@ $$
 
 This proves the Cauchy–Riemann equations in polar coordinates.
 
-For the second part: by **Theorem 3.3.3**, $f'\left(z_{0}\right)=\frac{\partial f}{\partial z}\left(z_{0}\right)$. At a holomorphic point, $\frac{\partial f}{\partial\bar{z}}=0$; hence from $\frac{\partial z}{\partial r}=e^{i\phi}$ and the chain rule, $\frac{\partial f}{\partial r}\left(z_{0}\right)=\frac{\partial f}{\partial z}\left(z_{0}\right)e^{i\phi_{0}}$, i.e.
+For the second part: by **Theorem 3.3.3**, $f'\left(z_{0}\right)=\frac{\partial f}{\partial z}\left(z_{0}\right)$. At a holomorphic point, $\frac{\partial f}{\partial\overline{z}}=0$; hence from $\frac{\partial z}{\partial r}=e^{i\phi}$ and the chain rule, $\frac{\partial f}{\partial r}\left(z_{0}\right)=\frac{\partial f}{\partial z}\left(z_{0}\right)e^{i\phi_{0}}$, i.e.
 
 $$
 f'\left(z_{0}\right)=e^{-i\phi_{0}}\frac{\partial f}{\partial r}\left(z_{0}\right)=e^{-i\phi_{0}}\left(\frac{\partial u}{\partial r}\left(r_{0},\phi_{0}\right)+i\frac{\partial v}{\partial r}\left(r_{0},\phi_{0}\right)\right).
@@ -110,17 +110,17 @@ The proposition is proved. $\blacksquare$
 
 ### Problem 4
 
-(Problem 3.4-7) Let $a,b,c\in\mathbb{C}$ and let $f:\mathbb{C}\to\mathbb{C}$ be $f\left(z\right)=az^{2}+b\left|z\right|^{2}+c\bar{z}^{2}$. Prove: $f$ is derivable at $z\in\mathbb{C}$ if and only if $bz+2c\bar{z}=0$.
+(Problem 3.4-7) Let $a,b,c\in\mathbb{C}$ and let $f:\mathbb{C}\to\mathbb{C}$ be $f\left(z\right)=az^{2}+b\left|z\right|^{2}+c\overline{z}^{2}$. Prove: $f$ is derivable at $z\in\mathbb{C}$ if and only if $bz+2c\overline{z}=0$.
 
 ### Solution to Problem 4
 
-Since $\left|z\right|^{2}=z\bar{z}$, we have $f\left(z\right)=az^{2}+bz\bar{z}+c\bar{z}^{2}$. Compute the formal derivatives (**Definition 3.2.2 (Formal Derivatives)**): since the partial derivative of $az^{2}$ with respect to $\bar{z}$ is $0$, $\frac{\partial\left(z\bar{z}\right)}{\partial\bar{z}}=z$, $\frac{\partial\left(\bar{z}^{2}\right)}{\partial\bar{z}}=2\bar{z}$, we get
+Since $\left|z\right|^{2}=z\overline{z}$, we have $f\left(z\right)=az^{2}+bz\overline{z}+c\overline{z}^{2}$. Compute the formal derivatives (**Definition 3.2.2 (Formal Derivatives)**): since the partial derivative of $az^{2}$ with respect to $\overline{z}$ is $0$, $\frac{\partial\left(z\overline{z}\right)}{\partial\overline{z}}=z$, $\frac{\partial\left(\overline{z}^{2}\right)}{\partial\overline{z}}=2\overline{z}$, we get
 
 $$
-\frac{\partial f}{\partial\bar{z}}\left(z\right)=bz+2c\bar{z}.
+\frac{\partial f}{\partial\overline{z}}\left(z\right)=bz+2c\overline{z}.
 $$
 
-By **Theorem 3.2.4**, $f$ is $\mathbb{C}$-differentiable at $z$ if and only if $\frac{\partial f}{\partial\bar{z}}\left(z\right)=0$, i.e. $bz+2c\bar{z}=0$; by **Theorem 3.3.3**, $\mathbb{C}$-differentiability is equivalent to derivability. Hence $f$ is derivable at $z$ if and only if $bz+2c\bar{z}=0$. $\blacksquare$
+By **Theorem 3.2.4**, $f$ is $\mathbb{C}$-differentiable at $z$ if and only if $\frac{\partial f}{\partial\overline{z}}\left(z\right)=0$, i.e. $bz+2c\overline{z}=0$; by **Theorem 3.3.3**, $\mathbb{C}$-differentiability is equivalent to derivability. Hence $f$ is derivable at $z$ if and only if $bz+2c\overline{z}=0$. $\blacksquare$
 
 ### Problem 5
 

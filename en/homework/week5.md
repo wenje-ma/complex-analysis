@@ -91,7 +91,7 @@ $\blacksquare$
 
 ### Problem 5
 
-(Problem 5.5-9) Prove the identity $\overline{e^{iz}}=e^{-i\bar z}$. (Note: two conjugation marks were missing in the OCR of the original problem; they have been restored according to the conjugation identity for the exponential function.)
+(Problem 5.5-9) Prove the identity $\overline{e^{iz}}=e^{-i\overline z}$. (Note: two conjugation marks were missing in the OCR of the original problem; they have been restored according to the conjugation identity for the exponential function.)
 
 ### Solution to Problem 5
 
@@ -104,7 +104,7 @@ $$
 and taking conjugates gives $\overline{e^{iz}}=e^{-y}\left(\cos x-i\sin x\right)=e^{-y}e^{-ix}=e^{-\left(ix+y\right)}$. On the other hand,
 
 $$
-e^{-i\bar z}=e^{-i\left(x-iy\right)}=e^{-ix-y}=e^{-y}e^{-ix}=e^{-\left(ix+y\right)}.
+e^{-i\overline z}=e^{-i\left(x-iy\right)}=e^{-ix-y}=e^{-y}e^{-ix}=e^{-\left(ix+y\right)}.
 $$
 
-The two are equal, so $\overline{e^{iz}}=e^{-i\bar z}$. $\blacksquare$
+The two are equal, so $\overline{e^{iz}}=e^{-i\overline z}$. $\blacksquare$

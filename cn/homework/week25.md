@@ -1,6 +1,6 @@
 # 作业 25
 
-> **定义 22.1.5** (正规族)<br>称区域 $D$ 上的亚纯函数族 $\mathcal{F}$ 在 $D$ 上是正规的, 若 $\mathcal{F}$ 的每个序列在 $\mathfrak{C}\left(D,\hat{\mathbb{C}}\right)$ 上有收敛子列 (在 $D$ 的紧子集上按球弦度量一致收敛到亚纯函数或 $\infty$).
+> **定义 22.1.5** (正规族)<br>称区域 $D$ 上的亚纯函数族 $\mathcal{F}$ 在 $D$ 上是正规的, 若 $\mathcal{F}$ 的每个序列在 $\mathfrak{C}\left(D,\widehat{\mathbb{C}}\right)$ 上有收敛子列 (在 $D$ 的紧子集上按球弦度量一致收敛到亚纯函数或 $\infty$).
 
 > **定理 22.1.7** (马蒂)<br>$\mathcal{F}$ 在 $D$ 上正规当且仅当对 $D$ 的每个紧子集 $K$, 球面导数 $$f^{\#}\left(z\right)=\frac{2\left|f'\left(z\right)\right|}{1+\left|f\left(z\right)\right|^{2}}$$ 在 $K$ 上一致有界 ($f\in\mathcal{F}$).
 

@@ -14,7 +14,7 @@
 
 ### Problem 1
 
-(Problem 4.5-1) Prove: every Möbius transformation $\lambda$ has at least one fixed point on the extended complex plane, i.e. there exists at least one $z_{0}\in\hat{\mathbb{C}}$ such that $\lambda\left(z_{0}\right)=z_{0}$; if it has three fixed points, then it must be the identity map.
+(Problem 4.5-1) Prove: every Möbius transformation $\lambda$ has at least one fixed point on the extended complex plane, i.e. there exists at least one $z_{0}\in\widehat{\mathbb{C}}$ such that $\lambda\left(z_{0}\right)=z_{0}$; if it has three fixed points, then it must be the identity map.
 
 ### Solution to Problem 1
 
