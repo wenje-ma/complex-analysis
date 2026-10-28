@@ -1,20 +1,28 @@
-# 作业 13
+# week13
 
-> **定理 4.3.4** (保圆性)<br>莫比乌斯变换把扩充复平面上的广义圆 (圆或直线) 映成广义圆, 并保持切角.
+> **定理 4.3.4 (保圆性)**<br>莫比乌斯变换把扩充复平面上的广义圆 (圆或直线) 映成广义圆, 并保持切角.
 
 > **命题 4.3.7**<br>莫比乌斯变换把两交点映射到 $0$ 与 $\infty$ 时, 相交两圆被映成过原点的两条直线, 区域映成角域.
 
-> **定义 6.2.4** (幂函数)<br>$z^{\alpha}=e^{\alpha\log z}$ 把角域 $\left\{0< \arg z< \beta\right\}$ 共形地映成角域 $\left\{0< \arg w< \alpha\beta\right\}$ (取合适的全纯分支).
+> **命题 5.2.2 (指数映射的带区域)**<br>$z\mapsto e^{z}$ 把水平带 $\left\{0< \operatorname{Im}z< 2\pi\right\}$ 共形地映成 $\mathbb{C}\setminus\left[0,+\infty\right)$.
 
-> **命题 5.2.2** (指数映射带区域)<br>$z\mapsto e^{z}$ 把水平带 $\left\{0< \operatorname{Im}z< 2\pi\right\}$ 共形地映成 $\mathbb{C}\setminus\left[0,+\infty\right)$.
+> **命题 5.2.3 (阿波罗尼奥斯圆)**<br>莫比乌斯变换
 
-> **命题 5.2.3**<br>莫比乌斯变换 $$z\mapsto\frac{z-\alpha}{z-\beta}$$ ($\alpha,\beta\in\mathbb{C}$) 把不含 $\alpha,\beta$ 的圆映成圆, 且 $\left|z-\alpha\right|/\left|z-\beta\right|$ 在阿波罗尼奥斯圆上为常数.
+$$
+z\mapsto\frac{z-\alpha}{z-\beta}
+$$
 
-### 习题一
+($\alpha,\beta\in\mathbb{C}$) 把不含 $\alpha,\beta$ 的圆映成圆, 且 $\left|z-\alpha\right|/\left|z-\beta\right|$ 在阿波罗尼奥斯圆上为常数.
 
-(习题 12.3-1) 寻找将区域 $\left\{0< \operatorname{Im}z< \pi\right\}\setminus\left\{x+\frac{\pi}{2}i:x\le0\right\}$ 映成开单位圆盘的共形等价映射.
+> **定义 6.2.4 (幂函数)**<br>$z^{\alpha}=e^{\alpha\log z}$ 把角域 $\left\{0< \arg z< \beta\right\}$ 共形地映成角域 $\left\{0< \arg w< \alpha\beta\right\}$ (取合适的全纯分支).
 
-### 解答 习题一
+---
+
+## 12.3-1
+
+寻找将区域 $\left\{0< \operatorname{Im}z< \pi\right\}\setminus\left\{x+\frac{\pi}{2}i:x\le0\right\}$ 映成开单位圆盘的共形等价映射.
+
+### 解答 12.3-1
 
 记 $D=\left\{z:0< \operatorname{Im}z< \pi\right\}\setminus\left\{x+\frac{\pi}{2}i:x\le0\right\}$.
 
@@ -32,11 +40,13 @@ $$
 
 其中根式取主分支 (由上述构造, $e^{2z}+1\in\mathbb{C}\setminus\left[0,+\infty\right)$, 分支良定义). $\blacksquare$
 
-### 习题二
+---
 
-(习题 12.3-2) 寻找共形等价映射将圆周 $\left\{\left|z\right|=1\right\}$ 和圆周 $\left\{\left|z-1\right|=\frac{5}{2}\right\}$ 所围成的区域映成标准圆环 (即内外边界为同心圆).
+## 12.3-2
 
-### 解答 习题二
+寻找共形等价映射将圆周 $\left\{\left|z\right|=1\right\}$ 和圆周 $\left\{\left|z-1\right|=\frac{5}{2}\right\}$ 所围成的区域映成标准圆环 (即内外边界为同心圆).
+
+### 解答 12.3-2
 
 两圆 $C_{1}:\left|z\right|=1$ 与 $C_{2}:\left|z-1\right|=\frac{5}{2}$ 不相交 (圆心都在实轴), $C_{1}$ 含于 $C_{2}$ 的内区域, 围成区域 $D=\left\{1< \left|z\right|< 3.5\ \text{近似的环形}\right\}$ (即 $\left|z\right|> 1$ 且 $\left|z-1\right|< 2.5$).
 
@@ -56,11 +66,13 @@ $$
 
 它把 $D$ 映成标准圆环 $\left\{1< \left|w\right|< \frac{r_{2}}{r_{1}}\right\}$. $\blacksquare$
 
-### 习题三
+---
 
-(习题 12.3-3) 寻找将区域 $\left\{\operatorname{Re}z> 0\right\}\setminus\left\{\left|z-0.5\right|\le1\right\}$ 映成开单位圆盘的共形等价映射.
+## 12.3-3
 
-### 解答 习题三
+寻找将区域 $\left\{\operatorname{Re}z> 0\right\}\setminus\left\{\left|z-0.5\right|\le1\right\}$ 映成开单位圆盘的共形等价映射.
+
+### 解答 12.3-3
 
 记 $D=\left\{\operatorname{Re}z> 0\right\}\setminus\left\{\left|z-\frac{1}{2}\right|\le1\right\}$. 其边界为虚轴与圆 $\left|z-\frac{1}{2}\right|=1$, 两曲线交于 $z=\pm\frac{\sqrt{3}}{2}i$. 这是两个广义圆围成的单连通区域.
 
@@ -82,11 +94,13 @@ $$
 
 $\blacksquare$
 
-### 习题四
+---
 
-(习题 12.3-4) 寻找区域 $\left\{z\in\mathbb{C}:\operatorname{Re}z> 0\ \text{且}\ \arg z\in\left(0,1\right)\right\}$ 与单位圆盘之间的共形等价映射.
+## 12.3-4
 
-### 解答 习题四
+寻找区域 $\left\{z\in\mathbb{C}:\operatorname{Re}z> 0\ \text{且}\ \arg z\in\left(0,1\right)\right\}$ 与单位圆盘之间的共形等价映射.
+
+### 解答 12.3-4
 
 因 $0< 1< \frac{\pi}{2}$, 条件 $\arg z\in\left(0,1\right)$ 已保证 $\operatorname{Re}z=\rho\cos\arg z> 0$, 故该区域即角域
 

@@ -1,16 +1,26 @@
-# 作业 16
+# week16
 
-> **定义 14.1.1** (留数)<br>$f$ 在孤立奇点 $a$ 的留数 $\operatorname{Res}_{a}f$ 等于其洛朗展开中 $\frac{1}{z-a}$ 项的系数 $c_{-1}$.
+> **基础知识: 留数之和公式**<br>全复平面上的亚纯函数 $f$ 的全体有限留数与 $\infty$ 处留数之和为零, 且
 
-> **定理 14.1.3** (留数定理)<br>若 $f$ 在区域 $D$ 上除有限个孤立奇点外全纯, $\gamma$ 是 $D$ 内的若当闭曲线且这些奇点都在 $\gamma$ 内, 则 $$\int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.$$
+$$
+\operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right).
+$$
 
-> **留数之和公式**<br>全复平面上的亚纯函数 $f$ 的全体有限留数与 $\infty$ 处留数之和为零, 且 $$\operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right).$$
+> **定义 14.1.1 (留数)**<br>$f$ 在孤立奇点 $a$ 的留数 $\operatorname{Res}_{a}f$ 等于其洛朗展开中 $\frac{1}{z-a}$ 项的系数 $c_{-1}$.
 
-### 习题一
+> **定理 14.1.3 (留数定理)**<br>若 $f$ 在区域 $D$ 上除有限个孤立奇点外全纯, $\gamma$ 是 $D$ 内的若当闭曲线且这些奇点都在 $\gamma$ 内, 则
 
-(习题 14.3-1) 计算下述积分: (i) $\int_{\partial B\left(0,4\right)}\frac{z^{2}+1}{z^{3}+2z^{2}-3z}\,dz$; (ii) $\int_{\partial B\left(0,\pi\right)}z^{2}\sin\frac{1}{z}\,dz$; (iv) $\int_{0}^{2\pi}\frac{1}{4\sin^{2}x+1}\,dx$.
+$$
+\int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.
+$$
 
-### 解答 习题一
+---
+
+## 14.3-1
+
+计算下述积分: (i) $\int_{\partial B\left(0,4\right)}\frac{z^{2}+1}{z^{3}+2z^{2}-3z}\,dz$; (ii) $\int_{\partial B\left(0,\pi\right)}z^{2}\sin\frac{1}{z}\,dz$; (iv) $\int_{0}^{2\pi}\frac{1}{4\sin^{2}x+1}\,dx$.
+
+### 解答 14.3-1
 
 (i) $z^{3}+2z^{2}-3z=z\left(z+3\right)\left(z-1\right)$, 奇点 $0,1,-3$ 均在 $\left|z\right|< 4$ 内, 都是一阶极点. 各留数:
 
@@ -44,11 +54,13 @@ $$
 
 $\blacksquare$
 
-### 习题二
+---
 
-(习题 14.3-2) 令 $\gamma\subset\mathbb{C}$ 是一条若当闭曲线, $f$ 是 $\mathbb{C}\setminus\left\{a_{1},\ldots,a_{n}\right\}$ 上的全纯函数, 其中 $a_{1},\ldots,a_{n}$ 为 $\gamma$ 内区域的内点. 证明: $\frac{1}{2\pi i}\int_{\gamma}f\left(z\right)\,dz=\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right)$.
+## 14.3-2
 
-### 解答 习题二
+令 $\gamma\subset\mathbb{C}$ 是一条若当闭曲线, $f$ 是 $\mathbb{C}\setminus\left\{a_{1},\ldots,a_{n}\right\}$ 上的全纯函数, 其中 $a_{1},\ldots,a_{n}$ 为 $\gamma$ 内区域的内点. 证明: $\frac{1}{2\pi i}\int_{\gamma}f\left(z\right)\,dz=\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right)$.
+
+### 解答 14.3-2
 
 $f$ 的孤立奇点为 $a_{1},\ldots,a_{n}$ (均在 $\gamma$ 内), 由**定理 14.1.3 (留数定理)**,
 
@@ -64,11 +76,13 @@ $$
 
 故 $\sum_{j}\operatorname{Res}_{a_{j}}f=\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right)$, 即所证. $\blacksquare$
 
-### 习题三
+---
 
-(习题 14.3-3) 证明: $\int_{\partial B\left(0,1\right)}e^{z+\frac{1}{z}}\,dz=2\pi i\sum_{n=0}^{+\infty}\frac{1}{n!\left(n+1\right)!}$.
+## 14.3-3
 
-### 解答 习题三
+证明: $\int_{\partial B\left(0,1\right)}e^{z+\frac{1}{z}}\,dz=2\pi i\sum_{n=0}^{+\infty}\frac{1}{n!\left(n+1\right)!}$.
+
+### 解答 14.3-3
 
 $e^{z+\frac1z}=e^{z}e^{\frac1z}=\left(\sum_{m=0}^{+\infty}\frac{z^{m}}{m!}\right)\left(\sum_{k=0}^{+\infty}\frac{1}{k!}\frac{1}{z^{k}}\right)$. 其中 $z^{-1}$ 项的系数满足 $m-k=-1$, 即 $m=k-1$, 故
 

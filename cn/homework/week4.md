@@ -1,22 +1,30 @@
-# 作业 4
+# week4
 
-> **定义 4.1.2** (共形)<br>称 $f$ 在 $z$ 处共形, 若 $f$ 在 $z$ 的某邻域上全纯、单叶且 $f'\left(z\right)\ne0$.
+> **定义 4.1.2 (共形)**<br>称 $f$ 在 $z$ 处共形, 若 $f$ 在 $z$ 的某邻域上全纯, 单叶且 $f'\left(z\right)\ne0$.
 
-> **定理 4.1.5**<br>$f$ 在 $z$ 处共形当且仅当 $f$ 在 $z$ 处 $\mathbb{C}$-可微且 $f'\left(z\right)\ne0$.
+> **定理 4.1.5 (共形判别)**<br>$f$ 在 $z$ 处共形当且仅当 $f$ 在 $z$ 处 $\mathbb{C}$-可微且 $f'\left(z\right)\ne0$.
 
-> **定义 4.2.1** (莫比乌斯变换)<br>形如 $$f\left(z\right)=\frac{az+b}{cz+d}$$ (其中 $a,b,c,d\in\mathbb{C}$ 且 $ad-bc\ne0$) 的函数称为莫比乌斯变换 (或分式线性变换), 它是扩充复平面到自身的双射, 逆变换也是莫比乌斯变换.
+> **定义 4.2.1 (莫比乌斯变换)**<br>形如
 
-> **定理 4.3.4** (保圆性)<br>莫比乌斯变换把扩充复平面上的圆 (广义圆, 即圆或直线) 映成扩充复平面上的圆, 并保持切角.
+$$
+f\left(z\right)=\frac{az+b}{cz+d}
+$$
 
-> **定义 4.4.1** (单叶)<br>称 $f$ 在区域 $D$ 上单叶, 若 $f$ 在 $D$ 上是单射.
+(其中 $a,b,c,d\in\mathbb{C}$ 且 $ad-bc\ne0$) 的函数称为莫比乌斯变换 (或分式线性变换), 它是扩充复平面到自身的双射, 逆变换也是莫比乌斯变换.
+
+> **定理 4.3.4 (保圆性)**<br>莫比乌斯变换把扩充复平面上的圆 (广义圆, 即圆或直线) 映成扩充复平面上的圆, 并保持切角.
+
+> **定义 4.4.1 (单叶)**<br>称 $f$ 在区域 $D$ 上单叶, 若 $f$ 在 $D$ 上是单射.
 
 > **定理 4.4.2**<br>若 $f$ 在 $z_{0}$ 处全纯且 $f'\left(z_{0}\right)=0$, 则 $f$ 在 $z_{0}$ 的任意邻域上都不是单叶的.
 
-### 习题一
+---
 
-(习题 4.5-1) 证明: 任意一个莫比乌斯变换 $\lambda$ 在扩充复平面上至少有一个不动点, 即至少存在一个 $z_{0}\in\widehat{\mathbb{C}}$ 使得 $\lambda\left(z_{0}\right)=z_{0}$; 若它有三个不动点, 那么它只能是恒同映射.
+## 4.5-1
 
-### 解答 习题一
+证明: 任意一个莫比乌斯变换 $\lambda$ 在扩充复平面上至少有一个不动点, 即至少存在一个 $z_{0}\in\widehat{\mathbb{C}}$ 使得 $\lambda\left(z_{0}\right)=z_{0}$; 若它有三个不动点, 那么它只能是恒同映射.
+
+### 解答 4.5-1
 
 设 $\lambda\left(z\right)=\frac{az+b}{cz+d}$, $ad-bc\ne0$. 不动点 $z$ 满足 $\frac{az+b}{cz+d}=z$, 即
 
@@ -34,13 +42,15 @@ $$
 
 若 $\lambda$ 有三个不动点: 若 $c\ne0$, 有限不动点至多两个 (二次方程 (1) 至多两个解, 除非恒为零, 但 $c\ne0$), 而 $\infty$ 又不是不动点, 矛盾. 故 $c=0$, $\lambda\left(z\right)=\alpha z+\beta$. 此时有限不动点至多一个 ($\alpha\ne1$) 或无 ($\alpha=1,\beta\ne0$), 要凑齐三个不动点只能是 $\alpha=1$, $\beta=0$, 即 $\lambda$ 为恒同映射. $\blacksquare$
 
-### 习题二
+---
 
-(习题 4.5-3) 描述半平面 $\left\{z\in\mathbb{C}:\operatorname{Re}z< 1\right\}$ 在下述莫比乌斯变换下的像:
+## 4.5-3
+
+描述半平面 $\left\{z\in\mathbb{C}:\operatorname{Re}z< 1\right\}$ 在下述莫比乌斯变换下的像:
 
 (i) $z\mapsto\left(1+i\right)z+1$; (ii) $z\mapsto\frac{z}{z-2}$; (iii) $z\mapsto\frac{4z}{z+1}$.
 
-### 解答 习题二
+### 解答 4.5-3
 
 边界 $\operatorname{Re}z=1$ (直线 $x=1$) 由**定理 4.3.4 (保圆性)** 被莫比乌斯变换映成广义圆, 半平面映成的区域以该广义圆为边界; 用一点确定所在侧.
 
@@ -64,9 +74,11 @@ $$
 
 $\blacksquare$
 
-### 习题三
+---
 
-(习题 4.5-5) 令函数 $f:\mathbb{C}\to\mathbb{C}$ 定义为 $f\left(z\right)=z^{2}-2z+2$.
+## 4.5-5
+
+令函数 $f:\mathbb{C}\to\mathbb{C}$ 定义为 $f\left(z\right)=z^{2}-2z+2$.
 
 (i) 找出所有 $w\in\mathbb{C}$ 使得 $f'\left(w\right)=0$;
 
@@ -74,19 +86,21 @@ $\blacksquare$
 
 (iii) 证明函数 $f$ 在 (i) 中的 $w$ 点处不可能具有保角性.
 
-### 解答 习题三
+### 解答 4.5-5
 
 (i) $f'\left(z\right)=2z-2$, 故 $f'\left(w\right)=0$ 当且仅当 $w=1$. 即唯一 $w=1$.
 
 (ii) 因 $f'\left(1\right)=0$, 由**定理 4.4.2**, $f$ 在 $1$ 的任意邻域上都不是单叶的. (更直接地, $f\left(z\right)=\left(z-1\right)^{2}+1$, 对任意 $\delta\ne0$ 有 $f\left(1+\delta\right)=f\left(1-\delta\right)$, 而 $1+\delta\ne1-\delta$, 故任一含 $1$ 的邻域内都不单叶.)
 
-(iii) 由**定理 4.1.5**, $f$ 在 $z$ 处共形当且仅当 $f'\left(z\right)\ne0$; 现 $f'\left(1\right)=0$, 故 $f$ 在 $1$ 处不具保角性. $\blacksquare$
+(iii) 由**定理 4.1.5 (共形判别)**, $f$ 在 $z$ 处共形当且仅当 $f'\left(z\right)\ne0$; 现 $f'\left(1\right)=0$, 故 $f$ 在 $1$ 处不具保角性. $\blacksquare$
 
-### 习题四
+---
 
-(习题 4.5-14) 考虑莫比乌斯变换 $w\left(z\right)=\frac{az+b}{cz+d}$ 和矩阵 $M=\begin{bmatrix}a&b\\c&d\end{bmatrix}$. 证明: 向量 $\binom{z_{1}}{z_{2}}\in\mathbb{C}^{2}$ 是 $M$ 的特征向量当且仅当 $\zeta=\frac{z_{1}}{z_{2}}$ 是 $w$ 的不动点, 其中若 $z_{2}=0$, 则 $\zeta=\infty$.
+## 4.5-14
 
-### 解答 习题四
+考虑莫比乌斯变换 $w\left(z\right)=\frac{az+b}{cz+d}$ 和矩阵 $M=\begin{bmatrix}a&b\\c&d\end{bmatrix}$. 证明: 向量 $\binom{z_{1}}{z_{2}}\in\mathbb{C}^{2}$ 是 $M$ 的特征向量当且仅当 $\zeta=\frac{z_{1}}{z_{2}}$ 是 $w$ 的不动点, 其中若 $z_{2}=0$, 则 $\zeta=\infty$.
+
+### 解答 4.5-14
 
 设 $\binom{z_{1}}{z_{2}}$ 非零. 若 $z_{2}\ne0$, 记 $\zeta=\frac{z_{1}}{z_{2}}$. $\binom{z_{1}}{z_{2}}$ 是 $M$ 的特征向量当且仅当存在 $\lambda$ 使得
 
@@ -104,11 +118,13 @@ $$
 
 若 $z_{2}=0$, 则 $\zeta=\infty$, 且 $z_{1}\ne0$. $M\binom{z_{1}}{0}=\binom{az_{1}}{cz_{1}}$ 是 $\binom{z_{1}}{0}$ 的标量倍当且仅当 $c=0$. 另一方面 $w\left(\infty\right)=\lim_{z\to\infty}\frac{az+b}{cz+d}=\frac{a}{c}$ (当 $c\ne0$) 或 $\infty$ (当 $c=0$), 即 $w\left(\infty\right)=\infty$ 当且仅当 $c=0$. 故 $z_{2}=0$ 时命题也成立. $\blacksquare$
 
-### 习题五
+---
 
-(习题 4.5-16) 令 $f=u\left(z\right)+iv\left(z\right)$ 在 $z_{0}\in\mathbb{C}$ 处为全纯的, 且 $f'\left(z_{0}\right)\ne0$. 证明: 函数 $u$ 和 $v$ 的水平集 (取值为某给定常数的点所组成的集合) 在 $z_{0}$ 处的夹角为 $\frac{\pi}{2}$.
+## 4.5-16
 
-### 解答 习题五
+令 $f=u\left(z\right)+iv\left(z\right)$ 在 $z_{0}\in\mathbb{C}$ 处为全纯的, 且 $f'\left(z_{0}\right)\ne0$. 证明: 函数 $u$ 和 $v$ 的水平集 (取值为某给定常数的点所组成的集合) 在 $z_{0}$ 处的夹角为 $\frac{\pi}{2}$.
+
+### 解答 4.5-16
 
 $u,v$ 的水平集在 $z_{0}$ 处的切线分别垂直于梯度 $\nabla u=\left(u_{x},u_{y}\right)$ 与 $\nabla v=\left(v_{x},v_{y}\right)$. 由 $f$ 在 $z_{0}$ 处全纯, $u,v$ 满足柯西-黎曼方程 $u_{x}=v_{y}$, $u_{y}=-v_{x}$, 于是
 
