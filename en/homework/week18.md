@@ -1,10 +1,16 @@
 # week18
 
-> **Basic Knowledge: Sum of Residues Formula**<br>A meromorphic function on the whole plane has zero integral along a large contour enclosing all singularities, i.e. the sum of all residues is zero.
+> **Basic Knowledge: Sum of Residues Formula**
+>
+> A meromorphic function on the whole plane has zero integral along a large contour enclosing all singularities, i.e. the sum of all residues is zero.
 
-> **Definition 15.1.1 (Entire and Meromorphic Functions)**<br>A function holomorphic everywhere on the complex plane $\mathbb{C}$ is called entire; a function holomorphic except at poles is called meromorphic.
+> **Definition 15.1.1 (Entire and Meromorphic Functions)**
+>
+> A function holomorphic everywhere on the complex plane $\mathbb{C}$ is called entire; a function holomorphic except at poles is called meromorphic.
 
-> **Theorem 15.2.7 (Argument Principle)**<br>If $f$ is meromorphic on a domain $D$, the zeros $a_{j}$ have order $r_{j}$, the poles $p_{k}$ have order $s_{k}$, and $\Gamma$ is a Jordan closed curve in $D$ avoiding these points, then
+> **Theorem 15.2.7 (Argument Principle)**
+>
+> If $f$ is meromorphic on a domain $D$, the zeros $a_{j}$ have order $r_{j}$, the poles $p_{k}$ have order $s_{k}$, and $\Gamma$ is a Jordan closed curve in $D$ avoiding these points, then
 
 $$
 \frac{1}{2\pi i}\int_{\Gamma}\frac{f'}{f}\,dz=\sum r_{j}-\sum s_{k}.

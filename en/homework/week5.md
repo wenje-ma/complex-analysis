@@ -1,16 +1,24 @@
 # week5
 
-> **Theorem 5.1.2 (Fundamental Theorem of Algebra)**<br>Every polynomial of degree $n\ge1$ has at least one root in $\mathbb{C}$.
+> **Theorem 5.1.2 (Fundamental Theorem of Algebra)**
+>
+> Every polynomial of degree $n\ge1$ has at least one root in $\mathbb{C}$.
 
-> **Proposition 5.3.1 (Exponential Function)**<br>(i) The exponential function $e^{z}$ is holomorphic on $\mathbb{C}$ and never vanishes; (iv) $e^{z}$ has minimal period $2\pi i$; (v) $e^{z}$ is univalent on a region if and only if the difference of any two distinct points in that region is not an integer multiple of $2\pi i$.
+> **Proposition 5.3.1 (Exponential Function)**
+>
+> (i) The exponential function $e^{z}$ is holomorphic on $\mathbb{C}$ and never vanishes; (iv) $e^{z}$ has minimal period $2\pi i$; (v) $e^{z}$ is univalent on a region if and only if the difference of any two distinct points in that region is not an integer multiple of $2\pi i$.
 
-> **Definition 5.4.1 (Complex Sine and Cosine)**<br>For any $z\in\mathbb{C}$, the complex sine and cosine are defined by
+> **Definition 5.4.1 (Complex Sine and Cosine)**
+>
+> For any $z\in\mathbb{C}$, the complex sine and cosine are defined by
 
 $$
 \cos z=\frac{e^{iz}+e^{-iz}}{2},\quad\sin z=\frac{e^{iz}-e^{-iz}}{2i},\quad z\in\mathbb{C}.
 $$
 
-> **Proposition 5.4.2 (Derivatives of Trigonometric Functions)**<br>$\sin z,\cos z$ are holomorphic on $\mathbb{C}$, with $\left(\sin z\right)'=\cos z$, $\left(\cos z\right)'=-\sin z$.
+> **Proposition 5.4.2 (Derivatives of Trigonometric Functions)**
+>
+> $\sin z,\cos z$ are holomorphic on $\mathbb{C}$, with $\left(\sin z\right)'=\cos z$, $\left(\cos z\right)'=-\sin z$.
 
 ---
 

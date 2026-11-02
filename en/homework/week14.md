@@ -1,18 +1,24 @@
 # week14
 
-> **Theorem 8.3.1 (Cauchy Integral Formula)**<br>If $f$ is holomorphic on a domain containing a Jordan closed curve $\gamma$ and its interior, and $z$ lies in the interior of $\gamma$, then
+> **Theorem 8.3.1 (Cauchy Integral Formula)**
+>
+> If $f$ is holomorphic on a domain containing a Jordan closed curve $\gamma$ and its interior, and $z$ lies in the interior of $\gamma$, then
 
 $$
 f\left(z\right)=\frac{1}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
 $$
 
-> **Theorem 8.3.2 (Higher Derivative Formula)**<br>If $f$ is holomorphic on a domain containing a Jordan closed curve $\gamma$ and its interior, and $z$ lies in the interior of $\gamma$, then $f$ has derivatives of all orders at $z$ and
+> **Theorem 8.3.2 (Higher Derivative Formula)**
+>
+> If $f$ is holomorphic on a domain containing a Jordan closed curve $\gamma$ and its interior, and $z$ lies in the interior of $\gamma$, then $f$ has derivatives of all orders at $z$ and
 
 $$
 f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta.
 $$
 
-> **Theorem 10.1.1 (Maximum Modulus Principle)**<br>If the modulus $\left|f\right|$ of a holomorphic function $f$ on a domain $D$ has a local maximum in $D$, then $f$ is constant on $D$; in particular, the maximum of $\left|f\right|$ on a compact closed region is attained on the boundary.
+> **Theorem 10.1.1 (Maximum Modulus Principle)**
+>
+> If the modulus $\left|f\right|$ of a holomorphic function $f$ on a domain $D$ has a local maximum in $D$, then $f$ is constant on $D$; in particular, the maximum of $\left|f\right|$ on a compact closed region is attained on the boundary.
 
 ---
 

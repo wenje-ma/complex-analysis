@@ -1,8 +1,12 @@
 # week3
 
-> **Definition 3.1.1 ($\mathbb{R}$-linear and $\mathbb{C}$-linear)**<br>A map $\ell:\mathbb{C}\to\mathbb{C}$ is called $\mathbb{R}$-linear (or $\mathbb{C}$-linear) if $\ell\left(a+b\right)=\ell\left(a\right)+\ell\left(b\right)$ and $\ell\left(\lambda z\right)=\lambda\ell\left(z\right)$ for $\lambda\in\mathbb{R}$ (or $\mathbb{C}$); a $\mathbb{C}$-linear map is necessarily $\mathbb{R}$-linear.
+> **Definition 3.1.1 ($\mathbb{R}$-linear and $\mathbb{C}$-linear)**
+>
+> A map $\ell:\mathbb{C}\to\mathbb{C}$ is called $\mathbb{R}$-linear (or $\mathbb{C}$-linear) if $\ell\left(a+b\right)=\ell\left(a\right)+\ell\left(b\right)$ and $\ell\left(\lambda z\right)=\lambda\ell\left(z\right)$ for $\lambda\in\mathbb{R}$ (or $\mathbb{C}$); a $\mathbb{C}$-linear map is necessarily $\mathbb{R}$-linear.
 
-> **Theorem 3.1.2 (Form of Linear Maps)**<br>Every $\mathbb{R}$-linear map has the form $\ell\left(z\right)=az+b\overline{z}$, where
+> **Theorem 3.1.2 (Form of Linear Maps)**
+>
+> Every $\mathbb{R}$-linear map has the form $\ell\left(z\right)=az+b\overline{z}$, where
 
 $$
 a=\frac{\ell\left(1\right)-i\ell\left(i\right)}{2},\quad b=\frac{\ell\left(1\right)+i\ell\left(i\right)}{2};
@@ -10,9 +14,13 @@ $$
 
 every $\mathbb{C}$-linear map has the form $\ell\left(z\right)=az$; an $\mathbb{R}$-linear map $\ell$ is $\mathbb{C}$-linear if and only if $\ell\left(iz\right)=i\ell\left(z\right)$.
 
-> **Definition 3.2.1 (Differentiability)**<br>A map $f:U\to\mathbb{C}$ is $\mathbb{R}$-differentiable (or $\mathbb{C}$-differentiable) at $z$ if $\Delta f=f\left(z+\Delta z\right)-f\left(z\right)=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, where $\ell$ is an $\mathbb{R}$-linear (or $\mathbb{C}$-linear) map; $\ell\left(\Delta z\right)$ is called the real (complex) differential $df\left(z\right)$.
+> **Definition 3.2.1 (Differentiability)**
+>
+> A map $f:U\to\mathbb{C}$ is $\mathbb{R}$-differentiable (or $\mathbb{C}$-differentiable) at $z$ if $\Delta f=f\left(z+\Delta z\right)-f\left(z\right)=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, where $\ell$ is an $\mathbb{R}$-linear (or $\mathbb{C}$-linear) map; $\ell\left(\Delta z\right)$ is called the real (complex) differential $df\left(z\right)$.
 
-> **Definition 3.2.2 (Formal Derivatives)**<br>The formal derivative operators are
+> **Definition 3.2.2 (Formal Derivatives)**
+>
+> The formal derivative operators are
 
 $$
 \frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),
@@ -20,13 +28,17 @@ $$
 
 and $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\overline{z}}\,d\overline{z}$.
 
-> **Theorem 3.2.4 (Cauchy-Riemann Equations)**<br>$f=u\left(x,y\right)+iv\left(x,y\right)$ is $\mathbb{C}$-differentiable at $z=x+iy$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$, equivalently $u,v$ are differentiable and satisfy the Cauchy-Riemann equations
+> **Theorem 3.2.4 (Cauchy-Riemann Equations)**
+>
+> $f=u\left(x,y\right)+iv\left(x,y\right)$ is $\mathbb{C}$-differentiable at $z=x+iy$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$, equivalently $u,v$ are differentiable and satisfy the Cauchy-Riemann equations
 
 $$
 \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.
 $$
 
-> **Definition 3.3.1 (Complex Differentiability)**<br>$f$ is differentiable at $a$ if
+> **Definition 3.3.1 (Complex Differentiability)**
+>
+> $f$ is differentiable at $a$ if
 
 $$
 \lim_{z\to a}\frac{f\left(z\right)-f\left(a\right)}{z-a}=A
@@ -34,11 +46,17 @@ $$
 
 exists; write $A=f'\left(a\right)$.
 
-> **Theorem 3.3.3**<br>$f$ is differentiable at $a$ if and only if $f$ is $\mathbb{C}$-differentiable at $a$, in which case $f'\left(a\right)=\frac{\partial f}{\partial z}\left(a\right)$.
+> **Theorem 3.3.3**
+>
+> $f$ is differentiable at $a$ if and only if $f$ is $\mathbb{C}$-differentiable at $a$, in which case $f'\left(a\right)=\frac{\partial f}{\partial z}\left(a\right)$.
 
-> **Theorem 4.1.5 (Criterion for Conformality)**<br>$f$ is conformal at $z$ if and only if $f$ is $\mathbb{C}$-differentiable at $z$ and $f'\left(z\right)\ne0$.
+> **Theorem 4.1.5 (Criterion for Conformality)**
+>
+> $f$ is conformal at $z$ if and only if $f$ is $\mathbb{C}$-differentiable at $z$ and $f'\left(z\right)\ne0$.
 
-> **Theorem 10.2.4 (Inverse of a Univalent Holomorphic Map)**<br>If $f$ is holomorphic and univalent on an open set $\Omega$, then $f\left(\Omega\right)$ is open and $f^{-1}$ is holomorphic on $f\left(\Omega\right)$.
+> **Theorem 10.2.4 (Inverse of a Univalent Holomorphic Map)**
+>
+> If $f$ is holomorphic and univalent on an open set $\Omega$, then $f\left(\Omega\right)$ is open and $f^{-1}$ is holomorphic on $f\left(\Omega\right)$.
 
 ---
 

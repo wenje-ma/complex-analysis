@@ -1,14 +1,20 @@
 # week7
 
-> **定义 7.1.1 (路径积分)**<br>$f$ 沿分段光滑道路 $\gamma:\left[a,b\right]\to\mathbb{C}$ 的积分为
+> **定义 7.1.1 (路径积分)**
+>
+> $f$ 沿分段光滑道路 $\gamma:\left[a,b\right]\to\mathbb{C}$ 的积分为
 
 $$
 \int_{\gamma}f\,dz=\int_{a}^{b}f\left(\gamma\left(t\right)\right)\gamma'\left(t\right)\,dt.
 $$
 
-> **定义 7.2.1 (原函数)**<br>区域 $D$ 上的全纯函数 $F$ 称为 $f$ 的原函数, 若 $F'=f$ 于 $D$; $f$ 有原函数当且仅当 $f$ 沿 $D$ 内任意闭道路的积分为零.
+> **定义 7.2.1 (原函数)**
+>
+> 区域 $D$ 上的全纯函数 $F$ 称为 $f$ 的原函数, 若 $F'=f$ 于 $D$; $f$ 有原函数当且仅当 $f$ 沿 $D$ 内任意闭道路的积分为零.
 
-> **定理 7.2.3**<br>$\frac{1}{z}$ 在区域 $D\subset\mathbb{C}\setminus\left\{0\right\}$ 上有原函数当且仅当 $D$ 上存在 $\operatorname{Ln}z$ 的全纯分支.
+> **定理 7.2.3**
+>
+> $\frac{1}{z}$ 在区域 $D\subset\mathbb{C}\setminus\left\{0\right\}$ 上有原函数当且仅当 $D$ 上存在 $\operatorname{Ln}z$ 的全纯分支.
 
 ---
 

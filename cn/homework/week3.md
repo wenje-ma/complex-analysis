@@ -1,8 +1,12 @@
 # week3
 
-> **定义 3.1.1 ($\mathbb{R}$-线性与 $\mathbb{C}$-线性)**<br>称 $\ell:\mathbb{C}\to\mathbb{C}$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性), 若 $\ell\left(a+b\right)=\ell\left(a\right)+\ell\left(b\right)$, 且对 $\lambda\in\mathbb{R}$ (或 $\mathbb{C}$) 有 $\ell\left(\lambda z\right)=\lambda\ell\left(z\right)$; $\mathbb{C}$-线性函数必然是 $\mathbb{R}$-线性的.
+> **定义 3.1.1 ($\mathbb{R}$-线性与 $\mathbb{C}$-线性)**
+>
+> 称 $\ell:\mathbb{C}\to\mathbb{C}$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性), 若 $\ell\left(a+b\right)=\ell\left(a\right)+\ell\left(b\right)$, 且对 $\lambda\in\mathbb{R}$ (或 $\mathbb{C}$) 有 $\ell\left(\lambda z\right)=\lambda\ell\left(z\right)$; $\mathbb{C}$-线性函数必然是 $\mathbb{R}$-线性的.
 
-> **定理 3.1.2 (线性函数的形式)**<br>任意 $\mathbb{R}$-线性函数具有形式 $\ell\left(z\right)=az+b\overline{z}$, 其中
+> **定理 3.1.2 (线性函数的形式)**
+>
+> 任意 $\mathbb{R}$-线性函数具有形式 $\ell\left(z\right)=az+b\overline{z}$, 其中
 
 $$
 a=\frac{\ell\left(1\right)-i\ell\left(i\right)}{2},\quad b=\frac{\ell\left(1\right)+i\ell\left(i\right)}{2};
@@ -10,9 +14,13 @@ $$
 
 任意 $\mathbb{C}$-线性函数具有形式 $\ell\left(z\right)=az$; $\mathbb{R}$-线性 $\ell$ 是 $\mathbb{C}$-线性的当且仅当 $\ell\left(iz\right)=i\ell\left(z\right)$.
 
-> **定义 3.2.1 (可微性)**<br>称 $f:U\to\mathbb{C}$ 在 $z$ 处 $\mathbb{R}$-可微 (或 $\mathbb{C}$-可微), 若 $\Delta f=f\left(z+\Delta z\right)-f\left(z\right)=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, 其中 $\ell$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性) 函数; 称 $\ell\left(\Delta z\right)$ 为实 (复) 微分 $df\left(z\right)$.
+> **定义 3.2.1 (可微性)**
+>
+> 称 $f:U\to\mathbb{C}$ 在 $z$ 处 $\mathbb{R}$-可微 (或 $\mathbb{C}$-可微), 若 $\Delta f=f\left(z+\Delta z\right)-f\left(z\right)=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, 其中 $\ell$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性) 函数; 称 $\ell\left(\Delta z\right)$ 为实 (复) 微分 $df\left(z\right)$.
 
-> **定义 3.2.2 (形式导数)**<br>形式导数算符为
+> **定义 3.2.2 (形式导数)**
+>
+> 形式导数算符为
 
 $$
 \frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right),
@@ -20,13 +28,17 @@ $$
 
 且有 $df\left(z\right)=\frac{\partial f}{\partial z}\,dz+\frac{\partial f}{\partial\overline{z}}\,d\overline{z}$.
 
-> **定理 3.2.4 (柯西-黎曼方程)**<br>$f=u\left(x,y\right)+iv\left(x,y\right)$ 在 $z=x+iy$ 处 $\mathbb{C}$-可微, 当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\overline{z}}=0$, 这也等价于 $u,v$ 可微且满足柯西-黎曼方程
+> **定理 3.2.4 (柯西-黎曼方程)**
+>
+> $f=u\left(x,y\right)+iv\left(x,y\right)$ 在 $z=x+iy$ 处 $\mathbb{C}$-可微, 当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\overline{z}}=0$, 这也等价于 $u,v$ 可微且满足柯西-黎曼方程
 
 $$
 \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\quad\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}.
 $$
 
-> **定义 3.3.1 (可导性)**<br>称 $f$ 在 $a$ 处可导, 若
+> **定义 3.3.1 (可导性)**
+>
+> 称 $f$ 在 $a$ 处可导, 若
 
 $$
 \lim_{z\to a}\frac{f\left(z\right)-f\left(a\right)}{z-a}=A
@@ -34,11 +46,17 @@ $$
 
 存在, 记 $A=f'\left(a\right)$.
 
-> **定理 3.3.3**<br>$f$ 在 $a$ 处可导当且仅当 $f$ 在 $a$ 处 $\mathbb{C}$-可微, 此时 $f'\left(a\right)=\frac{\partial f}{\partial z}\left(a\right)$.
+> **定理 3.3.3**
+>
+> $f$ 在 $a$ 处可导当且仅当 $f$ 在 $a$ 处 $\mathbb{C}$-可微, 此时 $f'\left(a\right)=\frac{\partial f}{\partial z}\left(a\right)$.
 
-> **定理 4.1.5 (共形判别)**<br>函数 $f$ 在 $z$ 处共形当且仅当 $f$ 在 $z$ 处 $\mathbb{C}$-可微且 $f'\left(z\right)\ne0$.
+> **定理 4.1.5 (共形判别)**
+>
+> 函数 $f$ 在 $z$ 处共形当且仅当 $f$ 在 $z$ 处 $\mathbb{C}$-可微且 $f'\left(z\right)\ne0$.
 
-> **定理 10.2.4 (单叶全纯映射的逆)**<br>若 $f$ 在开集 $\Omega$ 上全纯且单叶, 则 $f\left(\Omega\right)$ 是开集且 $f^{-1}$ 在 $f\left(\Omega\right)$ 上全纯.
+> **定理 10.2.4 (单叶全纯映射的逆)**
+>
+> 若 $f$ 在开集 $\Omega$ 上全纯且单叶, 则 $f\left(\Omega\right)$ 是开集且 $f^{-1}$ 在 $f\left(\Omega\right)$ 上全纯.
 
 ---
 

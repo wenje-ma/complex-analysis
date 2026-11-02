@@ -1,20 +1,28 @@
 # week22
 
-> **定义 19.1.1 (伽玛函数)**<br>伽玛函数由欧拉积分定义 (对实参数 $s> 0$):
+> **定义 19.1.1 (伽玛函数)**
+>
+> 伽玛函数由欧拉积分定义 (对实参数 $s> 0$):
 
 $$
 \Gamma\left(s\right)=\int_{0}^{+\infty}e^{-t}t^{s-1}dt,\quad s> 0.
 $$
 
-> **命题 19.1.3 (伽玛函数的函数方程)**<br>若 $\operatorname{Re}z> 0$, 则 $\Gamma\left(z+1\right)=z\Gamma\left(z\right)$; 它可延拓为 $\mathbb{C}$ 上的亚纯函数, 只在 $0,-1,-2,\ldots$ 有简单极点.
+> **命题 19.1.3 (伽玛函数的函数方程)**
+>
+> 若 $\operatorname{Re}z> 0$, 则 $\Gamma\left(z+1\right)=z\Gamma\left(z\right)$; 它可延拓为 $\mathbb{C}$ 上的亚纯函数, 只在 $0,-1,-2,\ldots$ 有简单极点.
 
-> **定理 19.2.1 (反射公式)**<br>伽玛函数满足反射公式
+> **定理 19.2.1 (反射公式)**
+>
+> 伽玛函数满足反射公式
 
 $$
 \Gamma\left(z\right)\Gamma\left(1-z\right)=\frac{\pi}{\sin\pi z},\quad z\in\mathbb{C}\setminus\mathbb{Z}.
 $$
 
-> **定理 19.2.3 (魏尔斯特拉斯无穷乘积)**<br>伽玛函数的倒数有魏尔斯特拉斯无穷乘积展开
+> **定理 19.2.3 (魏尔斯特拉斯无穷乘积)**
+>
+> 伽玛函数的倒数有魏尔斯特拉斯无穷乘积展开
 
 $$
 \frac{1}{\Gamma\left(z\right)}=ze^{\gamma z}\prod_{n=1}^{+\infty}\left(1+\frac{z}{n}\right)e^{-\frac{z}{n}},
@@ -22,7 +30,9 @@ $$
 
 其中 $\gamma$ 为欧拉常数.
 
-> **定理 19.2.4 (欧拉-高斯极限)**<br>伽玛函数可由欧拉-高斯极限表示为
+> **定理 19.2.4 (欧拉-高斯极限)**
+>
+> 伽玛函数可由欧拉-高斯极限表示为
 
 $$
 \Gamma\left(z\right)=\lim_{n\to+\infty}\frac{n!\,n^{z}}{z\left(z+1\right)\cdots\left(z+n\right)}.

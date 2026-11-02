@@ -1,20 +1,28 @@
 # week19
 
-> **定义 16.1.1 (调和函数)**<br>区域 $D$ 上的实值 $C^{2}$ 函数 $u$ 称为调和的, 若 $\Delta u=u_{xx}+u_{yy}=0$ 于 $D$.
+> **定义 16.1.1 (调和函数)**
+>
+> 区域 $D$ 上的实值 $C^{2}$ 函数 $u$ 称为调和的, 若 $\Delta u=u_{xx}+u_{yy}=0$ 于 $D$.
 
-> **命题 16.1.6 (均值性质)**<br>调和函数 $u$ 于 $B\left(a,R\right)$ 有
+> **命题 16.1.6 (均值性质)**
+>
+> 调和函数 $u$ 于 $B\left(a,R\right)$ 有
 
 $$
 u\left(a\right)=\frac{1}{2\pi}\int_{0}^{2\pi}u\left(a+Re^{i\theta}\right)d\theta.
 $$
 
-> **定理 16.2.9 (泊松积分)**<br>圆盘 $B\left(a,R\right)$ 上狄利克雷问题有解
+> **定理 16.2.9 (泊松积分)**
+>
+> 圆盘 $B\left(a,R\right)$ 上狄利克雷问题有解
 
 $$
 u\left(z\right)=\frac{R^{2}-\left|z-a\right|^{2}}{2\pi R}\int_{0}^{2\pi}\frac{f\left(a+Re^{i\theta}\right)}{\left|z-a-Re^{i\theta}\right|^{2}}d\theta.
 $$
 
-> **定理 16.2.10 (有界若当域上的狄利克雷问题)**<br>有界若当域上的狄利克雷问题可解.
+> **定理 16.2.10 (有界若当域上的狄利克雷问题)**
+>
+> 有界若当域上的狄利克雷问题可解.
 
 ---
 

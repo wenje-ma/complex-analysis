@@ -1,14 +1,24 @@
 # week6
 
-> **Definition 6.1.1 (Continuous Branch of the Argument)**<br>A single-valued continuous function on a domain $D\subset\mathbb{C}\setminus\left\{0\right\}$ is called a continuous branch of $\operatorname{Arg}z$ if for every $z\in D$ there exists $k\in\mathbb{Z}$ such that $f\left(z\right)=\arg z+2k\pi$.
+> **Definition 6.1.1 (Continuous Branch of the Argument)**
+>
+> A single-valued continuous function on a domain $D\subset\mathbb{C}\setminus\left\{0\right\}$ is called a continuous branch of $\operatorname{Arg}z$ if for every $z\in D$ there exists $k\in\mathbb{Z}$ such that $f\left(z\right)=\arg z+2k\pi$.
 
-> **Definition 6.2.1 (Complex Logarithm)**<br>A complex number $w$ satisfying $e^{w}=z$ is called a logarithm of $z$, denoted $\operatorname{Ln}z$; it is infinitely many-valued.
+> **Definition 6.2.1 (Complex Logarithm)**
+>
+> A complex number $w$ satisfying $e^{w}=z$ is called a logarithm of $z$, denoted $\operatorname{Ln}z$; it is infinitely many-valued.
 
-> **Proposition 6.2.5 (Holomorphic Branches of the Logarithm)**<br>Any continuous branch of the logarithm on a domain $D\subset\mathbb{C}\setminus\left\{0\right\}$ is holomorphic, so a single-valued continuous branch of the logarithm is a holomorphic branch.
+> **Proposition 6.2.5 (Holomorphic Branches of the Logarithm)**
+>
+> Any continuous branch of the logarithm on a domain $D\subset\mathbb{C}\setminus\left\{0\right\}$ is holomorphic, so a single-valued continuous branch of the logarithm is a holomorphic branch.
 
-> **Definition 6.2.7 (Branch Points)**<br>The branch points of the multivalued function $\operatorname{Ln}z$ (or of power functions) are $0$ and $\infty$; single-valued branches can be defined along any cut joining them.
+> **Definition 6.2.7 (Branch Points)**
+>
+> The branch points of the multivalued function $\operatorname{Ln}z$ (or of power functions) are $0$ and $\infty$; single-valued branches can be defined along any cut joining them.
 
-> **Definition 6.3.1 (Power Function)**<br>$z^{\alpha}=e^{\alpha\operatorname{Ln}z}$; on $\mathbb{C}\setminus\left(-\infty,0\right]$ take the principal branch, i.e. $z^{\alpha}=e^{\alpha\operatorname{Log}z}$.
+> **Definition 6.3.1 (Power Function)**
+>
+> $z^{\alpha}=e^{\alpha\operatorname{Ln}z}$; on $\mathbb{C}\setminus\left(-\infty,0\right]$ take the principal branch, i.e. $z^{\alpha}=e^{\alpha\operatorname{Log}z}$.
 
 ---
 

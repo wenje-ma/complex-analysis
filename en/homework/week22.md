@@ -1,20 +1,28 @@
 # week22
 
-> **Definition 19.1.1 (Gamma Function)**<br>The Gamma function is defined by Euler's integral (for real $s> 0$):
+> **Definition 19.1.1 (Gamma Function)**
+>
+> The Gamma function is defined by Euler's integral (for real $s> 0$):
 
 $$
 \Gamma\left(s\right)=\int_{0}^{+\infty}e^{-t}t^{s-1}dt,\quad s> 0.
 $$
 
-> **Proposition 19.1.3 (Functional Equation of Gamma)**<br>If $\operatorname{Re}z> 0$, then $\Gamma\left(z+1\right)=z\Gamma\left(z\right)$; it extends to a meromorphic function on $\mathbb{C}$ with simple poles only at $0,-1,-2,\ldots$.
+> **Proposition 19.1.3 (Functional Equation of Gamma)**
+>
+> If $\operatorname{Re}z> 0$, then $\Gamma\left(z+1\right)=z\Gamma\left(z\right)$; it extends to a meromorphic function on $\mathbb{C}$ with simple poles only at $0,-1,-2,\ldots$.
 
-> **Theorem 19.2.1 (Reflection Formula)**<br>The Gamma function satisfies the reflection formula
+> **Theorem 19.2.1 (Reflection Formula)**
+>
+> The Gamma function satisfies the reflection formula
 
 $$
 \Gamma\left(z\right)\Gamma\left(1-z\right)=\frac{\pi}{\sin\pi z},\quad z\in\mathbb{C}\setminus\mathbb{Z}.
 $$
 
-> **Theorem 19.2.3 (Weierstrass Product)**<br>The reciprocal of the Gamma function has the Weierstrass infinite product expansion
+> **Theorem 19.2.3 (Weierstrass Product)**
+>
+> The reciprocal of the Gamma function has the Weierstrass infinite product expansion
 
 $$
 \frac{1}{\Gamma\left(z\right)}=ze^{\gamma z}\prod_{n=1}^{+\infty}\left(1+\frac{z}{n}\right)e^{-\frac{z}{n}},
@@ -22,7 +30,9 @@ $$
 
 where $\gamma$ is the Euler-Mascheroni constant.
 
-> **Theorem 19.2.4 (Euler-Gauss Limit)**<br>The Gamma function has the Euler-Gauss limit representation
+> **Theorem 19.2.4 (Euler-Gauss Limit)**
+>
+> The Gamma function has the Euler-Gauss limit representation
 
 $$
 \Gamma\left(z\right)=\lim_{n\to+\infty}\frac{n!\,n^{z}}{z\left(z+1\right)\cdots\left(z+n\right)}.

@@ -1,10 +1,16 @@
 # week4
 
-> **Definition 4.1.2 (Conformal)**<br>$f$ is conformal at $z$ if it is holomorphic and univalent on a neighborhood of $z$ and $f'\left(z\right)\ne0$.
+> **Definition 4.1.2 (Conformal)**
+>
+> $f$ is conformal at $z$ if it is holomorphic and univalent on a neighborhood of $z$ and $f'\left(z\right)\ne0$.
 
-> **Theorem 4.1.5 (Criterion for Conformality)**<br>$f$ is conformal at $z$ if and only if $f$ is $\mathbb{C}$-differentiable at $z$ and $f'\left(z\right)\ne0$.
+> **Theorem 4.1.5 (Criterion for Conformality)**
+>
+> $f$ is conformal at $z$ if and only if $f$ is $\mathbb{C}$-differentiable at $z$ and $f'\left(z\right)\ne0$.
 
-> **Definition 4.2.1 (Mobius Transformation)**<br>A function of the form
+> **Definition 4.2.1 (Mobius Transformation)**
+>
+> A function of the form
 
 $$
 f\left(z\right)=\frac{az+b}{cz+d}
@@ -12,11 +18,17 @@ $$
 
 (where $a,b,c,d\in\mathbb{C}$ and $ad-bc\ne0$) is called a Mobius transformation (or fractional linear transformation); it is a bijection of the extended complex plane onto itself, and its inverse is also a Mobius transformation.
 
-> **Theorem 4.3.4 (Circles Map to Circles)**<br>A Mobius transformation maps circles (generalized circles, i.e. circles or lines) in the extended plane to circles, and preserves angles of intersection.
+> **Theorem 4.3.4 (Circles Map to Circles)**
+>
+> A Mobius transformation maps circles (generalized circles, i.e. circles or lines) in the extended plane to circles, and preserves angles of intersection.
 
-> **Definition 4.4.1 (Univalent)**<br>$f$ is univalent on a domain $D$ if it is injective on $D$.
+> **Definition 4.4.1 (Univalent)**
+>
+> $f$ is univalent on a domain $D$ if it is injective on $D$.
 
-> **Theorem 4.4.2**<br>If $f$ is holomorphic at $z_{0}$ and $f'\left(z_{0}\right)=0$, then $f$ is not univalent on any neighborhood of $z_{0}$.
+> **Theorem 4.4.2**
+>
+> If $f$ is holomorphic at $z_{0}$ and $f'\left(z_{0}\right)=0$, then $f$ is not univalent on any neighborhood of $z_{0}$.
 
 ---
 

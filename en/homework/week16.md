@@ -1,14 +1,20 @@
 # week16
 
-> **Basic Knowledge: Sum of Residues Formula**<br>For a meromorphic function $f$ on the whole complex plane, the sum of all finite residues plus the residue at $\infty$ is zero, and
+> **Basic Knowledge: Sum of Residues Formula**
+>
+> For a meromorphic function $f$ on the whole complex plane, the sum of all finite residues plus the residue at $\infty$ is zero, and
 
 $$
 \operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right).
 $$
 
-> **Definition 14.1.1 (Residue)**<br>The residue $\operatorname{Res}_{a}f$ of $f$ at an isolated singularity $a$ is the coefficient $c_{-1}$ of the $\frac{1}{z-a}$ term in its Laurent expansion.
+> **Definition 14.1.1 (Residue)**
+>
+> The residue $\operatorname{Res}_{a}f$ of $f$ at an isolated singularity $a$ is the coefficient $c_{-1}$ of the $\frac{1}{z-a}$ term in its Laurent expansion.
 
-> **Theorem 14.1.3 (Residue Theorem)**<br>If $f$ is holomorphic on a domain $D$ except at finitely many isolated singularities, and $\gamma$ is a Jordan closed curve in $D$ enclosing all these singularities, then
+> **Theorem 14.1.3 (Residue Theorem)**
+>
+> If $f$ is holomorphic on a domain $D$ except at finitely many isolated singularities, and $\gamma$ is a Jordan closed curve in $D$ enclosing all these singularities, then
 
 $$
 \int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.

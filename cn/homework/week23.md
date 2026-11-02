@@ -1,6 +1,8 @@
 # week23
 
-> **定义 20.1.1 (黎曼 $\zeta$-函数)**<br>黎曼 $\zeta$-函数对 $\operatorname{Re}z> 1$ 由狄利克雷级数定义
+> **定义 20.1.1 (黎曼 $\zeta$-函数)**
+>
+> 黎曼 $\zeta$-函数对 $\operatorname{Re}z> 1$ 由狄利克雷级数定义
 
 $$
 \zeta\left(z\right)=\sum_{n=1}^{+\infty}\frac1{n^{z}},\quad\operatorname{Re}z> 1;
@@ -14,7 +16,9 @@ $$
 
 知其无零点.
 
-> **定理 20.1.6 (亚纯延拓)**<br>$\zeta$ 亚纯延拓到 $\mathbb{C}$, 只在 $z=1$ 有简单极点, 且
+> **定理 20.1.6 (亚纯延拓)**
+>
+> $\zeta$ 亚纯延拓到 $\mathbb{C}$, 只在 $z=1$ 有简单极点, 且
 
 $$
 \lim_{z\to1}\left(\zeta\left(z\right)-\frac1{z-1}\right)=\gamma
@@ -22,13 +26,17 @@ $$
 
 (欧拉常数).
 
-> **定理 20.2.2 (函数方程)**<br>黎曼 $\zeta$-函数满足函数方程
+> **定理 20.2.2 (函数方程)**
+>
+> 黎曼 $\zeta$-函数满足函数方程
 
 $$
 \zeta\left(z\right)=2^{z}\pi^{z-1}\sin\frac{\pi z}{2}\,\Gamma\left(1-z\right)\zeta\left(1-z\right).
 $$
 
-> **推论 20.2.3 (平凡零点与临界带)**<br>$\zeta$ 的平凡零点恰为 $-2,-4,-6,\ldots$; 非平凡零点全落在临界带 $0< \operatorname{Re}z< 1$ 内.
+> **推论 20.2.3 (平凡零点与临界带)**
+>
+> $\zeta$ 的平凡零点恰为 $-2,-4,-6,\ldots$; 非平凡零点全落在临界带 $0< \operatorname{Re}z< 1$ 内.
 
 ---
 

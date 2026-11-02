@@ -1,22 +1,32 @@
 # week8
 
-> **定义 3.2.1 (可微性)**<br>称 $f$ 在 $z$ 处 $\mathbb{R}$-可微 (或 $\mathbb{C}$-可微), 若 $\Delta f=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, 其中 $\ell$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性) 函数.
+> **定义 3.2.1 (可微性)**
+>
+> 称 $f$ 在 $z$ 处 $\mathbb{R}$-可微 (或 $\mathbb{C}$-可微), 若 $\Delta f=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, 其中 $\ell$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性) 函数.
 
-> **定义 3.2.2 (形式导数)**<br>设 $f=u+iv$ 是实可微函数, 其形式导数 (维尔廷希导数) 定义为
+> **定义 3.2.2 (形式导数)**
+>
+> 设 $f=u+iv$ 是实可微函数, 其形式导数 (维尔廷希导数) 定义为
 
 $$
 \frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right).
 $$
 
-> **定理 3.2.4 (柯西-黎曼方程)**<br>$f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\overline{z}}=0$; 这也等价于 $u,v$ 满足柯西-黎曼方程.
+> **定理 3.2.4 (柯西-黎曼方程)**
+>
+> $f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial f}{\partial\overline{z}}=0$; 这也等价于 $u,v$ 满足柯西-黎曼方程.
 
-> **定理 7.2.3 (原函数存在性)**<br>单连通区域上的全纯函数都有原函数, 且
+> **定理 7.2.3 (原函数存在性)**
+>
+> 单连通区域上的全纯函数都有原函数, 且
 
 $$
 \int_{\gamma}f\,dz=F\left(\gamma\left(b\right)\right)-F\left(\gamma\left(a\right)\right).
 $$
 
-> **定理 8.1.4 (柯西定理)**<br>若 $f$ 在区域 $D$ 上全纯且 $\gamma_{0},\gamma_{1}$ 是 $D$ 内具有相同端点的同伦道路 (或同伦闭道路), 则
+> **定理 8.1.4 (柯西定理)**
+>
+> 若 $f$ 在区域 $D$ 上全纯且 $\gamma_{0},\gamma_{1}$ 是 $D$ 内具有相同端点的同伦道路 (或同伦闭道路), 则
 
 $$
 \int_{\gamma_{0}}f\,dz=\int_{\gamma_{1}}f\,dz;
@@ -24,13 +34,17 @@ $$
 
 特别地 $f$ 沿 $D$ 内闭道路积分为零.
 
-> **定理 8.3.1 (柯西积分公式)**<br>若 $f$ 在单连通区域 $D$ 上全纯, $\gamma$ 是 $D$ 内的分段光滑若当闭曲线, $z$ 在其内区域, 则
+> **定理 8.3.1 (柯西积分公式)**
+>
+> 若 $f$ 在单连通区域 $D$ 上全纯, $\gamma$ 是 $D$ 内的分段光滑若当闭曲线, $z$ 在其内区域, 则
 
 $$
 f\left(z\right)=\frac{1}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
 $$
 
-> **定理 8.3.2 (高阶导数公式)**<br>若 $f$ 在单连通区域 $D$ 上全纯, $\gamma$ 是 $D$ 内的分段光滑若当闭曲线, $z$ 在其内区域, 则 $f$ 在 $z$ 处有任意阶导数且
+> **定理 8.3.2 (高阶导数公式)**
+>
+> 若 $f$ 在单连通区域 $D$ 上全纯, $\gamma$ 是 $D$ 内的分段光滑若当闭曲线, $z$ 在其内区域, 则 $f$ 在 $z$ 处有任意阶导数且
 
 $$
 f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta,\quad n\ge1.

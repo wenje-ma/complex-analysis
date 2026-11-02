@@ -1,18 +1,32 @@
 # week2
 
-> **定义 2.1.2 (道路的重参数化)**<br>称道路 $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ 是道路 $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ 的重参数化, 如果存在单调递增函数 $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ 满足 $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, 使得对任意 $t\in\left[a_{1},b_{1}\right]$ 有 $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; 若 $\tau$ 在某点 $\overline{t}$ 处不连续, 即 $\tau\left(\overline{t}-0\right)< \tau\left(\overline{t}+0\right)$, 还要求 $\gamma_{2}$ 在区间 $\left[\tau\left(\overline{t}-0\right),\tau\left(\overline{t}+0\right)\right]$ 上为常值.
+> **定义 2.1.2 (道路的重参数化)**
+>
+> 称道路 $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ 是道路 $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ 的重参数化, 如果存在单调递增函数 $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ 满足 $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, 使得对任意 $t\in\left[a_{1},b_{1}\right]$ 有 $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$; 若 $\tau$ 在某点 $\overline{t}$ 处不连续, 即 $\tau\left(\overline{t}-0\right)< \tau\left(\overline{t}+0\right)$, 还要求 $\gamma_{2}$ 在区间 $\left[\tau\left(\overline{t}-0\right),\tau\left(\overline{t}+0\right)\right]$ 上为常值.
 
-> **定义 2.1.4 (路径)**<br>在道路重参数化意义下的一个道路等价类称为路径.
+> **定义 2.1.4 (路径)**
+>
+> 在道路重参数化意义下的一个道路等价类称为路径.
 
-> **定义 2.2.4 (区域)**<br>称具有以下两条性质的点集 $D\subset\mathbb{C}$ (或 $\overline{\mathbb{C}}$) 为区域: (i-1) $D$ 是开集; (i-2) 道路连通性, 即任意 $a,b\in D$ 都存在位于 $D$ 中的道路以 $a,b$ 为端点.
+> **定义 2.2.4 (区域)**
+>
+> 称具有以下两条性质的点集 $D\subset\mathbb{C}$ (或 $\overline{\mathbb{C}}$) 为区域: (i-1) $D$ 是开集; (i-2) 道路连通性, 即任意 $a,b\in D$ 都存在位于 $D$ 中的道路以 $a,b$ 为端点.
 
-> **定理 2.2.6 (若当曲线定理)**<br>复平面上的任一条若当闭曲线把整个平面分成两个没有公共点的区域: 一个有界的称为它的内区域, 一个无界的称为它的外区域.
+> **定理 2.2.6 (若当曲线定理)**
+>
+> 复平面上的任一条若当闭曲线把整个平面分成两个没有公共点的区域: 一个有界的称为它的内区域, 一个无界的称为它的外区域.
 
-> **定义 2.2.7 (单连通与多连通性)**<br>设 $D$ 是复平面 $\mathbb{C}$ 上的区域, 称 $D$ 为单连通的, 如果 $D$ 内任意若当闭曲线的内区域都包含在 $D$ 内; 否则称它是多连通的.
+> **定义 2.2.7 (单连通与多连通性)**
+>
+> 设 $D$ 是复平面 $\mathbb{C}$ 上的区域, 称 $D$ 为单连通的, 如果 $D$ 内任意若当闭曲线的内区域都包含在 $D$ 内; 否则称它是多连通的.
 
-> **定义 2.4.1 (函数沿某集合的极限)**<br>设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, 如果对任意 $\varepsilon> 0$ 存在 $\delta> 0$ 使对任意 $z\in M$, 若 $0< \rho\left(z,a\right)< \delta$ 则 $\rho\left(f\left(z\right),A\right)< \varepsilon$.
+> **定义 2.4.1 (函数沿某集合的极限)**
+>
+> 设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, 如果对任意 $\varepsilon> 0$ 存在 $\delta> 0$ 使对任意 $z\in M$, 若 $0< \rho\left(z,a\right)< \delta$ 则 $\rho\left(f\left(z\right),A\right)< \varepsilon$.
 
-> **定义 2.4.2 (函数的有界性和连续性)**<br>若存在 $C> 0$ 使 $\forall z\in M$ 有 $\left|f\left(z\right)\right|\le C$, 则称 $f$ 在 $M$ 上有界; 若 $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, 则称 $f$ 在点 $a$ 处 (沿 $M$) 连续; 若对 $\forall a\in M$ 均连续, 则称 $f$ 在 $M$ 上连续.
+> **定义 2.4.2 (函数的有界性和连续性)**
+>
+> 若存在 $C> 0$ 使 $\forall z\in M$ 有 $\left|f\left(z\right)\right|\le C$, 则称 $f$ 在 $M$ 上有界; 若 $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, 则称 $f$ 在点 $a$ 处 (沿 $M$) 连续; 若对 $\forall a\in M$ 均连续, 则称 $f$ 在 $M$ 上连续.
 
 ---
 

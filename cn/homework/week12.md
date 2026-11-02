@@ -1,8 +1,12 @@
 # week12
 
-> **定理 10.3.1 (施瓦茨引理)**<br>若 $f:\mathbb{D}\to\mathbb{D}$ 全纯且 $f\left(0\right)=0$, 则 $\left|f\left(z\right)\right|\le\left|z\right|$ 且 $\left|f'\left(0\right)\right|\le1$; 等号当且仅当 $f\left(z\right)=e^{i\theta}z$.
+> **定理 10.3.1 (施瓦茨引理)**
+>
+> 若 $f:\mathbb{D}\to\mathbb{D}$ 全纯且 $f\left(0\right)=0$, 则 $\left|f\left(z\right)\right|\le\left|z\right|$ 且 $\left|f'\left(0\right)\right|\le1$; 等号当且仅当 $f\left(z\right)=e^{i\theta}z$.
 
-> **定义 10.3.2 (布拉施克因子)**<br>对 $a\in\mathbb{D}$, 布拉施克因子定义为
+> **定义 10.3.2 (布拉施克因子)**
+>
+> 对 $a\in\mathbb{D}$, 布拉施克因子定义为
 
 $$
 \phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}
@@ -10,7 +14,9 @@ $$
 
 它是 $\mathbb{D}$ 的自同构, $\phi_{a}\left(a\right)=0$, 且 $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$.
 
-> **定理 10.3.4 (施瓦茨-皮克引理)**<br>对 $\mathbb{D}\to\mathbb{D}$ 的全纯 $f$,
+> **定理 10.3.4 (施瓦茨-皮克引理)**
+>
+> 对 $\mathbb{D}\to\mathbb{D}$ 的全纯 $f$,
 
 $$
 \left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\overline{w}z}\right|;
@@ -24,9 +30,13 @@ $$
 
 等号当且仅当 $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
 
-> **定理 11.2.2 (黎曼映射定理)**<br>任意不为全平面的单连通区域都与开单位圆盘共形等价.
+> **定理 11.2.2 (黎曼映射定理)**
+>
+> 任意不为全平面的单连通区域都与开单位圆盘共形等价.
 
-> **定义 11.2.6 (映射半径)**<br>对单连通区域 $D$ 且 $\mathbb{C}\setminus D\ne\varnothing$ 及 $a\in D$, 称使存在唯一共形等价 $f:D\to\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$, $f\left(a\right)=0$, $f'\left(a\right)=1$ 的正数 $\rho$ 为 $D$ 相对 $a$ 的映射半径 $\rho\left(D,a\right)$.
+> **定义 11.2.6 (映射半径)**
+>
+> 对单连通区域 $D$ 且 $\mathbb{C}\setminus D\ne\varnothing$ 及 $a\in D$, 称使存在唯一共形等价 $f:D\to\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$, $f\left(a\right)=0$, $f'\left(a\right)=1$ 的正数 $\rho$ 为 $D$ 相对 $a$ 的映射半径 $\rho\left(D,a\right)$.
 
 ---
 

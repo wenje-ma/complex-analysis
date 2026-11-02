@@ -1,12 +1,20 @@
 # week13
 
-> **定理 4.3.4 (保圆性)**<br>莫比乌斯变换把扩充复平面上的广义圆 (圆或直线) 映成广义圆, 并保持切角.
+> **定理 4.3.4 (保圆性)**
+>
+> 莫比乌斯变换把扩充复平面上的广义圆 (圆或直线) 映成广义圆, 并保持切角.
 
-> **命题 4.3.7**<br>莫比乌斯变换把两交点映射到 $0$ 与 $\infty$ 时, 相交两圆被映成过原点的两条直线, 区域映成角域.
+> **命题 4.3.7**
+>
+> 莫比乌斯变换把两交点映射到 $0$ 与 $\infty$ 时, 相交两圆被映成过原点的两条直线, 区域映成角域.
 
-> **命题 5.2.2 (指数映射的带区域)**<br>$z\mapsto e^{z}$ 把水平带 $\left\{0< \operatorname{Im}z< 2\pi\right\}$ 共形地映成 $\mathbb{C}\setminus\left[0,+\infty\right)$.
+> **命题 5.2.2 (指数映射的带区域)**
+>
+> $z\mapsto e^{z}$ 把水平带 $\left\{0< \operatorname{Im}z< 2\pi\right\}$ 共形地映成 $\mathbb{C}\setminus\left[0,+\infty\right)$.
 
-> **命题 5.2.3 (阿波罗尼奥斯圆)**<br>莫比乌斯变换
+> **命题 5.2.3 (阿波罗尼奥斯圆)**
+>
+> 莫比乌斯变换
 
 $$
 z\mapsto\frac{z-\alpha}{z-\beta}
@@ -14,7 +22,9 @@ $$
 
 ($\alpha,\beta\in\mathbb{C}$) 把不含 $\alpha,\beta$ 的圆映成圆, 且 $\left|z-\alpha\right|/\left|z-\beta\right|$ 在阿波罗尼奥斯圆上为常数.
 
-> **定义 6.2.4 (幂函数)**<br>$z^{\alpha}=e^{\alpha\log z}$ 把角域 $\left\{0< \arg z< \beta\right\}$ 共形地映成角域 $\left\{0< \arg w< \alpha\beta\right\}$ (取合适的全纯分支).
+> **定义 6.2.4 (幂函数)**
+>
+> $z^{\alpha}=e^{\alpha\log z}$ 把角域 $\left\{0< \arg z< \beta\right\}$ 共形地映成角域 $\left\{0< \arg w< \alpha\beta\right\}$ (取合适的全纯分支).
 
 ---
 

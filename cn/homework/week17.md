@@ -1,18 +1,24 @@
 # week17
 
-> **基础知识: 柯西积分公式**<br>$f$ 在 $\overline{B\left(a,r\right)}$ 全纯, 则
+> **基础知识: 柯西积分公式**
+>
+> $f$ 在 $\overline{B\left(a,r\right)}$ 全纯, 则
 
 $$
 f\left(a\right)=\frac{1}{2\pi i}\oint_{\left|z-a\right|=r}\frac{f\left(z\right)}{z-a}\,dz.
 $$
 
-> **基础知识: 标准积分**<br>对 $0< \alpha< 2$, $a> 0$,
+> **基础知识: 标准积分**
+>
+> 对 $0< \alpha< 2$, $a> 0$,
 
 $$
 \int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.
 $$
 
-> **定理 14.1.3 (留数定理)**<br>若 $f$ 在区域 $D$ 上除有限个孤立奇点外全纯, $\gamma$ 是 $D$ 内的若当闭曲线且这些奇点都在 $\gamma$ 内, 则
+> **定理 14.1.3 (留数定理)**
+>
+> 若 $f$ 在区域 $D$ 上除有限个孤立奇点外全纯, $\gamma$ 是 $D$ 内的若当闭曲线且这些奇点都在 $\gamma$ 内, 则
 
 $$
 \int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.

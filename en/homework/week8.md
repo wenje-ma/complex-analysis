@@ -1,22 +1,32 @@
 # week8
 
-> **Definition 3.2.1 (Differentiability)**<br>$f$ is $\mathbb{R}$-differentiable (or $\mathbb{C}$-differentiable) at $z$ if $\Delta f=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, where $\ell$ is $\mathbb{R}$-linear (or $\mathbb{C}$-linear).
+> **Definition 3.2.1 (Differentiability)**
+>
+> $f$ is $\mathbb{R}$-differentiable (or $\mathbb{C}$-differentiable) at $z$ if $\Delta f=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, where $\ell$ is $\mathbb{R}$-linear (or $\mathbb{C}$-linear).
 
-> **Definition 3.2.2 (Formal Derivatives)**<br>Let $f=u+iv$ be real-differentiable. Its formal (Wirtinger) derivatives are defined by
+> **Definition 3.2.2 (Formal Derivatives)**
+>
+> Let $f=u+iv$ be real-differentiable. Its formal (Wirtinger) derivatives are defined by
 
 $$
 \frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right).
 $$
 
-> **Theorem 3.2.4 (Cauchy-Riemann Equations)**<br>$f$ is $\mathbb{C}$-differentiable at $z$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$, equivalently $u,v$ satisfy the Cauchy-Riemann equations.
+> **Theorem 3.2.4 (Cauchy-Riemann Equations)**
+>
+> $f$ is $\mathbb{C}$-differentiable at $z$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$, equivalently $u,v$ satisfy the Cauchy-Riemann equations.
 
-> **Theorem 7.2.3 (Existence of Antiderivatives)**<br>Every holomorphic function on a simply connected domain has an antiderivative, and
+> **Theorem 7.2.3 (Existence of Antiderivatives)**
+>
+> Every holomorphic function on a simply connected domain has an antiderivative, and
 
 $$
 \int_{\gamma}f\,dz=F\left(\gamma\left(b\right)\right)-F\left(\gamma\left(a\right)\right).
 $$
 
-> **Theorem 8.1.4 (Cauchy's Theorem)**<br>If $f$ is holomorphic on a domain $D$ and $\gamma_{0},\gamma_{1}$ are homotopic paths in $D$ with the same endpoints (or homotopic closed paths), then
+> **Theorem 8.1.4 (Cauchy's Theorem)**
+>
+> If $f$ is holomorphic on a domain $D$ and $\gamma_{0},\gamma_{1}$ are homotopic paths in $D$ with the same endpoints (or homotopic closed paths), then
 
 $$
 \int_{\gamma_{0}}f\,dz=\int_{\gamma_{1}}f\,dz;
@@ -24,13 +34,17 @@ $$
 
 in particular, the integral of $f$ along any closed path in $D$ is zero.
 
-> **Theorem 8.3.1 (Cauchy Integral Formula)**<br>If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then
+> **Theorem 8.3.1 (Cauchy Integral Formula)**
+>
+> If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then
 
 $$
 f\left(z\right)=\frac{1}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
 $$
 
-> **Theorem 8.3.2 (Higher Derivative Formula)**<br>If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then $f$ has derivatives of all orders at $z$ and
+> **Theorem 8.3.2 (Higher Derivative Formula)**
+>
+> If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then $f$ has derivatives of all orders at $z$ and
 
 $$
 f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta,\quad n\ge1.

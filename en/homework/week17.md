@@ -1,18 +1,24 @@
 # week17
 
-> **Basic Knowledge: Cauchy Integral Formula**<br>If $f$ is holomorphic on $\overline{B\left(a,r\right)}$, then
+> **Basic Knowledge: Cauchy Integral Formula**
+>
+> If $f$ is holomorphic on $\overline{B\left(a,r\right)}$, then
 
 $$
 f\left(a\right)=\frac{1}{2\pi i}\oint_{\left|z-a\right|=r}\frac{f\left(z\right)}{z-a}\,dz.
 $$
 
-> **Basic Knowledge: Standard Integral**<br>For $0< \alpha< 2$, $a> 0$,
+> **Basic Knowledge: Standard Integral**
+>
+> For $0< \alpha< 2$, $a> 0$,
 
 $$
 \int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.
 $$
 
-> **Theorem 14.1.3 (Residue Theorem)**<br>If $f$ is holomorphic on a domain $D$ except at finitely many isolated singularities, and $\gamma$ is a Jordan closed curve in $D$ enclosing all these singularities, then
+> **Theorem 14.1.3 (Residue Theorem)**
+>
+> If $f$ is holomorphic on a domain $D$ except at finitely many isolated singularities, and $\gamma$ is a Jordan closed curve in $D$ enclosing all these singularities, then
 
 $$
 \int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.

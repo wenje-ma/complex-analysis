@@ -1,14 +1,20 @@
 # week1
 
-> **定义 1.1.5 (实部,虚部,共轭,模)**<br>对 $z=x+iy$, 称 $x$ 为实部, $y$ 为虚部, 记 $x=\operatorname{Re}z$, $y=\operatorname{Im}z$; $z$ 的共轭为 $\overline{z}=x-iy$; $z$ 的模为
+> **定义 1.1.5 (实部,虚部,共轭,模)**
+>
+> 对 $z=x+iy$, 称 $x$ 为实部, $y$ 为虚部, 记 $x=\operatorname{Re}z$, $y=\operatorname{Im}z$; $z$ 的共轭为 $\overline{z}=x-iy$; $z$ 的模为
 
 $$
 \left|z\right|=\sqrt{x^{2}+y^{2}}.
 $$
 
-> **定义 1.2.2 (复数的极坐标形式)**<br>复数 $z=x+iy\ne0$ 的极坐标形式为 $z=re^{i\phi}$, 其中 $r=\left|z\right|$, $\phi$ 为幅角 $\operatorname{Arg}z$ (确定到差 $2\pi$ 的整数倍), $e^{i\phi}=\cos\phi+i\sin\phi$.
+> **定义 1.2.2 (复数的极坐标形式)**
+>
+> 复数 $z=x+iy\ne0$ 的极坐标形式为 $z=re^{i\phi}$, 其中 $r=\left|z\right|$, $\phi$ 为幅角 $\operatorname{Arg}z$ (确定到差 $2\pi$ 的整数倍), $e^{i\phi}=\cos\phi+i\sin\phi$.
 
-> **定义 1.3.1 (球极投影)**<br>单位球面 $S:\xi^{2}+\eta^{2}+\zeta^{2}=1$ 上, 复平面点 $z=\left(x,y\right)$ 对应
+> **定义 1.3.1 (球极投影)**
+>
+> 单位球面 $S:\xi^{2}+\eta^{2}+\zeta^{2}=1$ 上, 复平面点 $z=\left(x,y\right)$ 对应
 
 $$
 Z=\left(\xi,\eta,\zeta\right),\quad\xi=\frac{2x}{1+\left|z\right|^{2}},\ \eta=\frac{2y}{1+\left|z\right|^{2}},\ \zeta=\frac{\left|z\right|^{2}-1}{1+\left|z\right|^{2}},
@@ -16,7 +22,9 @@ $$
 
 建立 $\mathbb{C}$ 与 $S\setminus\left\{N\right\}$ (去掉北极点) 的一一对应.
 
-> **定义 1.4.2 (球弦度量)**<br>对 $z,w\in\mathbb{C}$, 球弦距离
+> **定义 1.4.2 (球弦度量)**
+>
+> 对 $z,w\in\mathbb{C}$, 球弦距离
 
 $$
 \rho\left(z,w\right)=\frac{2\left|z-w\right|}{\sqrt{1+\left|z\right|^{2}}\sqrt{1+\left|w\right|^{2}}}.

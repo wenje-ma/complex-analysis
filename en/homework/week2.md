@@ -1,18 +1,32 @@
 # week2
 
-> **Definition 2.1.2 (Reparametrization of a Path)**<br>A path $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ is a reparametrization of $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ if there is a monotonically increasing function $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ with $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, such that $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$ for all $t\in\left[a_{1},b_{1}\right]$; if $\tau$ has a jump discontinuity at $\overline{t}$, i.e. $\tau\left(\overline{t}-0\right)< \tau\left(\overline{t}+0\right)$, then $\gamma_{2}$ must be constant on the interval $\left[\tau\left(\overline{t}-0\right),\tau\left(\overline{t}+0\right)\right]$.
+> **Definition 2.1.2 (Reparametrization of a Path)**
+>
+> A path $\gamma_{1}:\left[a_{1},b_{1}\right]\to\mathbb{C}$ is a reparametrization of $\gamma_{2}:\left[a_{2},b_{2}\right]\to\mathbb{C}$ if there is a monotonically increasing function $\tau:\left[a_{1},b_{1}\right]\to\left[a_{2},b_{2}\right]$ with $\tau\left(a_{1}\right)=a_{2}$, $\tau\left(b_{1}\right)=b_{2}$, such that $\gamma_{1}\left(t\right)=\gamma_{2}\left(\tau\left(t\right)\right)$ for all $t\in\left[a_{1},b_{1}\right]$; if $\tau$ has a jump discontinuity at $\overline{t}$, i.e. $\tau\left(\overline{t}-0\right)< \tau\left(\overline{t}+0\right)$, then $\gamma_{2}$ must be constant on the interval $\left[\tau\left(\overline{t}-0\right),\tau\left(\overline{t}+0\right)\right]$.
 
-> **Definition 2.1.4 (Curve)**<br>An equivalence class of paths under reparametrization is called a curve.
+> **Definition 2.1.4 (Curve)**
+>
+> An equivalence class of paths under reparametrization is called a curve.
 
-> **Definition 2.2.4 (Domain)**<br>A set $D\subset\mathbb{C}$ (or $\overline{\mathbb{C}}$) is called a domain if: (i-1) $D$ is open; (i-2) $D$ is path-connected, i.e. for any $a,b\in D$ there is a path in $D$ with endpoints $a,b$.
+> **Definition 2.2.4 (Domain)**
+>
+> A set $D\subset\mathbb{C}$ (or $\overline{\mathbb{C}}$) is called a domain if: (i-1) $D$ is open; (i-2) $D$ is path-connected, i.e. for any $a,b\in D$ there is a path in $D$ with endpoints $a,b$.
 
-> **Theorem 2.2.6 (Jordan Curve Theorem)**<br>Every Jordan curve in the complex plane divides the plane into two disjoint domains: a bounded one called its interior, and an unbounded one called its exterior.
+> **Theorem 2.2.6 (Jordan Curve Theorem)**
+>
+> Every Jordan curve in the complex plane divides the plane into two disjoint domains: a bounded one called its interior, and an unbounded one called its exterior.
 
-> **Definition 2.2.7 (Simply Connected and Multiply Connected)**<br>A domain $D\subset\mathbb{C}$ is called simply connected if the interior of every Jordan curve in $D$ is contained in $D$; otherwise it is multiply connected.
+> **Definition 2.2.7 (Simply Connected and Multiply Connected)**
+>
+> A domain $D\subset\mathbb{C}$ is called simply connected if the interior of every Jordan curve in $D$ is contained in $D$; otherwise it is multiply connected.
 
-> **Definition 2.4.1 (Limit of a Function Along a Set)**<br>Let $f$ be defined on $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. We say $A\in\mathbb{C}$ is the limit of $f$ as $z\to a$ along $M$, written $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, if for every $\varepsilon> 0$ there exists $\delta> 0$ such that for all $z\in M$, $0< \rho\left(z,a\right)< \delta$ implies $\rho\left(f\left(z\right),A\right)< \varepsilon$.
+> **Definition 2.4.1 (Limit of a Function Along a Set)**
+>
+> Let $f$ be defined on $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. We say $A\in\mathbb{C}$ is the limit of $f$ as $z\to a$ along $M$, written $\lim_{z\to a,\ z\in M}f\left(z\right)=A$, if for every $\varepsilon> 0$ there exists $\delta> 0$ such that for all $z\in M$, $0< \rho\left(z,a\right)< \delta$ implies $\rho\left(f\left(z\right),A\right)< \varepsilon$.
 
-> **Definition 2.4.2 (Boundedness and Continuity)**<br>If there exists $C> 0$ such that $\left|f\left(z\right)\right|\le C$ for all $z\in M$, then $f$ is bounded on $M$; if $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, then $f$ is continuous at $a$ (along $M$); if $f$ is continuous at every $a\in M$, then $f$ is continuous on $M$.
+> **Definition 2.4.2 (Boundedness and Continuity)**
+>
+> If there exists $C> 0$ such that $\left|f\left(z\right)\right|\le C$ for all $z\in M$, then $f$ is bounded on $M$; if $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, then $f$ is continuous at $a$ (along $M$); if $f$ is continuous at every $a\in M$, then $f$ is continuous on $M$.
 
 ---
 

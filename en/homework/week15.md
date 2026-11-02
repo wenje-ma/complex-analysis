@@ -1,6 +1,8 @@
 # week15
 
-> **Definition 13.1.3 (Laurent Series)**<br>The Laurent series of $f$ on the annulus $A\left(a;r;R\right)$ is
+> **Definition 13.1.3 (Laurent Series)**
+>
+> The Laurent series of $f$ on the annulus $A\left(a;r;R\right)$ is
 
 $$
 \sum_{n=-\infty}^{+\infty}c_{n}\left(z-a\right)^{n},
@@ -8,11 +10,17 @@ $$
 
 with regular part $\sum_{n\ge0}c_{n}\left(z-a\right)^{n}$ and principal part $\sum_{n< 0}c_{n}\left(z-a\right)^{n}$.
 
-> **Definition 13.2.2 (Classification of Isolated Singularities)**<br>$a$ is a removable singularity of $f$ if all principal-part coefficients vanish; a pole of order $m$ if $c_{-m}\ne0$ and $c_{n}=0$ for $n< -m$; an essential singularity if the principal part has infinitely many terms.
+> **Definition 13.2.2 (Classification of Isolated Singularities)**
+>
+> $a$ is a removable singularity of $f$ if all principal-part coefficients vanish; a pole of order $m$ if $c_{-m}\ne0$ and $c_{n}=0$ for $n< -m$; an essential singularity if the principal part has infinitely many terms.
 
-> **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**<br>$a$ is a removable singularity of $f$ if and only if $f$ is bounded on a punctured neighborhood of $a$.
+> **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**
+>
+> $a$ is a removable singularity of $f$ if and only if $f$ is bounded on a punctured neighborhood of $a$.
 
-> **Theorem 13.2.5**<br>$a$ is a removable singularity of $f$ if and only if $\lim_{z\to a}f\left(z\right)$ exists and is finite.
+> **Theorem 13.2.5**
+>
+> $a$ is a removable singularity of $f$ if and only if $\lim_{z\to a}f\left(z\right)$ exists and is finite.
 
 ---
 
