@@ -1,19 +1,19 @@
 # week13
 
 > **Theorem 4.3.4 (Circles Map to Circles)**
->
+> 
 > A Mobius transformation maps generalized circles (circles or lines) in the extended plane to generalized circles, and preserves angles of intersection.
 
 > **Proposition 4.3.7**
->
+> 
 > When a Mobius transformation maps the two intersection points to $0$ and $\infty$, two intersecting circles are mapped to two lines through the origin, and the region is mapped to an angular sector.
 
 > **Proposition 5.2.2 (Exponential Map on a Strip)**
->
+> 
 > $z\mapsto e^{z}$ maps the horizontal strip $\left\{0< \operatorname{Im}z< 2\pi\right\}$ conformally onto $\mathbb{C}\setminus\left[0,+\infty\right)$.
 
 > **Proposition 5.2.3 (Apollonius Circles)**
->
+> 
 > The Mobius transformation
 
 $$
@@ -23,7 +23,7 @@ $$
 ($\alpha,\beta\in\mathbb{C}$) maps circles not containing $\alpha,\beta$ to circles, and $\left|z-\alpha\right|/\left|z-\beta\right|$ is constant on Apollonius circles.
 
 > **Definition 6.2.4 (Power Function)**
->
+> 
 > $z^{\alpha}=e^{\alpha\log z}$ maps the angular sector $\left\{0< \arg z< \beta\right\}$ conformally onto the sector $\left\{0< \arg w< \alpha\beta\right\}$ (with a suitable holomorphic branch).
 
 ---
@@ -58,7 +58,7 @@ Find a conformal equivalence from the region bounded by the circles $\left\{\lef
 
 ### Solution 12.3-2
 
-The circles $C_{1}:\left|z\right|=1$ and $C_{2}:\left|z-1\right|=\frac{5}{2}$ are disjoint (both centers on the real axis), with $C_{1}$ inside the interior region of $C_{2}$; they bound the region $D=\left\{1< \left|z\right|< 3.5\ \text{(annular)}\right\}$ (i.e. $\left|z\right|> 1$ and $\left|z-1\right|< 2.5$).
+The circles $C_{1}:\left|z\right|=1$ and $C_{2}:\left|z-1\right|=\frac{5}{2}$ are disjoint (both centers on the real axis), with $C_{1}$ inside the interior region of $C_{2}$; they bound the region $D=\left\{1< \left|z\right|< 3.5\ \text{\left(annular\right)}\right\}$ (i.e. $\left|z\right|> 1$ and $\left|z-1\right|< 2.5$).
 
 Use the fractional linear map $T\left(z\right)=\frac{z-\alpha}{z-\beta}$ ($\alpha,\beta\in\mathbb{R}$) to map the two circles to concentric circles centered at the origin, i.e. require $\frac{\left|z-\alpha\right|}{\left|z-\beta\right|}$ to be constant $r_{1}$ on $C_{1}$ and $r_{2}$ on $C_{2}$.
 

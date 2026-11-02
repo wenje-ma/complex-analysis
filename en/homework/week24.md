@@ -1,19 +1,19 @@
 # week24
 
 > **Theorem 21.1.3 (Bloch's Theorem)**
->
+> 
 > There is a constant $B> 0$ such that if $f$ is holomorphic on the unit disk with $f'\left(0\right)=1$, then $f\left(\mathbb{D}\right)$ contains a disk of radius at least $B$.
 
 > **Theorem 21.2.3 (Picard's Little Theorem)**
->
+> 
 > A nonconstant entire function takes every value in $\mathbb{C}$ or all but one value.
 
 > **Theorem 21.2.4 (Picard's Little Theorem, Meromorphic Form)**
->
+> 
 > A nonconstant meromorphic function omits at most two values.
 
 > **Theorem 21.4 (Picard's Great Theorem)**
->
+> 
 > In any punctured neighborhood of an essential singularity, a holomorphic function takes every value infinitely often (with at most one exception).
 
 ---

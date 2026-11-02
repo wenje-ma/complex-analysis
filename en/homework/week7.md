@@ -1,7 +1,7 @@
 # week7
 
 > **Definition 7.1.1 (Path Integral)**
->
+> 
 > The integral of $f$ along a piecewise smooth path $\gamma:\left[a,b\right]\to\mathbb{C}$ is
 
 $$
@@ -9,11 +9,11 @@ $$
 $$
 
 > **Definition 7.2.1 (Antiderivative)**
->
+> 
 > A holomorphic function $F$ on a domain $D$ is called an antiderivative of $f$ if $F'=f$ on $D$; $f$ has an antiderivative if and only if its integral along every closed path in $D$ is zero.
 
 > **Theorem 7.2.3**
->
+> 
 > $\frac{1}{z}$ has an antiderivative on a domain $D\subset\mathbb{C}\setminus\left\{0\right\}$ if and only if $D$ admits a holomorphic branch of $\operatorname{Ln}z$.
 
 ---

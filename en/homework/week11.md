@@ -1,27 +1,27 @@
 # week11
 
 > **Theorem 9.3.2 (Identity Theorem)**
->
+> 
 > If the zeros of a holomorphic function on a domain $D$ have an accumulation point in $D$, then $f\equiv0$.
 
 > **Theorem 10.1.4 (Open Mapping Theorem)**
->
+> 
 > A nonconstant holomorphic function maps domains onto domains.
 
 > **Definition 11.1.1 (Locally Uniform Convergence)**
->
+> 
 > A sequence $\left\{f_{n}\right\}$ of holomorphic functions converges locally uniformly to $f$ on a domain $\Omega$ if it converges uniformly to $f$ on every compact subset of $\Omega$.
 
 > **Theorem 11.1.2 (Weierstrass Theorem)**
->
+> 
 > If $\left\{f_{n}\right\}$ converges locally uniformly to a continuous function $f$ on $\Omega$, then $f$ is holomorphic on $\Omega$.
 
 > **Theorem 11.1.3 (Montel's Theorem)**
->
+> 
 > If a sequence $\left\{f_{n}\right\}$ of holomorphic functions is uniformly bounded on every compact subset of a domain $D$, then a subsequence converges locally uniformly on $D$.
 
 > **Theorem 11.2.2 (Riemann Mapping Theorem)**
->
+> 
 > Every simply connected domain other than the whole complex plane is conformally equivalent to the open unit disk.
 
 ---

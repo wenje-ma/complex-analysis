@@ -1,7 +1,7 @@
 # week23
 
 > **Definition 20.1.1 (Riemann Zeta Function)**
->
+> 
 > The Riemann zeta function is defined for $\operatorname{Re}z> 1$ by the Dirichlet series
 
 $$
@@ -17,7 +17,7 @@ $$
 it has no zeros.
 
 > **Theorem 20.1.6 (Meromorphic Continuation)**
->
+> 
 > $\zeta$ extends meromorphically to $\mathbb{C}$, with only a simple pole at $z=1$, and
 
 $$
@@ -27,7 +27,7 @@ $$
 (Euler constant).
 
 > **Theorem 20.2.2 (Functional Equation)**
->
+> 
 > The Riemann zeta function satisfies the functional equation
 
 $$
@@ -35,7 +35,7 @@ $$
 $$
 
 > **Corollary 20.2.3 (Trivial Zeros and Critical Strip)**
->
+> 
 > The trivial zeros of $\zeta$ are exactly $-2,-4,-6,\ldots$; all nontrivial zeros lie in the critical strip $0< \operatorname{Re}z< 1$.
 
 ---

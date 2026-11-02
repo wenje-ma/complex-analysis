@@ -1,7 +1,7 @@
 # week14
 
 > **Theorem 8.3.1 (Cauchy Integral Formula)**
->
+> 
 > If $f$ is holomorphic on a domain containing a Jordan closed curve $\gamma$ and its interior, and $z$ lies in the interior of $\gamma$, then
 
 $$
@@ -9,7 +9,7 @@ f\left(z\right)=\frac{1}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\zeta-z}
 $$
 
 > **Theorem 8.3.2 (Higher Derivative Formula)**
->
+> 
 > If $f$ is holomorphic on a domain containing a Jordan closed curve $\gamma$ and its interior, and $z$ lies in the interior of $\gamma$, then $f$ has derivatives of all orders at $z$ and
 
 $$
@@ -17,7 +17,7 @@ f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zet
 $$
 
 > **Theorem 10.1.1 (Maximum Modulus Principle)**
->
+> 
 > If the modulus $\left|f\right|$ of a holomorphic function $f$ on a domain $D$ has a local maximum in $D$, then $f$ is constant on $D$; in particular, the maximum of $\left|f\right|$ on a compact closed region is attained on the boundary.
 
 ---

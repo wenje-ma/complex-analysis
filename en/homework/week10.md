@@ -1,19 +1,19 @@
 # week10
 
 > **Theorem 10.1.1 (Maximum Modulus Principle)**
->
+> 
 > If the modulus $\left|f\right|$ of a holomorphic function $f$ on a domain $D$ has a local maximum at $z_{0}\in D$, then $f$ is constant on $D$.
 
 > **Theorem 10.1.4 (Open Mapping Theorem)**
->
+> 
 > A nonconstant holomorphic function maps domains onto domains.
 
 > **Theorem 10.3.1 (Schwarz Lemma)**
->
+> 
 > If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic with $f\left(0\right)=0$, then $\left|f\left(z\right)\right|\le\left|z\right|$ and $\left|f'\left(0\right)\right|\le1$; equality at some point (or $\left|f'\left(0\right)\right|=1$) holds if and only if $f\left(z\right)=e^{i\theta}z$.
 
 > **Definition 10.3.2 (Blaschke Factor)**
->
+> 
 > For $a\in\mathbb{D}$, the function
 
 $$

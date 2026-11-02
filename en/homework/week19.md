@@ -1,11 +1,11 @@
 # week19
 
 > **Definition 16.1.1 (Harmonic Function)**
->
+> 
 > A real-valued $C^{2}$ function $u$ on a domain $D$ is called harmonic if $\Delta u=u_{xx}+u_{yy}=0$ on $D$.
 
 > **Proposition 16.1.6 (Mean Value Property)**
->
+> 
 > A harmonic function $u$ on $B\left(a,R\right)$ satisfies
 
 $$
@@ -13,7 +13,7 @@ u\left(a\right)=\frac{1}{2\pi}\int_{0}^{2\pi}u\left(a+Re^{i\theta}\right)d\theta
 $$
 
 > **Theorem 16.2.9 (Poisson Integral)**
->
+> 
 > The Dirichlet problem on the disk $B\left(a,R\right)$ has solution
 
 $$
@@ -21,7 +21,7 @@ u\left(z\right)=\frac{R^{2}-\left|z-a\right|^{2}}{2\pi R}\int_{0}^{2\pi}\frac{f\
 $$
 
 > **Theorem 16.2.10 (Dirichlet Problem on Bounded Jordan Domains)**
->
+> 
 > The Dirichlet problem on a bounded Jordan domain is solvable.
 
 ---

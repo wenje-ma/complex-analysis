@@ -1,19 +1,19 @@
 # week20
 
 > **Definition 17.2.1 (Function Element)**
->
+> 
 > A pair $\left(f,U\right)$ is called a function element if $U$ is a nonempty open set in $\mathbb{C}$ and $f$ is holomorphic on $U$.
 
 > **Definition 17.2.2 (Direct Holomorphic Continuation)**
->
+> 
 > A function element $\left(f_{1},U_{1}\right)$ is a direct holomorphic continuation of $\left(f_{0},U_{0}\right)$ if $U_{0}\cap U_{1}\ne\emptyset$ and $f_{0}=f_{1}$ on $U_{0}\cap U_{1}$.
 
 > **Definition 17.2.3 (Holomorphic Continuation Along a Path)**
->
+> 
 > $\left(f_{0},U_{0}\right)$ is holomorphically continued along a path $\gamma$ to $\left(f_{1},U_{1}\right)$ if there is a family of function elements $\left(f_{t},U_{t}\right)_{t\in\left[0,1\right]}$ such that each step is a direct continuation and $f_{0},f_{1}$ are the initial and final elements.
 
 > **Theorem 17.3.6 (Monodromy Theorem)**
->
+> 
 > If $D$ is simply connected and $\left(f,U\right)$ can be holomorphically continued along every path in $D$, then $f$ extends to a single-valued holomorphic function on $D$.
 
 ---

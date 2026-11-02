@@ -1,7 +1,7 @@
 # week9
 
 > **Theorem 8.3.2 (Higher Derivative Formula)**
->
+> 
 > If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then $f$ has derivatives of all orders at $z$ and
 
 $$
@@ -9,19 +9,19 @@ f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zet
 $$
 
 > **Theorem 9.1.3 (Liouville's Theorem)**
->
+> 
 > Every bounded entire function on $\mathbb{C}$ is constant.
 
 > **Theorem 9.3.2 (Identity Theorem)**
->
+> 
 > If the zeros of a holomorphic function $f$ on a domain $D$ have an accumulation point in $D$, then $f\equiv0$.
 
 > **Theorem 9.3.3 (Uniqueness Theorem)**
->
+> 
 > If two holomorphic functions $f,g$ on a domain $D$ agree on a set with an accumulation point in $D$, then $f\equiv g$.
 
 > **Theorem 10.1.4 (Open Mapping Theorem)**
->
+> 
 > A nonconstant holomorphic function maps domains onto domains (open sets).
 
 ---

@@ -1,15 +1,15 @@
 # week25
 
 > **Theorem 21.2.3 (Picard's Little Theorem)**
->
+> 
 > The range of a nonconstant entire function omits at most one complex number; equivalently, a nonconstant entire function assumes every complex value except at most one point infinitely many times.
 
 > **Definition 22.1.5 (Normal Family)**
->
+> 
 > A family $\mathcal{F}$ of meromorphic functions on a domain $D$ is called normal on $D$ if every sequence in $\mathcal{F}$ has a subsequence converging in $\mathfrak{C}\left(D,\widehat{\mathbb{C}}\right)$ (uniformly on compact subsets of $D$ in the spherical chordal metric to a meromorphic function or to $\infty$).
 
 > **Theorem 22.1.7 (Marty's Criterion)**
->
+> 
 > $\mathcal{F}$ is normal on $D$ iff for every compact subset $K\subset D$, the spherical derivative
 
 $$
@@ -19,11 +19,11 @@ $$
 is uniformly bounded on $K$ for $f\in\mathcal{F}$.
 
 > **Theorem 22.2.1 (Zalcman's Lemma)**
->
+> 
 > $\mathcal{F}$ is not normal iff there exist $f_{n}\in\mathcal{F}$, $z_{n}\to z_{0}\in D$, $\rho_{n}\to0^{+}$ such that $g_{n}\left(w\right):=f_{n}\left(z_{n}+\rho_{n}w\right)$ converges locally uniformly to a nonconstant entire or meromorphic function.
 
 > **Theorem 22.2.3 (Montel's Theorem)**
->
+> 
 > A family of meromorphic functions on a domain $D$ that uniformly omits three distinct values (points of the extended plane) is normal.
 
 ---

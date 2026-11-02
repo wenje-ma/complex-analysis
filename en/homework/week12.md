@@ -1,11 +1,11 @@
 # week12
 
 > **Theorem 10.3.1 (Schwarz Lemma)**
->
+> 
 > If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic with $f\left(0\right)=0$, then $\left|f\left(z\right)\right|\le\left|z\right|$ and $\left|f'\left(0\right)\right|\le1$; equality holds if and only if $f\left(z\right)=e^{i\theta}z$.
 
 > **Definition 10.3.2 (Blaschke Factor)**
->
+> 
 > For $a\in\mathbb{D}$, the Blaschke factor is defined by
 
 $$
@@ -15,7 +15,7 @@ $$
 It is an automorphism of $\mathbb{D}$, with $\phi_{a}\left(a\right)=0$ and $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$.
 
 > **Theorem 10.3.4 (Schwarz-Pick Lemma)**
->
+> 
 > For holomorphic $f:\mathbb{D}\to\mathbb{D}$,
 
 $$
@@ -31,11 +31,11 @@ $$
 with equality if and only if $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
 
 > **Theorem 11.2.2 (Riemann Mapping Theorem)**
->
+> 
 > Every simply connected domain other than the whole plane is conformally equivalent to the open unit disk.
 
 > **Definition 11.2.6 (Mapping Radius)**
->
+> 
 > For a simply connected domain $D$ with $\mathbb{C}\setminus D\ne\varnothing$ and $a\in D$, the positive number $\rho$ for which there exists a unique conformal equivalence $f:D\to\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$ with $f\left(a\right)=0$, $f'\left(a\right)=1$, is called the mapping radius of $D$ at $a$, denoted $\rho\left(D,a\right)$.
 
 ---

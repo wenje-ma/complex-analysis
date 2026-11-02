@@ -1,23 +1,23 @@
 # week6
 
 > **定义 6.1.1 (幅角函数的连续分支)**
->
+> 
 > 称区域 $D\subset\mathbb{C}\setminus\left\{0\right\}$ 上的单值连续函数为 $\operatorname{Arg}z$ 的连续分支, 若 $\forall z\in D$ 存在 $k\in\mathbb{Z}$ 使 $f\left(z\right)=\arg z+2k\pi$.
 
 > **定义 6.2.1 (复变对数函数)**
->
+> 
 > 满足 $e^{w}=z$ 的复数 $w$ 称为 $z$ 的对数, 记为 $\operatorname{Ln}z$; 它是无穷多值的.
 
 > **命题 6.2.5 (对数的全纯分支)**
->
+> 
 > 区域 $D\subset\mathbb{C}\setminus\left\{0\right\}$ 上的连续对数分支必全纯, 故对数函数的单值连续分支即全纯分支.
 
 > **定义 6.2.7 (分支点)**
->
+> 
 > 多值函数 $\operatorname{Ln}z$ (或幂函数) 的分支点是 $0$ 与 $\infty$, 沿连接它们的任意割线可定义单值分支.
 
 > **定义 6.3.1 (幂函数)**
->
+> 
 > $z^{\alpha}=e^{\alpha\operatorname{Ln}z}$; 在 $\mathbb{C}\setminus\left(-\infty,0\right]$ 上取主分支, 即 $z^{\alpha}=e^{\alpha\operatorname{Log}z}$.
 
 ---

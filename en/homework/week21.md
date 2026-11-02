@@ -1,15 +1,15 @@
 # week21
 
 > **Lemma 18.1.1 (Pasting Lemma)**
->
+> 
 > If domains $D_{1},D_{2}$ are disjoint with a common boundary segment $\gamma$, $f_{1},f_{2}$ are holomorphic on them and continuous to $\gamma$, and $f_{1}=f_{2}$ on $\gamma$, then the pasted function is holomorphic on $D_{1}\cup\gamma\cup D_{2}$.
 
 > **Theorem 18.1.2 (Schwarz Reflection Principle I)**
->
+> 
 > If $D$ is symmetric about the real axis, $f$ is holomorphic on $D^{+}:=D\cap\left\{\operatorname{Im}z> 0\right\}$, continuous to $D^{+}\cap\mathbb{R}$ and real-valued there, then $f$ extends to a holomorphic function on $D$.
 
 > **Theorem 18.1.3 (Schwarz Reflection Principle II)**
->
+> 
 > If $f$ is holomorphic on $D^{+}$, continuous to a boundary segment $I\subset\mathbb{R}$ and real-valued there, then $f$ extends to $D^{+}\cup I\cup D^{-}$, where $D^{-}$ is the reflection of $D^{+}$ across the real axis, with $f\left(z\right)=\overline{f\left(\overline z\right)}$.
 
 ---

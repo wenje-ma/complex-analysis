@@ -1,7 +1,7 @@
 # week1
 
 > **Definition 1.1.5 (Real Part, Imaginary Part, Conjugate, Modulus)**
->
+> 
 > For $z=x+iy$, $x$ is the real part and $y$ is the imaginary part, written $x=\operatorname{Re}z$, $y=\operatorname{Im}z$; the conjugate of $z$ is $\overline{z}=x-iy$; the modulus of $z$ is
 
 $$
@@ -9,11 +9,11 @@ $$
 $$
 
 > **Definition 1.2.2 (Polar Form of a Complex Number)**
->
+> 
 > The polar form of a nonzero complex number $z=x+iy$ is $z=re^{i\phi}$, where $r=\left|z\right|$, $\phi$ is the argument $\operatorname{Arg}z$ (determined up to an integer multiple of $2\pi$), and $e^{i\phi}=\cos\phi+i\sin\phi$.
 
 > **Definition 1.3.1 (Stereographic Projection)**
->
+> 
 > On the unit sphere $S:\xi^{2}+\eta^{2}+\zeta^{2}=1$, the point $z=\left(x,y\right)$ in the complex plane corresponds to
 
 $$
@@ -23,7 +23,7 @@ $$
 establishing a bijection between $\mathbb{C}$ and $S\setminus\left\{N\right\}$ (the sphere minus the north pole).
 
 > **Definition 1.4.2 (Chordal Metric)**
->
+> 
 > For $z,w\in\mathbb{C}$, the chordal distance is
 
 $$

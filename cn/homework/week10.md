@@ -1,19 +1,19 @@
 # week10
 
 > **定理 10.1.1 (最大模原理)**
->
+> 
 > 若区域 $D$ 上的全纯函数 $f$ 的模 $\left|f\right|$ 在 $z_{0}\in D$ 处有局部极大值, 则 $f$ 在 $D$ 上为常值.
 
 > **定理 10.1.4 (开映射定理)**
->
+> 
 > 非常值的全纯函数把区域映成区域.
 
 > **定理 10.3.1 (施瓦茨引理)**
->
+> 
 > 若 $f:\mathbb{D}\to\mathbb{D}$ 全纯且 $f\left(0\right)=0$, 则 $\left|f\left(z\right)\right|\le\left|z\right|$ 且 $\left|f'\left(0\right)\right|\le1$; 等号在某点成立 (或 $\left|f'\left(0\right)\right|=1$) 当且仅当 $f\left(z\right)=e^{i\theta}z$.
 
 > **定义 10.3.2 (布拉施克因子)**
->
+> 
 > 对 $a\in\mathbb{D}$, 称
 
 $$
