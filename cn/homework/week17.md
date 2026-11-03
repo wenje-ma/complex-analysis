@@ -1,16 +1,8 @@
 # week17
 
-> **基础知识: 柯西积分公式**
-> 
-> $f$ 在 $\overline{B\left(a,r\right)}$ 全纯, 则
-
 $$
 f\left(a\right)=\frac{1}{2\pi i}\oint_{\left|z-a\right|=r}\frac{f\left(z\right)}{z-a}\,dz.
 $$
-
-> **基础知识: 标准积分**
-> 
-> 对 $0< \alpha< 2$, $a> 0$,
 
 $$
 \int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.
@@ -32,7 +24,7 @@ $$
 
 ### 解答 14.3-6
 
-取 $z^{1/n}$ 的 $\operatorname{Log}$ 分支 (割正实轴), 用**基础知识: 标准积分** $\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}$, 这里 $\alpha-1=\frac1n$, 即 $\alpha=1+\frac1n$. 则
+取 $z^{1/n}$ 的 $\operatorname{Log}$ 分支 (割正实轴), 用标准积分 $\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}$, 这里 $\alpha-1=\frac1n$, 即 $\alpha=1+\frac1n$. 则
 
 $$
 \int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx
@@ -78,7 +70,7 @@ $$
 \int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}\,dz=n\int_{\gamma}\frac{z}{z-z_{0}}\,dz=n\cdot2\pi i\cdot z_{0},
 $$
 
-末等式用**基础知识: 柯西积分公式** ($z$ 在 $z=z_{0}$ 处的值). 于是 $\frac{1}{2\pi n i}\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}dz=z_{0}$. $\blacksquare$
+末等式用柯西积分公式 ($z$ 在 $z=z_{0}$ 处的值). 于是 $\frac{1}{2\pi n i}\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}dz=z_{0}$. $\blacksquare$
 
 ---
 
@@ -88,7 +80,7 @@ $$
 
 ### 解答 14.3-11
 
-(i) 部分分式 $\frac{1}{\left(z-a\right)\left(z-b\right)}=\frac{1}{a-b}\left(\frac{1}{z-a}-\frac{1}{z-b}\right)$. $a,b$ 都在圆 $\left|z\right|=R$ 内, 由**基础知识: 柯西积分公式**,
+(i) 部分分式 $\frac{1}{\left(z-a\right)\left(z-b\right)}=\frac{1}{a-b}\left(\frac{1}{z-a}-\frac{1}{z-b}\right)$. $a,b$ 都在圆 $\left|z\right|=R$ 内, 由柯西积分公式,
 
 $$
 \int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz=\frac{1}{a-b}\left(\int_{\gamma}\frac{f\left(z\right)}{z-a}dz-\int_{\gamma}\frac{f\left(z\right)}{z-b}dz\right)=\frac{2\pi i}{a-b}\left(f\left(a\right)-f\left(b\right)\right).

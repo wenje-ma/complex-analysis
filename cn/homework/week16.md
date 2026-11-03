@@ -1,9 +1,5 @@
 # week16
 
-> **基础知识: 留数之和公式**
-> 
-> 全复平面上的亚纯函数 $f$ 的全体有限留数与 $\infty$ 处留数之和为零, 且
-
 $$
 \operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right).
 $$

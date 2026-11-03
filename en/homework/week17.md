@@ -1,16 +1,8 @@
 # week17
 
-> **Basic Knowledge: Cauchy Integral Formula**
-> 
-> If $f$ is holomorphic on $\overline{B\left(a,r\right)}$, then
-
 $$
 f\left(a\right)=\frac{1}{2\pi i}\oint_{\left|z-a\right|=r}\frac{f\left(z\right)}{z-a}\,dz.
 $$
-
-> **Basic Knowledge: Standard Integral**
-> 
-> For $0< \alpha< 2$, $a> 0$,
 
 $$
 \int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.
@@ -32,7 +24,7 @@ Compute $\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx$, where $2\le n\in\ma
 
 ### Solution 14.3-6
 
-Take the $\operatorname{Log}$ branch of $z^{1/n}$ (cut along the positive real axis), and use **Basic Knowledge: Standard Integral** $\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}$, with $\alpha-1=\frac1n$, i.e. $\alpha=1+\frac1n$. Then
+Take the $\operatorname{Log}$ branch of $z^{1/n}$ (cut along the positive real axis), and use Standard Integral $\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}$, with $\alpha-1=\frac1n$, i.e. $\alpha=1+\frac1n$. Then
 
 $$
 \int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx
@@ -78,7 +70,7 @@ $$
 \int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}\,dz=n\int_{\gamma}\frac{z}{z-z_{0}}\,dz=n\cdot2\pi i\cdot z_{0},
 $$
 
-where the last equality uses **Basic Knowledge: Cauchy Integral Formula** (value of $z$ at $z=z_{0}$). Thus $\frac{1}{2\pi n i}\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}dz=z_{0}$. $\blacksquare$
+where the last equality uses Cauchy Integral Formula (value of $z$ at $z=z_{0}$). Thus $\frac{1}{2\pi n i}\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}dz=z_{0}$. $\blacksquare$
 
 ---
 
@@ -88,7 +80,7 @@ Let $f$ be entire, $R> 0$, $a,b\in\mathbb{C}$ with $\left|a\right|,\left|b\right
 
 ### Solution 14.3-11
 
-(i) Partial fractions: $\frac{1}{\left(z-a\right)\left(z-b\right)}=\frac{1}{a-b}\left(\frac{1}{z-a}-\frac{1}{z-b}\right)$. Both $a,b$ lie inside $\left|z\right|=R$; by **Basic Knowledge: Cauchy Integral Formula**,
+(i) Partial fractions: $\frac{1}{\left(z-a\right)\left(z-b\right)}=\frac{1}{a-b}\left(\frac{1}{z-a}-\frac{1}{z-b}\right)$. Both $a,b$ lie inside $\left|z\right|=R$; by Cauchy Integral Formula,
 
 $$
 \int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz=\frac{1}{a-b}\left(\int_{\gamma}\frac{f\left(z\right)}{z-a}dz-\int_{\gamma}\frac{f\left(z\right)}{z-b}dz\right)=\frac{2\pi i}{a-b}\left(f\left(a\right)-f\left(b\right)\right).

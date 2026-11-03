@@ -1,9 +1,5 @@
 # week16
 
-> **Basic Knowledge: Sum of Residues Formula**
-> 
-> For a meromorphic function $f$ on the whole complex plane, the sum of all finite residues plus the residue at $\infty$ is zero, and
-
 $$
 \operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right).
 $$

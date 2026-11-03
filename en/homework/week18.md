@@ -1,9 +1,5 @@
 # week18
 
-> **Basic Knowledge: Sum of Residues Formula**
-> 
-> A meromorphic function on the whole plane has zero integral along a large contour enclosing all singularities, i.e. the sum of all residues is zero.
-
 > **Definition 15.1.1 (Entire and Meromorphic Functions)**
 > 
 > A function holomorphic everywhere on the complex plane $\mathbb{C}$ is called entire; a function holomorphic except at poles is called meromorphic.
