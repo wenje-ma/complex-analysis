@@ -1,179 +1,229 @@
 # week9
 
-> **Theorem 8.3.2 (Higher Derivative Formula)**
+> **Theorem 14.1.3 (Residue Theorem)**
 > 
-> If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then $f$ has derivatives of all orders at $z$ and
+> If $f$ is holomorphic on a domain $D$ except at finitely many isolated singularities, and $\gamma$ is a Jordan closed curve in $D$ enclosing all these singularities, then
 
-$$
-f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta.
-$$
-
-> **Theorem 9.1.3 (Liouville's Theorem)**
+> **Definition 15.1.1 (Entire and Meromorphic Functions)**
 > 
-> Every bounded entire function on $\mathbb{C}$ is constant.
+> A function holomorphic everywhere on the complex plane $\mathbb{C}$ is called entire; a function holomorphic except at poles is called meromorphic.
 
-> **Theorem 9.3.2 (Identity Theorem)**
+> **Theorem 15.2.7 (Argument Principle)**
 > 
-> If the zeros of a holomorphic function $f$ on a domain $D$ have an accumulation point in $D$, then $f\equiv0$.
+> If $f$ is meromorphic on a domain $D$, the zeros $a_{j}$ have order $r_{j}$, the poles $p_{k}$ have order $s_{k}$, and $\Gamma$ is a Jordan closed curve in $D$ avoiding these points, then
 
-> **Theorem 9.3.3 (Uniqueness Theorem)**
+$$
+\frac{1}{2\pi i}\int_{\Gamma}\frac{f'}{f}\,dz=\sum r_{j}-\sum s_{k}.
+$$
+
+> **Definition 16.1.1 (Harmonic Function)**
 > 
-> If two holomorphic functions $f,g$ on a domain $D$ agree on a set with an accumulation point in $D$, then $f\equiv g$.
+> A real-valued $C^{2}$ function $u$ on a domain $D$ is called harmonic if $\Delta u=u_{xx}+u_{yy}=0$ on $D$.
 
-> **Theorem 10.1.4 (Open Mapping Theorem)**
+> **Proposition 16.1.6 (Mean Value Property)**
 > 
-> A nonconstant holomorphic function maps domains onto domains (open sets).
-
-## 9.4-2
-
-Let $f$ be holomorphic on the unit disk $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$ with $\left|f'\left(z\right)\right|\le\frac{1}{1-\left|z\right|}$ for all $z\in\mathbb{D}$. Prove: every Taylor coefficient $c_{n}$ of $f$ at $z=0$ satisfies $\left|c_{n}\right|< e$ for all $n\in\mathbb{N}\setminus\left\{0\right\}$.
-
-### Solution 9.4-2
-
-The Taylor coefficients at $0$ are $c_{n}=\frac{f^{\left(n\right)}\left(0\right)}{n!}$. By **Theorem 8.3.2 (Higher Derivative Formula)** applied to $f'$ at order $n-1$, taking $0< r< 1$,
+> A harmonic function $u$ on $B\left(a,R\right)$ satisfies
 
 $$
-f^{\left(n\right)}\left(0\right)=\frac{\left(n-1\right)!}{2\pi i}\int_{\left|z\right|=r}\frac{f'\left(z\right)}{z^{n}}\,dz.
+u\left(a\right)=\frac{1}{2\pi}\int_{0}^{2\pi}u\left(a+Re^{i\theta}\right)d\theta.
 $$
 
-Hence
+> **Theorem 16.2.9 (Poisson Integral)**
+> 
+> The Dirichlet problem on the disk $B\left(a,R\right)$ has solution
 
 $$
-\left|c_{n}\right|=\frac{\left|f^{\left(n\right)}\left(0\right)\right|}{n!}\le\frac{\left(n-1\right)!}{n!}\cdot\frac{1}{2\pi}\cdot\frac{1}{1-r}\cdot\frac{2\pi r}{r^{n}}=\frac{1}{n}\cdot\frac{r^{1-n}}{1-r}.
+u\left(z\right)=\frac{R^{2}-\left|z-a\right|^{2}}{2\pi R}\int_{0}^{2\pi}\frac{f\left(a+Re^{i\theta}\right)}{\left|z-a-Re^{i\theta}\right|^{2}}d\theta.
 $$
 
-Optimize over $r\in\left(0,1\right)$. Let $h\left(r\right)=\frac{r^{1-n}}{1-r}$; $h'\left(r\right)=0$ gives $r=\frac{n-1}{n}$, and
+> **Theorem 16.2.10 (Dirichlet Problem on Bounded Jordan Domains)**
+> 
+> The Dirichlet problem on a bounded Jordan domain is solvable.
+
+## 14.3-10
+
+Let $\gamma\subset\mathbb{C}$ be a Jordan closed curve, $D$ its interior, $f$ holomorphic on $\overline{D}=D\cup\gamma$, and $z_{0}\in D$ the unique zero of $f$ in $D$. Prove: $z_{0}=\frac{1}{2\pi n i}\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}\,dz$, where $n$ is the order of the zero at $z_{0}$.
+
+### Solution to 14.3-10
+
+Since $z_{0}$ is the unique $n$-th order zero of $f$ in $D$, write $f\left(z\right)=\left(z-z_{0}\right)^{n}g\left(z\right)$, with $g$ holomorphic on $\overline{D}$ and $g\ne0$. Then
 
 $$
-h\left(\frac{n-1}{n}\right)=\frac{\left(\frac{n-1}{n}\right)^{1-n}}{1-\frac{n-1}{n}}=n\left(1+\frac{1}{n-1}\right)^{n-1}.
+\frac{f'\left(z\right)}{f\left(z\right)}=\frac{n}{z-z_{0}}+\frac{g'\left(z\right)}{g\left(z\right)}.
 $$
 
-Thus $\left|c_{n}\right|\le\left(1+\frac{1}{n-1}\right)^{n-1}< e$ (since $\left(1+\frac{1}{m}\right)^{m}< e$). $\blacksquare$
-
-## 9.4-4
-
-Let $D$ be a domain containing the origin, and $f\left(x\right):=\begin{cases}e^{-1/x^{2}},&x\ne0\\0,&x=0\end{cases}$. Does there exist a holomorphic function on $D$ whose restriction to the real axis equals $f$?
-
-### Solution 9.4-4
-
-No. Suppose there were a holomorphic $F$ on $D$ with $F\left(x\right)=f\left(x\right)$ on the real axis. From real analysis, $f$ has derivatives of all orders at $0$ with $f^{\left(n\right)}\left(0\right)=0$ for all $n\ge0$ (the function $e^{-1/x^{2}}$ is the standard example of a real-smooth but non-real-analytic function). Since $F$ agrees with $f$ on the real axis, $F^{\left(n\right)}\left(0\right)=f^{\left(n\right)}\left(0\right)=0$, so all Taylor coefficients of $F$ at $0$ vanish, and $F\equiv0$ near $0$. By **Theorem 9.3.2 (Identity Theorem)**, $F\equiv0$ on $D$. But for real $x\ne0$, $F\left(x\right)=0\ne e^{-1/x^{2}}=f\left(x\right)$, a contradiction. Hence no such function exists. $\blacksquare$
-
-## 9.4-6
-
-Let $f,g$ be holomorphic and nonzero on $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$. Prove: if $\frac{f'\left(x_{n}\right)}{f\left(x_{n}\right)}=\frac{g'\left(x_{n}\right)}{g\left(x_{n}\right)}$ for $x_{n}=\frac{1}{n}$, $n=2,3,\cdots$, then $f=cg$ for some $c\in\mathbb{C}$.
-
-### Solution 9.4-6
-
-Since $f,g$ are nonzero on $\mathbb{D}$, $\frac{f'}{f}-\frac{g'}{g}$ is holomorphic on $\mathbb{D}$. By assumption it vanishes on $\left\{x_{n}\right\}$, and $x_{n}=\frac{1}{n}\to0\in\mathbb{D}$, so the zeros have an accumulation point $0$ in $\mathbb{D}$. By **Theorem 9.3.2 (Identity Theorem)**, $\frac{f'}{f}-\frac{g'}{g}\equiv0$, i.e. $\frac{f'}{f}=\frac{g'}{g}$ on $\mathbb{D}$.
-
-Hence $\left(\log f\right)'=\left(\log g\right)'$ on $\mathbb{D}$ (taking any local logarithm branch), so $\log f-\log g$ is locally constant on $\mathbb{D}$; since $\mathbb{D}$ is connected, there is $c_{0}\in\mathbb{C}$ with $\log f=\log g+c_{0}$ on $\mathbb{D}$. Exponentiating, $f=e^{c_{0}}g$, i.e. $f=cg$ with $c=e^{c_{0}}$. $\blacksquare$
-
-## 9.4-8
-
-(Borel-Carathéodory inequality) Let $f$ be holomorphic on the closed disk $\left\{z\in\mathbb{C}:\left|z\right|\le R\right\}$, and $\sum_{k=0}^{\infty}a_{k}z^{k}$ its Taylor series at $0$. Prove:
+$\frac{g'}{g}$ is holomorphic on $\overline{D}$, so its integral around the closed curve vanishes; hence
 
 $$
-\left|a_{k}\right|R^{k}\le4\max_{0\le\theta\le2\pi}\operatorname{Re}f\left(Re^{i\theta}\right)+4\left|f\left(0\right)\right|,\quad\forall k\in\mathbb{N}.
+\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}\,dz=n\int_{\gamma}\frac{z}{z-z_{0}}\,dz=n\cdot2\pi i\cdot z_{0},
 $$
 
-### Solution 9.4-8
+where the last equality uses Cauchy Integral Formula (value of $z$ at $z=z_{0}$). Thus $\frac{1}{2\pi n i}\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}dz=z_{0}$. $\blacksquare$
 
-Write $A=\max_{0\le\theta\le2\pi}\operatorname{Re}f\left(Re^{i\theta}\right)$, $u=\operatorname{Re}f$. For $k\ge1$, from $f\left(Re^{i\theta}\right)=\sum_{j=0}^{\infty}a_{j}R^{j}e^{ij\theta}$ and the Fourier expansion of $u=\operatorname{Re}f$,
+## 14.3-11
 
-$$
-\frac{1}{2\pi}\int_{0}^{2\pi}u\left(Re^{i\theta}\right)e^{-ik\theta}\,d\theta=\frac{1}{2}a_{k}R^{k},
-$$
+Let $f$ be entire, $R> 0$, $a,b\in\mathbb{C}$ with $\left|a\right|,\left|b\right|< R$. (i) Compute $\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz$, where $\gamma\left(t\right)=Re^{it}$, $t\in\left[0,2\pi\right]$; (ii) use the integral in (i) to prove Liouville's theorem: bounded entire functions are constant.
 
-so $a_{k}R^{k}=\frac{1}{\pi}\int_{0}^{2\pi}u\left(Re^{i\theta}\right)e^{-ik\theta}\,d\theta$. Let $A_{+}=\max\left(A,0\right)$; then $u\left(Re^{i\theta}\right)\le A\le A_{+}$, and $\left|u\right|\le2A_{+}-u$. Hence
+### Solution to 14.3-11
 
-$$
-\left|a_{k}\right|R^{k}\le\frac{1}{\pi}\int_{0}^{2\pi}\left|u\left(Re^{i\theta}\right)\right|\,d\theta\le\frac{1}{\pi}\int_{0}^{2\pi}\left(2A_{+}-u\left(Re^{i\theta}\right)\right)\,d\theta=4A_{+}-2\operatorname{Re}f\left(0\right).
-$$
-
-Since $-\operatorname{Re}f\left(0\right)\le\left|\operatorname{Re}f\left(0\right)\right|\le\left|f\left(0\right)\right|$ and $A\ge\operatorname{Re}f\left(0\right)\ge-\left|f\left(0\right)\right|$ implies $4A_{+}\le4A+4\left|f\left(0\right)\right|$,
+(i) Partial fractions: $\frac{1}{\left(z-a\right)\left(z-b\right)}=\frac{1}{a-b}\left(\frac{1}{z-a}-\frac{1}{z-b}\right)$. Both $a,b$ lie inside $\left|z\right|=R$; by Cauchy Integral Formula,
 
 $$
-\left|a_{k}\right|R^{k}\le4A+4\left|f\left(0\right)\right|,\quad k\ge1.
+\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz=\frac{1}{a-b}\left(\int_{\gamma}\frac{f\left(z\right)}{z-a}dz-\int_{\gamma}\frac{f\left(z\right)}{z-b}dz\right)=\frac{2\pi i}{a-b}\left(f\left(a\right)-f\left(b\right)\right).
 $$
 
-For $k=0$, $\left|a_{0}\right|=\left|f\left(0\right)\right|\le4A+4\left|f\left(0\right)\right|$ is immediate. $\blacksquare$
-
-## 9.4-10
-
-(L'Hôpital's rule) Let $D\subset\mathbb{C}$ be open, $f,g$ holomorphic on $D$, and $a\in D$ a common isolated zero. Prove:
-
-(i) if both $f$ and $g$ have a zero of order $m$ at $a$, then $\lim_{z\to a}\frac{f\left(z\right)}{g\left(z\right)}=\lim_{z\to a}\frac{f^{\left(m\right)}\left(z\right)}{g^{\left(m\right)}\left(z\right)}$;
-
-(ii) $\lim_{z\to a}\frac{f\left(z\right)}{g\left(z\right)}=\lim_{z\to a}\frac{f'\left(z\right)}{g'\left(z\right)}$ (including the case where the limit is $\infty$).
-
-### Solution 9.4-10
-
-(i) Since $f$ has a zero of order $m$ at $a$, $f\left(z\right)=\left(z-a\right)^{m}f_{1}\left(z\right)$ with $f_{1}\left(a\right)\ne0$; similarly $g\left(z\right)=\left(z-a\right)^{m}g_{1}\left(z\right)$ with $g_{1}\left(a\right)\ne0$. Thus
+(ii) Suppose $f$ is bounded: $\left|f\right|\le M$. Estimate the integral in (i): on $\left|z\right|=R$, $\left|\left(z-a\right)\left(z-b\right)\right|\ge R^{2}$ (for large $R$), so
 
 $$
-\frac{f\left(z\right)}{g\left(z\right)}=\frac{f_{1}\left(z\right)}{g_{1}\left(z\right)}\to\frac{f_{1}\left(a\right)}{g_{1}\left(a\right)}.
+\left|\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz\right|\le\frac{M}{R^{2}}\cdot2\pi R=\frac{2\pi M}{R}\to0\quad\left(R\to\infty\right).
 $$
 
-On the other hand, by Leibniz's rule, $f^{\left(m\right)}\left(a\right)=m!f_{1}\left(a\right)$ and $g^{\left(m\right)}\left(a\right)=m!g_{1}\left(a\right)$, so
+By (i), $\frac{2\pi i}{a-b}\left(f\left(a\right)-f\left(b\right)\right)\to0$, so $f\left(a\right)=f\left(b\right)$ for all $a,b$, i.e. $f$ is constant. $\blacksquare$
+
+## 14.3-16
+
+Let $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (so $\beta^{2}=i\pi$), and consider $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta z}}$. (i) Verify that $f$ has singularities only at $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,\ n\in\mathbb{Z}\right\}$, all simple poles; (ii) verify $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$ for all $z\in\mathbb{C}\setminus\mathcal{Z}$; (iii) for large $R> 0$, consider the parallelogram $\Omega$ with vertices $-R,R,R+\beta,-R+\beta$; verify $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi i\operatorname{Res}_{z_{0}}f$, where $z_{0}$ is as in (i); (iv) use the above to verify $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
+
+### Solution to 14.3-16
+
+(i) The singularities of $f$ are the zeros of the denominator $1+e^{-2\beta z}=0$, i.e. $e^{-2\beta z}=-1$, i.e. $-2\beta z=i\pi\left(1+2k\right)$, $z=-\frac{i\pi\left(1+2k\right)}{2\beta}$. Since $\beta^{2}=i\pi$, this gives $z=\frac{\left(2k+1\right)\beta}{2}=\left(k+\frac12\right)\beta=z_{k}$, $k\in\mathbb{Z}$. Hence the singularities are exactly $\mathcal{Z}$. At $z_{n}$, $\frac{d}{dz}\left(1+e^{-2\beta z}\right)=-2\beta e^{-2\beta z_{n}}=-2\beta\left(-1\right)=2\beta\ne0$, so all are simple poles.
+
+(ii) Write $u=e^{-2\beta z}$. Since $\beta^{2}=i\pi$, $e^{-\beta^{2}}=e^{-i\pi}=-1$, $e^{-2\beta^{2}}=1$. Then
 
 $$
-\lim_{z\to a}\frac{f^{\left(m\right)}\left(z\right)}{g^{\left(m\right)}\left(z\right)}=\frac{m!f_{1}\left(a\right)}{m!g_{1}\left(a\right)}=\frac{f_{1}\left(a\right)}{g_{1}\left(a\right)}=\lim_{z\to a}\frac{f\left(z\right)}{g\left(z\right)}.
+f\left(z\right)-f\left(z+\beta\right)=\frac{e^{-z^{2}}}{1+u}-\frac{e^{-z^{2}-2\beta z-\beta^{2}}}{1+u}=e^{-z^{2}}\frac{1-\left(-1\right)u}{1+u}=e^{-z^{2}}\frac{1+u}{1+u}=e^{-z^{2}}.
 $$
 
-(ii) Let $p$ be the order of $f$ at $a$, $q$ that of $g$. If $p> q$, then $f\left(z\right)=\left(z-a\right)^{p}f_{1}$, $g\left(z\right)=\left(z-a\right)^{q}g_{1}$ with $f_{1}\left(a\right)g_{1}\left(a\right)\ne0$, so $\frac{f}{g}=\left(z-a\right)^{p-q}\frac{f_{1}}{g_{1}}\to0$; meanwhile $f'$ has order $p-1$, $g'$ order $q-1$, and $\frac{f'}{g'}\to0$, so they agree. If $p< q$, similarly $\frac{f}{g}\to\infty$ and $\frac{f'}{g'}\to\infty$. If $p=q=m$, applying (i) to $f',g'$ (both zeros of order $m-1$) gives $\lim\frac{f'}{g'}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, and by (i) $\lim\frac{f}{g}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, so they agree. $\blacksquare$
-
-## 9.4-13
-
-Let $f$ be holomorphic on a domain $D\subset\mathbb{C}$. Suppose for every $z\in D$ there exist $m,n\in\mathbb{N}\setminus\left\{0\right\}$ such that $\left(f\left(z\right)\right)^{m}=\left(f\left(z\right)\right)^{n}$. Prove: $f$ is constant on $D$.
-
-### Solution 9.4-13
-
-Assume without loss of generality $m> n$ (otherwise swap); then $\left(f\left(z\right)\right)^{m}=\left(f\left(z\right)\right)^{n}$ becomes
+(iii) The parallelogram is $\Omega=\left\{x+t\beta:\ x\in\left[-R,R\right],\ t\in\left[0,1\right]\right\}$. The pole $z_{n}=\left(n+\frac12\right)\beta$ lies inside $\Omega$ iff $n+\frac12\in\left[0,1\right]$, i.e. $n=0$; hence the only pole in $\Omega$ is $z_{0}=\frac\beta2$. By **Theorem 14.1.3 (Residue Theorem)**,
 
 $$
-\left(f\left(z\right)\right)^{n}\left(\left(f\left(z\right)\right)^{m-n}-1\right)=0,
+\oint_{\partial\Omega}f\left(z\right)\,dz=2\pi i\operatorname{Res}_{z_{0}}f=2\pi i\frac{e^{-z_{0}^{2}}}{2\beta}=2\pi i\frac{e^{-\beta^{2}/4}}{2\beta}.
 $$
 
-so for each $z$, either $f\left(z\right)=0$ or $\left(f\left(z\right)\right)^{m-n}=1$. The latter means $f\left(z\right)$ is a root of unity, hence $\left|f\left(z\right)\right|=1$. Therefore
+The integrals along the two vertical sides ($x=\pm R$) tend to $0$ by exponential decay of $f$; the difference between top and bottom is given by (ii):
 
 $$
-f\left(D\right)\subset\left\{0\right\}\cup\left\{w\in\mathbb{C}:\left|w\right|=1\right\}.
+\oint_{\partial\Omega}f\left(z\right)\,dz=\int_{-R}^{R}\left(f\left(x\right)-f\left(x+\beta\right)\right)dx=\int_{-R}^{R}e^{-x^{2}}dx.
 $$
 
-The set $\left\{0\right\}\cup\left\{\left|w\right|=1\right\}$ has no interior points in $\mathbb{C}$. If $f$ were nonconstant, by **Theorem 10.1.4 (Open Mapping Theorem)**, $f\left(D\right)$ would be open and hence have interior points, a contradiction. Thus $f$ is constant on $D$. $\blacksquare$
-
-## 9.4-15
-
-Does there exist a holomorphic function $f\left(z\right)$ on $\mathbb{C}$ satisfying $\left|f\left(z\right)\right|> \left|z\right|$ for all $z\in\mathbb{C}$?
-
-### Solution 9.4-15
-
-No. Suppose there were. At $z=0$, $\left|f\left(0\right)\right|> 0$, so $f\left(0\right)\ne0$; for $z\ne0$, $\left|f\left(z\right)\right|> \left|z\right|> 0$, so $f$ never vanishes on $\mathbb{C}$. Define the entire function
+Letting $R\to\infty$ gives $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi i\operatorname{Res}_{z_{0}}f$. Also $e^{-\beta^{2}/4}=e^{-i\pi/4}$, $\frac{e^{-i\pi/4}}{\beta}=\frac{e^{-i\pi/4}}{\sqrt\pi e^{i\pi/4}}=\frac{e^{-i\pi/2}}{\sqrt\pi}=-\frac{i}{\sqrt\pi}$, so
 
 $$
-g\left(z\right)=\frac{z}{f\left(z\right)},
+\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi i\cdot\frac{e^{-i\pi/4}}{2\beta}=\pi i\cdot\left(-\frac{i}{\sqrt\pi}\right)=\sqrt\pi.
 $$
 
-then $g\left(0\right)=0$, and for $z\ne0$, $\left|g\left(z\right)\right|=\frac{\left|z\right|}{\left|f\left(z\right)\right|}< 1$. Hence $\left|g\left(z\right)\right|< 1$ on all of $\mathbb{C}$, so $g$ is a bounded entire function. By **Theorem 9.1.3 (Liouville's Theorem)**, $g$ is constant; since $g\left(0\right)=0$, $g\equiv0$, contradicting $g\left(z\right)=\frac{z}{f\left(z\right)}\ne0$ for $z\ne0$. Hence no such function exists. $\blacksquare$
-
-## 9.4-17
-
-Let $f:\mathbb{C}\to\mathbb{D}=\left\{\left|z\right|< 1\right\}$ be holomorphic on $\mathbb{C}$ with $f\left(2\right)=\frac{2+i}{8}$. Find $f\left(10\right)$.
-
-### Solution 9.4-17
-
-Since $f:\mathbb{C}\to\mathbb{D}$ takes values in the open unit disk, $\left|f\left(z\right)\right|< 1$ on $\mathbb{C}$, so $f$ is a bounded entire function. By **Theorem 9.1.3 (Liouville's Theorem)**, $f$ is constant on $\mathbb{C}$. Hence
+(iv) Substitute $x=\sqrt2\,t$:
 
 $$
-f\left(10\right)=f\left(2\right)=\frac{2+i}{8}.
+\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt2\int_{-\infty}^{+\infty}e^{-t^{2}}dt=\sqrt2\cdot\sqrt\pi=\sqrt{2\pi}.
 $$
 
 $\blacksquare$
 
-## 9.4-18
+## 15.4-5
 
-Let $f$ be holomorphic on $\mathbb{C}$, and suppose there exist $a_{1},a_{2}\in\mathbb{C}$ with $\operatorname{Im}\frac{a_{1}}{a_{2}}\ne0$ such that $f\left(z+a_{1}\right)=f\left(z\right)=f\left(z+a_{2}\right)$ for all $z\in\mathbb{C}$. Prove: $f$ is constant.
+Prove: $\frac{1}{\sin^{2}z}=\sum_{n=-\infty}^{+\infty}\frac{1}{\left(z-n\pi\right)^{2}}$.
 
-### Solution 9.4-18
+### Solution to 15.4-5
 
-$\operatorname{Im}\frac{a_{1}}{a_{2}}\ne0$ means $\frac{a_{1}}{a_{2}}\notin\mathbb{R}$, so $a_{1},a_{2}$ are linearly independent over $\mathbb{R}$. By periodicity, the parallelogram $\Pi=\left\{sa_{1}+ta_{2}:0\le s,t\le1\right\}$ is a fundamental parallelogram for $f$; it is bounded (compact) in $\mathbb{C}$, so $\left|f\right|$ is bounded on $\Pi$. For any $z\in\mathbb{C}$, there exist $s,t\in\left[0,1\right)$ and $m,n\in\mathbb{Z}$ with $z=sa_{1}+ta_{2}+ma_{1}+na_{2}$; by double periodicity $f\left(z\right)=f\left(sa_{1}+ta_{2}\right)$, so $\left|f\right|$ is uniformly bounded on $\mathbb{C}$. Thus $f$ is a bounded entire function, and by **Theorem 9.1.3 (Liouville's Theorem)**, $f$ is constant. $\blacksquare$
+$\frac{1}{\sin^{2}z}$ has second-order poles at $z=n\pi$, and its principal part near $z=n\pi$ is exactly $\frac{1}{\left(z-n\pi\right)^{2}}$ (since $\sin z\sim\left(-1\right)^{n}\left(z-n\pi\right)$, $\sin^{2}z\sim\left(z-n\pi\right)^{2}$). Write
+
+$$
+F\left(z\right):=\frac{1}{\sin^{2}z}-\sum_{n=-\infty}^{+\infty}\frac{1}{\left(z-n\pi\right)^{2}}.
+$$
+
+The series converges locally uniformly on compact subsets of $\mathbb{C}$ (away from punctured neighborhoods of the poles), and its principal part at each $n\pi$ matches that of $\frac{1}{\sin^{2}z}$, so $F$ is holomorphic on $\mathbb{C}$ (each pole is canceled); it is an entire function by **Definition 15.1.1 (Entire and Meromorphic Functions)**. Also $\sin^{2}\left(z+\pi\right)=\sin^{2}z$ and $\sum_{n}\frac{1}{\left(z+\pi-n\pi\right)^{2}}=\sum_{n}\frac{1}{\left(z-n\pi\right)^{2}}$, so $F\left(z+\pi\right)=F\left(z\right)$, i.e. $F$ has period $\pi$. On the fundamental strip $\left|\operatorname{Re}z\right|\le\frac\pi2$, as $\left|\operatorname{Im}z\right|\to+\infty$, $\frac{1}{\sin^{2}z}\to0$ and the series $\to0$, so $F$ is bounded on the strip; by periodicity, bounded on $\mathbb{C}$. By Liouville's theorem, $F$ is constant; and $F\to0$ as $\operatorname{Im}z\to+\infty$, so $F\equiv0$, as claimed. $\blacksquare$
+
+## 15.4-8
+
+Let $P,Q$ be polynomials with $\deg Q\ge\deg P+2$, $g=\frac{P}{Q}$, and $f\left(z\right)=g\left(z\right)\cot\pi z$. Let $Z\left(Q\right)$ be the set of zeros of $Q$. (i) Prove: there exist $M> 0$ and $R> 0$ such that $\left|g\left(z\right)\right|\le\frac{M}{\left|z\right|^{2}}$ for all $z\notin\left\{\left|z\right|\le R\right\}$; (ii) let $N\in\mathbb{N}$ with $N> R$, and let $C_{N}$ be the rectangle with sides on $\operatorname{Re}z=\pm\left(N+\frac12\right)$ and $\operatorname{Im}z=\pm N$; prove $\lim_{N\to\infty}\int_{C_{N}}f\left(z\right)\,dz=0$; (iii) prove: for any $n\in\mathbb{Z}\setminus Z\left(Q\right)$, $\operatorname{Res}_{z=n}f=\frac{g\left(n\right)}{\pi}$; (iv) prove: $\sum_{n=-\infty}^{+\infty}\operatorname{Res}_{z=n}f=-\sum_{a\in Z\left(Q\right)\setminus\mathbb{Z}}\operatorname{Res}_{z=a}f$; (v) take $g\left(z\right)=\frac{1}{z^{2}+c^{2}}$, $c> 0$, and compute $\sum_{n=1}^{+\infty}\frac{1}{n^{2}+c^{2}}$.
+
+### Solution to 15.4-8
+
+(i) Since $\deg Q\ge\deg P+2$, $g\left(z\right)=\frac{P\left(z\right)}{Q\left(z\right)}$ satisfies $\left|g\left(z\right)\right|\le\frac{C}{\left|z\right|^{2}}$ as $\left|z\right|\to+\infty$, i.e. there exist $M,R> 0$ with $\left|g\left(z\right)\right|\le\frac{M}{\left|z\right|^{2}}$ for all $\left|z\right|> R$.
+
+(ii) On $C_{N}$, $\left|z\right|\ge N$, so $\left|g\left(z\right)\right|\le\frac{M}{N^{2}}$. On $\operatorname{Im}z=\pm N$ and $\operatorname{Re}z=\pm\left(N+\frac12\right)$, the poles $z=n$ (integers) are avoided, and $\cot\pi z$ is uniformly bounded on these sides (when $\left|\operatorname{Im}z\right|\ge N$, or $\operatorname{Re}z$ is a half-integer, $\cot\pi z$ is bounded); write $\left|\cot\pi z\right|\le K$. Then $\left|f\right|\le\frac{MK}{N^{2}}$, while the perimeter of $C_{N}$ is $\le C'N$, so
+
+$$
+\left|\int_{C_{N}}f\left(z\right)\,dz\right|\le\frac{MK}{N^{2}}\cdot C'N=\frac{C''}{N}\to0.
+$$
+
+(iii) For $n\in\mathbb{Z}\setminus Z\left(Q\right)$, $g$ is holomorphic at $n$ with $g\left(n\right)\ne0$; $\cot\pi z$ has a simple pole at $z=n$ with $\cot\pi z\sim\frac{1}{\pi\left(z-n\right)}$, $\operatorname{Res}_{z=n}\cot\pi z=\frac1\pi$. Hence $\operatorname{Res}_{z=n}f=g\left(n\right)\operatorname{Res}_{z=n}\cot\pi z=\frac{g\left(n\right)}{\pi}$.
+
+(iv) By the residue theorem on $C_{N}$ (for large $N$, $C_{N}$ contains all integers $\left|n\right|\le N$ and the poles from $Z\left(Q\right)$ inside):
+
+$$
+\int_{C_{N}}f\,dz=2\pi i\left[\sum_{\left|n\right|\le N}\operatorname{Res}_{z=n}f+\sum_{a\in Z\left(Q\right),\,a\text{ inside }C_{N}}\operatorname{Res}_{z=a}f\right].
+$$
+
+By (ii), letting $N\to\infty$ gives $\sum_{n=-\infty}^{+\infty}\operatorname{Res}_{z=n}f+\sum_{a\in Z\left(Q\right)}\operatorname{Res}_{z=a}f=0$. If $Z\left(Q\right)\cap\mathbb{Z}=\emptyset$ (as in (v)), then $\sum_{a\in Z\left(Q\right)}\operatorname{Res}_{z=a}f=\sum_{a\in Z\left(Q\right)\setminus\mathbb{Z}}\operatorname{Res}_{z=a}f$, as claimed.
+
+(v) $g\left(z\right)=\frac{1}{z^{2}+c^{2}}$, $Z\left(Q\right)=\left\{ic,-ic\right\}$ (non-integers). By (iii), $\operatorname{Res}_{z=n}f=\frac{1}{\pi\left(n^{2}+c^{2}\right)}$; by (iv),
+
+$$
+\sum_{n=-\infty}^{+\infty}\frac{1}{\pi\left(n^{2}+c^{2}\right)}=-\left(\operatorname{Res}_{z=ic}f+\operatorname{Res}_{z=-ic}f\right).
+$$
+
+$\operatorname{Res}_{z=ic}g=\frac{1}{2ic}$, $\operatorname{Res}_{z=-ic}g=-\frac{1}{2ic}$; $\cot\left(i\pi c\right)=-i\coth\left(\pi c\right)$, $\cot\left(-i\pi c\right)=i\coth\left(\pi c\right)$. Hence
+
+$$
+\operatorname{Res}_{z=ic}f=\frac{1}{2ic}\cdot\left(-i\coth\left(\pi c\right)\right)=-\frac{\coth\left(\pi c\right)}{2c},\quad
+\operatorname{Res}_{z=-ic}f=\left(-\frac{1}{2ic}\right)\cdot\left(i\coth\left(\pi c\right)\right)=-\frac{\coth\left(\pi c\right)}{2c}.
+$$
+
+Thus $\sum_{n=-\infty}^{+\infty}\frac{1}{n^{2}+c^{2}}=\frac{\pi\coth\left(\pi c\right)}{c}$. Since $\sum_{n=-\infty}^{+\infty}=2\sum_{n=1}^{+\infty}+\frac1{c^{2}}$,
+
+$$
+\sum_{n=1}^{+\infty}\frac{1}{n^{2}+c^{2}}=\frac12\left(\frac{\pi\coth\left(\pi c\right)}{c}-\frac{1}{c^{2}}\right)=\frac{\pi}{2c}\coth\left(\pi c\right)-\frac{1}{2c^{2}}.
+$$
+
+$\blacksquare$
+
+## 15.4-13
+
+Suppose the boundary of a domain $D\subset\mathbb{C}$ is a piecewise smooth Jordan closed curve $\Gamma$, $g$ is holomorphic on $\overline{D}=D\cup\Gamma$, and $f$ is meromorphic on $D$ with only finitely many zeros and poles in $D$. Prove: $\frac{1}{2\pi i}\int_{\Gamma}g\left(z\right)\frac{f'\left(z\right)}{f\left(z\right)}\,dz=\sum_{j=1}^{n}r_{j}g\left(a_{j}\right)-\sum_{k=1}^{m}s_{k}g\left(p_{k}\right)$, where $a_{j}$ are zeros of $f$ of order $r_{j}$, $j=1,\ldots,n$, and $p_{k}$ are poles of $f$ of order $s_{k}$, $k=1,\ldots,n$.
+
+### Solution to 15.4-13
+
+$f$ is meromorphic on $D$. Near a zero $a_{j}$ of order $r_{j}$, $f\left(z\right)=\left(z-a_{j}\right)^{r_{j}}h\left(z\right)$ with $h\left(a_{j}\right)\ne0$, so
+
+$$
+\frac{f'\left(z\right)}{f\left(z\right)}=\frac{r_{j}}{z-a_{j}}+\frac{h'\left(z\right)}{h\left(z\right)},\quad\operatorname{Res}_{z=a_{j}}\frac{f'}{f}=r_{j};
+$$
+
+near a pole $p_{k}$ of order $s_{k}$, $f\left(z\right)=\left(z-p_{k}\right)^{-s_{k}}H\left(z\right)$ with $H\left(p_{k}\right)\ne0$, $\frac{f'}{f}=-\frac{s_{k}}{z-p_{k}}+\frac{H'}{H}$, $\operatorname{Res}_{z=p_{k}}\frac{f'}{f}=-s_{k}$. Since $g$ is holomorphic, by the residue theorem inside $\Gamma$:
+
+$$
+\frac{1}{2\pi i}\int_{\Gamma}g\left(z\right)\frac{f'\left(z\right)}{f\left(z\right)}\,dz
+=\sum_{j=1}^{n}\operatorname{Res}_{z=a_{j}}\left(g\frac{f'}{f}\right)+\sum_{k=1}^{m}\operatorname{Res}_{z=p_{k}}\left(g\frac{f'}{f}\right)
+=\sum_{j=1}^{n}r_{j}g\left(a_{j}\right)-\sum_{k=1}^{m}s_{k}g\left(p_{k}\right).
+$$
+
+$\blacksquare$
+
+## 16.3-1
+
+Prove: (i) in polar coordinates $\left(r,\theta\right)$, $\Delta u=\frac{\partial^{2}u}{\partial r^{2}}+\frac1r\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}$; (ii) directly using **Definition 16.1.1 (Harmonic Function)** and the identity in (i), verify **Proposition 16.1.6 (Mean Value Property)**.
+
+### Solution to 16.3-1
+
+(i) From $x=r\cos\theta$, $y=r\sin\theta$, the chain rule:
+
+$$
+\frac{\partial}{\partial x}=\cos\theta\frac{\partial}{\partial r}-\frac{\sin\theta}{r}\frac{\partial}{\partial\theta},\quad
+\frac{\partial}{\partial y}=\sin\theta\frac{\partial}{\partial r}+\frac{\cos\theta}{r}\frac{\partial}{\partial\theta}.
+$$
+
+Squaring and adding (using $\frac{\partial}{\partial r}\circ\frac{\partial}{\partial\theta}=\frac{\partial}{\partial\theta}\circ\frac{\partial}{\partial r}$):
+
+$$
+\Delta u=\left(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}\right)u=\frac{\partial^{2}u}{\partial r^{2}}+\frac1r\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}.
+$$
+
+(ii) Fix $a$, write $M\left(r\right):=\frac{1}{2\pi}\int_{0}^{2\pi}u\left(a+re^{i\theta}\right)d\theta$. From (i) and $\Delta u=0$: $u_{rr}+\frac1r u_r+\frac1{r^{2}}u_{\theta\theta}=0$; multiply by $r$ to get $\frac{\partial}{\partial r}\left(r u_r\right)=-\frac1r u_{\theta\theta}$. Hence
+
+$$
+\frac{d}{dr}\left(rM'\left(r\right)\right)=\frac{1}{2\pi}\int_{0}^{2\pi}\frac{\partial}{\partial r}\left(r u_r\right)d\theta=-\frac{1}{2\pi r}\int_{0}^{2\pi}u_{\theta\theta}d\theta=0,
+$$
+
+so $rM'\left(r\right)$ is constant. As $r\to0$, $M'\left(r\right)\to u_r\left(a\right)$ (smooth), $rM'\left(r\right)\to0$, so the constant is $0$, $M'\left(r\right)\equiv0$, and $M$ is constant. Since $\lim_{r\to0}M\left(r\right)=u\left(a\right)$, $M\left(R\right)=u\left(a\right)$, i.e. $u\left(a\right)=\frac{1}{2\pi}\int_{0}^{2\pi}u\left(a+Re^{i\theta}\right)d\theta$. $\blacksquare$

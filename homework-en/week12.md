@@ -1,141 +1,200 @@
 # week12
 
-> **Theorem 10.3.1 (Schwarz Lemma)**
+> **Definition 20.1.1 (Riemann Zeta Function)**
 > 
-> If $f:\mathbb{D}\to\mathbb{D}$ is holomorphic with $f\left(0\right)=0$, then $\left|f\left(z\right)\right|\le\left|z\right|$ and $\left|f'\left(0\right)\right|\le1$; equality holds if and only if $f\left(z\right)=e^{i\theta}z$.
+> The Riemann zeta function is defined for $\operatorname{Re}z> 1$ by the Dirichlet series
 
-> **Definition 10.3.2 (Blaschke Factor)**
+> **Theorem 20.1.6 (Meromorphic Continuation)**
 > 
-> For $a\in\mathbb{D}$, the Blaschke factor is defined by
+> $\zeta$ extends meromorphically to $\mathbb{C}$, with only a simple pole at $z=1$, and
 
-$$
-\phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}.
-$$
-
-It is an automorphism of $\mathbb{D}$, with $\phi_{a}\left(a\right)=0$ and $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$.
-
-> **Theorem 10.3.4 (Schwarz-Pick Lemma)**
+> **Theorem 20.2.2 (Functional Equation)**
 > 
-> For holomorphic $f:\mathbb{D}\to\mathbb{D}$,
+> The Riemann zeta function satisfies the functional equation
 
-$$
-\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\overline{w}z}\right|;
-$$
-
-in differential form,
-
-$$
-\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}},
-$$
-
-with equality if and only if $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
-
-> **Theorem 11.2.2 (Riemann Mapping Theorem)**
+> **Corollary 20.2.3 (Trivial Zeros and Critical Strip)**
 > 
-> Every simply connected domain other than the whole plane is conformally equivalent to the open unit disk.
+> The trivial zeros of $\zeta$ are exactly $-2,-4,-6,\ldots$; all nontrivial zeros lie in the critical strip $0< \operatorname{Re}z< 1$.
 
-> **Definition 11.2.6 (Mapping Radius)**
+> **Theorem 21.1.3 (Bloch's Theorem)**
 > 
-> For a simply connected domain $D$ with $\mathbb{C}\setminus D\ne\varnothing$ and $a\in D$, the positive number $\rho$ for which there exists a unique conformal equivalence $f:D\to\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$ with $f\left(a\right)=0$, $f'\left(a\right)=1$, is called the mapping radius of $D$ at $a$, denoted $\rho\left(D,a\right)$.
+> There is a constant $B> 0$ such that if $f$ is holomorphic on the unit disk with $f'\left(0\right)=1$, then $f\left(\mathbb{D}\right)$ contains a disk of radius at least $B$.
 
-## 11.3-1
+> **Theorem 21.2.3 (Picard's Little Theorem)**
+> 
+> A nonconstant entire function takes every value in $\mathbb{C}$ or all but one value.
 
-Let $\gamma$ be a smooth path in the unit disk $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$. Define the hyperbolic length of $\gamma$ as $L_{h}\left(\gamma\right)=\int_{\gamma}\frac{1}{1-\left|z\right|^{2}}\left|dz\right|$. Let $f:\mathbb{D}\to\mathbb{D}$ be holomorphic. Prove: (i) $L_{h}\left(f\left(\gamma\right)\right)\le L_{h}\left(\gamma\right)$; (ii) $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$ if and only if $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
+> **Theorem 21.2.4 (Picard's Little Theorem, Meromorphic Form)**
+> 
+> A nonconstant meromorphic function omits at most two values.
 
-### Solution 11.3-1
+> **Theorem 21.4 (Picard's Great Theorem)**
+> 
+> In any punctured neighborhood of an essential singularity, a holomorphic function takes every value infinitely often (with at most one exception).
 
-(i) By the change of variables $\left|dz\right|\mapsto\left|f'\left(z\right)\right|\left|dz\right|$,
+> **Definition 22.1.5 (Normal Family)**
+> 
+> A family $\mathcal{F}$ of meromorphic functions on a domain $D$ is called normal on $D$ if every sequence in $\mathcal{F}$ has a subsequence converging in $\mathfrak{C}\left(D,\widehat{\mathbb{C}}\right)$ (uniformly on compact subsets of $D$ in the spherical chordal metric to a meromorphic function or to $\infty$).
 
-$$
-L_{h}\left(f\left(\gamma\right)\right)=\int_{\gamma}\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\left|dz\right|.
-$$
-
-By the differential form of **Theorem 10.3.4 (Schwarz-Pick Lemma)**, $\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}}$ for all $z\in\mathbb{D}$, so $L_{h}\left(f\left(\gamma\right)\right)\le L_{h}\left(\gamma\right)$.
-
-(ii) If $f\in\operatorname{auto}\left(\mathbb{D}\right)$, the Schwarz-Pick differential form is an equality, so $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$. Conversely, if $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$, the pointwise inequality $\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}}$ holds as equality along $\gamma$; by the equality condition of **Theorem 10.3.4 (Schwarz-Pick Lemma)**, $f$ is an automorphism on some open set containing $\gamma$, so $f\in\operatorname{auto}\left(\mathbb{D}\right)$. $\blacksquare$
-
-## 11.3-2
-
-Suppose that on a domain $G\subset\mathbb{C}\setminus\left\{0\right\}$, every nowhere-vanishing holomorphic function $f$ has a holomorphic logarithm $g$ on $G$ with $e^{g\left(z\right)}=f\left(z\right)$ for all $z\in G$. Prove: $G$ is simply connected.
-
-### Solution 11.3-2
-
-Suppose $G$ is not simply connected; then $\widehat{\mathbb{C}}\setminus G$ has a bounded connected component $K$. Take $a\in K$. Since $G\subset\mathbb{C}\setminus\left\{0\right\}$ and $a\notin G$, $f\left(z\right)=z-a$ is holomorphic and nonzero on $G$. By assumption, there is holomorphic $g$ on $G$ with $e^{g\left(z\right)}=z-a$, so $g'\left(z\right)=\frac{1}{z-a}$ has an antiderivative $g$ on $G$.
-
-But $K$ is a hole of $G$, so there is a closed curve $\gamma\subset G$ winding once around $a$; by Example 7.1.2, $\int_{\gamma}\frac{dz}{z-a}=2\pi i\ne0$. Since $g'$ has antiderivative $g$, $\int_{\gamma}g'\left(z\right)\,dz=0$, a contradiction. Hence $G$ is simply connected. $\blacksquare$
-
-## 11.3-9
-
-Let $\Omega\subset\mathbb{C}$ be a domain, $H\left(\Omega\right)$ the set of all holomorphic maps from $\Omega$ to the open unit disk $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$, fix $z_{0}\in\Omega$, and for $f\in H\left(\Omega\right)$ set $g_{f}\left(z\right)=\frac{f\left(z\right)-f\left(z_{0}\right)}{1-\overline{f\left(z_{0}\right)}f\left(z\right)}$. Prove:
-
-(i) $g_{f}'\left(z_{0}\right)=f'\left(z_{0}\right)\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{-1}$;
-
-(ii) $\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in H\left(\Omega\right),\ f\left(z_{0}\right)=0\right\}=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in H\left(\Omega\right)\right\}$;
-
-(iii) if $h\in H\left(\Omega\right)$ satisfies $h'\left(z_{0}\right)=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in H\left(\Omega\right)\right\}$, then $h\left(z_{0}\right)=0$;
-
-(iv) $\sup\left\{\operatorname{Re}f'\left(0\right):f\in H\left(\mathbb{D}\right)\right\}=\sup\left\{\left|f'\left(0\right)\right|:f\in H\left(\mathbb{D}\right)\right\}=1$;
-
-(v) $h\in H\left(\mathbb{D}\right)$ satisfies $\operatorname{Re}h'\left(0\right)=1$ if and only if $h\left(z\right)=z$.
-
-### Solution 11.3-9
-
-(i) $g_{f}=\phi_{f\left(z_{0}\right)}\circ f$, where $\phi_{a}\left(w\right)=\frac{w-a}{1-\overline{a}w}$. Since $\phi_{a}'\left(w\right)=\frac{1-\left|a\right|^{2}}{\left(1-\overline{a}w\right)^{2}}$, the chain rule gives
+> **Theorem 22.1.7 (Marty's Criterion)**
+> 
+> $\mathcal{F}$ is normal on $D$ iff for every compact subset $K\subset D$, the spherical derivative
 
 $$
-g_{f}'\left(z_{0}\right)=\phi_{f\left(z_{0}\right)}'\left(f\left(z_{0}\right)\right)f'\left(z_{0}\right)=\frac{1-\left|f\left(z_{0}\right)\right|^{2}}{\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{2}}f'\left(z_{0}\right)=\frac{f'\left(z_{0}\right)}{1-\left|f\left(z_{0}\right)\right|^{2}}.
+f^{\#}\left(z\right)=\frac{2\left|f'\left(z\right)\right|}{1+\left|f\left(z\right)\right|^{2}}
 $$
+is uniformly bounded on $K$ for $f\in\mathcal{F}$.
 
-(ii) The left side $\le$ right side is immediate (the left set is a subset). Conversely, for any $f\in H\left(\Omega\right)$, $g_{f}\in H\left(\Omega\right)$ with $g_{f}\left(z_{0}\right)=0$, and by (i) $\left|g_{f}'\left(z_{0}\right)\right|=\left|f'\left(z_{0}\right)\right|\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{-1}\ge\left|f'\left(z_{0}\right)\right|$. Hence $\left|f'\left(z_{0}\right)\right|\le\sup\left\{\left|h'\left(z_{0}\right)\right|:h\in H\left(\Omega\right),h\left(z_{0}\right)=0\right\}$; taking the supremum gives right $\le$ left. Equality.
+> **Theorem 22.2.1 (Zalcman's Lemma)**
+> 
+> $\mathcal{F}$ is not normal iff there exist $f_{n}\in\mathcal{F}$, $z_{n}\to z_{0}\in D$, $\rho_{n}\to0^{+}$ such that $g_{n}\left(w\right):=f_{n}\left(z_{n}+\rho_{n}w\right)$ converges locally uniformly to a nonconstant entire or meromorphic function.
 
-(iii) Let $a=h\left(z_{0}\right)$. If $a\ne0$, then $g_{h}\in H\left(\Omega\right)$, $g_{h}\left(z_{0}\right)=0$, and $\left|g_{h}'\left(z_{0}\right)\right|=\left|h'\left(z_{0}\right)\right|\left(1-\left|a\right|^{2}\right)^{-1}> \left|h'\left(z_{0}\right)\right|=\sup$, a contradiction. Hence $h\left(z_{0}\right)=0$.
+> **Theorem 22.2.3 (Montel's Theorem)**
+> 
+> A family of meromorphic functions on a domain $D$ that uniformly omits three distinct values (points of the extended plane) is normal.
 
-(iv) By **Theorem 10.3.1 (Schwarz Lemma)**, for $f\in H\left(\mathbb{D}\right)$ with $f\left(0\right)=0$, $\left|f'\left(0\right)\right|\le1$, and $f\left(z\right)=z$ attains $\left|f'\left(0\right)\right|=1$. By (ii), $\sup\left|f'\left(0\right)\right|=1$. Also $\operatorname{Re}f'\left(0\right)\le\left|f'\left(0\right)\right|\le1$, and $f\left(z\right)=z$ gives $\operatorname{Re}f'\left(0\right)=1$, so $\sup\operatorname{Re}f'\left(0\right)=1$. Both suprema are $1$.
+## 20.3-3
 
-(v) If $h\left(z\right)=z$, then $\operatorname{Re}h'\left(0\right)=1$. Conversely, if $\operatorname{Re}h'\left(0\right)=1$, then $\left|h'\left(0\right)\right|\ge1$, while **Theorem 10.3.1 (Schwarz Lemma)** gives $\left|h'\left(0\right)\right|\le1$, so $\left|h'\left(0\right)\right|=1$. Equality in Schwarz gives $h\left(z\right)=e^{i\theta}z$; and $\operatorname{Re}h'\left(0\right)=\cos\theta=1$, so $\theta=0$, i.e. $h\left(z\right)=z$. $\blacksquare$
+Prove: (i) $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$ for all $z\in\mathbb{C}\setminus\left\{1\right\}$; (ii) if $z\in\mathbb{C}\setminus\mathbb{R}$ is a zero of the zeta function, then $\overline z$, $1-z$, and $1-\overline z$ are all zeros.
 
-## 11.3-11
+### Solution to 20.3-3
 
-Let $U\subset\mathbb{C}$ be a connected open set, $U\ne\mathbb{C}$, and suppose every holomorphic function on $U$ has an antiderivative. Prove: $U$ is conformally equivalent to the open unit disk.
+(i) On $\operatorname{Re}z> 1$, since $n$ is real, $\overline{n^{-z}}=\overline{e^{-z\log n}}=e^{-\overline z\log n}=n^{-\overline z}$; taking conjugates term by term gives $\overline{\zeta\left(z\right)}=\sum_{n}n^{-\overline z}=\zeta\left(\overline z\right)$. By analytic continuation (identity theorem), the equality on $\operatorname{Re}z> 1$ extends to $\mathbb{C}\setminus\left\{1\right\}$, so $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$ for all $z\in\mathbb{C}\setminus\left\{1\right\}$.
 
-### Solution 11.3-11
+(ii) Let $z$ be a non-real zero, $\zeta\left(z\right)=0$. By (i), $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}=0$, so $\overline z$ is a zero. By **Theorem 20.2.2 (Functional Equation)** $\zeta\left(z\right)=2^{z}\pi^{z-1}\sin\frac{\pi z}{2}\Gamma\left(1-z\right)\zeta\left(1-z\right)$. Since $z$ is non-real, $\sin\frac{\pi z}{2}\ne0$, $\Gamma\left(1-z\right)\ne0$, and the factors $2^{z}\pi^{z-1}\ne0$, so $\zeta\left(1-z\right)=0$. Again by (i), $\zeta\left(1-\overline z\right)=\overline{\zeta\left(1-z\right)}=0$. Hence $\overline z$, $1-z$, and $1-\overline z$ are all zeros. $\blacksquare$
 
-If every holomorphic function on $U$ has an antiderivative, then the integral around every closed path in $U$ is zero, i.e. $U$ is simply connected (holomorphic functions on simply connected domains have antiderivatives, and conversely existence of antiderivatives implies simple connectivity). Since $U\ne\mathbb{C}$, $U$ is a simply connected domain other than the whole plane. By **Theorem 11.2.2 (Riemann Mapping Theorem)**, $U$ is conformally equivalent to the open unit disk. $\blacksquare$
+## 20.3-4
 
-## 11.3-14
+Let $\xi\left(z\right)=\frac12 z\left(z-1\right)\pi^{-z/2}\Gamma\left(\frac z2\right)\zeta\left(z\right)$. Prove: (i) $\xi\left(z\right)$ is entire; (ii) the zeros of $\xi\left(z\right)$ are exactly the non-real zeros of $\zeta\left(z\right)$; (iii) $\xi\left(1-z\right)=\xi\left(z\right)$; (iv) $\xi\left(z\right)$ is real-valued on the line $\operatorname{Re}z=\frac12$.
 
-Let $D\subset\mathbb{C}$ be simply connected with $\mathbb{C}\setminus D\ne\varnothing$. Prove:
+### Solution to 20.3-4
 
-(i) for every $a\in D$ there is a unique $\rho> 0$ such that there is a unique conformal equivalence $f:D\to\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$ with $f\left(a\right)=0$, $f'\left(a\right)=1$; $\rho$ is the mapping radius $\rho\left(D,a\right)$;
+(i) $\zeta$ has only a simple pole at $z=1$, which is canceled by the factor $\frac12 z\left(z-1\right)$ vanishing at $z=1$; the poles of $\Gamma\left(z/2\right)$ are at $z=0,-2,-4,\ldots$. At $z=0$, the factor $z$ vanishes, while $z\left(z-1\right)\to0$ and $\Gamma\left(z/2\right)\sim\frac{2}{z}$, so $\frac12 z\left(z-1\right)\Gamma\left(z/2\right)$ is finite at $0$ (in fact $\xi\left(0\right)=\frac12$). At $z=-2k$ ($k\ge1$), $\Gamma\left(z/2\right)=\Gamma\left(-k\right)$ has a pole, but $\zeta\left(-2k\right)=0$ (trivial zero, **Corollary 20.2.3 (Trivial Zeros and Critical Strip)**), canceling the pole. Hence all potential singularities of $\xi$ are removable, and $\xi$ is entire.
 
-(ii) if $D'\subset D$ is also simply connected, then $\rho\left(D',a\right)\le\rho\left(D,a\right)$ for all $a\in D'$; if equality holds at some $b\in D'$, then $D'=D$;
+(ii) The factor $\frac12 z\left(z-1\right)\pi^{-z/2}\Gamma\left(z/2\right)$ has no zeros (at $z=0,1$, $\xi$ takes finite nonzero values $\xi\left(0\right)=\frac12$, $\xi\left(1\right)=\frac12\Gamma\left(\frac12\right)\ne0$; $\pi^{-z/2}$ and $\Gamma\left(z/2\right)$ have no zeros). Hence the zeros of $\xi$ are exactly the zeros of $\zeta$ with the real zeros removed (the trivial zeros $-2,-4,\ldots$ are canceled by the poles of $\Gamma$, and $z=0,1$ are not zeros of $\zeta$). Since all nontrivial zeros of $\zeta$ lie in the critical strip and are non-real, the zeros of $\xi$ are exactly the non-real zeros of $\zeta$.
 
-(iii) if $g:D\to\mathbb{C}$ is univalent holomorphic, then $\rho\left(g\left(D\right),g\left(a\right)\right)=\left|g'\left(a\right)\right|\rho\left(D,a\right)$ for all $a\in D$.
-
-### Solution 11.3-14
-
-(i) Existence: by **Theorem 11.2.2 (Riemann Mapping Theorem)**, there is a conformal equivalence $F:D\to\mathbb{D}$; adjust by an automorphism so that $F\left(a\right)=0$. Let $c=F'\left(a\right)\ne0$ and set $f\left(z\right)=\frac{F\left(z\right)}{c}$; then $f:D\to\left\{\left|w\right|< \frac{1}{\left|c\right|}\right\}=\mathbb{D}_{\rho}$ ($\rho=\frac{1}{\left|c\right|}$), with $f\left(a\right)=0$, $f'\left(a\right)=1$.
-
-Uniqueness: let $f_{1}:D\to\mathbb{D}_{\rho_{1}}$, $f_{2}:D\to\mathbb{D}_{\rho_{2}}$ both be conformal equivalences with $f_{i}\left(a\right)=0$, $f_{i}'\left(a\right)=1$. Then $h=f_{2}\circ f_{1}^{-1}:\mathbb{D}_{\rho_{1}}\to\mathbb{D}_{\rho_{2}}$ is a conformal equivalence with $h\left(0\right)=0$, $h'\left(0\right)=\frac{f_{2}'\left(a\right)}{f_{1}'\left(a\right)}=1$. Set $\psi\left(w\right)=\frac{\rho_{1}}{\rho_{2}}h\left(\rho_{1}w\right):\mathbb{D}\to\mathbb{D}$; then $\psi\left(0\right)=0$, $\psi'\left(0\right)=\frac{\rho_{1}}{\rho_{2}}$. By **Theorem 10.3.1 (Schwarz Lemma)** $\left|\psi'\left(0\right)\right|\le1$, i.e. $\rho_{1}\le\rho_{2}$; symmetrically $\rho_{2}\le\rho_{1}$, so $\rho_{1}=\rho_{2}$ and $\left|\psi'\left(0\right)\right|=1$. Equality in Schwarz gives $\psi\left(w\right)=e^{i\theta}w$; since $\psi'\left(0\right)=1$, $\theta=0$, $\psi=\text{id}$, $h=\text{id}$, $f_{1}=f_{2}$.
-
-(ii) Write $\rho=\rho\left(D,a\right)$, and take $f:D\to\mathbb{D}_{\rho}$ with $f\left(a\right)=0$, $f'\left(a\right)=1$. Since $D'\subset D$, $f|_{D'}$ is univalent holomorphic. By (i), there is a conformal equivalence $F:D'\to\mathbb{D}_{\rho\left(D',a\right)}$ with $F\left(a\right)=0$, $F'\left(a\right)=1$. If $\rho\left(D',a\right)> \rho$, then $f\circ F^{-1}:\mathbb{D}_{\rho\left(D',a\right)}\to\mathbb{D}_{\rho}$, restricted to $\mathbb{D}_{\rho}$, gives a conformal equivalence $\mathbb{D}_{\rho}\to\mathbb{D}_{\rho}$ with derivative at $0$ equal to $\frac{f'\left(a\right)}{F'\left(a\right)}=1$; by Schwarz it is the identity, so $F^{-1}\left(\mathbb{D}_{\rho}\right)=D'$ and $f\left(D'\right)=\mathbb{D}_{\rho}$, contradicting $f\left(D'\right)\subsetneq\mathbb{D}_{\rho}$ when $D'\subsetneq D$. Hence $\rho\left(D',a\right)\le\rho\left(D,a\right)$. If equality holds at some $b$, the same argument gives $f\left(D'\right)=\mathbb{D}_{\rho}$, i.e. $D'=D$.
-
-(iii) Let $f:D\to\mathbb{D}_{\rho\left(D,a\right)}$ with $f\left(a\right)=0$, $f'\left(a\right)=1$. Since $g$ is univalent, $g\left(D\right)$ is simply connected, and $\widetilde f\left(z\right):=g'\left(a\right)\,f\left(g^{-1}\left(z\right)\right)$ maps $g\left(D\right)$ conformally onto $\mathbb{D}_{\left|g'\left(a\right)\right|\rho\left(D,a\right)}$, with $\widetilde f\left(g\left(a\right)\right)=0$ and $\widetilde f'\left(g\left(a\right)\right)=g'\left(a\right)f'\left(a\right)\cdot\frac{1}{g'\left(a\right)}=1$. By uniqueness in (i), $\rho\left(g\left(D\right),g\left(a\right)\right)\le\left|g'\left(a\right)\right|\rho\left(D,a\right)$. Applying the same argument to $g^{-1}$ gives the reverse inequality, so $\rho\left(g\left(D\right),g\left(a\right)\right)=\left|g'\left(a\right)\right|\rho\left(D,a\right)$. $\blacksquare$
-
-## 11.3-19
-
-Let $D\subset\mathbb{C}$ be simply connected bounded by a Jordan closed curve. Suppose $f,g$ are holomorphic on $D$ with: (i) both extend continuously to $\partial D$; (ii) both are conformal equivalences from $D$ onto some domains; (iii) there are three distinct points $z_{1},z_{2},z_{3}\in\partial D$ with $f\left(z_{j}\right)=g\left(z_{j}\right)$, $j=1,2,3$. Prove $f=g$ on $D$, and give an example showing that three points in (iii) cannot be reduced to two.
-
-### Solution 11.3-19
-
-Since $f,g$ are conformal equivalences and extend continuously to the boundary, they map $\partial D$ homeomorphically onto $f\left(\partial D\right)$ and $g\left(\partial D\right)$. Consider $h=g\circ f^{-1}:f\left(D\right)\to g\left(D\right)$, a conformal equivalence extending continuously to the boundary of $\overline{f\left(D\right)}$. At the three points $f\left(z_{1}\right),f\left(z_{2}\right),f\left(z_{3}\right)\in f\left(\partial D\right)$,
+(iii) By **Theorem 20.2.2 (Functional Equation)**:
 
 $$
-h\left(f\left(z_{j}\right)\right)=g\left(f^{-1}\left(f\left(z_{j}\right)\right)\right)=g\left(z_{j}\right)=f\left(z_{j}\right),
+\xi\left(z\right)=\frac12 z\left(z-1\right)2^{z}\pi^{\frac z2}\frac{\Gamma\left(1-z\right)}{\Gamma\left(1-\frac z2\right)}\zeta\left(1-z\right).
 $$
 
-i.e. $h$ fixes three distinct points on $f\left(\partial D\right)$.
+Using the Legendre duplication formula $\Gamma\left(1-z\right)=2^{1-z}\pi^{-\frac12}\Gamma\left(\frac{1-z}{2}\right)\Gamma\left(1-\frac z2\right)$, we get
 
-$f\left(D\right)$ is also bounded by a Jordan curve. Take a conformal equivalence $\Psi:f\left(D\right)\to\mathbb{D}$; then $\widetilde h=\Psi\circ h\circ\Psi^{-1}:\mathbb{D}\to\mathbb{D}$ is a holomorphic automorphism equal to the identity at three distinct points $\Psi\left(f\left(z_{1}\right)\right),\Psi\left(f\left(z_{2}\right)\right),\Psi\left(f\left(z_{3}\right)\right)\in\partial\mathbb{D}$. Automorphisms of $\mathbb{D}$ are Mobius transformations, and a Mobius transformation is uniquely determined by three pairs of corresponding points, so $\widetilde h=\text{id}$, hence $h=\text{id}$, $g=f$.
+$$
+\xi\left(z\right)=\frac12 z\left(z-1\right)\pi^{\frac{z-1}{2}}\Gamma\left(\frac{1-z}{2}\right)\zeta\left(1-z\right)=\xi\left(1-z\right).
+$$
 
-Counterexample (two points do not suffice): take $D=\mathbb{D}$, $f\left(z\right)=z$, $g\left(z\right)=\phi_{a}\left(z\right)=\frac{z-a}{1-az}$ for real $0< a< 1$. Both are automorphisms of $\mathbb{D}$ extending continuously to the boundary. At $z=1$, $\phi_{a}\left(1\right)=1=f\left(1\right)$; at $z=-1$, $\phi_{a}\left(-1\right)=-1=f\left(-1\right)$; so $f,g$ agree at two boundary points, but $f\ne g$ when $a\ne0$. Hence three points cannot be reduced to two. $\blacksquare$
+(iv) The coefficients of $\xi$ are all real (since $\pi,\Gamma,\zeta$ are real on the real axis), so $\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$. For $z=\frac12+it$, $\overline z=1-z$; by (iii), $\xi\left(z\right)=\xi\left(1-z\right)=\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$, so $\xi\left(z\right)\in\mathbb{R}$ on $\operatorname{Re}z=\frac12$. $\blacksquare$
+
+## 20.3-5
+
+Let $\zeta_{-}\left(z\right)=1-\frac1{2^{z}}+\frac1{3^{z}}-\cdots=\sum_{n=1}^{+\infty}\frac{\left(-1\right)^{n+1}}{n^{z}}$. Prove: (i) the series defining $\zeta_{-}\left(z\right)$ converges for all $\operatorname{Re}z> 0$ and gives a holomorphic function on $\operatorname{Re}s> 0$; (ii) if $z> 1$, then $\zeta_{-}\left(z\right)=\left(1-2^{1-z}\right)\zeta\left(z\right)$; (iii) use the functional equation in (ii) to verify that $\zeta_{-}\left(z\right)$ has no zeros on the right half-plane $\operatorname{Re}z> 1$; (iv) use (ii) to verify that $\zeta$ has no zeros on the real interval $\left(0,1\right)$.
+
+### Solution to 20.3-5
+
+(i) For $\operatorname{Re}z> 0$, $\left|\frac{\left(-1\right)^{n+1}}{n^{z}}\right|=n^{-\operatorname{Re}z}\to0$ and decreases monotonically, so the alternating series converges. On compact subsets $\left\{\operatorname{Re}z\ge\delta> 0\right\}$, the remainder of the alternating series is bounded by the first term, so convergence is uniform; hence $\zeta_{-}$ is holomorphic on $\left\{\operatorname{Re}z> 0\right\}$.
+
+(ii) For $z> 1$ the series converges absolutely; separating the even terms:
+
+$$
+\zeta_{-}\left(z\right)=\sum_{n=1}^{+\infty}\frac1{n^{z}}-2\sum_{n=1}^{+\infty}\frac1{\left(2n\right)^{z}}=\zeta\left(z\right)-2^{1-z}\zeta\left(z\right)=\left(1-2^{1-z}\right)\zeta\left(z\right).
+$$
+
+(iii) By (ii) and analytic continuation, for $\operatorname{Re}z> 1$, $\zeta_{-}\left(z\right)=\left(1-2^{1-z}\right)\zeta\left(z\right)$. Since $\operatorname{Re}z> 1$, $\left|2^{1-z}\right|=2^{1-\operatorname{Re}z}< 1$, so $1-2^{1-z}\ne0$; also by the Euler product in **Definition 20.1.1 (Riemann Zeta Function)**, $\zeta\left(z\right)=\prod_{p}\left(1-p^{-z}\right)^{-1}\ne0$. Hence $\zeta_{-}\left(z\right)\ne0$ for $\operatorname{Re}z> 1$.
+
+(iv) By analytic continuation from (ii), for $x\in\left(0,1\right)$, $\zeta_{-}\left(x\right)=\left(1-2^{1-x}\right)\zeta\left(x\right)$. Since $0< x< 1$, $1-x> 0$, $2^{1-x}> 1$, so $1-2^{1-x}\ne0$; and $\zeta_{-}\left(x\right)=\sum_{n}\frac{\left(-1\right)^{n+1}}{n^{x}}> 0$ (the alternating series has first term $1> 0$, with decreasing absolute values and $\frac{1}{2^{x}}< 1$). Hence $\zeta\left(x\right)\ne0$ on $\left(0,1\right)$. $\blacksquare$
+
+## 21.5-4
+
+Use the result of Exercise 21.5-3 (Landau) to prove Picard's little theorem.
+
+### Solution to 21.5-4
+
+Picard's little theorem: a nonconstant entire function cannot omit two distinct values.
+
+By **Exercise 21.5-3 (Landau)**, there is a positive function $R\left(a\right)> 0$ ($a\in\mathbb{C}\setminus\left\{0,1\right\}$) such that for every $a$, there is no holomorphic $f$ on the closed disk $\left\{\left|z\right|\le R\left(a\right)\right\}$ satisfying $f\left(0\right)=a$, $f'\left(0\right)=1$, and taking neither $0$ nor $1$.
+
+Let $F$ be entire and omit $0,1$. If $F$ is nonconstant, choose $z_{0}$ with $F'\left(z_{0}\right)\ne0$; set $a:=F\left(z_{0}\right)\in\mathbb{C}\setminus\left\{0,1\right\}$. Define $g\left(w\right):=F\left(z_{0}+\frac{w}{F'\left(z_{0}\right)}\right)$; then $g$ is holomorphic on $\mathbb{C}$ (hence on the closed disk $\left\{\left|w\right|\le R\left(a\right)\right\}$), $g\left(0\right)=F\left(z_{0}\right)=a$, $g'\left(0\right)=1$, and $g$ takes neither $0$ nor $1$, contradicting Landau's result. Hence $F$ must be constant, proving Picard's little theorem. $\blacksquare$
+
+## 21.5-5
+
+Let $f,g,h$ be entire functions satisfying $e^{f}+e^{g}=h$. Prove: $h$ has either no zeros or infinitely many zeros.
+
+### Solution to 21.5-5
+
+Let $F:=e^{f}$, $G:=e^{g}$; both are zero-free entire functions, and $h=G\left(1+\frac{F}{G}\right)=G\left(1+e^{f-g}\right)$. Write $H:=e^{f-g}$; then $h=G\left(1+H\right)$. Since $G$ has no zeros, the zeros of $h$ are exactly the solutions of $1+H=0$, i.e. $e^{f-g}=-1$.
+
+If $f-g$ is constant, then $H$ is constant: if $H\equiv-1$, then $h\equiv0$, which has no zeros; if $H\equiv c\ne-1$, then $h=G\left(1+c\right)$ has no zeros. Hence $h$ has no zeros.
+
+If $f-g$ is nonconstant, by **Theorem 21.2.3 (Picard's Little Theorem)**, the range of the entire function $f-g$ is $\mathbb{C}$ or $\mathbb{C}$ minus one point, so it takes infinitely many values $\left(2k+1\right)\pi i$ ($k\in\mathbb{Z}$); hence $e^{f-g}$ equals $-1$ at infinitely many points, and $h$ has infinitely many zeros. $\blacksquare$
+
+## 21.5-6
+
+If $f,g$ are entire, $p,q$ are polynomials, and $e^{f}+p=e^{g}+q$ with $f\left(0\right)=g\left(0\right)$, prove: $f=g$ and $p=q$.
+
+### Solution to 21.5-6
+
+From $e^{f}-e^{g}=q-p$, i.e. $e^{g}\left(e^{f-g}-1\right)=q-p$. Suppose for contradiction that $f-g$ is nonconstant. Then the zeros of $e^{f-g}-1$ satisfy $f-g=2\pi ik$, $k\in\mathbb{Z}$. By **Theorem 21.2.3 (Picard's Little Theorem)**, the nonconstant entire function $f-g$ has range $\mathbb{C}$ or $\mathbb{C}$ minus one point, so it takes infinitely many values $2\pi ik$, and $e^{f-g}-1$ has infinitely many zeros. But $e^{g}$ on the left has no zeros, while $q-p$ on the right is a polynomial with at most finitely many zeros; since $e^{g}\left(e^{f-g}-1\right)$ and $q-p$ have the same zeros, this is a contradiction. Hence $f-g$ is a constant $c$.
+
+From $f\left(0\right)=g\left(0\right)$, $c=0$, i.e. $f=g$. Substituting into $e^{f}+p=e^{f}+q$ gives $p=q$. $\blacksquare$
+
+## 21.5-7
+
+Let $\mathcal{E}\left(z\right)=\exp\left(2\pi i\cdot\exp\left(2\pi i z\right)\right)$, $z\in\mathbb{C}$, and let $f\left(z\right)$ and $g\left(z\right)$ be nonconstant entire functions with $\mathcal{E}\left(f\left(z\right)\right)=\mathcal{E}\left(g\left(z\right)\right)$ for all $z\in\mathbb{C}$. Prove: there exists $m\in\mathbb{Z}$ such that $f\left(z\right)=g\left(z\right)+m$ for all $z\in\mathbb{C}$.
+
+### Solution to 21.5-7
+
+From the property of $\exp$, $\exp\left(2\pi i\cdot e^{2\pi if}\right)=\exp\left(2\pi i\cdot e^{2\pi ig}\right)$ implies $e^{2\pi if}-e^{2\pi ig}\in\mathbb{Z}$; since this is continuous, it is constant, say $e^{2\pi if}-e^{2\pi ig}=m\in\mathbb{Z}$.
+
+Suppose for contradiction $m\ne0$; then $e^{2\pi if}=e^{2\pi ig}+m$. Since $g$ is nonconstant entire, by **Theorem 21.2.3 (Picard's Little Theorem)**, the range of $g$ is $\mathbb{C}$ or $\mathbb{C}$ minus one point, so $e^{2\pi ig}$ takes every nonzero value (with at most one exception); since $m\ne0$, $-m$ is a nonzero value, so there is $z_{0}$ with $e^{2\pi ig\left(z_{0}\right)}=-m$, and then $e^{2\pi if\left(z_{0}\right)}=-m+m=0$, contradicting that $\exp$ has no zeros. Hence $m=0$, i.e. $e^{2\pi if}=e^{2\pi ig}$, so $2\pi i\left(f-g\right)=2\pi ik$, $k\in\mathbb{Z}$, i.e. $f\left(z\right)=g\left(z\right)+k$. $\blacksquare$
+
+## 21.5-19
+
+Let $f$ be an odd entire function on $\mathbb{C}$. Prove: $f\left(\mathbb{C}\right)=\mathbb{C}$.
+
+### Solution to 21.5-19
+
+$f$ is entire; by **Theorem 21.2.3 (Picard's Little Theorem)**, $f\left(\mathbb{C}\right)=\mathbb{C}$ or $f\left(\mathbb{C}\right)=\mathbb{C}\setminus\left\{a\right\}$ (omitting one value $a$). If $f$ is constant, oddness $f\left(-z\right)=-f\left(z\right)$ forces $f\equiv0$, whose range $\left\{0\right\}\ne\mathbb{C}$; so suppose $f$ is nonconstant, hence $f\left(\mathbb{C}\right)=\mathbb{C}$ or $\mathbb{C}\setminus\left\{a\right\}$.
+
+Since $f$ is odd, $w\in f\left(\mathbb{C}\right)$ iff $-w\in f\left(\mathbb{C}\right)$ (replace $z$ by $-z$), so $f\left(\mathbb{C}\right)$ is symmetric about the origin. If $f\left(\mathbb{C}\right)=\mathbb{C}\setminus\left\{a\right\}$, symmetry requires $\mathbb{C}\setminus\left\{a\right\}=\mathbb{C}\setminus\left\{-a\right\}$, giving $a=-a$, i.e. $a=0$. But $f\left(0\right)=0$ (odd), so $0\in f\left(\mathbb{C}\right)$, contradicting $a=0$. Hence $f\left(\mathbb{C}\right)=\mathbb{C}$. $\blacksquare$
+
+## 22.4-1
+
+Let $\mathcal{F}$ be a family of meromorphic functions on a domain $D\subset\mathbb{C}$, and suppose that for every $a\in D$ there is a neighborhood $U\subset D$ on which $\mathcal{F}$ is normal. Prove: $\mathcal{F}$ is normal on $D$.
+
+### Solution to 22.4-1
+
+Take an exhaustion $\left\{K_{m}\right\}$ of $D$: compact sets $K_{1}\subset K_{2}\subset\cdots\subset D$, $\bigcup_{m}K_{m}=D$, and $K_{m}\subset K_{m+1}^{\circ}$. Fix $m$: by compactness, $K_{m}$ is covered by finitely many neighborhoods $U_{a}$, and $\mathcal{F}$ is normal on each $U_{a}$.
+
+First show that $\mathcal{F}$ is normal on $K_{m}$. Take any sequence $\left\{f_{n}\right\}\subset\mathcal{F}$. Since $\mathcal{F}$ is normal on the $U_{a}$, by a finite-cover diagonal argument one can successively extract subsequences $\left\{f_{n}^{\left(j\right)}\right\}$ converging locally uniformly on $U_{a_{j}}$ ($j=1,\ldots,N$). Hence there is a subsequence of $\left\{f_{n}\right\}$ converging uniformly on compact subsets of $K_{m}$.
+
+Then apply a diagonal argument on all of $D$: for each $m$, extract a subsequence converging locally uniformly on $K_{m}$; the diagonal subsequence converges locally uniformly on every $K_{m}$. Since $\left\{K_{m}\right\}$ exhausts $D$, this subsequence converges uniformly on compact subsets of $D$. By **Definition 22.1.5 (Normal Family)**, $\mathcal{F}$ is normal on $D$. $\blacksquare$
+
+## 22.4-2
+
+Let $\mathcal{F}$ be a family of holomorphic functions on a domain $D\subset\mathbb{C}$, and suppose there are distinct $a,b\in\mathbb{C}$ and an integer $n\ge1$ such that for every $f\in\mathcal{F}$, $f\left(D\right)\subset\mathbb{C}\setminus\left\{a\right\}$ and $f^{-1}\left(b\right)\cap D$ has at most $n$ points. Prove: $\mathcal{F}$ is normal on $D$.
+
+### Solution to 22.4-2
+
+Suppose for contradiction that $\mathcal{F}$ is not normal. By **Theorem 22.2.1 (Zalcman's Lemma)**, there exist $f_{n}\in\mathcal{F}$, $z_{n}\to z_{0}\in D$, $\rho_{n}\to0^{+}$ such that $g_{n}\left(w\right):=f_{n}\left(z_{n}+\rho_{n}w\right)$ converges locally uniformly to a nonconstant entire function $g$.
+
+Since each $f_{n}$ omits $a$, the limit $g$ also omits $a$ ($g\left(\mathbb{C}\right)\subset\mathbb{C}\setminus\left\{a\right\}$). By **Theorem 21.2.3 (Picard's Little Theorem)**, the nonconstant entire function $g$ has range $\mathbb{C}$ or $\mathbb{C}$ minus one point; since $a$ is already omitted, $g$ takes $b$ ($b\ne a$) infinitely often: $g$ has infinitely many $b$-points, with no accumulation point.
+
+Take a compact disk $K$ containing $n+1$ of the $b$-points of $g$. Since $g_{n}\to g$ uniformly on $K$ and $g$ takes the value $b$ at these points (which have no accumulation, so disjoint small neighborhoods fit inside $K$), for large $n$, $g_{n}$ has at least $n+1$ $b$-points in $K$ (by Rouche's theorem / persistence of zeros under uniform convergence). But the $b$-points of $g_{n}$ are exactly the points of $f_{n}^{-1}\left(b\right)$ lying in $z_{n}+\rho_{n}K$, which are at most $n$; contradiction. Hence $\mathcal{F}$ is normal. $\blacksquare$
+
+## 22.4-4
+
+Let $\mathcal{F}$ be a family of meromorphic functions on a domain $D\subset\mathbb{C}$. Prove: $\mathcal{F}$ is normal on $D$ iff for every $z\in D$ there is a neighborhood $U\left(z\right)\subset D$ such that either $\left|f\left(\zeta\right)\right|< 2$ or $\frac1{\left|f\left(\zeta\right)\right|}< 2$ for all $\zeta\in U\left(z\right)$ and all $f\in\mathcal{F}$ (the same alternative for the whole family).
+
+### Solution to 22.4-4
+
+Sufficiency. Suppose for every $z_{0}\in D$ there is a neighborhood $U=U\left(z_{0}\right)$ such that for all $f\in\mathcal{F}$ and $\zeta\in U$, either $\left|f\left(\zeta\right)\right|< 2$ or $\left|f\left(\zeta\right)\right|> \frac12$.
+
+Case 1: $\left|f\left(\zeta\right)\right|< 2$ on $U$ (uniformly bounded). Take a compact sub-neighborhood $K\ni z_{0}$; by Cauchy estimates, $f'$ is uniformly bounded on $K$, so the spherical derivative $f^{\#}=\frac{2\left|f'\right|}{1+\left|f\right|^{2}}\le2\left|f'\right|$ is uniformly bounded.
+
+Case 2: $\left|f\left(\zeta\right)\right|> \frac12$ on $U$, i.e. $\left|f\right|$ has a positive lower bound; then $g:=\frac1f$ is uniformly bounded, and by Cauchy estimates $g'$ is uniformly bounded, so $f'=\frac{g'}{g^{2}}$ is uniformly bounded ($\left|g^{2}\right|> \frac14$), and $f^{\#}\le2\left|f'\right|$ is uniformly bounded.
+
+Thus the spherical derivative is uniformly bounded in a neighborhood of every point; by compactness, it is uniformly bounded on every compact subset $K\subset D$. By **Theorem 22.1.7 (Marty's Criterion)**, $\mathcal{F}$ is normal on $D$.
+
+Necessity. Suppose $\mathcal{F}$ is normal on $D$. By Marty's criterion, for every $z_{0}\in D$ there is a compact neighborhood $K$ and $M$ such that $f^{\#}\left(\zeta\right)\le M$ for all $f\in\mathcal{F}$ and $\zeta\in K$. Suppose for contradiction that in every small neighborhood $U\ni z_{0}$ there are $f\in\mathcal{F}$ and $\zeta\in U$ with $\left|f\left(\zeta\right)\right|\ge2$ and $\frac1{\left|f\left(\zeta\right)\right|}\ge2$ (i.e. $\left|f\left(\zeta\right)\right|\le\frac12$). These cannot hold simultaneously at a single point, so at each $z_{0}$ there is a neighborhood $U$ such that for all $f\in\mathcal{F}$ and $\zeta\in U$, either $\left|f\left(\zeta\right)\right|< 2$ or $\frac1{\left|f\left(\zeta\right)\right|}< 2$ (shrinking $U$ suffices, since bounded spherical derivative prevents $\left|f\right|$ from crossing the values between $2$ and $\frac12$). $\blacksquare$

@@ -1,141 +1,200 @@
 # week12
 
-> **定理 10.3.1 (施瓦茨引理)**
+> **定义 20.1.1 (黎曼 $\zeta$-函数)**
 > 
-> 若 $f:\mathbb{D}\to\mathbb{D}$ 全纯且 $f\left(0\right)=0$, 则 $\left|f\left(z\right)\right|\le\left|z\right|$ 且 $\left|f'\left(0\right)\right|\le1$; 等号当且仅当 $f\left(z\right)=e^{i\theta}z$.
+> 黎曼 $\zeta$-函数对 $\operatorname{Re}z> 1$ 由狄利克雷级数定义
 
-> **定义 10.3.2 (布拉施克因子)**
+> **定理 20.1.6 (亚纯延拓)**
 > 
-> 对 $a\in\mathbb{D}$, 布拉施克因子定义为
+> $\zeta$ 亚纯延拓到 $\mathbb{C}$, 只在 $z=1$ 有简单极点, 且
 
-$$
-\phi_{a}\left(z\right)=\frac{z-a}{1-\overline{a}z}
-$$
-
-它是 $\mathbb{D}$ 的自同构, $\phi_{a}\left(a\right)=0$, 且 $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$.
-
-> **定理 10.3.4 (施瓦茨-皮克引理)**
+> **定理 20.2.2 (函数方程)**
 > 
-> 对 $\mathbb{D}\to\mathbb{D}$ 的全纯 $f$,
+> 黎曼 $\zeta$-函数满足函数方程
 
-$$
-\left|\frac{f\left(z\right)-f\left(w\right)}{1-\overline{f\left(w\right)}f\left(z\right)}\right|\le\left|\frac{z-w}{1-\overline{w}z}\right|;
-$$
-
-微分形式为
-
-$$
-\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}},
-$$
-
-等号当且仅当 $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
-
-> **定理 11.2.2 (黎曼映射定理)**
+> **推论 20.2.3 (平凡零点与临界带)**
 > 
-> 任意不为全平面的单连通区域都与开单位圆盘共形等价.
+> $\zeta$ 的平凡零点恰为 $-2,-4,-6,\ldots$; 非平凡零点全落在临界带 $0< \operatorname{Re}z< 1$ 内.
 
-> **定义 11.2.6 (映射半径)**
+> **定理 21.1.3 (布洛克定理)**
 > 
-> 对单连通区域 $D$ 且 $\mathbb{C}\setminus D\ne\varnothing$ 及 $a\in D$, 称使存在唯一共形等价 $f:D\to\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$, $f\left(a\right)=0$, $f'\left(a\right)=1$ 的正数 $\rho$ 为 $D$ 相对 $a$ 的映射半径 $\rho\left(D,a\right)$.
+> 存在常数 $B> 0$: 若 $f$ 在单位圆盘上全纯且 $f'\left(0\right)=1$, 则 $f\left(\mathbb{D}\right)$ 含一个半径至少 $B$ 的圆盘.
 
-## 11.3-1
+> **定理 21.2.3 (毕卡小定理)**
+> 
+> 非常值整函数取 $\mathbb{C}$ 中每个值或除一个值外的所有值.
 
-令 $\gamma$ 是单位圆盘 $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$ 上的光滑道路. 定义 $\gamma$ 的双曲弧长为 $L_{h}\left(\gamma\right)=\int_{\gamma}\frac{1}{1-\left|z\right|^{2}}\left|dz\right|$. 令 $f:\mathbb{D}\to\mathbb{D}$ 是全纯函数, 证明: (i) $L_{h}\left(f\left(\gamma\right)\right)\le L_{h}\left(\gamma\right)$; (ii) $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$ 当且仅当 $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
+> **定理 21.2.4 (毕卡小定理, 亚纯形式)**
+> 
+> 非常值亚纯函数至多漏掉两个值.
 
-### 解答 11.3-1
+> **定理 21.4 (毕卡大定理)**
+> 
+> 全纯函数在本性奇点的任意去心邻域内取每个值无穷多次 (至多漏一个值).
 
-(i) 由变量代换 $\left|dz\right|$ 换成 $\left|f'\left(z\right)\right|\left|dz\right|$, 得
+> **定义 22.1.5 (正规族)**
+> 
+> 称区域 $D$ 上的亚纯函数族 $\mathcal{F}$ 在 $D$ 上是正规的, 若 $\mathcal{F}$ 的每个序列在 $\mathfrak{C}\left(D,\widehat{\mathbb{C}}\right)$ 上有收敛子列 (在 $D$ 的紧子集上按球弦度量一致收敛到亚纯函数或 $\infty$).
 
-$$
-L_{h}\left(f\left(\gamma\right)\right)=\int_{\gamma}\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\left|dz\right|.
-$$
-
-由**定理 10.3.4 (施瓦茨-皮克引理)** 的微分形式, $\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}}$, $\forall z\in\mathbb{D}$, 故 $L_{h}\left(f\left(\gamma\right)\right)\le L_{h}\left(\gamma\right)$.
-
-(ii) 若 $f\in\operatorname{auto}\left(\mathbb{D}\right)$, 则施瓦茨-皮克微分形式取等号, 故 $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$. 反之, 若 $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$, 则被积函数的不等式 $\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}}$ 沿 $\gamma$ 处处取等号; 由**定理 10.3.4 (施瓦茨-皮克引理)** 的等号条件, $f$ 在含 $\gamma$ 的某开集上是自同构, 故 $f\in\operatorname{auto}\left(\mathbb{D}\right)$. $\blacksquare$
-
-## 11.3-2
-
-假设区域 $G\subset\mathbb{C}\setminus\left\{0\right\}$ 上任意没有零点的全纯函数 $f$ 都存在 $G$ 上的全纯函数 $g$ 使得 $e^{g\left(z\right)}=f\left(z\right)$, $\forall z\in G$. 证明: $G$ 是单连通的.
-
-### 解答 11.3-2
-
-反设 $G$ 不是单连通的, 则 $\widehat{\mathbb{C}}\setminus G$ 有一个有界连通分支 $K$. 取 $a\in K$. 因 $G\subset\mathbb{C}\setminus\left\{0\right\}$ 且 $a\notin G$, $f\left(z\right)=z-a$ 在 $G$ 上全纯且无零点. 由假设, 存在 $G$ 上全纯的 $g$ 使 $e^{g\left(z\right)}=z-a$, 故 $g'\left(z\right)=\frac{1}{z-a}$ 在 $G$ 上有原函数 $g$.
-
-但 $K$ 是 $G$ 的一个洞, 存在闭曲线 $\gamma\subset G$ 绕过 $a$ 一次, 由例 7.1.2, $\int_{\gamma}\frac{dz}{z-a}=2\pi i\ne0$; 而 $g'$ 有原函数 $g$, 则 $\int_{\gamma}g'\left(z\right)\,dz=0$, 矛盾. 故 $G$ 单连通. $\blacksquare$
-
-## 11.3-9
-
-令 $\Omega\subset\mathbb{C}$ 是区域, $H\left(\Omega\right)$ 是 $\Omega$ 到开单位圆盘 $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$ 上的所有全纯函数组成的集合, 取定 $z_{0}\in\Omega$, 对于任意 $f\in H\left(\Omega\right)$, 令 $g_{f}\left(z\right)=\frac{f\left(z\right)-f\left(z_{0}\right)}{1-\overline{f\left(z_{0}\right)}f\left(z\right)}$. 证明:
-
-(i) $g_{f}'\left(z_{0}\right)=f'\left(z_{0}\right)\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{-1}$;
-
-(ii) $\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in H\left(\Omega\right),\ f\left(z_{0}\right)=0\right\}=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in H\left(\Omega\right)\right\}$;
-
-(iii) 若 $h\in H\left(\Omega\right)$ 满足 $h'\left(z_{0}\right)=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in H\left(\Omega\right)\right\}$, 则 $h\left(z_{0}\right)=0$;
-
-(iv) $\sup\left\{\operatorname{Re}f'\left(0\right):f\in H\left(\mathbb{D}\right)\right\}=\sup\left\{\left|f'\left(0\right)\right|:f\in H\left(\mathbb{D}\right)\right\}=1$;
-
-(v) $h\in H\left(\mathbb{D}\right)$ 满足 $\operatorname{Re}h'\left(0\right)=1$ 当且仅当 $h\left(z\right)=z$.
-
-### 解答 11.3-9
-
-(i) $g_{f}=\phi_{f\left(z_{0}\right)}\circ f$, 其中 $\phi_{a}\left(w\right)=\frac{w-a}{1-\overline{a}w}$. 由 $\phi_{a}'\left(w\right)=\frac{1-\left|a\right|^{2}}{\left(1-\overline{a}w\right)^{2}}$, 链式法则得
+> **定理 22.1.7 (马蒂准则)**
+> 
+> $\mathcal{F}$ 在 $D$ 上正规当且仅当对 $D$ 的每个紧子集 $K$, 球面导数
 
 $$
-g_{f}'\left(z_{0}\right)=\phi_{f\left(z_{0}\right)}'\left(f\left(z_{0}\right)\right)f'\left(z_{0}\right)=\frac{1-\left|f\left(z_{0}\right)\right|^{2}}{\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{2}}f'\left(z_{0}\right)=\frac{f'\left(z_{0}\right)}{1-\left|f\left(z_{0}\right)\right|^{2}}.
+f^{\#}\left(z\right)=\frac{2\left|f'\left(z\right)\right|}{1+\left|f\left(z\right)\right|^{2}}
 $$
+在 $K$ 上一致有界 ($f\in\mathcal{F}$).
 
-(ii) 左边 $\le$ 右边显然 (左边集合是右边的子集). 反之, 对任意 $f\in H\left(\Omega\right)$, $g_{f}\in H\left(\Omega\right)$ 且 $g_{f}\left(z_{0}\right)=0$, 由 (i) $\left|g_{f}'\left(z_{0}\right)\right|=\left|f'\left(z_{0}\right)\right|\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{-1}\ge\left|f'\left(z_{0}\right)\right|$. 故 $\left|f'\left(z_{0}\right)\right|\le\sup\left\{\left|h'\left(z_{0}\right)\right|:h\in H\left(\Omega\right),h\left(z_{0}\right)=0\right\}$, 取上确界得右边 $\le$ 左边. 两向相等.
+> **定理 22.2.1 (扎尔克曼引理)**
+> 
+> $\mathcal{F}$ 不正规当且仅当存在 $f_{n}\in\mathcal{F}$, $z_{n}\to z_{0}\in D$, $\rho_{n}\to0^{+}$ 使 $g_{n}\left(w\right):=f_{n}\left(z_{n}+\rho_{n}w\right)$ 内紧一致收敛到非常值整函数或亚纯函数.
 
-(iii) 设 $a=h\left(z_{0}\right)$. 若 $a\ne0$, 则 $g_{h}\in H\left(\Omega\right)$, $g_{h}\left(z_{0}\right)=0$, 且 $\left|g_{h}'\left(z_{0}\right)\right|=\left|h'\left(z_{0}\right)\right|\left(1-\left|a\right|^{2}\right)^{-1}> \left|h'\left(z_{0}\right)\right|=\sup$, 矛盾. 故 $h\left(z_{0}\right)=0$.
+> **定理 22.2.3 (蒙泰尔定理)**
+> 
+> 区域 $D$ 上一致漏掉三个不同值 (扩充复平面上的点) 的亚纯函数族是正规的.
 
-(iv) 由**定理 10.3.1 (施瓦茨引理)**, 对 $f\in H\left(\mathbb{D}\right)$, $f\left(0\right)=0$ 时 $\left|f'\left(0\right)\right|\le1$, 且 $f\left(z\right)=z$ 达到 $\left|f'\left(0\right)\right|=1$. 由 (ii), $\sup\left|f'\left(0\right)\right|=1$. 又 $\operatorname{Re}f'\left(0\right)\le\left|f'\left(0\right)\right|\le1$, 且 $f\left(z\right)=z$ 使 $\operatorname{Re}f'\left(0\right)=1$, 故 $\sup\operatorname{Re}f'\left(0\right)=1$. 于是两上确界均为 $1$.
+## 20.3-3
 
-(v) 若 $h\left(z\right)=z$, 则 $\operatorname{Re}h'\left(0\right)=1$. 反之若 $\operatorname{Re}h'\left(0\right)=1$, 则 $\left|h'\left(0\right)\right|\ge1$, 而**定理 10.3.1 (施瓦茨引理)** 给出 $\left|h'\left(0\right)\right|\le1$, 故 $\left|h'\left(0\right)\right|=1$. 施瓦茨引理等号条件: $h\left(z\right)=e^{i\theta}z$. 又 $\operatorname{Re}h'\left(0\right)=\cos\theta=1$, 故 $\theta=0$, 即 $h\left(z\right)=z$. $\blacksquare$
+证明: (i) $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$, $\forall z\in\mathbb{C}\setminus\left\{1\right\}$; (ii) 若 $z\in\mathbb{C}\setminus\mathbb{R}$ 是 $\zeta$-函数的零点, 则 $\overline z$, $1-z$, $1-\overline z$ 都是它的零点.
 
-## 11.3-11
+### 解答 20.3-3
 
-令 $U\subset\mathbb{C}$ 是连通开集, $U\ne\mathbb{C}$, 且 $U$ 上的任意全纯函数都有原函数. 证明: $U$ 与开单位圆盘共形等价.
+(i) 在 $\operatorname{Re}z> 1$ 上, $n$ 为实数, $\overline{n^{-z}}=\overline{e^{-z\log n}}=e^{-\overline z\log n}=n^{-\overline z}$, 逐项取共轭得 $\overline{\zeta\left(z\right)}=\sum_{n}n^{-\overline z}=\zeta\left(\overline z\right)$. 由解析延拓 (恒等定理) 对 $\operatorname{Re}z> 1$ 成立之等式延拓到 $\mathbb{C}\setminus\left\{1\right\}$, 故 $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$, $\forall z\in\mathbb{C}\setminus\left\{1\right\}$.
 
-### 解答 11.3-11
+(ii) 设 $z$ 是非实零点, $\zeta\left(z\right)=0$. 由 (i), $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}=0$, 故 $\overline z$ 是零点. 由**定理 20.2.2 (函数方程)** $\zeta\left(z\right)=2^{z}\pi^{z-1}\sin\frac{\pi z}{2}\Gamma\left(1-z\right)\zeta\left(1-z\right)$. 因 $z$ 非实, $\sin\frac{\pi z}{2}\ne0$, $\Gamma\left(1-z\right)\ne0$, 因子 $2^{z}\pi^{z-1}\ne0$, 故 $\zeta\left(1-z\right)=0$. 再由 (i), $\zeta\left(1-\overline z\right)=\overline{\zeta\left(1-z\right)}=0$. 故 $\overline z$, $1-z$, $1-\overline z$ 都是零点. $\blacksquare$
 
-$U$ 上任意全纯函数都有原函数, 这等价于 $U$ 内任意闭道路的积分为零, 即 $U$ 是单连通的 (单连通区域上全纯函数必有原函数, 且原函数存在性蕴含单连通). 又 $U\ne\mathbb{C}$, 故 $U$ 是不为全平面的单连通区域. 由**定理 11.2.2 (黎曼映射定理)**, $U$ 与开单位圆盘共形等价. $\blacksquare$
+## 20.3-4
 
-## 11.3-14
+令 $\xi\left(z\right)=\frac12 z\left(z-1\right)\pi^{-z/2}\Gamma\left(\frac z2\right)\zeta\left(z\right)$. 证明: (i) $\xi\left(z\right)$ 是整函数; (ii) $\xi\left(z\right)$ 的零点恰好是 $\zeta\left(z\right)$ 的非实数零点; (iii) $\xi\left(1-z\right)=\xi\left(z\right)$; (iv) $\xi\left(z\right)$ 在直线 $\operatorname{Re}z=\frac12$ 上取实数值.
 
-令 $D\subset\mathbb{C}$ 是单连通区域且 $\mathbb{C}\setminus D\ne\varnothing$. 证明:
+### 解答 20.3-4
 
-(i) 对于每一点 $a\in D$ 都存在唯一的 $\rho> 0$ 使得区域 $D$ 与开圆盘 $\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$ 之间存在唯一的共形等价映射 $f:D\to\mathbb{D}_{\rho}$ 满足 $f\left(a\right)=0$, $f'\left(a\right)=1$; 称 $\rho$ 为 $D$ 相对于 $a$ 点的映射半径, 记作 $\rho\left(D,a\right)$;
+(i) $\zeta$ 只在 $z=1$ 有简单极点, 因子 $\frac12 z\left(z-1\right)$ 在 $z=1$ 为零, 消去该极点; 因子 $\Gamma\left(z/2\right)$ 的极点在 $z=0,-2,-4,\ldots$. 在 $z=0$, 因子 $z$ 为零, 而 $z\left(z-1\right)\to0$, $\Gamma\left(z/2\right)\sim\frac{2}{z}$, 故 $\frac12 z\left(z-1\right)\Gamma\left(z/2\right)$ 在 $0$ 处有限 (事实上 $\xi\left(0\right)=\frac12$). 在 $z=-2k$ ($k\ge1$), $\Gamma\left(z/2\right)=\Gamma\left(-k\right)$ 有极点, 但 $\zeta\left(-2k\right)=0$ (平凡零点, **推论 20.2.3 (平凡零点与临界带)**), 抵消极点. 故 $\xi$ 的所有潜在奇点均可去, $\xi$ 是整函数.
 
-(ii) 若 $D'\subset D$ 也是单连通区域, 则 $\rho\left(D',a\right)\le\rho\left(D,a\right)$, $\forall a\in D'$; 若存在 $b\in D'$ 使得等号成立, 则 $D'=D$;
+(ii) $\frac12 z\left(z-1\right)\pi^{-z/2}\Gamma\left(z/2\right)$ 无零点 (在 $z=0,1$ 处 $\xi$ 取有限非零值 $\xi\left(0\right)=\frac12$, $\xi\left(1\right)=\frac12\Gamma\left(\frac12\right)\ne0$; $\pi^{-z/2},\Gamma\left(z/2\right)$ 均无零点). 故 $\xi$ 的零点恰是 $\zeta$ 的零点中去掉实零点 (平凡零点 $-2,-4,\ldots$ 被 $\Gamma$ 极点抵消, 且 $z=0,1$ 非 $\zeta$ 的零点). 而 $\zeta$ 的非平凡零点全在临界带内非实, 故 $\xi$ 的零点恰好是 $\zeta$ 的非实数零点.
 
-(iii) 若 $g:D\to\mathbb{C}$ 是单叶全纯函数, 则 $\rho\left(g\left(D\right),g\left(a\right)\right)=\left|g'\left(a\right)\right|\rho\left(D,a\right)$, $\forall a\in D$.
-
-### 解答 11.3-14
-
-(i) 存在性: 由**定理 11.2.2 (黎曼映射定理)**, 存在共形等价 $F:D\to\mathbb{D}$, 调整自同构使 $F\left(a\right)=0$. 设 $c=F'\left(a\right)\ne0$, 令 $f\left(z\right)=\frac{F\left(z\right)}{c}$, 则 $f:D\to\left\{\left|w\right|< \frac{1}{\left|c\right|}\right\}=\mathbb{D}_{\rho}$ ($\rho=\frac{1}{\left|c\right|}$), 且 $f\left(a\right)=0$, $f'\left(a\right)=1$.
-
-唯一性: 设 $f_{1}:D\to\mathbb{D}_{\rho_{1}}$, $f_{2}:D\to\mathbb{D}_{\rho_{2}}$ 均共形等价, $f_{i}\left(a\right)=0$, $f_{i}'\left(a\right)=1$. 则 $h=f_{2}\circ f_{1}^{-1}:\mathbb{D}_{\rho_{1}}\to\mathbb{D}_{\rho_{2}}$ 共形等价, $h\left(0\right)=0$, $h'\left(0\right)=\frac{f_{2}'\left(a\right)}{f_{1}'\left(a\right)}=1$. 令 $\psi\left(w\right)=\frac{\rho_{1}}{\rho_{2}}h\left(\rho_{1}w\right):\mathbb{D}\to\mathbb{D}$, 则 $\psi\left(0\right)=0$, $\psi'\left(0\right)=\frac{\rho_{1}}{\rho_{2}}\cdot1$. 由**定理 10.3.1 (施瓦茨引理)** $\left|\psi'\left(0\right)\right|\le1$, 即 $\rho_{1}\le\rho_{2}$; 对称地 $\rho_{2}\le\rho_{1}$, 故 $\rho_{1}=\rho_{2}$, 且 $\left|\psi'\left(0\right)\right|=1$, 施瓦茨等号给 $\psi\left(w\right)=e^{i\theta}w$, 再由 $\psi'\left(0\right)=1$ 得 $\theta=0$, $\psi=\text{id}$, $h=\text{id}$, $f_{1}=f_{2}$. 唯一性得证.
-
-(ii) 记 $\rho=\rho\left(D,a\right)$, 取 $f:D\to\mathbb{D}_{\rho}$, $f\left(a\right)=0$, $f'\left(a\right)=1$. 由 $D'\subset D$, $f|_{D'}$ 单叶全纯. 由 (i), 存在共形等价 $F:D'\to\mathbb{D}_{\rho\left(D',a\right)}$, $F\left(a\right)=0$, $F'\left(a\right)=1$. 若 $\rho\left(D',a\right)> \rho$, 则 $f\circ F^{-1}:\mathbb{D}_{\rho\left(D',a\right)}\to\mathbb{D}_{\rho}$, 限制到 $\mathbb{D}_{\rho}$ 上得 $\mathbb{D}_{\rho}\to\mathbb{D}_{\rho}$ 共形等价, 在 $0$ 处导数 $=\frac{f'\left(a\right)}{F'\left(a\right)}=1$, 由施瓦茨引理它为恒同, 从而 $F^{-1}\left(\mathbb{D}_{\rho}\right)=D'$ 且 $f\left(D'\right)=\mathbb{D}_{\rho}$, 这与 $D'\subsetneq D$ 时 $f\left(D'\right)\subsetneq\mathbb{D}_{\rho}$ 矛盾. 故 $\rho\left(D',a\right)\le\rho\left(D,a\right)$. 若等号在某 $b$ 成立, 同一论证 (复合为恒同) 给出 $f\left(D'\right)=\mathbb{D}_{\rho}$, 即 $D'=D$.
-
-(iii) 设 $f:D\to\mathbb{D}_{\rho\left(D,a\right)}$, $f\left(a\right)=0$, $f'\left(a\right)=1$. 因 $g$ 单叶, $g\left(D\right)$ 是单连通区域, 且 $\widetilde f\left(z\right):=g'\left(a\right)\,f\left(g^{-1}\left(z\right)\right)$ 把 $g\left(D\right)$ 共形地映成 $\mathbb{D}_{\left|g'\left(a\right)\right|\rho\left(D,a\right)}$, 且 $\widetilde f\left(g\left(a\right)\right)=0$, $\widetilde f'\left(g\left(a\right)\right)=g'\left(a\right)f'\left(a\right)\cdot\frac{1}{g'\left(a\right)}=1$. 由 (i) 的唯一性, $\rho\left(g\left(D\right),g\left(a\right)\right)\le\left|g'\left(a\right)\right|\rho\left(D,a\right)$. 对 $g^{-1}$ 应用同一论证得反向不等式, 故 $\rho\left(g\left(D\right),g\left(a\right)\right)=\left|g'\left(a\right)\right|\rho\left(D,a\right)$. $\blacksquare$
-
-## 11.3-19
-
-设 $D\subset\mathbb{C}$ 是以若当闭曲线为边界的单连通区域. 若 $f$ 和 $g$ 都是 $D$ 上的全纯函数而且满足: (i) $f$ 和 $g$ 均可连续延拓到边界 $\partial D$; (ii) $f$ 和 $g$ 均是 $D$ 到某一区域的共形等价映射; (iii) 存在三个不同的点 $z_{1},z_{2},z_{3}\in\partial D$ 使得 $f\left(z_{j}\right)=g\left(z_{j}\right)$, $j=1,2,3$. 证明: $f$ 和 $g$ 在 $D$ 上恒等并举例说明上述条件 (iii) 中的三个点不能减少成两个点.
-
-### 解答 11.3-19
-
-因 $f,g$ 共形等价且连续延拓到边界, 它们把 $\partial D$ 同胚地映成 $f\left(\partial D\right)$, $g\left(\partial D\right)$. 考虑 $h=g\circ f^{-1}:f\left(D\right)\to g\left(D\right)$ 共形等价, 它连续延拓到 $\overline{f\left(D\right)}$ 的边界. 在 $f\left(\partial D\right)$ 的三个点 $f\left(z_{1}\right),f\left(z_{2}\right),f\left(z_{3}\right)$ 处,
+(iii) 由**定理 20.2.2 (函数方程)**:
 
 $$
-h\left(f\left(z_{j}\right)\right)=g\left(f^{-1}\left(f\left(z_{j}\right)\right)\right)=g\left(z_{j}\right)=f\left(z_{j}\right),
+\xi\left(z\right)=\frac12 z\left(z-1\right)2^{z}\pi^{\frac z2}\frac{\Gamma\left(1-z\right)}{\Gamma\left(1-\frac z2\right)}\zeta\left(1-z\right).
 $$
 
-即 $h$ 在 $f\left(\partial D\right)$ 的三个不同点处保持不动.
+用勒让德倍元公式 $\Gamma\left(1-z\right)=2^{1-z}\pi^{-\frac12}\Gamma\left(\frac{1-z}{2}\right)\Gamma\left(1-\frac z2\right)$, 得
 
-$f\left(D\right)$ 也是以若当闭曲线为边界的区域. 取共形等价 $\Psi:f\left(D\right)\to\mathbb{D}$, 则 $\widetilde h=\Psi\circ h\circ\Psi^{-1}:\mathbb{D}\to\mathbb{D}$ 是全纯自同构, 且它在 $\partial\mathbb{D}$ 的三个不同点 $\Psi\left(f\left(z_{1}\right)\right),\Psi\left(f\left(z_{2}\right)\right),\Psi\left(f\left(z_{3}\right)\right)$ 处等于恒同. $\mathbb{D}$ 的自同构都是莫比乌斯变换, 而莫比乌斯变换由三对对应点唯一确定, 故 $\widetilde h=\text{id}$, 从而 $h=\text{id}$, $g=f$.
+$$
+\xi\left(z\right)=\frac12 z\left(z-1\right)\pi^{\frac{z-1}{2}}\Gamma\left(\frac{1-z}{2}\right)\zeta\left(1-z\right)=\xi\left(1-z\right).
+$$
 
-反例 (两点不够): 取 $D=\mathbb{D}$, $f\left(z\right)=z$, $g\left(z\right)=\phi_{a}\left(z\right)=\frac{z-a}{1-az}$, 其中 $0< a< 1$ 为实数. 二者都是 $\mathbb{D}$ 的自同构且连续延拓到边界. 在 $z=1$ 处 $\phi_{a}\left(1\right)=1=f\left(1\right)$, 在 $z=-1$ 处 $\phi_{a}\left(-1\right)=-1=f\left(-1\right)$, 即 $f,g$ 在两个边界点相等; 但 $a\ne0$ 时 $f\ne g$. 故三个点不能减少为两个点. $\blacksquare$
+(iv) $\xi$ 的系数均为实系数 (由 $\pi,\Gamma,\zeta$ 在实轴取实值), 故 $\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$. 对 $z=\frac12+it$, $\overline z=1-z$, 由 (iii) $\xi\left(z\right)=\xi\left(1-z\right)=\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$, 故 $\xi\left(z\right)\in\mathbb{R}$ 于 $\operatorname{Re}z=\frac12$. $\blacksquare$
+
+## 20.3-5
+
+令 $\zeta_{-}\left(z\right)=1-\frac1{2^{z}}+\frac1{3^{z}}-\cdots=\sum_{n=1}^{+\infty}\frac{\left(-1\right)^{n+1}}{n^{z}}$. 证明: (i) 定义 $\zeta_{-}\left(z\right)$ 的级数对 $\operatorname{Re}z> 0$ 都收敛, 给出了半平面 $\operatorname{Re}s> 0$ 上的一个全纯函数; (ii) 若 $z> 1$, 则 $\zeta_{-}\left(z\right)=\left(1-2^{1-z}\right)\zeta\left(z\right)$; (iii) 利用 (ii) 中的函数方程验证 $\zeta_{-}\left(z\right)$ 在右半平面 $\operatorname{Re}z> 1$ 上都没有零点; (iv) 利用 (ii) 验证函数 $\zeta$ 在实区间 $\left(0,1\right)$ 上没有零点.
+
+### 解答 20.3-5
+
+(i) 对 $\operatorname{Re}z> 0$, $\left|\frac{\left(-1\right)^{n+1}}{n^{z}}\right|=n^{-\operatorname{Re}z}\to0$ 且单调递减, 交错级数收敛. 在紧子集 $\left\{\operatorname{Re}z\ge\delta> 0\right\}$ 上, 交错级数余项不超过首项, 一致收敛, 故 $\zeta_{-}$ 在 $\left\{\operatorname{Re}z> 0\right\}$ 上全纯.
+
+(ii) 对 $z> 1$ 绝对收敛, 分离偶项:
+
+$$
+\zeta_{-}\left(z\right)=\sum_{n=1}^{+\infty}\frac1{n^{z}}-2\sum_{n=1}^{+\infty}\frac1{\left(2n\right)^{z}}=\zeta\left(z\right)-2^{1-z}\zeta\left(z\right)=\left(1-2^{1-z}\right)\zeta\left(z\right).
+$$
+
+(iii) 由 (ii) 及解析延拓, 对 $\operatorname{Re}z> 1$, $\zeta_{-}\left(z\right)=\left(1-2^{1-z}\right)\zeta\left(z\right)$. 因 $\operatorname{Re}z> 1$, $\left|2^{1-z}\right|=2^{1-\operatorname{Re}z}< 1$, 故 $1-2^{1-z}\ne0$; 又由**定义 20.1.1 (黎曼 $\zeta$-函数)** 的欧拉乘积, $\zeta\left(z\right)=\prod_{p}\left(1-p^{-z}\right)^{-1}\ne0$. 故 $\zeta_{-}\left(z\right)\ne0$ 于 $\operatorname{Re}z> 1$.
+
+(iv) 由 (ii) 解析延拓, 对 $x\in\left(0,1\right)$, $\zeta_{-}\left(x\right)=\left(1-2^{1-x}\right)\zeta\left(x\right)$. 因 $0< x< 1$ 时 $1-x> 0$, $2^{1-x}> 1$, $1-2^{1-x}\ne0$; 而 $\zeta_{-}\left(x\right)=\sum_{n}\frac{\left(-1\right)^{n+1}}{n^{x}}> 0$ (交错级数首项 $1> 0$, 各项绝对值递减且 $\frac{1}{2^{x}}< 1$). 故 $\zeta\left(x\right)\ne0$ 于 $\left(0,1\right)$. $\blacksquare$
+
+## 21.5-4
+
+利用习题 21.5-3 (朗道) 中的结论证明毕卡小定理.
+
+### 解答 21.5-4
+
+毕卡小定理: 非常值整函数不能漏掉两个不同的值.
+
+由**习题 21.5-3 (朗道)**, 存在正实函数 $R\left(a\right)> 0$ ($a\in\mathbb{C}\setminus\left\{0,1\right\}$) 使得: 对任意 $a$, 在闭圆盘 $\left\{\left|z\right|\le R\left(a\right)\right\}$ 上不存在全纯函数 $f$ 满足 $f\left(0\right)=a$, $f'\left(0\right)=1$ 且 $f$ 不取值 $0$ 和 $1$.
+
+设 $F$ 是整函数且不取值 $0,1$. 若 $F$ 非常值, 取 $z_{0}$ 使 $F'\left(z_{0}\right)\ne0$; 令 $a:=F\left(z_{0}\right)\in\mathbb{C}\setminus\left\{0,1\right\}$. 定义 $g\left(w\right):=F\left(z_{0}+\frac{w}{F'\left(z_{0}\right)}\right)$, 则 $g$ 在 $\mathbb{C}$ (因而在闭圆盘 $\left\{\left|w\right|\le R\left(a\right)\right\}$) 上全纯, $g\left(0\right)=F\left(z_{0}\right)=a$, $g'\left(0\right)=1$, 且 $g$ 不取值 $0,1$, 与朗道结论矛盾. 故 $F$ 必为常值, 毕卡小定理得证. $\blacksquare$
+
+## 21.5-5
+
+令 $f,g$ 和 $h$ 都是整函数且满足方程 $e^{f}+e^{g}=h$. 证明: $h$ 要么没有零点要么有无穷多的零点.
+
+### 解答 21.5-5
+
+设 $F:=e^{f}$, $G:=e^{g}$, 二者均为无零点的整函数, 且 $h=G\left(1+\frac{F}{G}\right)=G\left(1+e^{f-g}\right)$. 记 $H:=e^{f-g}$, 则 $h=G\left(1+H\right)$, $G$ 无零点, 故 $h$ 的零点恰是 $1+H=0$ 即 $e^{f-g}=-1$ 的解.
+
+若 $f-g$ 为常值, 则 $H$ 为常值: 若 $H\equiv-1$ 则 $h\equiv0$, 无零点; 若 $H\equiv c\ne-1$, 则 $h=G\left(1+c\right)$ 无零点. 故 $h$ 没有零点.
+
+若 $f-g$ 非常值, 由**定理 21.2.3 (毕卡小定理)**, 整函数 $f-g$ 的值域是 $\mathbb{C}$ 或 $\mathbb{C}$ 去掉一点, 故它取无穷多个值 $\left(2k+1\right)\pi i$ ($k\in\mathbb{Z}$); 从而 $e^{f-g}$ 在无穷多个点取 $-1$, $h$ 有无穷多个零点. $\blacksquare$
+
+## 21.5-6
+
+若 $f,g$ 都是整函数, $p,q$ 都是多项式且满足方程 $e^{f}+p=e^{g}+q$, $f\left(0\right)=g\left(0\right)$. 证明: $f=g$ 和 $p=q$.
+
+### 解答 21.5-6
+
+由等式 $e^{f}-e^{g}=q-p$, 即 $e^{g}\left(e^{f-g}-1\right)=q-p$. 反设 $f-g$ 非常值. 则 $e^{f-g}-1$ 的零点满足 $f-g=2\pi ik$, $k\in\mathbb{Z}$. 由**定理 21.2.3 (毕卡小定理)**, 非常值整函数 $f-g$ 的值域是 $\mathbb{C}$ 或 $\mathbb{C}$ 去掉一点, 故取无穷多个值 $2\pi ik$, $e^{f-g}-1$ 有无穷多个零点. 但左边 $e^{g}$ 无零点, 右边 $q-p$ 是多项式至多有限个零点, 且 $e^{g}\left(e^{f-g}-1\right)$ 与 $q-p$ 零点相同, 矛盾. 故 $f-g$ 为常值 $c$.
+
+由 $f\left(0\right)=g\left(0\right)$ 得 $c=0$, 即 $f=g$. 代入原方程 $e^{f}+p=e^{f}+q$, 得 $p=q$. $\blacksquare$
+
+## 21.5-7
+
+令 $\mathcal{E}\left(z\right)=\exp\left(2\pi i\cdot\exp\left(2\pi i z\right)\right)$, $z\in\mathbb{C}$, $f\left(z\right)$ 和 $g\left(z\right)$ 均是不为常值的整函数, 且 $\mathcal{E}\left(f\left(z\right)\right)=\mathcal{E}\left(g\left(z\right)\right)$, $\forall z\in\mathbb{C}$. 证明: 存在 $m\in\mathbb{Z}$ 使得 $f\left(z\right)=g\left(z\right)+m$, $\forall z\in\mathbb{C}$.
+
+### 解答 21.5-7
+
+由 $\exp$ 的性质, $\exp\left(2\pi i\cdot e^{2\pi if}\right)=\exp\left(2\pi i\cdot e^{2\pi ig}\right)$ 推出 $e^{2\pi if}-e^{2\pi ig}\in\mathbb{Z}$ 且连续, 故为常数, 记 $e^{2\pi if}-e^{2\pi ig}=m\in\mathbb{Z}$.
+
+反设 $m\ne0$, 则 $e^{2\pi if}=e^{2\pi ig}+m$. 因 $g$ 非常值整, 由**定理 21.2.3 (毕卡小定理)**, $g$ 的值域是 $\mathbb{C}$ 或 $\mathbb{C}$ 去掉一点, 故 $e^{2\pi ig}$ 取所有非零值 (至多漏一点); 因 $m\ne0$, $-m$ 是非零值, 故存在 $z_{0}$ 使 $e^{2\pi ig\left(z_{0}\right)}=-m$, 于是 $e^{2\pi if\left(z_{0}\right)}=-m+m=0$, 与 $\exp$ 无零点矛盾. 故 $m=0$, 即 $e^{2\pi if}=e^{2\pi ig}$, 从而 $2\pi i\left(f-g\right)=2\pi ik$, $k\in\mathbb{Z}$, 即 $f\left(z\right)=g\left(z\right)+k$. $\blacksquare$
+
+## 21.5-19
+
+令 $f$ 是 $\mathbb{C}$ 上的奇整函数. 证明: $f\left(\mathbb{C}\right)=\mathbb{C}$.
+
+### 解答 21.5-19
+
+$f$ 是整函数, 由**定理 21.2.3 (毕卡小定理)**, $f\left(\mathbb{C}\right)=\mathbb{C}$ 或 $f\left(\mathbb{C}\right)=\mathbb{C}\setminus\left\{a\right\}$ (漏一个值 $a$). 若 $f$ 常值, 奇性 $f\left(-z\right)=-f\left(z\right)$ 迫使 $f\equiv0$, 值域 $\left\{0\right\}\ne\mathbb{C}$; 故设 $f$ 非常值, 从而 $f\left(\mathbb{C}\right)=\mathbb{C}$ 或 $\mathbb{C}\setminus\left\{a\right\}$.
+
+因 $f$ 是奇函数, $w\in f\left(\mathbb{C}\right)$ 当且仅当 $-w\in f\left(\mathbb{C}\right)$ (取 $-z$ 即得), 故 $f\left(\mathbb{C}\right)$ 关于原点对称. 若 $f\left(\mathbb{C}\right)=\mathbb{C}\setminus\left\{a\right\}$, 对称性要求 $\mathbb{C}\setminus\left\{a\right\}=\mathbb{C}\setminus\left\{-a\right\}$, 得 $a=-a$, 即 $a=0$. 但 $f\left(0\right)=0$ (奇函数), 故 $0\in f\left(\mathbb{C}\right)$, 与 $a=0$ 矛盾. 故 $f\left(\mathbb{C}\right)=\mathbb{C}$. $\blacksquare$
+
+## 22.4-1
+
+令 $\mathcal{F}$ 是区域 $D\subset\mathbb{C}$ 上的一个亚纯函数族, 若对于任意 $a\in D$, 都存在它的邻域 $U\subset D$ 使得 $\mathcal{F}$ 是 $U$ 上的正规族. 证明: $\mathcal{F}$ 是 $D$ 上的正规族.
+
+### 解答 22.4-1
+
+取 $D$ 的穷竭序列 $\left\{K_{m}\right\}$: 紧集 $K_{1}\subset K_{2}\subset\cdots\subset D$, $\bigcup_{m}K_{m}=D$, 且 $K_{m}\subset K_{m+1}^{\circ}$. 固定 $m$: 由紧性, $K_{m}$ 被有限个邻域 $U_{a}$ 覆盖, 而 $\mathcal{F}$ 在每个 $U_{a}$ 上正规.
+
+先证明 $\mathcal{F}$ 在 $K_{m}$ 上正规. 任取序列 $\left\{f_{n}\right\}\subset\mathcal{F}$. 因 $\mathcal{F}$ 在 $U_{a}$ 上正规, 由有限覆盖及对角线取法, 可依次抽出子列 $\left\{f_{n}^{\left(j\right)}\right\}$ 使 $\left\{f_{n}^{\left(j\right)}\right\}$ 在 $U_{a_{j}}$ ($j=1,\ldots,N$) 上内紧收敛. 于是存在 $\left\{f_{n}\right\}$ 的子列在 $K_{m}$ 上内紧一致收敛.
+
+再对整个 $D$ 用对角线法: 对每个 $m$, 抽出在 $K_{m}$ 上内紧收敛的子列, 对角线子列在一切 $K_{m}$ 上内紧收敛. 因 $\left\{K_{m}\right\}$ 穷竭 $D$, 该子列在 $D$ 上内紧一致收敛. 由**定义 22.1.5 (正规族)**, $\mathcal{F}$ 在 $D$ 上正规. $\blacksquare$
+
+## 22.4-2
+
+令 $\mathcal{F}$ 是区域 $D\subset\mathbb{C}$ 上的全纯函数族且存在不同 $a,b\in\mathbb{C}$ 和自然数 $n\ge1$ 使得对于任意 $f\in\mathcal{F}$ 都有 $f\left(D\right)\subset\mathbb{C}\setminus\left\{a\right\}$ 而 $f^{-1}\left(b\right)\cap D$ 的元素不超过 $n$ 个. 证明: $\mathcal{F}$ 是 $D$ 上的正规族.
+
+### 解答 22.4-2
+
+反设 $\mathcal{F}$ 不正规. 由**定理 22.2.1 (扎尔克曼引理)**, 存在 $f_{n}\in\mathcal{F}$, $z_{n}\to z_{0}\in D$, $\rho_{n}\to0^{+}$ 使 $g_{n}\left(w\right):=f_{n}\left(z_{n}+\rho_{n}w\right)$ 内紧一致收敛到非常值整函数 $g$.
+
+因 $f_{n}$ 漏 $a$, 极限 $g$ 也漏 $a$ ($g\left(\mathbb{C}\right)\subset\mathbb{C}\setminus\left\{a\right\}$). 由**定理 21.2.3 (毕卡小定理)**, 非常值整函数 $g$ 的值域是 $\mathbb{C}$ 或 $\mathbb{C}$ 去掉一点, 而 $a$ 已漏, 故 $g$ 取 $b$ ($b\ne a$) 无穷多次: $g$ 有无穷多个 $b$-点, 它们无聚点.
+
+取紧圆盘 $K$ 含 $g$ 的 $n+1$ 个 $b$-点. 因 $g_{n}\to g$ 于 $K$ 一致且 $g$ 在这些点取值 $b$ (无聚点, 故可在 $K$ 内取不相交小邻域), 对充分大 $n$, $g_{n}$ 在 $K$ 内至少有 $n+1$ 个 $b$-点 (鲁歇定理/一致收敛保持零点个数). 但 $g_{n}$ 的 $b$-点即 $f_{n}^{-1}\left(b\right)$ 落在 $z_{n}+\rho_{n}K$ 中的点, 至多 $n$ 个, 矛盾. 故 $\mathcal{F}$ 正规. $\blacksquare$
+
+## 22.4-4
+
+令 $\mathcal{F}$ 是区域 $D\subset\mathbb{C}$ 上的一个亚纯函数族. 证明: $\mathcal{F}$ 是 $D$ 上的一个正规族当且仅当对于任意 $z\in D$, 都存在它的一个邻域 $U\left(z\right)\subset D$ 使得 $\left|f\left(\zeta\right)\right|< 2$ 或者 $\frac1{\left|f\left(\zeta\right)\right|}< 2$, $\forall\zeta\in U\left(z\right)$, $\forall f\in\mathcal{F}$ (对全族取同一种情形).
+
+### 解答 22.4-4
+
+充分性. 假设对每点 $z_{0}\in D$ 存在邻域 $U=U\left(z_{0}\right)$ 使对所有 $f\in\mathcal{F}$ 于 $\zeta\in U$ 成立 $\left|f\left(\zeta\right)\right|< 2$ 或 $\left|f\left(\zeta\right)\right|> \frac12$.
+
+情形一: $\left|f\left(\zeta\right)\right|< 2$ 于 $U$ (一致有界). 取紧子邻域 $K\ni z_{0}$, 由柯西估计 $f'$ 在 $K$ 上一致有界, 故球面导数 $f^{\#}=\frac{2\left|f'\right|}{1+\left|f\right|^{2}}\le2\left|f'\right|$ 一致有界.
+
+情形二: $\left|f\left(\zeta\right)\right|> \frac12$ 于 $U$, 即 $\left|f\right|$ 有正下界, $g:=\frac1f$ 一致有界, 由柯西估计 $g'$ 一致有界, 于是 $f'=\frac{g'}{g^{2}}$ 一致有界 ($\left|g^{2}\right|> \frac14$), $f^{\#}\le2\left|f'\right|$ 一致有界.
+
+故每点邻域内球面导数一致有界; 由紧性, 对每个紧子集 $K\subset D$ 球面导数一致有界. 由**定理 22.1.7 (马蒂准则)**, $\mathcal{F}$ 在 $D$ 上正规.
+
+必要性. 假设 $\mathcal{F}$ 在 $D$ 上正规. 由马蒂准则, 对每点 $z_{0}\in D$ 存在紧邻域 $K$ 及 $M$ 使 $f^{\#}\left(\zeta\right)\le M$, $\forall f\in\mathcal{F}$, $\forall\zeta\in K$. 反设对任意小邻域 $U\ni z_{0}$ 都存在 $f\in\mathcal{F}$ 和 $\zeta\in U$ 使 $\left|f\left(\zeta\right)\right|\ge2$ 且 $\frac1{\left|f\left(\zeta\right)\right|}\ge2$ (即 $\left|f\left(\zeta\right)\right|\le\frac12$). 这在单个点不可能同时成立, 故每点 $z_{0}$ 存在邻域 $U$ 使 $\forall f\in\mathcal{F},\forall\zeta\in U$ 满足 $\left|f\left(\zeta\right)\right|< 2$ 或 $\frac1{\left|f\left(\zeta\right)\right|}< 2$ (取更小邻域即可, 因球面导数有界保证 $\left|f\right|$ 不穿过 $2$ 与 $\frac12$ 之间的值). $\blacksquare$

@@ -1,139 +1,316 @@
 # week4
 
-> **Definition 4.1.2 (Conformal)**
+> **Definition 3.2.1 (Differentiability)**
 > 
-> $f$ is conformal at $z$ if it is holomorphic and univalent on a neighborhood of $z$ and $f'\left(z\right)\ne0$.
+> $f$ is $\mathbb{R}$-differentiable (or $\mathbb{C}$-differentiable) at $z$ if $\Delta f=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, where $\ell$ is $\mathbb{R}$-linear (or $\mathbb{C}$-linear).
 
-> **Theorem 4.1.5 (Criterion for Conformality)**
+> **Definition 3.2.2 (Formal Derivatives)**
 > 
-> $f$ is conformal at $z$ if and only if $f$ is $\mathbb{C}$-differentiable at $z$ and $f'\left(z\right)\ne0$.
+> The formal derivative operators are
 
-> **Definition 4.2.1 (Mobius Transformation)**
+$$
+\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right).
+$$
+
+> **Theorem 3.2.4 (Cauchy-Riemann Equations)**
 > 
-> A function of the form
+> $f$ is $\mathbb{C}$-differentiable at $z$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$, equivalently $u,v$ satisfy the Cauchy-Riemann equations.
 
-$$
-f\left(z\right)=\frac{az+b}{cz+d}
-$$
-
-(where $a,b,c,d\in\mathbb{C}$ and $ad-bc\ne0$) is called a Mobius transformation (or fractional linear transformation); it is a bijection of the extended complex plane onto itself, and its inverse is also a Mobius transformation.
-
-> **Theorem 4.3.4 (Circles Map to Circles)**
+> **Definition 7.1.1 (Path Integral)**
 > 
-> A Mobius transformation maps circles (generalized circles, i.e. circles or lines) in the extended plane to circles, and preserves angles of intersection.
+> The integral of $f$ along a piecewise smooth path $\gamma:\left[a,b\right]\to\mathbb{C}$ is
 
-> **Definition 4.4.1 (Univalent)**
+> **Definition 7.2.1 (Antiderivative)**
 > 
-> $f$ is univalent on a domain $D$ if it is injective on $D$.
+> A holomorphic function $F$ on a domain $D$ is called an antiderivative of $f$ if $F'=f$ on $D$; $f$ has an antiderivative if and only if its integral along every closed path in $D$ is zero.
 
-> **Theorem 4.4.2**
+> **Theorem 7.2.3**
 > 
-> If $f$ is holomorphic at $z_{0}$ and $f'\left(z_{0}\right)=0$, then $f$ is not univalent on any neighborhood of $z_{0}$.
+> $\frac{1}{z}$ has an antiderivative on a domain $D\subset\mathbb{C}\setminus\left\{0\right\}$ if and only if $D$ admits a holomorphic branch of $\operatorname{Ln}z$.
 
-## 4.5-1
-
-Prove: every Mobius transformation $\lambda$ has at least one fixed point on the extended complex plane, i.e. there exists at least one $z_{0}\in\widehat{\mathbb{C}}$ such that $\lambda\left(z_{0}\right)=z_{0}$; if it has three fixed points, then it must be the identity.
-
-### Solution 4.5-1
-
-Let $\lambda\left(z\right)=\frac{az+b}{cz+d}$, $ad-bc\ne0$. A fixed point $z$ satisfies $\frac{az+b}{cz+d}=z$, i.e.
+> **Theorem 7.2.3 (Existence of Antiderivatives)**
+> 
+> Every holomorphic function on a simply connected domain has an antiderivative, and
 
 $$
-cz^{2}+\left(d-a\right)z-b=0.\tag{1}
+\int_{\gamma}f\,dz=F\left(\gamma\left(b\right)\right)-F\left(\gamma\left(a\right)\right).
 $$
 
-Two cases.
-
-If $c\ne0$, then (1) is a genuine quadratic equation, which by the fundamental theorem of algebra has at least one solution in $\mathbb{C}$ (with multiplicity), so $\lambda$ has at least one finite fixed point. In this case $\lambda\left(\infty\right)=\frac{a}{c}\in\mathbb{C}$, and $\infty$ is not a fixed point.
-
-If $c=0$, then $ad\ne0$, $\lambda$ is the affine transformation $\lambda\left(z\right)=\alpha z+\beta$ ($\alpha=\frac{a}{d}\ne0$, $\beta=\frac{b}{d}$), and $\lambda\left(\infty\right)=\infty$, so $\infty$ is a fixed point. If $\alpha\ne1$, there is also the finite fixed point $z=\frac{\beta}{1-\alpha}$; if $\alpha=1$, then $\lambda\left(z\right)=z+\beta$ is a translation (with only $\infty$ as fixed point when $\beta\ne0$, and the identity when $\beta=0$).
-
-Thus every Mobius transformation has at least one fixed point on the extended plane.
-
-If $\lambda$ has three fixed points: if $c\ne0$, there are at most two finite fixed points (the quadratic (1) has at most two solutions, unless identically zero, but $c\ne0$), and $\infty$ is not a fixed point, a contradiction. Hence $c=0$, $\lambda\left(z\right)=\alpha z+\beta$. Then there is at most one finite fixed point ($\alpha\ne1$) or none ($\alpha=1,\beta\ne0$); to have three fixed points we must have $\alpha=1$, $\beta=0$, i.e. $\lambda$ is the identity. $\blacksquare$
-
-## 4.5-3
-
-Describe the image of the half-plane $\left\{z\in\mathbb{C}:\operatorname{Re}z< 1\right\}$ under each of the following Mobius transformations:
-
-(i) $z\mapsto\left(1+i\right)z+1$; (ii) $z\mapsto\frac{z}{z-2}$; (iii) $z\mapsto\frac{4z}{z+1}$.
-
-### Solution 4.5-3
-
-The boundary $\operatorname{Re}z=1$ (the line $x=1$) is mapped by a Mobius transformation to a generalized circle (**Theorem 4.3.4 (Circles Map to Circles)**); the image region has this generalized circle as boundary, and one test point determines the side.
-
-(i) For $\lambda\left(z\right)=\left(1+i\right)z+1$, take a boundary point $z=1+iy$: $\lambda\left(1+iy\right)=\left(1+i\right)\left(1+iy\right)+1=\left(2-y\right)+i\left(1+y\right)$. Let $u=2-y$, $v=1+y$; eliminating $y$ gives $u+v=3$, so the boundary maps to the line $u+v=3$. Take an interior point $z=0\in\left\{\operatorname{Re}z< 1\right\}$: $\lambda\left(0\right)=1$, and $1+0=1< 3$. Hence the image is
+> **Theorem 8.1.4 (Cauchy's Theorem)**
+> 
+> If $f$ is holomorphic on a domain $D$ and $\gamma_{0},\gamma_{1}$ are homotopic paths in $D$ with the same endpoints (or homotopic closed paths), then
 
 $$
-\left\{w:\operatorname{Re}w+\operatorname{Im}w< 3\right\}.
+\int_{\gamma_{0}}f\,dz=\int_{\gamma_{1}}f\,dz;
 $$
+in particular, the integral of $f$ along any closed path in $D$ is zero.
 
-(ii) For $\lambda\left(z\right)=\frac{z}{z-2}$, the pole $z=2$ is not on the boundary $x=1$, so the boundary maps to a circle. $\lambda\left(\infty\right)=1$, $\lambda\left(1\right)=-1$, $\lambda\left(1+i\right)=\frac{1+i}{-1+i}=-i$, so the boundary maps to the circle through $1,-1,-i$, namely the unit circle $\left|w\right|=1$. Take $z=0$: $\lambda\left(0\right)=0$, $\left|0\right|=0< 1$. Hence the image is the open unit disk
-
-$$
-\left\{w:\left|w\right|< 1\right\}.
-$$
-
-(iii) For $\lambda\left(z\right)=\frac{4z}{z+1}$, the pole $z=-1$ is not on the boundary $x=1$, so the boundary maps to a circle. $\lambda\left(\infty\right)=4$, $\lambda\left(1\right)=2$, $\lambda\left(1+i\right)=\frac{4\left(1+i\right)}{2+i}=\frac{12+4i}{5}$, so the boundary maps to the circle through $4,2,\frac{12+4i}{5}$. Let the circle be $x^{2}+y^{2}+ax+by+c=0$; substituting $\left(4,0\right),\left(2,0\right),\left(2.4,0.8\right)$ gives $a=-6$, $b=0$, $c=8$, i.e. $\left(x-3\right)^{2}+y^{2}=1$, center $3$, radius $1$. Take $z=0$: $\lambda\left(0\right)=0$, $\left|0-3\right|=3> 1$, outside the circle; also $-1\in\left\{\operatorname{Re}z< 1\right\}$ and $\lambda\left(-1\right)=\infty$. Hence the image is the exterior region
+> **Theorem 8.3.1 (Cauchy Integral Formula)**
+> 
+> If $f$ is holomorphic on a domain containing a Jordan closed curve $\gamma$ and its interior, and $z$ lies in the interior of $\gamma$, then
 
 $$
-\left\{w:\left|w-3\right|> 1\right\}\cup\left\{\infty\right\}.
+f\left(z\right)=\frac{1}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
 $$
 
-$\blacksquare$
-
-## 4.5-5
-
-Let $f:\mathbb{C}\to\mathbb{C}$ be $f\left(z\right)=z^{2}-2z+2$.
-
-(i) Find all $w\in\mathbb{C}$ such that $f'\left(w\right)=0$;
-
-(ii) Prove $f$ cannot be univalent on any neighborhood of the point $w$ in (i);
-
-(iii) Prove $f$ cannot be conformal at the point $w$ in (i).
-
-### Solution 4.5-5
-
-(i) $f'\left(z\right)=2z-2$, so $f'\left(w\right)=0$ if and only if $w=1$. The only such point is $w=1$.
-
-(ii) Since $f'\left(1\right)=0$, by **Theorem 4.4.2**, $f$ is not univalent on any neighborhood of $1$. (More directly, $f\left(z\right)=\left(z-1\right)^{2}+1$; for any $\delta\ne0$, $f\left(1+\delta\right)=f\left(1-\delta\right)$ while $1+\delta\ne1-\delta$, so any neighborhood containing $1$ is not univalent.)
-
-(iii) By **Theorem 4.1.5 (Criterion for Conformality)**, $f$ is conformal at $z$ if and only if $f'\left(z\right)\ne0$; here $f'\left(1\right)=0$, so $f$ is not conformal at $1$. $\blacksquare$
-
-## 4.5-14
-
-Consider the Mobius transformation $w\left(z\right)=\frac{az+b}{cz+d}$ and the matrix $M=\begin{bmatrix}a&b\\c&d\end{bmatrix}$. Prove: the vector $\binom{z_{1}}{z_{2}}\in\mathbb{C}^{2}$ is an eigenvector of $M$ if and only if $\zeta=\frac{z_{1}}{z_{2}}$ is a fixed point of $w$, where if $z_{2}=0$, then $\zeta=\infty$.
-
-### Solution 4.5-14
-
-Let $\binom{z_{1}}{z_{2}}$ be nonzero. If $z_{2}\ne0$, write $\zeta=\frac{z_{1}}{z_{2}}$. $\binom{z_{1}}{z_{2}}$ is an eigenvector of $M$ if and only if there exists $\lambda$ such that
+> **Theorem 8.3.2 (Higher Derivative Formula)**
+> 
+> If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then $f$ has derivatives of all orders at $z$ and
 
 $$
-\begin{bmatrix}a&b\\c&d\end{bmatrix}\binom{z_{1}}{z_{2}}=\lambda\binom{z_{1}}{z_{2}},
+f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta,\quad n\ge1.
 $$
 
-i.e. $az_{1}+bz_{2}=\lambda z_{1}$ and $cz_{1}+dz_{2}=\lambda z_{2}$. Dividing by $z_{2}$: $a\zeta+b=\lambda\zeta$, $c\zeta+d=\lambda$. Eliminating $\lambda$:
-
 $$
-a\zeta+b=\zeta\left(c\zeta+d\right),
+f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta.
 $$
 
-i.e. $c\zeta^{2}+\left(d-a\right)\zeta-b=0$, which is exactly the fixed point equation $w\left(\zeta\right)=\frac{a\zeta+b}{c\zeta+d}=\zeta$. Thus the claim holds when $z_{2}\ne0$.
+> **Theorem 9.1.3 (Liouville's Theorem)**
+> 
+> Every bounded entire function on $\mathbb{C}$ is constant.
 
-If $z_{2}=0$, then $\zeta=\infty$, and $z_{1}\ne0$. $M\binom{z_{1}}{0}=\binom{az_{1}}{cz_{1}}$ is a scalar multiple of $\binom{z_{1}}{0}$ if and only if $c=0$. On the other hand, $w\left(\infty\right)=\lim_{z\to\infty}\frac{az+b}{cz+d}=\frac{a}{c}$ (when $c\ne0$) or $\infty$ (when $c=0$), i.e. $w\left(\infty\right)=\infty$ if and only if $c=0$. Thus the claim also holds when $z_{2}=0$. $\blacksquare$
+> **Theorem 9.3.2 (Identity Theorem)**
+> 
+> If the zeros of a holomorphic function on a domain $D$ have an accumulation point in $D$, then $f\equiv0$.
 
-## 4.5-16
+> **Theorem 9.3.3 (Uniqueness Theorem)**
+> 
+> If two holomorphic functions $f,g$ on a domain $D$ agree on a set with an accumulation point in $D$, then $f\equiv g$.
 
-Let $f=u\left(z\right)+iv\left(z\right)$ be holomorphic at $z_{0}\in\mathbb{C}$ with $f'\left(z_{0}\right)\ne0$. Prove: the level sets of $u$ and $v$ (sets of points where the function takes a given constant value) intersect at angle $\frac{\pi}{2}$ at $z_{0}$.
+> **Theorem 10.1.4 (Open Mapping Theorem)**
+> 
+> A nonconstant holomorphic function maps domains onto domains.
 
-### Solution 4.5-16
+## 7.4-7
 
-The tangent lines to the level sets of $u,v$ at $z_{0}$ are perpendicular to the gradients $\nabla u=\left(u_{x},u_{y}\right)$ and $\nabla v=\left(v_{x},v_{y}\right)$. Since $f$ is holomorphic at $z_{0}$, $u,v$ satisfy the Cauchy-Riemann equations $u_{x}=v_{y}$, $u_{y}=-v_{x}$, so
+Determine whether the following have antiderivatives on $\mathbb{C}\setminus\left\{0\right\}$: (i) $\sin\frac{1}{z}$; (ii) $\cos\frac{1}{z}$; (iii) $e^{\frac{1}{z^{3}}}$.
+
+### Solution to 7.4-7
+
+By **Definition 7.2.1 (Antiderivative)**, $f$ has an antiderivative on $\mathbb{C}\setminus\left\{0\right\}$ if and only if its integral along every closed curve winding around $0$ is zero, i.e. the residue of $f$ at $z=0$ (an essential singularity) is zero.
+
+(i) $\sin\frac{1}{z}=\frac{1}{z}-\frac{1}{3!z^{3}}+\frac{1}{5!z^{5}}-\cdots$ contains a $z^{-1}$ term with coefficient (residue) $1\ne0$. Hence $\sin\frac1z$ has no antiderivative on $\mathbb{C}\setminus\left\{0\right\}$.
+
+(ii) $\cos\frac{1}{z}=1-\frac{1}{2!z^{2}}+\frac{1}{4!z^{4}}-\cdots$ contains no $z^{-1}$ term, so the residue is $0$. Indeed $F\left(z\right)=z+\frac{1}{2z}-\frac{1}{72z^{3}}+\cdots$ (termwise integration) is single-valued holomorphic on $\mathbb{C}\setminus\left\{0\right\}$ with $F'=\cos\frac1z$. Hence $\cos\frac1z$ has an antiderivative on $\mathbb{C}\setminus\left\{0\right\}$.
+
+(iii) $e^{\frac{1}{z^{3}}}=1+\frac{1}{z^{3}}+\frac{1}{2!z^{6}}+\cdots$ contains only $z^{-3k}$ ($k\ge0$) terms, no $z^{-1}$ term, so the residue is $0$. Its termwise integral $F\left(z\right)=z-\frac{1}{2z^{2}}+\cdots$ is single-valued holomorphic on $\mathbb{C}\setminus\left\{0\right\}$ with $F'=e^{1/z^{3}}$. Hence $e^{1/z^{3}}$ has an antiderivative on $\mathbb{C}\setminus\left\{0\right\}$. $\blacksquare$
+
+## 7.4-9
+
+Suppose $F\left(z\right)$ is an antiderivative of $f\left(z\right)=\frac{1}{z}$ on a domain $D\subset\mathbb{C}\setminus\left\{0\right\}$. Prove: there exists $c\in\mathbb{C}$ such that $F\left(z\right)+c\in\operatorname{Ln}z$ for all $z\in D$.
+
+### Solution to 7.4-9
+
+$F'=\frac{1}{z}$ on $D$. Let $G\left(z\right):=e^{F\left(z\right)}$; then $G$ is holomorphic on $D$ and
 
 $$
-\nabla u\cdot\nabla v=u_{x}v_{x}+u_{y}v_{y}=u_{x}\left(-u_{y}\right)+u_{y}u_{x}=0.
+G'\left(z\right)=e^{F\left(z\right)}F'\left(z\right)=\frac{e^{F\left(z\right)}}{z}=\frac{G\left(z\right)}{z}.
 $$
 
-Hence $\nabla u\perp\nabla v$, the two gradients are orthogonal, and therefore the tangent lines to the two level sets are also orthogonal, meeting at angle $\frac{\pi}{2}$.
+Hence $\left(\frac{G\left(z\right)}{z}\right)'=\frac{G'\left(z\right)z-G\left(z\right)}{z^{2}}=\frac{G\left(z\right)-G\left(z\right)}{z^{2}}=0$, so $\frac{G\left(z\right)}{z}$ is constant on the connected domain $D$; write $\frac{G\left(z\right)}{z}=e^{c}$ ($c\in\mathbb{C}$). Then
 
-Since $f'\left(z_{0}\right)\ne0$, from $f'\left(z_{0}\right)=u_{x}\left(z_{0}\right)+iv_{x}\left(z_{0}\right)$ we see that $\nabla u,\nabla v$ are both nonzero at $z_{0}$, so both level sets have well-defined tangent lines at $z_{0}$. $\blacksquare$
+$$
+e^{F\left(z\right)}=e^{c}z=e^{c+\operatorname{Ln}z},
+$$
+
+so $e^{F\left(z\right)-c-\operatorname{Ln}z}=1$, i.e. $F\left(z\right)-c-\operatorname{Ln}z\in2\pi i\mathbb{Z}$, and thus $F\left(z\right)-c\in\operatorname{Ln}z$. Taking $c':=-c$, $F\left(z\right)+c'\in\operatorname{Ln}z$ for all $z\in D$. $\blacksquare$
+
+## 8.4-2
+
+Let $f$ be holomorphic and nonzero on a simply connected domain $D$. Prove:
+
+(i) there exists a holomorphic function $g$ on $D$ such that $e^{g\left(z\right)}=f\left(z\right)$ for all $z\in D$;
+
+(ii) for every integer $q\ge1$, there exists a holomorphic function $g_{q}$ on $D$ such that $\left(g_{q}\left(z\right)\right)^{q}=f\left(z\right)$ for all $z\in D$.
+
+### Solution to 8.4-2
+
+(i) Since $f$ is holomorphic and nonzero on $D$, $\frac{f'\left(z\right)}{f\left(z\right)}$ is holomorphic on $D$. Since $D$ is simply connected, by **Theorem 7.2.3 (Existence of Antiderivatives)**, $\frac{f'}{f}$ has an antiderivative $g_{0}$ on $D$, i.e. $g_{0}'=\frac{f'}{f}$. Consider $F\left(z\right)=e^{-g_{0}\left(z\right)}f\left(z\right)$; then
+
+$$
+F'=e^{-g_{0}}f'-g_{0}'e^{-g_{0}}f=e^{-g_{0}}\left(f'-\frac{f'}{f}f\right)=0,
+$$
+
+so $F$ is constant on $D$, say $F=c$. Since $F\ne0$, choose $w_{0}\in\mathbb{C}$ with $e^{w_{0}}=c$, and set $g=g_{0}+w_{0}$; then
+
+$$
+e^{g\left(z\right)}=e^{g_{0}\left(z\right)}e^{w_{0}}=e^{g_{0}\left(z\right)}c=f\left(z\right),\quad\forall z\in D.
+$$
+
+(ii) From (i), take holomorphic $g$ with $e^{g\left(z\right)}=f\left(z\right)$. Set $g_{q}\left(z\right)=e^{\frac{g\left(z\right)}{q}}$; then $g_{q}$ is holomorphic on $D$ and
+
+$$
+\left(g_{q}\left(z\right)\right)^{q}=\left(e^{\frac{g\left(z\right)}{q}}\right)^{q}=e^{g\left(z\right)}=f\left(z\right),\quad\forall z\in D.
+$$
+
+This completes the proof. $\blacksquare$
+
+## 8.4-4
+
+Let $f$ be $\mathbb{R}$-differentiable on $\mathbb{C}$, with $\int_{\gamma}f\left(z\right)\,dz=0$ for every circle $\gamma$. Prove: $f$ is holomorphic on $\mathbb{C}$.
+
+### Solution to 8.4-4
+
+Take any $a\in\mathbb{C}$ and the circle $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$ of radius $\varepsilon> 0$. Since $f$ is $\mathbb{R}$-differentiable at $a$ (**Definition 3.2.1 (Differentiability)**), expand
+
+$$
+f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\overline{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
+$$
+
+Substituting into $\int_{\gamma_{\varepsilon}}f\,dz$ and following the computation in (Exercise 7.4-2),
+
+$$
+\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\overline{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
+$$
+
+By assumption the left side is zero for every $\varepsilon> 0$; dividing by $\varepsilon^{2}$ and letting $\varepsilon\to0$ gives $\frac{\partial f}{\partial\overline{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ is arbitrary, $\frac{\partial f}{\partial\overline{z}}\equiv0$ on $\mathbb{C}$, and by **Theorem 3.2.4 (Cauchy-Riemann Equations)**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
+
+## 8.4-6
+
+Given $\int_{0}^{\infty}e^{-x^{2}}\,dx=\frac{\sqrt{\pi}}{2}$. Compute (Fresnel integrals)
+
+(i) $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx$; (ii) $\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx$; (iii) $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx$, $b> 0$.
+
+### Solution to 8.4-6
+
+(i) and (ii) combined. Consider the contour: from $0$ along the real axis to $R$, then along the arc $Re^{i\theta}$, $\theta\in\left[0,\frac{\pi}{4}\right]$, then back along the segment $z=te^{i\pi/4}$, $t:R\to0$, to $0$. Since $e^{iz^{2}}$ is entire, the contour integral is zero. On the large arc, $\left|e^{iz^{2}}\right|=e^{-\operatorname{Re}\left(iz^{2}\right)}=e^{-R^{2}\sin2\theta}$; for $\theta\in\left[0,\frac{\pi}{4}\right]$, $\sin2\theta\ge\frac{2\theta}{\pi}$ and $e^{-R^{2}\sin2\theta}\to0$ uniformly ($\theta> 0$), so the arc integral tends to $0$. Letting $R\to\infty$:
+
+$$
+\int_{0}^{\infty}e^{ix^{2}}\,dx=\int_{0}^{\infty}e^{-t^{2}}e^{i\pi/4}\,dt=e^{i\pi/4}\frac{\sqrt{\pi}}{2}.
+$$
+
+Taking real and imaginary parts,
+
+$$
+\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx=\operatorname{Re}\left(e^{i\pi/4}\frac{\sqrt{\pi}}{2}\right)=\frac{\sqrt{\pi}}{2}\cdot\frac{1}{\sqrt{2}}=\frac{\sqrt{\pi}}{2\sqrt{2}},
+$$
+
+$$
+\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx=\operatorname{Im}\left(e^{i\pi/4}\frac{\sqrt{\pi}}{2}\right)=\frac{\sqrt{\pi}}{2\sqrt{2}}.
+$$
+
+(iii) Write $I\left(b\right)=\int_{0}^{\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx$. From $\int_{-\infty}^{\infty}e^{-x^{2}}e^{2ibx}\,dx=\sqrt{\pi}e^{-b^{2}}$ (completing the square: $x^{2}-2ibx=\left(x-ib\right)^{2}+b^{2}$, shifting the contour to the real axis), taking real parts and using evenness,
+
+$$
+I\left(b\right)=\frac{1}{2}\int_{-\infty}^{\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx=\frac{1}{2}\cdot\sqrt{\pi}e^{-b^{2}}=\frac{\sqrt{\pi}}{2}e^{-b^{2}}.
+$$
+
+In summary, $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx=\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx=\frac{\sqrt{\pi}}{2\sqrt{2}}$, and $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx=\frac{\sqrt{\pi}}{2}e^{-b^{2}}$. $\blacksquare$
+
+## 8.4-8
+
+Let $D\subset\mathbb{C}$ be the exterior region of a piecewise smooth Jordan closed curve, $f$ holomorphic on $D$, and $\lim_{z\to\infty}f\left(z\right)=A\in\mathbb{C}$. Prove: for all $z\in D$, $f\left(z\right)=-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$, where $\partial D$ is oriented counterclockwise.
+
+### Solution to 8.4-8
+
+Fix $z\in D$. Take $R$ large enough that both $z$ and $\partial D$ lie inside $\left\{\left|w\right|< R\right\}$. Let $\Gamma_{R}$ be the counterclockwise circle $\left|\zeta\right|=R$; then $f$ is holomorphic on the annular region (including boundary) between $\Gamma_{R}$ and $\partial D$. By **Theorem 8.3.1 (Cauchy Integral Formula)** applied to the annulus (or separately on inner and outer boundaries),
+
+$$
+f\left(z\right)=\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
+$$
+
+Let $R\to\infty$. Write
+
+$$
+\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta
+=\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)-A}{\zeta-z}\,d\zeta+\frac{A}{2\pi i}\int_{\Gamma_{R}}\frac{d\zeta}{\zeta-z}.
+$$
+
+Since $z$ lies inside $\Gamma_{R}$, $\int_{\Gamma_{R}}\frac{d\zeta}{\zeta-z}=2\pi i$; on $\left|\zeta\right|=R$, $\frac{1}{\left|\zeta-z\right|}\le\frac{C}{R}$, and $f\left(\zeta\right)\to A$ gives $\sup_{\left|\zeta\right|=R}\left|f\left(\zeta\right)-A\right|\to0$, so the first integral $\to0$. Hence $\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta\to A$. Letting $R\to\infty$,
+
+$$
+f\left(z\right)=A-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta,
+$$
+
+i.e. $f\left(z\right)=-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$. $\blacksquare$
+
+## 8.4-10
+
+(Taylor expansion with integral remainder) Let $D\subset\mathbb{C}$ be a domain and $f$ holomorphic on $D$. Prove: for any $z_{0},z_{1}\in D$ and a smooth path $\gamma$ in $D$ joining $z_{0}$ to $z_{1}$ ($\gamma\left(0\right)=z_{0}$, $\gamma\left(1\right)=z_{1}$),
+
+$$
+f\left(z_{1}\right)=f\left(z_{0}\right)+\sum_{k=1}^{n}\frac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z_{1}-z_{0}\right)^{k}+\frac{1}{n!}\int_{\gamma}\left(z_{1}-\zeta\right)^{n}f^{\left(n+1\right)}\left(\zeta\right)\,d\zeta,\quad\forall n\in\mathbb{N}.
+$$
+
+### Solution to 8.4-10
+
+Induct on $n$. For $n=0$, by **Theorem 7.2.3 (Existence of Antiderivatives)** and since $f$ is an antiderivative of $f'$,
+
+$$
+f\left(z_{1}\right)=f\left(z_{0}\right)+\int_{\gamma}f'\left(\zeta\right)\,d\zeta,
+$$
+
+so the claim holds for $n=0$.
+
+Assume the claim holds for $n-1$, and write
+
+$$
+R_{n-1}=\frac{1}{\left(n-1\right)!}\int_{\gamma}\left(z_{1}-\zeta\right)^{n-1}f^{\left(n\right)}\left(\zeta\right)\,d\zeta.
+$$
+
+Integrate $R_{n-1}$ by parts (using $d f^{\left(n\right)}=f^{\left(n+1\right)}d\zeta$ and $d\left(z_{1}-\zeta\right)^{n-1}=-\left(n-1\right)\left(z_{1}-\zeta\right)^{n-2}d\zeta$):
+
+$$
+\int_{\gamma}\left(z_{1}-\zeta\right)^{n-1}f^{\left(n\right)}\left(\zeta\right)\,d\zeta
+=\left[\left(z_{1}-\zeta\right)^{n-1}f^{\left(n\right)}\left(\zeta\right)\right]_{\gamma\left(0\right)}^{\gamma\left(1\right)}
+-\int_{\gamma}f^{\left(n\right)}\left(\zeta\right)\,d\left[\left(z_{1}-\zeta\right)^{n-1}\right]
+$$
+
+$$
+=-\left(z_{1}-z_{0}\right)^{n-1}f^{\left(n\right)}\left(z_{0}\right)
++\left(n-1\right)\int_{\gamma}\left(z_{1}-\zeta\right)^{n-2}f^{\left(n\right)}\left(\zeta\right)\,d\zeta,
+$$
+
+where the boundary term at $\zeta=z_{1}$ vanishes because $\left(z_{1}-z_{1}\right)^{n-1}=0$ ($n\ge1$). Hence
+
+$$
+R_{n-1}=-\frac{f^{\left(n\right)}\left(z_{0}\right)}{\left(n-1\right)!}\left(z_{1}-z_{0}\right)^{n-1}+R_{n-2}.
+$$
+
+Substituting back into the induction hypothesis,
+
+$$
+f\left(z_{1}\right)=f\left(z_{0}\right)+\sum_{k=1}^{n-1}\frac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z_{1}-z_{0}\right)^{k}+R_{n-1}.
+$$
+
+From the recurrence $R_{n-1}=R_{n-2}-\frac{f^{\left(n\right)}\left(z_{0}\right)}{\left(n-1\right)!}\left(z_{1}-z_{0}\right)^{n-1}$, repeating $n$ times cancels the integral remainders term by term, yielding
+
+$$
+f\left(z_{1}\right)=f\left(z_{0}\right)+\sum_{k=1}^{n}\frac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z_{1}-z_{0}\right)^{k}+R_{n},
+$$
+
+where $R_{n}=\frac{1}{n!}\int_{\gamma}\left(z_{1}-\zeta\right)^{n}f^{\left(n+1\right)}\left(\zeta\right)\,d\zeta$. This completes the induction. $\blacksquare$
+
+## 9.4-2
+
+Let $f$ be holomorphic on the unit disk $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$ with $\left|f'\left(z\right)\right|\le\frac{1}{1-\left|z\right|}$ for all $z\in\mathbb{D}$. Prove: every Taylor coefficient $c_{n}$ of $f$ at $z=0$ satisfies $\left|c_{n}\right|< e$ for all $n\in\mathbb{N}\setminus\left\{0\right\}$.
+
+### Solution to 9.4-2
+
+The Taylor coefficients at $0$ are $c_{n}=\frac{f^{\left(n\right)}\left(0\right)}{n!}$. By **Theorem 8.3.2 (Higher Derivative Formula)** applied to $f'$ at order $n-1$, taking $0< r< 1$,
+
+$$
+f^{\left(n\right)}\left(0\right)=\frac{\left(n-1\right)!}{2\pi i}\int_{\left|z\right|=r}\frac{f'\left(z\right)}{z^{n}}\,dz.
+$$
+
+Hence
+
+$$
+\left|c_{n}\right|=\frac{\left|f^{\left(n\right)}\left(0\right)\right|}{n!}\le\frac{\left(n-1\right)!}{n!}\cdot\frac{1}{2\pi}\cdot\frac{1}{1-r}\cdot\frac{2\pi r}{r^{n}}=\frac{1}{n}\cdot\frac{r^{1-n}}{1-r}.
+$$
+
+Optimize over $r\in\left(0,1\right)$. Let $h\left(r\right)=\frac{r^{1-n}}{1-r}$; $h'\left(r\right)=0$ gives $r=\frac{n-1}{n}$, and
+
+$$
+h\left(\frac{n-1}{n}\right)=\frac{\left(\frac{n-1}{n}\right)^{1-n}}{1-\frac{n-1}{n}}=n\left(1+\frac{1}{n-1}\right)^{n-1}.
+$$
+
+Thus $\left|c_{n}\right|\le\left(1+\frac{1}{n-1}\right)^{n-1}< e$ (since $\left(1+\frac{1}{m}\right)^{m}< e$). $\blacksquare$
+
+## 9.4-4
+
+Let $D$ be a domain containing the origin, and $f\left(x\right):=\begin{cases}e^{-1/x^{2}},&x\ne0\\0,&x=0\end{cases}$. Does there exist a holomorphic function on $D$ whose restriction to the real axis equals $f$?
+
+### Solution to 9.4-4
+
+No. Suppose there were a holomorphic $F$ on $D$ with $F\left(x\right)=f\left(x\right)$ on the real axis. From real analysis, $f$ has derivatives of all orders at $0$ with $f^{\left(n\right)}\left(0\right)=0$ for all $n\ge0$ (the function $e^{-1/x^{2}}$ is the standard example of a real-smooth but non-real-analytic function). Since $F$ agrees with $f$ on the real axis, $F^{\left(n\right)}\left(0\right)=f^{\left(n\right)}\left(0\right)=0$, so all Taylor coefficients of $F$ at $0$ vanish, and $F\equiv0$ near $0$. By **Theorem 9.3.2 (Identity Theorem)**, $F\equiv0$ on $D$. But for real $x\ne0$, $F\left(x\right)=0\ne e^{-1/x^{2}}=f\left(x\right)$, a contradiction. Hence no such function exists. $\blacksquare$

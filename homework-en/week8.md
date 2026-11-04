@@ -1,217 +1,287 @@
 # week8
 
-> **Definition 3.2.1 (Differentiability)**
-> 
-> $f$ is $\mathbb{R}$-differentiable (or $\mathbb{C}$-differentiable) at $z$ if $\Delta f=\ell\left(\Delta z\right)+o\left(\left|\Delta z\right|\right)$, where $\ell$ is $\mathbb{R}$-linear (or $\mathbb{C}$-linear).
-
-> **Definition 3.2.2 (Formal Derivatives)**
-> 
-> Let $f=u+iv$ be real-differentiable. Its formal (Wirtinger) derivatives are defined by
-
-$$
-\frac{\partial f}{\partial z}=\frac{1}{2}\left(\frac{\partial f}{\partial x}-i\frac{\partial f}{\partial y}\right),\quad\frac{\partial f}{\partial\overline{z}}=\frac{1}{2}\left(\frac{\partial f}{\partial x}+i\frac{\partial f}{\partial y}\right).
-$$
-
-> **Theorem 3.2.4 (Cauchy-Riemann Equations)**
-> 
-> $f$ is $\mathbb{C}$-differentiable at $z$ if and only if $f$ is $\mathbb{R}$-differentiable at $z$ and $\frac{\partial f}{\partial\overline{z}}=0$, equivalently $u,v$ satisfy the Cauchy-Riemann equations.
-
-> **Theorem 7.2.3 (Existence of Antiderivatives)**
-> 
-> Every holomorphic function on a simply connected domain has an antiderivative, and
-
-$$
-\int_{\gamma}f\,dz=F\left(\gamma\left(b\right)\right)-F\left(\gamma\left(a\right)\right).
-$$
-
-> **Theorem 8.1.4 (Cauchy's Theorem)**
-> 
-> If $f$ is holomorphic on a domain $D$ and $\gamma_{0},\gamma_{1}$ are homotopic paths in $D$ with the same endpoints (or homotopic closed paths), then
-
-$$
-\int_{\gamma_{0}}f\,dz=\int_{\gamma_{1}}f\,dz;
-$$
-
-in particular, the integral of $f$ along any closed path in $D$ is zero.
-
 > **Theorem 8.3.1 (Cauchy Integral Formula)**
 > 
-> If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then
-
-$$
-f\left(z\right)=\frac{1}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
-$$
+> If $f$ is holomorphic on a domain containing a Jordan closed curve $\gamma$ and its interior, and $z$ lies in the interior of $\gamma$, then
 
 > **Theorem 8.3.2 (Higher Derivative Formula)**
 > 
 > If $f$ is holomorphic on a simply connected domain $D$, $\gamma$ is a piecewise smooth Jordan closed curve in $D$, and $z$ lies in its interior, then $f$ has derivatives of all orders at $z$ and
 
-$$
-f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta,\quad n\ge1.
-$$
+> **Theorem 10.1.1 (Maximum Modulus Principle)**
+> 
+> If the modulus $\left|f\right|$ of a holomorphic function $f$ on a domain $D$ has a local maximum at $z_{0}\in D$, then $f$ is constant on $D$.
 
-## 8.4-2
-
-Let $f$ be holomorphic and nonzero on a simply connected domain $D$. Prove:
-
-(i) there exists a holomorphic function $g$ on $D$ such that $e^{g\left(z\right)}=f\left(z\right)$ for all $z\in D$;
-
-(ii) for every integer $q\ge1$, there exists a holomorphic function $g_{q}$ on $D$ such that $\left(g_{q}\left(z\right)\right)^{q}=f\left(z\right)$ for all $z\in D$.
-
-### Solution 8.4-2
-
-(i) Since $f$ is holomorphic and nonzero on $D$, $\frac{f'\left(z\right)}{f\left(z\right)}$ is holomorphic on $D$. Since $D$ is simply connected, by **Theorem 7.2.3 (Existence of Antiderivatives)**, $\frac{f'}{f}$ has an antiderivative $g_{0}$ on $D$, i.e. $g_{0}'=\frac{f'}{f}$. Consider $F\left(z\right)=e^{-g_{0}\left(z\right)}f\left(z\right)$; then
+> **Definition 13.1.3 (Laurent Series)**
+> 
+> The Laurent series of $f$ on the annulus $A\left(a;r;R\right)$ is
 
 $$
-F'=e^{-g_{0}}f'-g_{0}'e^{-g_{0}}f=e^{-g_{0}}\left(f'-\frac{f'}{f}f\right)=0,
+\sum_{n=-\infty}^{+\infty}c_{n}\left(z-a\right)^{n},
 $$
+with regular part $\sum_{n\ge0}c_{n}\left(z-a\right)^{n}$ and principal part $\sum_{n< 0}c_{n}\left(z-a\right)^{n}$.
 
-so $F$ is constant on $D$, say $F=c$. Since $F\ne0$, choose $w_{0}\in\mathbb{C}$ with $e^{w_{0}}=c$, and set $g=g_{0}+w_{0}$; then
+> **Definition 13.2.2 (Classification of Isolated Singularities)**
+> 
+> $a$ is a removable singularity of $f$ if all principal-part coefficients vanish; a pole of order $m$ if $c_{-m}\ne0$ and $c_{n}=0$ for $n< -m$; an essential singularity if the principal part has infinitely many terms.
 
-$$
-e^{g\left(z\right)}=e^{g_{0}\left(z\right)}e^{w_{0}}=e^{g_{0}\left(z\right)}c=f\left(z\right),\quad\forall z\in D.
-$$
+> **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**
+> 
+> $a$ is a removable singularity of $f$ if and only if $f$ is bounded on a punctured neighborhood of $a$.
 
-(ii) From (i), take holomorphic $g$ with $e^{g\left(z\right)}=f\left(z\right)$. Set $g_{q}\left(z\right)=e^{\frac{g\left(z\right)}{q}}$; then $g_{q}$ is holomorphic on $D$ and
-
-$$
-\left(g_{q}\left(z\right)\right)^{q}=\left(e^{\frac{g\left(z\right)}{q}}\right)^{q}=e^{g\left(z\right)}=f\left(z\right),\quad\forall z\in D.
-$$
-
-This completes the proof. $\blacksquare$
-
-## 8.4-4
-
-Let $f$ be $\mathbb{R}$-differentiable on $\mathbb{C}$, with $\int_{\gamma}f\left(z\right)\,dz=0$ for every circle $\gamma$. Prove: $f$ is holomorphic on $\mathbb{C}$.
-
-### Solution 8.4-4
-
-Take any $a\in\mathbb{C}$ and the circle $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon e^{it}$ of radius $\varepsilon> 0$. Since $f$ is $\mathbb{R}$-differentiable at $a$ (**Definition 3.2.1 (Differentiability)**), expand
+> **Theorem 13.2.5**
+> 
+> $a$ is a removable singularity of $f$ if and only if $\lim_{z\to a}f\left(z\right)$ exists and is finite.
 
 $$
-f\left(z\right)=f\left(a\right)+\frac{\partial f}{\partial z}\left(a\right)\left(z-a\right)+\frac{\partial f}{\partial\overline{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
+\operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right).
 $$
 
-Substituting into $\int_{\gamma_{\varepsilon}}f\,dz$ and following the computation in (Exercise 7.4-2),
+> **Definition 14.1.1 (Residue)**
+> 
+> The residue $\operatorname{Res}_{a}f$ of $f$ at an isolated singularity $a$ is the coefficient $c_{-1}$ of the $\frac{1}{z-a}$ term in its Laurent expansion.
 
 $$
-\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi i\varepsilon^{2}\frac{\partial f}{\partial\overline{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
+f\left(a\right)=\frac{1}{2\pi i}\oint_{\left|z-a\right|=r}\frac{f\left(z\right)}{z-a}\,dz.
+$$
+$$
+\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}\,dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}.
 $$
 
-By assumption the left side is zero for every $\varepsilon> 0$; dividing by $\varepsilon^{2}$ and letting $\varepsilon\to0$ gives $\frac{\partial f}{\partial\overline{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ is arbitrary, $\frac{\partial f}{\partial\overline{z}}\equiv0$ on $\mathbb{C}$, and by **Theorem 3.2.4 (Cauchy-Riemann Equations)**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
-
-## 8.4-6
-
-Given $\int_{0}^{\infty}e^{-x^{2}}\,dx=\frac{\sqrt{\pi}}{2}$. Compute (Fresnel integrals)
-
-(i) $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx$; (ii) $\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx$; (iii) $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx$, $b> 0$.
-
-### Solution 8.4-6
-
-(i) and (ii) combined. Consider the contour: from $0$ along the real axis to $R$, then along the arc $Re^{i\theta}$, $\theta\in\left[0,\frac{\pi}{4}\right]$, then back along the segment $z=te^{i\pi/4}$, $t:R\to0$, to $0$. Since $e^{iz^{2}}$ is entire, the contour integral is zero. On the large arc, $\left|e^{iz^{2}}\right|=e^{-\operatorname{Re}\left(iz^{2}\right)}=e^{-R^{2}\sin2\theta}$; for $\theta\in\left[0,\frac{\pi}{4}\right]$, $\sin2\theta\ge\frac{2\theta}{\pi}$ and $e^{-R^{2}\sin2\theta}\to0$ uniformly ($\theta> 0$), so the arc integral tends to $0$. Letting $R\to\infty$:
+> **Theorem 14.1.3 (Residue Theorem)**
+> 
+> If $f$ is holomorphic on a domain $D$ except at finitely many isolated singularities, and $\gamma$ is a Jordan closed curve in $D$ enclosing all these singularities, then
 
 $$
-\int_{0}^{\infty}e^{ix^{2}}\,dx=\int_{0}^{\infty}e^{-t^{2}}e^{i\pi/4}\,dt=e^{i\pi/4}\frac{\sqrt{\pi}}{2}.
-$$
-
-Taking real and imaginary parts,
-
-$$
-\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx=\operatorname{Re}\left(e^{i\pi/4}\frac{\sqrt{\pi}}{2}\right)=\frac{\sqrt{\pi}}{2}\cdot\frac{1}{\sqrt{2}}=\frac{\sqrt{\pi}}{2\sqrt{2}},
+\int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.
 $$
 
 $$
-\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx=\operatorname{Im}\left(e^{i\pi/4}\frac{\sqrt{\pi}}{2}\right)=\frac{\sqrt{\pi}}{2\sqrt{2}}.
+\int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.
 $$
 
-(iii) Write $I\left(b\right)=\int_{0}^{\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx$. From $\int_{-\infty}^{\infty}e^{-x^{2}}e^{2ibx}\,dx=\sqrt{\pi}e^{-b^{2}}$ (completing the square: $x^{2}-2ibx=\left(x-ib\right)^{2}+b^{2}$, shifting the contour to the real axis), taking real parts and using evenness,
+## 13.4-18
+
+Let $f$ be holomorphic on a domain $D$, let $\gamma$ be a Jordan closed curve in $D$ whose interior is entirely contained in $D$. Prove: for every point $z$ in the interior of $\gamma$, there is a point $w$ on $\gamma$ such that
 
 $$
-I\left(b\right)=\frac{1}{2}\int_{-\infty}^{\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx=\frac{1}{2}\cdot\sqrt{\pi}e^{-b^{2}}=\frac{\sqrt{\pi}}{2}e^{-b^{2}}.
+\left|\frac{f\left(z\right)-f\left(w\right)}{z-w}\right|\ge\left|f'\left(z\right)\right|.
 $$
 
-In summary, $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx=\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx=\frac{\sqrt{\pi}}{2\sqrt{2}}$, and $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx=\frac{\sqrt{\pi}}{2}e^{-b^{2}}$. $\blacksquare$
+### Solution to 13.4-18
 
-## 8.4-8
-
-Let $D\subset\mathbb{C}$ be the exterior region of a piecewise smooth Jordan closed curve, $f$ holomorphic on $D$, and $\lim_{z\to\infty}f\left(z\right)=A\in\mathbb{C}$. Prove: for all $z\in D$, $f\left(z\right)=-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$, where $\partial D$ is oriented counterclockwise.
-
-### Solution 8.4-8
-
-Fix $z\in D$. Take $R$ large enough that both $z$ and $\partial D$ lie inside $\left\{\left|w\right|< R\right\}$. Let $\Gamma_{R}$ be the counterclockwise circle $\left|\zeta\right|=R$; then $f$ is holomorphic on the annular region (including boundary) between $\Gamma_{R}$ and $\partial D$. By **Theorem 8.3.1 (Cauchy Integral Formula)** applied to the annulus (or separately on inner and outer boundaries),
+Let $G$ be the interior of $\gamma$, and fix $z\in G$. Define
 
 $$
-f\left(z\right)=\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
+g\left(w\right)=\frac{f\left(w\right)-f\left(z\right)}{w-z},\quad w\in G\setminus\left\{z\right\}.
 $$
 
-Let $R\to\infty$. Write
+Since $f$ is holomorphic on $G$, $z$ is a removable singularity of $g$ with $g\left(z\right)=f'\left(z\right)$; hence $g$ is holomorphic on $\overline{G}$ (continuously extended to $\partial G=\gamma$).
+
+By **Theorem 10.1.1 (Maximum Modulus Principle)**, the maximum of $\left|g\right|$ on the compact closed region $\overline{G}$ is attained on the boundary $\gamma$; in particular,
 
 $$
-\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta
-=\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)-A}{\zeta-z}\,d\zeta+\frac{A}{2\pi i}\int_{\Gamma_{R}}\frac{d\zeta}{\zeta-z}.
+\left|g\left(z\right)\right|=\left|f'\left(z\right)\right|\le\max_{w\in\gamma}\left|g\left(w\right)\right|=\max_{w\in\gamma}\left|\frac{f\left(w\right)-f\left(z\right)}{w-z}\right|.
 $$
 
-Since $z$ lies inside $\Gamma_{R}$, $\int_{\Gamma_{R}}\frac{d\zeta}{\zeta-z}=2\pi i$; on $\left|\zeta\right|=R$, $\frac{1}{\left|\zeta-z\right|}\le\frac{C}{R}$, and $f\left(\zeta\right)\to A$ gives $\sup_{\left|\zeta\right|=R}\left|f\left(\zeta\right)-A\right|\to0$, so the first integral $\to0$. Hence $\frac{1}{2\pi i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta\to A$. Letting $R\to\infty$,
+Therefore there exists $w\in\gamma$ such that
 
 $$
-f\left(z\right)=A-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta,
+\left|\frac{f\left(w\right)-f\left(z\right)}{w-z}\right|\ge\left|f'\left(z\right)\right|,
 $$
 
-i.e. $f\left(z\right)=-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$. $\blacksquare$
+i.e. $\left|\frac{f\left(z\right)-f\left(w\right)}{z-w}\right|\ge\left|f'\left(z\right)\right|$. $\blacksquare$
 
-## 8.4-10
+## 13.4-1
 
-(Taylor expansion with integral remainder) Let $D\subset\mathbb{C}$ be a domain and $f$ holomorphic on $D$. Prove: for any $z_{0},z_{1}\in D$ and a smooth path $\gamma$ in $D$ joining $z_{0}$ to $z_{1}$ ($\gamma\left(0\right)=z_{0}$, $\gamma\left(1\right)=z_{1}$),
+Let $f$ be holomorphic on $\mathbb{C}\setminus\left\{0\right\}$ with $\left|f\left(z\right)\right|\le\frac{\left|z\right|+1}{\left|z\right|}$ for all $z\in\mathbb{C}\setminus\left\{0\right\}$. Prove: $f$ is constant.
+
+### Solution to 13.4-1
+
+From $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}$, as $z\to0$, $\left|zf\left(z\right)\right|\le\left|z\right|+1\to1$, so $zf\left(z\right)$ is bounded on a punctured neighborhood of $0$. By **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**, $0$ is a removable singularity of $zf\left(z\right)$, so $f$ has at most a simple pole at $0$; moreover $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}$ near $0$ gives $\left|f\left(z\right)\right|\le\frac{C}{\left|z\right|}$, and since $0$ is an isolated singularity of $f$, $f$ is removable at $0$, extending to an entire function.
+
+Thus $f$ is entire with $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}\le2$ for $\left|z\right|\ge1$, i.e. $f$ is bounded. By Liouville's theorem, $f$ is constant. $\blacksquare$
+
+## 13.4-2
+
+Find the finite isolated singularities of the following functions and classify them: (i) $\frac{1-\cos z}{\sin^{2}z}$; (ii) $e^{\cot\frac{\pi}{z}}$; (iii) $\frac{z+1}{\sin^{2}\left(\pi z\right)}$; (iv) $\frac{z}{1-\cos z}$.
+
+### Solution to 13.4-2
+
+(i) The zeros of $\sin z$ are $z=k\pi$ ($k\in\mathbb{Z}$). At $z=2m\pi$, both $1-\cos z$ and $\sin^{2}z$ have second-order zeros, so the ratio is finite; removable (limit $\frac12$). At $z=\left(2m+1\right)\pi$, $1-\cos z\ne0$ while $\sin^{2}z$ has a second-order zero; pole of order $2$.
+
+(ii) The poles of $\cot\frac{\pi}{z}$ occur at $\frac{\pi}{z}=k\pi$, i.e. $z=\frac{1}{k}$, $k\in\mathbb{Z}\setminus\left\{0\right\}$. At $z=\frac1k$, $\cot\frac{\pi}{z}$ has a simple pole, so $e^{\cot\frac{\pi}{z}}$ has an essential singularity there (type $e^{1/\left(z-a\right)}$). $z=0$ is an accumulation point, not isolated. Hence the finite isolated singularities are $z=\frac1k$ ($k\ne0$), all essential.
+
+(iii) $\sin^{2}\left(\pi z\right)$ has second-order zeros at $z=n$ ($n\in\mathbb{Z}$). For $n\ne-1$, $z+1\ne0$, so $z=n$ is a pole of order $2$; for $n=-1$, $z+1$ has a simple zero, which cancels one order, so $z=-1$ is a simple pole.
+
+(iv) The zeros of $1-\cos z$ are $z=2m\pi$ (second order). At $z=0$, the numerator $z$ has a simple zero, so $z=0$ is a simple pole; for $m\ne0$, $z=2m\pi\ne0$, numerator nonzero, so pole of order $2$. $\blacksquare$
+
+## 13.4-3
+
+Let $f$ be holomorphic on $\mathbb{C}\setminus\left\{0\right\}$. Is it possible that $\left|f\left(z\right)\right|> e^{\frac{1}{\left|z\right|}}$ for all $z\in\mathbb{C}\setminus\left\{0\right\}$? Explain.
+
+### Solution to 13.4-3
+
+No. If $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$ for all $z\ne0$, then as $z\to0$, $\left|f\left(z\right)\right|\to+\infty$, so $0$ is a pole of $f$, say of order $m$. By **Definition 13.2.2 (Classification of Isolated Singularities)**, near $0$, $\left|f\left(z\right)\right|\sim\frac{C}{\left|z\right|^{m}}$. But $e^{1/\left|z\right|}$ grows faster than any power $\frac{1}{\left|z\right|^{m}}$ (since $\frac{e^{1/\left|z\right|}}{1/\left|z\right|^{m}}\to+\infty$), so for sufficiently small $\left|z\right|$, $\left|f\left(z\right)\right|\le\frac{2C}{\left|z\right|^{m}}< e^{1/\left|z\right|}$, contradicting $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$. Hence the inequality is impossible. $\blacksquare$
+
+## 13.4-4
+
+Determine whether the following have an isolated singularity at $\infty$ and classify it: (i) $e^{\sin\frac{1}{z}}$; (ii) $\frac{1}{1+z^{6}}$; (iii) $z^{7}$; (iv) $\frac{\cos z}{1+z^{2}}$.
+
+### Solution to 13.4-4
+
+(i) As $z\to\infty$, $\frac1z\to0$, $\sin\frac1z\to0$, $e^{\sin\frac1z}\to1$. Hence $\infty$ is a removable singularity of $e^{\sin\frac1z}$ (finite limit).
+
+(ii) $\frac{1}{1+z^{6}}$: as $z\to\infty$, it tends to $0$. Let $w=\frac1z$; $\frac{1}{1+z^{6}}=\frac{w^{6}}{w^{6}+1}$ has a zero of order $6$ at $w=0$, so $\infty$ is a removable singularity of $\frac{1}{1+z^{6}}$ (value $0$, zero of order $6$).
+
+(iii) $z^{7}$: as $z\to\infty$, $z^{7}\to\infty$; the Laurent principal part is $z^{7}$, so $\infty$ is a pole of order $7$ of $z^{7}$.
+
+(iv) $\frac{\cos z}{1+z^{2}}$: as $z\to\infty$, $\cos z$ oscillates and does not converge, while $\frac{1}{1+z^{2}}\to0$; hence $\lim_{z\to\infty}\frac{\cos z}{1+z^{2}}$ does not exist (finite or infinite), so $\infty$ is an essential singularity. $\blacksquare$
+
+## 13.4-10
+
+Let $\Omega=G\setminus\left\{a,b\right\}$, where $G$ is a bounded simply connected domain, $a,b\in G$, $a\ne b$. How many holomorphic automorphisms of $\Omega$ are there?
+
+### Solution to 13.4-10
+
+Let $\varphi\in\operatorname{Aut}\left(\Omega\right)$. Since $G$ is bounded, $\varphi$ is bounded on $\Omega$; by **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**, $\varphi$ has removable singularities at $a,b$, extending to a holomorphic function on $G$. Since $\varphi$ is biholomorphic from $\Omega$ to itself, after extension $\varphi$ maps $G$ to $G$ and maps $\left\{a,b\right\}$ to itself; hence $\varphi\in\operatorname{Aut}\left(G\right)$ with $\varphi\left(\left\{a,b\right\}\right)=\left\{a,b\right\}$.
+
+$G$ is bounded, simply connected, and not $\mathbb{C}$; by the Riemann mapping theorem, $G\cong\mathbb{D}$, so $\operatorname{Aut}\left(G\right)\cong\operatorname{Aut}\left(\mathbb{D}\right)$. Let $p,q$ be the images of $a,b$ under the map to $\mathbb{D}$. Elements of $\operatorname{Aut}\left(\mathbb{D}\right)$ mapping $\left\{p,q\right\}$ to itself either fix $p,q$ pointwise or swap them. An automorphism of $\mathbb{D}$ fixing two distinct interior points is the identity; there is exactly one involution swapping $p$ and $q$. Hence there are exactly $2$ holomorphic automorphisms of $\Omega$ onto itself. $\blacksquare$
+
+## 13.4-12
+
+Let $a\in\mathbb{C}$ be an essential singularity of $f$. Prove: $\lim_{\varepsilon\to0}\varepsilon^{n}\max\left\{\left|f\left(z\right)\right|:\ \left|z-a\right|=\varepsilon\right\}=+\infty$ for all $n\in\mathbb{N}$.
+
+### Solution to 13.4-12
+
+Write $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. Suppose for contradiction that for some $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ is bounded above, i.e. there is $C> 0$ with $\varepsilon^{n}M\left(\varepsilon\right)\le C$; then
 
 $$
-f\left(z_{1}\right)=f\left(z_{0}\right)+\sum_{k=1}^{n}\frac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z_{1}-z_{0}\right)^{k}+\frac{1}{n!}\int_{\gamma}\left(z_{1}-\zeta\right)^{n}f^{\left(n+1\right)}\left(\zeta\right)\,d\zeta,\quad\forall n\in\mathbb{N}.
+\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad 0< \left|z-a\right|\ \text{sufficiently small}.
 $$
 
-### Solution 8.4-10
+Thus $\left(z-a\right)^{n}f\left(z\right)$ is bounded on a punctured neighborhood of $a$; by **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**, $0$ is a removable singularity of $\left(z-a\right)^{n}f$, so $f$ has at most a pole of order $n$ at $a$, contradicting that $a$ is essential. Hence for every $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ is unbounded, and by monotonicity in $\varepsilon$, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$
 
-Induct on $n$. For $n=0$, by **Theorem 7.2.3 (Existence of Antiderivatives)** and since $f$ is an antiderivative of $f'$,
+## 13.4-17
 
-$$
-f\left(z_{1}\right)=f\left(z_{0}\right)+\int_{\gamma}f'\left(\zeta\right)\,d\zeta,
-$$
+A set $\mathcal{E}\subset\mathbb{C}$ is said to have Hausdorff length zero if for every $\varepsilon> 0$ there is a countable open cover by open disks whose radii sum to at most $\varepsilon$. Let $G\subset\mathbb{C}$ be a domain, $\mathcal{E}\subset G$ a compact set of Hausdorff length zero, and $f$ holomorphic on the open set $G\setminus\mathcal{E}$. Suppose there is $M> 0$ with $\left|f\left(z\right)\right|\le M$ for all $z\in G\setminus\mathcal{E}$. Prove: there exists a holomorphic $g$ on $G$ with $g\left(z\right)=f\left(z\right)$ for all $z\in G\setminus\mathcal{E}$.
 
-so the claim holds for $n=0$.
+### Solution to 13.4-17
 
-Assume the claim holds for $n-1$, and write
+A compact set $\mathcal{E}$ of Hausdorff length zero has two-dimensional Lebesgue measure zero. Take any $z_{0}\in\mathcal{E}$ and $r> 0$ with $\overline{B\left(z_{0},r\right)}\subset G$. Since $\mathcal{E}$ has area zero, the circle $\left|w-z_{0}\right|=r$ can be chosen disjoint from $\mathcal{E}$ (otherwise $\mathcal{E}$ could be covered by open disks of arbitrarily small total radius and area, which would also be arbitrarily small). For $z\in B\left(z_{0},r\right)\setminus\mathcal{E}$, by the Cauchy integral formula
 
 $$
-R_{n-1}=\frac{1}{\left(n-1\right)!}\int_{\gamma}\left(z_{1}-\zeta\right)^{n-1}f^{\left(n\right)}\left(\zeta\right)\,d\zeta.
+f\left(z\right)=\frac{1}{2\pi i}\oint_{\left|w-z_{0}\right|=r}\frac{f\left(w\right)}{w-z}\,dw.
 $$
 
-Integrate $R_{n-1}$ by parts (using $d f^{\left(n\right)}=f^{\left(n+1\right)}d\zeta$ and $d\left(z_{1}-\zeta\right)^{n-1}=-\left(n-1\right)\left(z_{1}-\zeta\right)^{n-2}d\zeta$):
+The right-hand side defines a holomorphic function for every $z\in B\left(z_{0},r\right)$ (the integrand $w\mapsto\frac{f\left(w\right)}{w-z}$ is continuous on the circle, $\left|f\right|\le M$); call it $g_{0}$. When $z\in B\left(z_{0},r\right)\setminus\mathcal{E}$, $g_{0}\left(z\right)=f\left(z\right)$, so $g_{0}$ is an analytic continuation of $f$ near $z_{0}$; in particular $f$ is removable at $z_{0}$.
+
+Continuing for every $z_{0}\in\mathcal{E}$ and gluing with the original $f$ on $G\setminus\mathcal{E}$ by uniqueness of analytic continuation yields a holomorphic function $g$ on $G$ with $g=f$ on $G\setminus\mathcal{E}$. $\blacksquare$
+
+## 14.3-1
+
+Compute: (i) $\int_{\partial B\left(0,4\right)}\frac{z^{2}+1}{z^{3}+2z^{2}-3z}\,dz$; (ii) $\int_{\partial B\left(0,\pi\right)}z^{2}\sin\frac{1}{z}\,dz$; (iv) $\int_{0}^{2\pi}\frac{1}{4\sin^{2}x+1}\,dx$.
+
+### Solution to 14.3-1
+
+(i) $z^{3}+2z^{2}-3z=z\left(z+3\right)\left(z-1\right)$; the singularities $0,1,-3$ all lie in $\left|z\right|< 4$, each a simple pole. The residues:
 
 $$
-\int_{\gamma}\left(z_{1}-\zeta\right)^{n-1}f^{\left(n\right)}\left(\zeta\right)\,d\zeta
-=\left[\left(z_{1}-\zeta\right)^{n-1}f^{\left(n\right)}\left(\zeta\right)\right]_{\gamma\left(0\right)}^{\gamma\left(1\right)}
--\int_{\gamma}f^{\left(n\right)}\left(\zeta\right)\,d\left[\left(z_{1}-\zeta\right)^{n-1}\right]
+\operatorname{Res}_{0}=\frac{1}{3\cdot\left(-1\right)}=-\frac13,\quad
+\operatorname{Res}_{1}=\frac{1+1}{1\cdot4\cdot1}=\frac12,\quad
+\operatorname{Res}_{-3}=\frac{9+1}{\left(-3\right)\cdot1\cdot\left(-4\right)}=\frac56.
 $$
 
-$$
-=-\left(z_{1}-z_{0}\right)^{n-1}f^{\left(n\right)}\left(z_{0}\right)
-+\left(n-1\right)\int_{\gamma}\left(z_{1}-\zeta\right)^{n-2}f^{\left(n\right)}\left(\zeta\right)\,d\zeta,
-$$
+Sum: $-\frac13+\frac12+\frac56=1$. By **Theorem 14.1.3 (Residue Theorem)**, $\int_{\partial B\left(0,4\right)}=2\pi i\cdot1=2\pi i$.
 
-where the boundary term at $\zeta=z_{1}$ vanishes because $\left(z_{1}-z_{1}\right)^{n-1}=0$ ($n\ge1$). Hence
+(ii) $\sin\frac1z=\sum_{n=0}^{+\infty}\frac{\left(-1\right)^{n}}{\left(2n+1\right)!}\frac{1}{z^{2n+1}}$, so $z^{2}\sin\frac1z=\sum_{n=0}^{+\infty}\frac{\left(-1\right)^{n}}{\left(2n+1\right)!}z^{1-2n}$. The $z^{-1}$ coefficient (residue) comes from $1-2n=-1$, i.e. $n=1$: $\operatorname{Res}_{0}z^{2}\sin\frac1z=\frac{\left(-1\right)^{1}}{3!}=-\frac16$. Hence $\int_{\partial B\left(0,\pi\right)}z^{2}\sin\frac1z\,dz=2\pi i\cdot\left(-\frac16\right)=-\frac{\pi i}{3}$.
 
-$$
-R_{n-1}=-\frac{f^{\left(n\right)}\left(z_{0}\right)}{\left(n-1\right)!}\left(z_{1}-z_{0}\right)^{n-1}+R_{n-2}.
-$$
-
-Substituting back into the induction hypothesis,
+(iv) Let $z=e^{ix}$; then $\sin x=\frac{z-z^{-1}}{2i}$, $dz=iz\,dx$, with $\left|z\right|=1$ counterclockwise. $4\sin^{2}x+1=4\cdot\left(-\frac{\left(z-z^{-1}\right)^{2}}{4}\right)+1=3-z^{2}-z^{-2}$, so
 
 $$
-f\left(z_{1}\right)=f\left(z_{0}\right)+\sum_{k=1}^{n-1}\frac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z_{1}-z_{0}\right)^{k}+R_{n-1}.
+\int_{0}^{2\pi}\frac{dx}{4\sin^{2}x+1}=\oint_{\left|z\right|=1}\frac{1}{3-z^{2}-z^{-2}}\frac{dz}{iz}=\oint_{\left|z\right|=1}\frac{z}{i\left(3z^{2}-z^{4}-1\right)}\,dz.
 $$
 
-From the recurrence $R_{n-1}=R_{n-2}-\frac{f^{\left(n\right)}\left(z_{0}\right)}{\left(n-1\right)!}\left(z_{1}-z_{0}\right)^{n-1}$, repeating $n$ times cancels the integral remainders term by term, yielding
+$3z^{2}-z^{4}-1=-\left(z^{4}-3z^{2}+1\right)$, and $z^{4}-3z^{2}+1=0$ gives $z^{2}=\frac{3\pm\sqrt5}{2}$. Inside $\left|z\right|=1$, only the two roots $\pm\sqrt{\frac{3-\sqrt5}{2}}$ from $z^{2}=\frac{3-\sqrt5}{2}$ (the other pair has $\left|z\right|> 1$). Write $a^{2}=u:=\frac{3-\sqrt5}{2}$; at $z=a$,
 
 $$
-f\left(z_{1}\right)=f\left(z_{0}\right)+\sum_{k=1}^{n}\frac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z_{1}-z_{0}\right)^{k}+R_{n},
+\operatorname{Res}_{a}\frac{z}{i\left(3z^{2}-z^{4}-1\right)}=\frac{a}{i\left(-\left(4a^{3}-6a\right)\right)}=\frac{1}{i\left(-\left(4u-6\right)\right)}=\frac{1}{i\left(-\left(-2\sqrt5\right)\right)}=\frac{1}{2\sqrt5\,i},
 $$
 
-where $R_{n}=\frac{1}{n!}\int_{\gamma}\left(z_{1}-\zeta\right)^{n}f^{\left(n+1\right)}\left(\zeta\right)\,d\zeta$. This completes the induction. $\blacksquare$
+and the residue at $-a$ is the same. Sum: $\frac{1}{\sqrt5\,i}$. Hence
+
+$$
+\int_{0}^{2\pi}\frac{dx}{4\sin^{2}x+1}=2\pi i\cdot\frac{1}{\sqrt5\,i}=\frac{2\pi}{\sqrt5}.
+$$
+
+$\blacksquare$
+
+## 14.3-2
+
+Let $\gamma\subset\mathbb{C}$ be a Jordan closed curve, and $f$ holomorphic on $\mathbb{C}\setminus\left\{a_{1},\ldots,a_{n}\right\}$, where $a_{1},\ldots,a_{n}$ are interior points of the region bounded by $\gamma$. Prove: $\frac{1}{2\pi i}\int_{\gamma}f\left(z\right)\,dz=\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right)$.
+
+### Solution to 14.3-2
+
+The isolated singularities of $f$ are $a_{1},\ldots,a_{n}$ (all inside $\gamma$); by **Theorem 14.1.3 (Residue Theorem)**,
+
+$$
+\frac{1}{2\pi i}\int_{\gamma}f\left(z\right)\,dz=\sum_{j=1}^{n}\operatorname{Res}_{a_{j}}f.
+$$
+
+For the meromorphic $f$ on the whole plane, choose $R$ large enough that $\gamma$ and all $a_{j}$ lie in $\left\{\left|z\right|< R\right\}$. Applying the residue theorem on $\left\{\left|z\right|\le R\right\}$ and treating $\infty$ as a singularity gives $\sum_{j}\operatorname{Res}_{a_{j}}f+\operatorname{Res}_{\infty}f=0$. Also
+
+$$
+\operatorname{Res}_{\infty}f=-\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right),
+$$
+
+so $\sum_{j}\operatorname{Res}_{a_{j}}f=\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right)$, as claimed. $\blacksquare$
+
+## 14.3-3
+
+Prove: $\int_{\partial B\left(0,1\right)}e^{z+\frac{1}{z}}\,dz=2\pi i\sum_{n=0}^{+\infty}\frac{1}{n!\left(n+1\right)!}$.
+
+### Solution to 14.3-3
+
+$e^{z+\frac1z}=e^{z}e^{\frac1z}=\left(\sum_{m=0}^{+\infty}\frac{z^{m}}{m!}\right)\left(\sum_{k=0}^{+\infty}\frac{1}{k!}\frac{1}{z^{k}}\right)$. The $z^{-1}$ coefficient satisfies $m-k=-1$, i.e. $m=k-1$, so
+
+$$
+\operatorname{Res}_{0}e^{z+\frac1z}=\sum_{k=1}^{+\infty}\frac{1}{\left(k-1\right)!k!}=\sum_{n=0}^{+\infty}\frac{1}{n!\left(n+1\right)!}.
+$$
+
+By **Theorem 14.1.3 (Residue Theorem)**,
+
+$$
+\int_{\partial B\left(0,1\right)}e^{z+\frac1z}\,dz=2\pi i\operatorname{Res}_{0}e^{z+\frac1z}=2\pi i\sum_{n=0}^{+\infty}\frac{1}{n!\left(n+1\right)!}.
+$$
+
+$\blacksquare$
+
+## 14.3-6
+
+Compute $\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx$, where $2\le n\in\mathbb{N}$, $a> 0$.
+
+### Solution to 14.3-6
+
+Take the $\operatorname{Log}$ branch of $z^{1/n}$ (cut along the positive real axis), and use Standard Integral $\int_{0}^{+\infty}\frac{x^{\alpha-1}}{x^{2}+a^{2}}dx=\frac{\pi a^{\alpha-2}}{2\sin\frac{\pi\alpha}{2}}$, with $\alpha-1=\frac1n$, i.e. $\alpha=1+\frac1n$. Then
+
+$$
+\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx
+=\frac{\pi a^{\frac1n-1}}{2\sin\left(\frac{\pi}{2}\left(1+\frac1n\right)\right)}
+=\frac{\pi a^{\frac{1-n}{n}}}{2\cos\frac{\pi}{2n}}.
+$$
+
+(Outline: apply a wedge contour of angle $\frac{2\pi}{n}$ to $f\left(z\right)=\frac{z^{1/n}}{z^{2}+a^{2}}$, let the radius $R\to\infty$, subtract the integrals along the two sides with factor $e^{2\pi i/n}$, and add the residues at the two poles.) $\blacksquare$
+
+## 14.3-7
+
+Compute $\int_{0}^{+\infty}\frac{1}{\sqrt{x}\left(1+x\right)}\,dx$.
+
+### Solution to 14.3-7
+
+Let $x=t^{2}$, $t> 0$; then $\sqrt{x}=t$, $dx=2t\,dt$:
+
+$$
+\int_{0}^{+\infty}\frac{dx}{\sqrt{x}\left(1+x\right)}=\int_{0}^{+\infty}\frac{2t\,dt}{t\left(1+t^{2}\right)}=2\int_{0}^{+\infty}\frac{dt}{1+t^{2}}=2\cdot\frac{\pi}{2}=\pi.
+$$
+
+$\blacksquare$
