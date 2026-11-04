@@ -26,8 +26,6 @@ $$
 > 
 > 区域 $D$ 上一致漏掉三个不同值 (扩充复平面上的点) 的亚纯函数族是正规的.
 
----
-
 ## 22.4-1
 
 令 $\mathcal{F}$ 是区域 $D\subset\mathbb{C}$ 上的一个亚纯函数族, 若对于任意 $a\in D$, 都存在它的邻域 $U\subset D$ 使得 $\mathcal{F}$ 是 $U$ 上的正规族. 证明: $\mathcal{F}$ 是 $D$ 上的正规族.
@@ -40,8 +38,6 @@ $$
 
 再对整个 $D$ 用对角线法: 对每个 $m$, 抽出在 $K_{m}$ 上内紧收敛的子列, 对角线子列在一切 $K_{m}$ 上内紧收敛. 因 $\left\{K_{m}\right\}$ 穷竭 $D$, 该子列在 $D$ 上内紧一致收敛. 由**定义 22.1.5 (正规族)**, $\mathcal{F}$ 在 $D$ 上正规. $\blacksquare$
 
----
-
 ## 22.4-2
 
 令 $\mathcal{F}$ 是区域 $D\subset\mathbb{C}$ 上的全纯函数族且存在不同 $a,b\in\mathbb{C}$ 和自然数 $n\ge1$ 使得对于任意 $f\in\mathcal{F}$ 都有 $f\left(D\right)\subset\mathbb{C}\setminus\left\{a\right\}$ 而 $f^{-1}\left(b\right)\cap D$ 的元素不超过 $n$ 个. 证明: $\mathcal{F}$ 是 $D$ 上的正规族.
@@ -53,8 +49,6 @@ $$
 因 $f_{n}$ 漏 $a$, 极限 $g$ 也漏 $a$ ($g\left(\mathbb{C}\right)\subset\mathbb{C}\setminus\left\{a\right\}$). 由**定理 21.2.3 (毕卡小定理)**, 非常值整函数 $g$ 的值域是 $\mathbb{C}$ 或 $\mathbb{C}$ 去掉一点, 而 $a$ 已漏, 故 $g$ 取 $b$ ($b\ne a$) 无穷多次: $g$ 有无穷多个 $b$-点, 它们无聚点.
 
 取紧圆盘 $K$ 含 $g$ 的 $n+1$ 个 $b$-点. 因 $g_{n}\to g$ 于 $K$ 一致且 $g$ 在这些点取值 $b$ (无聚点, 故可在 $K$ 内取不相交小邻域), 对充分大 $n$, $g_{n}$ 在 $K$ 内至少有 $n+1$ 个 $b$-点 (鲁歇定理/一致收敛保持零点个数). 但 $g_{n}$ 的 $b$-点即 $f_{n}^{-1}\left(b\right)$ 落在 $z_{n}+\rho_{n}K$ 中的点, 至多 $n$ 个, 矛盾. 故 $\mathcal{F}$ 正规. $\blacksquare$
-
----
 
 ## 22.4-4
 

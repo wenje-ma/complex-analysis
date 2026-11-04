@@ -24,8 +24,6 @@
 > 
 > 任意不为全平面的单连通区域都与开单位圆盘共形等价.
 
----
-
 ## 11.3-3
 
 令 $f$ 是单连通区域 $D\subset\mathbb{C}$ 到开单位圆盘 $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$ 的共形等价映射. 证明: 若 $D\ni z_{n}\to z\in\partial D$, 则 $\left|f\left(z_{n}\right)\right|\to1$.
@@ -42,8 +40,6 @@ $$
 
 与 $z_{n_{k}}\to z\in\partial D\notin D$ 矛盾. 故 $\left|f\left(z_{n}\right)\right|\to1$. $\blacksquare$
 
----
-
 ## 11.3-4
 
 令 $\left\{g_{n}\right\}$ 是区域 $D\subset\mathbb{C}$ 上的全纯函数序列, 且 $g_{n}\left(D\right)\subset D$. 若 $g_{n}$ 在 $D$ 上内紧一致收敛到 $g$. 证明: $g\left(D\right)\subset D$ 或者 $g\equiv z_{0}\in\partial D$.
@@ -56,8 +52,6 @@ $$
 
 若 $g$ 为常值 $g\equiv z_{0}$, 则 $z_{0}\in\overline D$. 若 $z_{0}\in D$, 则 $g\left(D\right)=\left\{z_{0}\right\}\subset D$, 属第一种情形; 若 $z_{0}\in\partial D$, 则 $g\equiv z_{0}\in\partial D$, 属第二种情形. 命题得证. $\blacksquare$
 
----
-
 ## 11.3-5
 
 (维塔利-波特定理) 令 $\left\{f_{n}\right\}$ 是区域 $D\subset\mathbb{C}$ 上的全纯函数序列且在 $D$ 上的任意紧子集上都是一致有界的. 给定序列 $z_{m}\in D$ 且 $z_{m}\to z_{\infty}\in D$. 假设 $\lim_{n\to\infty}f_{n}\left(z_{m}\right)=w_{m}$, $\forall m\in\mathbb{N}$. 证明: 存在 $D$ 上的全纯函数 $f$ 使得 $f_{n}$ 在 $D$ 上内紧一致收敛到 $f$.
@@ -67,8 +61,6 @@ $$
 由**定理 11.1.3 (蒙泰尔定理)**, $\left\{f_{n}\right\}$ 在 $D$ 上正规: 任意子列含有在 $D$ 上内紧一致收敛的子列. 设 $f_{n_{k}}\to f$ 内紧一致, 由**定理 11.1.2 (魏尔斯特拉斯定理)** $f$ 在 $D$ 上全纯. 对每个 $m$, 由 $f_{n_{k}}\to f$ 一致于 $\left\{z_{m}\right\}$ 附近及条件 $\lim_{n}f_{n}\left(z_{m}\right)=w_{m}$, 得 $f\left(z_{m}\right)=w_{m}$.
 
 现在证明整个序列收敛到 $f$. 若不然, 存在紧集 $K\subset D$, $\varepsilon> 0$ 及子列 $f_{n'_{j}}$ 使得 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$. 由蒙泰尔, $f_{n'_{j}}$ 有子列内紧收敛到某全纯 $\widetilde f$. 则 $\widetilde f\left(z_{m}\right)=w_{m}=f\left(z_{m}\right)$ 对一切 $m$ 成立; 因 $z_{m}\to z_{\infty}\in D$ 有聚点, 由**定理 9.3.2 (恒等定理)** $\widetilde f=f$. 这与 $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$ 且 $f_{n'_{j}}\to f$ 于 $K$ 矛盾. 故 $f_{n}\to f$ 在 $D$ 上内紧一致收敛. $\blacksquare$
-
----
 
 ## 11.3-6
 
@@ -89,8 +81,6 @@ $$
 $$
 
 故 $\operatorname{Area}\left(f\left(D\right)\right)=\iint_{D}\left|f'\left(z\right)\right|^{2}\,dx\,dy$. $\blacksquare$
-
----
 
 ## 11.3-15
 

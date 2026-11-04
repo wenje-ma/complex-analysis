@@ -20,8 +20,6 @@
 > 
 > $z^{\alpha}=e^{\alpha\operatorname{Ln}z}$; 在 $\mathbb{C}\setminus\left(-\infty,0\right]$ 上取主分支, 即 $z^{\alpha}=e^{\alpha\operatorname{Log}z}$.
 
----
-
 ## 6.5-2
 
 令 $\Phi:\mathbb{R}\to\mathbb{R}$ 为连续函数且 $\Phi\left(x\right)\in\operatorname{Arg}\left(e^{ix}\right)$, $\forall x\in\mathbb{R}$. 证明: 存在 $k\in\mathbb{Z}$ 使得 $\Phi\left(x\right)=x+2\pi k$, $\forall x\in\mathbb{R}$.
@@ -35,8 +33,6 @@ $$
 $$
 
 $\Phi$ 与 $x\mapsto x$ 都连续, 故 $\frac{\Phi\left(x\right)-x}{2\pi}$ 连续; 而连续函数在连通的 $\mathbb{R}$ 上取整数值, 必为常数. 故存在 $k\in\mathbb{Z}$ 使 $\frac{\Phi\left(x\right)-x}{2\pi}=k$, 即 $\Phi\left(x\right)=x+2\pi k$, $\forall x\in\mathbb{R}$. $\blacksquare$
-
----
 
 ## 6.5-4
 
@@ -53,8 +49,6 @@ $f$ 是 $\mathbb{C}\setminus\left[0,+\infty\right)$ 上对数函数的全纯分�
 (iii) $z=-1-\frac{i}{\sqrt3}$: $\left|z\right|=\sqrt{1+\frac13}=\frac{2}{\sqrt3}$, $\ln\left|z\right|=\ln2-\frac12\ln3$. 该点在第三象限, 参考角 $\frac\pi6$, 故 $\theta\left(z\right)=\pi+\frac\pi6=\frac{7\pi}{6}\in\left(-\frac\pi2,\frac{3\pi}2\right)$. 于是 $f\left(-1-\frac{i}{\sqrt3}\right)=\ln\frac{2}{\sqrt3}+i\frac{7\pi}{6}$.
 
 (iv) $\left(-1-\frac{i}{\sqrt3}\right)^{2}=\frac23+\frac{2i}{\sqrt3}$, 故 $\left|z^{2}\right|=\frac43$, $\ln\left|z^{2}\right|=\ln\frac43$; 该点在第一象限, $\tan\theta=\frac{2/\sqrt3}{2/3}=\sqrt3$, 故 $\theta\left(z^{2}\right)=\frac\pi3$. 于是 $f\left(\left(-1-\frac{i}{\sqrt3}\right)^{2}\right)=\ln\frac43+i\frac\pi3$. $\blacksquare$
-
----
 
 ## 6.5-6
 
@@ -75,8 +69,6 @@ w\left(3\right)=\exp\left(\frac13\left(\ln4+\ln2+\ln1-\ln3\right)\right)=\exp\le
 $$
 
 故该分支满足 $w\left(3\right)> 0$. $\blacksquare$
-
----
 
 ## 6.5-8
 

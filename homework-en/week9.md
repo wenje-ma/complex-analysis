@@ -24,8 +24,6 @@ $$
 > 
 > A nonconstant holomorphic function maps domains onto domains (open sets).
 
----
-
 ## 9.4-2
 
 Let $f$ be holomorphic on the unit disk $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$ with $\left|f'\left(z\right)\right|\le\frac{1}{1-\left|z\right|}$ for all $z\in\mathbb{D}$. Prove: every Taylor coefficient $c_{n}$ of $f$ at $z=0$ satisfies $\left|c_{n}\right|< e$ for all $n\in\mathbb{N}\setminus\left\{0\right\}$.
@@ -52,8 +50,6 @@ $$
 
 Thus $\left|c_{n}\right|\le\left(1+\frac{1}{n-1}\right)^{n-1}< e$ (since $\left(1+\frac{1}{m}\right)^{m}< e$). $\blacksquare$
 
----
-
 ## 9.4-4
 
 Let $D$ be a domain containing the origin, and $f\left(x\right):=\begin{cases}e^{-1/x^{2}},&x\ne0\\0,&x=0\end{cases}$. Does there exist a holomorphic function on $D$ whose restriction to the real axis equals $f$?
@@ -61,8 +57,6 @@ Let $D$ be a domain containing the origin, and $f\left(x\right):=\begin{cases}e^
 ### Solution 9.4-4
 
 No. Suppose there were a holomorphic $F$ on $D$ with $F\left(x\right)=f\left(x\right)$ on the real axis. From real analysis, $f$ has derivatives of all orders at $0$ with $f^{\left(n\right)}\left(0\right)=0$ for all $n\ge0$ (the function $e^{-1/x^{2}}$ is the standard example of a real-smooth but non-real-analytic function). Since $F$ agrees with $f$ on the real axis, $F^{\left(n\right)}\left(0\right)=f^{\left(n\right)}\left(0\right)=0$, so all Taylor coefficients of $F$ at $0$ vanish, and $F\equiv0$ near $0$. By **Theorem 9.3.2 (Identity Theorem)**, $F\equiv0$ on $D$. But for real $x\ne0$, $F\left(x\right)=0\ne e^{-1/x^{2}}=f\left(x\right)$, a contradiction. Hence no such function exists. $\blacksquare$
-
----
 
 ## 9.4-6
 
@@ -73,8 +67,6 @@ Let $f,g$ be holomorphic and nonzero on $\mathbb{D}:=\left\{z\in\mathbb{C}:\left
 Since $f,g$ are nonzero on $\mathbb{D}$, $\frac{f'}{f}-\frac{g'}{g}$ is holomorphic on $\mathbb{D}$. By assumption it vanishes on $\left\{x_{n}\right\}$, and $x_{n}=\frac{1}{n}\to0\in\mathbb{D}$, so the zeros have an accumulation point $0$ in $\mathbb{D}$. By **Theorem 9.3.2 (Identity Theorem)**, $\frac{f'}{f}-\frac{g'}{g}\equiv0$, i.e. $\frac{f'}{f}=\frac{g'}{g}$ on $\mathbb{D}$.
 
 Hence $\left(\log f\right)'=\left(\log g\right)'$ on $\mathbb{D}$ (taking any local logarithm branch), so $\log f-\log g$ is locally constant on $\mathbb{D}$; since $\mathbb{D}$ is connected, there is $c_{0}\in\mathbb{C}$ with $\log f=\log g+c_{0}$ on $\mathbb{D}$. Exponentiating, $f=e^{c_{0}}g$, i.e. $f=cg$ with $c=e^{c_{0}}$. $\blacksquare$
-
----
 
 ## 9.4-8
 
@@ -106,8 +98,6 @@ $$
 
 For $k=0$, $\left|a_{0}\right|=\left|f\left(0\right)\right|\le4A+4\left|f\left(0\right)\right|$ is immediate. $\blacksquare$
 
----
-
 ## 9.4-10
 
 (L'Hôpital's rule) Let $D\subset\mathbb{C}$ be open, $f,g$ holomorphic on $D$, and $a\in D$ a common isolated zero. Prove:
@@ -132,8 +122,6 @@ $$
 
 (ii) Let $p$ be the order of $f$ at $a$, $q$ that of $g$. If $p> q$, then $f\left(z\right)=\left(z-a\right)^{p}f_{1}$, $g\left(z\right)=\left(z-a\right)^{q}g_{1}$ with $f_{1}\left(a\right)g_{1}\left(a\right)\ne0$, so $\frac{f}{g}=\left(z-a\right)^{p-q}\frac{f_{1}}{g_{1}}\to0$; meanwhile $f'$ has order $p-1$, $g'$ order $q-1$, and $\frac{f'}{g'}\to0$, so they agree. If $p< q$, similarly $\frac{f}{g}\to\infty$ and $\frac{f'}{g'}\to\infty$. If $p=q=m$, applying (i) to $f',g'$ (both zeros of order $m-1$) gives $\lim\frac{f'}{g'}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, and by (i) $\lim\frac{f}{g}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, so they agree. $\blacksquare$
 
----
-
 ## 9.4-13
 
 Let $f$ be holomorphic on a domain $D\subset\mathbb{C}$. Suppose for every $z\in D$ there exist $m,n\in\mathbb{N}\setminus\left\{0\right\}$ such that $\left(f\left(z\right)\right)^{m}=\left(f\left(z\right)\right)^{n}$. Prove: $f$ is constant on $D$.
@@ -154,8 +142,6 @@ $$
 
 The set $\left\{0\right\}\cup\left\{\left|w\right|=1\right\}$ has no interior points in $\mathbb{C}$. If $f$ were nonconstant, by **Theorem 10.1.4 (Open Mapping Theorem)**, $f\left(D\right)$ would be open and hence have interior points, a contradiction. Thus $f$ is constant on $D$. $\blacksquare$
 
----
-
 ## 9.4-15
 
 Does there exist a holomorphic function $f\left(z\right)$ on $\mathbb{C}$ satisfying $\left|f\left(z\right)\right|> \left|z\right|$ for all $z\in\mathbb{C}$?
@@ -170,8 +156,6 @@ $$
 
 then $g\left(0\right)=0$, and for $z\ne0$, $\left|g\left(z\right)\right|=\frac{\left|z\right|}{\left|f\left(z\right)\right|}< 1$. Hence $\left|g\left(z\right)\right|< 1$ on all of $\mathbb{C}$, so $g$ is a bounded entire function. By **Theorem 9.1.3 (Liouville's Theorem)**, $g$ is constant; since $g\left(0\right)=0$, $g\equiv0$, contradicting $g\left(z\right)=\frac{z}{f\left(z\right)}\ne0$ for $z\ne0$. Hence no such function exists. $\blacksquare$
 
----
-
 ## 9.4-17
 
 Let $f:\mathbb{C}\to\mathbb{D}=\left\{\left|z\right|< 1\right\}$ be holomorphic on $\mathbb{C}$ with $f\left(2\right)=\frac{2+i}{8}$. Find $f\left(10\right)$.
@@ -185,8 +169,6 @@ f\left(10\right)=f\left(2\right)=\frac{2+i}{8}.
 $$
 
 $\blacksquare$
-
----
 
 ## 9.4-18
 

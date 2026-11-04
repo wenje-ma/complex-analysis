@@ -24,8 +24,6 @@ $$
 > 
 > 非常值的全纯函数把区域映成区域 (开集).
 
----
-
 ## 9.4-2
 
 令 $f$ 是单位圆盘 $\mathbb{D}:=\left\{z\in\mathbb{C}:\left|z\right|< 1\right\}$ 上的全纯函数而且 $\left|f'\left(z\right)\right|\le\frac{1}{1-\left|z\right|}$, $\forall z\in\mathbb{D}$. 证明: 函数 $f$ 在 $z=0$ 处的泰勒级数的系数 $c_{n}$ 都满足 $\left|c_{n}\right|< e$, $\forall n\in\mathbb{N}\setminus\left\{0\right\}$.
@@ -52,8 +50,6 @@ $$
 
 故 $\left|c_{n}\right|\le\left(1+\frac{1}{n-1}\right)^{n-1}< e$ (因 $\left(1+\frac{1}{m}\right)^{m}< e$). 命题得证. $\blacksquare$
 
----
-
 ## 9.4-4
 
 令 $D$ 为包含原点的区域, $f\left(x\right):=\begin{cases}e^{-1/x^{2}},&x\ne0\\0,&x=0\end{cases}$. 请问是否存在 $D$ 上的全纯函数使得它限定在实轴上与函数 $f$ 相等?
@@ -61,8 +57,6 @@ $$
 ### 解答 9.4-4
 
 不存在. 反设存在 $D$ 上的全纯函数 $F$ 满足 $F\left(x\right)=f\left(x\right)$ 对实轴上的一切点成立. 由实分析中已知 $f$ 在 $0$ 处各阶导数都存在且 $f^{\left(n\right)}\left(0\right)=0$, $\forall n\ge0$ (函数 $e^{-1/x^{2}}$ 是实光滑而非实解析的典型例子). 因 $F$ 与 $f$ 在实轴重合, $F^{\left(n\right)}\left(0\right)=f^{\left(n\right)}\left(0\right)=0$, 故 $F$ 在 $0$ 处的泰勒级数各项系数均为 $0$, 于是 $F$ 在 $0$ 的某邻域上恒为 $0$. 由**定理 9.3.2 (恒等定理)**, $F\equiv0$ 在 $D$ 上. 但取实轴上 $x\ne0$, $F\left(x\right)=0\ne e^{-1/x^{2}}=f\left(x\right)$, 矛盾. 故不存在. $\blacksquare$
-
----
 
 ## 9.4-6
 
@@ -73,8 +67,6 @@ $$
 因 $f,g$ 在 $\mathbb{D}$ 上不取零值, $\frac{f'}{f}-\frac{g'}{g}$ 在 $\mathbb{D}$ 上全纯. 由条件它在点列 $\left\{x_{n}\right\}$ 上为零, 而 $x_{n}=\frac{1}{n}\to0\in\mathbb{D}$, 即零点在 $\mathbb{D}$ 内有聚点 $0$. 由**定理 9.3.2 (恒等定理)**, $\frac{f'}{f}-\frac{g'}{g}\equiv0$, 即 $\frac{f'}{f}=\frac{g'}{g}$ 在 $\mathbb{D}$ 上.
 
 故 $\left(\log f\right)'=\left(\log g\right)'$ 在 $\mathbb{D}$ 上 (取任一局部对数分支), 于是 $\log f-\log g$ 在 $\mathbb{D}$ 上局部为常数; 因 $\mathbb{D}$ 连通, 存在 $c_{0}\in\mathbb{C}$ 使 $\log f=\log g+c_{0}$ 在 $\mathbb{D}$ 上. 取指数得 $f=e^{c_{0}}g$, 即 $f=cg$, $c=e^{c_{0}}$. $\blacksquare$
-
----
 
 ## 9.4-8
 
@@ -106,8 +98,6 @@ $$
 
 对 $k=0$, $\left|a_{0}\right|=\left|f\left(0\right)\right|\le4A+4\left|f\left(0\right)\right|$ 显然. 命题得证. $\blacksquare$
 
----
-
 ## 9.4-10
 
 (洛必达法则) 令 $D\subset\mathbb{C}$ 是开集, $f,g$ 为 $D$ 上的全纯函数, $a\in D$ 为它们的共同孤立零点. 证明:
@@ -132,8 +122,6 @@ $$
 
 (ii) 设 $f$ 在 $a$ 处零点阶数为 $p$, $g$ 的零点阶数为 $q$. 若 $p> q$, 则 $f\left(z\right)=\left(z-a\right)^{p}f_{1}$, $g\left(z\right)=\left(z-a\right)^{q}g_{1}$, $f_{1}\left(a\right)g_{1}\left(a\right)\ne0$, 故 $\frac{f}{g}=\left(z-a\right)^{p-q}\frac{f_{1}}{g_{1}}\to0$; 而 $f'$ 零点阶 $p-1$, $g'$ 零点阶 $q-1$, $\frac{f'}{g'}\to0$, 二者相等. 若 $p< q$, 同理 $\frac{f}{g}\to\infty$, $\frac{f'}{g'}\to\infty$, 相等. 若 $p=q=m$, 由 (i) 应用于 $f',g'$ (均为 $m-1$ 阶零点) 得 $\lim\frac{f'}{g'}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, 再由 (i) 得 $\lim\frac{f}{g}=\lim\frac{f^{\left(m\right)}}{g^{\left(m\right)}}$, 故二者相等. $\blacksquare$
 
----
-
 ## 9.4-13
 
 令 $f$ 是区域 $D\subset\mathbb{C}$ 上的全纯函数. 假设对任意 $z\in D$ 都存在 $m,n\in\mathbb{N}\setminus\left\{0\right\}$ 使得 $\left(f\left(z\right)\right)^{m}=\left(f\left(z\right)\right)^{n}$. 证明: $f$ 在 $D$ 上是常值的.
@@ -154,8 +142,6 @@ $$
 
 集合 $\left\{0\right\}\cup\left\{\left|w\right|=1\right\}$ 在 $\mathbb{C}$ 中没有内点. 若 $f$ 非常值, 由**定理 10.1.4 (开映射定理)**, $f\left(D\right)$ 是开集, 应有内点, 矛盾. 故 $f$ 在 $D$ 上为常值. $\blacksquare$
 
----
-
 ## 9.4-15
 
 是否存在 $\mathbb{C}$ 上的全纯函数 $f\left(z\right)$ 满足 $\left|f\left(z\right)\right|> \left|z\right|$, $\forall z\in\mathbb{C}$?
@@ -170,8 +156,6 @@ $$
 
 则 $g\left(0\right)=0$, 且对 $z\ne0$, $\left|g\left(z\right)\right|=\frac{\left|z\right|}{\left|f\left(z\right)\right|}< 1$. 故 $\left|g\left(z\right)\right|< 1$ 在 $\mathbb{C}$ 上成立, $g$ 是有界整函数. 由**定理 9.1.3 (刘维尔定理)**, $g$ 为常值; 又 $g\left(0\right)=0$, 故 $g\equiv0$, 这与 $g\left(z\right)=\frac{z}{f\left(z\right)}\ne0$ ($z\ne0$) 矛盾. 故不存在. $\blacksquare$
 
----
-
 ## 9.4-17
 
 令 $f:\mathbb{C}\to\mathbb{D}=\left\{\left|z\right|< 1\right\}$ 是 $\mathbb{C}$ 上的全纯函数且 $f\left(2\right)=\frac{2+i}{8}$, 求 $f\left(10\right)$ 的值.
@@ -185,8 +169,6 @@ f\left(10\right)=f\left(2\right)=\frac{2+i}{8}.
 $$
 
 $\blacksquare$
-
----
 
 ## 9.4-18
 

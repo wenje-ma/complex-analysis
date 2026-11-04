@@ -38,8 +38,6 @@ $$
 > 
 > 对单连通区域 $D$ 且 $\mathbb{C}\setminus D\ne\varnothing$ 及 $a\in D$, 称使存在唯一共形等价 $f:D\to\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$, $f\left(a\right)=0$, $f'\left(a\right)=1$ 的正数 $\rho$ 为 $D$ 相对 $a$ 的映射半径 $\rho\left(D,a\right)$.
 
----
-
 ## 11.3-1
 
 令 $\gamma$ 是单位圆盘 $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$ 上的光滑道路. 定义 $\gamma$ 的双曲弧长为 $L_{h}\left(\gamma\right)=\int_{\gamma}\frac{1}{1-\left|z\right|^{2}}\left|dz\right|$. 令 $f:\mathbb{D}\to\mathbb{D}$ 是全纯函数, 证明: (i) $L_{h}\left(f\left(\gamma\right)\right)\le L_{h}\left(\gamma\right)$; (ii) $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$ 当且仅当 $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
@@ -56,8 +54,6 @@ $$
 
 (ii) 若 $f\in\operatorname{auto}\left(\mathbb{D}\right)$, 则施瓦茨-皮克微分形式取等号, 故 $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$. 反之, 若 $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$, 则被积函数的不等式 $\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}}$ 沿 $\gamma$ 处处取等号; 由**定理 10.3.4 (施瓦茨-皮克引理)** 的等号条件, $f$ 在含 $\gamma$ 的某开集上是自同构, 故 $f\in\operatorname{auto}\left(\mathbb{D}\right)$. $\blacksquare$
 
----
-
 ## 11.3-2
 
 假设区域 $G\subset\mathbb{C}\setminus\left\{0\right\}$ 上任意没有零点的全纯函数 $f$ 都存在 $G$ 上的全纯函数 $g$ 使得 $e^{g\left(z\right)}=f\left(z\right)$, $\forall z\in G$. 证明: $G$ 是单连通的.
@@ -67,8 +63,6 @@ $$
 反设 $G$ 不是单连通的, 则 $\widehat{\mathbb{C}}\setminus G$ 有一个有界连通分支 $K$. 取 $a\in K$. 因 $G\subset\mathbb{C}\setminus\left\{0\right\}$ 且 $a\notin G$, $f\left(z\right)=z-a$ 在 $G$ 上全纯且无零点. 由假设, 存在 $G$ 上全纯的 $g$ 使 $e^{g\left(z\right)}=z-a$, 故 $g'\left(z\right)=\frac{1}{z-a}$ 在 $G$ 上有原函数 $g$.
 
 但 $K$ 是 $G$ 的一个洞, 存在闭曲线 $\gamma\subset G$ 绕过 $a$ 一次, 由例 7.1.2, $\int_{\gamma}\frac{dz}{z-a}=2\pi i\ne0$; 而 $g'$ 有原函数 $g$, 则 $\int_{\gamma}g'\left(z\right)\,dz=0$, 矛盾. 故 $G$ 单连通. $\blacksquare$
-
----
 
 ## 11.3-9
 
@@ -100,8 +94,6 @@ $$
 
 (v) 若 $h\left(z\right)=z$, 则 $\operatorname{Re}h'\left(0\right)=1$. 反之若 $\operatorname{Re}h'\left(0\right)=1$, 则 $\left|h'\left(0\right)\right|\ge1$, 而**定理 10.3.1 (施瓦茨引理)** 给出 $\left|h'\left(0\right)\right|\le1$, 故 $\left|h'\left(0\right)\right|=1$. 施瓦茨引理等号条件: $h\left(z\right)=e^{i\theta}z$. 又 $\operatorname{Re}h'\left(0\right)=\cos\theta=1$, 故 $\theta=0$, 即 $h\left(z\right)=z$. $\blacksquare$
 
----
-
 ## 11.3-11
 
 令 $U\subset\mathbb{C}$ 是连通开集, $U\ne\mathbb{C}$, 且 $U$ 上的任意全纯函数都有原函数. 证明: $U$ 与开单位圆盘共形等价.
@@ -109,8 +101,6 @@ $$
 ### 解答 11.3-11
 
 $U$ 上任意全纯函数都有原函数, 这等价于 $U$ 内任意闭道路的积分为零, 即 $U$ 是单连通的 (单连通区域上全纯函数必有原函数, 且原函数存在性蕴含单连通). 又 $U\ne\mathbb{C}$, 故 $U$ 是不为全平面的单连通区域. 由**定理 11.2.2 (黎曼映射定理)**, $U$ 与开单位圆盘共形等价. $\blacksquare$
-
----
 
 ## 11.3-14
 
@@ -131,8 +121,6 @@ $U$ 上任意全纯函数都有原函数, 这等价于 $U$ 内任意闭道路的
 (ii) 记 $\rho=\rho\left(D,a\right)$, 取 $f:D\to\mathbb{D}_{\rho}$, $f\left(a\right)=0$, $f'\left(a\right)=1$. 由 $D'\subset D$, $f|_{D'}$ 单叶全纯. 由 (i), 存在共形等价 $F:D'\to\mathbb{D}_{\rho\left(D',a\right)}$, $F\left(a\right)=0$, $F'\left(a\right)=1$. 若 $\rho\left(D',a\right)> \rho$, 则 $f\circ F^{-1}:\mathbb{D}_{\rho\left(D',a\right)}\to\mathbb{D}_{\rho}$, 限制到 $\mathbb{D}_{\rho}$ 上得 $\mathbb{D}_{\rho}\to\mathbb{D}_{\rho}$ 共形等价, 在 $0$ 处导数 $=\frac{f'\left(a\right)}{F'\left(a\right)}=1$, 由施瓦茨引理它为恒同, 从而 $F^{-1}\left(\mathbb{D}_{\rho}\right)=D'$ 且 $f\left(D'\right)=\mathbb{D}_{\rho}$, 这与 $D'\subsetneq D$ 时 $f\left(D'\right)\subsetneq\mathbb{D}_{\rho}$ 矛盾. 故 $\rho\left(D',a\right)\le\rho\left(D,a\right)$. 若等号在某 $b$ 成立, 同一论证 (复合为恒同) 给出 $f\left(D'\right)=\mathbb{D}_{\rho}$, 即 $D'=D$.
 
 (iii) 设 $f:D\to\mathbb{D}_{\rho\left(D,a\right)}$, $f\left(a\right)=0$, $f'\left(a\right)=1$. 因 $g$ 单叶, $g\left(D\right)$ 是单连通区域, 且 $\widetilde f\left(z\right):=g'\left(a\right)\,f\left(g^{-1}\left(z\right)\right)$ 把 $g\left(D\right)$ 共形地映成 $\mathbb{D}_{\left|g'\left(a\right)\right|\rho\left(D,a\right)}$, 且 $\widetilde f\left(g\left(a\right)\right)=0$, $\widetilde f'\left(g\left(a\right)\right)=g'\left(a\right)f'\left(a\right)\cdot\frac{1}{g'\left(a\right)}=1$. 由 (i) 的唯一性, $\rho\left(g\left(D\right),g\left(a\right)\right)\le\left|g'\left(a\right)\right|\rho\left(D,a\right)$. 对 $g^{-1}$ 应用同一论证得反向不等式, 故 $\rho\left(g\left(D\right),g\left(a\right)\right)=\left|g'\left(a\right)\right|\rho\left(D,a\right)$. $\blacksquare$
-
----
 
 ## 11.3-19
 

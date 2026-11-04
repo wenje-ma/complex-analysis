@@ -28,8 +28,6 @@
 > 
 > 若存在 $C> 0$ 使 $\forall z\in M$ 有 $\left|f\left(z\right)\right|\le C$, 则称 $f$ 在 $M$ 上有界; 若 $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, 则称 $f$ 在点 $a$ 处 (沿 $M$) 连续; 若对 $\forall a\in M$ 均连续, 则称 $f$ 在 $M$ 上连续.
 
----
-
 ## 2.5-2
 
 令函数 $f$ 在区域 $D$ 上一致连续. 证明: 对于 $\forall z_{0}\in\partial D$, 极限 $\lim_{z\to z_{0},\ z\in D}f\left(z\right)$ 都存在.
@@ -41,8 +39,6 @@
 再证极限不依赖序列的选取. 设 $z_{n},z_{n}'\in D$, $z_{n}\to z_{0}$, $z_{n}'\to z_{0}$, 且 $f\left(z_{n}\right)\to L$, $f\left(z_{n}'\right)\to L'$. 构造交错序列 $z_{1},z_{1}',z_{2},z_{2}',\cdots$, 它仍收敛于 $z_{0}$, 故其像收敛, 但它的两个子列分别收敛于 $L$ 与 $L'$, 从而 $L=L'$.
 
 综上, 极限 $\lim_{z\to z_{0},\ z\in D}f\left(z\right)$ 存在. $\blacksquare$
-
----
 
 ## 2.5-4
 
@@ -65,8 +61,6 @@
 (v) 起点 $1$, 终点 $1$. 在 $\left[0,\pi\right]$ 上 $\sin t$ 从 $0$ 增到 $1$ 再减到 $0$, 点从 $1$ 逆时针到 $-1$ 再回到 $1$; 在 $\left[\pi,2\pi\right]$ 上 $\sin t$ 从 $0$ 减到 $-1$ 再增到 $0$, 点从 $1$ 顺时针到 $-1$ 再回到 $1$. 故它是往返摆动的闭道路.
 
 比较等价性: (i) 与 (iii) 定向相反, 不等价; (i) 与 (ii) 圈数不同, 不等价; (iv) 非闭道路 (起 $1$ 终 $-1$), 与任何闭道路不等价; (v) 的轨迹是往返摆动, 不同于 (i)(ii)(iii) 的整圈, 也不同于 (iv) 的半圈. 故五条道路分属五个互不相同的重参数化等价类. $\blacksquare$
-
----
 
 ## 2.5-6
 
@@ -94,8 +88,6 @@ $$
 
 由极坐标表示, $z^{3}$ 的辐角是 $z$ 辐角的 $3$ 倍; 当 $\theta$ 扫过 $\left[0,2\pi\right]$ 时, 像点辐角扫过 $\left[0,6\pi\right]$, 故像是一条绕原点转三圈, 关于原点对称的闭曲线. $\blacksquare$
 
----
-
 ## 2.5-8
 
 令 $K\subset\mathbb{C}$ 是有界连通闭集. 证明: 对于任意 $\varepsilon> 0$, 都存在若当闭曲线 $\gamma$ 使得 $K$ 包含在 $\gamma$ 的内部区域而且 $\operatorname{dist}\left(K,\gamma\right)< \varepsilon$.
@@ -113,8 +105,6 @@ $$
 $$
 
 故 $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. 取 $\delta< \frac{\varepsilon}{2\sqrt{2}}$, $\eta< \frac{\varepsilon}{2}$, 得 $\operatorname{dist}\left(K,\gamma\right)< \varepsilon$. $\blacksquare$
-
----
 
 ## 2.5-10
 

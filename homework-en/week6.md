@@ -20,8 +20,6 @@
 > 
 > $z^{\alpha}=e^{\alpha\operatorname{Ln}z}$; on $\mathbb{C}\setminus\left(-\infty,0\right]$ take the principal branch, i.e. $z^{\alpha}=e^{\alpha\operatorname{Log}z}$.
 
----
-
 ## 6.5-2
 
 Let $\Phi:\mathbb{R}\to\mathbb{R}$ be continuous with $\Phi\left(x\right)\in\operatorname{Arg}\left(e^{ix}\right)$ for all $x\in\mathbb{R}$. Prove: there exists $k\in\mathbb{Z}$ such that $\Phi\left(x\right)=x+2\pi k$ for all $x\in\mathbb{R}$.
@@ -35,8 +33,6 @@ $$
 $$
 
 Both $\Phi$ and $x\mapsto x$ are continuous, so $\frac{\Phi\left(x\right)-x}{2\pi}$ is continuous; a continuous function taking integer values on the connected space $\mathbb{R}$ must be constant. Hence there exists $k\in\mathbb{Z}$ such that $\frac{\Phi\left(x\right)-x}{2\pi}=k$, i.e. $\Phi\left(x\right)=x+2\pi k$ for all $x\in\mathbb{R}$. $\blacksquare$
-
----
 
 ## 6.5-4
 
@@ -53,8 +49,6 @@ Since $f$ is a holomorphic branch of the logarithm on $\mathbb{C}\setminus\left[
 (iii) $z=-1-\frac{i}{\sqrt3}$: $\left|z\right|=\sqrt{1+\frac13}=\frac{2}{\sqrt3}$, $\ln\left|z\right|=\ln2-\frac12\ln3$. This point lies in the third quadrant, reference angle $\frac\pi6$, so $\theta\left(z\right)=\pi+\frac\pi6=\frac{7\pi}{6}\in\left(-\frac\pi2,\frac{3\pi}2\right)$. Thus $f\left(-1-\frac{i}{\sqrt3}\right)=\ln\frac{2}{\sqrt3}+i\frac{7\pi}{6}$.
 
 (iv) $\left(-1-\frac{i}{\sqrt3}\right)^{2}=\frac23+\frac{2i}{\sqrt3}$, so $\left|z^{2}\right|=\frac43$, $\ln\left|z^{2}\right|=\ln\frac43$; this point lies in the first quadrant, $\tan\theta=\frac{2/\sqrt3}{2/3}=\sqrt3$, so $\theta\left(z^{2}\right)=\frac\pi3$. Thus $f\left(\left(-1-\frac{i}{\sqrt3}\right)^{2}\right)=\ln\frac43+i\frac\pi3$. $\blacksquare$
-
----
 
 ## 6.5-6
 
@@ -75,8 +69,6 @@ w\left(3\right)=\exp\left(\frac13\left(\ln4+\ln2+\ln1-\ln3\right)\right)=\exp\le
 $$
 
 Thus this branch satisfies $w\left(3\right)> 0$. $\blacksquare$
-
----
 
 ## 6.5-8
 

@@ -20,8 +20,6 @@ $$
 > 
 > $\sin z,\cos z$ are holomorphic on $\mathbb{C}$, with $\left(\sin z\right)'=\cos z$, $\left(\cos z\right)'=-\sin z$.
 
----
-
 ## 5.5-1
 
 Let $P\left(z\right)$ be a polynomial of degree at least $1$. Prove: all roots of its derivative $P'\left(z\right)$ lie in the convex hull of the roots of $P\left(z\right)$ (i.e. the smallest convex polygon containing all roots of $P\left(z\right)$). (Gauss-Lucas theorem)
@@ -50,8 +48,6 @@ $$
 
 $\lambda_{j}> 0$ and $\sum_{j}\lambda_{j}=1$, so $z_{0}$ is a convex combination of $a_{1},\ldots,a_{n}$ and lies in their convex hull. $\blacksquare$
 
----
-
 ## 5.5-3
 
 Prove: the function $f\left(z\right)=\frac{\sin z}{z}$ ($z\ne0$), $f\left(0\right)=1$, is holomorphic on $\mathbb{C}$.
@@ -72,8 +68,6 @@ $$
 
 This power series converges on all of $\mathbb{C}$, hence is holomorphic on $\mathbb{C}$, and its value at $z=0$ is $1$. Therefore $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
 
----
-
 ## 5.5-5
 
 Prove: both $\cos z$ and $\sin z$ are unbounded functions on $\mathbb{C}$.
@@ -88,8 +82,6 @@ $$
 $$
 
 As $t\to+\infty$, $\cosh t\to+\infty$ and $\left|\sinh t\right|\to+\infty$. Hence $\cos z$ is unbounded along the imaginary axis, and $\sin z$ is also unbounded along the imaginary axis ($\left|\sin\left(it\right)\right|=\sinh t\to+\infty$). Therefore both $\cos z$ and $\sin z$ are unbounded on $\mathbb{C}$. $\blacksquare$
-
----
 
 ## 5.5-7
 
@@ -114,8 +106,6 @@ z=\left(2k-\frac12\right)\pi\pm i\ln\left(2+\sqrt3\right),\quad k\in\mathbb{Z}.
 $$
 
 $\blacksquare$
-
----
 
 ## 5.5-9
 

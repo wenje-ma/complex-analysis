@@ -22,8 +22,6 @@ $$
 
 为布拉施克因子; 它是 $\mathbb{D}$ 的自同构, 满足 $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$ 且 $\phi_{a}\left(a\right)=0$.
 
----
-
 ## 10.4-2
 
 令 $f$ 和 $g$ 都是区域 $D\subset\mathbb{C}$ 上的全纯函数. 假设存在一点 $z_{0}\in D$ 和它的 $r$-邻域 $B\left(z_{0},r\right)\subset D$, $r> 0$, 使得 $\left|f\left(z_{0}\right)\right|+\left|g\left(z_{0}\right)\right|\ge\left|f\left(z\right)\right|+\left|g\left(z\right)\right|$, $\forall z\in B\left(z_{0},r\right)$. 证明: $f$ 和 $g$ 均在 $D$ 上为常值.
@@ -40,8 +38,6 @@ $$
 
 于是 $M=\left|h\left(z\right)\right|\le\left|f\left(z\right)\right|+\left|g\left(z\right)\right|\le M$ 对所有 $z\in B\left(z_{0},r\right)$ (进而 $D$) 成立, 故 $\left|f\left(z\right)\right|+\left|g\left(z\right)\right|\equiv M$ 且三角形等号 $\left|e^{i\theta_{1}}f\left(z\right)+e^{i\theta_{2}}g\left(z\right)\right|=\left|f\left(z\right)\right|+\left|g\left(z\right)\right|$ 处处成立. 三角形等号条件要求 $e^{i\theta_{1}}f\left(z\right)$ 与 $e^{i\theta_{2}}g\left(z\right)$ 方向相同, 故 $e^{i\left(\theta_{1}-\theta_{2}\right)}\frac{f\left(z\right)}{g\left(z\right)}\ge0$ 为实数 ($g\left(z\right)\ne0$ 处). 于是 $e^{i\left(\theta_{1}-\theta_{2}\right)}\frac{f}{g}$ 是实值亚纯函数, 取虚部为零得 (由恒等定理) $e^{i\left(\theta_{1}-\theta_{2}\right)}\frac{f}{g}\equiv c\in\mathbb{R}_{\ge0}$, 即 $f\equiv c'e^{i\theta}g$ 为 $g$ 的常数倍. 再由 $\left|f\right|+\left|g\right|\equiv M$ 得 $\left|g\right|\equiv\text{常数}$, 故 $g$ 常值 ($\left|g\right|$ 为常数且 $g$ 全纯, 由**定理 10.1.4 (开映射定理)** $g$ 必常值), 从而 $f$ 也常值. $\blacksquare$
 
----
-
 ## 10.4-4
 
 令 $f$ 为有界区域 $D\subset\mathbb{C}$ 上的全纯函数且 $f$ 在闭区域 $\overline{D}$ 上是连续的. 若 $\left|f\left(z\right)\right|=\alpha$, $\forall z\in\partial D$. 证明: 要么 $f$ 为常值的要么它在 $D$ 内有零点.
@@ -51,8 +47,6 @@ $$
 反设 $f$ 在 $D$ 内无零点. 若 $\alpha=0$, 则 $\left|f\right|=0$ 在 $\partial D$, 由最大模原理 $f\equiv0$ 于 $D$, 常值, 得证. 下设 $\alpha> 0$. 由 $\left|f\right|$ 在 $\overline{D}$ 上连续, 最大模原理 (在 $\overline{D}$ 上 $\left|f\right|$ 的最大值在边界取到) 给出 $\left|f\left(z\right)\right|\le\alpha$, $\forall z\in D$.
 
 又 $\frac{1}{f}$ 在 $D$ 上全纯 (因 $f$ 无零点) 且在 $\overline{D}$ 上连续, 边界上 $\left|\frac{1}{f}\right|=\frac{1}{\alpha}$. 同理 $\left|\frac{1}{f\left(z\right)}\right|\le\frac{1}{\alpha}$, 即 $\left|f\left(z\right)\right|\ge\alpha$, $\forall z\in D$. 故 $\left|f\left(z\right)\right|\equiv\alpha$ 于 $D$, $\left|f\right|$ 为常数; 由**定理 10.1.4 (开映射定理)**, $f$ 为常值. 因此 $f$ 要么常值, 要么在 $D$ 内有零点. $\blacksquare$
-
----
 
 ## 10.4-6
 
@@ -86,8 +80,6 @@ $$
 
 即 $M\left(\rho\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$, 这正是 $M\left(r^{s}R^{1-s}\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$. $\blacksquare$
 
----
-
 ## 10.4-8
 
 令 $f$ 是 $\mathbb{D}=\left\{\left|z\right|< 1\right\}$ 上的全纯函数, $z_{1},\cdots,z_{k}\in\mathbb{D}$ 是 $f$ 在 $\mathbb{D}$ 内的所有零点 (计算重数). 证明: $\left|f\left(0\right)\right|\le\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$.
@@ -109,8 +101,6 @@ $$
 $$
 
 而 $\left|B\left(0\right)\right|=\prod_{j=1}^{k}\left|z_{j}\right|$, 故 $\left|f\left(0\right)\right|\le M\prod_{j=1}^{k}\left|z_{j}\right|=\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$. $\blacksquare$
-
----
 
 ## 10.4-10
 

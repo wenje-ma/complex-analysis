@@ -12,8 +12,6 @@
 > 
 > $f$ 在 $D^{+}$ 全纯, 连续到边界线段 $I\subset\mathbb{R}$ 且在其上取实值, 则 $f$ 延拓到 $D^{+}\cup I\cup D^{-}$ 上, 其中 $D^{-}$ 是 $D^{+}$ 关于实轴的对称, 延拓满足 $f\left(z\right)=\overline{f\left(\overline z\right)}$.
 
----
-
 ## 18.4-1
 
 证明: 任意矩形到另一个矩形的共形等价映射, 如果它将一个矩形的所有顶点映成另外一个矩形的顶点, 那么它是线性的.
@@ -25,8 +23,6 @@
 由**定理 18.1.3 (施瓦茨对称原理 II)**, $f$ 沿每条边可反射延拓: 边映到 $R'$ 的边 (一条直线段), 把 $f$ 反射到与 $R$ 相邻的矩形. 反复反射, $f$ 延拓为整函数 $\mathbb{C}\to\mathbb{C}$ (亚纯于无穷, 但整函数). 设 $R$ 的边长对应方向为 $L_{1},L_{2}$ (实方向与虚方向), $R'$ 相应为 $L'_{1},L'_{2}$, 则延拓满足准周期条件 $f\left(z+L_{1}\right)=f\left(z\right)+L'_{1}$, $f\left(z+L_{2}\right)=f\left(z\right)+L'_{2}$.
 
 对 $f'$ 求导得 $f'\left(z+L_{1}\right)=f'\left(z\right)$, $f'\left(z+L_{2}\right)=f'\left(z\right)$, 即 $f'$ 是双周期整函数 (周期 $L_{1},L_{2}$). 双周期整函数在基本平行四边形上有界, 由刘维尔定理 $f'$ 为常数, 故 $f$ 是线性函数 $f\left(z\right)=az+b$. $\blacksquare$
-
----
 
 ## 18.4-3
 
@@ -42,8 +38,6 @@ $$
 
 右端在 $\left|z\right|> 1$ 处全纯 (因 $\frac{1}{\overline z}$ 落在 $\left|z\right|< 1$ 内), 且在 $\left|z\right|=1$ 上 $z=\frac{1}{\overline z}$, 由 $f$ 实值得 $f\left(z\right)=\overline{f\left(z\right)}$, 与原来的 $f$ 吻合. 故 $f$ 延拓成 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数, 且由定义恒有 $f\left(z\right)=\overline{f\left(\frac{1}{\overline z}\right)}$, $\forall z\ne0$. $\blacksquare$
 
----
-
 ## 18.4-5
 
 若 $f$ 为整函数, $f\left(\mathbb{R}\right)\subset\mathbb{R}$ 且 $f\left(i\mathbb{R}\right)\subset i\mathbb{R}$, 证明: $f\left(-z\right)=-f\left(z\right)$, $\forall z\in\mathbb{C}$.
@@ -55,8 +49,6 @@ $$
 记 $f_{e}\left(z\right):=\frac{f\left(z\right)+f\left(-z\right)}{2}$ (偶部), 它是整函数. 由 $f\left(\mathbb{R}\right)\subset\mathbb{R}$, 对 $z=x\in\mathbb{R}$ 有 $f_{e}\left(x\right)\in\mathbb{R}$; 由 $f\left(i\mathbb{R}\right)\subset i\mathbb{R}$, 对 $z=iy$ 有 $f_{e}\left(iy\right)\in i\mathbb{R}$. 因 $f_{e}$ 是偶整函数, 存在整函数 $F$ 使 $f_{e}\left(z\right)=F\left(z^{2}\right)$. 于是 $F$ 满足: $x> 0$ 时 $F\left(x\right)=f_{e}\left(\sqrt x\right)\in\mathbb{R}$; $x< 0$ 时 $F\left(x\right)=f_{e}\left(i\sqrt{\left|x\right|}\right)\in i\mathbb{R}$.
 
 由 $F\left(x\right)\in\mathbb{R}$ 于 $x> 0$ 及对称原理, $F\left(\overline w\right)=\overline{F\left(w\right)}$, 特别对 $x< 0$: $F\left(x\right)=\overline{F\left(x\right)}$, 故 $F\left(x\right)\in\mathbb{R}$. 结合 $F\left(x\right)\in i\mathbb{R}$ 于 $x< 0$, 得 $F\left(x\right)=0$ 于负实轴 $x< 0$. 负实轴有聚点, $F$ 整函数在其上为零, 故 $F\equiv0$, 从而 $f_{e}\equiv0$, 即 $f\left(-z\right)=-f\left(z\right)$, $\forall z\in\mathbb{C}$. $\blacksquare$
-
----
 
 ## 18.4-7
 

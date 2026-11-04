@@ -12,8 +12,6 @@ $$
 \frac{1}{2\pi i}\int_{\Gamma}\frac{f'}{f}\,dz=\sum r_{j}-\sum s_{k}.
 $$
 
----
-
 ## 15.4-5
 
 Prove: $\frac{1}{\sin^{2}z}=\sum_{n=-\infty}^{+\infty}\frac{1}{\left(z-n\pi\right)^{2}}$.
@@ -27,8 +25,6 @@ F\left(z\right):=\frac{1}{\sin^{2}z}-\sum_{n=-\infty}^{+\infty}\frac{1}{\left(z-
 $$
 
 The series converges locally uniformly on compact subsets of $\mathbb{C}$ (away from punctured neighborhoods of the poles), and its principal part at each $n\pi$ matches that of $\frac{1}{\sin^{2}z}$, so $F$ is holomorphic on $\mathbb{C}$ (each pole is canceled); it is an entire function by **Definition 15.1.1 (Entire and Meromorphic Functions)**. Also $\sin^{2}\left(z+\pi\right)=\sin^{2}z$ and $\sum_{n}\frac{1}{\left(z+\pi-n\pi\right)^{2}}=\sum_{n}\frac{1}{\left(z-n\pi\right)^{2}}$, so $F\left(z+\pi\right)=F\left(z\right)$, i.e. $F$ has period $\pi$. On the fundamental strip $\left|\operatorname{Re}z\right|\le\frac\pi2$, as $\left|\operatorname{Im}z\right|\to+\infty$, $\frac{1}{\sin^{2}z}\to0$ and the series $\to0$, so $F$ is bounded on the strip; by periodicity, bounded on $\mathbb{C}$. By Liouville's theorem, $F$ is constant; and $F\to0$ as $\operatorname{Im}z\to+\infty$, so $F\equiv0$, as claimed. $\blacksquare$
-
----
 
 ## 15.4-8
 
@@ -74,8 +70,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 15.4-13
 

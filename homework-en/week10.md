@@ -22,8 +22,6 @@ $$
 
 is called a Blaschke factor; it is an automorphism of $\mathbb{D}$ satisfying $\left|\phi_{a}\left(e^{i\theta}\right)\right|=1$ and $\phi_{a}\left(a\right)=0$.
 
----
-
 ## 10.4-2
 
 Let $f,g$ be holomorphic on a domain $D\subset\mathbb{C}$. Suppose there is a point $z_{0}\in D$ and its $r$-neighborhood $B\left(z_{0},r\right)\subset D$, $r> 0$, such that $\left|f\left(z_{0}\right)\right|+\left|g\left(z_{0}\right)\right|\ge\left|f\left(z\right)\right|+\left|g\left(z\right)\right|$ for all $z\in B\left(z_{0},r\right)$. Prove: both $f$ and $g$ are constant on $D$.
@@ -40,8 +38,6 @@ while $\left|h\left(z\right)\right|\le\left|f\left(z\right)\right|+\left|g\left(
 
 Thus $M=\left|h\left(z\right)\right|\le\left|f\left(z\right)\right|+\left|g\left(z\right)\right|\le M$ for all $z\in B\left(z_{0},r\right)$ (and hence $D$), so $\left|f\left(z\right)\right|+\left|g\left(z\right)\right|\equiv M$ and the triangle equality $\left|e^{i\theta_{1}}f\left(z\right)+e^{i\theta_{2}}g\left(z\right)\right|=\left|f\left(z\right)\right|+\left|g\left(z\right)\right|$ holds everywhere. The triangle equality requires $e^{i\theta_{1}}f\left(z\right)$ and $e^{i\theta_{2}}g\left(z\right)$ to point in the same direction, so $e^{i\left(\theta_{1}-\theta_{2}\right)}\frac{f\left(z\right)}{g\left(z\right)}\ge0$ is real (where $g\left(z\right)\ne0$). Hence $e^{i\left(\theta_{1}-\theta_{2}\right)}\frac{f}{g}$ is a real-valued meromorphic function; taking the imaginary part to zero gives (by the identity theorem) $e^{i\left(\theta_{1}-\theta_{2}\right)}\frac{f}{g}\equiv c\in\mathbb{R}_{\ge0}$, i.e. $f\equiv c'e^{i\theta}g$ is a constant multiple of $g$. From $\left|f\right|+\left|g\right|\equiv M$ we get $\left|g\right|\equiv\text{constant}$, so $g$ is constant (since $\left|g\right|$ is constant and $g$ is holomorphic, by **Theorem 10.1.4 (Open Mapping Theorem)** $g$ must be constant), and therefore $f$ is also constant. $\blacksquare$
 
----
-
 ## 10.4-4
 
 Let $f$ be holomorphic on a bounded domain $D\subset\mathbb{C}$ and continuous on the closure $\overline{D}$. If $\left|f\left(z\right)\right|=\alpha$ for all $z\in\partial D$. Prove: either $f$ is constant or it has a zero in $D$.
@@ -51,8 +47,6 @@ Let $f$ be holomorphic on a bounded domain $D\subset\mathbb{C}$ and continuous o
 Suppose $f$ has no zeros in $D$. If $\alpha=0$, then $\left|f\right|=0$ on $\partial D$, and by the maximum modulus principle $f\equiv0$ on $D$, constant. Assume $\alpha> 0$. Since $\left|f\right|$ is continuous on $\overline{D}$, the maximum modulus principle (the maximum of $\left|f\right|$ on $\overline{D}$ is attained on the boundary) gives $\left|f\left(z\right)\right|\le\alpha$ for all $z\in D$.
 
 Also $\frac{1}{f}$ is holomorphic on $D$ (since $f$ has no zeros) and continuous on $\overline{D}$, with $\left|\frac{1}{f}\right|=\frac{1}{\alpha}$ on the boundary. Similarly, $\left|\frac{1}{f\left(z\right)}\right|\le\frac{1}{\alpha}$, i.e. $\left|f\left(z\right)\right|\ge\alpha$ for all $z\in D$. Hence $\left|f\left(z\right)\right|\equiv\alpha$ on $D$, so $\left|f\right|$ is constant; by **Theorem 10.1.4 (Open Mapping Theorem)**, $f$ is constant. Thus either $f$ is constant or it has a zero in $D$. $\blacksquare$
-
----
 
 ## 10.4-6
 
@@ -86,8 +80,6 @@ $$
 
 i.e. $M\left(\rho\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$, which is $M\left(r^{s}R^{1-s}\right)\le M\left(r\right)^{s}M\left(R\right)^{1-s}$. $\blacksquare$
 
----
-
 ## 10.4-8
 
 Let $f$ be holomorphic on $\mathbb{D}=\left\{\left|z\right|< 1\right\}$, and let $z_{1},\cdots,z_{k}\in\mathbb{D}$ be all zeros of $f$ in $\mathbb{D}$ (counting multiplicity). Prove: $\left|f\left(0\right)\right|\le\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$.
@@ -109,8 +101,6 @@ $$
 $$
 
 and $\left|B\left(0\right)\right|=\prod_{j=1}^{k}\left|z_{j}\right|$, so $\left|f\left(0\right)\right|\le M\prod_{j=1}^{k}\left|z_{j}\right|=\sup_{\left|z\right|< 1}\left|f\left(z\right)\right|\prod_{j=1}^{k}\left|z_{j}\right|$. $\blacksquare$
-
----
 
 ## 10.4-10
 

@@ -22,8 +22,6 @@ $$
 > 
 > $a$ 是 $f$ 的可去奇点当且仅当 $\lim_{z\to a}f\left(z\right)$ 存在且有限.
 
----
-
 ## 13.4-1
 
 令 $f$ 是区域 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数而且 $\left|f\left(z\right)\right|\le\frac{\left|z\right|+1}{\left|z\right|}$, $\forall z\in\mathbb{C}\setminus\left\{0\right\}$. 证明: $f$ 是常值函数.
@@ -33,8 +31,6 @@ $$
 由 $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}$, 当 $z\to0$ 时 $\left|zf\left(z\right)\right|\le\left|z\right|+1\to1$, 故 $zf\left(z\right)$ 在 $0$ 的去心邻域有界. 由**定理 13.2.4 (黎曼可去奇点定理)**, $0$ 是 $zf\left(z\right)$ 的可去奇点, 从而 $f$ 在 $0$ 处至多有一阶极点; 又 $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}$ 在 $0$ 附近给出 $\left|f\left(z\right)\right|\le\frac{C}{\left|z\right|}$, 结合 $0$ 是 $f$ 的孤立奇点, $f$ 在 $0$ 处为可去奇点, 延拓为整函数.
 
 于是 $f$ 是整函数且 $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}\le2$ ($\left|z\right|\ge1$), 即 $f$ 有界. 由刘维尔定理, $f$ 是常值函数. $\blacksquare$
-
----
 
 ## 13.4-2
 
@@ -50,8 +46,6 @@ $$
 
 (iv) $1-\cos z$ 的零点为 $z=2m\pi$ (二阶). $z=0$ 处分子 $z$ 有一阶零点, 故 $z=0$ 为一阶极点; 当 $m\ne0$ 时 $z=2m\pi\ne0$, 分子非零, 故为二阶极点. $\blacksquare$
 
----
-
 ## 13.4-3
 
 令 $f$ 是 $\mathbb{C}\setminus\left\{0\right\}$ 上的全纯函数, 请问下述不等式是否可能成立: $\left|f\left(z\right)\right|> e^{\frac{1}{\left|z\right|}}$, $\forall z\in\mathbb{C}\setminus\left\{0\right\}$? 请说明你的理由.
@@ -59,8 +53,6 @@ $$
 ### 解答 13.4-3
 
 不可能. 若 $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$ 于一切 $z\ne0$, 则 $z\to0$ 时 $\left|f\left(z\right)\right|\to+\infty$, 故 $0$ 是 $f$ 的极点, 设其为 $m$-阶极点. 由**定义 13.2.2 (孤立奇点分类)**, 在 $0$ 附近 $\left|f\left(z\right)\right|\sim\frac{C}{\left|z\right|^{m}}$. 但 $e^{1/\left|z\right|}$ 的增长速度快于任何幂 $\frac{1}{\left|z\right|^{m}}$ (因 $\frac{e^{1/\left|z\right|}}{1/\left|z\right|^{m}}\to+\infty$), 故对充分小的 $\left|z\right|$ 有 $\left|f\left(z\right)\right|\le\frac{2C}{\left|z\right|^{m}}< e^{1/\left|z\right|}$, 矛盾于 $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$. 故不等式不可能成立. $\blacksquare$
-
----
 
 ## 13.4-4
 
@@ -76,8 +68,6 @@ $$
 
 (iv) $\frac{\cos z}{1+z^{2}}$: $z\to\infty$ 时 $\cos z$ 振荡不收敛, $\frac{1}{1+z^{2}}\to0$, 故 $\lim_{z\to\infty}\frac{\cos z}{1+z^{2}}$ 不存在且无有限/无穷极限, $\infty$ 是本性奇点. $\blacksquare$
 
----
-
 ## 13.4-10
 
 令 $\Omega=G\setminus\left\{a,b\right\}$, 其中 $G$ 是有界单连通区域, $a,b\in G$ 且 $a\ne b$. 请问 $\Omega$ 到自身的全纯自同胚有多少?
@@ -87,8 +77,6 @@ $$
 设 $\varphi\in\operatorname{Aut}\left(\Omega\right)$. 因 $G$ 有界, $\varphi$ 在 $\Omega$ 上有界, 由**定理 13.2.4 (黎曼可去奇点定理)**, $\varphi$ 在 $a,b$ 处均为可去奇点, 延拓为 $G$ 上的全纯函数. 又 $\varphi$ 是 $\Omega$ 到自身的双全纯映射, 延拓后 $\varphi$ 把 $G$ 映到 $G$ 且把点集 $\left\{a,b\right\}$ 映到自身, 故 $\varphi\in\operatorname{Aut}\left(G\right)$ 且 $\varphi\left(\left\{a,b\right\}\right)=\left\{a,b\right\}$.
 
 $G$ 有界单连通且非 $\mathbb{C}$, 由黎曼映射定理 $G\cong\mathbb{D}$, 故 $\operatorname{Aut}\left(G\right)\cong\operatorname{Aut}\left(\mathbb{D}\right)$. 设 $p,q$ 为 $a,b$ 在 $\mathbb{D}$ 下的像. $\operatorname{Aut}\left(\mathbb{D}\right)$ 中把 $\left\{p,q\right\}$ 映到自身的元素只可能: 逐点固定 $p,q$, 或交换 $p,q$. 固定两个不同内点的 $\operatorname{Aut}\left(\mathbb{D}\right)$ 自同构只有恒等; 而交换 $p,q$ 的对合 (把 $p\mapsto q$, $q\mapsto p$) 恰存在一个. 故 $\Omega$ 到自身的全纯自同胚恰好有 $2$ 个. $\blacksquare$
-
----
 
 ## 13.4-12
 
@@ -103,8 +91,6 @@ $$
 $$
 
 于是 $\left(z-a\right)^{n}f\left(z\right)$ 在 $a$ 的去心邻域有界, 由**定理 13.2.4 (黎曼可去奇点定理)**, $0$ 是 $\left(z-a\right)^{n}f$ 的可去奇点, 故 $f$ 在 $a$ 处至多是 $n$-阶极点. 但 $a$ 是 $f$ 的本性奇点, 矛盾. 故对每个 $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ 无上界, 结合 $\varepsilon^{n}M\left(\varepsilon\right)$ 随 $\varepsilon$ 的单调行为, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$
-
----
 
 ## 13.4-17
 

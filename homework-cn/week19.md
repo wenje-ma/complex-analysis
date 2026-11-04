@@ -24,8 +24,6 @@ $$
 > 
 > 有界若当域上的狄利克雷问题可解.
 
----
-
 ## 16.3-1
 
 证明: (i) 在极坐标 $\left(r,\theta\right)$ 表示下, $\Delta u=\frac{\partial^{2}u}{\partial r^{2}}+\frac1r\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}$; (ii) 直接利用**定义 16.1.1 (调和函数)** 和 (i) 中的等式验证**命题 16.1.6 (均值性质)**.
@@ -52,8 +50,6 @@ $$
 $$
 
 故 $rM'\left(r\right)$ 为常数. 当 $r\to0$ 时 $M'\left(r\right)\to u_r\left(a\right)$ (光滑), $rM'\left(r\right)\to0$, 故常数 $=0$, $M'\left(r\right)\equiv0$, $M$ 为常数. 又 $\lim_{r\to0}M\left(r\right)=u\left(a\right)$, 故 $M\left(R\right)=u\left(a\right)$, 即 $u\left(a\right)=\frac{1}{2\pi}\int_{0}^{2\pi}u\left(a+Re^{i\theta}\right)d\theta$. $\blacksquare$
-
----
 
 ## 16.3-2
 
@@ -85,8 +81,6 @@ $$
 
 且 $-\int_{\partial B\left(0,\varepsilon\right)}f\frac{\partial u}{\partial n}ds=-\frac{1}{2\pi\varepsilon}\int_{\partial B\left(0,\varepsilon\right)}f\,ds\to-f\left(0\right)$. 取 $\varepsilon\to0$ 得 $\int_{\mathbb{D}}u\Delta f\,dx\,dy=f\left(0\right)$. $\blacksquare$
 
----
-
 ## 16.3-7
 
 令 $\mathbb{H}:=\left\{\operatorname{Im}z> 0\right\}$, 在 $\partial\mathbb{H}$ 上给定一个连续函数 $f$ 且 $\lim_{z\to\infty,\,z\in\partial\mathbb{H}}f\left(z\right)$ 存在且有限. 试求 $\mathbb{H}$ 上的狄利克雷问题的解 $u$ 使得 $u|_{\partial\mathbb{H}}=f$.
@@ -107,8 +101,6 @@ $$
 
 即 $u|_{\partial\mathbb{H}}=f$ (逼近性质). 由 $f$ 在 $\infty$ 有有限极限 $L$, $u\left(x+iy\right)\to L$ 当 $\left|z\right|\to\infty$, 与边界条件一致. 故所求即上式. $\blacksquare$
 
----
-
 ## 16.3-8
 
 令 $u$ 是区域 $D\subset\mathbb{C}$ 上的调和函数. 证明: $\forall\left(x_{0},y_{0}\right)\in D$, 都存在 $\left(x_{0},y_{0}\right)$ 的一个邻域 $B_{0}\subset D$ 使得 $u$ 在 $B_{0}$ 上可以表示成泰勒级数的形式, 即 $u\left(x,y\right)=\sum_{n\in\mathbb{N}}\sum_{m+k=n}\frac{1}{m!k!}\partial_{x}^{m}\partial_{y}^{k}u\left(x_{0},y_{0}\right)\left(x-x_{0}\right)^{m}\left(y-y_{0}\right)^{k}$, $\forall\left(x,y\right)\in B_{0}$.
@@ -122,8 +114,6 @@ F\left(z\right)=\sum_{n=0}^{+\infty}c_{n}\left(\left(x-x_{0}\right)+i\left(y-y_{
 $$
 
 是一关于 $\left(x-x_{0}\right),\left(y-y_{0}\right)$ 的幂级数, 在 $B_{0}$ 内绝对一致收敛, 逐项展开得实幂级数 $u\left(x,y\right)=\sum_{m,k}\frac{1}{m!k!}\partial_{x}^{m}\partial_{y}^{k}u\left(x_{0},y_{0}\right)\left(x-x_{0}\right)^{m}\left(y-y_{0}\right)^{k}$ (实解析函数的泰勒系数公式). 这正是所证. $\blacksquare$
-
----
 
 ## 16.3-10
 

@@ -16,8 +16,6 @@ $$
 \int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.
 $$
 
----
-
 ## 14.3-6
 
 Compute $\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx$, where $2\le n\in\mathbb{N}$, $a> 0$.
@@ -34,8 +32,6 @@ $$
 
 (Outline: apply a wedge contour of angle $\frac{2\pi}{n}$ to $f\left(z\right)=\frac{z^{1/n}}{z^{2}+a^{2}}$, let the radius $R\to\infty$, subtract the integrals along the two sides with factor $e^{2\pi i/n}$, and add the residues at the two poles.) $\blacksquare$
 
----
-
 ## 14.3-7
 
 Compute $\int_{0}^{+\infty}\frac{1}{\sqrt{x}\left(1+x\right)}\,dx$.
@@ -49,8 +45,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 14.3-10
 
@@ -72,8 +66,6 @@ $$
 
 where the last equality uses Cauchy Integral Formula (value of $z$ at $z=z_{0}$). Thus $\frac{1}{2\pi n i}\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}dz=z_{0}$. $\blacksquare$
 
----
-
 ## 14.3-11
 
 Let $f$ be entire, $R> 0$, $a,b\in\mathbb{C}$ with $\left|a\right|,\left|b\right|< R$. (i) Compute $\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz$, where $\gamma\left(t\right)=Re^{it}$, $t\in\left[0,2\pi\right]$; (ii) use the integral in (i) to prove Liouville's theorem: bounded entire functions are constant.
@@ -93,8 +85,6 @@ $$
 $$
 
 By (i), $\frac{2\pi i}{a-b}\left(f\left(a\right)-f\left(b\right)\right)\to0$, so $f\left(a\right)=f\left(b\right)$ for all $a,b$, i.e. $f$ is constant. $\blacksquare$
-
----
 
 ## 14.3-16
 

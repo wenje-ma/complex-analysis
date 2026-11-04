@@ -30,8 +30,6 @@ $$
 > 
 > 若 $f$ 在 $z_{0}$ 处全纯且 $f'\left(z_{0}\right)=0$, 则 $f$ 在 $z_{0}$ 的任意邻域上都不是单叶的.
 
----
-
 ## 4.5-1
 
 证明: 任意一个莫比乌斯变换 $\lambda$ 在扩充复平面上至少有一个不动点, 即至少存在一个 $z_{0}\in\widehat{\mathbb{C}}$ 使得 $\lambda\left(z_{0}\right)=z_{0}$; 若它有三个不动点, 那么它只能是恒同映射.
@@ -53,8 +51,6 @@ $$
 综上, 任意莫比乌斯变换在扩充复平面上至少有一个不动点.
 
 若 $\lambda$ 有三个不动点: 若 $c\ne0$, 有限不动点至多两个 (二次方程 (1) 至多两个解, 除非恒为零, 但 $c\ne0$), 而 $\infty$ 又不是不动点, 矛盾. 故 $c=0$, $\lambda\left(z\right)=\alpha z+\beta$. 此时有限不动点至多一个 ($\alpha\ne1$) 或无 ($\alpha=1,\beta\ne0$), 要凑齐三个不动点只能是 $\alpha=1$, $\beta=0$, 即 $\lambda$ 为恒同映射. $\blacksquare$
-
----
 
 ## 4.5-3
 
@@ -86,8 +82,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.5-5
 
 令函数 $f:\mathbb{C}\to\mathbb{C}$ 定义为 $f\left(z\right)=z^{2}-2z+2$.
@@ -105,8 +99,6 @@ $\blacksquare$
 (ii) 因 $f'\left(1\right)=0$, 由**定理 4.4.2**, $f$ 在 $1$ 的任意邻域上都不是单叶的. (更直接地, $f\left(z\right)=\left(z-1\right)^{2}+1$, 对任意 $\delta\ne0$ 有 $f\left(1+\delta\right)=f\left(1-\delta\right)$, 而 $1+\delta\ne1-\delta$, 故任一含 $1$ 的邻域内都不单叶.)
 
 (iii) 由**定理 4.1.5 (共形判别)**, $f$ 在 $z$ 处共形当且仅当 $f'\left(z\right)\ne0$; 现 $f'\left(1\right)=0$, 故 $f$ 在 $1$ 处不具保角性. $\blacksquare$
-
----
 
 ## 4.5-14
 
@@ -129,8 +121,6 @@ $$
 即 $c\zeta^{2}+\left(d-a\right)\zeta-b=0$, 这正是 $w\left(\zeta\right)=\frac{a\zeta+b}{c\zeta+d}=\zeta$ 的不动点方程. 故 $z_{2}\ne0$ 时命题成立.
 
 若 $z_{2}=0$, 则 $\zeta=\infty$, 且 $z_{1}\ne0$. $M\binom{z_{1}}{0}=\binom{az_{1}}{cz_{1}}$ 是 $\binom{z_{1}}{0}$ 的标量倍当且仅当 $c=0$. 另一方面 $w\left(\infty\right)=\lim_{z\to\infty}\frac{az+b}{cz+d}=\frac{a}{c}$ (当 $c\ne0$) 或 $\infty$ (当 $c=0$), 即 $w\left(\infty\right)=\infty$ 当且仅当 $c=0$. 故 $z_{2}=0$ 时命题也成立. $\blacksquare$
-
----
 
 ## 4.5-16
 

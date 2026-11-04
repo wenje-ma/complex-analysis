@@ -58,8 +58,6 @@ exists; write $A=f'\left(a\right)$.
 > 
 > If $f$ is holomorphic and univalent on an open set $\Omega$, then $f\left(\Omega\right)$ is open and $f^{-1}$ is holomorphic on $f\left(\Omega\right)$.
 
----
-
 ## 3.4-1
 
 Let $f$ be a function of a complex variable, $\mathbb{R}$-differentiable at $z_{0}\in\mathbb{C}$. Prove: as $z\to z_{0}$, the set of limit points of
@@ -92,8 +90,6 @@ $$
 
 the circle centered at $\frac{\partial f}{\partial z}\left(z_{0}\right)$ with radius $\left|\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)\right|$. $\blacksquare$
 
----
-
 ## 3.4-3
 
 Let $f$ be $\mathbb{C}$-differentiable at $z_{0}\in\mathbb{C}$ with $f'\left(z_{0}\right)\ne0$. Suppose $f$ is defined on the disk $B\left(z_{0},r\right)$ centered at $z_{0}$ with radius $r> 0$, and let $l$ be any line through $f\left(z_{0}\right)$. Prove: the image $f\left(B\left(z_{0},r\right)\right)$ cannot lie entirely on one side of $l$.
@@ -105,8 +101,6 @@ Proof by contradiction. Suppose $f\left(B\left(z_{0},r\right)\right)$ lies entir
 Since $f$ is $\mathbb{C}$-differentiable at $z_{0}$ with $f'\left(z_{0}\right)\ne0$, by **Theorem 4.1.5 (Criterion for Conformality)**, $f$ is conformal at $z_{0}$. Since $f'\left(z_{0}\right)\ne0$, $f$ is locally univalent on some open neighborhood $U\subset B\left(z_{0},r\right)$ of $z_{0}$; by **Theorem 10.2.4 (Inverse of a Univalent Holomorphic Map)**, $f\left(U\right)$ is open and contains $f\left(z_{0}\right)=0$ as an interior point. Hence there exists $\delta> 0$ such that $f\left(U\right)$ contains the disk $\left\{w:\left|w\right|< \delta\right\}$ centered at $0$, which contains points on both sides of the real axis, contradicting the assumption that $f\left(B\left(z_{0},r\right)\right)$ lies on one side of the real axis.
 
 Thus $f\left(B\left(z_{0},r\right)\right)$ cannot lie entirely on one side of $l$. $\blacksquare$
-
----
 
 ## 3.4-5
 
@@ -154,8 +148,6 @@ $$
 
 This completes the proof. $\blacksquare$
 
----
-
 ## 3.4-7
 
 Let $a,b,c\in\mathbb{C}$ and $f:\mathbb{C}\to\mathbb{C}$ be $f\left(z\right)=az^{2}+b\left|z\right|^{2}+c\overline{z}^{2}$. Prove: $f$ is differentiable at $z\in\mathbb{C}$ if and only if $bz+2c\overline{z}=0$.
@@ -169,8 +161,6 @@ $$
 $$
 
 By **Theorem 3.2.4 (Cauchy-Riemann Equations)**, $f$ is $\mathbb{C}$-differentiable at $z$ if and only if $\frac{\partial f}{\partial\overline{z}}\left(z\right)=0$, i.e. $bz+2c\overline{z}=0$; by **Theorem 3.3.3**, $\mathbb{C}$-differentiability is equivalent to differentiability. Hence $f$ is differentiable at $z$ if and only if $bz+2c\overline{z}=0$. $\blacksquare$
-
----
 
 ## 3.4-9
 

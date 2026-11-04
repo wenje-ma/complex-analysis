@@ -30,8 +30,6 @@ $$
 \rho\left(z,w\right)=\frac{2\left|z-w\right|}{\sqrt{1+\left|z\right|^{2}}\sqrt{1+\left|w\right|^{2}}}.
 $$
 
----
-
 ## 1.5-1
 
 证明: 若 $\left|z\right|=1$ 且 $z\ne\pm1$, 则
@@ -49,8 +47,6 @@ $$
 $$
 
 因 $z\ne\pm1$, 有 $\sin\frac{\theta}{2}\ne0$ 且 $\cos\frac{\theta}{2}\ne0$, 故 $\tan\frac{\theta}{2}\ne0$, 从而 $\frac{z-1}{z+1}=i\tan\frac{\theta}{2}$ 是非零纯虚数. 其辐角当 $\tan\frac{\theta}{2}> 0$ 时为 $\frac{\pi}{2}$, 当 $\tan\frac{\theta}{2}< 0$ 时为 $\frac{3\pi}{2}$ (均模 $2\pi$). 命题得证. $\blacksquare$
-
----
 
 ## 1.5-3
 
@@ -73,8 +69,6 @@ $$
 $$
 
 这与 $\sum_{k=1}^{n}\frac{1}{z_{k}}=0$ (其虚部为 $0$) 矛盾. 故这些点不可能都落在通过原点的直线的同一侧. $\blacksquare$
-
----
 
 ## 1.5-5
 
@@ -118,8 +112,6 @@ $$
 
 上式中 $\sum_{j< k}\left(z_{j}\overline{z}_{k}\overline{w}_{j}w_{k}+\overline{z}_{j}z_{k}w_{k}\overline{w}_{j}\right)=\sum_{j\ne k}z_{j}\overline{z}_{k}\overline{w}_{j}w_{k}$ (其中 $j< k$ 与 $k< j$ 的项成对), 故右边等于 $\left|A\right|^{2}$. 拉格朗日等式成立. $\blacksquare$
 
----
-
 ## 1.5-7
 
 令 $\left\langle\cdot,\cdot\right\rangle$ 是 $\mathbb{R}^{2}$ 上的标准内积, 即 $\left\langle X,Y\right\rangle=x_{1}y_{1}+x_{2}y_{2}$ ($X=\left(x_{1},x_{2}\right)\in\mathbb{R}^{2}$, $Y=\left(y_{1},y_{2}\right)\in\mathbb{R}^{2}$); 令 $\left(z,w\right)=z\overline{w}$, $z,w\in\mathbb{C}$, 为 $\mathbb{C}$ 上的厄米特内积. 证明:
@@ -149,8 +141,6 @@ $$
 $$
 
 故 $\left\langle z,w\right\rangle=\frac{1}{2}\left(\left(z,w\right)+\left(w,z\right)\right)=\operatorname{Re}\left(z,w\right)$. $\blacksquare$
-
----
 
 ## 1.5-9
 

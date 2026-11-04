@@ -24,8 +24,6 @@ $$
 > 
 > The Dirichlet problem on a bounded Jordan domain is solvable.
 
----
-
 ## 16.3-1
 
 Prove: (i) in polar coordinates $\left(r,\theta\right)$, $\Delta u=\frac{\partial^{2}u}{\partial r^{2}}+\frac1r\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial\theta^{2}}$; (ii) directly using **Definition 16.1.1 (Harmonic Function)** and the identity in (i), verify **Proposition 16.1.6 (Mean Value Property)**.
@@ -52,8 +50,6 @@ $$
 $$
 
 so $rM'\left(r\right)$ is constant. As $r\to0$, $M'\left(r\right)\to u_r\left(a\right)$ (smooth), $rM'\left(r\right)\to0$, so the constant is $0$, $M'\left(r\right)\equiv0$, and $M$ is constant. Since $\lim_{r\to0}M\left(r\right)=u\left(a\right)$, $M\left(R\right)=u\left(a\right)$, i.e. $u\left(a\right)=\frac{1}{2\pi}\int_{0}^{2\pi}u\left(a+Re^{i\theta}\right)d\theta$. $\blacksquare$
-
----
 
 ## 16.3-2
 
@@ -85,8 +81,6 @@ $$
 
 and $-\int_{\partial B\left(0,\varepsilon\right)}f\frac{\partial u}{\partial n}ds=-\frac{1}{2\pi\varepsilon}\int_{\partial B\left(0,\varepsilon\right)}f\,ds\to-f\left(0\right)$. Letting $\varepsilon\to0$ gives $\int_{\mathbb{D}}u\Delta f\,dx\,dy=f\left(0\right)$. $\blacksquare$
 
----
-
 ## 16.3-7
 
 Let $\mathbb{H}:=\left\{\operatorname{Im}z> 0\right\}$, and let $f$ be continuous on $\partial\mathbb{H}$ with $\lim_{z\to\infty,\,z\in\partial\mathbb{H}}f\left(z\right)$ existing and finite. Find the solution $u$ of the Dirichlet problem on $\mathbb{H}$ with $u|_{\partial\mathbb{H}}=f$.
@@ -107,8 +101,6 @@ $$
 
 i.e. $u|_{\partial\mathbb{H}}=f$ (approximation property). Since $f$ has a finite limit $L$ at $\infty$, $u\left(x+iy\right)\to L$ as $\left|z\right|\to\infty$, consistent with the boundary data. Hence the solution is the above. $\blacksquare$
 
----
-
 ## 16.3-8
 
 Let $u$ be harmonic on a domain $D\subset\mathbb{C}$. Prove: for every $\left(x_{0},y_{0}\right)\in D$, there is a neighborhood $B_{0}\subset D$ of $\left(x_{0},y_{0}\right)$ on which $u$ has a Taylor series expansion, i.e. $u\left(x,y\right)=\sum_{n\in\mathbb{N}}\sum_{m+k=n}\frac{1}{m!k!}\partial_{x}^{m}\partial_{y}^{k}u\left(x_{0},y_{0}\right)\left(x-x_{0}\right)^{m}\left(y-y_{0}\right)^{k}$ for all $\left(x,y\right)\in B_{0}$.
@@ -122,8 +114,6 @@ F\left(z\right)=\sum_{n=0}^{+\infty}c_{n}\left(\left(x-x_{0}\right)+i\left(y-y_{
 $$
 
 is a power series in $\left(x-x_{0}\right),\left(y-y_{0}\right)$, absolutely and uniformly convergent on $B_{0}$; expanding term by term gives the real power series $u\left(x,y\right)=\sum_{m,k}\frac{1}{m!k!}\partial_{x}^{m}\partial_{y}^{k}u\left(x_{0},y_{0}\right)\left(x-x_{0}\right)^{m}\left(y-y_{0}\right)^{k}$ (Taylor coefficient formula for real analytic functions). This is exactly the claim. $\blacksquare$
-
----
 
 ## 16.3-10
 

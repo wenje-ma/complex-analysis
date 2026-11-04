@@ -38,8 +38,6 @@ $$
 \Gamma\left(z\right)=\lim_{n\to+\infty}\frac{n!\,n^{z}}{z\left(z+1\right)\cdots\left(z+n\right)}.
 $$
 
----
-
 ## 19.3-1
 
 Let $\mathcal{E}_{0}\left(z\right)=1-z$, $\mathcal{E}_{k}\left(z\right)=\left(1-z\right)e^{z+\frac{z^{2}}{2}+\cdots+\frac{z^{k}}{k}}$, $k\ge1$. Prove: there exist constants $c,c',c''> 0$ such that (i) if $\left|z\right|\le\frac12$, then $\left|1-\mathcal{E}_{k}\left(z\right)\right|\le c\left|z\right|^{k+1}$, $k\ge0$; (ii) if $\left|z\right|\le\frac12$, then $\left|\mathcal{E}_{k}\right|\ge e^{-c'\left|z\right|^{k+1}}$, $k\ge0$; (iii) if $\left|z\right|\ge\frac12$, then $\left|\mathcal{E}_{k}\right|\ge\left|1-z\right|e^{-c'\left|z\right|^{k}}$, $k\ge0$.
@@ -60,8 +58,6 @@ For $\left|z\right|\le\frac12$, $\left|e^{S_{k}}\right|\le e^{\sum\left|z\right|
 
 (iii) $\left|\mathcal{E}_{k}\left(z\right)\right|=\left|1-z\right|e^{\operatorname{Re}S_{k}\left(z\right)}$. For $\left|z\right|\ge\frac12$, $\left|\operatorname{Re}S_{k}\left(z\right)\right|\le\sum_{j=1}^{k}\frac{\left|z\right|^{j}}{j}\le\left|z\right|^{k}\sum_{j=1}^{k}\frac{\left|z\right|^{j-k}}{j}\le c'\left|z\right|^{k}$ (since for $\left|z\right|\ge\frac12$ the series $\sum_{j}\left|z\right|^{j-k}/j$ is uniformly bounded). Hence $e^{\operatorname{Re}S_{k}}\ge e^{-c'\left|z\right|^{k}}$, i.e. $\left|\mathcal{E}_{k}\right|\ge\left|1-z\right|e^{-c'\left|z\right|^{k}}$. $\blacksquare$
 
----
-
 ## 19.3-2
 
 For any nonzero sequence $\left\{a_{n}\right\}\subset\mathbb{C}$ with $\lim_{n\to\infty}a_{n}=\infty$, let $f\left(z\right)$ be the infinite product $\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, where $\mathcal{E}_{n}$ is as in **Solution 19.3-1**. Prove: $f$ is entire, its zeros are exactly $a_{n}$, $n\in\mathbb{N}$, and the order of the zero at $a_{n}$ equals the multiplicity of $a_{n}$ in the sequence.
@@ -72,8 +68,6 @@ For any $R> 0$, since $a_{n}\to\infty$, there is $N$ such that for $n> N$, $\lef
 
 Each $\mathcal{E}_{n}\left(z/a_{n}\right)$ has a zero only at $z=a_{n}$ (since $\mathcal{E}_{n}\left(0\right)=1$, and the only zero of $\mathcal{E}_{n}$ is at $z=a_{n}$), and it is simple. At $a_{n}$, the corresponding factor vanishes while all other factors are nonzero (counting multiplicities); hence the zeros of $f$ are exactly the $a_{n}$, with order at $a_{n}$ equal to its multiplicity in the sequence. $\blacksquare$
 
----
-
 ## 19.3-3
 
 Prove: every entire function $f$ can be factored as $f\left(z\right)=z^{m}e^{g\left(z\right)}\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, where $\mathcal{E}_{n}$ is as in **Solution 19.3-1**, $m$ is the order of the zero of $f$ at $z=0$, $g$ is some entire function, and $a_{n}$ are the zeros of $f$.
@@ -81,8 +75,6 @@ Prove: every entire function $f$ can be factored as $f\left(z\right)=z^{m}e^{g\l
 ### Solution 19.3-3
 
 Let the nonzero zeros of $f$ (with multiplicity) be $a_{1},a_{2},\ldots$, and let $m$ be the order of the zero at $0$. By **Solution 19.3-2**, $P\left(z\right):=\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$ is entire, with zeros exactly at the $a_{n}$ with the same orders as $f$. Hence $\frac{f\left(z\right)}{z^{m}P\left(z\right)}$ is an entire function without zeros (the removable singularity at $z=0$ is handled, and $P\left(0\right)=1$). A zero-free entire function can be written as $e^{g\left(z\right)}$ with $g$ entire. Thus $f\left(z\right)=z^{m}e^{g\left(z\right)}P\left(z\right)$, as claimed. $\blacksquare$
-
----
 
 ## 19.3-8
 
@@ -99,8 +91,6 @@ Write $\psi:=\frac{\Gamma'}{\Gamma}$; then $\frac{d}{dz}\log\frac{\Gamma\left(\l
 (iii) By induction from (i)(ii): $F\left(1\right)=1$, and for $n\ge1$, $F\left(n+1\right)=nF\left(n\right)+\frac{1}{\Gamma\left(1-n-1\right)}=nF\left(n\right)+\frac{1}{\Gamma\left(-n\right)}=nF\left(n\right)$ (since $\Gamma\left(-n\right)=\infty$, $\frac{1}{\Gamma\left(-n\right)}=0$). Hence $F\left(n\right)=F\left(1\right)\cdot1\cdot2\cdots\left(n-1\right)=\left(n-1\right)!$.
 
 (iv) The potential poles of $F$ are the poles $z=1,2,3,\ldots$ of $\Gamma\left(1-z\right)$. By (iii), $F\left(n\right)=\left(n-1\right)!$ is finite, so these are removable (the functional equation (ii) shows $F$ takes finite values and is continuous at positive integers). Also the numerator difference of $\psi$ cancels at the poles of $\Gamma$; hence $F$ extends to an entire function on $\mathbb{C}$. $\blacksquare$
-
----
 
 ## 19.3-10
 
@@ -121,8 +111,6 @@ H\left(z+1\right)=\frac{e^{G\left(z\right)}\cdot\frac{\left(z+1\right)^{z+1}}{z^
 $$
 
 so $H$ has period $1$. By Stirling's formula, as $z\to+\infty$ along the positive real axis, $G\left(z\right)\to z\log z-z+\frac12\log\left(2\pi\right)$, so $\lim_{z\to+\infty}H\left(z\right)=1$; by periodicity, $H$ is uniformly bounded on the strip and is entire (after removable singularities), so by Liouville's theorem $H$ is the constant $1$. Hence $e^{G\left(z\right)}=\left(z/e\right)^{z}\sqrt{2\pi}$. $\blacksquare$
-
----
 
 ## 19.3-11
 

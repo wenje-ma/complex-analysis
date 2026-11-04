@@ -28,8 +28,6 @@
 > 
 > If there exists $C> 0$ such that $\left|f\left(z\right)\right|\le C$ for all $z\in M$, then $f$ is bounded on $M$; if $\lim_{z\to a,\ z\in M}f\left(z\right)=f\left(a\right)$, then $f$ is continuous at $a$ (along $M$); if $f$ is continuous at every $a\in M$, then $f$ is continuous on $M$.
 
----
-
 ## 2.5-2
 
 Let $f$ be uniformly continuous on a domain $D$. Prove: for every $z_{0}\in\partial D$, the limit $\lim_{z\to z_{0},\ z\in D}f\left(z\right)$ exists.
@@ -41,8 +39,6 @@ First show that the image of any sequence in $D$ converging to $z_{0}$ converges
 Next show the limit is independent of the sequence. Let $z_{n},z_{n}'\in D$ with $z_{n}\to z_{0}$, $z_{n}'\to z_{0}$, and $f\left(z_{n}\right)\to L$, $f\left(z_{n}'\right)\to L'$. Construct the interleaved sequence $z_{1},z_{1}',z_{2},z_{2}',\cdots$, which still converges to $z_{0}$, so its image converges; but its two subsequences converge to $L$ and $L'$ respectively, hence $L=L'$.
 
 Therefore the limit $\lim_{z\to z_{0},\ z\in D}f\left(z\right)$ exists. $\blacksquare$
-
----
 
 ## 2.5-4
 
@@ -65,8 +61,6 @@ By **Definition 2.1.2 (Reparametrization of a Path)** and **Definition 2.1.4 (Cu
 (v) Start $1$, end $1$. On $\left[0,\pi\right]$, $\sin t$ goes from $0$ to $1$ and back to $0$, so the point goes counterclockwise from $1$ to $-1$ and back to $1$; on $\left[\pi,2\pi\right]$, $\sin t$ goes from $0$ to $-1$ and back to $0$, so the point goes clockwise from $1$ to $-1$ and back to $1$. This is an oscillating closed path.
 
 Equivalence: (i) and (iii) have opposite orientation, not equivalent; (i) and (ii) have different winding numbers, not equivalent; (iv) is not closed (start $1$, end $-1$), not equivalent to any closed path; (v) oscillates, unlike the full loops of (i)(ii)(iii) or the half loop of (iv). Thus all five paths belong to five distinct equivalence classes. $\blacksquare$
-
----
 
 ## 2.5-6
 
@@ -94,8 +88,6 @@ $$
 
 From the polar form, the argument of $z^{3}$ is three times the argument of $z$; as $\theta$ sweeps $\left[0,2\pi\right]$, the image argument sweeps $\left[0,6\pi\right]$, so the image is a closed curve winding three times around the origin, symmetric about the origin. $\blacksquare$
 
----
-
 ## 2.5-8
 
 Let $K\subset\mathbb{C}$ be a bounded connected closed set. Prove: for any $\varepsilon> 0$, there exists a Jordan curve $\gamma$ such that $K$ lies in the interior of $\gamma$ and $\operatorname{dist}\left(K,\gamma\right)< \varepsilon$.
@@ -113,8 +105,6 @@ $$
 $$
 
 so $\operatorname{dist}\left(K,\gamma\right)\le\sqrt{2}\,\delta+\eta$. Choose $\delta< \frac{\varepsilon}{2\sqrt{2}}$, $\eta< \frac{\varepsilon}{2}$, to get $\operatorname{dist}\left(K,\gamma\right)< \varepsilon$. $\blacksquare$
-
----
 
 ## 2.5-10
 

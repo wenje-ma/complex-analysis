@@ -24,8 +24,6 @@
 > 
 > Every simply connected domain other than the whole complex plane is conformally equivalent to the open unit disk.
 
----
-
 ## 11.3-3
 
 Let $f$ be a conformal equivalence from a simply connected domain $D\subset\mathbb{C}$ to the open unit disk $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$. Prove: if $D\ni z_{n}\to z\in\partial D$, then $\left|f\left(z_{n}\right)\right|\to1$.
@@ -42,8 +40,6 @@ $$
 
 contradicting $z_{n_{k}}\to z\in\partial D\notin D$. Hence $\left|f\left(z_{n}\right)\right|\to1$. $\blacksquare$
 
----
-
 ## 11.3-4
 
 Let $\left\{g_{n}\right\}$ be holomorphic on a domain $D\subset\mathbb{C}$, with $g_{n}\left(D\right)\subset D$. Suppose $g_{n}$ converges locally uniformly to $g$ on $D$. Prove: either $g\left(D\right)\subset D$ or $g\equiv z_{0}\in\partial D$.
@@ -56,8 +52,6 @@ If $g$ is nonconstant, by **Theorem 10.1.4 (Open Mapping Theorem)**, $g\left(D\r
 
 If $g$ is constant, $g\equiv z_{0}$, then $z_{0}\in\overline D$. If $z_{0}\in D$, then $g\left(D\right)=\left\{z_{0}\right\}\subset D$, the first case; if $z_{0}\in\partial D$, then $g\equiv z_{0}\in\partial D$, the second case. $\blacksquare$
 
----
-
 ## 11.3-5
 
 (Vitali-Porter theorem) Let $\left\{f_{n}\right\}$ be holomorphic on a domain $D\subset\mathbb{C}$, uniformly bounded on every compact subset of $D$. Let $z_{m}\in D$ with $z_{m}\to z_{\infty}\in D$, and suppose $\lim_{n\to\infty}f_{n}\left(z_{m}\right)=w_{m}$ for all $m\in\mathbb{N}$. Prove: there exists a holomorphic $f$ on $D$ such that $f_{n}$ converges locally uniformly to $f$ on $D$.
@@ -67,8 +61,6 @@ If $g$ is constant, $g\equiv z_{0}$, then $z_{0}\in\overline D$. If $z_{0}\in D$
 By **Theorem 11.1.3 (Montel's Theorem)**, $\left\{f_{n}\right\}$ is normal on $D$: every subsequence has a further subsequence converging locally uniformly on $D$. Let $f_{n_{k}}\to f$ locally uniformly; by **Theorem 11.1.2 (Weierstrass Theorem)**, $f$ is holomorphic on $D$. For each $m$, from $f_{n_{k}}\to f$ uniformly near $\left\{z_{m}\right\}$ and the assumption $\lim_{n}f_{n}\left(z_{m}\right)=w_{m}$, we get $f\left(z_{m}\right)=w_{m}$.
 
 Now show the whole sequence converges to $f$. Otherwise, there exist a compact set $K\subset D$, $\varepsilon> 0$, and a subsequence $f_{n'_{j}}$ with $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$. By Montel, $f_{n'_{j}}$ has a subsubsequence converging locally uniformly to some holomorphic $\widetilde f$. Then $\widetilde f\left(z_{m}\right)=w_{m}=f\left(z_{m}\right)$ for all $m$; since $z_{m}\to z_{\infty}\in D$ has an accumulation point, by **Theorem 9.3.2 (Identity Theorem)** $\widetilde f=f$. This contradicts $\sup_{K}\left|f_{n'_{j}}-f\right|\ge\varepsilon$ while $f_{n'_{j}}\to f$ on $K$. Hence $f_{n}\to f$ locally uniformly on $D$. $\blacksquare$
-
----
 
 ## 11.3-6
 
@@ -89,8 +81,6 @@ $$
 $$
 
 Hence $\operatorname{Area}\left(f\left(D\right)\right)=\iint_{D}\left|f'\left(z\right)\right|^{2}\,dx\,dy$. $\blacksquare$
-
----
 
 ## 11.3-15
 

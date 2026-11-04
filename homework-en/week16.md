@@ -16,8 +16,6 @@ $$
 \int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.
 $$
 
----
-
 ## 14.3-1
 
 Compute: (i) $\int_{\partial B\left(0,4\right)}\frac{z^{2}+1}{z^{3}+2z^{2}-3z}\,dz$; (ii) $\int_{\partial B\left(0,\pi\right)}z^{2}\sin\frac{1}{z}\,dz$; (iv) $\int_{0}^{2\pi}\frac{1}{4\sin^{2}x+1}\,dx$.
@@ -56,8 +54,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 14.3-2
 
 Let $\gamma\subset\mathbb{C}$ be a Jordan closed curve, and $f$ holomorphic on $\mathbb{C}\setminus\left\{a_{1},\ldots,a_{n}\right\}$, where $a_{1},\ldots,a_{n}$ are interior points of the region bounded by $\gamma$. Prove: $\frac{1}{2\pi i}\int_{\gamma}f\left(z\right)\,dz=\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right)$.
@@ -77,8 +73,6 @@ $$
 $$
 
 so $\sum_{j}\operatorname{Res}_{a_{j}}f=\operatorname{Res}_{0}\left(\frac{1}{z^{2}}f\left(\frac{1}{z}\right)\right)$, as claimed. $\blacksquare$
-
----
 
 ## 14.3-3
 

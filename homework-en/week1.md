@@ -30,8 +30,6 @@ $$
 \rho\left(z,w\right)=\frac{2\left|z-w\right|}{\sqrt{1+\left|z\right|^{2}}\sqrt{1+\left|w\right|^{2}}}.
 $$
 
----
-
 ## 1.5-1
 
 Prove: if $\left|z\right|=1$ and $z\ne\pm1$, then
@@ -49,8 +47,6 @@ $$
 $$
 
 Since $z\ne\pm1$, $\sin\frac{\theta}{2}\ne0$ and $\cos\frac{\theta}{2}\ne0$, so $\tan\frac{\theta}{2}\ne0$, and $\frac{z-1}{z+1}=i\tan\frac{\theta}{2}$ is a nonzero pure imaginary number. Its argument is $\frac{\pi}{2}$ when $\tan\frac{\theta}{2}> 0$, and $\frac{3\pi}{2}$ when $\tan\frac{\theta}{2}< 0$ (both modulo $2\pi$). This completes the proof. $\blacksquare$
-
----
 
 ## 1.5-3
 
@@ -73,8 +69,6 @@ $$
 $$
 
 which contradicts $\sum_{k=1}^{n}\frac{1}{z_{k}}=0$ (whose imaginary part is $0$). Hence these points cannot all lie on one side of a line through the origin. $\blacksquare$
-
----
 
 ## 1.5-5
 
@@ -118,8 +112,6 @@ $$
 
 The sum $\sum_{j< k}\left(z_{j}\overline{z}_{k}\overline{w}_{j}w_{k}+\overline{z}_{j}z_{k}w_{k}\overline{w}_{j}\right)=\sum_{j\ne k}z_{j}\overline{z}_{k}\overline{w}_{j}w_{k}$ (the $j< k$ and $k< j$ terms pair up), so the right side equals $\left|A\right|^{2}$. The Lagrange identity holds. $\blacksquare$
 
----
-
 ## 1.5-7
 
 Let $\left\langle\cdot,\cdot\right\rangle$ be the standard inner product on $\mathbb{R}^{2}$, i.e. $\left\langle X,Y\right\rangle=x_{1}y_{1}+x_{2}y_{2}$ ($X=\left(x_{1},x_{2}\right)\in\mathbb{R}^{2}$, $Y=\left(y_{1},y_{2}\right)\in\mathbb{R}^{2}$); let $\left(z,w\right)=z\overline{w}$ for $z,w\in\mathbb{C}$ be the Hermitian inner product on $\mathbb{C}$. Prove:
@@ -149,8 +141,6 @@ $$
 $$
 
 Hence $\left\langle z,w\right\rangle=\frac{1}{2}\left(\left(z,w\right)+\left(w,z\right)\right)=\operatorname{Re}\left(z,w\right)$. $\blacksquare$
-
----
 
 ## 1.5-9
 

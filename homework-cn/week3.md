@@ -58,8 +58,6 @@ $$
 > 
 > 若 $f$ 在开集 $\Omega$ 上全纯且单叶, 则 $f\left(\Omega\right)$ 是开集且 $f^{-1}$ 在 $f\left(\Omega\right)$ 上全纯.
 
----
-
 ## 3.4-1
 
 令 $f$ 是复变函数且在 $z_{0}\in\mathbb{C}$ 处是 $\mathbb{R}$-可微的. 证明: 当 $z\to z_{0}$ 时, 点集
@@ -92,8 +90,6 @@ $$
 
 即以 $\frac{\partial f}{\partial z}\left(z_{0}\right)$ 为圆心, 半径为 $\left|\frac{\partial f}{\partial\overline{z}}\left(z_{0}\right)\right|$ 的圆周. $\blacksquare$
 
----
-
 ## 3.4-3
 
 函数 $f$ 在 $z_{0}\in\mathbb{C}$ 处是 $\mathbb{C}$-可微的且 $f'\left(z_{0}\right)\ne0$. 假设 $f$ 在以 $z_{0}$ 为圆心, $r> 0$ 为半径的圆盘 $B\left(z_{0},r\right)$ 上有定义, $l$ 为通过 $f\left(z_{0}\right)$ 点的任意一条直线. 证明: $B\left(z_{0},r\right)$ 的像 $f\left(B\left(z_{0},r\right)\right)$ 不可能全部落在 $l$ 的某一侧上.
@@ -105,8 +101,6 @@ $$
 由 $f$ 在 $z_{0}$ 处 $\mathbb{C}$-可微且 $f'\left(z_{0}\right)\ne0$, 结合**定理 4.1.5 (共形判别)**, $f$ 在 $z_{0}$ 处共形. 因 $f'\left(z_{0}\right)\ne0$, $f$ 在 $z_{0}$ 的某个开邻域 $U\subset B\left(z_{0},r\right)$ 上局部单叶 (故局部单叶全纯), 由**定理 10.2.4 (单叶全纯映射的逆)**, $f\left(U\right)$ 是开集且以 $f\left(z_{0}\right)=0$ 为内点. 于是存在 $\delta> 0$ 使 $f\left(U\right)$ 含以 $0$ 为圆心的开圆盘 $\left\{w:\left|w\right|< \delta\right\}$, 而该圆盘包含实轴上, 下两侧的点, 与"$f\left(B\left(z_{0},r\right)\right)$ 全部落在实轴某一侧"矛盾.
 
 故 $f\left(B\left(z_{0},r\right)\right)$ 不可能全部落在直线 $l$ 的某一侧. $\blacksquare$
-
----
 
 ## 3.4-5
 
@@ -154,8 +148,6 @@ $$
 
 命题得证. $\blacksquare$
 
----
-
 ## 3.4-7
 
 令 $a,b,c\in\mathbb{C}$ 和函数 $f:\mathbb{C}\to\mathbb{C}$ 为 $f\left(z\right)=az^{2}+b\left|z\right|^{2}+c\overline{z}^{2}$. 证明: $f$ 在 $z\in\mathbb{C}$ 处可导当且仅当 $bz+2c\overline{z}=0$.
@@ -169,8 +161,6 @@ $$
 $$
 
 由**定理 3.2.4 (柯西-黎曼方程)**, $f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $\frac{\partial f}{\partial\overline{z}}\left(z\right)=0$, 即 $bz+2c\overline{z}=0$; 再由**定理 3.3.3**, $\mathbb{C}$-可微与可导等价. 故 $f$ 在 $z$ 处可导当且仅当 $bz+2c\overline{z}=0$. $\blacksquare$
-
----
 
 ## 3.4-9
 

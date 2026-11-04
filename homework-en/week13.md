@@ -26,8 +26,6 @@ $$
 > 
 > $z^{\alpha}=e^{\alpha\log z}$ maps the angular sector $\left\{0< \arg z< \beta\right\}$ conformally onto the sector $\left\{0< \arg w< \alpha\beta\right\}$ (with a suitable holomorphic branch).
 
----
-
 ## 12.3-1
 
 Find a conformal equivalence from the region $\left\{0< \operatorname{Im}z< \pi\right\}\setminus\left\{x+\frac{\pi}{2}i:x\le0\right\}$ to the open unit disk.
@@ -49,8 +47,6 @@ F\left(z\right)=\frac{\sqrt{e^{2z}+1}-1}{\sqrt{e^{2z}+1}+1},
 $$
 
 with the principal branch (by the construction, $e^{2z}+1\in\mathbb{C}\setminus\left[0,+\infty\right)$, so the branch is well defined). $\blacksquare$
-
----
 
 ## 12.3-2
 
@@ -75,8 +71,6 @@ F\left(z\right)=\frac{1}{r_{1}}\cdot\frac{z-\alpha}{z-\beta},
 $$
 
 maps $D$ to the standard annulus $\left\{1< \left|w\right|< \frac{r_{2}}{r_{1}}\right\}$. $\blacksquare$
-
----
 
 ## 12.3-3
 
@@ -103,8 +97,6 @@ F\left(z\right)=\frac{\left(\frac{z-\frac{\sqrt{3}}{2}i}{z+\frac{\sqrt{3}}{2}i}\
 $$
 
 $\blacksquare$
-
----
 
 ## 12.3-4
 

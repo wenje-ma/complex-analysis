@@ -16,8 +16,6 @@ $$
 \int_{\gamma}f\,dz=2\pi i\sum\operatorname{Res}f.
 $$
 
----
-
 ## 14.3-6
 
 计算积分 $\int_{0}^{+\infty}\frac{x^{1/n}}{x^{2}+a^{2}}\,dx$, 其中 $2\le n\in\mathbb{N}$, $a> 0$.
@@ -34,8 +32,6 @@ $$
 
 (推导概述: 对 $f\left(z\right)=\frac{z^{1/n}}{z^{2}+a^{2}}$ 取角为 $\frac{2\pi}{n}$ 的楔形围道, 半径 $R\to\infty$, 两条边上的积分相减差因子 $e^{2\pi i/n}$, 加上两极点的留数, 即得上式.) $\blacksquare$
 
----
-
 ## 14.3-7
 
 计算积分 $\int_{0}^{+\infty}\frac{1}{\sqrt{x}\left(1+x\right)}\,dx$.
@@ -49,8 +45,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 14.3-10
 
@@ -72,8 +66,6 @@ $$
 
 末等式用柯西积分公式 ($z$ 在 $z=z_{0}$ 处的值). 于是 $\frac{1}{2\pi n i}\int_{\gamma}\frac{z f'\left(z\right)}{f\left(z\right)}dz=z_{0}$. $\blacksquare$
 
----
-
 ## 14.3-11
 
 令 $f$ 是 $\mathbb{C}$ 上的全纯函数, $R> 0$, $a,b\in\mathbb{C}$ 且 $\left|a\right|,\left|b\right|< R$. (i) 计算积分 $\int_{\gamma}\frac{f\left(z\right)}{\left(z-a\right)\left(z-b\right)}\,dz$, 其中 $\gamma\left(t\right)=Re^{it}$, $t\in\left[0,2\pi\right]$; (ii) 利用 (i) 中的积分证明刘维尔定理: $\mathbb{C}$ 上的有界全纯函数都是常值的.
@@ -93,8 +85,6 @@ $$
 $$
 
 由 (i), $\frac{2\pi i}{a-b}\left(f\left(a\right)-f\left(b\right)\right)\to0$, 故 $f\left(a\right)=f\left(b\right)$ 对任意 $a,b$ 成立, 即 $f$ 为常数. $\blacksquare$
-
----
 
 ## 14.3-16
 

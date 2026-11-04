@@ -38,8 +38,6 @@ $$
 > 
 > The trivial zeros of $\zeta$ are exactly $-2,-4,-6,\ldots$; all nontrivial zeros lie in the critical strip $0< \operatorname{Re}z< 1$.
 
----
-
 ## 20.3-2
 
 Let $a_{n}\in\mathbb{C}$, $n\in\mathbb{N}$, satisfy $\left|a_{n}\right|\le Cn^{k}$. Prove: the series $\sum_{n=1}^{+\infty}a_{n}n^{-z}$ is holomorphic on the half-plane $\left\{\operatorname{Re}z> k+1\right\}$.
@@ -47,8 +45,6 @@ Let $a_{n}\in\mathbb{C}$, $n\in\mathbb{N}$, satisfy $\left|a_{n}\right|\le Cn^{k
 ### Solution 20.3-2
 
 For $z$ with $\operatorname{Re}z> k+1$: $\left|a_{n}n^{-z}\right|=\left|a_{n}\right|n^{-\operatorname{Re}z}\le Cn^{-\left(\operatorname{Re}z-k\right)}$. Since $\operatorname{Re}z-k> 1$, the series $\sum_{n}n^{-\left(\operatorname{Re}z-k\right)}$ converges, so the original series converges uniformly and absolutely on every compact subset of $\left\{\operatorname{Re}z> k+1\right\}$. The limit of a uniformly convergent series of holomorphic functions is holomorphic, so the series defines a holomorphic function on $\left\{\operatorname{Re}z> k+1\right\}$. $\blacksquare$
-
----
 
 ## 20.3-3
 
@@ -59,8 +55,6 @@ Prove: (i) $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$ for al
 (i) On $\operatorname{Re}z> 1$, since $n$ is real, $\overline{n^{-z}}=\overline{e^{-z\log n}}=e^{-\overline z\log n}=n^{-\overline z}$; taking conjugates term by term gives $\overline{\zeta\left(z\right)}=\sum_{n}n^{-\overline z}=\zeta\left(\overline z\right)$. By analytic continuation (identity theorem), the equality on $\operatorname{Re}z> 1$ extends to $\mathbb{C}\setminus\left\{1\right\}$, so $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}$ for all $z\in\mathbb{C}\setminus\left\{1\right\}$.
 
 (ii) Let $z$ be a non-real zero, $\zeta\left(z\right)=0$. By (i), $\zeta\left(\overline z\right)=\overline{\zeta\left(z\right)}=0$, so $\overline z$ is a zero. By **Theorem 20.2.2 (Functional Equation)** $\zeta\left(z\right)=2^{z}\pi^{z-1}\sin\frac{\pi z}{2}\Gamma\left(1-z\right)\zeta\left(1-z\right)$. Since $z$ is non-real, $\sin\frac{\pi z}{2}\ne0$, $\Gamma\left(1-z\right)\ne0$, and the factors $2^{z}\pi^{z-1}\ne0$, so $\zeta\left(1-z\right)=0$. Again by (i), $\zeta\left(1-\overline z\right)=\overline{\zeta\left(1-z\right)}=0$. Hence $\overline z$, $1-z$, and $1-\overline z$ are all zeros. $\blacksquare$
-
----
 
 ## 20.3-4
 
@@ -85,8 +79,6 @@ $$
 $$
 
 (iv) The coefficients of $\xi$ are all real (since $\pi,\Gamma,\zeta$ are real on the real axis), so $\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$. For $z=\frac12+it$, $\overline z=1-z$; by (iii), $\xi\left(z\right)=\xi\left(1-z\right)=\xi\left(\overline z\right)=\overline{\xi\left(z\right)}$, so $\xi\left(z\right)\in\mathbb{R}$ on $\operatorname{Re}z=\frac12$. $\blacksquare$
-
----
 
 ## 20.3-5
 

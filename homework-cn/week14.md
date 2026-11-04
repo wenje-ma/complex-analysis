@@ -20,8 +20,6 @@ $$
 > 
 > 若区域 $D$ 上的全纯函数 $f$ 的模 $\left|f\right|$ 在 $D$ 内有局部极大值, 则 $f$ 在 $D$ 上为常值; 特别地 $\left|f\right|$ 在紧闭区域上的最大值在边界取到.
 
----
-
 ## 13.4-8
 
 令 $D\subset\mathbb{C}$ 是由若当闭曲线 $\gamma_{1}$ 和 $\gamma_{2}$ 围成的区域, 其中 $\gamma_{1}$ 包含于 $\gamma_{2}$ 的内区域, $f$ 是闭区域 $\overline{D}$ 上的全纯函数. 证明:
@@ -48,8 +46,6 @@ f_{1}\left(z\right):=-\frac{1}{2\pi i}\int_{\gamma_{1}}\frac{f\left(\zeta\right)
 $$
 
 对 $\gamma_{2}$ 的内区域中的点 $z$, 被积函数 $\frac{f\left(\zeta\right)}{\zeta-z}$ 关于 $z$ 在 $\gamma_{2}$ 内全纯 (参数积分), 故 $f_{2}$ 在 $\gamma_{2}$ 的内区域上全纯; 同理 $f_{1}$ 在 $\gamma_{1}$ 的外区域上全纯. 而 $z\in D$ 既在 $\gamma_{2}$ 的内区域又在 $\gamma_{1}$ 的外区域, 故 $f\left(z\right)=f_{1}\left(z\right)+f_{2}\left(z\right)$, $\forall z\in D$. $\blacksquare$
-
----
 
 ## 13.4-18
 

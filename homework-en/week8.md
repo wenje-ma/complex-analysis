@@ -50,8 +50,6 @@ $$
 f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta,\quad n\ge1.
 $$
 
----
-
 ## 8.4-2
 
 Let $f$ be holomorphic and nonzero on a simply connected domain $D$. Prove:
@@ -82,8 +80,6 @@ $$
 
 This completes the proof. $\blacksquare$
 
----
-
 ## 8.4-4
 
 Let $f$ be $\mathbb{R}$-differentiable on $\mathbb{C}$, with $\int_{\gamma}f\left(z\right)\,dz=0$ for every circle $\gamma$. Prove: $f$ is holomorphic on $\mathbb{C}$.
@@ -103,8 +99,6 @@ $$
 $$
 
 By assumption the left side is zero for every $\varepsilon> 0$; dividing by $\varepsilon^{2}$ and letting $\varepsilon\to0$ gives $\frac{\partial f}{\partial\overline{z}}\left(a\right)=0$. Since $a\in\mathbb{C}$ is arbitrary, $\frac{\partial f}{\partial\overline{z}}\equiv0$ on $\mathbb{C}$, and by **Theorem 3.2.4 (Cauchy-Riemann Equations)**, $f$ is holomorphic on $\mathbb{C}$. $\blacksquare$
-
----
 
 ## 8.4-6
 
@@ -138,8 +132,6 @@ $$
 
 In summary, $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx=\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx=\frac{\sqrt{\pi}}{2\sqrt{2}}$, and $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx=\frac{\sqrt{\pi}}{2}e^{-b^{2}}$. $\blacksquare$
 
----
-
 ## 8.4-8
 
 Let $D\subset\mathbb{C}$ be the exterior region of a piecewise smooth Jordan closed curve, $f$ holomorphic on $D$, and $\lim_{z\to\infty}f\left(z\right)=A\in\mathbb{C}$. Prove: for all $z\in D$, $f\left(z\right)=-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$, where $\partial D$ is oriented counterclockwise.
@@ -166,8 +158,6 @@ f\left(z\right)=A-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\z
 $$
 
 i.e. $f\left(z\right)=-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$. $\blacksquare$
-
----
 
 ## 8.4-10
 

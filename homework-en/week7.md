@@ -16,8 +16,6 @@ $$
 > 
 > $\frac{1}{z}$ has an antiderivative on a domain $D\subset\mathbb{C}\setminus\left\{0\right\}$ if and only if $D$ admits a holomorphic branch of $\operatorname{Ln}z$.
 
----
-
 ## 7.4-1
 
 (i) Let $P\left(z\right)=z^{n}+a_{n-1}z^{n-1}+\cdots+a_{0}$ be monic. Prove: $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$. (ii) Does there exist a polynomial $P\left(z\right)=\sum_{j=1}^{n}a_{j}z^{j}$ such that $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|< 1$?
@@ -40,8 +38,6 @@ $$
 
 Hence there exists $\theta$ with $\left|P\left(e^{i\theta}\right)-e^{-2i\theta}\right|\ge1$, i.e. $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|\ge1$. Thus $\max< 1$ is impossible. $\blacksquare$
 
----
-
 ## 7.4-3
 
 Compute: (i) $\int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz$ ($n\in\mathbb{N}$); (ii) $\int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz$, $\left|a\right|< r< \left|b\right|$.
@@ -61,8 +57,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 7.4-5
 
@@ -86,8 +80,6 @@ $$
 
 (Equivalently, by residues: $\operatorname{Res}_{0}e^{1/z}=1$, and the winding number of $\gamma$ around $0$ is $2$, so $\int_{\gamma}=2\pi i\cdot2\cdot1=4\pi i$.) $\blacksquare$
 
----
-
 ## 7.4-7
 
 Determine whether the following have antiderivatives on $\mathbb{C}\setminus\left\{0\right\}$: (i) $\sin\frac{1}{z}$; (ii) $\cos\frac{1}{z}$; (iii) $e^{\frac{1}{z^{3}}}$.
@@ -101,8 +93,6 @@ By **Definition 7.2.1 (Antiderivative)**, $f$ has an antiderivative on $\mathbb{
 (ii) $\cos\frac{1}{z}=1-\frac{1}{2!z^{2}}+\frac{1}{4!z^{4}}-\cdots$ contains no $z^{-1}$ term, so the residue is $0$. Indeed $F\left(z\right)=z+\frac{1}{2z}-\frac{1}{72z^{3}}+\cdots$ (termwise integration) is single-valued holomorphic on $\mathbb{C}\setminus\left\{0\right\}$ with $F'=\cos\frac1z$. Hence $\cos\frac1z$ has an antiderivative on $\mathbb{C}\setminus\left\{0\right\}$.
 
 (iii) $e^{\frac{1}{z^{3}}}=1+\frac{1}{z^{3}}+\frac{1}{2!z^{6}}+\cdots$ contains only $z^{-3k}$ ($k\ge0$) terms, no $z^{-1}$ term, so the residue is $0$. Its termwise integral $F\left(z\right)=z-\frac{1}{2z^{2}}+\cdots$ is single-valued holomorphic on $\mathbb{C}\setminus\left\{0\right\}$ with $F'=e^{1/z^{3}}$. Hence $e^{1/z^{3}}$ has an antiderivative on $\mathbb{C}\setminus\left\{0\right\}$. $\blacksquare$
-
----
 
 ## 7.4-9
 

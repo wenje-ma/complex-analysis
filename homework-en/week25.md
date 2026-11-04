@@ -26,8 +26,6 @@ is uniformly bounded on $K$ for $f\in\mathcal{F}$.
 > 
 > A family of meromorphic functions on a domain $D$ that uniformly omits three distinct values (points of the extended plane) is normal.
 
----
-
 ## 22.4-1
 
 Let $\mathcal{F}$ be a family of meromorphic functions on a domain $D\subset\mathbb{C}$, and suppose that for every $a\in D$ there is a neighborhood $U\subset D$ on which $\mathcal{F}$ is normal. Prove: $\mathcal{F}$ is normal on $D$.
@@ -40,8 +38,6 @@ First show that $\mathcal{F}$ is normal on $K_{m}$. Take any sequence $\left\{f_
 
 Then apply a diagonal argument on all of $D$: for each $m$, extract a subsequence converging locally uniformly on $K_{m}$; the diagonal subsequence converges locally uniformly on every $K_{m}$. Since $\left\{K_{m}\right\}$ exhausts $D$, this subsequence converges uniformly on compact subsets of $D$. By **Definition 22.1.5 (Normal Family)**, $\mathcal{F}$ is normal on $D$. $\blacksquare$
 
----
-
 ## 22.4-2
 
 Let $\mathcal{F}$ be a family of holomorphic functions on a domain $D\subset\mathbb{C}$, and suppose there are distinct $a,b\in\mathbb{C}$ and an integer $n\ge1$ such that for every $f\in\mathcal{F}$, $f\left(D\right)\subset\mathbb{C}\setminus\left\{a\right\}$ and $f^{-1}\left(b\right)\cap D$ has at most $n$ points. Prove: $\mathcal{F}$ is normal on $D$.
@@ -53,8 +49,6 @@ Suppose for contradiction that $\mathcal{F}$ is not normal. By **Theorem 22.2.1 
 Since each $f_{n}$ omits $a$, the limit $g$ also omits $a$ ($g\left(\mathbb{C}\right)\subset\mathbb{C}\setminus\left\{a\right\}$). By **Theorem 21.2.3 (Picard's Little Theorem)**, the nonconstant entire function $g$ has range $\mathbb{C}$ or $\mathbb{C}$ minus one point; since $a$ is already omitted, $g$ takes $b$ ($b\ne a$) infinitely often: $g$ has infinitely many $b$-points, with no accumulation point.
 
 Take a compact disk $K$ containing $n+1$ of the $b$-points of $g$. Since $g_{n}\to g$ uniformly on $K$ and $g$ takes the value $b$ at these points (which have no accumulation, so disjoint small neighborhoods fit inside $K$), for large $n$, $g_{n}$ has at least $n+1$ $b$-points in $K$ (by Rouche's theorem / persistence of zeros under uniform convergence). But the $b$-points of $g_{n}$ are exactly the points of $f_{n}^{-1}\left(b\right)$ lying in $z_{n}+\rho_{n}K$, which are at most $n$; contradiction. Hence $\mathcal{F}$ is normal. $\blacksquare$
-
----
 
 ## 22.4-4
 

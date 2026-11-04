@@ -12,8 +12,6 @@ $$
 \frac{1}{2\pi i}\int_{\Gamma}\frac{f'}{f}\,dz=\sum r_{j}-\sum s_{k}.
 $$
 
----
-
 ## 15.4-5
 
 证明: $\frac{1}{\sin^{2}z}=\sum_{n=-\infty}^{+\infty}\frac{1}{\left(z-n\pi\right)^{2}}$.
@@ -27,8 +25,6 @@ F\left(z\right):=\frac{1}{\sin^{2}z}-\sum_{n=-\infty}^{+\infty}\frac{1}{\left(z-
 $$
 
 级数在 $\mathbb{C}$ 的紧集上局部一致收敛 (除极点的去心邻域), 且与 $\frac{1}{\sin^{2}z}$ 在各 $n\pi$ 处的主部相同, 故 $F$ 在 $\mathbb{C}$ 上全纯 (每个极点都被抵消), 是**定义 15.1.1 (整函数与亚纯函数)**中的整函数. 又 $\sin^{2}\left(z+\pi\right)=\sin^{2}z$ 且 $\sum_{n}\frac{1}{\left(z+\pi-n\pi\right)^{2}}=\sum_{n}\frac{1}{\left(z-n\pi\right)^{2}}$, 故 $F\left(z+\pi\right)=F\left(z\right)$, $F$ 以 $\pi$ 为周期. 在基本带 $\left|\operatorname{Re}z\right|\le\frac\pi2$ 上, 当 $\left|\operatorname{Im}z\right|\to+\infty$ 时 $\frac{1}{\sin^{2}z}\to0$ 且级数 $\to0$, 故 $F$ 在带内有界, 由周期性 $F$ 在 $\mathbb{C}$ 有界. 由刘维尔定理 $F$ 为常数; 又 $F\to0$ 于 $\operatorname{Im}z\to+\infty$, 故 $F\equiv0$, 即所证. $\blacksquare$
-
----
 
 ## 15.4-8
 
@@ -74,8 +70,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 15.4-13
 

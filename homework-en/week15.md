@@ -22,8 +22,6 @@ with regular part $\sum_{n\ge0}c_{n}\left(z-a\right)^{n}$ and principal part $\s
 > 
 > $a$ is a removable singularity of $f$ if and only if $\lim_{z\to a}f\left(z\right)$ exists and is finite.
 
----
-
 ## 13.4-1
 
 Let $f$ be holomorphic on $\mathbb{C}\setminus\left\{0\right\}$ with $\left|f\left(z\right)\right|\le\frac{\left|z\right|+1}{\left|z\right|}$ for all $z\in\mathbb{C}\setminus\left\{0\right\}$. Prove: $f$ is constant.
@@ -33,8 +31,6 @@ Let $f$ be holomorphic on $\mathbb{C}\setminus\left\{0\right\}$ with $\left|f\le
 From $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}$, as $z\to0$, $\left|zf\left(z\right)\right|\le\left|z\right|+1\to1$, so $zf\left(z\right)$ is bounded on a punctured neighborhood of $0$. By **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**, $0$ is a removable singularity of $zf\left(z\right)$, so $f$ has at most a simple pole at $0$; moreover $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}$ near $0$ gives $\left|f\left(z\right)\right|\le\frac{C}{\left|z\right|}$, and since $0$ is an isolated singularity of $f$, $f$ is removable at $0$, extending to an entire function.
 
 Thus $f$ is entire with $\left|f\left(z\right)\right|\le1+\frac{1}{\left|z\right|}\le2$ for $\left|z\right|\ge1$, i.e. $f$ is bounded. By Liouville's theorem, $f$ is constant. $\blacksquare$
-
----
 
 ## 13.4-2
 
@@ -50,8 +46,6 @@ Find the finite isolated singularities of the following functions and classify t
 
 (iv) The zeros of $1-\cos z$ are $z=2m\pi$ (second order). At $z=0$, the numerator $z$ has a simple zero, so $z=0$ is a simple pole; for $m\ne0$, $z=2m\pi\ne0$, numerator nonzero, so pole of order $2$. $\blacksquare$
 
----
-
 ## 13.4-3
 
 Let $f$ be holomorphic on $\mathbb{C}\setminus\left\{0\right\}$. Is it possible that $\left|f\left(z\right)\right|> e^{\frac{1}{\left|z\right|}}$ for all $z\in\mathbb{C}\setminus\left\{0\right\}$? Explain.
@@ -59,8 +53,6 @@ Let $f$ be holomorphic on $\mathbb{C}\setminus\left\{0\right\}$. Is it possible 
 ### Solution 13.4-3
 
 No. If $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$ for all $z\ne0$, then as $z\to0$, $\left|f\left(z\right)\right|\to+\infty$, so $0$ is a pole of $f$, say of order $m$. By **Definition 13.2.2 (Classification of Isolated Singularities)**, near $0$, $\left|f\left(z\right)\right|\sim\frac{C}{\left|z\right|^{m}}$. But $e^{1/\left|z\right|}$ grows faster than any power $\frac{1}{\left|z\right|^{m}}$ (since $\frac{e^{1/\left|z\right|}}{1/\left|z\right|^{m}}\to+\infty$), so for sufficiently small $\left|z\right|$, $\left|f\left(z\right)\right|\le\frac{2C}{\left|z\right|^{m}}< e^{1/\left|z\right|}$, contradicting $\left|f\left(z\right)\right|> e^{1/\left|z\right|}$. Hence the inequality is impossible. $\blacksquare$
-
----
 
 ## 13.4-4
 
@@ -76,8 +68,6 @@ Determine whether the following have an isolated singularity at $\infty$ and cla
 
 (iv) $\frac{\cos z}{1+z^{2}}$: as $z\to\infty$, $\cos z$ oscillates and does not converge, while $\frac{1}{1+z^{2}}\to0$; hence $\lim_{z\to\infty}\frac{\cos z}{1+z^{2}}$ does not exist (finite or infinite), so $\infty$ is an essential singularity. $\blacksquare$
 
----
-
 ## 13.4-10
 
 Let $\Omega=G\setminus\left\{a,b\right\}$, where $G$ is a bounded simply connected domain, $a,b\in G$, $a\ne b$. How many holomorphic automorphisms of $\Omega$ are there?
@@ -87,8 +77,6 @@ Let $\Omega=G\setminus\left\{a,b\right\}$, where $G$ is a bounded simply connect
 Let $\varphi\in\operatorname{Aut}\left(\Omega\right)$. Since $G$ is bounded, $\varphi$ is bounded on $\Omega$; by **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**, $\varphi$ has removable singularities at $a,b$, extending to a holomorphic function on $G$. Since $\varphi$ is biholomorphic from $\Omega$ to itself, after extension $\varphi$ maps $G$ to $G$ and maps $\left\{a,b\right\}$ to itself; hence $\varphi\in\operatorname{Aut}\left(G\right)$ with $\varphi\left(\left\{a,b\right\}\right)=\left\{a,b\right\}$.
 
 $G$ is bounded, simply connected, and not $\mathbb{C}$; by the Riemann mapping theorem, $G\cong\mathbb{D}$, so $\operatorname{Aut}\left(G\right)\cong\operatorname{Aut}\left(\mathbb{D}\right)$. Let $p,q$ be the images of $a,b$ under the map to $\mathbb{D}$. Elements of $\operatorname{Aut}\left(\mathbb{D}\right)$ mapping $\left\{p,q\right\}$ to itself either fix $p,q$ pointwise or swap them. An automorphism of $\mathbb{D}$ fixing two distinct interior points is the identity; there is exactly one involution swapping $p$ and $q$. Hence there are exactly $2$ holomorphic automorphisms of $\Omega$ onto itself. $\blacksquare$
-
----
 
 ## 13.4-12
 
@@ -103,8 +91,6 @@ $$
 $$
 
 Thus $\left(z-a\right)^{n}f\left(z\right)$ is bounded on a punctured neighborhood of $a$; by **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**, $0$ is a removable singularity of $\left(z-a\right)^{n}f$, so $f$ has at most a pole of order $n$ at $a$, contradicting that $a$ is essential. Hence for every $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ is unbounded, and by monotonicity in $\varepsilon$, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$
-
----
 
 ## 13.4-17
 

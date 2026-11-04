@@ -38,8 +38,6 @@ $$
 \Gamma\left(z\right)=\lim_{n\to+\infty}\frac{n!\,n^{z}}{z\left(z+1\right)\cdots\left(z+n\right)}.
 $$
 
----
-
 ## 19.3-1
 
 令 $\mathcal{E}_{0}\left(z\right)=1-z$, $\mathcal{E}_{k}\left(z\right)=\left(1-z\right)e^{z+\frac{z^{2}}{2}+\cdots+\frac{z^{k}}{k}}$, $k\ge1$. 证明: 存在常数 $c,c',c''> 0$ 使得 (i) 若 $\left|z\right|\le\frac12$, 则 $\left|1-\mathcal{E}_{k}\left(z\right)\right|\le c\left|z\right|^{k+1}$, $k\ge0$; (ii) 若 $\left|z\right|\le\frac12$, 则 $\left|\mathcal{E}_{k}\right|\ge e^{-c'\left|z\right|^{k+1}}$, $k\ge0$; (iii) 若 $\left|z\right|\ge\frac12$, 则 $\left|\mathcal{E}_{k}\right|\ge\left|1-z\right|e^{-c'\left|z\right|^{k}}$, $k\ge0$.
@@ -60,8 +58,6 @@ $$
 
 (iii) $\left|\mathcal{E}_{k}\left(z\right)\right|=\left|1-z\right|e^{\operatorname{Re}S_{k}\left(z\right)}$. 对 $\left|z\right|\ge\frac12$, $\left|\operatorname{Re}S_{k}\left(z\right)\right|\le\sum_{j=1}^{k}\frac{\left|z\right|^{j}}{j}\le\left|z\right|^{k}\sum_{j=1}^{k}\frac{\left|z\right|^{j-k}}{j}\le c'\left|z\right|^{k}$ (因为 $\left|z\right|\ge\frac12$ 时级数 $\sum_{j}\left|z\right|^{j-k}/j$ 一致有界于 $\left|z\right|\ge\frac12$). 故 $e^{\operatorname{Re}S_{k}}\ge e^{-c'\left|z\right|^{k}}$, 即 $\left|\mathcal{E}_{k}\right|\ge\left|1-z\right|e^{-c'\left|z\right|^{k}}$. $\blacksquare$
 
----
-
 ## 19.3-2
 
 对于任意使得 $\lim_{n\to\infty}a_{n}=\infty$ 的非零序列 $\left\{a_{n}\right\}\subset\mathbb{C}$, 令 $f\left(z\right)$ 等于无穷乘积 $\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, 其中 $\mathcal{E}_{n}$ 如**解答 19.3-1**. 证明: $f$ 是一个整函数, 它的零点有且只有 $a_{n}$, $n\in\mathbb{N}$, 而且它在 $a_{n}$ 处零点的阶数等于序列中 $a_{n}$ 出现的次数.
@@ -72,8 +68,6 @@ $$
 
 每个 $\mathcal{E}_{n}\left(z/a_{n}\right)$ 只在 $z=a_{n}$ 处有零点 (因 $\mathcal{E}_{n}\left(0\right)=1$, 且 $\mathcal{E}_{n}$ 的唯一零点是 $z=a_{n}$), 且为简单零点. 乘积在 $a_{n}$ 处因子为零, 其余因子非零 (各 $a_{n}$ 不同或计重数时按次数), 故 $f$ 的零点恰为诸 $a_{n}$, 在 $a_{n}$ 处的阶等于 $a_{n}$ 在序列中出现的次数. $\blacksquare$
 
----
-
 ## 19.3-3
 
 证明: 任意整函数 $f$ 都可分解成无穷乘积的形式 $f\left(z\right)=z^{m}e^{g\left(z\right)}\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, 其中 $\mathcal{E}_{n}$ 如**解答 19.3-1**, $m$ 为 $f$ 在 $z=0$ 处零点的阶数, $g$ 为某整函数, $a_{n}$ 是 $f$ 的零点.
@@ -81,8 +75,6 @@ $$
 ### 解答 19.3-3
 
 设 $f$ 的非零零点 (计重数) 为 $a_{1},a_{2},\ldots$, 在 $0$ 处的零点阶数为 $m$. 由**解答 19.3-2**, $P\left(z\right):=\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$ 是整函数, 其零点恰为诸 $a_{n}$ 且阶数与 $f$ 一致. 故 $\frac{f\left(z\right)}{z^{m}P\left(z\right)}$ 是无零点的整函数 (在 $z=0$ 处的可去奇点已处理, $P\left(0\right)=1$). 无零点的整函数可写成指数 $e^{g\left(z\right)}$ ($g$ 整). 于是 $f\left(z\right)=z^{m}e^{g\left(z\right)}P\left(z\right)$, 即所证. $\blacksquare$
-
----
 
 ## 19.3-8
 
@@ -99,8 +91,6 @@ $$
 (iii) 由 (i)(ii) 归纳: $F\left(1\right)=1$, 且对 $n\ge1$, $F\left(n+1\right)=nF\left(n\right)+\frac{1}{\Gamma\left(1-n-1\right)}=nF\left(n\right)+\frac{1}{\Gamma\left(-n\right)}=nF\left(n\right)$ (因 $\Gamma\left(-n\right)=\infty$, $\frac{1}{\Gamma\left(-n\right)}=0$). 故 $F\left(n\right)=F\left(1\right)\cdot1\cdot2\cdots\left(n-1\right)=\left(n-1\right)!$.
 
 (iv) $F$ 的潜在极点是 $\Gamma\left(1-z\right)$ 的极点 $z=1,2,3,\ldots$. 由 (iii), $F\left(n\right)=\left(n-1\right)!$ 有限, 故这些点都是可去奇点 (函数方程 (ii) 表明 $F$ 在正整数处取有限值且连续). 又分子 $\psi$ 差在 $\Gamma$ 极点处被抵消, 故 $F$ 延拓为 $\mathbb{C}$ 上的整函数. $\blacksquare$
-
----
 
 ## 19.3-10
 
@@ -121,8 +111,6 @@ H\left(z+1\right)=\frac{e^{G\left(z\right)}\cdot\frac{\left(z+1\right)^{z+1}}{z^
 $$
 
 故 $H$ 以 $1$ 为周期. 由斯特林公式, $z\to+\infty$ 沿正实轴时 $G\left(z\right)\to z\log z-z+\frac12\log\left(2\pi\right)$, 故 $\lim_{z\to+\infty}H\left(z\right)=1$; 由周期性 $H$ 在带内一致有界, 是整函数 (可去奇点处延拓), 由刘维尔定理 $H$ 为常数 $1$. 故 $e^{G\left(z\right)}=\left(z/e\right)^{z}\sqrt{2\pi}$. $\blacksquare$
-
----
 
 ## 19.3-11
 

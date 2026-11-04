@@ -16,8 +16,6 @@
 > 
 > In any punctured neighborhood of an essential singularity, a holomorphic function takes every value infinitely often (with at most one exception).
 
----
-
 ## 21.5-4
 
 Use the result of Exercise 21.5-3 (Landau) to prove Picard's little theorem.
@@ -29,8 +27,6 @@ Picard's little theorem: a nonconstant entire function cannot omit two distinct 
 By **Exercise 21.5-3 (Landau)**, there is a positive function $R\left(a\right)> 0$ ($a\in\mathbb{C}\setminus\left\{0,1\right\}$) such that for every $a$, there is no holomorphic $f$ on the closed disk $\left\{\left|z\right|\le R\left(a\right)\right\}$ satisfying $f\left(0\right)=a$, $f'\left(0\right)=1$, and taking neither $0$ nor $1$.
 
 Let $F$ be entire and omit $0,1$. If $F$ is nonconstant, choose $z_{0}$ with $F'\left(z_{0}\right)\ne0$; set $a:=F\left(z_{0}\right)\in\mathbb{C}\setminus\left\{0,1\right\}$. Define $g\left(w\right):=F\left(z_{0}+\frac{w}{F'\left(z_{0}\right)}\right)$; then $g$ is holomorphic on $\mathbb{C}$ (hence on the closed disk $\left\{\left|w\right|\le R\left(a\right)\right\}$), $g\left(0\right)=F\left(z_{0}\right)=a$, $g'\left(0\right)=1$, and $g$ takes neither $0$ nor $1$, contradicting Landau's result. Hence $F$ must be constant, proving Picard's little theorem. $\blacksquare$
-
----
 
 ## 21.5-5
 
@@ -44,8 +40,6 @@ If $f-g$ is constant, then $H$ is constant: if $H\equiv-1$, then $h\equiv0$, whi
 
 If $f-g$ is nonconstant, by **Theorem 21.2.3 (Picard's Little Theorem)**, the range of the entire function $f-g$ is $\mathbb{C}$ or $\mathbb{C}$ minus one point, so it takes infinitely many values $\left(2k+1\right)\pi i$ ($k\in\mathbb{Z}$); hence $e^{f-g}$ equals $-1$ at infinitely many points, and $h$ has infinitely many zeros. $\blacksquare$
 
----
-
 ## 21.5-6
 
 If $f,g$ are entire, $p,q$ are polynomials, and $e^{f}+p=e^{g}+q$ with $f\left(0\right)=g\left(0\right)$, prove: $f=g$ and $p=q$.
@@ -56,8 +50,6 @@ From $e^{f}-e^{g}=q-p$, i.e. $e^{g}\left(e^{f-g}-1\right)=q-p$. Suppose for cont
 
 From $f\left(0\right)=g\left(0\right)$, $c=0$, i.e. $f=g$. Substituting into $e^{f}+p=e^{f}+q$ gives $p=q$. $\blacksquare$
 
----
-
 ## 21.5-7
 
 Let $\mathcal{E}\left(z\right)=\exp\left(2\pi i\cdot\exp\left(2\pi i z\right)\right)$, $z\in\mathbb{C}$, and let $f\left(z\right)$ and $g\left(z\right)$ be nonconstant entire functions with $\mathcal{E}\left(f\left(z\right)\right)=\mathcal{E}\left(g\left(z\right)\right)$ for all $z\in\mathbb{C}$. Prove: there exists $m\in\mathbb{Z}$ such that $f\left(z\right)=g\left(z\right)+m$ for all $z\in\mathbb{C}$.
@@ -67,8 +59,6 @@ Let $\mathcal{E}\left(z\right)=\exp\left(2\pi i\cdot\exp\left(2\pi i z\right)\ri
 From the property of $\exp$, $\exp\left(2\pi i\cdot e^{2\pi if}\right)=\exp\left(2\pi i\cdot e^{2\pi ig}\right)$ implies $e^{2\pi if}-e^{2\pi ig}\in\mathbb{Z}$; since this is continuous, it is constant, say $e^{2\pi if}-e^{2\pi ig}=m\in\mathbb{Z}$.
 
 Suppose for contradiction $m\ne0$; then $e^{2\pi if}=e^{2\pi ig}+m$. Since $g$ is nonconstant entire, by **Theorem 21.2.3 (Picard's Little Theorem)**, the range of $g$ is $\mathbb{C}$ or $\mathbb{C}$ minus one point, so $e^{2\pi ig}$ takes every nonzero value (with at most one exception); since $m\ne0$, $-m$ is a nonzero value, so there is $z_{0}$ with $e^{2\pi ig\left(z_{0}\right)}=-m$, and then $e^{2\pi if\left(z_{0}\right)}=-m+m=0$, contradicting that $\exp$ has no zeros. Hence $m=0$, i.e. $e^{2\pi if}=e^{2\pi ig}$, so $2\pi i\left(f-g\right)=2\pi ik$, $k\in\mathbb{Z}$, i.e. $f\left(z\right)=g\left(z\right)+k$. $\blacksquare$
-
----
 
 ## 21.5-19
 

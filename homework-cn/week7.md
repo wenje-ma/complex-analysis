@@ -16,8 +16,6 @@ $$
 > 
 > $\frac{1}{z}$ 在区域 $D\subset\mathbb{C}\setminus\left\{0\right\}$ 上有原函数当且仅当 $D$ 上存在 $\operatorname{Ln}z$ 的全纯分支.
 
----
-
 ## 7.4-1
 
 (i) 令 $P\left(z\right)=z^{n}+a_{n-1}z^{n-1}+\cdots+a_{0}$ 是首 $1$ 的多项式. 证明: $\max_{\left|z\right|=1}\left|P\left(z\right)\right|\ge1$. (ii) 是否存在多项式 $P\left(z\right)=\sum_{j=1}^{n}a_{j}z^{j}$ 使得 $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|< 1$?
@@ -40,8 +38,6 @@ $$
 
 故存在 $\theta$ 使 $\left|P\left(e^{i\theta}\right)-e^{-2i\theta}\right|\ge1$, 即 $\max_{\left|z\right|=1}\left|P\left(z\right)-\frac{1}{z^{2}}\right|\ge1$. 因此不能有 $\max< 1$. $\blacksquare$
 
----
-
 ## 7.4-3
 
 计算积分: (i) $\int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz$ ($n\in\mathbb{N}$); (ii) $\int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz$, $\left|a\right|< r< \left|b\right|$.
@@ -61,8 +57,6 @@ $$
 $$
 
 $\blacksquare$
-
----
 
 ## 7.4-5
 
@@ -86,8 +80,6 @@ $$
 
 (也可由留数: $\operatorname{Res}_{0}e^{1/z}=1$, 而 $\gamma$ 绕 $0$ 的指标为 $2$, 得 $\int_{\gamma}=2\pi i\cdot2\cdot1=4\pi i$.) $\blacksquare$
 
----
-
 ## 7.4-7
 
 判断下述函数在区域 $\mathbb{C}\setminus\left\{0\right\}$ 上是否有原函数: (i) $\sin\frac{1}{z}$; (ii) $\cos\frac{1}{z}$; (iii) $e^{\frac{1}{z^{3}}}$.
@@ -101,8 +93,6 @@ $$
 (ii) $\cos\frac{1}{z}=1-\frac{1}{2!z^{2}}+\frac{1}{4!z^{4}}-\cdots$ 不含 $z^{-1}$ 项, 留数为 $0$. 事实上 $F\left(z\right)=z+\frac{1}{2z}-\frac{1}{72z^{3}}+\cdots$ (逐项积分) 是 $\mathbb{C}\setminus\left\{0\right\}$ 上的单值全纯函数且 $F'=\cos\frac1z$. 故 $\cos\frac1z$ 在 $\mathbb{C}\setminus\left\{0\right\}$ 上有原函数.
 
 (iii) $e^{\frac{1}{z^{3}}}=1+\frac{1}{z^{3}}+\frac{1}{2!z^{6}}+\cdots$ 只含 $z^{-3k}$ ($k\ge0$) 项, 不含 $z^{-1}$ 项, 留数为 $0$. 其逐项积分 $F\left(z\right)=z-\frac{1}{2z^{2}}+\cdots$ 是 $\mathbb{C}\setminus\left\{0\right\}$ 上的单值全纯函数且 $F'=e^{1/z^{3}}$. 故 $e^{1/z^{3}}$ 在 $\mathbb{C}\setminus\left\{0\right\}$ 上有原函数. $\blacksquare$
-
----
 
 ## 7.4-9
 

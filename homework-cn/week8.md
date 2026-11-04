@@ -50,8 +50,6 @@ $$
 f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta,\quad n\ge1.
 $$
 
----
-
 ## 8.4-2
 
 设 $f$ 为单连通区域 $D$ 上的全纯函数而且不取零值. 证明:
@@ -82,8 +80,6 @@ $$
 
 命题得证. $\blacksquare$
 
----
-
 ## 8.4-4
 
 令 $f$ 是区域 $\mathbb{C}$ 上 $\mathbb{R}$-可微的函数, 且对于任意圆周 $\gamma$, 都有 $\int_{\gamma}f\left(z\right)\,dz=0$. 证明: $f$ 是 $\mathbb{C}$ 上的全纯函数.
@@ -103,8 +99,6 @@ $$
 $$
 
 由题设左边对任意 $\varepsilon> 0$ 为零, 两边除以 $\varepsilon^{2}$ 令 $\varepsilon\to0$, 得 $\frac{\partial f}{\partial\overline{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial f}{\partial\overline{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4 (柯西-黎曼方程)**, $f$ 在 $\mathbb{C}$ 上全纯. $\blacksquare$
-
----
 
 ## 8.4-6
 
@@ -138,8 +132,6 @@ $$
 
 综上, $\int_{0}^{+\infty}\cos\left(x^{2}\right)\,dx=\int_{0}^{+\infty}\sin\left(x^{2}\right)\,dx=\frac{\sqrt{\pi}}{2\sqrt{2}}$, $\int_{0}^{+\infty}e^{-x^{2}}\cos\left(2bx\right)\,dx=\frac{\sqrt{\pi}}{2}e^{-b^{2}}$. $\blacksquare$
 
----
-
 ## 8.4-8
 
 令 $D\subset\mathbb{C}$ 是分段光滑若当闭曲线的外区域, $f$ 为 $D$ 上的全纯函数, 而且 $\lim_{z\to\infty}f\left(z\right)=A\in\mathbb{C}$. 证明: $\forall z\in D$, $f\left(z\right)=-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$, 其中 $\partial D$ 为逆时针定向.
@@ -166,8 +158,6 @@ f\left(z\right)=A-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\z
 $$
 
 即 $f\left(z\right)=-\frac{1}{2\pi i}\int_{\partial D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$. $\blacksquare$
-
----
 
 ## 8.4-10
 

@@ -38,8 +38,6 @@ with equality if and only if $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
 > 
 > For a simply connected domain $D$ with $\mathbb{C}\setminus D\ne\varnothing$ and $a\in D$, the positive number $\rho$ for which there exists a unique conformal equivalence $f:D\to\mathbb{D}_{\rho}:=\left\{\left|z\right|< \rho\right\}$ with $f\left(a\right)=0$, $f'\left(a\right)=1$, is called the mapping radius of $D$ at $a$, denoted $\rho\left(D,a\right)$.
 
----
-
 ## 11.3-1
 
 Let $\gamma$ be a smooth path in the unit disk $\mathbb{D}:=\left\{\left|z\right|< 1\right\}$. Define the hyperbolic length of $\gamma$ as $L_{h}\left(\gamma\right)=\int_{\gamma}\frac{1}{1-\left|z\right|^{2}}\left|dz\right|$. Let $f:\mathbb{D}\to\mathbb{D}$ be holomorphic. Prove: (i) $L_{h}\left(f\left(\gamma\right)\right)\le L_{h}\left(\gamma\right)$; (ii) $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$ if and only if $f\in\operatorname{auto}\left(\mathbb{D}\right)$.
@@ -56,8 +54,6 @@ By the differential form of **Theorem 10.3.4 (Schwarz-Pick Lemma)**, $\frac{\lef
 
 (ii) If $f\in\operatorname{auto}\left(\mathbb{D}\right)$, the Schwarz-Pick differential form is an equality, so $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$. Conversely, if $L_{h}\left(f\left(\gamma\right)\right)=L_{h}\left(\gamma\right)$, the pointwise inequality $\frac{\left|f'\left(z\right)\right|}{1-\left|f\left(z\right)\right|^{2}}\le\frac{1}{1-\left|z\right|^{2}}$ holds as equality along $\gamma$; by the equality condition of **Theorem 10.3.4 (Schwarz-Pick Lemma)**, $f$ is an automorphism on some open set containing $\gamma$, so $f\in\operatorname{auto}\left(\mathbb{D}\right)$. $\blacksquare$
 
----
-
 ## 11.3-2
 
 Suppose that on a domain $G\subset\mathbb{C}\setminus\left\{0\right\}$, every nowhere-vanishing holomorphic function $f$ has a holomorphic logarithm $g$ on $G$ with $e^{g\left(z\right)}=f\left(z\right)$ for all $z\in G$. Prove: $G$ is simply connected.
@@ -67,8 +63,6 @@ Suppose that on a domain $G\subset\mathbb{C}\setminus\left\{0\right\}$, every no
 Suppose $G$ is not simply connected; then $\widehat{\mathbb{C}}\setminus G$ has a bounded connected component $K$. Take $a\in K$. Since $G\subset\mathbb{C}\setminus\left\{0\right\}$ and $a\notin G$, $f\left(z\right)=z-a$ is holomorphic and nonzero on $G$. By assumption, there is holomorphic $g$ on $G$ with $e^{g\left(z\right)}=z-a$, so $g'\left(z\right)=\frac{1}{z-a}$ has an antiderivative $g$ on $G$.
 
 But $K$ is a hole of $G$, so there is a closed curve $\gamma\subset G$ winding once around $a$; by Example 7.1.2, $\int_{\gamma}\frac{dz}{z-a}=2\pi i\ne0$. Since $g'$ has antiderivative $g$, $\int_{\gamma}g'\left(z\right)\,dz=0$, a contradiction. Hence $G$ is simply connected. $\blacksquare$
-
----
 
 ## 11.3-9
 
@@ -100,8 +94,6 @@ $$
 
 (v) If $h\left(z\right)=z$, then $\operatorname{Re}h'\left(0\right)=1$. Conversely, if $\operatorname{Re}h'\left(0\right)=1$, then $\left|h'\left(0\right)\right|\ge1$, while **Theorem 10.3.1 (Schwarz Lemma)** gives $\left|h'\left(0\right)\right|\le1$, so $\left|h'\left(0\right)\right|=1$. Equality in Schwarz gives $h\left(z\right)=e^{i\theta}z$; and $\operatorname{Re}h'\left(0\right)=\cos\theta=1$, so $\theta=0$, i.e. $h\left(z\right)=z$. $\blacksquare$
 
----
-
 ## 11.3-11
 
 Let $U\subset\mathbb{C}$ be a connected open set, $U\ne\mathbb{C}$, and suppose every holomorphic function on $U$ has an antiderivative. Prove: $U$ is conformally equivalent to the open unit disk.
@@ -109,8 +101,6 @@ Let $U\subset\mathbb{C}$ be a connected open set, $U\ne\mathbb{C}$, and suppose 
 ### Solution 11.3-11
 
 If every holomorphic function on $U$ has an antiderivative, then the integral around every closed path in $U$ is zero, i.e. $U$ is simply connected (holomorphic functions on simply connected domains have antiderivatives, and conversely existence of antiderivatives implies simple connectivity). Since $U\ne\mathbb{C}$, $U$ is a simply connected domain other than the whole plane. By **Theorem 11.2.2 (Riemann Mapping Theorem)**, $U$ is conformally equivalent to the open unit disk. $\blacksquare$
-
----
 
 ## 11.3-14
 
@@ -131,8 +121,6 @@ Uniqueness: let $f_{1}:D\to\mathbb{D}_{\rho_{1}}$, $f_{2}:D\to\mathbb{D}_{\rho_{
 (ii) Write $\rho=\rho\left(D,a\right)$, and take $f:D\to\mathbb{D}_{\rho}$ with $f\left(a\right)=0$, $f'\left(a\right)=1$. Since $D'\subset D$, $f|_{D'}$ is univalent holomorphic. By (i), there is a conformal equivalence $F:D'\to\mathbb{D}_{\rho\left(D',a\right)}$ with $F\left(a\right)=0$, $F'\left(a\right)=1$. If $\rho\left(D',a\right)> \rho$, then $f\circ F^{-1}:\mathbb{D}_{\rho\left(D',a\right)}\to\mathbb{D}_{\rho}$, restricted to $\mathbb{D}_{\rho}$, gives a conformal equivalence $\mathbb{D}_{\rho}\to\mathbb{D}_{\rho}$ with derivative at $0$ equal to $\frac{f'\left(a\right)}{F'\left(a\right)}=1$; by Schwarz it is the identity, so $F^{-1}\left(\mathbb{D}_{\rho}\right)=D'$ and $f\left(D'\right)=\mathbb{D}_{\rho}$, contradicting $f\left(D'\right)\subsetneq\mathbb{D}_{\rho}$ when $D'\subsetneq D$. Hence $\rho\left(D',a\right)\le\rho\left(D,a\right)$. If equality holds at some $b$, the same argument gives $f\left(D'\right)=\mathbb{D}_{\rho}$, i.e. $D'=D$.
 
 (iii) Let $f:D\to\mathbb{D}_{\rho\left(D,a\right)}$ with $f\left(a\right)=0$, $f'\left(a\right)=1$. Since $g$ is univalent, $g\left(D\right)$ is simply connected, and $\widetilde f\left(z\right):=g'\left(a\right)\,f\left(g^{-1}\left(z\right)\right)$ maps $g\left(D\right)$ conformally onto $\mathbb{D}_{\left|g'\left(a\right)\right|\rho\left(D,a\right)}$, with $\widetilde f\left(g\left(a\right)\right)=0$ and $\widetilde f'\left(g\left(a\right)\right)=g'\left(a\right)f'\left(a\right)\cdot\frac{1}{g'\left(a\right)}=1$. By uniqueness in (i), $\rho\left(g\left(D\right),g\left(a\right)\right)\le\left|g'\left(a\right)\right|\rho\left(D,a\right)$. Applying the same argument to $g^{-1}$ gives the reverse inequality, so $\rho\left(g\left(D\right),g\left(a\right)\right)=\left|g'\left(a\right)\right|\rho\left(D,a\right)$. $\blacksquare$
-
----
 
 ## 11.3-19
 

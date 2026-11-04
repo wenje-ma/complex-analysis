@@ -12,8 +12,6 @@
 > 
 > If $f$ is holomorphic on $D^{+}$, continuous to a boundary segment $I\subset\mathbb{R}$ and real-valued there, then $f$ extends to $D^{+}\cup I\cup D^{-}$, where $D^{-}$ is the reflection of $D^{+}$ across the real axis, with $f\left(z\right)=\overline{f\left(\overline z\right)}$.
 
----
-
 ## 18.4-1
 
 Prove: any conformal equivalence between two rectangles that maps all vertices of one rectangle to vertices of the other is linear.
@@ -25,8 +23,6 @@ Let $f$ map rectangle $R$ conformally onto rectangle $R'$, sending vertices to v
 By **Theorem 18.1.3 (Schwarz Reflection Principle II)**, $f$ can be reflected across each side: the side maps to a side of $R'$ (a line segment), and $f$ reflects to the rectangle adjacent to $R$. Repeated reflection extends $f$ to an entire function $\mathbb{C}\to\mathbb{C}$ (meromorphic at infinity, but entire). Let the side-length directions of $R$ be $L_{1},L_{2}$ (real and imaginary directions), and those of $R'$ be $L'_{1},L'_{2}$; the extension satisfies the quasi-periodicity conditions $f\left(z+L_{1}\right)=f\left(z\right)+L'_{1}$, $f\left(z+L_{2}\right)=f\left(z\right)+L'_{2}$.
 
 Differentiating gives $f'\left(z+L_{1}\right)=f'\left(z\right)$, $f'\left(z+L_{2}\right)=f'\left(z\right)$, i.e. $f'$ is a doubly periodic entire function (periods $L_{1},L_{2}$). A doubly periodic entire function is bounded on the fundamental parallelogram; by Liouville's theorem, $f'$ is constant, so $f$ is linear: $f\left(z\right)=az+b$. $\blacksquare$
-
----
 
 ## 18.4-3
 
@@ -42,8 +38,6 @@ $$
 
 The right-hand side is holomorphic for $\left|z\right|> 1$ (since $\frac{1}{\overline z}$ lies inside $\left|z\right|< 1$); on $\left|z\right|=1$, $z=\frac{1}{\overline z}$, and since $f$ is real-valued, $f\left(z\right)=\overline{f\left(z\right)}$, matching the original $f$. Hence $f$ extends holomorphically to $\mathbb{C}\setminus\left\{0\right\}$, and by definition $f\left(z\right)=\overline{f\left(\frac{1}{\overline z}\right)}$ for all $z\ne0$. $\blacksquare$
 
----
-
 ## 18.4-5
 
 If $f$ is entire, $f\left(\mathbb{R}\right)\subset\mathbb{R}$ and $f\left(i\mathbb{R}\right)\subset i\mathbb{R}$, prove: $f\left(-z\right)=-f\left(z\right)$ for all $z\in\mathbb{C}$.
@@ -55,8 +49,6 @@ From $f\left(\mathbb{R}\right)\subset\mathbb{R}$, applying **Theorem 18.1.3 (Sch
 Write $f_{e}\left(z\right):=\frac{f\left(z\right)+f\left(-z\right)}{2}$ (even part); it is entire. From $f\left(\mathbb{R}\right)\subset\mathbb{R}$, for $z=x\in\mathbb{R}$, $f_{e}\left(x\right)\in\mathbb{R}$; from $f\left(i\mathbb{R}\right)\subset i\mathbb{R}$, for $z=iy$, $f_{e}\left(iy\right)\in i\mathbb{R}$. Since $f_{e}$ is an even entire function, there is an entire $F$ with $f_{e}\left(z\right)=F\left(z^{2}\right)$. Then $F$ satisfies: for $x> 0$, $F\left(x\right)=f_{e}\left(\sqrt x\right)\in\mathbb{R}$; for $x< 0$, $F\left(x\right)=f_{e}\left(i\sqrt{\left|x\right|}\right)\in i\mathbb{R}$.
 
 From $F\left(x\right)\in\mathbb{R}$ for $x> 0$ and the reflection principle, $F\left(\overline w\right)=\overline{F\left(w\right)}$; in particular for $x< 0$, $F\left(x\right)=\overline{F\left(x\right)}$, so $F\left(x\right)\in\mathbb{R}$. Together with $F\left(x\right)\in i\mathbb{R}$ for $x< 0$, this gives $F\left(x\right)=0$ on the negative real axis $x< 0$. The negative real axis has accumulation points; since the entire function $F$ vanishes there, $F\equiv0$, hence $f_{e}\equiv0$, i.e. $f\left(-z\right)=-f\left(z\right)$ for all $z\in\mathbb{C}$. $\blacksquare$
-
----
 
 ## 18.4-7
 

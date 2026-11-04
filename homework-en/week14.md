@@ -20,8 +20,6 @@ $$
 > 
 > If the modulus $\left|f\right|$ of a holomorphic function $f$ on a domain $D$ has a local maximum in $D$, then $f$ is constant on $D$; in particular, the maximum of $\left|f\right|$ on a compact closed region is attained on the boundary.
 
----
-
 ## 13.4-8
 
 Let $D\subset\mathbb{C}$ be the region bounded by Jordan closed curves $\gamma_{1}$ and $\gamma_{2}$, with $\gamma_{1}$ contained in the interior of $\gamma_{2}$, and let $f$ be holomorphic on the closed region $\overline{D}$. Prove:
@@ -48,8 +46,6 @@ f_{1}\left(z\right):=-\frac{1}{2\pi i}\int_{\gamma_{1}}\frac{f\left(\zeta\right)
 $$
 
 For $z$ in the interior of $\gamma_{2}$, the integrand $\frac{f\left(\zeta\right)}{\zeta-z}$ is holomorphic in $z$ inside $\gamma_{2}$ (parameter integral), so $f_{2}$ is holomorphic on the interior of $\gamma_{2}$; similarly $f_{1}$ is holomorphic on the exterior of $\gamma_{1}$. Since $z\in D$ lies both in the interior of $\gamma_{2}$ and the exterior of $\gamma_{1}$, $f\left(z\right)=f_{1}\left(z\right)+f_{2}\left(z\right)$ for all $z\in D$. $\blacksquare$
-
----
 
 ## 13.4-18
 

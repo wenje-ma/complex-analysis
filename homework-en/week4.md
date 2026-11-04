@@ -30,8 +30,6 @@ $$
 > 
 > If $f$ is holomorphic at $z_{0}$ and $f'\left(z_{0}\right)=0$, then $f$ is not univalent on any neighborhood of $z_{0}$.
 
----
-
 ## 4.5-1
 
 Prove: every Mobius transformation $\lambda$ has at least one fixed point on the extended complex plane, i.e. there exists at least one $z_{0}\in\widehat{\mathbb{C}}$ such that $\lambda\left(z_{0}\right)=z_{0}$; if it has three fixed points, then it must be the identity.
@@ -53,8 +51,6 @@ If $c=0$, then $ad\ne0$, $\lambda$ is the affine transformation $\lambda\left(z\
 Thus every Mobius transformation has at least one fixed point on the extended plane.
 
 If $\lambda$ has three fixed points: if $c\ne0$, there are at most two finite fixed points (the quadratic (1) has at most two solutions, unless identically zero, but $c\ne0$), and $\infty$ is not a fixed point, a contradiction. Hence $c=0$, $\lambda\left(z\right)=\alpha z+\beta$. Then there is at most one finite fixed point ($\alpha\ne1$) or none ($\alpha=1,\beta\ne0$); to have three fixed points we must have $\alpha=1$, $\beta=0$, i.e. $\lambda$ is the identity. $\blacksquare$
-
----
 
 ## 4.5-3
 
@@ -86,8 +82,6 @@ $$
 
 $\blacksquare$
 
----
-
 ## 4.5-5
 
 Let $f:\mathbb{C}\to\mathbb{C}$ be $f\left(z\right)=z^{2}-2z+2$.
@@ -105,8 +99,6 @@ Let $f:\mathbb{C}\to\mathbb{C}$ be $f\left(z\right)=z^{2}-2z+2$.
 (ii) Since $f'\left(1\right)=0$, by **Theorem 4.4.2**, $f$ is not univalent on any neighborhood of $1$. (More directly, $f\left(z\right)=\left(z-1\right)^{2}+1$; for any $\delta\ne0$, $f\left(1+\delta\right)=f\left(1-\delta\right)$ while $1+\delta\ne1-\delta$, so any neighborhood containing $1$ is not univalent.)
 
 (iii) By **Theorem 4.1.5 (Criterion for Conformality)**, $f$ is conformal at $z$ if and only if $f'\left(z\right)\ne0$; here $f'\left(1\right)=0$, so $f$ is not conformal at $1$. $\blacksquare$
-
----
 
 ## 4.5-14
 
@@ -129,8 +121,6 @@ $$
 i.e. $c\zeta^{2}+\left(d-a\right)\zeta-b=0$, which is exactly the fixed point equation $w\left(\zeta\right)=\frac{a\zeta+b}{c\zeta+d}=\zeta$. Thus the claim holds when $z_{2}\ne0$.
 
 If $z_{2}=0$, then $\zeta=\infty$, and $z_{1}\ne0$. $M\binom{z_{1}}{0}=\binom{az_{1}}{cz_{1}}$ is a scalar multiple of $\binom{z_{1}}{0}$ if and only if $c=0$. On the other hand, $w\left(\infty\right)=\lim_{z\to\infty}\frac{az+b}{cz+d}=\frac{a}{c}$ (when $c\ne0$) or $\infty$ (when $c=0$), i.e. $w\left(\infty\right)=\infty$ if and only if $c=0$. Thus the claim also holds when $z_{2}=0$. $\blacksquare$
-
----
 
 ## 4.5-16
 

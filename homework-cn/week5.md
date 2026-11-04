@@ -20,8 +20,6 @@ $$
 > 
 > $\sin z,\cos z$ 在 $\mathbb{C}$ 上全纯, $\left(\sin z\right)'=\cos z$, $\left(\cos z\right)'=-\sin z$.
 
----
-
 ## 5.5-1
 
 令 $P\left(z\right)$ 为多项式 (次数不小于 $1$). 证明: 它的导数 $P'\left(z\right)$ 的所有根都包含在 $P\left(z\right)$ 的根的凸包 (即包含 $P\left(z\right)$ 的所有根的最小的凸多边形) 内. (高斯-卢卡斯定理)
@@ -50,8 +48,6 @@ $$
 
 $\lambda_{j}> 0$ 且 $\sum_{j}\lambda_{j}=1$, 故 $z_{0}$ 是 $a_{1},\ldots,a_{n}$ 的凸组合, 落在它们的凸包内. 得证. $\blacksquare$
 
----
-
 ## 5.5-3
 
 证明: 函数 $f\left(z\right)=\frac{\sin z}{z}$ ($z\ne0$), $f\left(0\right)=1$, 在 $\mathbb{C}$ 上是全纯的.
@@ -72,8 +68,6 @@ $$
 
 该幂级数在 $\mathbb{C}$ 上收敛, 故在整个 $\mathbb{C}$ 上全纯, 且其在 $z=0$ 处的值为 $1$. 因此 $f$ 在 $\mathbb{C}$ 上全纯. $\blacksquare$
 
----
-
 ## 5.5-5
 
 证明: $\cos z$ 和 $\sin z$ 在 $\mathbb{C}$ 上都是无界函数.
@@ -88,8 +82,6 @@ $$
 $$
 
 当 $t\to+\infty$ 时 $\cosh t\to+\infty$, $\left|\sinh t\right|\to+\infty$. 故 $\cos z$ 沿虚轴无界, $\sin z$ 沿虚轴也无界 ($\left|\sin\left(it\right)\right|=\sinh t\to+\infty$). 因此 $\cos z$ 与 $\sin z$ 在 $\mathbb{C}$ 上都是无界函数. $\blacksquare$
-
----
 
 ## 5.5-7
 
@@ -114,8 +106,6 @@ z=\left(2k-\frac12\right)\pi\pm i\ln\left(2+\sqrt3\right),\quad k\in\mathbb{Z}.
 $$
 
 $\blacksquare$
-
----
 
 ## 5.5-9
 
