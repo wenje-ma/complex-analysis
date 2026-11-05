@@ -141,21 +141,21 @@ For $\left|z\right|\le\frac12$, $\left|e^{S_{k}}\right|\le e^{\sum\left|z\right|
 
 ## 19.3-2
 
-For any nonzero sequence $\left\{a_{n}\right\}\subset\mathbb{C}$ with $\lim_{n\to\infty}a_{n}=\infty$, let $f\left(z\right)$ be the infinite product $\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, where $\mathcal{E}_{n}$ is as in **Solution 19.3-1**. Prove: $f$ is entire, its zeros are exactly $a_{n}$, $n\in\mathbb{N}$, and the order of the zero at $a_{n}$ equals the multiplicity of $a_{n}$ in the sequence.
+For any nonzero sequence $\left\{a_{n}\right\}\subset\mathbb{C}$ with $\lim_{n\to\infty}a_{n}=\infty$, let $f\left(z\right)$ be the infinite product $\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, where $\mathcal{E}_{n}$ is as in Solution 19.3-1. Prove: $f$ is entire, its zeros are exactly $a_{n}$, $n\in\mathbb{N}$, and the order of the zero at $a_{n}$ equals the multiplicity of $a_{n}$ in the sequence.
 
 ### Solution to 19.3-2
 
-For any $R> 0$, since $a_{n}\to\infty$, there is $N$ such that for $n> N$, $\left|a_{n}\right|> 2R$, so $\left|z/a_{n}\right|\le\frac12$ for $\left|z\right|\le R$. By **Solution 19.3-1 (i)**, $\left|1-\mathcal{E}_{n}\left(z/a_{n}\right)\right|\le c\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}$, and $\sum_{n}\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}\le\sum_{n> N}\left(\frac12\right)^{n+1}< +\infty$. Hence the product converges uniformly on $\left\{\left|z\right|\le R\right\}$, and $f$ is entire.
+For any $R> 0$, since $a_{n}\to\infty$, there is $N$ such that for $n> N$, $\left|a_{n}\right|> 2R$, so $\left|z/a_{n}\right|\le\frac12$ for $\left|z\right|\le R$. By Solution 19.3-1 (i), $\left|1-\mathcal{E}_{n}\left(z/a_{n}\right)\right|\le c\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}$, and $\sum_{n}\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}\le\sum_{n> N}\left(\frac12\right)^{n+1}< +\infty$. Hence the product converges uniformly on $\left\{\left|z\right|\le R\right\}$, and $f$ is entire.
 
 Each $\mathcal{E}_{n}\left(z/a_{n}\right)$ has a zero only at $z=a_{n}$ (since $\mathcal{E}_{n}\left(0\right)=1$, and the only zero of $\mathcal{E}_{n}$ is at $z=a_{n}$), and it is simple. At $a_{n}$, the corresponding factor vanishes while all other factors are nonzero (counting multiplicities); hence the zeros of $f$ are exactly the $a_{n}$, with order at $a_{n}$ equal to its multiplicity in the sequence. $\blacksquare$
 
 ## 19.3-3
 
-Prove: every entire function $f$ can be factored as $f\left(z\right)=z^{m}e^{g\left(z\right)}\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, where $\mathcal{E}_{n}$ is as in **Solution 19.3-1**, $m$ is the order of the zero of $f$ at $z=0$, $g$ is some entire function, and $a_{n}$ are the zeros of $f$.
+Prove: every entire function $f$ can be factored as $f\left(z\right)=z^{m}e^{g\left(z\right)}\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, where $\mathcal{E}_{n}$ is as in Solution 19.3-1, $m$ is the order of the zero of $f$ at $z=0$, $g$ is some entire function, and $a_{n}$ are the zeros of $f$.
 
 ### Solution to 19.3-3
 
-Let the nonzero zeros of $f$ (with multiplicity) be $a_{1},a_{2},\ldots$, and let $m$ be the order of the zero at $0$. By **Solution 19.3-2**, $P\left(z\right):=\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$ is entire, with zeros exactly at the $a_{n}$ with the same orders as $f$. Hence $\frac{f\left(z\right)}{z^{m}P\left(z\right)}$ is an entire function without zeros (the removable singularity at $z=0$ is handled, and $P\left(0\right)=1$). A zero-free entire function can be written as $e^{g\left(z\right)}$ with $g$ entire. Thus $f\left(z\right)=z^{m}e^{g\left(z\right)}P\left(z\right)$, as claimed. $\blacksquare$
+Let the nonzero zeros of $f$ (with multiplicity) be $a_{1},a_{2},\ldots$, and let $m$ be the order of the zero at $0$. By Solution 19.3-2, $P\left(z\right):=\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$ is entire, with zeros exactly at the $a_{n}$ with the same orders as $f$. Hence $\frac{f\left(z\right)}{z^{m}P\left(z\right)}$ is an entire function without zeros (the removable singularity at $z=0$ is handled, and $P\left(0\right)=1$). A zero-free entire function can be written as $e^{g\left(z\right)}$ with $g$ entire. Thus $f\left(z\right)=z^{m}e^{g\left(z\right)}P\left(z\right)$, as claimed. $\blacksquare$
 
 ## 19.3-8
 

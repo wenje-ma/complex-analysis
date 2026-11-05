@@ -141,21 +141,21 @@ $$
 
 ## 19.3-2
 
-对于任意使得 $\lim_{n\to\infty}a_{n}=\infty$ 的非零序列 $\left\{a_{n}\right\}\subset\mathbb{C}$, 令 $f\left(z\right)$ 等于无穷乘积 $\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, 其中 $\mathcal{E}_{n}$ 如**解答 19.3-1**. 证明: $f$ 是一个整函数, 它的零点有且只有 $a_{n}$, $n\in\mathbb{N}$, 而且它在 $a_{n}$ 处零点的阶数等于序列中 $a_{n}$ 出现的次数.
+对于任意使得 $\lim_{n\to\infty}a_{n}=\infty$ 的非零序列 $\left\{a_{n}\right\}\subset\mathbb{C}$, 令 $f\left(z\right)$ 等于无穷乘积 $\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, 其中 $\mathcal{E}_{n}$ 如解答 19.3-1. 证明: $f$ 是一个整函数, 它的零点有且只有 $a_{n}$, $n\in\mathbb{N}$, 而且它在 $a_{n}$ 处零点的阶数等于序列中 $a_{n}$ 出现的次数.
 
 ### 解答 19.3-2
 
-对任意 $R> 0$, 因 $a_{n}\to\infty$, 存在 $N$ 使 $n> N$ 时 $\left|a_{n}\right|> 2R$, 从而 $\left|z/a_{n}\right|\le\frac12$ ($\left|z\right|\le R$). 由**解答 19.3-1 (i)**, $\left|1-\mathcal{E}_{n}\left(z/a_{n}\right)\right|\le c\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}$, 而 $\sum_{n}\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}\le\sum_{n> N}\left(\frac12\right)^{n+1}< +\infty$. 故乘积在 $\left\{\left|z\right|\le R\right\}$ 上一致收敛, $f$ 是整函数.
+对任意 $R> 0$, 因 $a_{n}\to\infty$, 存在 $N$ 使 $n> N$ 时 $\left|a_{n}\right|> 2R$, 从而 $\left|z/a_{n}\right|\le\frac12$ ($\left|z\right|\le R$). 由解答 19.3-1 (i), $\left|1-\mathcal{E}_{n}\left(z/a_{n}\right)\right|\le c\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}$, 而 $\sum_{n}\left(\frac{R}{\left|a_{n}\right|}\right)^{n+1}\le\sum_{n> N}\left(\frac12\right)^{n+1}< +\infty$. 故乘积在 $\left\{\left|z\right|\le R\right\}$ 上一致收敛, $f$ 是整函数.
 
 每个 $\mathcal{E}_{n}\left(z/a_{n}\right)$ 只在 $z=a_{n}$ 处有零点 (因 $\mathcal{E}_{n}\left(0\right)=1$, 且 $\mathcal{E}_{n}$ 的唯一零点是 $z=a_{n}$), 且为简单零点. 乘积在 $a_{n}$ 处因子为零, 其余因子非零 (各 $a_{n}$ 不同或计重数时按次数), 故 $f$ 的零点恰为诸 $a_{n}$, 在 $a_{n}$ 处的阶等于 $a_{n}$ 在序列中出现的次数. $\blacksquare$
 
 ## 19.3-3
 
-证明: 任意整函数 $f$ 都可分解成无穷乘积的形式 $f\left(z\right)=z^{m}e^{g\left(z\right)}\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, 其中 $\mathcal{E}_{n}$ 如**解答 19.3-1**, $m$ 为 $f$ 在 $z=0$ 处零点的阶数, $g$ 为某整函数, $a_{n}$ 是 $f$ 的零点.
+证明: 任意整函数 $f$ 都可分解成无穷乘积的形式 $f\left(z\right)=z^{m}e^{g\left(z\right)}\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$, 其中 $\mathcal{E}_{n}$ 如解答 19.3-1, $m$ 为 $f$ 在 $z=0$ 处零点的阶数, $g$ 为某整函数, $a_{n}$ 是 $f$ 的零点.
 
 ### 解答 19.3-3
 
-设 $f$ 的非零零点 (计重数) 为 $a_{1},a_{2},\ldots$, 在 $0$ 处的零点阶数为 $m$. 由**解答 19.3-2**, $P\left(z\right):=\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$ 是整函数, 其零点恰为诸 $a_{n}$ 且阶数与 $f$ 一致. 故 $\frac{f\left(z\right)}{z^{m}P\left(z\right)}$ 是无零点的整函数 (在 $z=0$ 处的可去奇点已处理, $P\left(0\right)=1$). 无零点的整函数可写成指数 $e^{g\left(z\right)}$ ($g$ 整). 于是 $f\left(z\right)=z^{m}e^{g\left(z\right)}P\left(z\right)$, 即所证. $\blacksquare$
+设 $f$ 的非零零点 (计重数) 为 $a_{1},a_{2},\ldots$, 在 $0$ 处的零点阶数为 $m$. 由解答 19.3-2, $P\left(z\right):=\prod_{n=1}^{+\infty}\mathcal{E}_{n}\left(\frac{z}{a_{n}}\right)$ 是整函数, 其零点恰为诸 $a_{n}$ 且阶数与 $f$ 一致. 故 $\frac{f\left(z\right)}{z^{m}P\left(z\right)}$ 是无零点的整函数 (在 $z=0$ 处的可去奇点已处理, $P\left(0\right)=1$). 无零点的整函数可写成指数 $e^{g\left(z\right)}$ ($g$ 整). 于是 $f\left(z\right)=z^{m}e^{g\left(z\right)}P\left(z\right)$, 即所证. $\blacksquare$
 
 ## 19.3-8
 

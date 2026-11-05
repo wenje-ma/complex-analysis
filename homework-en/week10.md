@@ -50,7 +50,7 @@ Let $u=\frac{1}{2\pi}\log\left|z\right|$, $z\in A\left(0;0;1\right):=\left\{0< \
 
 ### Solution to 16.3-2
 
-(i) In polar coordinates, $u=\frac{1}{2\pi}\ln r$. $u_{r}=\frac{1}{2\pi r}$, $u_{rr}=-\frac{1}{2\pi r^{2}}$, $u_{\theta\theta}=0$. By the polar Laplacian in **Solution 16.3-1 (i)**,
+(i) In polar coordinates, $u=\frac{1}{2\pi}\ln r$. $u_{r}=\frac{1}{2\pi r}$, $u_{rr}=-\frac{1}{2\pi r^{2}}$, $u_{\theta\theta}=0$. By the polar Laplacian in Solution 16.3-1 (i),
 
 $$
 \Delta u=u_{rr}+\frac1r u_{r}+\frac1{r^{2}}u_{\theta\theta}=-\frac1{2\pi r^{2}}+\frac{1}{2\pi r^{2}}+0=0,

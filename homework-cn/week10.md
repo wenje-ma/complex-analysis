@@ -50,7 +50,7 @@
 
 ### 解答 16.3-2
 
-(i) 在极坐标下 $u=\frac{1}{2\pi}\ln r$. $u_{r}=\frac{1}{2\pi r}$, $u_{rr}=-\frac{1}{2\pi r^{2}}$, $u_{\theta\theta}=0$. 由**解答 16.3-1 (i)** 中的极坐标拉普拉斯算子,
+(i) 在极坐标下 $u=\frac{1}{2\pi}\ln r$. $u_{r}=\frac{1}{2\pi r}$, $u_{rr}=-\frac{1}{2\pi r^{2}}$, $u_{\theta\theta}=0$. 由解答 16.3-1 (i) 中的极坐标拉普拉斯算子,
 
 $$
 \Delta u=u_{rr}+\frac1r u_{r}+\frac1{r^{2}}u_{\theta\theta}=-\frac1{2\pi r^{2}}+\frac{1}{2\pi r^{2}}+0=0,
