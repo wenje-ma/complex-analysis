@@ -17,7 +17,7 @@ $$
 > On the unit sphere $S:\xi^{2}+\eta^{2}+\zeta^{2}=1$, the point $z=\left(x,y\right)$ in the complex plane corresponds to
 
 $$
-Z=\left(\xi,\eta,\zeta\right),\quad\xi=\frac{2x}{1+\left|z\right|^{2}},\,\eta=\frac{2y}{1+\left|z\right|^{2}},\,\zeta=\frac{\left|z\right|^{2}-1}{1+\left|z\right|^{2}},
+Z=\left(\xi,\eta,\zeta\right),\quad\xi=\frac{2x}{1+\left|z\right|^{2}},\eta=\frac{2y}{1+\left|z\right|^{2}},\zeta=\frac{\left|z\right|^{2}-1}{1+\left|z\right|^{2}},
 $$
 establishing a bijection between $\mathbb{C}$ and $S\setminus\left\{N\right\}$ (the sphere minus the north pole).
 
@@ -51,18 +51,18 @@ $$
 
 > **Definition 2.4.1 (Limit of a Function Along a Set)**
 > 
-> Let $f$ be defined on $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. We say $A\in\mathbb{C}$ is the limit of $f$ as $z\to{a}$ along $M$, written $\lim_{z\to{a},\,z\in{M}}f\left(z\right)=A$, if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $z\in{M}$, $0<\rho\left(z,a\right)<\delta$ implies $\rho\left(f\left(z\right),A\right)<\varepsilon$.
+> Let $f$ be defined on $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. We say $A\in\mathbb{C}$ is the limit of $f$ as $z\to{a}$ along $M$, written $\lim_{z\to{a},z\in{M}}f\left(z\right)=A$, if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $z\in{M}$, $0<\rho\left(z,a\right)<\delta$ implies $\rho\left(f\left(z\right),A\right)<\varepsilon$.
 
 > **Definition 2.4.2 (Boundedness and Continuity)**
 > 
-> If there exists $C>0$ such that $\left|f\left(z\right)\right|\le{C}$ for all $z\in{M}$, then $f$ is bounded on $M$; if $\lim_{z\to{a},\,z\in{M}}f\left(z\right)=f\left(a\right)$, then $f$ is continuous at $a$ (along $M$); if $f$ is continuous at every $a\in{M}$, then $f$ is continuous on $M$.
+> If there exists $C>0$ such that $\left|f\left(z\right)\right|\le{C}$ for all $z\in{M}$, then $f$ is bounded on $M$; if $\lim_{z\to{a},z\in{M}}f\left(z\right)=f\left(a\right)$, then $f$ is continuous at $a$ (along $M$); if $f$ is continuous at every $a\in{M}$, then $f$ is continuous on $M$.
 
 ## 1.5-1
 
 Prove: if $\left|z\right|=1$ and $z\ne\pm1$, then
 
 $$
-\operatorname{Arg}\frac{z-1}{z+1}=\frac{\pi}{2}\,\text{or}\,\frac{3\pi}{2}\quad\left(\bmod2\pi\right).
+\operatorname{Arg}\frac{z-1}{z+1}=\frac{\pi}{2}\;\text{or}\;\frac{3\pi}{2}\quad\left(\bmod2\pi\right).
 $$
 
 ### Solution to 1.5-1
@@ -225,7 +225,7 @@ i.e. $\sin{t}\ge\frac{2t}{\pi}$, giving $\rho\left(a,b\right)=2\sin{t}\ge\frac{4
 
 ## 2.5-2
 
-Let $f$ be uniformly continuous on a domain $D$. Prove: for every $z_{0}\in\partial{D}$, the limit $\lim_{z\to{z}_{0},\,z\in{D}}f\left(z\right)$ exists.
+Let $f$ be uniformly continuous on a domain $D$. Prove: for every $z_{0}\in\partial{D}$, the limit $\lim_{z\to{z}_{0},z\in{D}}f\left(z\right)$ exists.
 
 ### Solution to 2.5-2
 
@@ -233,7 +233,7 @@ First show that the image of any sequence in $D$ converging to $z_{0}$ converges
 
 Next show the limit is independent of the sequence. Let $z_{n},z_{n}'\in{D}$ with $z_{n}\to{z}_{0}$, $z_{n}'\to{z}_{0}$, and $f\left(z_{n}\right)\to{L}$, $f\left(z_{n}'\right)\to{L}'$. Construct the interleaved sequence $z_{1},z_{1}',z_{2},z_{2}',\cdots$, which still converges to $z_{0}$, so its image converges; but its two subsequences converge to $L$ and $L'$ respectively, hence $L=L'$.
 
-Therefore the limit $\lim_{z\to{z}_{0},\,z\in{D}}f\left(z\right)$ exists. $\blacksquare$
+Therefore the limit $\lim_{z\to{z}_{0},z\in{D}}f\left(z\right)$ exists. $\blacksquare$
 
 ## 2.5-4
 

@@ -17,7 +17,7 @@ $$
 > 单位球面 $S:\xi^{2}+\eta^{2}+\zeta^{2}=1$ 上, 复平面点 $z=\left(x,y\right)$ 对应
 
 $$
-Z=\left(\xi,\eta,\zeta\right),\quad\xi=\frac{2x}{1+\left|z\right|^{2}},\,\eta=\frac{2y}{1+\left|z\right|^{2}},\,\zeta=\frac{\left|z\right|^{2}-1}{1+\left|z\right|^{2}},
+Z=\left(\xi,\eta,\zeta\right),\quad\xi=\frac{2x}{1+\left|z\right|^{2}},\eta=\frac{2y}{1+\left|z\right|^{2}},\zeta=\frac{\left|z\right|^{2}-1}{1+\left|z\right|^{2}},
 $$
 建立 $\mathbb{C}$ 与 $S\setminus\left\{N\right\}$ (去掉北极点) 的一一对应.
 
@@ -51,18 +51,18 @@ $$
 
 > **定义 2.4.1 (函数沿某集合的极限)**
 > 
-> 设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to{a},\,z\in{M}}f\left(z\right)=A$, 如果对任意 $\varepsilon>0$ 存在 $\delta>0$ 使对任意 $z\in{M}$, 若 $0<\rho\left(z,a\right)<\delta$ 则 $\rho\left(f\left(z\right),A\right)<\varepsilon$.
+> 设函数 $f$ 在集合 $M\subset\overline{\mathbb{C}}$ 上有定义, 点 $a\in\overline{\mathbb{C}}$ 是 $M$ 的极限点. 称 $A\in\mathbb{C}$ 为 $f$ 当 $z$ 沿 $M$ 趋向 $a$ 时的极限, 记为 $\lim_{z\to{a},z\in{M}}f\left(z\right)=A$, 如果对任意 $\varepsilon>0$ 存在 $\delta>0$ 使对任意 $z\in{M}$, 若 $0<\rho\left(z,a\right)<\delta$ 则 $\rho\left(f\left(z\right),A\right)<\varepsilon$.
 
 > **定义 2.4.2 (函数的有界性和连续性)**
 > 
-> 若存在 $C>0$ 使 $\forall{z}\in{M}$ 有 $\left|f\left(z\right)\right|\le{C}$, 则称 $f$ 在 $M$ 上有界; 若 $\lim_{z\to{a},\,z\in{M}}f\left(z\right)=f\left(a\right)$, 则称 $f$ 在点 $a$ 处 (沿 $M$) 连续; 若对 $\forall{a}\in{M}$ 均连续, 则称 $f$ 在 $M$ 上连续.
+> 若存在 $C>0$ 使 $\forall{z}\in{M}$ 有 $\left|f\left(z\right)\right|\le{C}$, 则称 $f$ 在 $M$ 上有界; 若 $\lim_{z\to{a},z\in{M}}f\left(z\right)=f\left(a\right)$, 则称 $f$ 在点 $a$ 处 (沿 $M$) 连续; 若对 $\forall{a}\in{M}$ 均连续, 则称 $f$ 在 $M$ 上连续.
 
 ## 1.5-1
 
 证明: 若 $\left|z\right|=1$ 且 $z\ne\pm1$, 则
 
 $$
-\operatorname{Arg}\frac{z-1}{z+1}=\frac{\pi}{2}\,\text{或}\,\frac{3\pi}{2}\quad\left(\bmod2\pi\right).
+\operatorname{Arg}\frac{z-1}{z+1}=\frac{\pi}{2}\;\text{或}\;\frac{3\pi}{2}\quad\left(\bmod2\pi\right).
 $$
 
 ### 解答 1.5-1
@@ -225,7 +225,7 @@ $$
 
 ## 2.5-2
 
-令函数 $f$ 在区域 $D$ 上一致连续. 证明: 对于 $\forall{z}_{0}\in\partial{D}$, 极限 $\lim_{z\to{z}_{0},\,z\in{D}}f\left(z\right)$ 都存在.
+令函数 $f$ 在区域 $D$ 上一致连续. 证明: 对于 $\forall{z}_{0}\in\partial{D}$, 极限 $\lim_{z\to{z}_{0},z\in{D}}f\left(z\right)$ 都存在.
 
 ### 解答 2.5-2
 
@@ -233,7 +233,7 @@ $$
 
 再证极限不依赖序列的选取. 设 $z_{n},z_{n}'\in{D}$, $z_{n}\to{z}_{0}$, $z_{n}'\to{z}_{0}$, 且 $f\left(z_{n}\right)\to{L}$, $f\left(z_{n}'\right)\to{L}'$. 构造交错序列 $z_{1},z_{1}',z_{2},z_{2}',\cdots$, 它仍收敛于 $z_{0}$, 故其像收敛, 但它的两个子列分别收敛于 $L$ 与 $L'$, 从而 $L=L'$.
 
-综上, 极限 $\lim_{z\to{z}_{0},\,z\in{D}}f\left(z\right)$ 存在. $\blacksquare$
+综上, 极限 $\lim_{z\to{z}_{0},z\in{D}}f\left(z\right)$ 存在. $\blacksquare$
 
 ## 2.5-4
 

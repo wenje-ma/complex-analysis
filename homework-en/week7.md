@@ -139,7 +139,7 @@ Find a conformal equivalence from the region bounded by the circles $\left\{\lef
 
 ### Solution to 12.3-2
 
-The circles $C_{1}:\left|z\right|=1$ and $C_{2}:\left|z-1\right|=\frac{5}{2}$ are disjoint (both centers on the real axis), with $C_{1}$ inside the interior region of $C_{2}$; they bound the region $D=\left\{1<\left|z\right|<3.5\,\text{\left(annular\right)}\right\}$ (i.e. $\left|z\right|>1$ and $\left|z-1\right|<2.5$).
+The circles $C_{1}:\left|z\right|=1$ and $C_{2}:\left|z-1\right|=\frac{5}{2}$ are disjoint (both centers on the real axis), with $C_{1}$ inside the interior region of $C_{2}$; they bound the region $D=\left\{1<\left|z\right|<3.5\;\text{\left(annular\right)}\right\}$ (i.e. $\left|z\right|>1$ and $\left|z-1\right|<2.5$).
 
 Use the fractional linear map $T\left(z\right)=\frac{z-\alpha}{z-\beta}$ ($\alpha,\beta\in\mathbb{R}$) to map the two circles to concentric circles centered at the origin, i.e. require $\frac{\left|z-\alpha\right|}{\left|z-\beta\right|}$ to be constant $r_{1}$ on $C_{1}$ and $r_{2}$ on $C_{2}$.
 
@@ -185,14 +185,14 @@ $\blacksquare$
 
 ## 12.3-4
 
-Find a conformal equivalence between the region $\left\{z\in\mathbb{C}:\operatorname{Re}z>0\,\text{and}\,\arg{z}\in\left(0,1\right)\right\}$ and the unit disk.
+Find a conformal equivalence between the region $\left\{z\in\mathbb{C}:\operatorname{Re}z>0\;\text{and}\;\arg{z}\in\left(0,1\right)\right\}$ and the unit disk.
 
 ### Solution to 12.3-4
 
 Since $0<1<\frac{\pi}{2}$, the condition $\arg{z}\in\left(0,1\right)$ already implies $\operatorname{Re}z=\rho\cos\arg{z}>0$, so the region is the sector
 
 $$
-D=\left\{z=\rho{e}^{i\theta}:\rho>0,\,0<\theta<1\right\}.
+D=\left\{z=\rho{e}^{i\theta}:\rho>0,0<\theta<1\right\}.
 $$
 
 Step 1: the power map $z\mapsto{z}^{\pi}$ (holomorphic branch) maps the sector $\left\{0<\arg{z}<1\right\}$ to the sector $\left\{0<\arg{u}<\pi\right\}$, i.e. the upper half-plane $\left\{\operatorname{Im}u>0\right\}$.

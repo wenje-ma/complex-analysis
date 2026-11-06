@@ -82,7 +82,7 @@ By (i), $\frac{2\pi{i}}{a-b}\left(f\left(a\right)-f\left(b\right)\right)\to0$, s
 
 ## 14.3-16
 
-Let $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (so $\beta^{2}=i\pi$), and consider $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta{z}}}$. (i) Verify that $f$ has singularities only at $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,\,n\in\mathbb{Z}\right\}$, all simple poles; (ii) verify $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$ for all $z\in\mathbb{C}\setminus\mathcal{Z}$; (iii) for large $R>0$, consider the parallelogram $\Omega$ with vertices $-R,R,R+\beta,-R+\beta$; verify $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi{i}\operatorname{Res}_{z_{0}}f$, where $z_{0}$ is as in (i); (iv) use the above to verify $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
+Let $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (so $\beta^{2}=i\pi$), and consider $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta{z}}}$. (i) Verify that $f$ has singularities only at $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,n\in\mathbb{Z}\right\}$, all simple poles; (ii) verify $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$ for all $z\in\mathbb{C}\setminus\mathcal{Z}$; (iii) for large $R>0$, consider the parallelogram $\Omega$ with vertices $-R,R,R+\beta,-R+\beta$; verify $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi{i}\operatorname{Res}_{z_{0}}f$, where $z_{0}$ is as in (i); (iv) use the above to verify $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
 
 ### Solution to 14.3-16
 
@@ -94,7 +94,7 @@ $$
 f\left(z\right)-f\left(z+\beta\right)=\frac{e^{-z^{2}}}{1+u}-\frac{e^{-z^{2}-2\beta{z}-\beta^{2}}}{1+u}=e^{-z^{2}}\frac{1-\left(-1\right)u}{1+u}=e^{-z^{2}}\frac{1+u}{1+u}=e^{-z^{2}}.
 $$
 
-(iii) The parallelogram is $\Omega=\left\{x+t\beta:\,x\in\left[-R,R\right],\,t\in\left[0,1\right]\right\}$. The pole $z_{n}=\left(n+\frac12\right)\beta$ lies inside $\Omega$ iff $n+\frac12\in\left[0,1\right]$, i.e. $n=0$; hence the only pole in $\Omega$ is $z_{0}=\frac\beta2$. By **Theorem 14.1.3 (Residue Theorem)**,
+(iii) The parallelogram is $\Omega=\left\{x+t\beta:\,x\in\left[-R,R\right],t\in\left[0,1\right]\right\}$. The pole $z_{n}=\left(n+\frac12\right)\beta$ lies inside $\Omega$ iff $n+\frac12\in\left[0,1\right]$, i.e. $n=0$; hence the only pole in $\Omega$ is $z_{0}=\frac\beta2$. By **Theorem 14.1.3 (Residue Theorem)**,
 
 $$
 \oint_{\partial\Omega}f\left(z\right)\,dz=2\pi{i}\operatorname{Res}_{z_{0}}f=2\pi{i}\frac{e^{-z_{0}^{2}}}{2\beta}=2\pi{i}\frac{e^{-\beta^{2}/4}}{2\beta}.
@@ -153,7 +153,7 @@ $$
 (iv) By the residue theorem on $C_{N}$ (for large $N$, $C_{N}$ contains all integers $\left|n\right|\le{N}$ and the poles from $Z\left(Q\right)$ inside):
 
 $$
-\int_{C_{N}}f\,dz=2\pi{i}\left[\sum_{\left|n\right|\le{N}}\operatorname{Res}_{z=n}f+\sum_{a\in{Z}\left(Q\right),\,a\text{~inside~}C_{N}}\operatorname{Res}_{z=a}f\right].
+\int_{C_{N}}f\,dz=2\pi{i}\left[\sum_{\left|n\right|\le{N}}\operatorname{Res}_{z=n}f+\sum_{a\in{Z}\left(Q\right),a\text{~inside~}C_{N}}\operatorname{Res}_{z=a}f\right].
 $$
 
 By (ii), letting $N\to\infty$ gives $\sum_{n=-\infty}^{+\infty}\operatorname{Res}_{z=n}f+\sum_{a\in{Z}\left(Q\right)}\operatorname{Res}_{z=a}f=0$. If $Z\left(Q\right)\cap\mathbb{Z}=\emptyset$ (as in (v)), then $\sum_{a\in{Z}\left(Q\right)}\operatorname{Res}_{z=a}f=\sum_{a\in{Z}\left(Q\right)\setminus\mathbb{Z}}\operatorname{Res}_{z=a}f$, as claimed.

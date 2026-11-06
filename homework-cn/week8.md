@@ -157,7 +157,7 @@ $G$ 有界单连通且非 $\mathbb{C}$, 由黎曼映射定理 $G\cong\mathbb{D}$
 记 $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. 反设存在 $n\in\mathbb{N}$ 使得 $\varepsilon^{n}M\left(\varepsilon\right)$ 有上界, 即存在 $C>0$ 使 $\varepsilon^{n}M\left(\varepsilon\right)\le{C}$, 则
 
 $$
-\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad0<\left|z-a\right|\,\text{充分小}.
+\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad0<\left|z-a\right|\;\text{充分小}.
 $$
 
 于是 $\left(z-a\right)^{n}f\left(z\right)$ 在 $a$ 的去心邻域有界, 由**定理 13.2.4 (黎曼可去奇点定理)**, $0$ 是 $\left(z-a\right)^{n}f$ 的可去奇点, 故 $f$ 在 $a$ 处至多是 $n$-阶极点. 但 $a$ 是 $f$ 的本性奇点, 矛盾. 故对每个 $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ 无上界, 结合 $\varepsilon^{n}M\left(\varepsilon\right)$ 随 $\varepsilon$ 的单调行为, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$

@@ -82,7 +82,7 @@ $$
 
 ## 14.3-16
 
-令 $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (即 $\beta^{2}=i\pi$), 考虑函数 $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta{z}}}$. (i) 验证 $f$ 只在点集 $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,\,n\in\mathbb{Z}\right\}$ 处有奇点, 且都为简单极点; (ii) 验证 $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$, $\forall{z}\in\mathbb{C}\setminus\mathcal{Z}$; (iii) 对于 $R>0$ 充分大, 考虑以 $-R,R,R+\beta,-R+\beta$ 为顶点的平行四边形 $\Omega$, 验证 $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi{i}\operatorname{Res}_{z_{0}}f$, 其中 $z_{0}$ 如 (i); (iv) 利用上述结论, 验证 $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
+令 $\beta=\sqrt\pi\,e^{i\frac{\pi}{4}}$ (即 $\beta^{2}=i\pi$), 考虑函数 $f\left(z\right)=\frac{e^{-z^{2}}}{1+e^{-2\beta{z}}}$. (i) 验证 $f$ 只在点集 $\mathcal{Z}:=\left\{z_{n}=\left(n+\frac12\right)\beta,n\in\mathbb{Z}\right\}$ 处有奇点, 且都为简单极点; (ii) 验证 $f\left(z\right)-f\left(z+\beta\right)=e^{-z^{2}}$, $\forall{z}\in\mathbb{C}\setminus\mathcal{Z}$; (iii) 对于 $R>0$ 充分大, 考虑以 $-R,R,R+\beta,-R+\beta$ 为顶点的平行四边形 $\Omega$, 验证 $\int_{-\infty}^{+\infty}e^{-x^{2}}dx=2\pi{i}\operatorname{Res}_{z_{0}}f$, 其中 $z_{0}$ 如 (i); (iv) 利用上述结论, 验证 $\int_{-\infty}^{+\infty}e^{-\frac{x^{2}}{2}}dx=\sqrt{2\pi}$.
 
 ### 解答 14.3-16
 
@@ -94,7 +94,7 @@ $$
 f\left(z\right)-f\left(z+\beta\right)=\frac{e^{-z^{2}}}{1+u}-\frac{e^{-z^{2}-2\beta{z}-\beta^{2}}}{1+u}=e^{-z^{2}}\frac{1-\left(-1\right)u}{1+u}=e^{-z^{2}}\frac{1+u}{1+u}=e^{-z^{2}}.
 $$
 
-(iii) 平行四边形 $\Omega=\left\{x+t\beta:\,x\in\left[-R,R\right],\,t\in\left[0,1\right]\right\}$. 极点 $z_{n}=\left(n+\frac12\right)\beta$ 在 $\Omega$ 内当且仅当 $n+\frac12\in\left[0,1\right]$, 即 $n=0$, 故 $\Omega$ 内只有 $z_{0}=\frac\beta2$. 由**定理 14.1.3 (留数定理)**,
+(iii) 平行四边形 $\Omega=\left\{x+t\beta:\,x\in\left[-R,R\right],t\in\left[0,1\right]\right\}$. 极点 $z_{n}=\left(n+\frac12\right)\beta$ 在 $\Omega$ 内当且仅当 $n+\frac12\in\left[0,1\right]$, 即 $n=0$, 故 $\Omega$ 内只有 $z_{0}=\frac\beta2$. 由**定理 14.1.3 (留数定理)**,
 
 $$
 \oint_{\partial\Omega}f\left(z\right)\,dz=2\pi{i}\operatorname{Res}_{z_{0}}f=2\pi{i}\frac{e^{-z_{0}^{2}}}{2\beta}=2\pi{i}\frac{e^{-\beta^{2}/4}}{2\beta}.
@@ -153,7 +153,7 @@ $$
 (iv) 由留数定理于 $C_{N}$ (当 $N$ 充分大, $C_{N}$ 内含全部整数 $\left|n\right|\le{N}$ 与 $Z\left(Q\right)$ 在其中的极点):
 
 $$
-\int_{C_{N}}f\,dz=2\pi{i}\left[\sum_{\left|n\right|\le{N}}\operatorname{Res}_{z=n}f+\sum_{a\in{Z}\left(Q\right),\,a\text{~在~}C_{N}\text{~内}}\operatorname{Res}_{z=a}f\right].
+\int_{C_{N}}f\,dz=2\pi{i}\left[\sum_{\left|n\right|\le{N}}\operatorname{Res}_{z=n}f+\sum_{a\in{Z}\left(Q\right),a\text{~在~}C_{N}\text{~内}}\operatorname{Res}_{z=a}f\right].
 $$
 
 由 (ii) 取 $N\to\infty$ 得 $\sum_{n=-\infty}^{+\infty}\operatorname{Res}_{z=n}f+\sum_{a\in{Z}\left(Q\right)}\operatorname{Res}_{z=a}f=0$. 若 $Z\left(Q\right)\cap\mathbb{Z}=\emptyset$ (如 (v) 的情形), 则 $\sum_{a\in{Z}\left(Q\right)}\operatorname{Res}_{z=a}f=\sum_{a\in{Z}\left(Q\right)\setminus\mathbb{Z}}\operatorname{Res}_{z=a}f$, 即得所证.

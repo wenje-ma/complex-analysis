@@ -224,7 +224,7 @@ $$
 
 (i) $g_{f}'\left(z_{0}\right)=f'\left(z_{0}\right)\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{-1}$;
 
-(ii) $\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right),\,f\left(z_{0}\right)=0\right\}=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right)\right\}$;
+(ii) $\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right),f\left(z_{0}\right)=0\right\}=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right)\right\}$;
 
 (iii) 若 $h\in{H}\left(\Omega\right)$ 满足 $h'\left(z_{0}\right)=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right)\right\}$, 则 $h\left(z_{0}\right)=0$;
 

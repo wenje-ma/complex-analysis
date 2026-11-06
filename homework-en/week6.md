@@ -224,7 +224,7 @@ Let $\Omega\subset\mathbb{C}$ be a domain, $H\left(\Omega\right)$ the set of all
 
 (i) $g_{f}'\left(z_{0}\right)=f'\left(z_{0}\right)\left(1-\left|f\left(z_{0}\right)\right|^{2}\right)^{-1}$;
 
-(ii) $\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right),\,f\left(z_{0}\right)=0\right\}=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right)\right\}$;
+(ii) $\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right),f\left(z_{0}\right)=0\right\}=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right)\right\}$;
 
 (iii) if $h\in{H}\left(\Omega\right)$ satisfies $h'\left(z_{0}\right)=\sup\left\{\left|f'\left(z_{0}\right)\right|:f\in{H}\left(\Omega\right)\right\}$, then $h\left(z_{0}\right)=0$;
 

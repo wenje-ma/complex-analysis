@@ -76,7 +76,7 @@ and $-\int_{\partial{B}\left(0,\varepsilon\right)}f\frac{\partial{u}}{\partial{n
 
 ## 16.3-7
 
-Let $\mathbb{H}:=\left\{\operatorname{Im}z>0\right\}$, and let $f$ be continuous on $\partial\mathbb{H}$ with $\lim_{z\to\infty,\,z\in\partial\mathbb{H}}f\left(z\right)$ existing and finite. Find the solution $u$ of the Dirichlet problem on $\mathbb{H}$ with $u|_{\partial\mathbb{H}}=f$.
+Let $\mathbb{H}:=\left\{\operatorname{Im}z>0\right\}$, and let $f$ be continuous on $\partial\mathbb{H}$ with $\lim_{z\to\infty,z\in\partial\mathbb{H}}f\left(z\right)$ existing and finite. Find the solution $u$ of the Dirichlet problem on $\mathbb{H}$ with $u|_{\partial\mathbb{H}}=f$.
 
 ### Solution to 16.3-7
 
@@ -176,7 +176,7 @@ Let $U_{0}=B\left(1,1\right):=\left\{\left|z-1\right|<1\right\}$, and let $f_{0}
 
 ### Solution to 17.4-5
 
-$\gamma_{n}$ starts at $1$, loops around the origin $\left|n\right|$ times (direction depending on the sign of $n$), and returns to $1$. Along $\gamma_{n}$, the argument of $\operatorname{Log}z$ accumulates continuously by $2\pi{n}t$. For each $t\in\left[0,1\right]$, take $U_{t}=B\left(\gamma_{n}\left(t\right),\,\delta\right)$ (a small neighborhood not containing the origin), and define
+$\gamma_{n}$ starts at $1$, loops around the origin $\left|n\right|$ times (direction depending on the sign of $n$), and returns to $1$. Along $\gamma_{n}$, the argument of $\operatorname{Log}z$ accumulates continuously by $2\pi{n}t$. For each $t\in\left[0,1\right]$, take $U_{t}=B\left(\gamma_{n}\left(t\right),\delta\right)$ (a small neighborhood not containing the origin), and define
 
 $$
 f_{t}\left(z\right):=f_{0}\left(z\right)+2\pi{i}nt,\quad{z}\in{U}_{t},

@@ -76,7 +76,7 @@ $$
 
 ## 16.3-7
 
-令 $\mathbb{H}:=\left\{\operatorname{Im}z>0\right\}$, 在 $\partial\mathbb{H}$ 上给定一个连续函数 $f$ 且 $\lim_{z\to\infty,\,z\in\partial\mathbb{H}}f\left(z\right)$ 存在且有限. 试求 $\mathbb{H}$ 上的狄利克雷问题的解 $u$ 使得 $u|_{\partial\mathbb{H}}=f$.
+令 $\mathbb{H}:=\left\{\operatorname{Im}z>0\right\}$, 在 $\partial\mathbb{H}$ 上给定一个连续函数 $f$ 且 $\lim_{z\to\infty,z\in\partial\mathbb{H}}f\left(z\right)$ 存在且有限. 试求 $\mathbb{H}$ 上的狄利克雷问题的解 $u$ 使得 $u|_{\partial\mathbb{H}}=f$.
 
 ### 解答 16.3-7
 
@@ -176,7 +176,7 @@ $$
 
 ### 解答 17.4-5
 
-$\gamma_{n}$ 从 $1$ 出发绕原点 $\left|n\right|$ 圈回到 $1$ (方向由 $n$ 的符号决定). 沿 $\gamma_{n}$, $\operatorname{Log}z$ 的幅角连续累积 $2\pi{n}t$. 对每个 $t\in\left[0,1\right]$, 取 $U_{t}=B\left(\gamma_{n}\left(t\right),\,\delta\right)$ (小邻域, 不含原点 $0$), 并定义
+$\gamma_{n}$ 从 $1$ 出发绕原点 $\left|n\right|$ 圈回到 $1$ (方向由 $n$ 的符号决定). 沿 $\gamma_{n}$, $\operatorname{Log}z$ 的幅角连续累积 $2\pi{n}t$. 对每个 $t\in\left[0,1\right]$, 取 $U_{t}=B\left(\gamma_{n}\left(t\right),\delta\right)$ (小邻域, 不含原点 $0$), 并定义
 
 $$
 f_{t}\left(z\right):=f_{0}\left(z\right)+2\pi{i}nt,\quad{z}\in{U}_{t},

@@ -268,7 +268,7 @@ $$
 (ii) 记 $w\left(z\right)=\frac{1+iz}{1-iz}$ (莫比乌斯变换), 定义域要求 $w$ 落在 $\log$ 分支的定义域内且 $z\ne\pm{i}$. $\log$ 分支在 $\mathbb{C}$ 去掉幅角为 $\alpha$ 的射线 $R_{\alpha}:=\left\{re^{i\alpha}:r\ge0\right\}$ 上全纯, 故 $f$ 的定义域为
 
 $$
-D:=\left\{z\in\mathbb{C}:\,z\ne\pm{i},\,\frac{1+iz}{1-iz}\notin{R}_{\alpha}\right\}.
+D:=\left\{z\in\mathbb{C}:\,z\ne\pm{i},\frac{1+iz}{1-iz}\notin{R}_{\alpha}\right\}.
 $$
 
 验证 $f\left(z\right)=z$: 在 $D$ 内令 $\theta=\frac{1}{2i}\log\left(\frac{1+iz}{1-iz}\right)$, 则 $e^{2i\theta}=\frac{1+iz}{1-iz}$. 于是

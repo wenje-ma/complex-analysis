@@ -22,11 +22,11 @@
 
 > **Definition 2.4.1 (Limit of a Function Along a Set)**
 > 
-> Let $f$ be defined on $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. We say $A\in\mathbb{C}$ is the limit of $f$ as $z\to{a}$ along $M$, written $\lim_{z\to{a},\,z\in{M}}f\left(z\right)=A$, if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $z\in{M}$, $0<\rho\left(z,a\right)<\delta$ implies $\rho\left(f\left(z\right),A\right)<\varepsilon$.
+> Let $f$ be defined on $M\subset\overline{\mathbb{C}}$, and let $a\in\overline{\mathbb{C}}$ be a limit point of $M$. We say $A\in\mathbb{C}$ is the limit of $f$ as $z\to{a}$ along $M$, written $\lim_{z\to{a},z\in{M}}f\left(z\right)=A$, if for every $\varepsilon>0$ there exists $\delta>0$ such that for all $z\in{M}$, $0<\rho\left(z,a\right)<\delta$ implies $\rho\left(f\left(z\right),A\right)<\varepsilon$.
 
 > **Definition 2.4.2 (Boundedness and Continuity)**
 > 
-> If there exists $C>0$ such that $\left|f\left(z\right)\right|\le{C}$ for all $z\in{M}$, then $f$ is bounded on $M$; if $\lim_{z\to{a},\,z\in{M}}f\left(z\right)=f\left(a\right)$, then $f$ is continuous at $a$ (along $M$); if $f$ is continuous at every $a\in{M}$, then $f$ is continuous on $M$.
+> If there exists $C>0$ such that $\left|f\left(z\right)\right|\le{C}$ for all $z\in{M}$, then $f$ is bounded on $M$; if $\lim_{z\to{a},z\in{M}}f\left(z\right)=f\left(a\right)$, then $f$ is continuous at $a$ (along $M$); if $f$ is continuous at every $a\in{M}$, then $f$ is continuous on $M$.
 
 > **Definition 3.1.1 ($\mathbb{R}$-linear and $\mathbb{C}$-linear)**
 > 

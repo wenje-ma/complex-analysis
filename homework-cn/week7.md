@@ -139,7 +139,7 @@ $$
 
 ### 解答 12.3-2
 
-两圆 $C_{1}:\left|z\right|=1$ 与 $C_{2}:\left|z-1\right|=\frac{5}{2}$ 不相交 (圆心都在实轴), $C_{1}$ 含于 $C_{2}$ 的内区域, 围成区域 $D=\left\{1<\left|z\right|<3.5\,\text{近似的环形}\right\}$ (即 $\left|z\right|>1$ 且 $\left|z-1\right|<2.5$).
+两圆 $C_{1}:\left|z\right|=1$ 与 $C_{2}:\left|z-1\right|=\frac{5}{2}$ 不相交 (圆心都在实轴), $C_{1}$ 含于 $C_{2}$ 的内区域, 围成区域 $D=\left\{1<\left|z\right|<3.5\;\text{近似的环形}\right\}$ (即 $\left|z\right|>1$ 且 $\left|z-1\right|<2.5$).
 
 用分式线性变换 $T\left(z\right)=\frac{z-\alpha}{z-\beta}$ ($\alpha,\beta\in\mathbb{R}$) 使两圆映成以原点为圆心的同心圆, 即要求 $\frac{\left|z-\alpha\right|}{\left|z-\beta\right|}$ 在 $C_{1}$ 与 $C_{2}$ 上分别取常数 $r_{1}$ 与 $r_{2}$.
 
@@ -185,14 +185,14 @@ $\blacksquare$
 
 ## 12.3-4
 
-寻找区域 $\left\{z\in\mathbb{C}:\operatorname{Re}z>0\,\text{且}\,\arg{z}\in\left(0,1\right)\right\}$ 与单位圆盘之间的共形等价映射.
+寻找区域 $\left\{z\in\mathbb{C}:\operatorname{Re}z>0\;\text{且}\;\arg{z}\in\left(0,1\right)\right\}$ 与单位圆盘之间的共形等价映射.
 
 ### 解答 12.3-4
 
 因 $0<1<\frac{\pi}{2}$, 条件 $\arg{z}\in\left(0,1\right)$ 已保证 $\operatorname{Re}z=\rho\cos\arg{z}>0$, 故该区域即角域
 
 $$
-D=\left\{z=\rho{e}^{i\theta}:\rho>0,\,0<\theta<1\right\}.
+D=\left\{z=\rho{e}^{i\theta}:\rho>0,0<\theta<1\right\}.
 $$
 
 第一步: 幂函数 $z\mapsto{z}^{\pi}$ (取全纯分支) 把角域 $\left\{0<\arg{z}<1\right\}$ 映成角域 $\left\{0<\arg{u}<\pi\right\}$, 即上半平面 $\left\{\operatorname{Im}u>0\right\}$.

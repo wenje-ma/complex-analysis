@@ -268,7 +268,7 @@ $$
 (ii) Let $w\left(z\right)=\frac{1+iz}{1-iz}$ (a Mobius transformation); the domain requires $w$ to lie in the domain of the $\log$ branch and $z\ne\pm{i}$. The $\log$ branch is holomorphic on $\mathbb{C}$ minus the ray $R_{\alpha}:=\left\{re^{i\alpha}:r\ge0\right\}$ of argument $\alpha$, so the domain of $f$ is
 
 $$
-D:=\left\{z\in\mathbb{C}:\,z\ne\pm{i},\,\frac{1+iz}{1-iz}\notin{R}_{\alpha}\right\}.
+D:=\left\{z\in\mathbb{C}:\,z\ne\pm{i},\frac{1+iz}{1-iz}\notin{R}_{\alpha}\right\}.
 $$
 
 Verify $f\left(z\right)=z$: on $D$, set $\theta=\frac{1}{2i}\log\left(\frac{1+iz}{1-iz}\right)$; then $e^{2i\theta}=\frac{1+iz}{1-iz}$. Thus

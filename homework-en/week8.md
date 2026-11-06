@@ -157,7 +157,7 @@ Let $a\in\mathbb{C}$ be an essential singularity of $f$. Prove: $\lim_{\varepsil
 Write $M\left(\varepsilon\right):=\max_{\left|z-a\right|=\varepsilon}\left|f\left(z\right)\right|$. Suppose for contradiction that for some $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ is bounded above, i.e. there is $C>0$ with $\varepsilon^{n}M\left(\varepsilon\right)\le{C}$; then
 
 $$
-\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad0<\left|z-a\right|\,\text{sufficiently~small}.
+\left|f\left(z\right)\right|\le\frac{C}{\left|z-a\right|^{n}},\quad0<\left|z-a\right|\;\text{sufficiently~small}.
 $$
 
 Thus $\left(z-a\right)^{n}f\left(z\right)$ is bounded on a punctured neighborhood of $a$; by **Theorem 13.2.4 (Riemann's Removable Singularity Theorem)**, $0$ is a removable singularity of $\left(z-a\right)^{n}f$, so $f$ has at most a pole of order $n$ at $a$, contradicting that $a$ is essential. Hence for every $n\in\mathbb{N}$, $\varepsilon^{n}M\left(\varepsilon\right)$ is unbounded, and by monotonicity in $\varepsilon$, $\lim_{\varepsilon\to0}\varepsilon^{n}M\left(\varepsilon\right)=+\infty$. $\blacksquare$
