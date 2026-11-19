@@ -48,9 +48,9 @@ $$
 D=\left\{z=\rho{e}^{i\theta}:\rho>0,0<\theta<1\right\}.
 $$
 
-第一步: 幂函数 $z\mapsto{z}^{\pi}$ (取全纯分支) 把角域 $\left\{0<\arg{z}<1\right\}$ 映成角域 $\left\{0<\arg{u}<\pi\right\}$, 即上半平面 $\left\{\operatorname{Im}u>0\right\}$.
+幂函数 $z\mapsto{z}^{\pi}$ (取全纯分支) 把角域 $\left\{0<\arg{z}<1\right\}$ 映成角域 $\left\{0<\arg{u}<\pi\right\}$, 即上半平面 $\left\{\operatorname{Im}u>0\right\}$.
 
-第二步: 莫比乌斯变换 $u\mapsto\frac{u-i}{u+i}$ 把上半平面映成开单位圆盘. 故所求映射为
+莫比乌斯变换 $u\mapsto\frac{u-i}{u+i}$ 把上半平面映成开单位圆盘. 故所求映射为
 
 $$
 F\left(z\right)=\frac{z^{\pi}-i}{z^{\pi}+i},

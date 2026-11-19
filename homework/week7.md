@@ -146,13 +146,13 @@ $\blacksquare$
 
 记 $D=\left\{z:0<\operatorname{Im}z<\pi\right\}\setminus\left\{x+\frac{\pi}{2}i:x\le0\right\}$.
 
-第一步 $w=e^{z}$: 把水平带 $\left\{0<\operatorname{Im}z<\pi\right\}$ 映成上半平面 $\mathbb{H}=\left\{\operatorname{Im}w>0\right\}$; 射线 $z=x+\frac{\pi}{2}i$ ($x\le0$) 映成 $w=e^{x}e^{i\pi/2}=ie^{x}$, $x\le0$, 即虚轴线段 $\left\{iy:0<{}y\le1\right\}$. 故 $w=e^{z}$ 把 $D$ 映成 $D_{1}:=\mathbb{H}\setminus\left(0,i\right]$.
+先取 $w=e^{z}$: 把水平带 $\left\{0<\operatorname{Im}z<\pi\right\}$ 映成上半平面 $\mathbb{H}=\left\{\operatorname{Im}w>0\right\}$; 射线 $z=x+\frac{\pi}{2}i$ ($x\le0$) 映成 $w=e^{x}e^{i\pi/2}=ie^{x}$, $x\le0$, 即虚轴线段 $\left\{iy:0<{}y\le1\right\}$. 故 $w=e^{z}$ 把 $D$ 映成 $D_{1}:=\mathbb{H}\setminus\left(0,i\right]$.
 
-第二步 $u=w^{2}$: 把 $\mathbb{H}$ 映成 $\mathbb{C}\setminus\left[0,+\infty\right)$, 而线段 $\left(0,i\right]$ 映成 $\left\{u=-y^{2}:0<{}y\le1\right\}=\left[-1,0\right)$. 故 $u$ 把 $D_{1}$ 映成 $D_{2}:=\mathbb{C}\setminus\left[-1,+\infty\right)$.
+再取 $u=w^{2}$: 把 $\mathbb{H}$ 映成 $\mathbb{C}\setminus\left[0,+\infty\right)$, 而线段 $\left(0,i\right]$ 映成 $\left\{u=-y^{2}:0<{}y\le1\right\}=\left[-1,0\right)$. 故 $u$ 把 $D_{1}$ 映成 $D_{2}:=\mathbb{C}\setminus\left[-1,+\infty\right)$.
 
-第三步 $t=\sqrt{u+1}$ (在 $\mathbb{C}\setminus\left[0,+\infty\right)$ 上取主分支): 因 $u+1\in\mathbb{C}\setminus\left[0,+\infty\right)$, 主平方根把 $\mathbb{C}\setminus\left[0,+\infty\right)$ 映成右半平面 $\left\{\operatorname{Re}t>0\right\}$.
+接着取 $t=\sqrt{u+1}$ (在 $\mathbb{C}\setminus\left[0,+\infty\right)$ 上取主分支): 因 $u+1\in\mathbb{C}\setminus\left[0,+\infty\right)$, 主平方根把 $\mathbb{C}\setminus\left[0,+\infty\right)$ 映成右半平面 $\left\{\operatorname{Re}t>0\right\}$.
 
-第四步莫比乌斯 $s\mapsto\frac{s-1}{s+1}$ 把右半平面映成开单位圆盘. 综上, 所求映射为
+最后证莫比乌斯 $s\mapsto\frac{s-1}{s+1}$ 把右半平面映成开单位圆盘. 综上, 所求映射为
 
 $$
 F\left(z\right)=\frac{\sqrt{e^{2z}+1}-1}{\sqrt{e^{2z}+1}+1},
@@ -196,7 +196,7 @@ $\blacksquare$
 
 按**定义 6.2.4 (幂函数)**, 记 $D=\left\{\operatorname{Re}z>0\right\}\setminus\left\{\left|z-\frac{1}{2}\right|\le1\right\}$. 其边界为虚轴与圆 $\left|z-\frac{1}{2}\right|=1$, 两曲线交于 $z=\pm\frac{\sqrt{3}}{2}i$. 这是两个广义圆围成的单连通区域.
 
-第一步: 用莫比乌斯变换把两交点映到 $0$ 与 $\infty$:
+先用莫比乌斯变换把两交点映到 $0$ 与 $\infty$:
 
 $$
 w\left(z\right)=\frac{z-\frac{\sqrt{3}}{2}i}{z+\frac{\sqrt{3}}{2}i}.
@@ -204,9 +204,9 @@ $$
 
 由**命题 4.3.7**, $w$ 把两圆映成过原点的两条直线, 区域 $D$ 映成顶点在原点的角域. 虚轴与圆 $\left|z-\frac{1}{2}\right|=1$ 在交点 $\frac{\sqrt{3}}{2}i$ 处的夹角: 圆在该点的切线方向角为 $\frac{\pi}{6}$ (圆心 $\frac12$ 到该点的半径方向角为 $\frac{2\pi}{3}$), 虚轴切线方向角为 $\frac{\pi}{2}$, 故夹角为 $\frac{\pi}{3}$. 于是 $D$ 映成角域 $\left\{0<\arg{w}<\frac{\pi}{3}\right\}$.
 
-第二步: 幂函数 $w\mapsto{w}^{3}$ 把角域 $\left\{0<\arg{w}<\frac{\pi}{3}\right\}$ 映成上半平面 $\left\{\operatorname{Im}u>0\right\}$.
+幂函数 $w\mapsto{w}^{3}$ 把角域 $\left\{0<\arg{w}<\frac{\pi}{3}\right\}$ 映成上半平面 $\left\{\operatorname{Im}u>0\right\}$.
 
-第三步: 莫比乌斯变换 $u\mapsto\frac{u-i}{u+i}$ 把上半平面映成开单位圆盘. 故所求映射为
+莫比乌斯变换 $u\mapsto\frac{u-i}{u+i}$ 把上半平面映成开单位圆盘. 故所求映射为
 
 $$
 F\left(z\right)=\frac{\left(\frac{z-\frac{\sqrt{3}}{2}i}{z+\frac{\sqrt{3}}{2}i}\right)^{3}-i}{\left(\frac{z-\frac{\sqrt{3}}{2}i}{z+\frac{\sqrt{3}}{2}i}\right)^{3}+i}.
