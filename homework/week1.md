@@ -30,7 +30,7 @@
 
 > **定理 2.2.6 (若当曲线定理)**
 > 
-> 复平面上的任一条若当闭曲线把整个平面分成两个没有公共点的区域: 一个有界的称为它的内区域, 一个无界的称为它的外区域. ## 1.5-1 证明: 若 $\left|z\right|=1$ 且 $z\ne\pm1$, 则 $$ \operatorname{Arg}\frac{z-1}{z+1}=\frac{\pi}{2}\;\text{或}\;\frac{3\pi}{2}\quad\left(\bmod2\pi\right). $$ 设 $z=e^{i\theta}$, 则 $z\ne\pm1$ 等价于 $\theta\ne0,\pi\,\left(\bmod2\pi\right)$. 由**定义 1.2.2 (复数的极坐标形式)**, 得 $$ \frac{z-1}{z+1}=\frac{e^{i\theta}-1}{e^{i\theta}+1}=\frac{e^{i\theta/2}\left(e^{i\theta/2}-e^{-i\theta/2}\right)}{e^{i\theta/2}\left(e^{i\theta/2}+e^{-i\theta/2}\right)}=\frac{2i\sin\frac{\theta}{2}}{2\cos\frac{\theta}{2}}=i\tan\frac{\theta}{2}. $$ 因 $z\ne\pm1$, 有 $\sin\frac{\theta}{2}\ne0$ 且 $\cos\frac{\theta}{2}\ne0$, 故 $\tan\frac{\theta}{2}\ne0$, 从而 $\frac{z-1}{z+1}=i\tan\frac{\theta}{2}$ 是非零纯虚数. 其辐角当 $\tan\frac{\theta}{2}>0$ 时为 $\frac{\pi}{2}$, 当 $\tan\frac{\theta}{2}<0$ 时为 $\frac{3\pi}{2}$ (均模 $2\pi$). 命题得证. $\blacksquare$
+> 复平面上的任一条若当闭曲线把整个平面分成两个没有公共点的区域: 一个有界的称为它的内区域, 一个无界的称为它的外区域. ## 1.5-1 证明: 若 $\left|z\right|=1$ 且 $z\ne\pm1$, 则 $$\operatorname{Arg}\frac{z-1}{z+1}=\frac{\pi}{2}\;\text{或}\;\frac{3\pi}{2}\quad\left(\bmod2\pi\right).$$ 设 $z=e^{i\theta}$, 则 $z\ne\pm1$ 等价于 $\theta\ne0,\pi\,\left(\bmod2\pi\right)$. 由**定义 1.2.2 (复数的极坐标形式)**, 得 $$\frac{z-1}{z+1}=\frac{e^{i\theta}-1}{e^{i\theta}+1}=\frac{e^{i\theta/2}\left(e^{i\theta/2}-e^{-i\theta/2}\right)}{e^{i\theta/2}\left(e^{i\theta/2}+e^{-i\theta/2}\right)}=\frac{2i\sin\frac{\theta}{2}}{2\cos\frac{\theta}{2}}=i\tan\frac{\theta}{2}.$$ 因 $z\ne\pm1$, 有 $\sin\frac{\theta}{2}\ne0$ 且 $\cos\frac{\theta}{2}\ne0$, 故 $\tan\frac{\theta}{2}\ne0$, 从而 $\frac{z-1}{z+1}=i\tan\frac{\theta}{2}$ 是非零纯虚数. 其辐角当 $\tan\frac{\theta}{2}>0$ 时为 $\frac{\pi}{2}$, 当 $\tan\frac{\theta}{2}<0$ 时为 $\frac{3\pi}{2}$ (均模 $2\pi$). 命题得证. $\blacksquare$
 
 ## 1.5-3
 

@@ -22,7 +22,7 @@
 
 > **定义 7.2.1 (原函数)**
 > 
-> 区域 $D$ 上的全纯函数 $F$ 称为 $f$ 的原函数, 若 $F'=f$ 于 $D$; $f$ 有原函数当且仅当 $f$ 沿 $D$ 内任意闭道路的积分为零. ## 4.5-16 令 $f=u\left(z\right)+iv\left(z\right)$ 在 $z_{0}\in\mathbb{C}$ 处为全纯的, 且 $f'\left(z_{0}\right)\ne0$. 证明: 函数 $u$ 和 $v$ 的水平集 (取值为某给定常数的点所组成的集合) 在 $z_{0}$ 处的夹角为 $\frac{\pi}{2}$. $u,v$ 的水平集在 $z_{0}$ 处的切线分别垂直于梯度 $\nabla{u}=\left(u_{x},u_{y}\right)$ 与 $\nabla{v}=\left(v_{x},v_{y}\right)$. 由 $f$ 在 $z_{0}$ 处全纯, $u,v$ 满足柯西-黎曼方程 $u_{x}=v_{y}$, $u_{y}=-v_{x}$, 于是 $$ \nabla{u}\cdot\nabla{v}=u_{x}v_{x}+u_{y}v_{y}=u_{x}\left(-u_{y}\right)+u_{y}u_{x}=0. $$ 故 $\nabla{u}\perp\nabla{v}$, 两梯度正交, 因而两水平集的切线也正交, 夹角为 $\frac{\pi}{2}$. 又因 $f'\left(z_{0}\right)\ne0$, 由 $f'\left(z_{0}\right)=u_{x}\left(z_{0}\right)+iv_{x}\left(z_{0}\right)$ 知 $\nabla{u},\nabla{v}$ 在 $z_{0}$ 处均非零, 故两水平集在 $z_{0}$ 处都有定义良好的切线. $\blacksquare$
+> 区域 $D$ 上的全纯函数 $F$ 称为 $f$ 的原函数, 若 $F'=f$ 于 $D$; $f$ 有原函数当且仅当 $f$ 沿 $D$ 内任意闭道路的积分为零. ## 4.5-16 令 $f=u\left(z\right)+iv\left(z\right)$ 在 $z_{0}\in\mathbb{C}$ 处为全纯的, 且 $f'\left(z_{0}\right)\ne0$. 证明: 函数 $u$ 和 $v$ 的水平集 (取值为某给定常数的点所组成的集合) 在 $z_{0}$ 处的夹角为 $\frac{\pi}{2}$. $u,v$ 的水平集在 $z_{0}$ 处的切线分别垂直于梯度 $\nabla{u}=\left(u_{x},u_{y}\right)$ 与 $\nabla{v}=\left(v_{x},v_{y}\right)$. 由 $f$ 在 $z_{0}$ 处全纯, $u,v$ 满足柯西-黎曼方程 $u_{x}=v_{y}$, $u_{y}=-v_{x}$, 于是 $$\nabla{u}\cdot\nabla{v}=u_{x}v_{x}+u_{y}v_{y}=u_{x}\left(-u_{y}\right)+u_{y}u_{x}=0.$$ 故 $\nabla{u}\perp\nabla{v}$, 两梯度正交, 因而两水平集的切线也正交, 夹角为 $\frac{\pi}{2}$. 又因 $f'\left(z_{0}\right)\ne0$, 由 $f'\left(z_{0}\right)=u_{x}\left(z_{0}\right)+iv_{x}\left(z_{0}\right)$ 知 $\nabla{u},\nabla{v}$ 在 $z_{0}$ 处均非零, 故两水平集在 $z_{0}$ 处都有定义良好的切线. $\blacksquare$
 
 ## 5.5-1
 
