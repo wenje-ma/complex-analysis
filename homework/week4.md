@@ -2,11 +2,11 @@
 
 > **定义 3.2.1 (可微性)**
 > 
-> 称 $f$ 在 $z$ 处 $\mathbb{R}$-可微 (或 $\mathbb{C}$-可微), 若 $\Delta{f}=\ell\left(\Delta{z}\right)+o\left(\left|\Delta{z}\right|\right)$, 其中 $\ell$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性) 函数.
+> 称 $f$ 在 $z$ 处 $\mathbb{R}$-可微 (或 $\mathbb{C}$-可微), 若 $\Delta{}f=\ell\left(\Delta{}z\right)+o\left(\left|\Delta{}z\right|\right)$, 其中 $\ell$ 为 $\mathbb{R}$-线性 (或 $\mathbb{C}$-线性) 函数.
 
 > **定理 3.2.4 (柯西-黎曼方程)**
 > 
-> $f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial{f}}{\partial\overline{z}}=0$; 这也等价于 $u,v$ 满足柯西-黎曼方程.
+> $f$ 在 $z$ 处 $\mathbb{C}$-可微当且仅当 $f$ 在 $z$ 处 $\mathbb{R}$-可微且 $\frac{\partial{}f}{\partial\overline{z}}=0$; 这也等价于 $u,v$ 满足柯西-黎曼方程.
 
 > **定义 7.2.1 (原函数)**
 > 
@@ -18,11 +18,11 @@
 
 > **定理 8.3.1 (柯西积分公式)**
 > 
-> 若 $f$ 在含若当闭曲线 $\gamma$ 及其内区域的区域上全纯, $z$ 在 $\gamma$ 的内区域, 则 $f\left(z\right)=\frac{1}{2\pi{i}}\int_{\gamma}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta$.
+> 若 $f$ 在含若当闭曲线 $\gamma$ 及其内区域的区域上全纯, $z$ 在 $\gamma$ 的内区域, 则 $f\left(z\right)=\frac{1}{2\pi{}i}\int_{\gamma}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta$.
 
 > **定理 8.3.3 (高阶导数公式)**
 > 
-> 若 $f$ 在单连通区域 $D$ 上全纯, $\gamma$ 是 $D$ 内的分段光滑若当闭曲线, $z$ 在其内区域, 则 $f$ 在 $z$ 处有任意阶导数且 $f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi{i}}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta,\quad{n}\ge1$. $f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi{i}}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta$.
+> 若 $f$ 在单连通区域 $D$ 上全纯, $\gamma$ 是 $D$ 内的分段光滑若当闭曲线, $z$ 在其内区域, 则 $f$ 在 $z$ 处有任意阶导数且 $f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi{}i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta,\quad{}n\ge1$. $f^{\left(n\right)}\left(z\right)=\frac{n!}{2\pi{}i}\int_{\gamma}\frac{f\left(\zeta\right)}{\left(\zeta-z\right)^{n+1}}\,d\zeta$.
 
 > **定理 9.3.2 (恒等定理)**
 > 
@@ -58,47 +58,47 @@ $\blacksquare$
 
 ### 解答 7.4-3
 
-按**定义 7.2.1 (原函数)**, (i) 展开 $\left(z+\frac{1}{z}\right)^{2n}=\sum_{k=0}^{2n}\binom{2n}{k}z^{2n-2k}$, 只有偶次幂. 乘上 $\frac1z$ 后, 其中 $z^{-1}$ 项的系数来自 $\left(z+\frac1z\right)^{2n}$ 的常数项 ($2n-2k=0$, 即 $k=n$), 系数为 $\binom{2n}{n}$. 由**定义 7.1.1 (路径积分)** 及 $\int_{\left|z\right|=1}z^{m}dz=0$ ($m\ne-1$), $\int_{\left|z\right|=1}\frac{dz}{z}=2\pi{i}$,
+按**定义 7.2.1 (原函数)**, (i) 展开 $\left(z+\frac{1}{z}\right)^{2n}=\sum_{k=0}^{2n}\binom{2n}{k}z^{2n-2k}$, 只有偶次幂. 乘上 $\frac1z$ 后, 其中 $z^{-1}$ 项的系数来自 $\left(z+\frac1z\right)^{2n}$ 的常数项 ($2n-2k=0$, 即 $k=n$), 系数为 $\binom{2n}{n}$. 由**定义 7.1.1 (路径积分)** 及 $\int_{\left|z\right|=1}z^{m}dz=0$ ($m\ne-1$), $\int_{\left|z\right|=1}\frac{dz}{z}=2\pi{}i$,
 
 $$
-\int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz=2\pi{i}\binom{2n}{n}.
+\int_{\left|z\right|=1}\left(z+\frac{1}{z}\right)^{2n}\frac{1}{z}\,dz=2\pi{}i\binom{2n}{n}.
 $$
 
 (ii) 在 $\left\{\left|z\right|=r\right\}$ 内 ($\left|a\right|<{}r<\left|b\right|$) 只有简单极点 $z=a$, 其留数为 $\frac{1}{a-b}$. 由留数定理 (柯西积分),
 
 $$
-\int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz=2\pi{i}\cdot\frac{1}{a-b}.
+\int_{\left|z\right|=r}\frac{1}{\left(z-a\right)\left(z-b\right)}\,dz=2\pi{}i\cdot\frac{1}{a-b}.
 $$
 
 $\blacksquare$
 
 ## 7.4-5
 
-试构造函数 $e^{\frac{1}{z}}$ 沿道路 $\gamma\left(t\right):=e^{4\pi{i}t}$, $t\in\left[0,1\right]$, 的原函数并用它计算积分 $\int_{\gamma}e^{\frac{1}{z}}\,dz$.
+试构造函数 $e^{\frac{1}{z}}$ 沿道路 $\gamma\left(t\right):=e^{4\pi{}it}$, $t\in\left[0,1\right]$, 的原函数并用它计算积分 $\int_{\gamma}e^{\frac{1}{z}}\,dz$.
 
 ### 解答 7.4-5
 
 $e^{\frac1z}=\sum_{n=0}^{+\infty}\frac{1}{n!}\frac{1}{z^{n}}$ (洛朗展开, $z\ne0$). 它的一个原函数 (含沿道路的连续分支) 为
 
 $$
-F\left(z\right):=z+\log{z}+\sum_{n=2}^{+\infty}\frac{1}{n!}\frac{z^{1-n}}{1-n},
+F\left(z\right):=z+\log{}z+\sum_{n=2}^{+\infty}\frac{1}{n!}\frac{z^{1-n}}{1-n},
 $$
 
-其中 $\log{z}$ 取沿 $\gamma$ 的连续分支. 直接求导: $F'\left(z\right)=1+\frac{1}{z}+\sum_{n=2}^{+\infty}\frac{1}{n!}\frac{\left(1-n\right)z^{-n}}{1-n}=1+\frac{1}{z}+\sum_{n=2}^{+\infty}\frac{1}{n!}\frac{1}{z^{n}}=e^{\frac1z}$.
+其中 $\log{}z$ 取沿 $\gamma$ 的连续分支. 直接求导: $F'\left(z\right)=1+\frac{1}{z}+\sum_{n=2}^{+\infty}\frac{1}{n!}\frac{\left(1-n\right)z^{-n}}{1-n}=1+\frac{1}{z}+\sum_{n=2}^{+\infty}\frac{1}{n!}\frac{1}{z^{n}}=e^{\frac1z}$.
 
-于是 $\int_{\gamma}e^{\frac1z}dz=F\left(\gamma\left(1\right)\right)-F\left(\gamma\left(0\right)\right)$ (沿 $\gamma$ 取连续分支). $\gamma$ 的参数为 $e^{4\pi{i}t}$, $t$ 从 $0$ 到 $1$, 幅角从 $0$ 增至 $4\pi$, 即绕原点 $0$ 转两圈; 因而沿 $\gamma$ 连续变动的 $\log{z}$ 增加 $2\cdot2\pi{i}=4\pi{i}$, 其余项 ($z$ 与 $\sum_{n\ge2}$ 项) 在闭道路上回到原值. 故
+于是 $\int_{\gamma}e^{\frac1z}dz=F\left(\gamma\left(1\right)\right)-F\left(\gamma\left(0\right)\right)$ (沿 $\gamma$ 取连续分支). $\gamma$ 的参数为 $e^{4\pi{}it}$, $t$ 从 $0$ 到 $1$, 幅角从 $0$ 增至 $4\pi$, 即绕原点 $0$ 转两圈; 因而沿 $\gamma$ 连续变动的 $\log{}z$ 增加 $2\cdot2\pi{}i=4\pi{}i$, 其余项 ($z$ 与 $\sum_{n\ge2}$ 项) 在闭道路上回到原值. 故
 
 $$
-\int_{\gamma}e^{\frac1z}\,dz=4\pi{i}.
+\int_{\gamma}e^{\frac1z}\,dz=4\pi{}i.
 $$
 
-(也可由留数: $\operatorname{Res}_{0}e^{1/z}=1$, 而 $\gamma$ 绕 $0$ 的指标为 $2$, 得 $\int_{\gamma}=2\pi{i}\cdot2\cdot1=4\pi{i}$.)
+(也可由留数: $\operatorname{Res}_{0}e^{1/z}=1$, 而 $\gamma$ 绕 $0$ 的指标为 $2$, 得 $\int_{\gamma}=2\pi{}i\cdot2\cdot1=4\pi{}i$.)
 
 $\blacksquare$
 
 ## 7.4-9
 
-假设区域 $D\subset\mathbb{C}\setminus\left\{0\right\}$ 上有函数 $f\left(z\right)=\frac{1}{z}$ 的原函数 $F\left(z\right)$. 证明: 存在 $c\in\mathbb{C}$ 使得 $F\left(z\right)+c\in\operatorname{Ln}z$, $\forall{z}\in{D}$.
+假设区域 $D\subset\mathbb{C}\setminus\left\{0\right\}$ 上有函数 $f\left(z\right)=\frac{1}{z}$ 的原函数 $F\left(z\right)$. 证明: 存在 $c\in\mathbb{C}$ 使得 $F\left(z\right)+c\in\operatorname{Ln}z$, $\forall{}z\in{}D$.
 
 ### 解答 7.4-9
 
@@ -114,7 +114,7 @@ $$
 e^{F\left(z\right)}=e^{c}z=e^{c+\operatorname{Ln}z},
 $$
 
-故 $e^{F\left(z\right)-c-\operatorname{Ln}z}=1$, 即 $F\left(z\right)-c-\operatorname{Ln}z\in2\pi{i}\mathbb{Z}$, 从而 $F\left(z\right)-c\in\operatorname{Ln}z$. 取 $c':=-c$, 得 $F\left(z\right)+c'\in\operatorname{Ln}z$, $\forall{z}\in{D}$.
+故 $e^{F\left(z\right)-c-\operatorname{Ln}z}=1$, 即 $F\left(z\right)-c-\operatorname{Ln}z\in2\pi{}i\mathbb{Z}$, 从而 $F\left(z\right)-c\in\operatorname{Ln}z$. 取 $c':=-c$, 得 $F\left(z\right)+c'\in\operatorname{Ln}z$, $\forall{}z\in{}D$.
 
 $\blacksquare$
 
@@ -122,9 +122,9 @@ $\blacksquare$
 
 设 $f$ 为单连通区域 $D$ 上的全纯函数而且不取零值. 证明:
 
-(i) 存在 $D$ 上的全纯函数 $g$ 使得 $e^{g\left(z\right)}=f\left(z\right)$, $\forall{z}\in{D}$;
+(i) 存在 $D$ 上的全纯函数 $g$ 使得 $e^{g\left(z\right)}=f\left(z\right)$, $\forall{}z\in{}D$;
 
-(ii) 对任意的正整数 $q\ge1$, 都存在 $D$ 上的全纯函数 $g_{q}$ 使得 $\left(g_{q}\left(z\right)\right)^{q}=f\left(z\right)$, $\forall{z}\in{D}$.
+(ii) 对任意的正整数 $q\ge1$, 都存在 $D$ 上的全纯函数 $g_{q}$ 使得 $\left(g_{q}\left(z\right)\right)^{q}=f\left(z\right)$, $\forall{}z\in{}D$.
 
 ### 解答 8.4-2
 
@@ -137,13 +137,13 @@ $$
 故 $F$ 在 $D$ 上恒为常数 $c$. 又 $F\ne0$, 取 $w_{0}\in\mathbb{C}$ 使 $e^{w_{0}}=c$, 令 $g=g_{0}+w_{0}$, 则
 
 $$
-e^{g\left(z\right)}=e^{g_{0}\left(z\right)}e^{w_{0}}=e^{g_{0}\left(z\right)}c=f\left(z\right),\quad\forall{z}\in{D}.
+e^{g\left(z\right)}=e^{g_{0}\left(z\right)}e^{w_{0}}=e^{g_{0}\left(z\right)}c=f\left(z\right),\quad\forall{}z\in{}D.
 $$
 
 (ii) 由 (i) 取全纯 $g$ 使 $e^{g\left(z\right)}=f\left(z\right)$. 令 $g_{q}\left(z\right)=e^{\frac{g\left(z\right)}{q}}$, 则 $g_{q}$ 在 $D$ 上全纯且
 
 $$
-\left(g_{q}\left(z\right)\right)^{q}=\left(e^{\frac{g\left(z\right)}{q}}\right)^{q}=e^{g\left(z\right)}=f\left(z\right),\quad\forall{z}\in{D}.
+\left(g_{q}\left(z\right)\right)^{q}=\left(e^{\frac{g\left(z\right)}{q}}\right)^{q}=e^{g\left(z\right)}=f\left(z\right),\quad\forall{}z\in{}D.
 $$
 
 命题得证.
@@ -156,19 +156,19 @@ $\blacksquare$
 
 ### 解答 8.4-4
 
-取任意 $a\in\mathbb{C}$ 及半径 $\varepsilon>0$ 的圆周 $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon{e}^{it}$. 由 $f$ 在 $a$ 处 $\mathbb{R}$-可微 (**定义 3.2.1 (可微性)**), 展开
+取任意 $a\in\mathbb{C}$ 及半径 $\varepsilon>0$ 的圆周 $\gamma_{\varepsilon}\left(t\right)=a+\varepsilon{}e^{it}$. 由 $f$ 在 $a$ 处 $\mathbb{R}$-可微 (**定义 3.2.1 (可微性)**), 展开
 
 $$
-f\left(z\right)=f\left(a\right)+\frac{\partial{f}}{\partial{z}}\left(a\right)\left(z-a\right)+\frac{\partial{f}}{\partial\overline{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
+f\left(z\right)=f\left(a\right)+\frac{\partial{}f}{\partial{}z}\left(a\right)\left(z-a\right)+\frac{\partial{}f}{\partial\overline{z}}\left(a\right)\left(\overline{z-a}\right)+o\left(\varepsilon\right),
 $$
 
 代入 $\int_{\gamma_{\varepsilon}}f\,dz$ 并仿照 (习题 7.4-2) 的演算, 得
 
 $$
-\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi{i}\varepsilon^{2}\frac{\partial{f}}{\partial\overline{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
+\int_{\left|z-a\right|=\varepsilon}f\left(z\right)\,dz=2\pi{}i\varepsilon^{2}\frac{\partial{}f}{\partial\overline{z}}\left(a\right)+o\left(\varepsilon^{2}\right).
 $$
 
-由题设左边对任意 $\varepsilon>0$ 为零, 两边除以 $\varepsilon^{2}$ 令 $\varepsilon\to0$, 得 $\frac{\partial{f}}{\partial\overline{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial{f}}{\partial\overline{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4 (柯西-黎曼方程)**, $f$ 在 $\mathbb{C}$ 上全纯.
+由题设左边对任意 $\varepsilon>0$ 为零, 两边除以 $\varepsilon^{2}$ 令 $\varepsilon\to0$, 得 $\frac{\partial{}f}{\partial\overline{z}}\left(a\right)=0$. 因 $a\in\mathbb{C}$ 任意, $\frac{\partial{}f}{\partial\overline{z}}\equiv0$ 在 $\mathbb{C}$ 上, 由**定理 3.2.4 (柯西-黎曼方程)**, $f$ 在 $\mathbb{C}$ 上全纯.
 
 $\blacksquare$
 
@@ -208,39 +208,39 @@ $\blacksquare$
 
 ## 8.4-8
 
-令 $D\subset\mathbb{C}$ 是分段光滑若当闭曲线的外区域, $f$ 为 $D$ 上的全纯函数, 而且 $\lim_{z\to\infty}f\left(z\right)=A\in\mathbb{C}$. 证明: $\forall{z}\in{D}$, $f\left(z\right)=-\frac{1}{2\pi{i}}\int_{\partial{D}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$, 其中 $\partial{D}$ 为逆时针定向.
+令 $D\subset\mathbb{C}$ 是分段光滑若当闭曲线的外区域, $f$ 为 $D$ 上的全纯函数, 而且 $\lim_{z\to\infty}f\left(z\right)=A\in\mathbb{C}$. 证明: $\forall{}z\in{}D$, $f\left(z\right)=-\frac{1}{2\pi{}i}\int_{\partial{}D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$, 其中 $\partial{}D$ 为逆时针定向.
 
 ### 解答 8.4-8
 
-固定 $z\in{D}$. 取 $R$ 充分大使 $z$ 与 $\partial{D}$ 都落在 $\left\{\left|w\right|<{}R\right\}$ 内. 记 $\Gamma_{R}$ 为逆时针圆周 $\left|\zeta\right|=R$, 则 $f$ 在 $\Gamma_{R}$ 与 $\partial{D}$ 围成的环形区域 (含边界) 上全纯. 由**定理 8.3.1 (柯西积分公式)** 对环形区域 (或分别在内外边界上应用),
+固定 $z\in{}D$. 取 $R$ 充分大使 $z$ 与 $\partial{}D$ 都落在 $\left\{\left|w\right|<{}R\right\}$ 内. 记 $\Gamma_{R}$ 为逆时针圆周 $\left|\zeta\right|=R$, 则 $f$ 在 $\Gamma_{R}$ 与 $\partial{}D$ 围成的环形区域 (含边界) 上全纯. 由**定理 8.3.1 (柯西积分公式)** 对环形区域 (或分别在内外边界上应用),
 
 $$
-f\left(z\right)=\frac{1}{2\pi{i}}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta-\frac{1}{2\pi{i}}\int_{\partial{D}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
+f\left(z\right)=\frac{1}{2\pi{}i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta-\frac{1}{2\pi{}i}\int_{\partial{}D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta.
 $$
 
 令 $R\to\infty$. 有
 
 $$
-\frac{1}{2\pi{i}}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta
-=\frac{1}{2\pi{i}}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)-A}{\zeta-z}\,d\zeta+\frac{A}{2\pi{i}}\int_{\Gamma_{R}}\frac{d\zeta}{\zeta-z}.
+\frac{1}{2\pi{}i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta
+=\frac{1}{2\pi{}i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)-A}{\zeta-z}\,d\zeta+\frac{A}{2\pi{}i}\int_{\Gamma_{R}}\frac{d\zeta}{\zeta-z}.
 $$
 
-因 $z$ 在 $\Gamma_{R}$ 内, $\int_{\Gamma_{R}}\frac{d\zeta}{\zeta-z}=2\pi{i}$; 而 $\left|\zeta\right|=R$ 上 $\frac{1}{\left|\zeta-z\right|}\le\frac{C}{R}$, 且 $f\left(\zeta\right)\to{A}$ 给出 $\sup_{\left|\zeta\right|=R}\left|f\left(\zeta\right)-A\right|\to0$, 故第一项积分 $\to0$. 因此 $\frac{1}{2\pi{i}}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta\to{A}$. 令 $R\to\infty$ 得
+因 $z$ 在 $\Gamma_{R}$ 内, $\int_{\Gamma_{R}}\frac{d\zeta}{\zeta-z}=2\pi{}i$; 而 $\left|\zeta\right|=R$ 上 $\frac{1}{\left|\zeta-z\right|}\le\frac{C}{R}$, 且 $f\left(\zeta\right)\to{}A$ 给出 $\sup_{\left|\zeta\right|=R}\left|f\left(\zeta\right)-A\right|\to0$, 故第一项积分 $\to0$. 因此 $\frac{1}{2\pi{}i}\int_{\Gamma_{R}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta\to{}A$. 令 $R\to\infty$ 得
 
 $$
-f\left(z\right)=A-\frac{1}{2\pi{i}}\int_{\partial{D}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta,
+f\left(z\right)=A-\frac{1}{2\pi{}i}\int_{\partial{}D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta,
 $$
 
-即 $f\left(z\right)=-\frac{1}{2\pi{i}}\int_{\partial{D}}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$.
+即 $f\left(z\right)=-\frac{1}{2\pi{}i}\int_{\partial{}D}\frac{f\left(\zeta\right)}{\zeta-z}\,d\zeta+A$.
 
 $\blacksquare$
 
 ## 8.4-10
 
-(泰勒展开与积分余项) 令 $D\subset\mathbb{C}$ 是区域而 $f$ 为 $D$ 上的全纯函数. 证明: 对于任意 $z_{0},z_{1}\in{D}$ 和 $D$ 上连接 $z_{0}$ 和 $z_{1}$ 的光滑道路 $\gamma$ (即 $\gamma\left(0\right)=z_{0}$ 和 $\gamma\left(1\right)=z_{1}$), 都有
+(泰勒展开与积分余项) 令 $D\subset\mathbb{C}$ 是区域而 $f$ 为 $D$ 上的全纯函数. 证明: 对于任意 $z_{0},z_{1}\in{}D$ 和 $D$ 上连接 $z_{0}$ 和 $z_{1}$ 的光滑道路 $\gamma$ (即 $\gamma\left(0\right)=z_{0}$ 和 $\gamma\left(1\right)=z_{1}$), 都有
 
 $$
-f\left(z_{1}\right)=f\left(z_{0}\right)+\sum_{k=1}^{n}\frac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z_{1}-z_{0}\right)^{k}+\frac{1}{n!}\int_{\gamma}\left(z_{1}-\zeta\right)^{n}f^{\left(n+1\right)}\left(\zeta\right)\,d\zeta,\quad\forall{n}\in\mathbb{N}.
+f\left(z_{1}\right)=f\left(z_{0}\right)+\sum_{k=1}^{n}\frac{f^{\left(k\right)}\left(z_{0}\right)}{k!}\left(z_{1}-z_{0}\right)^{k}+\frac{1}{n!}\int_{\gamma}\left(z_{1}-\zeta\right)^{n}f^{\left(n+1\right)}\left(\zeta\right)\,d\zeta,\quad\forall{}n\in\mathbb{N}.
 $$
 
 ### 解答 8.4-10
